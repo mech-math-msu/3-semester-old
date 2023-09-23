@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#ряды" id="toc-ряды">Ряды</a>
+<ul>
+<li><a href="#основные-определения"
+id="toc-основные-определения">Основные определения</a></li>
+<li><a href="#необходимое-условие-сходимости-ряда"
+id="toc-необходимое-условие-сходимости-ряда">Необходимое условие
+сходимости ряда</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="ряды">Ряды</h1>
+<hr />
+<h2 id="основные-определения">Основные определения</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Рассмотрим
+<span class="math inline">\(\{a_n\}_{n = 1}^{\infty}\)</span>. Пусть
+<span class="math inline">\(S_n = \displaystyle \sum_{i =
+1}^{n}a_i\)</span>.</p>
+<p>Пара <span class="math inline">\(\left(\{a_n\}_{n = 1}^{\infty},
+\{S_n\}_{n = 1}^{\infty}\right)\)</span> - <em>числовой ряд</em>.</p>
+<p><span class="math inline">\(\{S_n\}_{n = 1}^{\infty}\)</span> -
+<em>последовательность частичных сумм</em>. <a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p><span class="math inline">\(a_n\)</span> - <em>общий член
+ряда</em>.</p>
+<p><strong>Обозначается:</strong> <span
+class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n\)</span></p>
+<blockquote>
+<p>Сумма - это всегда два слагаемых. Можно посчитать сумму <span
+style="color: #d6430d;">конечного</span> числа слагаемых, и ряд - это не
+сумма в нормальном понимании.</p>
+</blockquote>
+<p><strong>Определение:</strong><a name="definition-1"></a> Рассмотрим
+<span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n\)</span>. <span class="math inline">\(\displaystyle
+\sum_{n = k}^{\infty}a_n\)</span> - это <span
+class="math inline">\(k\)</span>-й <em>остаток ряда</em> <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span>.
+<a href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a></p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Рассмотрим
+ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n\)</span>.</p>
+<p>Ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n\)</span> - <em>сходящийся</em>, если <span
+class="math inline">\(\exists \displaystyle \lim_{n\to \infty} S_n =
+S\)</span>, и <span class="math inline">\(S\)</span> - <em>сумма
+ряда</em>.</p>
+<p>Иначе ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n\)</span> <em>расходящийся</em>.</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> (<em>Критерий
+Коши</em>) Ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n\)</span> сходится <span
+class="math inline">\(\Leftrightarrow\)</span> <span
+class="math inline">\(\forall \varepsilon &gt; 0 \,\,\,\, \exists
+N_{\varepsilon} \in \mathbb{N}: \,\,\,\, \forall m, k &gt;
+N_{\varepsilon} \,\,\,\, \left|\displaystyle \sum_{n = k +
+1}^{m}a_n\right| &lt; \varepsilon\)</span></p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="необходимое-условие-сходимости-ряда">Необходимое условие
+сходимости ряда</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> (<em>Необходимое
+условие сходимости ряда</em>) Если ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span>
+сходящийся, то <span class="math inline">\(\displaystyle \lim_{n \to
+\infty} a_n = 0\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math display">\[\displaystyle
+\lim_{n\to \infty} a_n = \displaystyle \lim_{n\to \infty} S_n - S_{n -
+1} = 0 \,\,\,\,\blacksquare\]</span></p>
+<p><strong>Упражнение:</strong><a name="exercise-0"></a> Ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span>
+сходится <span class="math inline">\(\Leftrightarrow\)</span> ряд <span
+class="math inline">\(\displaystyle \sum_{n = k}^{\infty}a_n\)</span>
+сходится.</p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> (<em>арифметика
+рядов</em>) Если ряды <span class="math inline">\(\displaystyle \sum_{n
+= 1}^{\infty}a_n\)</span> и <span class="math inline">\(\displaystyle
+\sum_{n = 1}^{\infty}b_n\)</span> сходятся, то ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}(\alpha \cdot
+a_n + \beta \cdot b_n)\)</span> сходится.</p>
+<p><em>Доказательство:</em> свойства пределов <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p><span class="math inline">\(S_n\)</span> - <em>частичная
+сумма ряда</em>. 😎<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Такой остаток часто называют хвост.<a href="#fnref2"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

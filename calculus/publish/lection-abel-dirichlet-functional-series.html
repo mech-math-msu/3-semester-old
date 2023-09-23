@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#признаки-дирихле-и-абеля-сходимости-рядов"
+id="toc-признаки-дирихле-и-абеля-сходимости-рядов">Признаки Дирихле и
+Абеля сходимости рядов</a>
+<ul>
+<li><a href="#признак-дирихле" id="toc-признак-дирихле">Признак
+Дирихле</a></li>
+<li><a href="#признаки-абеля-и-лейбница"
+id="toc-признаки-абеля-и-лейбница">Признаки Абеля и Лейбница</a></li>
+</ul></li>
+<li><a href="#функциональные-последовательности-и-ряды"
+id="toc-функциональные-последовательности-и-ряды">Функциональные
+последовательности и ряды</a>
+<ul>
+<li><a href="#определения" id="toc-определения">Определения</a></li>
+<li><a
+href="#критерии-равномерной-сходимости-функциональной-последовательности"
+id="toc-критерии-равномерной-сходимости-функциональной-последовательности">Критерии
+равномерной сходимости функциональной последовательности</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="признаки-дирихле-и-абеля-сходимости-рядов">Признаки Дирихле и
+Абеля сходимости рядов</h1>
+<hr />
+<h2 id="признак-дирихле">Признак Дирихле</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> (<em>признак
+Дирихле</em>) Рассмотрим ряд <span class="math inline">\(\displaystyle
+\sum_{n = 1}^{\infty}a_nb_n\)</span>. Пусть</p>
+<ol type="1">
+<li><span class="math inline">\(\exists C &gt; 0: \,\,\,\, \forall N \in
+\mathbb{N} \,\,\,\, \left|\displaystyle \sum_{n = 1}^{N}b_n\right|
+\leqslant C\)</span></li>
+<li><span class="math inline">\(\{a_n\}_{n = 1}^{\infty}\)</span>
+монотонна и <span class="math inline">\(\displaystyle \lim_{n\to
+\infty}a_n = 0\)</span></li>
+</ol>
+<p>Тогда <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_nb_n\)</span> сходится.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math display">\[\displaystyle \sum_{n = k + 1}^{N}a_nb_n
+= \displaystyle \sum_{n = k + 1}^{N}a_n(B_n - B_{n - 1})=\]</span> <span
+class="math display">\[= a_{k + 1} B_{k + 1} - a_{k + 1} B_k + a_{k + 2}
+B_{k + 2} - a_{k + 2} B_{k + 1} + \ldots + a_N B_N - a_N B_{N -
+1}=\]</span> <span class="math display">\[= B_{k + 1} (a_{k + 1} - a_{k
++ 2}) + B_{k + 2}(a_{k + 2} - a_{k + 3}) + \ldots + B_N (a_N - a_{N +
+1}) - a_{k + 1} B_k=\]</span> <span class="math display">\[=
+\displaystyle \sum_{n = k + 1}^{N}B_n(a_n - a_{n + 1}) - a_{k + 1}
+B_k\]</span></p>
+<p><span class="math display">\[\left|\displaystyle \sum_{n = k +
+1}^{N}a_nb_n\right| = \left|\displaystyle \sum_{n = k + 1}^{N}B_n(a_n -
+a_{n + 1}) - a_{k + 1} B_k\right| \leqslant \left|\displaystyle \sum_{n
+= k + 1}^{N}B_n(a_n - a_{n + 1})\right| + \left|a_{k + 1} B_k\right|
+\leqslant\]</span> <span class="math display">\[\leqslant
+\left|\displaystyle \sum_{n = k + 1}^{N}C(a_n - a_{n + 1})\right| +
+\left|a_{k + 1}C\right| =\]</span> <span
+class="math display">\[=\left|C(a_{k + 1} - a_N)\right| + \left|a_{k +
+1} С\right| \leqslant C(2|a_{k + 1}| + |a_N|) \leqslant 3C \varepsilon
+\,\,\,\,\blacksquare\]</span></p>
+<h2 id="признаки-абеля-и-лейбница">Признаки Абеля и Лейбница</h2>
+<hr />
+<p><strong>Следствие:</strong><a name="corollary-0"></a> (<em>признак
+Абеля</em>) Рассмотрим ряд <span class="math inline">\(\displaystyle
+\sum_{n = 1}^{\infty}a_nb_n\)</span>. Пусть</p>
+<ol type="1">
+<li>Ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}b_n\)</span> сходится.</li>
+<li>Последовательность <span class="math inline">\(\{a_n\}_{n =
+1}^{\infty}\)</span> ограниченна и монотонна</li>
+</ol>
+<p>Тогда <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_nb_n\)</span> сходится.</p>
+<p><em>Доказательство:</em></p>
+<p>Последовательность <span class="math inline">\(\{a_n\}_{n =
+1}^{\infty}\)</span> ограниченна и монотонна, а значит <span
+class="math inline">\(\exists \displaystyle \lim_{n\to \infty}a_n =
+a\)</span> следовательно <span class="math inline">\(\displaystyle
+\lim_{n\to \infty}(a_n - a) = 0\)</span>.</p>
+<p><span class="math display">\[\displaystyle \sum_{n =
+1}^{\infty}a_nb_n = \displaystyle \sum_{n = 1}^{\infty}(\left[a_n -
+a\right] + a)b_n = \displaystyle \sum_{n = 1}^{\infty}(a_n - a)b_n +
+a\displaystyle \sum_{n = 1}^{\infty}b_n\]</span></p>
+<p>Ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}(a_n - a)b_n\)</span> сходится по признаку Дирихле, а ряд
+<span class="math inline">\(a\displaystyle \sum_{n =
+1}^{\infty}b_n\)</span> сходится по условию <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-1"></a> (<em>признак
+Лейбница</em>) Если <span class="math inline">\(\displaystyle \lim_{n\to
+\infty}a_n = 0\)</span> и <span class="math inline">\(a_n\)</span>
+монотонна, то ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}(-1)^{n + 1}a_n\)</span> сходится.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h1 id="функциональные-последовательности-и-ряды">Функциональные
+последовательности и ряды</h1>
+<hr />
+<h2 id="определения">Определения</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a>
+Последовательность <span class="math inline">\(\{f_n: \,\,\,\, X \to
+\mathbb{R}\}_{n = 1}^{\infty}\)</span> <a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> -
+<em>функциональная последовательность</em>. <a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p><strong>Определение:</strong><a name="definition-2"></a>
+Функциональная последовательность <span class="math inline">\(\{f_n:
+\,\,\,\, X \to \mathbb{R}\}_{n = 1}^{\infty}\)</span> <em>ограничена на
+множестве</em> <span class="math inline">\(X\)</span>, если <span
+class="math inline">\(\exists C &gt; 0: \,\,\,\, \forall n \in
+\mathbb{N} \,\,\,\, \forall x \in X \,\,\,\, |f_n(x)| \leqslant
+C\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a>
+Функциональная последовательность <span class="math inline">\(\{f_n:
+\,\,\,\, X \to \mathbb{R}\}_{n = 1}^{\infty}\)</span> <em>сходится</em>,
+если <span class="math inline">\(\forall x_0 \in X\)</span>
+последовательность <span class="math inline">\(\{f_n(x_0)\}_{n =
+1}^{\infty}\)</span> сходится.</p>
+<p>Если функциональная последовательность сходится, то функция <span
+class="math inline">\(f: X \to \mathbb{R}, \,\,\,\, f: x_0 \mapsto
+\displaystyle \lim_{n\to \infty}f_n(x_0)\)</span> - <em>предел
+(функциональной) последовательности</em>.</p>
+<p><strong>Обозначается:</strong> <span class="math inline">\(f_n
+\xrightarrow[X]{} f\)</span></p>
+<p>В кванторах: <span class="math inline">\(\forall x_0 \in X \,\,\,\,
+\forall \varepsilon &gt; 0 \,\,\,\, \exists N_{x_0} \in \mathbb{N}:
+\,\,\,\, \forall n &gt; N_{x_0} \,\,\,\, |f_n(x_0) - f(x)| &lt;
+\varepsilon\)</span></p>
+<p><strong>Определение:</strong><a name="definition-3"></a>
+Функциональная последовательность <span class="math inline">\(\{f_n:
+\,\,\,\, X \to \mathbb{R}\}_{n = 1}^{\infty}\)</span> <em>равномерно
+сходится</em> к функции <span class="math inline">\(f: X \to
+\mathbb{R}\)</span>, если <span class="math inline">\(\forall
+\varepsilon &gt; 0 \,\,\,\, \exists N \in \mathbb{N}: \,\,\,\, \forall n
+&gt; N \,\,\,\, \forall x \in X \,\,\,\, |f_n(x) - f(x)| &lt;
+\varepsilon\)</span>.</p>
+<p><strong>Обозначается:</strong> <span class="math inline">\(f_n
+\underset{X}{\rightrightarrows} f\)</span></p>
+<p><strong>Определение:</strong><a name="definition-4"></a> <em>Ряд</em>
+<span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}f_n\)</span> <em>на множестве</em> <span
+class="math inline">\(X\)</span> - это <span
+class="math inline">\(\{\displaystyle \sum_{n = 1}^{\infty}f_n(x_0)|
+\,\,\,\, x_0 \in X\}\)</span>.</p>
+<p><span class="math inline">\(s_N(x_0) = \displaystyle \sum_{n =
+1}^{N}f_n(x_0), \,\,\,\, x_0 \in X\)</span> - <em>частичная сумма
+ряда</em>.</p>
+<p><em>Ряд</em> <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}f_n\)</span> <em>на множестве</em> <span
+class="math inline">\(X\)</span> <em>сходится</em>, если сходится
+функциональная последовательность <span
+class="math inline">\(\{s_N(x)\}_{n = 1}^{\infty}\)</span> его частичных
+сумм.</p>
+<h2
+id="критерии-равномерной-сходимости-функциональной-последовательности">Критерии
+равномерной сходимости функциональной последовательности</h2>
+<hr />
+<p><strong>Лемма:</strong><a name="lemma-0"></a> (<em>критерий
+равномерной сходимости последовательности</em>) <span
+class="math inline">\(f_n \underset{X}{\rightrightarrows} f \iff
+\displaystyle \sup_{X}|f_n(x) - f(x)| \underset{n \to
+\infty}{\rightarrow} 0\)</span> <a href="#fn3" class="footnote-ref"
+id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p><em>Доказательство:</em> определение <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> (<em>критерий Коши
+равномерной сходимости функциональной последовательности</em>) <span
+class="math inline">\(f_n \underset{X}{\rightrightarrows} f \iff \forall
+\varepsilon &gt; 0 \,\,\,\, \exists N \in \mathbb{N}: \,\,\,\,\forall n,
+m &gt; N \,\,\,\, \forall x \in X \,\,\,\, |f_n(x) - f_m(x)| &lt;
+\varepsilon\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math display">\[\Longrightarrow\]</span> Как обычно прибавить и
+вычесть <span class="math inline">\(f(x) \,\,\,\,\blacksquare\)</span>
+<span class="math display">\[\Longleftarrow\]</span> Чего-то замутить <a
+href="#fn4" class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Функции могут быть в любое числовое поле, но важно, что
+они все определены на каком-то одном множестве <span
+class="math inline">\(X\)</span>.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Нда, как будто это не определение, а тавтология.<a
+href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Значение этой леммы состоит в том, что она сводит
+понятие равномерной сходимости функциональной последовательности <span
+class="math inline">\(\{f_n\}\)</span> к понятию сходимости числовой
+последовательности <span
+class="math inline">\(\displaystyle\sup_{X}|f_n(x) - f(x)|\)</span>
+(«числовой» в широком смысле этого слова: конечное число членов
+указанной последовательности может обратиться в <span
+class="math inline">\(+\infty\)</span>).<a href="#fnref3"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Ну да мне лень 😘<a href="#fnref4" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

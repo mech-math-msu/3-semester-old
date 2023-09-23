@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+    <script>
+      window.MathJax = {
+  loader: {load: ['[tex]/bbox']},
+  tex: {packages: {'[+]': ['bbox']}}
+};
+    </script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#факторгруппы-основная-теорема-о-гомоморфизме"
+id="toc-факторгруппы-основная-теорема-о-гомоморфизме">Факторгруппы,
+основная теорема о гомоморфизме</a>
+<ul>
+<li><a href="#факторгруппа-определение"
+id="toc-факторгруппа-определение">Факторгруппа: определение</a></li>
+<li><a href="#факторгруппа-примеры"
+id="toc-факторгруппа-примеры">Факторгруппа: примеры</a></li>
+<li><a href="#основная-теорема-о-гомоморфизме"
+id="toc-основная-теорема-о-гомоморфизме">Основная теорема о
+гомоморфизме</a></li>
+<li><a href="#пример-использования-основной-теоремы-о-гомоморфизме"
+id="toc-пример-использования-основной-теоремы-о-гомоморфизме">Пример
+использования основной теоремы о гомоморфизме</a></li>
+<li><a href="#группа-автоморфизмов-и-внутренних-автоморфизмов"
+id="toc-группа-автоморфизмов-и-внутренних-автоморфизмов">Группа
+автоморфизмов и внутренних автоморфизмов</a></li>
+<li><a href="#нормальное-замыкание"
+id="toc-нормальное-замыкание">Нормальное замыкание</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="факторгруппы-основная-теорема-о-гомоморфизме">Факторгруппы,
+основная теорема о гомоморфизме</h1>
+<hr />
+<h2 id="факторгруппа-определение">Факторгруппа: определение</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a>
+<em>Факторгруппа</em> группы <span class="math inline">\(G\)</span> по
+<span style="color:#7bc99a">нормальной</span> подгруппе <span
+class="math inline">\(H\)</span> - это множество <span
+class="math inline">\(G / H = \{g\cdot H|\,\,\,\, g \in
+G\}\)</span>.</p>
+<blockquote>
+<p>Так в чем пафос?</p>
+</blockquote>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Факторгруппа
+<span class="math inline">\(G / H\)</span> - это группа относительно
+операции <span class="math inline">\(\left(g\cdot
+H\right)\cdot\left(g’\cdot H\right) = (g g’) \cdot H\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="факторгруппа-примеры">Факторгруппа: примеры</h2>
+<hr />
+<dl>
+<dt>Факторгруппа группы кватернионов по подгруппе <span
+class="math inline">\(\{\pm1\}\)</span></dt>
+<dd>
+<span class="math inline">\(Q_8 / \{\pm 1\} = \{\{\pm 1\}, \{\pm i\},
+\{\pm j\}, \{\pm k\}\}\)</span> <span class="math inline">\(i\cdot
+\{\pm1\} = \{\pm i\}\)</span>
+</dd>
+</dl>
+<p><strong>Что такое факторгруппа и подгруппа?</strong></p>
+<blockquote>
+<p>Подгруппа - это когда смортришь в микроскоп на группу, а факторгруппа
+- это когда снимаешь очки и видишь группу более расплывчато.</p>
+</blockquote>
+<h2 id="основная-теорема-о-гомоморфизме">Основная теорема о
+гомоморфизме</h2>
+<hr />
+<p><strong>Лемма:</strong><a name="lemma-0"></a> (<em>критерий
+инъективности</em>) Пусть <span class="math inline">\(\varphi: \,\,\,\,
+G \to H\)</span> - гомоморфизм.</p>
+<p>Тогда <span class="math inline">\(\varphi\)</span> инъективно <span
+class="math inline">\(\iff\)</span> <span
+class="math inline">\(\operatorname{Ker} \varphi = \{e\}\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math inline">\(\bbox[4px, border: 1px solid
+black]{\Longrightarrow}\)</span> Очевидно.</p>
+<p><span class="math inline">\(\bbox[4px, border: 1px solid
+black]{\Longleftarrow}\)</span> Пусть <span
+class="math inline">\(\varphi(a) = \varphi(b) \implies\)</span> <span
+class="math inline">\(\implies e = \varphi(a)\cdot (\varphi(b))^{-1} =
+\varphi(a)\cdot \varphi(b^{-1}) = \varphi(a\cdot b^{-1}) \implies a\cdot
+b^{-1} = e \implies a = b \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> (<em>основная
+теорема о гомоморфизме</em>) Пусть <span class="math inline">\(\varphi:
+G \to H\)</span> - гомоморфизм. Тогда</p>
+<p><span class="math display">\[\varphi(G) \simeq G / \operatorname{Ker}
+\varphi\]</span></p>
+<p><em>Доказательство:</em> Построим изоморфизм <span
+class="math inline">\(\alpha: G / \operatorname{Ker} \varphi \to
+\varphi(G)\)</span>, <span class="math inline">\(\alpha: g\cdot
+\operatorname{Ker}\varphi \mapsto \varphi(g)\)</span>.</p>
+<ol type="1">
+<li>Корректность определения отображения <span
+class="math inline">\(\alpha\)</span>. <a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>
+Пусть <span class="math inline">\(g \operatorname{Ker}\varphi = g’
+\operatorname{Ker}\varphi \implies g = g’ x, \,\,\,\, x \in
+\operatorname{Ker}\varphi\)</span>. <span class="math inline">\(\alpha(g
+\operatorname{Ker}\varphi) = \varphi(g) = \varphi(g’x) = \alpha(g’
+\operatorname{Ker}\varphi)\)</span></li>
+<li>Покажем, что <span class="math inline">\(\alpha\)</span> гомоморфизм
+<span class="math inline">\(\varphi(G)\)</span> и <span
+class="math inline">\(G / \operatorname{Ker} \varphi\)</span>.</li>
+</ol>
+<p><span class="math inline">\(\alpha((g \operatorname{Ker}\varphi)\cdot
+(g’ \operatorname{Ker}\varphi)) = \alpha(gg’\cdot
+\operatorname{Ker}\varphi) = \varphi(gg’) = \alpha(g
+\operatorname{Ker}\varphi) \alpha(g’
+\operatorname{Ker}\varphi)\)</span></p>
+<ol start="3" type="1">
+<li><p>Проверим инъективность. <span class="math inline">\(g \cdot
+\operatorname{Ker}\varphi \in \operatorname{Ker}\alpha \implies \alpha(g
+\cdot \operatorname{Ker}\varphi) = e_{\varphi(G)} = \varphi(g) \implies
+g \in \operatorname{Ker}\varphi \implies\)</span> <a href="#lemma-0">по
+лемме</a> <span class="math inline">\(\implies g = e\)</span></p></li>
+<li><p>Сюръективность следует из определения <span
+class="math inline">\(\alpha \,\,\,\,\blacksquare\)</span></p></li>
+</ol>
+<h2 id="пример-использования-основной-теоремы-о-гомоморфизме">Пример
+использования основной теоремы о гомоморфизме</h2>
+<hr />
+<p>Рассмотрим группы <span
+class="math inline">\(GL_3(\mathbb{C})\)</span><a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> и
+ее погруппу <span class="math inline">\(SL_3(\mathbb{C})\)</span><a
+href="#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a>.</p>
+<p>Чему изоморфна группа <span class="math inline">\(GL_3(\mathbb{C}) /
+SL_3(\mathbb{C})\)</span>?</p>
+<blockquote>
+<p>Вообще, это глупый вопрос и надо отвечать изоморфна себе, но хотим
+что-то поинтереснее.</p>
+</blockquote>
+<p>Подберем такой гомоморфизм, чтобы его ядром были все матрицы с
+определителем <span class="math inline">\(1\)</span>. Это определитель.
+По теореме о гомоморфизме получаем, что <span
+class="math inline">\(GL_3(\mathbb{C}) / SL_3(\mathbb{C}) \simeq
+\operatorname{Img}\det = C^{*}\)</span>.</p>
+<h2 id="группа-автоморфизмов-и-внутренних-автоморфизмов">Группа
+автоморфизмов и внутренних автоморфизмов</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Пусть <span
+class="math inline">\(G\)</span> - группа. Зафиксируем <span
+class="math inline">\(g \in G\)</span>. Рассмотрим отображение <span
+class="math inline">\(\varphi_g: G \to G\)</span>, <span
+class="math inline">\(\varphi_g: x \mapsto gxg^{-1}\)</span>. Это
+отображение автоморфизм группы <span
+class="math inline">\(G\)</span>.</p>
+<p><em>Доказательство:</em> Биективность очевидна. Проверим
+гомоморфность: <span class="math inline">\(\varphi_g(xy) = gxyg^{-1} =
+gxgg^{-1}yg^{-1} = \varphi_g(x)\varphi_g(y)
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Пусть <span
+class="math inline">\(G\)</span> - группа, <span
+class="math inline">\(\Phi: G \to \operatorname{Aut}G\)</span>, <span
+class="math inline">\(g \mapsto \varphi_g\)</span>. Тогда <span
+class="math inline">\(\Phi\)</span> - гомоморфизм.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(\Phi(gg’)(x) =
+gg’x (gg’)^{-1} = gg’xg’^{-1}g^{-1} = \Phi(g)\Phi(g’)(x)
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-1"></a> <span
+class="math inline">\(\operatorname{Ker}\Phi = \{g \in G: \,\,\,\,
+\varphi_g(x) = x \,\,\,\, \forall x \in G\}=\)</span> <span
+class="math inline">\(= \{g \in G: \,\,\,\, gxg^{-1} = x \,\,\,\,
+\forall x \in G\} = \{g \in G: \,\,\,\, gx = xg \,\,\,\, \forall x \in
+G\} = Z(G)\)</span> - <em>центр</em> группы <span
+class="math inline">\(G\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> <span
+class="math inline">\(\operatorname{Img}\Phi =
+\operatorname{Inn}G\)</span> - <em>группа внутренних автоморфизмов</em>
+<span class="math inline">\(G\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> <span
+class="math display">\[\operatorname{Inn} G \simeq G / Z(G)\]</span></p>
+<p><em>Доказательство:</em> Следует из определения <a
+href="#definition-1">центра</a>, <a href="#definition-2">группы
+внутренних автоморфизмов</a> и <a href="#theorem-0">основной теоремы о
+гомоморфизме</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a>
+(<em>нормальность подгруппы внутренних автоморфизмов</em>) Пусть <span
+class="math inline">\(G\)</span> - группа. Тогда <span
+class="math inline">\(\operatorname{Inn}G \vartriangleleft
+\operatorname{Aut}G\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(\forall \alpha
+\in \operatorname{Aut}G \,\,\,\, \forall \beta \in \operatorname{Inn}G
+\,\,\,\, (\alpha \beta \alpha^{-1})(x) =
+\alpha(\beta(\alpha(x^{-1})))=\)</span> <span class="math inline">\(=
+\alpha(g\alpha(x^{-1})g^{-1}) = \alpha(g)x \alpha^{-1}(g) \implies
+\alpha \beta \alpha^{-1} \in \operatorname{Inn}G
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-3"></a> <span
+class="math inline">\(\operatorname{Aut}G / \operatorname{Inn}G =
+\operatorname{Out}G\)</span> - <em>група внешних автоморфизмов</em>.</p>
+<h2 id="нормальное-замыкание">Нормальное замыкание</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть <span
+class="math inline">\(G\)</span> - группа, <span class="math inline">\(H
+\subset G\)</span>. <span class="math inline">\(&lt;\displaystyle\cup_{g
+\in G}gHg^{-1}&gt; = &lt;&lt;H&gt;&gt; \vartriangleleft G\)</span> -
+<em>нормальное замыкание</em> <span
+class="math inline">\(H\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Пусть <span
+class="math inline">\(H\)</span> подгруппа группы <span
+class="math inline">\(G\)</span> и <span class="math inline">\(|G:H|
+&lt; \infty\)</span>. Тогда <span class="math inline">\(\exists N
+\vartriangleleft G \,\,\,\, N \subset H \subset G: \,\,\,\, |G:N|
+\leqslant |G:H|!\)</span> <a href="#fn4" class="footnote-ref"
+id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p><em>Доказательство:</em></p>
+<p>Пусть <span class="math inline">\(G = g_1H \sqcup g_2H \sqcup \ldots
+\sqcup g_nH\)</span>. Построим гомоморфизм <span
+class="math inline">\(\varphi: G \to S_{|G:H|}\,\,\,\, g \mapsto
+\left(\begin{array}{ccccc} g_1H &amp; \dots &amp; g_nH \\ gg_1H &amp;
+\dots &amp; gg_nH \end{array}\right)\)</span>.</p>
+<p>Покажем гомоморфность <span class="math inline">\(\varphi\)</span>.
+<span class="math inline">\(\varphi(gg’)(g_i H) = gg’g_iH = g
+\varphi(g’)(g_iH) = \varphi(g)\varphi(g’)(g_iH)\)</span>. <a href="#fn5"
+class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<p>Пусть <span class="math inline">\(N = \operatorname{Ker}\varphi
+\implies N \vartriangleleft H\)</span>.</p>
+<p><span class="math inline">\(g \in N \implies g g_i H = g_i H \,\,\,\,
+\forall g_i \in G \implies gH = H \implies g \in H \implies N \subset
+H\)</span>.</p>
+<p>По <a href="#theorem-0">теореме о гомоморфизме</a> <span
+class="math inline">\(|G:N| = |G/N| = |G/\operatorname{Ker}\varphi| =
+|\operatorname{Img}\varphi| \leqslant |S_{|G:H|}| = |G:H|!
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> Любая подгруппа
+конечного индекса содержит нормальную подгруппу конечного индекса.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Вопрос:</strong> Пример выполнения условия следствия, так
+чтобы нормальная подгруппа была бесконечного индекса.</p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> (<em>теорема
+Кэли</em>) Любая конечная группа <span class="math inline">\(G\)</span>
+изоморфна некоторой подгруппе <span
+class="math inline">\(S_{|G|}\)</span>. <a href="#fn6"
+class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
+<p><em>Доказательство:</em> <span class="math inline">\(H =
+\{e\}\)</span> погруппа <span class="math inline">\(G\)</span>. По
+предыдущей теореме существует гомоморфизм <span
+class="math inline">\(\varphi: G \to S_{|G|}\)</span> и <span
+class="math inline">\(\operatorname{Ker}\varphi \subset H = \{e\}
+\implies \varphi\)</span> - инъективно <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Нужно показать, что одинаковые элементы переходят в
+одинаковые.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Невырожденные квадратные матрицы.<a href="#fnref2"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Невырожденные квадратные матрицы с определителем <span
+class="math inline">\(1\)</span>.<a href="#fnref3" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Что это за ужас🤯<a href="#fnref4" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Хочу что-то - пишу это что-то, а потом удивляюсь тому
+что получилаь правда :)<a href="#fnref5" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Вкладывается в <span
+class="math inline">\(S_{|G|}\)</span><a href="#fnref6"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

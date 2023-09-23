@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Программирование</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Программирование</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#gnuplot-cheatsheet" id="toc-gnuplot-cheatsheet">Gnuplot
+cheatsheet</a>
+<ul>
+<li><a href="#установка-своих-стилей-для-линий-и-точек"
+id="toc-установка-своих-стилей-для-линий-и-точек">Установка своих стилей
+для линий и точек</a>
+<ul>
+<li><a href="#возможные-стили-точек-и-линий"
+id="toc-возможные-стили-точек-и-линий">Возможные стили точек и
+линий</a></li>
+</ul></li>
+<li><a href="#построение-данных-из-файла"
+id="toc-построение-данных-из-файла">Построение данных из файла</a></li>
+<li><a href="#просто-полезные-команды"
+id="toc-просто-полезные-команды">Просто полезные команды</a></li>
+<li><a href="#как-экспортировать-картинки"
+id="toc-как-экспортировать-картинки">Как экспортировать
+картинки</a></li>
+<li><a href="#веселуха" id="toc-веселуха">Веселуха</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="gnuplot-cheatsheet">Gnuplot cheatsheet</h1>
+<hr />
+<h2 id="установка-своих-стилей-для-линий-и-точек">Установка своих стилей
+для линий и точек</h2>
+<hr />
+<pre class="gnuplot"><code>set style line 1 lc rgb &#39;#0060ad&#39; lt 1 lw 2 pt 7 ps 1.5</code></pre>
+<ol type="1">
+<li><code class="gnuplot">lc - linecolor</code> - цвет точек или
+линий.</li>
+<li><code class="gnuplot">lt - linetype</code> - тип линий, см. картинку
+ниже.</li>
+<li><code class="gnuplot">lw - linewidth</code> - ширина линий в
+пикселях.</li>
+<li><code class="gnuplot">pt - pointtype</code> - тип точек, см.
+картинку ниже.</li>
+<li><code class="gnuplot">ps - pointsize</code> - размер точек в
+пикселях.</li>
+</ol>
+<h3 id="возможные-стили-точек-и-линий">Возможные стили точек и
+линий</h3>
+<center>
+<object data="img/styles.svg">
+</object>
+</center>
+<h2 id="построение-данных-из-файла">Построение данных из файла</h2>
+<hr />
+<p>Пример файла с данными:</p>
+<pre class="python"><code># это комментарий, тут можно писать что угодно
+# Блоки, разделенные двумя пустыми строками индексируются
+# Блоки, разделенные одной пустой строкой не соединяются отрезками
+# index 0
+7 8
+5 6
+
+
+# index 1
+5 6
+7 8
+</code></pre>
+<p>Команда для отрисовки данных из файла:</p>
+<pre class="gnuplot"><code>plot &#39;segments.txt&#39; using 1:2 with linespoints linestyle 1</code></pre>
+<p>Можно строить <code class="gnuplot">with lines</code>, <code
+class="gnuplot">with linespoints</code>, <code
+class="gnuplot">with points</code>.</p>
+<p><code class="gnuplot">using 1:2</code> указывает какие колонки в
+текстовом файле использовать для x и y.</p>
+<p>Можно писать <code class="gnuplot">using 1:($2 * 8)</code>, чтобы
+автоматически умножить вторую колонку на 8.</p>
+<p>Можно рисовать разные блоки разными стилями:</p>
+<pre class="gnuplot"><code>plot &#39;segments.txt&#39; index 0 with linespoints linestyle 1, &#39;&#39; index 1 with points linestyle 1</code></pre>
+<p>Пустые кавычки используются, чтобы брать данные из предыдущего
+использованного файла.</p>
+<h2 id="просто-полезные-команды">Просто полезные команды</h2>
+<hr />
+<ul>
+<li>Самая полезная команда везде: <code
+class="gnuplot">help command_name</code></li>
+<li>Сделать соотношение x и y одинаковым: <code
+class="gnuplot">set size ratio -1</code> или <code
+class="gnuplot">set size square</code></li>
+<li>Поменять диапазон x или y: <code
+class="gnuplot">set xrange [-10:10]</code></li>
+<li>Нарисовать окружность: <code
+class="gnuplot">set param; plot [0:2*pi] sin(t), cos(t)</code></li>
+<li>нарисовать красивую кривую через точки <code
+class="gnuplot">plot "ans.txt" using 1:2 smooth csplines</code></li>
+</ul>
+<h2 id="как-экспортировать-картинки">Как экспортировать картинки</h2>
+<hr />
+<p>Можно в формате <code class="cpp">png</code> или <code
+class="cpp">svg</code>. <a href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a></p>
+<p>Надо написать:</p>
+<ol type="1">
+<li><code class="gnuplot">set term svg</code></li>
+<li><code class="gnuplot">set output "filename.svg"</code></li>
+<li><code class="gnuplot">plot ...</code></li>
+</ol>
+<p>Например, для файла выше получается такая картинка:</p>
+<center>
+<object data="img/file.svg">
+</object>
+</center>
+<h2 id="веселуха">Веселуха</h2>
+<hr />
+<p>Можно рисовать <code class="cpp">ascii</code>-артом. Для этого надо
+написать <code class="gnuplot">set term dumb</code>.</p>
+<p><img src="img/dumb.png" /></p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>И еще в куче других, но для этого надо почитать
+документацию.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

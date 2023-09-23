@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+    <script>
+      window.MathJax = {
+  loader: {load: ['[tex]/bbox']},
+  tex: {packages: {'[+]': ['bbox']}}
+};
+    </script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#группы" id="toc-группы">Группы</a>
+<ul>
+<li><a href="#много-много-всяких-примеров"
+id="toc-много-много-всяких-примеров">Много-много всяких
+примеров</a></li>
+<li><a href="#зачем-это-все-нужно" id="toc-зачем-это-все-нужно">Зачем
+это все нужно?</a></li>
+<li><a href="#группа-диэдра" id="toc-группа-диэдра">Группа Диэдра</a>
+<ul>
+<li><a href="#группа-диэдра-правильного-n-угольника"
+id="toc-группа-диэдра-правильного-n-угольника">Группа Диэдра правильного
+<span class="math inline">\(n\)</span>-угольника</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#section" id="toc-section">❌</a></li>
+</ul>
+</nav>
+</details>
+<h1 id="группы">Группы</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> <em>Бинарная
+операция</em> - это отображение <span class="math inline">\(\boxdot: G
+\times G \to G\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-8"></a>
+<em>Группоид</em> - это множество с бинарной операцией.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a>
+<em>Группа</em> - множество <span class="math inline">\(G\)</span> с
+бинарной операцией <span class="math inline">\(\boxdot: G \times G \to
+G\)</span> (операцию называют сложение или умножение), для которой
+выполнено:</p>
+<ol type="1">
+<li><span class="math inline">\((a \boxdot b) \boxdot c = a \boxdot (b
+\boxdot c) \,\,\,\, \forall a, b, c \in G\)</span>
+(<em>ассоциативность</em>)</li>
+<li><span class="math inline">\(\exists e \in G: \,\,\,\, \forall a \in
+G \,\,\,\, a \boxdot e = e \boxdot a = a\)</span> (<span
+class="math inline">\(e\)</span> - <em>нейтральный элемент</em>, <span
+class="math inline">\(e\)</span> - <em>единица</em>, если операция
+называется умножением, и <span class="math inline">\(e\)</span> -
+<em>ноль</em>, если сложением)</li>
+<li><span class="math inline">\(\forall a \in G \,\,\,\, \exists a^{-1}
+\in G: \,\,\,\, a \boxdot a^{-1} = a^{-1} \boxdot a = e\)</span> (<span
+class="math inline">\(a^{-1}\)</span> - <em>обратный элемент</em>, если
+операция называется умножением, и <span
+class="math inline">\(a^{-1}\)</span> - <em>противоположный
+элемент</em>, если сложением)</li>
+</ol>
+<p>Множество, для которого выполнено 1, - <em>полугруппа</em>.</p>
+<p>Множество, для которого выполнено 1 и 2, - <em>моноид</em>.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Если
+операция на группе ассоциативна <span class="math inline">\((a \boxdot b
+= b \boxdot a)\)</span>, то группа <em>абелева</em>.</p>
+<h2 id="много-много-всяких-примеров">Много-много всяких примеров</h2>
+<hr />
+<blockquote>
+<p>Ведь любой может придумать определение.</p>
+</blockquote>
+<dl>
+<dt><strong>Аддитивная группа поля <span
+class="math inline">\(F\)</span></strong></dt>
+<dd>
+<p>Группа относительно сложения (противоположный элемент и ноль
+очевидны).</p>
+<ul>
+<li><span class="math inline">\((\mathbb{Z}, +) =
+\mathbb{Z}\)</span></li>
+<li><span class="math inline">\((\mathbb{R}, +)\)</span></li>
+<li><span class="math inline">\((\mathbb{Q}, +)\)</span></li>
+<li><span class="math inline">\((\mathbb{C}, +)\)</span></li>
+</ul>
+</dd>
+<dt><strong>Тривиальная группа</strong></dt>
+<dd>
+<p><span class="math inline">\(\{1\}\)</span> - <em>тривиальная
+группа</em>.</p>
+</dd>
+<dt><strong>Мультипликативная группа поля <span
+class="math inline">\(F\)</span></strong></dt>
+<dd>
+<p>Группа относительно умножения (обратный элемент и единица очевидны).
+<span class="math inline">\(\times\)</span> над группой обозначает, что
+выбрасываются все элементы, которые не имеют обратных.</p>
+<ul>
+<li><span class="math inline">\((\mathbb{Z}^{\times}, \cdot) = (\{1,
+-1\}, \cdot)\)</span></li>
+<li><span class="math inline">\((\mathbb{R}^{\times}, \cdot) =
+(\mathbb{R}\setminus \{0\}, \cdot)\)</span></li>
+<li><span class="math inline">\((\mathbb{Q}^{\times},
+\cdot)\)</span></li>
+<li><span class="math inline">\((\mathbb{C}^{\times},
+\cdot)\)</span></li>
+</ul>
+</dd>
+<dt><strong>Группа вычетов по модулю <span
+class="math inline">\(n\)</span></strong></dt>
+<dd>
+<p>Множество <span class="math inline">\(\{1, \ldots, n - 1\}\)</span> с
+операцией сложения по модулю <span class="math inline">\(n\)</span>.</p>
+<p><strong>Обозначается:</strong> <span
+class="math inline">\(\mathbb{Z}_n\)</span></p>
+</dd>
+<dt><strong>Группа комплексных корней степени <span
+class="math inline">\(n\)</span> из <span
+class="math inline">\(1\)</span></strong></dt>
+<dd>
+<p>Множестов <span class="math inline">\(\{\cos(\frac{2\pi k}{n}) + i
+\sin(\frac{2\pi k}{n}), \,\,\,\, k \in \{1, \ldots, n -
+1\}\}\)</span>.</p>
+</dd>
+<dt><strong>Группа перестановок длины <span
+class="math inline">\(n\)</span></strong></dt>
+<dd>
+<p>Множество биекций множества <span class="math inline">\(\{1, \ldots,
+n\}\)</span> в себя с операцией композиции и единицей - тождественным
+отображением в себя.</p>
+<p><a href="#definition-7">Про симметричекие группы</a>.</p>
+<p><strong>Обозначается:</strong> <span
+class="math inline">\(S_n\)</span></p>
+</dd>
+<dt><strong>Полная линейная группа</strong></dt>
+<dd>
+<p>Группа невырожденных квадратных матриц с элементами поля <span
+class="math inline">\(F\)</span> размера <span
+class="math inline">\(n\)</span>.</p>
+<p><strong>Обозначается:</strong> <span
+class="math inline">\(GL_n(F)\)</span> <a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+</dd>
+<dt><strong>Специальная линейная группа</strong></dt>
+<dd>
+<p>Группа квадратных матриц с элементами поля <span
+class="math inline">\(F\)</span> размера <span
+class="math inline">\(n\)</span> с определителем <span
+class="math inline">\(1\)</span>.</p>
+<p><strong>Обозначается:</strong> <span
+class="math inline">\(SL_n(F)\)</span> <a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+</dd>
+<dt><strong>Группа кватернионов</strong></dt>
+<dd>
+<p>Это множество <span class="math inline">\(Q_8 = \{\pm 1, \pm i, \pm
+j, \pm k\}\)</span>. Единица - это <span
+class="math inline">\(1\)</span>. Умножение задается по правилам:</p>
+<p><span class="math display">\[i^2 = j ^2 = k^2 = -1\]</span> <span
+class="math display">\[\forall x \in Q_8 \,\,\,\, -1 \cdot x = x \cdot
+(-1) = (-x)\]</span></p>
+<p><img src="img/kvaternion.png" /></p>
+<p>Если идем по стрелкам, то произведение равно третьему элементу. Если
+идем в обратную сторону, то произведение равно отрицанию третьего
+элемента. Например: <span class="math inline">\(i\cdot j = k, \,\,\,\,
+j\cdot k = i, \,\,\,\, j\cdot i = -k\)</span></p>
+</dd>
+</dl>
+<h2 id="зачем-это-все-нужно">Зачем это все нужно?</h2>
+<hr />
+<blockquote>
+<p>Ну вообще, это математика.</p>
+</blockquote>
+<p><strong>Определение:</strong><a name="definition-6"></a>
+<em>Преобразование множества</em> - это его отображение в себя.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> <em>Группа
+преобразований множества</em> <span class="math inline">\(X\)</span> -
+это группа, состоящая из биективных преобразований множества <span
+class="math inline">\(X\)</span> с операцией композиции.</p>
+<p><strong>Определение:</strong><a name="definition-7"></a> Группа
+преобразований множества <span class="math inline">\(X\)</span>,
+состоящая из всех биективных преобразований - это <em>симметрическая
+группа множества</em> <span class="math inline">\(X\)</span>.</p>
+<p><strong>Например:</strong> <span
+class="math inline">\(GL_n(\mathbb{C})\)</span> - это группа
+преобразований векторного пространства <span
+class="math inline">\(V\)</span> строк из комплексных чисел длины <span
+class="math inline">\(n\)</span>. Биекции - это автоморфизмы (линейные
+операторы) <span class="math inline">\(V\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Любая группа - это
+группа преобразований автоморфизмов некоторого графа.</p>
+<p><em>Доказательство:</em> хм</p>
+<h2 id="группа-диэдра">Группа Диэдра</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-4"></a> (<em>Группа
+Диэдра</em>)</p>
+<p>Пусть <span class="math inline">\(X\)</span> - метрическое
+пространство, <span class="math inline">\(A \subset X\)</span>.</p>
+<p><span class="math inline">\(\operatorname{Sym} A = \{\varphi: A \to
+A: \,\,\,\, \rho(\varphi(x), \varphi(y)) = \rho(x, y)\}\)</span> -
+<em>группа Диэдра</em> множества <span class="math inline">\(A\)</span>.
+<a href="#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a></p>
+<h3 id="группа-диэдра-правильного-n-угольника">Группа Диэдра правильного
+<span class="math inline">\(n\)</span>-угольника</h3>
+<hr />
+<p>Состоит из <span class="math inline">\(n\)</span> поворотов на углы
+<span class="math inline">\(\frac{2\pi k}{n}\)</span> и <span
+class="math inline">\(n\)</span> отражений.</p>
+<p><strong>Определение:</strong><a name="definition-5"></a> <em>Порядок
+группы</em> <span class="math inline">\(G\)</span> - это мощность
+множества <span class="math inline">\(G\)</span>.</p>
+<p>что-то про перемножение элементов группы Диэдра</p>
+<h1 id="section">❌</h1>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>General linear.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Special linear.<a href="#fnref2" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p><span class="math inline">\(\rho\)</span> - метрика в
+пространстве <span class="math inline">\(X\)</span>.<a href="#fnref3"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

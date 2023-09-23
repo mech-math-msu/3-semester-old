@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+    <script>
+      window.MathJax = {
+  loader: {load: ['[tex]/bbox']},
+  tex: {packages: {'[+]': ['bbox']}}
+};
+    </script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#подгруппы" id="toc-подгруппы">Подгруппы</a></li>
+<li><a href="#системы-порождающих" id="toc-системы-порождающих">Системы
+порождающих</a></li>
+<li><a href="#изоморфные-группы-и-теорема-кэли"
+id="toc-изоморфные-группы-и-теорема-кэли">Изоморфные группы и теорема
+Кэли</a></li>
+<li><a href="#циклические-группы"
+id="toc-циклические-группы">Циклические группы</a></li>
+</ul>
+</nav>
+</details>
+<h2 id="подгруппы">Подгруппы</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(G\)</span> - группа, <span class="math inline">\(H
+\subset G\)</span>. <span class="math inline">\(H\)</span> -
+<em>подгруппа</em> группы <span class="math inline">\(G\)</span>, если
+<span class="math inline">\(H\)</span> - группа относительно операции
+группы <span class="math inline">\(G\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
+class="math inline">\((G, \cdot)\)</span> - группа, <span
+class="math inline">\(H \subset G\)</span>.</p>
+<p>Тогда <span class="math inline">\(H\)</span> - <em>подгруппа</em>
+группы <span class="math inline">\(G\)</span></p>
+<p><span class="math display">\[\Updownarrow\]</span></p>
+<p><span class="math inline">\((1) \,\,\,\, H \ne
+\varnothing\)</span>,</p>
+<p><span class="math inline">\((2) \,\,\,\, \forall h_1, h_2 \in H
+\,\,\,\, h_1 \cdot h_2 \in H\)</span>,</p>
+<p><span class="math inline">\((3) \,\,\,\, \forall h \in H \,\,\,\,
+h^{-1} \in H\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(\Downarrow
+\,\,\,\, \,\,\,\,\blacksquare\)</span></p>
+<p><span class="math inline">\(\Uparrow\)</span></p>
+<p>Докажем, что <span class="math inline">\(H\)</span> группа
+относительно операции <span class="math inline">\(\cdot\)</span>. <span
+class="math inline">\(H \ne \varnothing \Rightarrow \exists h \in H
+\Rightarrow h^{-1} \in H\)</span>. По <span class="math inline">\((2)
+\,\,\,\, e = h \cdot h^{-1} \in H \Rightarrow e \in H
+\,\,\,\,\blacksquare\)</span></p>
+<h2 id="системы-порождающих">Системы порождающих</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\(G\)</span> - группа, <span class="math inline">\(S
+\subset G\)</span>. Множество <span class="math inline">\(&lt;S&gt; =
+\{g_1^{\varepsilon_1}\cdot \ldots \cdot g_k^{\varepsilon_k}| \,\,\,\, k
+\in \mathbb{N}, \,\,\,\, g_1, \ldots, g_k \in H, \,\,\,\, \varepsilon_1,
+\ldots, \varepsilon_k \in \{-1, 1\}\}\)</span> - <em>подгруппа,
+порожденная множеством</em> <span class="math inline">\(S\)</span>.</p>
+<h2 id="изоморфные-группы-и-теорема-кэли">Изоморфные группы и теорема
+Кэли</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-6"></a> Пусть (G, )$
+и <span class="math inline">\((H, \cdot)\)</span> группы. Отображение
+<span class="math inline">\(\varphi: G \to H\)</span>, такое, что <span
+class="math inline">\(\varphi(g_1\star g_2) = \varphi(g_1)\cdot
+\varphi(g_2)\)</span> - <em>гомоморфизм</em> групп <span
+class="math inline">\(G\)</span> и <span
+class="math inline">\(H\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Группы <span
+class="math inline">\((G, \star)\)</span> и <span
+class="math inline">\((H, \cdot)\)</span> <em>изоморфны</em>, если
+существует биективный гомоморфизм <span class="math inline">\(\varphi: G
+\to H\)</span> <a href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a>.</p>
+<p><strong>Обозначение:</strong> <span class="math inline">\(G \cong
+H\)</span></p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Если группа
+<span class="math inline">\(H\)</span> изоморфна некоторой подгруппе
+группы <span class="math inline">\(G\)</span>, то <span
+class="math inline">\(H\)</span> <em>вкладывается в</em> <span
+class="math inline">\(G\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> (<em>Кэли</em>)
+Любая конечная <a href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a> группа <span
+class="math inline">\((G, \cdot)\)</span> вкладывается в <span
+class="math inline">\(S_{|G|}\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p>Пусть <span class="math inline">\(G = \{g_1, \ldots,
+g_n\}\)</span>.</p>
+<p>Пусть <span class="math inline">\(\varphi: g_i \mapsto
+\left(\begin{array}{ccc} g_1 &amp; \dots &amp; g_n \\ g_i\cdot g_1 &amp;
+\dots &amp; g_i \cdot g_n \end{array}\right)\)</span>.</p>
+<p>Докажем, что <span class="math inline">\(\varphi\)</span> -
+изоморфизм групп <span class="math inline">\(G\)</span> и <span
+class="math inline">\(&lt;\varphi(G)&gt;\)</span>.</p>
+<p><span class="math inline">\(\varphi(g \cdot g^{\prime}) =
+\left(\begin{array}{ccc} g_1 &amp; \dots &amp; g_n \\ g \cdot
+g^{\prime}\cdot g_1 &amp; \dots &amp; g \cdot g^{\prime} \cdot g_n
+\end{array}\right) =\)</span> <span class="math inline">\(=
+\left(\begin{array}{ccc} g_1 &amp; \dots &amp; g_n \\ g \cdot g_1 &amp;
+\dots &amp; g \cdot g_n \end{array}\right)\circ\left(\begin{array}{ccc}
+g_1 &amp; \dots &amp; g_n \\ g^{\prime}\cdot g_1 &amp; \dots &amp;
+g^{\prime} \cdot g_n \end{array}\right) = \varphi(g)\circ
+\varphi(g^{\prime})\)</span></p>
+<p>Проверим биективность:</p>
+<ol type="1">
+<li><span class="math inline">\(\varphi\)</span> - сюръективно по
+определению.</li>
+<li>Пусть <span class="math inline">\(\varphi(g) =
+\varphi(g^{\prime})\)</span>. Тогда <span class="math inline">\(g =
+\varphi(g)(e) = \varphi(g^{\prime})(e) = g^{\prime}
+\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<h2 id="циклические-группы">Циклические группы</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-4"></a> Группа
+<em>циклическая</em>, если она порождается одним элементом.</p>
+<p><strong>Упражнение:</strong><a name="exercise-0"></a> Циклическая
+группа - абелева.</p>
+<p><strong>Определение:</strong><a name="definition-5"></a> <em>Порядок
+элемента</em> <span class="math inline">\(g\)</span> группы <span
+class="math inline">\(G\)</span> - это минимальное натуральное <span
+class="math inline">\(n\)</span>, такое, что <span
+class="math inline">\(g^n = e\)</span>. Если такого <span
+class="math inline">\(n\)</span> не существует, то порядок -
+бесконечность.</p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Порядок
+элемента <span class="math inline">\(g \in G\)</span> равен <span
+class="math inline">\(|&lt;g&gt;|\)</span>.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(&lt;g&gt;
+= \{e, g, g^2, \ldots, g^{n - 1}\}\)</span>.</p>
+<p>Пусть <span class="math inline">\(g^l = g^m \,\,\,\, (n - 1 &gt; l
+&gt; m) \,\,\,\, \Rightarrow g^{l - m} = e \Rightarrow |&lt;g&gt;| &lt;
+n - 1 \,\,\,\,\blacksquare\)</span></p>
+<blockquote>
+<p>Эта теорема мечта любого алгебраиста.</p>
+</blockquote>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> (<em>Классификация
+циклических групп</em>)</p>
+<ol type="1">
+<li><span class="math inline">\(\forall n \in \mathbb{N} \,\,\,\,
+\exists\)</span> циклическая группа порядка <span
+class="math inline">\(n\)</span>.</li>
+<li>Все циклические группы порядка <span
+class="math inline">\(n\)</span> изоморфны.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li><span class="math inline">\(\mathbb{Z}_n\)</span> <a href="#fn3"
+class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a></li>
+<li>Пусть <span class="math inline">\(&lt;g&gt;_n\)</span> - циклическая
+группа порядка <span class="math inline">\(n\)</span>, порожденная
+элементом <span class="math inline">\(g\)</span>. Пусть <span
+class="math inline">\(\varphi: k \mapsto g^k
+\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> (<em>о подгруппах
+циклических групп</em>)</p>
+<ol type="1">
+<li>Подгруппа циклической группы - циклическая.</li>
+<li>У циклической группы порядка <span class="math inline">\(n \in
+\mathbb{N}\)</span> существует ровно по одной подгруппе каждого порядка,
+делящего <span class="math inline">\(n\)</span>, и других подгрупп
+нет.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li><p>Пусть <span class="math inline">\(H\)</span> подгруппа <span
+class="math inline">\(G = &lt;g&gt;\)</span>.<br> Пусть <span
+class="math inline">\(k = \min\{l \in \mathbb{N}| \,\,\,\, g^l \in
+H\}\)</span>. <br> Докажем, что <span class="math inline">\(H =
+&lt;g^k&gt;\)</span>. <span class="math inline">\(H \ni g^m = g^{q k +
+r} \,\,\,\, (k &gt; r \ge 0) = (g^k)^q\cdot g^r \Rightarrow r = 0
+\,\,\,\,\blacksquare\)</span></p></li>
+<li><p>Пусть <span class="math inline">\(G = &lt;g&gt;_n\)</span> <a
+href="#fn4" class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a>, <span class="math inline">\(k
+\,\,|\,\, n\)</span>. Тогда <span
+class="math inline">\(&lt;g^{\frac{n}{k}}&gt;\)</span> - циклическая
+группа порядка <span class="math inline">\(k\)</span>. Существование
+доказано.</p></li>
+</ol>
+<p>Пусть <span class="math inline">\(H\)</span> циклическая подгруппа
+порядка <span class="math inline">\(k\)</span>, по рассуждению 1. <span
+class="math inline">\(H = &lt;g^{\frac{n}{k}}&gt;\)</span><span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>биективное отображение <span
+class="math inline">\(\varphi: G \to H\)</span>, такое, что <span
+class="math inline">\(\varphi(g_1\star g_2) = \varphi(g_1)\cdot
+\varphi(g_2)\)</span>.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Для бесконечных тоже верно.<a href="#fnref2"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Порождается <span class="math inline">\(1\)</span>.<a
+href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Циклическая группа <span
+class="math inline">\(G\)</span> порождена элементом <span
+class="math inline">\(g\)</span><a href="#fnref4" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Дифференциальные уравнения</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Дифференциальные уравнения</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#обыкновенные-дифференциальные-уравнения"
+id="toc-обыкновенные-дифференциальные-уравнения">Обыкновенные
+дифференциальные уравнения</a>
+<ul>
+<li><a
+href="#методы-интегрирования-дифференциальных-уравнений-первого-порядка"
+id="toc-методы-интегрирования-дифференциальных-уравнений-первого-порядка">Методы
+интегрирования дифференциальных уравнений первого порядка</a></li>
+<li><a
+href="#геометрический-смысл-дифференциального-уравнения-первого-порядка"
+id="toc-геометрический-смысл-дифференциального-уравнения-первого-порядка">Геометрический
+смысл дифференциального уравнения первого порядка</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="обыкновенные-дифференциальные-уравнения">Обыкновенные
+дифференциальные уравнения</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> <span
+class="math inline">\(f(x, y, \ldots, y^{(n)}) = 0\)</span> <a
+href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a> - <em>(обыкновенное)
+дифференциальное уравнение</em>.</p>
+<p><span class="math inline">\(x\)</span> - <em>независимая
+переменная</em>,</p>
+<p><span class="math inline">\(y = y(x)\)</span> - <em>неизвестная
+функция</em>,</p>
+<p><span class="math inline">\(n\)</span> - <em>порядок
+уравнения</em>.</p>
+<p><span class="math inline">\(f(x, y, \ldots, y^{(n)}) = 0\)</span> -
+<em>уравнение, не разрешённое относительно старшей производной</em>.</p>
+<p><span class="math inline">\(y^{(n)} = F(x, y, \ldots, y^{(n -
+1)})\)</span> - <em>уравнение, разрешённое относительно старшей
+производной</em>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Функция
+<span class="math inline">\(y = \varphi(x)\)</span>, <span
+class="math inline">\(n\)</span> раз дифференцируемая и обращающаяя
+уравнение <span class="math inline">\(f(x, y, \ldots, y^{(n)}) =
+0\)</span> в тождество, - <em>решение дифференциального
+уравнения</em>.</p>
+<h2
+id="методы-интегрирования-дифференциальных-уравнений-первого-порядка">Методы
+интегрирования дифференциальных уравнений первого порядка</h2>
+<hr />
+<p>Дифференциальные уравнения первого порядка <a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>
+выделяются из остальных дифференциальных уравнений, так как им можно
+придать геометрический смысл.</p>
+<h2
+id="геометрический-смысл-дифференциального-уравнения-первого-порядка">Геометрический
+смысл дифференциального уравнения первого порядка</h2>
+<hr />
+<p><span class="math inline">\(y’ = f(x, y)\)</span> - это уравнение
+задаёт направление касательных к графику решения в каждой точке, где оно
+определено.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Совокупность
+касательных векторов - <em>поле направлений</em> <a href="#fn3"
+class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a>.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Линии, вдоль
+которых поле постоянно, - <em>изоклины</em>.</p>
+<p><strong>Определение:</strong><a name="definition-4"></a> Кривая,
+касающаяся в каждой своей точке поля направлений, - <em>интегральная
+кривая поля направлений</em> <a href="#fn4" class="footnote-ref"
+id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
+<p>Если интегральные кривые поля направлений - функции, то они задают
+график решения.</p>
+<p><strong>Пример:</strong> <span class="math display">\[y’(x) = y(x) -
+x^2 \,\,\,\, (1)\]</span></p>
+<p>Изоклины уравнения <span class="math inline">\((1)\)</span>: <span
+class="math inline">\(c = y(x) - x^2\)</span></p>
+<center>
+<object data="img/izoklin.svg">
+</object>
+</center>
+<p>Интегральные кривые и поле направлений:</p>
+<center>
+<object data="img/integral-curves-slope-field.svg">
+</object>
+</center>
+<p><strong>Еще пример:</strong> <span class="math inline">\(y \cdot y’ +
+x = 0\)</span></p>
+<center>
+<object data="img/integral-curves-slope-field-2.svg">
+</object>
+</center>
+<p><strong>Определение:</strong><a name="definition-5"></a> <em>Общее
+решение дифференциального уравнения</em> - это функция или совокупность
+функция, содержащаяя все решения дифференциального уравнения.</p>
+<p><strong>Определение:</strong><a name="definition-6"></a>
+<em>ПРивет</em></p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p><span class="math inline">\(f\)</span> - произвольная
+функция.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><span class="math inline">\(y’ = f(x, y)\)</span> -
+уравнение первого порядка, разрешенное относительно старшей
+производной.<a href="#fnref2" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>По-английски: slope field.<a href="#fnref3"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>По-английски: integral curves.<a href="#fnref4"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

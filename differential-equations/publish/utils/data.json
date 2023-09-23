@@ -1,0 +1,65 @@
+[
+    {
+        "keyword": "(обыкновенное) дифференциальное уравнение независимая переменная неизвестная функция порядок уравнения уравнение, не разрешённое относительно старшей производной уравнение, разрешённое относительно старшей производной",
+        "data": "**Определение:**<a name=\"definition-0\"></a> $f(x, y, \\ldots, y^{(n)}) = 0$ ^[$f$ - произвольная функция.] - *(обыкновенное) дифференциальное уравнение*.\n\n$x$ - *независимая переменная*,\n\n$y = y(x)$ - *неизвестная функция*,\n\n$n$ - *порядок уравнения*.\n\n$f(x, y, \\ldots, y^{(n)}) = 0$ - *уравнение, не разрешённое относительно старшей производной*.\n\n$y^{(n)} = F(x, y, \\ldots, y^{(n - 1)})$ - *уравнение, разрешённое относительно старшей производной*.\n\n\n",
+        "data_type": "definition",
+        "url": "lection-intro.html#definition-0",
+        "html": "<p><strong><a href=\"lection-intro.html#definition-0\">Определение:</a></strong> <span\nclass=\"math inline\">\\(f(x, y, \\ldots, y^{(n)}) = 0\\)</span> <a\nhref=\"#fn1\" class=\"footnote-ref\" id=\"fnref1\"\nrole=\"doc-noteref\"><sup>1</sup></a> - <em>(обыкновенное)\nдифференциальное уравнение</em>.</p>\n<p><span class=\"math inline\">\\(x\\)</span> - <em>независимая\nпеременная</em>,</p>\n<p><span class=\"math inline\">\\(y = y(x)\\)</span> - <em>неизвестная\nфункция</em>,</p>\n<p><span class=\"math inline\">\\(n\\)</span> - <em>порядок\nуравнения</em>.</p>\n<p><span class=\"math inline\">\\(f(x, y, \\ldots, y^{(n)}) = 0\\)</span> -\n<em>уравнение, не разрешённое относительно старшей производной</em>.</p>\n<p><span class=\"math inline\">\\(y^{(n)} = F(x, y, \\ldots, y^{(n -\n1)})\\)</span> - <em>уравнение, разрешённое относительно старшей\nпроизводной</em>.</p>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p><span class=\"math inline\">\\(f\\)</span> - произвольная\nфункция.<a href=\"#fnref1\" class=\"footnote-back\"\nrole=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "решение дифференциального уравнения",
+        "data": "**Определение:**<a name=\"definition-1\"></a> Функция $y = \\varphi(x)$, $n$ раз дифференцируемая и обращающаяя уравнение $f(x, y, \\ldots, y^{(n)}) = 0$ в тождество, - *решение дифференциального уравнения*.\n\n",
+        "data_type": "definition",
+        "url": "lection-intro.html#definition-1",
+        "html": "<p><strong><a href=\"lection-intro.html#definition-1\">Определение:</a></strong> Функция\n<span class=\"math inline\">\\(y = \\varphi(x)\\)</span>, <span\nclass=\"math inline\">\\(n\\)</span> раз дифференцируемая и обращающаяя\nуравнение <span class=\"math inline\">\\(f(x, y, \\ldots, y^{(n)}) =\n0\\)</span> в тождество, - <em>решение дифференциального\nуравнения</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "поле направлений",
+        "data": "**Определение:**<a name=\"definition-2\"></a> Совокупность касательных векторов - *поле направлений* ^[По-английски: slope field.].\n\n",
+        "data_type": "definition",
+        "url": "lection-intro.html#definition-2",
+        "html": "<p><strong><a href=\"lection-intro.html#definition-2\">Определение:</a></strong> Совокупность\nкасательных векторов - <em>поле направлений</em> <a href=\"#fn1\"\nclass=\"footnote-ref\" id=\"fnref1\"\nrole=\"doc-noteref\"><sup>1</sup></a>.</p>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>По-английски: slope field.<a href=\"#fnref1\"\nclass=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "изоклины",
+        "data": "**Определение:**<a name=\"definition-3\"></a> Линии, вдоль которых поле постоянно, - *изоклины*.\n\n",
+        "data_type": "definition",
+        "url": "lection-intro.html#definition-3",
+        "html": "<p><strong><a href=\"lection-intro.html#definition-3\">Определение:</a></strong> Линии, вдоль\nкоторых поле постоянно, - <em>изоклины</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "интегральная кривая поля направлений",
+        "data": "**Определение:**<a name=\"definition-4\"></a> Кривая, касающаяся в каждой своей точке поля направлений, - *интегральная кривая поля направлений* ^[По-английски: integral curves.].\n\n",
+        "data_type": "definition",
+        "url": "lection-intro.html#definition-4",
+        "html": "<p><strong><a href=\"lection-intro.html#definition-4\">Определение:</a></strong> Кривая,\nкасающаяся в каждой своей точке поля направлений, - <em>интегральная\nкривая поля направлений</em> <a href=\"#fn1\" class=\"footnote-ref\"\nid=\"fnref1\" role=\"doc-noteref\"><sup>1</sup></a>.</p>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>По-английски: integral curves.<a href=\"#fnref1\"\nclass=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "общее решение дифференциального уравнения",
+        "data": "**Определение:**<a name=\"definition-5\"></a> *Общее решение дифференциального уравнения* - это функция или совокупность функция, содержащаяя все решения дифференциального уравнения.\n\n",
+        "data_type": "definition",
+        "url": "lection-intro.html#definition-5",
+        "html": "<p><strong><a href=\"lection-intro.html#definition-5\">Определение:</a></strong> <em>Общее\nрешение дифференциального уравнения</em> - это функция или совокупность\nфункция, содержащаяя все решения дифференциального уравнения.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "привет",
+        "data": "**Определение:**<a name=\"definition-6\"></a> *ПРивет*\n\n",
+        "data_type": "definition",
+        "url": "lection-intro.html#definition-6",
+        "html": "<p><strong><a href=\"lection-intro.html#definition-6\">Определение:</a></strong>\n<em>ПРивет</em></p>",
+        "statement_html": "",
+        "proof_html": ""
+    }
+]

@@ -1,0 +1,533 @@
+[
+    {
+        "keyword": "бинарная операция",
+        "data": "**Определение:**<a name=\"definition-0\"></a> *Бинарная операция* - это отображение $\\boxdot: G \\times G \\to G$.\n\n",
+        "data_type": "definition",
+        "url": "lection-group-intro.html#definition-0",
+        "html": "<p><strong><a href=\"lection-group-intro.html#definition-0\">Определение:</a></strong> <em>Бинарная\nоперация</em> - это отображение <span class=\"math inline\">\\(\\boxdot: G\n\\times G \\to G\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "группоид",
+        "data": "**Определение:**<a name=\"definition-8\"></a> *Группоид* - это множество с бинарной операцией.\n\n",
+        "data_type": "definition",
+        "url": "lection-group-intro.html#definition-8",
+        "html": "<p><strong><a href=\"lection-group-intro.html#definition-8\">Определение:</a></strong>\n<em>Группоид</em> - это множество с бинарной операцией.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "группа ассоциативность нейтральный элемент единица ноль обратный элемент противоположный элемент полугруппа моноид",
+        "data": "**Определение:**<a name=\"definition-1\"></a> *Группа* - множество $G$ с бинарной операцией $\\boxdot: G \\times G \\to G$ (операцию называют сложение или умножение), для которой выполнено:\n\n1. $(a \\boxdot b) \\boxdot c = a \\boxdot (b \\boxdot c) \\,\\,\\,\\, \\forall a, b, c \\in G$ (*ассоциативность*)\n2. $\\exists e \\in G: \\,\\,\\,\\, \\forall a \\in G \\,\\,\\,\\, a \\boxdot e = e \\boxdot a = a$ ($e$ - *нейтральный элемент*, $e$ - *единица*, если операция называется умножением, и $e$ - *ноль*, если сложением)\n3. $\\forall a \\in G \\,\\,\\,\\, \\exists a^{-1} \\in G: \\,\\,\\,\\, a \\boxdot a^{-1} = a^{-1} \\boxdot a = e$ ($a^{-1}$ - *обратный элемент*, если операция называется умножением, и $a^{-1}$ - *противоположный элемент*, если сложением)\n\nМножество, для которого выполнено 1, - *полугруппа*.\n\nМножество, для которого выполнено 1 и 2, - *моноид*.\n\n",
+        "data_type": "definition",
+        "url": "lection-group-intro.html#definition-1",
+        "html": "<p><strong><a href=\"lection-group-intro.html#definition-1\">Определение:</a></strong>\n<em>Группа</em> - множество <span class=\"math inline\">\\(G\\)</span> с\nбинарной операцией <span class=\"math inline\">\\(\\boxdot: G \\times G \\to\nG\\)</span> (операцию называют сложение или умножение), для которой\nвыполнено:</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\((a \\boxdot b) \\boxdot c = a \\boxdot (b\n\\boxdot c) \\,\\,\\,\\, \\forall a, b, c \\in G\\)</span>\n(<em>ассоциативность</em>)</li>\n<li><span class=\"math inline\">\\(\\exists e \\in G: \\,\\,\\,\\, \\forall a \\in\nG \\,\\,\\,\\, a \\boxdot e = e \\boxdot a = a\\)</span> (<span\nclass=\"math inline\">\\(e\\)</span> - <em>нейтральный элемент</em>, <span\nclass=\"math inline\">\\(e\\)</span> - <em>единица</em>, если операция\nназывается умножением, и <span class=\"math inline\">\\(e\\)</span> -\n<em>ноль</em>, если сложением)</li>\n<li><span class=\"math inline\">\\(\\forall a \\in G \\,\\,\\,\\, \\exists a^{-1}\n\\in G: \\,\\,\\,\\, a \\boxdot a^{-1} = a^{-1} \\boxdot a = e\\)</span> (<span\nclass=\"math inline\">\\(a^{-1}\\)</span> - <em>обратный элемент</em>, если\nоперация называется умножением, и <span\nclass=\"math inline\">\\(a^{-1}\\)</span> - <em>противоположный\nэлемент</em>, если сложением)</li>\n</ol>\n<p>Множество, для которого выполнено 1, - <em>полугруппа</em>.</p>\n<p>Множество, для которого выполнено 1 и 2, - <em>моноид</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "абелева",
+        "data": "**Определение:**<a name=\"definition-2\"></a> Если операция на группе ассоциативна $(a \\boxdot b = b \\boxdot a)$, то группа *абелева*.\n\n",
+        "data_type": "definition",
+        "url": "lection-group-intro.html#definition-2",
+        "html": "<p><strong><a href=\"lection-group-intro.html#definition-2\">Определение:</a></strong> Если\nоперация на группе ассоциативна <span class=\"math inline\">\\((a \\boxdot b\n= b \\boxdot a)\\)</span>, то группа <em>абелева</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "преобразование множества",
+        "data": "**Определение:**<a name=\"definition-6\"></a> *Преобразование множества* - это его отображение в себя.\n\n",
+        "data_type": "definition",
+        "url": "lection-group-intro.html#definition-6",
+        "html": "<p><strong><a href=\"lection-group-intro.html#definition-6\">Определение:</a></strong>\n<em>Преобразование множества</em> - это его отображение в себя.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "группа преобразований множества",
+        "data": "**Определение:**<a name=\"definition-3\"></a> *Группа преобразований множества* $X$ - это группа, состоящая из биективных преобразований множества $X$ с операцией композиции.\n\n",
+        "data_type": "definition",
+        "url": "lection-group-intro.html#definition-3",
+        "html": "<p><strong><a href=\"lection-group-intro.html#definition-3\">Определение:</a></strong> <em>Группа\nпреобразований множества</em> <span class=\"math inline\">\\(X\\)</span> -\nэто группа, состоящая из биективных преобразований множества <span\nclass=\"math inline\">\\(X\\)</span> с операцией композиции.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "симметрическая группа множества",
+        "data": "**Определение:**<a name=\"definition-7\"></a> Группа преобразований множества $X$, состоящая из всех биективных преобразований - это *симметрическая группа множества* $X$.\n\n",
+        "data_type": "definition",
+        "url": "lection-group-intro.html#definition-7",
+        "html": "<p><strong><a href=\"lection-group-intro.html#definition-7\">Определение:</a></strong> Группа\nпреобразований множества <span class=\"math inline\">\\(X\\)</span>,\nсостоящая из всех биективных преобразований - это <em>симметрическая\nгруппа множества</em> <span class=\"math inline\">\\(X\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "группа диэдра группа диэдра",
+        "data": "**Определение:**<a name=\"definition-4\"></a> (*Группа Диэдра*)\n\nПусть $X$ - метрическое пространство, $A \\subset X$. \n\n$\\operatorname{Sym} A = \\{\\varphi: A \\to A: \\,\\,\\,\\, \\rho(\\varphi(x), \\varphi(y)) = \\rho(x, y)\\}$ - *группа Диэдра* множества $A$. ^[$\\rho$ - метрика в пространстве $X$.]\n\n",
+        "data_type": "definition",
+        "url": "lection-group-intro.html#definition-4",
+        "html": "<p><strong><a href=\"lection-group-intro.html#definition-4\">Определение:</a></strong> (<em>Группа\nДиэдра</em>)</p>\n<p>Пусть <span class=\"math inline\">\\(X\\)</span> - метрическое\nпространство, <span class=\"math inline\">\\(A \\subset X\\)</span>.</p>\n<p><span class=\"math inline\">\\(\\operatorname{Sym} A = \\{\\varphi: A \\to\nA: \\,\\,\\,\\, \\rho(\\varphi(x), \\varphi(y)) = \\rho(x, y)\\}\\)</span> -\n<em>группа Диэдра</em> множества <span class=\"math inline\">\\(A\\)</span>.\n<a href=\"#fn1\" class=\"footnote-ref\" id=\"fnref1\"\nrole=\"doc-noteref\"><sup>1</sup></a></p>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p><span class=\"math inline\">\\(\\rho\\)</span> - метрика в\nпространстве <span class=\"math inline\">\\(X\\)</span>.<a href=\"#fnref1\"\nclass=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "порядок группы",
+        "data": "**Определение:**<a name=\"definition-5\"></a> *Порядок группы* $G$ - это мощность множества $G$.\n\n",
+        "data_type": "definition",
+        "url": "lection-group-intro.html#definition-5",
+        "html": "<p><strong><a href=\"lection-group-intro.html#definition-5\">Определение:</a></strong> <em>Порядок\nгруппы</em> <span class=\"math inline\">\\(G\\)</span> - это мощность\nмножества <span class=\"math inline\">\\(G\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "подгруппа",
+        "data": "**Определение:**<a name=\"definition-0\"></a> Пусть $G$ - группа, $H \\subset G$. $H$ - *подгруппа* группы $G$, если $H$ - группа относительно операции группы $G$.\n\n",
+        "data_type": "definition",
+        "url": "lection-group.html#definition-0",
+        "html": "<p><strong><a href=\"lection-group.html#definition-0\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(G\\)</span> - группа, <span class=\"math inline\">\\(H\n\\subset G\\)</span>. <span class=\"math inline\">\\(H\\)</span> -\n<em>подгруппа</em> группы <span class=\"math inline\">\\(G\\)</span>, если\n<span class=\"math inline\">\\(H\\)</span> - группа относительно операции\nгруппы <span class=\"math inline\">\\(G\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "подгруппа, порожденная множеством",
+        "data": "**Определение:**<a name=\"definition-1\"></a> Пусть $G$ - группа, $S \\subset G$. Множество $<S> = \\{g_1^{\\varepsilon_1}\\cdot \\ldots \\cdot g_k^{\\varepsilon_k}| \\,\\,\\,\\, k \\in \\mathbb{N}, \\,\\,\\,\\, g_1, \\ldots, g_k \\in H, \\,\\,\\,\\, \\varepsilon_1, \\ldots, \\varepsilon_k \\in \\{-1, 1\\}\\}$ - *подгруппа, порожденная множеством* $S$.\n\n",
+        "data_type": "definition",
+        "url": "lection-group.html#definition-1",
+        "html": "<p><strong><a href=\"lection-group.html#definition-1\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(G\\)</span> - группа, <span class=\"math inline\">\\(S\n\\subset G\\)</span>. Множество <span class=\"math inline\">\\(&lt;S&gt; =\n\\{g_1^{\\varepsilon_1}\\cdot \\ldots \\cdot g_k^{\\varepsilon_k}| \\,\\,\\,\\, k\n\\in \\mathbb{N}, \\,\\,\\,\\, g_1, \\ldots, g_k \\in H, \\,\\,\\,\\, \\varepsilon_1,\n\\ldots, \\varepsilon_k \\in \\{-1, 1\\}\\}\\)</span> - <em>подгруппа,\nпорожденная множеством</em> <span class=\"math inline\">\\(S\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "гомоморфизм",
+        "data": "**Определение:**<a name=\"definition-6\"></a> Пусть (G, \\star)$ и $(H, \\cdot)$ группы. Отображение $\\varphi: G \\to H$, такое, что $\\varphi(g_1\\star g_2) = \\varphi(g_1)\\cdot \\varphi(g_2)$ - *гомоморфизм* групп $G$ и $H$.\n\n",
+        "data_type": "definition",
+        "url": "lection-group.html#definition-6",
+        "html": "<p><strong><a href=\"lection-group.html#definition-6\">Определение:</a></strong> Пусть (G, )$\nи <span class=\"math inline\">\\((H, \\cdot)\\)</span> группы. Отображение\n<span class=\"math inline\">\\(\\varphi: G \\to H\\)</span>, такое, что <span\nclass=\"math inline\">\\(\\varphi(g_1\\star g_2) = \\varphi(g_1)\\cdot\n\\varphi(g_2)\\)</span> - <em>гомоморфизм</em> групп <span\nclass=\"math inline\">\\(G\\)</span> и <span\nclass=\"math inline\">\\(H\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "изоморфны  ",
+        "data": "**Определение:**<a name=\"definition-2\"></a> Группы $(G, \\star)$ и $(H, \\cdot)$ *изоморфны*, если существует биективный гомоморфизм $\\varphi: G \\to H$ ^[биективное отображение $\\varphi: G \\to H$, такое, что $\\varphi(g_1\\star g_2) = \\varphi(g_1)\\cdot \\varphi(g_2)$.].\n\n**Обозначение:** $G \\cong H$\n\n",
+        "data_type": "definition",
+        "url": "lection-group.html#definition-2",
+        "html": "<p><strong><a href=\"lection-group.html#definition-2\">Определение:</a></strong> Группы <span\nclass=\"math inline\">\\((G, \\star)\\)</span> и <span\nclass=\"math inline\">\\((H, \\cdot)\\)</span> <em>изоморфны</em>, если\nсуществует биективный гомоморфизм <span class=\"math inline\">\\(\\varphi: G\n\\to H\\)</span> <a href=\"#fn1\" class=\"footnote-ref\" id=\"fnref1\"\nrole=\"doc-noteref\"><sup>1</sup></a>.</p>\n<p><strong>Обозначение:</strong> <span class=\"math inline\">\\(G \\cong\nH\\)</span></p>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>биективное отображение <span\nclass=\"math inline\">\\(\\varphi: G \\to H\\)</span>, такое, что <span\nclass=\"math inline\">\\(\\varphi(g_1\\star g_2) = \\varphi(g_1)\\cdot\n\\varphi(g_2)\\)</span>.<a href=\"#fnref1\" class=\"footnote-back\"\nrole=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "вкладывается в",
+        "data": "**Определение:**<a name=\"definition-3\"></a> Если группа $H$ изоморфна некоторой подгруппе группы $G$, то $H$ *вкладывается в* $G$.\n\n",
+        "data_type": "definition",
+        "url": "lection-group.html#definition-3",
+        "html": "<p><strong><a href=\"lection-group.html#definition-3\">Определение:</a></strong> Если группа\n<span class=\"math inline\">\\(H\\)</span> изоморфна некоторой подгруппе\nгруппы <span class=\"math inline\">\\(G\\)</span>, то <span\nclass=\"math inline\">\\(H\\)</span> <em>вкладывается в</em> <span\nclass=\"math inline\">\\(G\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "циклическая",
+        "data": "**Определение:**<a name=\"definition-4\"></a> Группа *циклическая*, если она порождается одним элементом.\n\n",
+        "data_type": "definition",
+        "url": "lection-group.html#definition-4",
+        "html": "<p><strong><a href=\"lection-group.html#definition-4\">Определение:</a></strong> Группа\n<em>циклическая</em>, если она порождается одним элементом.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "порядок элемента",
+        "data": "**Определение:**<a name=\"definition-5\"></a> *Порядок элемента* $g$ группы $G$ - это минимальное натуральное $n$, такое, что $g^n = e$. Если такого $n$ не существует, то порядок - бесконечность.\n\n",
+        "data_type": "definition",
+        "url": "lection-group.html#definition-5",
+        "html": "<p><strong><a href=\"lection-group.html#definition-5\">Определение:</a></strong> <em>Порядок\nэлемента</em> <span class=\"math inline\">\\(g\\)</span> группы <span\nclass=\"math inline\">\\(G\\)</span> - это минимальное натуральное <span\nclass=\"math inline\">\\(n\\)</span>, такое, что <span\nclass=\"math inline\">\\(g^n = e\\)</span>. Если такого <span\nclass=\"math inline\">\\(n\\)</span> не существует, то порядок -\nбесконечность.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-1\"></a> Порядок элемента $g \\in G$ равен $|<g>|$.\n\n*Доказательство:* Пусть $<g> = \\{e, g, g^2, \\ldots, g^{n - 1}\\}$.\n\nПусть $g^l = g^m \\,\\,\\,\\, (n - 1 > l > m) \\,\\,\\,\\, \\Rightarrow g^{l - m} = e \\Rightarrow |<g>| < n - 1 \\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-group.html#statement-1",
+        "html": "<p><strong><a href=\"lection-group.html#statement-1\">Утверждение:</a></strong> Порядок\nэлемента <span class=\"math inline\">\\(g \\in G\\)</span> равен <span\nclass=\"math inline\">\\(|&lt;g&gt;|\\)</span>.</p>\n<p><em>Доказательство:</em> Пусть <span class=\"math inline\">\\(&lt;g&gt;\n= \\{e, g, g^2, \\ldots, g^{n - 1}\\}\\)</span>.</p>\n<p>Пусть <span class=\"math inline\">\\(g^l = g^m \\,\\,\\,\\, (n - 1 &gt; l\n&gt; m) \\,\\,\\,\\, \\Rightarrow g^{l - m} = e \\Rightarrow |&lt;g&gt;| &lt;\nn - 1 \\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-group.html#statement-1\">Утверждение:</a></strong> Порядок\nэлемента <span class=\"math inline\">\\(g \\in G\\)</span> равен <span\nclass=\"math inline\">\\(|&lt;g&gt;|\\)</span>.</p>",
+        "proof_html": "<p> Пусть <span class=\"math inline\">\\(&lt;g&gt;\n= \\{e, g, g^2, \\ldots, g^{n - 1}\\}\\)</span>.</p>\n<p>Пусть <span class=\"math inline\">\\(g^l = g^m \\,\\,\\,\\, (n - 1 &gt; l\n&gt; m) \\,\\,\\,\\, \\Rightarrow g^{l - m} = e \\Rightarrow |&lt;g&gt;| &lt;\nn - 1 \\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "кэли",
+        "data": "**Теорема:**<a name=\"theorem-0\"></a> (*Кэли*) Любая конечная ^[Для бесконечных тоже верно.] группа $(G, \\cdot)$ вкладывается в $S_{|G|}$.\n\n*Доказательство:* \n\nПусть $G = \\{g_1, \\ldots, g_n\\}$. \n\nПусть $\\varphi: g_i \\mapsto \\left(\\begin{array}{ccc} g_1 & \\dots & g_n \\\\ g_i\\cdot g_1 & \\dots & g_i \\cdot g_n \\end{array}\\right)$.\n\nДокажем, что $\\varphi$ - изоморфизм групп $G$ и $<\\varphi(G)>$.\n\n$\\varphi(g \\cdot g^{\\prime}) = \\left(\\begin{array}{ccc} g_1 & \\dots & g_n \\\\ g \\cdot g^{\\prime}\\cdot g_1 & \\dots & g \\cdot g^{\\prime} \\cdot g_n \\end{array}\\right) =$\n$= \\left(\\begin{array}{ccc} g_1 & \\dots & g_n \\\\ g \\cdot g_1 & \\dots & g \\cdot g_n \\end{array}\\right)\\circ\\left(\\begin{array}{ccc} g_1 & \\dots & g_n \\\\ g^{\\prime}\\cdot g_1 & \\dots & g^{\\prime} \\cdot g_n \\end{array}\\right) = \\varphi(g)\\circ \\varphi(g^{\\prime})$\n\nПроверим биективность:\n\n1. $\\varphi$ - сюръективно по определению.\n2. Пусть $\\varphi(g) = \\varphi(g^{\\prime})$. Тогда $g = \\varphi(g)(e) = \\varphi(g^{\\prime})(e) = g^{\\prime} \\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "theorem",
+        "url": "lection-group.html#theorem-0",
+        "html": "<p><strong><a href=\"lection-group.html#theorem-0\">Теорема:</a></strong> (<em>Кэли</em>)\nЛюбая конечная <a href=\"#fn1\" class=\"footnote-ref\" id=\"fnref1\"\nrole=\"doc-noteref\"><sup>1</sup></a> группа <span\nclass=\"math inline\">\\((G, \\cdot)\\)</span> вкладывается в <span\nclass=\"math inline\">\\(S_{|G|}\\)</span>.</p>\n<p><em>Доказательство:</em></p>\n<p>Пусть <span class=\"math inline\">\\(G = \\{g_1, \\ldots,\ng_n\\}\\)</span>.</p>\n<p>Пусть <span class=\"math inline\">\\(\\varphi: g_i \\mapsto\n\\left(\\begin{array}{ccc} g_1 &amp; \\dots &amp; g_n \\\\ g_i\\cdot g_1 &amp;\n\\dots &amp; g_i \\cdot g_n \\end{array}\\right)\\)</span>.</p>\n<p>Докажем, что <span class=\"math inline\">\\(\\varphi\\)</span> -\nизоморфизм групп <span class=\"math inline\">\\(G\\)</span> и <span\nclass=\"math inline\">\\(&lt;\\varphi(G)&gt;\\)</span>.</p>\n<p><span class=\"math inline\">\\(\\varphi(g \\cdot g^{\\prime}) =\n\\left(\\begin{array}{ccc} g_1 &amp; \\dots &amp; g_n \\\\ g \\cdot\ng^{\\prime}\\cdot g_1 &amp; \\dots &amp; g \\cdot g^{\\prime} \\cdot g_n\n\\end{array}\\right) =\\)</span> <span class=\"math inline\">\\(=\n\\left(\\begin{array}{ccc} g_1 &amp; \\dots &amp; g_n \\\\ g \\cdot g_1 &amp;\n\\dots &amp; g \\cdot g_n \\end{array}\\right)\\circ\\left(\\begin{array}{ccc}\ng_1 &amp; \\dots &amp; g_n \\\\ g^{\\prime}\\cdot g_1 &amp; \\dots &amp;\ng^{\\prime} \\cdot g_n \\end{array}\\right) = \\varphi(g)\\circ\n\\varphi(g^{\\prime})\\)</span></p>\n<p>Проверим биективность:</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(\\varphi\\)</span> - сюръективно по\nопределению.</li>\n<li>Пусть <span class=\"math inline\">\\(\\varphi(g) =\n\\varphi(g^{\\prime})\\)</span>. Тогда <span class=\"math inline\">\\(g =\n\\varphi(g)(e) = \\varphi(g^{\\prime})(e) = g^{\\prime}\n\\,\\,\\,\\,\\blacksquare\\)</span></li>\n</ol>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Для бесконечных тоже верно.<a href=\"#fnref1\"\nclass=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "<p><strong><a href=\"lection-group.html#theorem-0\">Теорема:</a></strong> (<em>Кэли</em>)\nЛюбая конечная <a href=\"#fn1\" class=\"footnote-ref\" id=\"fnref1\"\nrole=\"doc-noteref\"><sup>1</sup></a> группа <span\nclass=\"math inline\">\\((G, \\cdot)\\)</span> вкладывается в <span\nclass=\"math inline\">\\(S_{|G|}\\)</span>.</p>",
+        "proof_html": "<p></p>\n<p>Пусть <span class=\"math inline\">\\(G = \\{g_1, \\ldots,\ng_n\\}\\)</span>.</p>\n<p>Пусть <span class=\"math inline\">\\(\\varphi: g_i \\mapsto\n\\left(\\begin{array}{ccc} g_1 &amp; \\dots &amp; g_n \\\\ g_i\\cdot g_1 &amp;\n\\dots &amp; g_i \\cdot g_n \\end{array}\\right)\\)</span>.</p>\n<p>Докажем, что <span class=\"math inline\">\\(\\varphi\\)</span> -\nизоморфизм групп <span class=\"math inline\">\\(G\\)</span> и <span\nclass=\"math inline\">\\(&lt;\\varphi(G)&gt;\\)</span>.</p>\n<p><span class=\"math inline\">\\(\\varphi(g \\cdot g^{\\prime}) =\n\\left(\\begin{array}{ccc} g_1 &amp; \\dots &amp; g_n \\\\ g \\cdot\ng^{\\prime}\\cdot g_1 &amp; \\dots &amp; g \\cdot g^{\\prime} \\cdot g_n\n\\end{array}\\right) =\\)</span> <span class=\"math inline\">\\(=\n\\left(\\begin{array}{ccc} g_1 &amp; \\dots &amp; g_n \\\\ g \\cdot g_1 &amp;\n\\dots &amp; g \\cdot g_n \\end{array}\\right)\\circ\\left(\\begin{array}{ccc}\ng_1 &amp; \\dots &amp; g_n \\\\ g^{\\prime}\\cdot g_1 &amp; \\dots &amp;\ng^{\\prime} \\cdot g_n \\end{array}\\right) = \\varphi(g)\\circ\n\\varphi(g^{\\prime})\\)</span></p>\n<p>Проверим биективность:</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(\\varphi\\)</span> - сюръективно по\nопределению.</li>\n<li>Пусть <span class=\"math inline\">\\(\\varphi(g) =\n\\varphi(g^{\\prime})\\)</span>. Тогда <span class=\"math inline\">\\(g =\n\\varphi(g)(e) = \\varphi(g^{\\prime})(e) = g^{\\prime}\n\\,\\,\\,\\,\\blacksquare\\)</span></li>\n</ol>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Для бесконечных тоже верно.<a href=\"#fnref1\"\nclass=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>"
+    },
+    {
+        "keyword": "классификация циклических групп",
+        "data": "**Теорема:**<a name=\"theorem-1\"></a> (*Классификация циклических групп*)\n\n1. $\\forall n \\in \\mathbb{N} \\,\\,\\,\\, \\exists$ циклическая группа порядка $n$.\n2. Все циклические группы порядка $n$ изоморфны.\n\n*Доказательство:* \n\n1. $\\mathbb{Z}_n$ ^[Порождается $1$.]\n2. Пусть $<g>_n$ - циклическая группа порядка $n$, порожденная элементом $g$. Пусть $\\varphi: k \\mapsto g^k \\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "theorem",
+        "url": "lection-group.html#theorem-1",
+        "html": "<p><strong><a href=\"lection-group.html#theorem-1\">Теорема:</a></strong> (<em>Классификация\nциклических групп</em>)</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(\\forall n \\in \\mathbb{N} \\,\\,\\,\\,\n\\exists\\)</span> циклическая группа порядка <span\nclass=\"math inline\">\\(n\\)</span>.</li>\n<li>Все циклические группы порядка <span\nclass=\"math inline\">\\(n\\)</span> изоморфны.</li>\n</ol>\n<p><em>Доказательство:</em></p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(\\mathbb{Z}_n\\)</span> <a href=\"#fn1\"\nclass=\"footnote-ref\" id=\"fnref1\"\nrole=\"doc-noteref\"><sup>1</sup></a></li>\n<li>Пусть <span class=\"math inline\">\\(&lt;g&gt;_n\\)</span> - циклическая\nгруппа порядка <span class=\"math inline\">\\(n\\)</span>, порожденная\nэлементом <span class=\"math inline\">\\(g\\)</span>. Пусть <span\nclass=\"math inline\">\\(\\varphi: k \\mapsto g^k\n\\,\\,\\,\\,\\blacksquare\\)</span></li>\n</ol>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Порождается <span class=\"math inline\">\\(1\\)</span>.<a\nhref=\"#fnref1\" class=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "<p><strong><a href=\"lection-group.html#theorem-1\">Теорема:</a></strong> (<em>Классификация\nциклических групп</em>)</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(\\forall n \\in \\mathbb{N} \\,\\,\\,\\,\n\\exists\\)</span> циклическая группа порядка <span\nclass=\"math inline\">\\(n\\)</span>.</li>\n<li>Все циклические группы порядка <span\nclass=\"math inline\">\\(n\\)</span> изоморфны.</li>\n</ol>",
+        "proof_html": "<p></p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(\\mathbb{Z}_n\\)</span> <a href=\"#fn1\"\nclass=\"footnote-ref\" id=\"fnref1\"\nrole=\"doc-noteref\"><sup>1</sup></a></li>\n<li>Пусть <span class=\"math inline\">\\(&lt;g&gt;_n\\)</span> - циклическая\nгруппа порядка <span class=\"math inline\">\\(n\\)</span>, порожденная\nэлементом <span class=\"math inline\">\\(g\\)</span>. Пусть <span\nclass=\"math inline\">\\(\\varphi: k \\mapsto g^k\n\\,\\,\\,\\,\\blacksquare\\)</span></li>\n</ol>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Порождается <span class=\"math inline\">\\(1\\)</span>.<a\nhref=\"#fnref1\" class=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>"
+    },
+    {
+        "keyword": "о подгруппах циклических групп",
+        "data": "**Теорема:**<a name=\"theorem-2\"></a> (*о подгруппах циклических групп*) \n\n1. Подгруппа циклической группы - циклическая.\n2. У циклической группы порядка $n \\in \\mathbb{N}$ существует ровно по одной подгруппе каждого порядка, делящего $n$, и других подгрупп нет.\n\n*Доказательство:*\n\n1. Пусть $H$ подгруппа $G = <g>$.<br> Пусть $k = \\min\\{l \\in \\mathbb{N}| \\,\\,\\,\\, g^l \\in H\\}$. <br> Докажем, что $H = <g^k>$. $H \\ni g^m = g^{q k + r} \\,\\,\\,\\, (k > r \\ge 0) = (g^k)^q\\cdot g^r \\Rightarrow r = 0 \\,\\,\\,\\,\\blacksquare$\n\n2. Пусть $G = <g>_n$ ^[Циклическая группа $G$ порождена элементом $g$], $k \\,\\,|\\,\\, n$. Тогда $<g^{\\frac{n}{k}}>$ - циклическая группа порядка $k$. Существование доказано.\n\nПусть $H$ циклическая подгруппа порядка $k$, по рассуждению 1. $H = <g^{\\frac{n}{k}}>$$\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "theorem",
+        "url": "lection-group.html#theorem-2",
+        "html": "<p><strong><a href=\"lection-group.html#theorem-2\">Теорема:</a></strong> (<em>о подгруппах\nциклических групп</em>)</p>\n<ol type=\"1\">\n<li>Подгруппа циклической группы - циклическая.</li>\n<li>У циклической группы порядка <span class=\"math inline\">\\(n \\in\n\\mathbb{N}\\)</span> существует ровно по одной подгруппе каждого порядка,\nделящего <span class=\"math inline\">\\(n\\)</span>, и других подгрупп\nнет.</li>\n</ol>\n<p><em>Доказательство:</em></p>\n<ol type=\"1\">\n<li><p>Пусть <span class=\"math inline\">\\(H\\)</span> подгруппа <span\nclass=\"math inline\">\\(G = &lt;g&gt;\\)</span>.<br> Пусть <span\nclass=\"math inline\">\\(k = \\min\\{l \\in \\mathbb{N}| \\,\\,\\,\\, g^l \\in\nH\\}\\)</span>. <br> Докажем, что <span class=\"math inline\">\\(H =\n&lt;g^k&gt;\\)</span>. <span class=\"math inline\">\\(H \\ni g^m = g^{q k +\nr} \\,\\,\\,\\, (k &gt; r \\ge 0) = (g^k)^q\\cdot g^r \\Rightarrow r = 0\n\\,\\,\\,\\,\\blacksquare\\)</span></p></li>\n<li><p>Пусть <span class=\"math inline\">\\(G = &lt;g&gt;_n\\)</span> <a\nhref=\"#fn1\" class=\"footnote-ref\" id=\"fnref1\"\nrole=\"doc-noteref\"><sup>1</sup></a>, <span class=\"math inline\">\\(k\n\\,\\,|\\,\\, n\\)</span>. Тогда <span\nclass=\"math inline\">\\(&lt;g^{\\frac{n}{k}}&gt;\\)</span> - циклическая\nгруппа порядка <span class=\"math inline\">\\(k\\)</span>. Существование\nдоказано.</p></li>\n</ol>\n<p>Пусть <span class=\"math inline\">\\(H\\)</span> циклическая подгруппа\nпорядка <span class=\"math inline\">\\(k\\)</span>, по рассуждению 1. <span\nclass=\"math inline\">\\(H = &lt;g^{\\frac{n}{k}}&gt;\\)</span><span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Циклическая группа <span\nclass=\"math inline\">\\(G\\)</span> порождена элементом <span\nclass=\"math inline\">\\(g\\)</span><a href=\"#fnref1\" class=\"footnote-back\"\nrole=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "<p><strong><a href=\"lection-group.html#theorem-2\">Теорема:</a></strong> (<em>о подгруппах\nциклических групп</em>)</p>\n<ol type=\"1\">\n<li>Подгруппа циклической группы - циклическая.</li>\n<li>У циклической группы порядка <span class=\"math inline\">\\(n \\in\n\\mathbb{N}\\)</span> существует ровно по одной подгруппе каждого порядка,\nделящего <span class=\"math inline\">\\(n\\)</span>, и других подгрупп\nнет.</li>\n</ol>",
+        "proof_html": "<p></p>\n<ol type=\"1\">\n<li><p>Пусть <span class=\"math inline\">\\(H\\)</span> подгруппа <span\nclass=\"math inline\">\\(G = &lt;g&gt;\\)</span>.<br> Пусть <span\nclass=\"math inline\">\\(k = \\min\\{l \\in \\mathbb{N}| \\,\\,\\,\\, g^l \\in\nH\\}\\)</span>. <br> Докажем, что <span class=\"math inline\">\\(H =\n&lt;g^k&gt;\\)</span>. <span class=\"math inline\">\\(H \\ni g^m = g^{q k +\nr} \\,\\,\\,\\, (k &gt; r \\ge 0) = (g^k)^q\\cdot g^r \\Rightarrow r = 0\n\\,\\,\\,\\,\\blacksquare\\)</span></p></li>\n<li><p>Пусть <span class=\"math inline\">\\(G = &lt;g&gt;_n\\)</span> <a\nhref=\"#fn1\" class=\"footnote-ref\" id=\"fnref1\"\nrole=\"doc-noteref\"><sup>1</sup></a>, <span class=\"math inline\">\\(k\n\\,\\,|\\,\\, n\\)</span>. Тогда <span\nclass=\"math inline\">\\(&lt;g^{\\frac{n}{k}}&gt;\\)</span> - циклическая\nгруппа порядка <span class=\"math inline\">\\(k\\)</span>. Существование\nдоказано.</p></li>\n</ol>\n<p>Пусть <span class=\"math inline\">\\(H\\)</span> циклическая подгруппа\nпорядка <span class=\"math inline\">\\(k\\)</span>, по рассуждению 1. <span\nclass=\"math inline\">\\(H = &lt;g^{\\frac{n}{k}}&gt;\\)</span><span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Циклическая группа <span\nclass=\"math inline\">\\(G\\)</span> порождена элементом <span\nclass=\"math inline\">\\(g\\)</span><a href=\"#fnref1\" class=\"footnote-back\"\nrole=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>"
+    },
+    {
+        "keyword": "",
+        "data": "**Упражнение:**<a name=\"exercise-0\"></a> Циклическая группа - абелева.\n\n",
+        "data_type": "exercise",
+        "url": "lection-group.html#exercise-0",
+        "html": "<p><strong><a href=\"lection-group.html#exercise-0\">Упражнение:</a></strong> Циклическая\nгруппа - абелева.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "левый смежный класс элемента по подгруппе",
+        "data": "**Определение:**<a name=\"definition-0\"></a> Пусть $G$ группа, $H \\subset G$ погруппа, $g \\in G$. *Левый смежный класс элемента* $g$ *по подгруппе* $H$ - это $\\{g\\cdot h|\\,\\,\\,\\, h \\in H\\}$.\n\n",
+        "data_type": "definition",
+        "url": "lection-group-lagrange-theorem-normal-subgroup.html#definition-0",
+        "html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#definition-0\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(G\\)</span> группа, <span class=\"math inline\">\\(H\n\\subset G\\)</span> погруппа, <span class=\"math inline\">\\(g \\in\nG\\)</span>. <em>Левый смежный класс элемента</em> <span\nclass=\"math inline\">\\(g\\)</span> <em>по подгруппе</em> <span\nclass=\"math inline\">\\(H\\)</span> - это <span\nclass=\"math inline\">\\(\\{g\\cdot h|\\,\\,\\,\\, h \\in H\\}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "индекс погруппы  ",
+        "data": "**Определение:**<a name=\"definition-1\"></a> Пусть $G$ группа, $H$ погруппа группы $G$. Число смежных классов группы $G$ по подгруппе $H$ - *индекс погруппы* $H$.\n\n**Обозначается:** $|G:H|$\n\n",
+        "data_type": "definition",
+        "url": "lection-group-lagrange-theorem-normal-subgroup.html#definition-1",
+        "html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#definition-1\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(G\\)</span> группа, <span\nclass=\"math inline\">\\(H\\)</span> погруппа группы <span\nclass=\"math inline\">\\(G\\)</span>. Число смежных классов группы <span\nclass=\"math inline\">\\(G\\)</span> по подгруппе <span\nclass=\"math inline\">\\(H\\)</span> - <em>индекс погруппы</em> <span\nclass=\"math inline\">\\(H\\)</span>.</p>\n<p><strong>Обозначается:</strong> <span\nclass=\"math inline\">\\(|G:H|\\)</span></p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "нормальна  ",
+        "data": "**Определение:**<a name=\"definition-2\"></a> Подгруппа $H \\subset G$ *нормальна*, если выполнено одно из условий:\n\n1. $\\forall g \\in G \\,\\,\\,\\, gH = Hg$\n2. $\\forall g \\in G \\,\\,\\,\\, gHg^{-1} = H$\n3. $\\forall g \\in G \\,\\,\\,\\, \\forall h \\in H \\,\\,\\,\\, ghg^{-1} \\in H$\n\n**Обозначается:** $H \\vartriangleleft G$\n\n",
+        "data_type": "definition",
+        "url": "lection-group-lagrange-theorem-normal-subgroup.html#definition-2",
+        "html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#definition-2\">Определение:</a></strong> Подгруппа\n<span class=\"math inline\">\\(H \\subset G\\)</span> <em>нормальна</em>,\nесли выполнено одно из условий:</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(\\forall g \\in G \\,\\,\\,\\, gH =\nHg\\)</span></li>\n<li><span class=\"math inline\">\\(\\forall g \\in G \\,\\,\\,\\, gHg^{-1} =\nH\\)</span></li>\n<li><span class=\"math inline\">\\(\\forall g \\in G \\,\\,\\,\\, \\forall h \\in H\n\\,\\,\\,\\, ghg^{-1} \\in H\\)</span></li>\n</ol>\n<p><strong>Обозначается:</strong> <span class=\"math inline\">\\(H\n\\vartriangleleft G\\)</span></p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "эндоморфизм",
+        "data": "**Определение:**<a name=\"definition-6\"></a> *Эндоморфизм* группы $G$ - это гомоморфизм $\\varphi: \\,\\,\\,\\, G \\to G$.\n\n",
+        "data_type": "definition",
+        "url": "lection-group-lagrange-theorem-normal-subgroup.html#definition-6",
+        "html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#definition-6\">Определение:</a></strong>\n<em>Эндоморфизм</em> группы <span class=\"math inline\">\\(G\\)</span> - это\nгомоморфизм <span class=\"math inline\">\\(\\varphi: \\,\\,\\,\\, G \\to\nG\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "автоморфизм",
+        "data": "**Определение:**<a name=\"definition-3\"></a> *Автоморфизм* группы $G$ - это изоморфизм $\\varphi: \\,\\,\\,\\, G \\to G$.\n\n",
+        "data_type": "definition",
+        "url": "lection-group-lagrange-theorem-normal-subgroup.html#definition-3",
+        "html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#definition-3\">Определение:</a></strong>\n<em>Автоморфизм</em> группы <span class=\"math inline\">\\(G\\)</span> - это\nизоморфизм <span class=\"math inline\">\\(\\varphi: \\,\\,\\,\\, G \\to\nG\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "сопряженный элемент к",
+        "data": "**Определение:**<a name=\"definition-4\"></a> Пусть $G$ группа, $g \\in G$. $\\forall x \\in G \\,\\,\\,\\, gxg^{-1} \\in G$ - *сопряженный элемент к* $x$. \n\n",
+        "data_type": "definition",
+        "url": "lection-group-lagrange-theorem-normal-subgroup.html#definition-4",
+        "html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#definition-4\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(G\\)</span> группа, <span class=\"math inline\">\\(g\n\\in G\\)</span>. <span class=\"math inline\">\\(\\forall x \\in G \\,\\,\\,\\,\ngxg^{-1} \\in G\\)</span> - <em>сопряженный элемент к</em> <span\nclass=\"math inline\">\\(x\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "образ ядро",
+        "data": "**Определение:**<a name=\"definition-5\"></a> Пусть $\\varphi: G \\to H$ - гомоморфизм групп $G$ и $H$. \n\n1. $\\operatorname{Img} \\varphi = \\{\\varphi(g)| \\,\\,\\,\\, g \\in G\\}$ - *образ* $\\varphi$.\n2. $\\operatorname{Ker} \\varphi = \\{g \\in G: \\,\\,\\,\\, \\varphi(g) = e \\in H\\}$ - *ядро* $\\varphi$.\n\n",
+        "data_type": "definition",
+        "url": "lection-group-lagrange-theorem-normal-subgroup.html#definition-5",
+        "html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#definition-5\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(\\varphi: G \\to H\\)</span> - гомоморфизм групп\n<span class=\"math inline\">\\(G\\)</span> и <span\nclass=\"math inline\">\\(H\\)</span>.</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(\\operatorname{Img} \\varphi =\n\\{\\varphi(g)| \\,\\,\\,\\, g \\in G\\}\\)</span> - <em>образ</em> <span\nclass=\"math inline\">\\(\\varphi\\)</span>.</li>\n<li><span class=\"math inline\">\\(\\operatorname{Ker} \\varphi = \\{g \\in G:\n\\,\\,\\,\\, \\varphi(g) = e \\in H\\}\\)</span> - <em>ядро</em> <span\nclass=\"math inline\">\\(\\varphi\\)</span>.</li>\n</ol>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "разбиение на смежные классы",
+        "data": "**Утверждение:**<a name=\"statement-0\"></a> (*разбиение на смежные классы*) Пусть $G$ группа, $H \\subset G$ погруппа, $g \\in G$. Тогда $G$ разбивается на объединение попарно непересекающихся левых смежных классов по $H$.\n\n*Доказательство:* Пусть $g \\in g_1 \\cdot H \\cap g_2 \\cdot H$. \n\nТогда $g = g_1 \\cdot h_1,\\,\\,\\,\\, h_1 \\in H$ и $g = g_2 \\cdot h_2, \\,\\,\\,\\, h_2 \\in H \\implies g_2\\cdot h_2 = g_1 \\cdot h_1 \\implies$\n$\\implies g_2 = g_1\\cdot \\left(h_1 \\cdot h_2^{-1}\\right) \\implies g_2\\cdot H = g_1\\cdot\\left(h_1 \\cdot h_2^{-1}\\right)\\cdot H \\implies g_1 \\cdot H = g_2 \\cdot H \\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-group-lagrange-theorem-normal-subgroup.html#statement-0",
+        "html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#statement-0\">Утверждение:</a></strong>\n(<em>разбиение на смежные классы</em>) Пусть <span\nclass=\"math inline\">\\(G\\)</span> группа, <span class=\"math inline\">\\(H\n\\subset G\\)</span> погруппа, <span class=\"math inline\">\\(g \\in\nG\\)</span>. Тогда <span class=\"math inline\">\\(G\\)</span> разбивается на\nобъединение попарно непересекающихся левых смежных классов по <span\nclass=\"math inline\">\\(H\\)</span>.</p>\n<p><em>Доказательство:</em> Пусть <span class=\"math inline\">\\(g \\in g_1\n\\cdot H \\cap g_2 \\cdot H\\)</span>.</p>\n<p>Тогда <span class=\"math inline\">\\(g = g_1 \\cdot h_1,\\,\\,\\,\\, h_1 \\in\nH\\)</span> и <span class=\"math inline\">\\(g = g_2 \\cdot h_2, \\,\\,\\,\\, h_2\n\\in H \\implies g_2\\cdot h_2 = g_1 \\cdot h_1 \\implies\\)</span> <span\nclass=\"math inline\">\\(\\implies g_2 = g_1\\cdot \\left(h_1 \\cdot\nh_2^{-1}\\right) \\implies g_2\\cdot H = g_1\\cdot\\left(h_1 \\cdot\nh_2^{-1}\\right)\\cdot H \\implies g_1 \\cdot H = g_2 \\cdot H\n\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#statement-0\">Утверждение:</a></strong>\n(<em>разбиение на смежные классы</em>) Пусть <span\nclass=\"math inline\">\\(G\\)</span> группа, <span class=\"math inline\">\\(H\n\\subset G\\)</span> погруппа, <span class=\"math inline\">\\(g \\in\nG\\)</span>. Тогда <span class=\"math inline\">\\(G\\)</span> разбивается на\nобъединение попарно непересекающихся левых смежных классов по <span\nclass=\"math inline\">\\(H\\)</span>.</p>",
+        "proof_html": "<p> Пусть <span class=\"math inline\">\\(g \\in g_1\n\\cdot H \\cap g_2 \\cdot H\\)</span>.</p>\n<p>Тогда <span class=\"math inline\">\\(g = g_1 \\cdot h_1,\\,\\,\\,\\, h_1 \\in\nH\\)</span> и <span class=\"math inline\">\\(g = g_2 \\cdot h_2, \\,\\,\\,\\, h_2\n\\in H \\implies g_2\\cdot h_2 = g_1 \\cdot h_1 \\implies\\)</span> <span\nclass=\"math inline\">\\(\\implies g_2 = g_1\\cdot \\left(h_1 \\cdot\nh_2^{-1}\\right) \\implies g_2\\cdot H = g_1\\cdot\\left(h_1 \\cdot\nh_2^{-1}\\right)\\cdot H \\implies g_1 \\cdot H = g_2 \\cdot H\n\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-1\"></a> $|g\\cdot H| = |H|$\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-group-lagrange-theorem-normal-subgroup.html#statement-1",
+        "html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#statement-1\">Утверждение:</a></strong> <span\nclass=\"math inline\">\\(|g\\cdot H| = |H|\\)</span></p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#statement-1\">Утверждение:</a></strong> <span\nclass=\"math inline\">\\(|g\\cdot H| = |H|\\)</span></p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "корректность определения нормальной подгруппы",
+        "data": "**Утверждение:**<a name=\"statement-4\"></a> (*корректность определения нормальной подгруппы*) Все условия в [определении](#definition-2) эквивалентны.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-group-lagrange-theorem-normal-subgroup.html#statement-4",
+        "html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#statement-4\">Утверждение:</a></strong>\n(<em>корректность определения нормальной подгруппы</em>) Все условия в\n<a href=\"#definition-2\">определении</a> эквивалентны.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#statement-4\">Утверждение:</a></strong>\n(<em>корректность определения нормальной подгруппы</em>) Все условия в\n<a href=\"#definition-2\">определении</a> эквивалентны.</p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:  ",
+        "data": "**Утверждение:**<a name=\"statement-5\"></a> Множество всех автоморфизмов группы - это группа относительно композиции.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n**Обозначается:** $\\operatorname{Aut}G$.\n\n",
+        "data_type": "statement",
+        "url": "lection-group-lagrange-theorem-normal-subgroup.html#statement-5",
+        "html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#statement-5\">Утверждение:</a></strong> Множество\nвсех автоморфизмов группы - это группа относительно композиции.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>\n<p><strong>Обозначается:</strong> <span\nclass=\"math inline\">\\(\\operatorname{Aut}G\\)</span>.</p>",
+        "statement_html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#statement-5\">Утверждение:</a></strong> Множество\nвсех автоморфизмов группы - это группа относительно композиции.</p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>\n<p><strong>Обозначается:</strong> <span\nclass=\"math inline\">\\(\\operatorname{Aut}G\\)</span>.</p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-2\"></a> Образ - подгруппа в соответствующей группе.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-group-lagrange-theorem-normal-subgroup.html#statement-2",
+        "html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#statement-2\">Утверждение:</a></strong> Образ -\nподгруппа в соответствующей группе.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#statement-2\">Утверждение:</a></strong> Образ -\nподгруппа в соответствующей группе.</p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-3\"></a> Пусть $\\varphi: G \\to H$ гомоморфизм. Тогда $\\operatorname{Ker} \\varphi$ нормальная подгруппа группы $G$.\n\n*Доказательство:* Пусть $h \\in \\operatorname{Ker} \\varphi$. \n\n$\\varphi(ghg^{-1}) = \\varphi(g)\\varphi(h)\\varphi(g^{-1}) = e \\implies ghg^{-1} \\in H \\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-group-lagrange-theorem-normal-subgroup.html#statement-3",
+        "html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#statement-3\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(\\varphi: G \\to H\\)</span> гомоморфизм. Тогда <span\nclass=\"math inline\">\\(\\operatorname{Ker} \\varphi\\)</span> нормальная\nподгруппа группы <span class=\"math inline\">\\(G\\)</span>.</p>\n<p><em>Доказательство:</em> Пусть <span class=\"math inline\">\\(h \\in\n\\operatorname{Ker} \\varphi\\)</span>.</p>\n<p><span class=\"math inline\">\\(\\varphi(ghg^{-1}) =\n\\varphi(g)\\varphi(h)\\varphi(g^{-1}) = e \\implies ghg^{-1} \\in H\n\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#statement-3\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(\\varphi: G \\to H\\)</span> гомоморфизм. Тогда <span\nclass=\"math inline\">\\(\\operatorname{Ker} \\varphi\\)</span> нормальная\nподгруппа группы <span class=\"math inline\">\\(G\\)</span>.</p>",
+        "proof_html": "<p> Пусть <span class=\"math inline\">\\(h \\in\n\\operatorname{Ker} \\varphi\\)</span>.</p>\n<p><span class=\"math inline\">\\(\\varphi(ghg^{-1}) =\n\\varphi(g)\\varphi(h)\\varphi(g^{-1}) = e \\implies ghg^{-1} \\in H\n\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "лагранжа о порядке подгруппы",
+        "data": "**Теорема:**<a name=\"theorem-0\"></a> (*Лагранжа о порядке подгруппы*) Порядок подгруппы делит порядок группы.\n\n*Доказательство:* Из утверждений [1](#statement-1) и [2](#statement-1) следует, что $|G| = |H|\\cdot |G:H| \\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "theorem",
+        "url": "lection-group-lagrange-theorem-normal-subgroup.html#theorem-0",
+        "html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#theorem-0\">Теорема:</a></strong> (<em>Лагранжа о\nпорядке подгруппы</em>) Порядок подгруппы делит порядок группы.</p>\n<p><em>Доказательство:</em> Из утверждений <a href=\"#statement-1\">1</a>\nи <a href=\"#statement-1\">2</a> следует, что <span\nclass=\"math inline\">\\(|G| = |H|\\cdot |G:H|\n\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#theorem-0\">Теорема:</a></strong> (<em>Лагранжа о\nпорядке подгруппы</em>) Порядок подгруппы делит порядок группы.</p>",
+        "proof_html": "<p> Из утверждений <a href=\"#statement-1\">1</a>\nи <a href=\"#statement-1\">2</a> следует, что <span\nclass=\"math inline\">\\(|G| = |H|\\cdot |G:H|\n\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Следствие:**<a name=\"corollary-0\"></a> $g^{|G|} = e$\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "corollary",
+        "url": "lection-group-lagrange-theorem-normal-subgroup.html#corollary-0",
+        "html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#corollary-0\">Следствие:</a></strong> <span\nclass=\"math inline\">\\(g^{|G|} = e\\)</span></p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#corollary-0\">Следствие:</a></strong> <span\nclass=\"math inline\">\\(g^{|G|} = e\\)</span></p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "",
+        "data": "**Упражнение:**<a name=\"exercise-0\"></a> Существует ли в группе $A_4$ подгруппы порядка $6$?\n\n",
+        "data_type": "exercise",
+        "url": "lection-group-lagrange-theorem-normal-subgroup.html#exercise-0",
+        "html": "<p><strong><a href=\"lection-group-lagrange-theorem-normal-subgroup.html#exercise-0\">Упражнение:</a></strong> Существует ли в\nгруппе <span class=\"math inline\">\\(A_4\\)</span> подгруппы порядка <span\nclass=\"math inline\">\\(6\\)</span>?</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "факторгруппа",
+        "data": "**Определение:**<a name=\"definition-0\"></a> *Факторгруппа* группы $G$ по <span style=\"color:#7bc99a\">нормальной</span> подгруппе $H$ - это множество $G / H = \\{g\\cdot H|\\,\\,\\,\\, g \\in G\\}$.\n\n",
+        "data_type": "definition",
+        "url": "lection-group-quotient-group-homomorphism-theore.html#definition-0",
+        "html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#definition-0\">Определение:</a></strong>\n<em>Факторгруппа</em> группы <span class=\"math inline\">\\(G\\)</span> по\n<span style=\"color:#7bc99a\">нормальной</span> подгруппе <span\nclass=\"math inline\">\\(H\\)</span> - это множество <span\nclass=\"math inline\">\\(G / H = \\{g\\cdot H|\\,\\,\\,\\, g \\in\nG\\}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "центр",
+        "data": "**Определение:**<a name=\"definition-1\"></a> $\\operatorname{Ker}\\Phi = \\{g \\in G: \\,\\,\\,\\, \\varphi_g(x) = x \\,\\,\\,\\, \\forall x \\in G\\}=$\n$= \\{g \\in G: \\,\\,\\,\\, gxg^{-1} = x \\,\\,\\,\\, \\forall x \\in G\\} = \\{g \\in G: \\,\\,\\,\\, gx = xg \\,\\,\\,\\, \\forall x \\in G\\} = Z(G)$ - *центр* группы $G$.\n\n",
+        "data_type": "definition",
+        "url": "lection-group-quotient-group-homomorphism-theore.html#definition-1",
+        "html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#definition-1\">Определение:</a></strong> <span\nclass=\"math inline\">\\(\\operatorname{Ker}\\Phi = \\{g \\in G: \\,\\,\\,\\,\n\\varphi_g(x) = x \\,\\,\\,\\, \\forall x \\in G\\}=\\)</span> <span\nclass=\"math inline\">\\(= \\{g \\in G: \\,\\,\\,\\, gxg^{-1} = x \\,\\,\\,\\,\n\\forall x \\in G\\} = \\{g \\in G: \\,\\,\\,\\, gx = xg \\,\\,\\,\\, \\forall x \\in\nG\\} = Z(G)\\)</span> - <em>центр</em> группы <span\nclass=\"math inline\">\\(G\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "группа внутренних автоморфизмов",
+        "data": "**Определение:**<a name=\"definition-2\"></a> $\\operatorname{Img}\\Phi = \\operatorname{Inn}G$ - *группа внутренних автоморфизмов* $G$.\n\n",
+        "data_type": "definition",
+        "url": "lection-group-quotient-group-homomorphism-theore.html#definition-2",
+        "html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#definition-2\">Определение:</a></strong> <span\nclass=\"math inline\">\\(\\operatorname{Img}\\Phi =\n\\operatorname{Inn}G\\)</span> - <em>группа внутренних автоморфизмов</em>\n<span class=\"math inline\">\\(G\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "група внешних автоморфизмов",
+        "data": "**Определение:**<a name=\"definition-3\"></a> $\\operatorname{Aut}G / \\operatorname{Inn}G = \\operatorname{Out}G$ - *група внешних автоморфизмов*.\n\n",
+        "data_type": "definition",
+        "url": "lection-group-quotient-group-homomorphism-theore.html#definition-3",
+        "html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#definition-3\">Определение:</a></strong> <span\nclass=\"math inline\">\\(\\operatorname{Aut}G / \\operatorname{Inn}G =\n\\operatorname{Out}G\\)</span> - <em>група внешних автоморфизмов</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "нормальное замыкание",
+        "data": "**Определение:**<a name=\"definition-4\"></a> Пусть $G$ - группа, $H \\subset G$. $<\\displaystyle\\cup_{g \\in G}gHg^{-1}>  = <<H>> \\vartriangleleft G$ - *нормальное замыкание* $H$.\n\n",
+        "data_type": "definition",
+        "url": "lection-group-quotient-group-homomorphism-theore.html#definition-4",
+        "html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#definition-4\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(G\\)</span> - группа, <span class=\"math inline\">\\(H\n\\subset G\\)</span>. <span class=\"math inline\">\\(&lt;\\displaystyle\\cup_{g\n\\in G}gHg^{-1}&gt; = &lt;&lt;H&gt;&gt; \\vartriangleleft G\\)</span> -\n<em>нормальное замыкание</em> <span\nclass=\"math inline\">\\(H\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-0\"></a> Факторгруппа $G / H$ - это группа относительно операции $\\left(g\\cdot H\\right)\\cdot\\left(g’\\cdot H\\right) = (g g’) \\cdot H$.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-group-quotient-group-homomorphism-theore.html#statement-0",
+        "html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#statement-0\">Утверждение:</a></strong> Факторгруппа\n<span class=\"math inline\">\\(G / H\\)</span> - это группа относительно\nоперации <span class=\"math inline\">\\(\\left(g\\cdot\nH\\right)\\cdot\\left(g’\\cdot H\\right) = (g g’) \\cdot H\\)</span>.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#statement-0\">Утверждение:</a></strong> Факторгруппа\n<span class=\"math inline\">\\(G / H\\)</span> - это группа относительно\nоперации <span class=\"math inline\">\\(\\left(g\\cdot\nH\\right)\\cdot\\left(g’\\cdot H\\right) = (g g’) \\cdot H\\)</span>.</p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-1\"></a> Пусть $G$ - группа. Зафиксируем $g \\in G$. Рассмотрим отображение $\\varphi_g: G \\to G$, $\\varphi_g: x \\mapsto gxg^{-1}$. Это отображение автоморфизм группы $G$.\n\n*Доказательство:* Биективность очевидна. Проверим гомоморфность: $\\varphi_g(xy) = gxyg^{-1} = gxgg^{-1}yg^{-1} = \\varphi_g(x)\\varphi_g(y) \\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-group-quotient-group-homomorphism-theore.html#statement-1",
+        "html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#statement-1\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(G\\)</span> - группа. Зафиксируем <span\nclass=\"math inline\">\\(g \\in G\\)</span>. Рассмотрим отображение <span\nclass=\"math inline\">\\(\\varphi_g: G \\to G\\)</span>, <span\nclass=\"math inline\">\\(\\varphi_g: x \\mapsto gxg^{-1}\\)</span>. Это\nотображение автоморфизм группы <span\nclass=\"math inline\">\\(G\\)</span>.</p>\n<p><em>Доказательство:</em> Биективность очевидна. Проверим\nгомоморфность: <span class=\"math inline\">\\(\\varphi_g(xy) = gxyg^{-1} =\ngxgg^{-1}yg^{-1} = \\varphi_g(x)\\varphi_g(y)\n\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#statement-1\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(G\\)</span> - группа. Зафиксируем <span\nclass=\"math inline\">\\(g \\in G\\)</span>. Рассмотрим отображение <span\nclass=\"math inline\">\\(\\varphi_g: G \\to G\\)</span>, <span\nclass=\"math inline\">\\(\\varphi_g: x \\mapsto gxg^{-1}\\)</span>. Это\nотображение автоморфизм группы <span\nclass=\"math inline\">\\(G\\)</span>.</p>",
+        "proof_html": "<p> Биективность очевидна. Проверим\nгомоморфность: <span class=\"math inline\">\\(\\varphi_g(xy) = gxyg^{-1} =\ngxgg^{-1}yg^{-1} = \\varphi_g(x)\\varphi_g(y)\n\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-2\"></a> Пусть $G$ - группа, $\\Phi: G \\to \\operatorname{Aut}G$, $g \\mapsto \\varphi_g$. Тогда $\\Phi$ - гомоморфизм.\n\n*Доказательство:* $\\Phi(gg’)(x) = gg’x (gg’)^{-1} = gg’xg’^{-1}g^{-1} = \\Phi(g)\\Phi(g’)(x) \\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-group-quotient-group-homomorphism-theore.html#statement-2",
+        "html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#statement-2\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(G\\)</span> - группа, <span\nclass=\"math inline\">\\(\\Phi: G \\to \\operatorname{Aut}G\\)</span>, <span\nclass=\"math inline\">\\(g \\mapsto \\varphi_g\\)</span>. Тогда <span\nclass=\"math inline\">\\(\\Phi\\)</span> - гомоморфизм.</p>\n<p><em>Доказательство:</em> <span class=\"math inline\">\\(\\Phi(gg’)(x) =\ngg’x (gg’)^{-1} = gg’xg’^{-1}g^{-1} = \\Phi(g)\\Phi(g’)(x)\n\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#statement-2\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(G\\)</span> - группа, <span\nclass=\"math inline\">\\(\\Phi: G \\to \\operatorname{Aut}G\\)</span>, <span\nclass=\"math inline\">\\(g \\mapsto \\varphi_g\\)</span>. Тогда <span\nclass=\"math inline\">\\(\\Phi\\)</span> - гомоморфизм.</p>",
+        "proof_html": "<p> <span class=\"math inline\">\\(\\Phi(gg’)(x) =\ngg’x (gg’)^{-1} = gg’xg’^{-1}g^{-1} = \\Phi(g)\\Phi(g’)(x)\n\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-3\"></a> $$\\operatorname{Inn} G \\simeq G / Z(G)$$\n\n*Доказательство:* Следует из определения [центра](#definition-1), [группы внутренних автоморфизмов](#definition-2) и [основной теоремы о гомоморфизме](#theorem-0) $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-group-quotient-group-homomorphism-theore.html#statement-3",
+        "html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#statement-3\">Утверждение:</a></strong> <span\nclass=\"math display\">\\[\\operatorname{Inn} G \\simeq G / Z(G)\\]</span></p>\n<p><em>Доказательство:</em> Следует из определения <a\nhref=\"#definition-1\">центра</a>, <a href=\"#definition-2\">группы\nвнутренних автоморфизмов</a> и <a href=\"#theorem-0\">основной теоремы о\nгомоморфизме</a> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#statement-3\">Утверждение:</a></strong> <span\nclass=\"math display\">\\[\\operatorname{Inn} G \\simeq G / Z(G)\\]</span></p>",
+        "proof_html": "<p> Следует из определения <a\nhref=\"#definition-1\">центра</a>, <a href=\"#definition-2\">группы\nвнутренних автоморфизмов</a> и <a href=\"#theorem-0\">основной теоремы о\nгомоморфизме</a> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "нормальность подгруппы внутренних автоморфизмов",
+        "data": "**Утверждение:**<a name=\"statement-4\"></a> (*нормальность подгруппы внутренних автоморфизмов*) Пусть $G$ - группа. Тогда $\\operatorname{Inn}G \\vartriangleleft \\operatorname{Aut}G$.\n\n*Доказательство:* $\\forall \\alpha \\in \\operatorname{Aut}G \\,\\,\\,\\, \\forall \\beta \\in \\operatorname{Inn}G \\,\\,\\,\\, (\\alpha \\beta \\alpha^{-1})(x) = \\alpha(\\beta(\\alpha(x^{-1})))=$\n$= \\alpha(g\\alpha(x^{-1})g^{-1}) = \\alpha(g)x \\alpha^{-1}(g) \\implies \\alpha \\beta \\alpha^{-1} \\in \\operatorname{Inn}G \\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-group-quotient-group-homomorphism-theore.html#statement-4",
+        "html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#statement-4\">Утверждение:</a></strong>\n(<em>нормальность подгруппы внутренних автоморфизмов</em>) Пусть <span\nclass=\"math inline\">\\(G\\)</span> - группа. Тогда <span\nclass=\"math inline\">\\(\\operatorname{Inn}G \\vartriangleleft\n\\operatorname{Aut}G\\)</span>.</p>\n<p><em>Доказательство:</em> <span class=\"math inline\">\\(\\forall \\alpha\n\\in \\operatorname{Aut}G \\,\\,\\,\\, \\forall \\beta \\in \\operatorname{Inn}G\n\\,\\,\\,\\, (\\alpha \\beta \\alpha^{-1})(x) =\n\\alpha(\\beta(\\alpha(x^{-1})))=\\)</span> <span class=\"math inline\">\\(=\n\\alpha(g\\alpha(x^{-1})g^{-1}) = \\alpha(g)x \\alpha^{-1}(g) \\implies\n\\alpha \\beta \\alpha^{-1} \\in \\operatorname{Inn}G\n\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#statement-4\">Утверждение:</a></strong>\n(<em>нормальность подгруппы внутренних автоморфизмов</em>) Пусть <span\nclass=\"math inline\">\\(G\\)</span> - группа. Тогда <span\nclass=\"math inline\">\\(\\operatorname{Inn}G \\vartriangleleft\n\\operatorname{Aut}G\\)</span>.</p>",
+        "proof_html": "<p> <span class=\"math inline\">\\(\\forall \\alpha\n\\in \\operatorname{Aut}G \\,\\,\\,\\, \\forall \\beta \\in \\operatorname{Inn}G\n\\,\\,\\,\\, (\\alpha \\beta \\alpha^{-1})(x) =\n\\alpha(\\beta(\\alpha(x^{-1})))=\\)</span> <span class=\"math inline\">\\(=\n\\alpha(g\\alpha(x^{-1})g^{-1}) = \\alpha(g)x \\alpha^{-1}(g) \\implies\n\\alpha \\beta \\alpha^{-1} \\in \\operatorname{Inn}G\n\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "основная теорема о гомоморфизме",
+        "data": "**Теорема:**<a name=\"theorem-0\"></a> (*основная теорема о гомоморфизме*) Пусть $\\varphi: G \\to H$ - гомоморфизм. Тогда\n\n$$\\varphi(G) \\simeq G / \\operatorname{Ker} \\varphi$$\n\n*Доказательство:* Построим изоморфизм $\\alpha: G / \\operatorname{Ker} \\varphi \\to \\varphi(G)$, $\\alpha: g\\cdot \\operatorname{Ker}\\varphi \\mapsto \\varphi(g)$.\n\n1. Корректность определения отображения $\\alpha$. ^[Нужно показать, что одинаковые элементы переходят в одинаковые.] Пусть $g \\operatorname{Ker}\\varphi = g’ \\operatorname{Ker}\\varphi \\implies g = g’ x, \\,\\,\\,\\, x \\in \\operatorname{Ker}\\varphi$. $\\alpha(g \\operatorname{Ker}\\varphi) = \\varphi(g) = \\varphi(g’x) = \\alpha(g’ \\operatorname{Ker}\\varphi)$\n2. Покажем, что $\\alpha$ гомоморфизм $\\varphi(G)$ и $G / \\operatorname{Ker} \\varphi$. \n\n$\\alpha((g \\operatorname{Ker}\\varphi)\\cdot (g’ \\operatorname{Ker}\\varphi)) = \\alpha(gg’\\cdot \\operatorname{Ker}\\varphi) = \\varphi(gg’) = \\alpha(g \\operatorname{Ker}\\varphi) \\alpha(g’ \\operatorname{Ker}\\varphi)$\n\n3. Проверим инъективность. $g \\cdot \\operatorname{Ker}\\varphi \\in \\operatorname{Ker}\\alpha \\implies \\alpha(g \\cdot \\operatorname{Ker}\\varphi) = e_{\\varphi(G)} = \\varphi(g) \\implies g \\in \\operatorname{Ker}\\varphi \\implies$ [по лемме](#lemma-0) $\\implies g = e$\n\n4. Сюръективность следует из определения $\\alpha \\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "theorem",
+        "url": "lection-group-quotient-group-homomorphism-theore.html#theorem-0",
+        "html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#theorem-0\">Теорема:</a></strong> (<em>основная\nтеорема о гомоморфизме</em>) Пусть <span class=\"math inline\">\\(\\varphi:\nG \\to H\\)</span> - гомоморфизм. Тогда</p>\n<p><span class=\"math display\">\\[\\varphi(G) \\simeq G / \\operatorname{Ker}\n\\varphi\\]</span></p>\n<p><em>Доказательство:</em> Построим изоморфизм <span\nclass=\"math inline\">\\(\\alpha: G / \\operatorname{Ker} \\varphi \\to\n\\varphi(G)\\)</span>, <span class=\"math inline\">\\(\\alpha: g\\cdot\n\\operatorname{Ker}\\varphi \\mapsto \\varphi(g)\\)</span>.</p>\n<ol type=\"1\">\n<li>Корректность определения отображения <span\nclass=\"math inline\">\\(\\alpha\\)</span>. <a href=\"#fn1\"\nclass=\"footnote-ref\" id=\"fnref1\" role=\"doc-noteref\"><sup>1</sup></a>\nПусть <span class=\"math inline\">\\(g \\operatorname{Ker}\\varphi = g’\n\\operatorname{Ker}\\varphi \\implies g = g’ x, \\,\\,\\,\\, x \\in\n\\operatorname{Ker}\\varphi\\)</span>. <span class=\"math inline\">\\(\\alpha(g\n\\operatorname{Ker}\\varphi) = \\varphi(g) = \\varphi(g’x) = \\alpha(g’\n\\operatorname{Ker}\\varphi)\\)</span></li>\n<li>Покажем, что <span class=\"math inline\">\\(\\alpha\\)</span> гомоморфизм\n<span class=\"math inline\">\\(\\varphi(G)\\)</span> и <span\nclass=\"math inline\">\\(G / \\operatorname{Ker} \\varphi\\)</span>.</li>\n</ol>\n<p><span class=\"math inline\">\\(\\alpha((g \\operatorname{Ker}\\varphi)\\cdot\n(g’ \\operatorname{Ker}\\varphi)) = \\alpha(gg’\\cdot\n\\operatorname{Ker}\\varphi) = \\varphi(gg’) = \\alpha(g\n\\operatorname{Ker}\\varphi) \\alpha(g’\n\\operatorname{Ker}\\varphi)\\)</span></p>\n<ol start=\"3\" type=\"1\">\n<li><p>Проверим инъективность. <span class=\"math inline\">\\(g \\cdot\n\\operatorname{Ker}\\varphi \\in \\operatorname{Ker}\\alpha \\implies \\alpha(g\n\\cdot \\operatorname{Ker}\\varphi) = e_{\\varphi(G)} = \\varphi(g) \\implies\ng \\in \\operatorname{Ker}\\varphi \\implies\\)</span> <a href=\"#lemma-0\">по\nлемме</a> <span class=\"math inline\">\\(\\implies g = e\\)</span></p></li>\n<li><p>Сюръективность следует из определения <span\nclass=\"math inline\">\\(\\alpha \\,\\,\\,\\,\\blacksquare\\)</span></p></li>\n</ol>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Нужно показать, что одинаковые элементы переходят в\nодинаковые.<a href=\"#fnref1\" class=\"footnote-back\"\nrole=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#theorem-0\">Теорема:</a></strong> (<em>основная\nтеорема о гомоморфизме</em>) Пусть <span class=\"math inline\">\\(\\varphi:\nG \\to H\\)</span> - гомоморфизм. Тогда</p>\n<p><span class=\"math display\">\\[\\varphi(G) \\simeq G / \\operatorname{Ker}\n\\varphi\\]</span></p>",
+        "proof_html": "<p> Построим изоморфизм <span\nclass=\"math inline\">\\(\\alpha: G / \\operatorname{Ker} \\varphi \\to\n\\varphi(G)\\)</span>, <span class=\"math inline\">\\(\\alpha: g\\cdot\n\\operatorname{Ker}\\varphi \\mapsto \\varphi(g)\\)</span>.</p>\n<ol type=\"1\">\n<li>Корректность определения отображения <span\nclass=\"math inline\">\\(\\alpha\\)</span>. <a href=\"#fn1\"\nclass=\"footnote-ref\" id=\"fnref1\" role=\"doc-noteref\"><sup>1</sup></a>\nПусть <span class=\"math inline\">\\(g \\operatorname{Ker}\\varphi = g’\n\\operatorname{Ker}\\varphi \\implies g = g’ x, \\,\\,\\,\\, x \\in\n\\operatorname{Ker}\\varphi\\)</span>. <span class=\"math inline\">\\(\\alpha(g\n\\operatorname{Ker}\\varphi) = \\varphi(g) = \\varphi(g’x) = \\alpha(g’\n\\operatorname{Ker}\\varphi)\\)</span></li>\n<li>Покажем, что <span class=\"math inline\">\\(\\alpha\\)</span> гомоморфизм\n<span class=\"math inline\">\\(\\varphi(G)\\)</span> и <span\nclass=\"math inline\">\\(G / \\operatorname{Ker} \\varphi\\)</span>.</li>\n</ol>\n<p><span class=\"math inline\">\\(\\alpha((g \\operatorname{Ker}\\varphi)\\cdot\n(g’ \\operatorname{Ker}\\varphi)) = \\alpha(gg’\\cdot\n\\operatorname{Ker}\\varphi) = \\varphi(gg’) = \\alpha(g\n\\operatorname{Ker}\\varphi) \\alpha(g’\n\\operatorname{Ker}\\varphi)\\)</span></p>\n<ol start=\"3\" type=\"1\">\n<li><p>Проверим инъективность. <span class=\"math inline\">\\(g \\cdot\n\\operatorname{Ker}\\varphi \\in \\operatorname{Ker}\\alpha \\implies \\alpha(g\n\\cdot \\operatorname{Ker}\\varphi) = e_{\\varphi(G)} = \\varphi(g) \\implies\ng \\in \\operatorname{Ker}\\varphi \\implies\\)</span> <a href=\"#lemma-0\">по\nлемме</a> <span class=\"math inline\">\\(\\implies g = e\\)</span></p></li>\n<li><p>Сюръективность следует из определения <span\nclass=\"math inline\">\\(\\alpha \\,\\,\\,\\,\\blacksquare\\)</span></p></li>\n</ol>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Нужно показать, что одинаковые элементы переходят в\nодинаковые.<a href=\"#fnref1\" class=\"footnote-back\"\nrole=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Теорема:**<a name=\"theorem-1\"></a> Пусть $H$ подгруппа группы $G$ и $|G:H| < \\infty$. Тогда $\\exists N \\vartriangleleft G \\,\\,\\,\\, N \\subset H \\subset G: \\,\\,\\,\\, |G:N| \\leqslant |G:H|!$ ^[Что это за ужас🤯]\n\n*Доказательство:*\n\nПусть $G = g_1H \\sqcup g_2H \\sqcup \\ldots \\sqcup g_nH$. Построим гомоморфизм $\\varphi: G \\to S_{|G:H|}\\,\\,\\,\\, g \\mapsto \\left(\\begin{array}{ccccc} g_1H & \\dots & g_nH \\\\ gg_1H & \\dots & gg_nH \\end{array}\\right)$.\n\nПокажем гомоморфность $\\varphi$. $\\varphi(gg’)(g_i H) = gg’g_iH = g \\varphi(g’)(g_iH) = \\varphi(g)\\varphi(g’)(g_iH)$. ^[Хочу что-то - пишу это что-то, а потом удивляюсь тому что получилаь правда :)]\n\nПусть $N = \\operatorname{Ker}\\varphi \\implies N \\vartriangleleft H$.\n\n$g \\in N \\implies g g_i H = g_i H \\,\\,\\,\\, \\forall g_i \\in G \\implies gH = H \\implies g \\in H \\implies N \\subset H$.\n\nПо [теореме о гомоморфизме](#theorem-0) $|G:N| = |G/N| = |G/\\operatorname{Ker}\\varphi| = |\\operatorname{Img}\\varphi| \\leqslant |S_{|G:H|}| = |G:H|! \\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "theorem",
+        "url": "lection-group-quotient-group-homomorphism-theore.html#theorem-1",
+        "html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#theorem-1\">Теорема:</a></strong> Пусть <span\nclass=\"math inline\">\\(H\\)</span> подгруппа группы <span\nclass=\"math inline\">\\(G\\)</span> и <span class=\"math inline\">\\(|G:H|\n&lt; \\infty\\)</span>. Тогда <span class=\"math inline\">\\(\\exists N\n\\vartriangleleft G \\,\\,\\,\\, N \\subset H \\subset G: \\,\\,\\,\\, |G:N|\n\\leqslant |G:H|!\\)</span> <a href=\"#fn1\" class=\"footnote-ref\"\nid=\"fnref1\" role=\"doc-noteref\"><sup>1</sup></a></p>\n<p><em>Доказательство:</em></p>\n<p>Пусть <span class=\"math inline\">\\(G = g_1H \\sqcup g_2H \\sqcup \\ldots\n\\sqcup g_nH\\)</span>. Построим гомоморфизм <span\nclass=\"math inline\">\\(\\varphi: G \\to S_{|G:H|}\\,\\,\\,\\, g \\mapsto\n\\left(\\begin{array}{ccccc} g_1H &amp; \\dots &amp; g_nH \\\\ gg_1H &amp;\n\\dots &amp; gg_nH \\end{array}\\right)\\)</span>.</p>\n<p>Покажем гомоморфность <span class=\"math inline\">\\(\\varphi\\)</span>.\n<span class=\"math inline\">\\(\\varphi(gg’)(g_i H) = gg’g_iH = g\n\\varphi(g’)(g_iH) = \\varphi(g)\\varphi(g’)(g_iH)\\)</span>. <a href=\"#fn2\"\nclass=\"footnote-ref\" id=\"fnref2\" role=\"doc-noteref\"><sup>2</sup></a></p>\n<p>Пусть <span class=\"math inline\">\\(N = \\operatorname{Ker}\\varphi\n\\implies N \\vartriangleleft H\\)</span>.</p>\n<p><span class=\"math inline\">\\(g \\in N \\implies g g_i H = g_i H \\,\\,\\,\\,\n\\forall g_i \\in G \\implies gH = H \\implies g \\in H \\implies N \\subset\nH\\)</span>.</p>\n<p>По <a href=\"#theorem-0\">теореме о гомоморфизме</a> <span\nclass=\"math inline\">\\(|G:N| = |G/N| = |G/\\operatorname{Ker}\\varphi| =\n|\\operatorname{Img}\\varphi| \\leqslant |S_{|G:H|}| = |G:H|!\n\\,\\,\\,\\,\\blacksquare\\)</span></p>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Что это за ужас🤯<a href=\"#fnref1\" class=\"footnote-back\"\nrole=\"doc-backlink\">↩︎</a></p></li>\n<li id=\"fn2\"><p>Хочу что-то - пишу это что-то, а потом удивляюсь тому\nчто получилаь правда :)<a href=\"#fnref2\" class=\"footnote-back\"\nrole=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#theorem-1\">Теорема:</a></strong> Пусть <span\nclass=\"math inline\">\\(H\\)</span> подгруппа группы <span\nclass=\"math inline\">\\(G\\)</span> и <span class=\"math inline\">\\(|G:H|\n&lt; \\infty\\)</span>. Тогда <span class=\"math inline\">\\(\\exists N\n\\vartriangleleft G \\,\\,\\,\\, N \\subset H \\subset G: \\,\\,\\,\\, |G:N|\n\\leqslant |G:H|!\\)</span> <a href=\"#fn1\" class=\"footnote-ref\"\nid=\"fnref1\" role=\"doc-noteref\"><sup>1</sup></a></p>",
+        "proof_html": "<p></p>\n<p>Пусть <span class=\"math inline\">\\(G = g_1H \\sqcup g_2H \\sqcup \\ldots\n\\sqcup g_nH\\)</span>. Построим гомоморфизм <span\nclass=\"math inline\">\\(\\varphi: G \\to S_{|G:H|}\\,\\,\\,\\, g \\mapsto\n\\left(\\begin{array}{ccccc} g_1H &amp; \\dots &amp; g_nH \\\\ gg_1H &amp;\n\\dots &amp; gg_nH \\end{array}\\right)\\)</span>.</p>\n<p>Покажем гомоморфность <span class=\"math inline\">\\(\\varphi\\)</span>.\n<span class=\"math inline\">\\(\\varphi(gg’)(g_i H) = gg’g_iH = g\n\\varphi(g’)(g_iH) = \\varphi(g)\\varphi(g’)(g_iH)\\)</span>. <a href=\"#fn2\"\nclass=\"footnote-ref\" id=\"fnref2\" role=\"doc-noteref\"><sup>2</sup></a></p>\n<p>Пусть <span class=\"math inline\">\\(N = \\operatorname{Ker}\\varphi\n\\implies N \\vartriangleleft H\\)</span>.</p>\n<p><span class=\"math inline\">\\(g \\in N \\implies g g_i H = g_i H \\,\\,\\,\\,\n\\forall g_i \\in G \\implies gH = H \\implies g \\in H \\implies N \\subset\nH\\)</span>.</p>\n<p>По <a href=\"#theorem-0\">теореме о гомоморфизме</a> <span\nclass=\"math inline\">\\(|G:N| = |G/N| = |G/\\operatorname{Ker}\\varphi| =\n|\\operatorname{Img}\\varphi| \\leqslant |S_{|G:H|}| = |G:H|!\n\\,\\,\\,\\,\\blacksquare\\)</span></p>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Что это за ужас🤯<a href=\"#fnref1\" class=\"footnote-back\"\nrole=\"doc-backlink\">↩︎</a></p></li>\n<li id=\"fn2\"><p>Хочу что-то - пишу это что-то, а потом удивляюсь тому\nчто получилаь правда :)<a href=\"#fnref2\" class=\"footnote-back\"\nrole=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>"
+    },
+    {
+        "keyword": "теорема кэли",
+        "data": "**Теорема:**<a name=\"theorem-2\"></a> (*теорема Кэли*) Любая конечная группа $G$ изоморфна некоторой подгруппе $S_{|G|}$. ^[Вкладывается в $S_{|G|}$]\n\n*Доказательство:* $H = \\{e\\}$ погруппа $G$. По предыдущей теореме существует гомоморфизм $\\varphi: G \\to S_{|G|}$ и $\\operatorname{Ker}\\varphi \\subset H = \\{e\\} \\implies \\varphi$ - инъективно $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "theorem",
+        "url": "lection-group-quotient-group-homomorphism-theore.html#theorem-2",
+        "html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#theorem-2\">Теорема:</a></strong> (<em>теорема\nКэли</em>) Любая конечная группа <span class=\"math inline\">\\(G\\)</span>\nизоморфна некоторой подгруппе <span\nclass=\"math inline\">\\(S_{|G|}\\)</span>. <a href=\"#fn1\"\nclass=\"footnote-ref\" id=\"fnref1\" role=\"doc-noteref\"><sup>1</sup></a></p>\n<p><em>Доказательство:</em> <span class=\"math inline\">\\(H =\n\\{e\\}\\)</span> погруппа <span class=\"math inline\">\\(G\\)</span>. По\nпредыдущей теореме существует гомоморфизм <span\nclass=\"math inline\">\\(\\varphi: G \\to S_{|G|}\\)</span> и <span\nclass=\"math inline\">\\(\\operatorname{Ker}\\varphi \\subset H = \\{e\\}\n\\implies \\varphi\\)</span> - инъективно <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Вкладывается в <span\nclass=\"math inline\">\\(S_{|G|}\\)</span><a href=\"#fnref1\"\nclass=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#theorem-2\">Теорема:</a></strong> (<em>теорема\nКэли</em>) Любая конечная группа <span class=\"math inline\">\\(G\\)</span>\nизоморфна некоторой подгруппе <span\nclass=\"math inline\">\\(S_{|G|}\\)</span>. <a href=\"#fn1\"\nclass=\"footnote-ref\" id=\"fnref1\" role=\"doc-noteref\"><sup>1</sup></a></p>",
+        "proof_html": "<p> <span class=\"math inline\">\\(H =\n\\{e\\}\\)</span> погруппа <span class=\"math inline\">\\(G\\)</span>. По\nпредыдущей теореме существует гомоморфизм <span\nclass=\"math inline\">\\(\\varphi: G \\to S_{|G|}\\)</span> и <span\nclass=\"math inline\">\\(\\operatorname{Ker}\\varphi \\subset H = \\{e\\}\n\\implies \\varphi\\)</span> - инъективно <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Вкладывается в <span\nclass=\"math inline\">\\(S_{|G|}\\)</span><a href=\"#fnref1\"\nclass=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Следствие:**<a name=\"corollary-0\"></a> Любая подгруппа конечного индекса содержит нормальную подгруппу конечного индекса.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "corollary",
+        "url": "lection-group-quotient-group-homomorphism-theore.html#corollary-0",
+        "html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#corollary-0\">Следствие:</a></strong> Любая подгруппа\nконечного индекса содержит нормальную подгруппу конечного индекса.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#corollary-0\">Следствие:</a></strong> Любая подгруппа\nконечного индекса содержит нормальную подгруппу конечного индекса.</p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "критерий инъективности",
+        "data": "**Лемма:**<a name=\"lemma-0\"></a> (*критерий инъективности*) Пусть $\\varphi: \\,\\,\\,\\, G \\to H$ - гомоморфизм. \n\nТогда $\\varphi$ инъективно $\\iff$ $\\operatorname{Ker} \\varphi = \\{e\\}$.\n\n*Доказательство:* \n\n$\\bbox[4px, border: 1px solid black]{\\Longrightarrow}$ Очевидно.\n\n$\\bbox[4px, border: 1px solid black]{\\Longleftarrow}$ Пусть $\\varphi(a) = \\varphi(b) \\implies$\n$\\implies e = \\varphi(a)\\cdot (\\varphi(b))^{-1} = \\varphi(a)\\cdot \\varphi(b^{-1}) = \\varphi(a\\cdot b^{-1}) \\implies a\\cdot b^{-1} = e \\implies a = b \\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "lemma",
+        "url": "lection-group-quotient-group-homomorphism-theore.html#lemma-0",
+        "html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#lemma-0\">Лемма:</a></strong> (<em>критерий\nинъективности</em>) Пусть <span class=\"math inline\">\\(\\varphi: \\,\\,\\,\\,\nG \\to H\\)</span> - гомоморфизм.</p>\n<p>Тогда <span class=\"math inline\">\\(\\varphi\\)</span> инъективно <span\nclass=\"math inline\">\\(\\iff\\)</span> <span\nclass=\"math inline\">\\(\\operatorname{Ker} \\varphi = \\{e\\}\\)</span>.</p>\n<p><em>Доказательство:</em></p>\n<p><span class=\"math inline\">\\(\\bbox[4px, border: 1px solid\nblack]{\\Longrightarrow}\\)</span> Очевидно.</p>\n<p><span class=\"math inline\">\\(\\bbox[4px, border: 1px solid\nblack]{\\Longleftarrow}\\)</span> Пусть <span\nclass=\"math inline\">\\(\\varphi(a) = \\varphi(b) \\implies\\)</span> <span\nclass=\"math inline\">\\(\\implies e = \\varphi(a)\\cdot (\\varphi(b))^{-1} =\n\\varphi(a)\\cdot \\varphi(b^{-1}) = \\varphi(a\\cdot b^{-1}) \\implies a\\cdot\nb^{-1} = e \\implies a = b \\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-group-quotient-group-homomorphism-theore.html#lemma-0\">Лемма:</a></strong> (<em>критерий\nинъективности</em>) Пусть <span class=\"math inline\">\\(\\varphi: \\,\\,\\,\\,\nG \\to H\\)</span> - гомоморфизм.</p>\n<p>Тогда <span class=\"math inline\">\\(\\varphi\\)</span> инъективно <span\nclass=\"math inline\">\\(\\iff\\)</span> <span\nclass=\"math inline\">\\(\\operatorname{Ker} \\varphi = \\{e\\}\\)</span>.</p>",
+        "proof_html": "<p></p>\n<p><span class=\"math inline\">\\(\\bbox[4px, border: 1px solid\nblack]{\\Longrightarrow}\\)</span> Очевидно.</p>\n<p><span class=\"math inline\">\\(\\bbox[4px, border: 1px solid\nblack]{\\Longleftarrow}\\)</span> Пусть <span\nclass=\"math inline\">\\(\\varphi(a) = \\varphi(b) \\implies\\)</span> <span\nclass=\"math inline\">\\(\\implies e = \\varphi(a)\\cdot (\\varphi(b))^{-1} =\n\\varphi(a)\\cdot \\varphi(b^{-1}) = \\varphi(a\\cdot b^{-1}) \\implies a\\cdot\nb^{-1} = e \\implies a = b \\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "прямое произведение групп  ",
+        "data": "**Определение:**<a name=\"definition-0\"></a> Пусть $A$ и $B$ группы. Зададим на множестве $A\\times B = \\{(a, b)|\\,\\,\\,\\, a \\in A, \\,\\,\\,\\, b \\in B\\}$ бинарную операцию: $(a, b)\\cdot (a’, b’) = (aa’, bb’)$. Множество $A\\times B$ с такой операцией - *прямое произведение групп* $A$ и $B$.\n\n**Обозначается:** $A\\times B$\n\n",
+        "data_type": "definition",
+        "url": "lection-group-product-znm-isomorphism-theore.html#definition-0",
+        "html": "<p><strong><a href=\"lection-group-product-znm-isomorphism-theore.html#definition-0\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(A\\)</span> и <span\nclass=\"math inline\">\\(B\\)</span> группы. Зададим на множестве <span\nclass=\"math inline\">\\(A\\times B = \\{(a, b)|\\,\\,\\,\\, a \\in A, \\,\\,\\,\\, b\n\\in B\\}\\)</span> бинарную операцию: <span class=\"math inline\">\\((a,\nb)\\cdot (a’, b’) = (aa’, bb’)\\)</span>. Множество <span\nclass=\"math inline\">\\(A\\times B\\)</span> с такой операцией - <em>прямое\nпроизведение групп</em> <span class=\"math inline\">\\(A\\)</span> и <span\nclass=\"math inline\">\\(B\\)</span>.</p>\n<p><strong>Обозначается:</strong> <span class=\"math inline\">\\(A\\times\nB\\)</span></p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "внутренним прямым произведением",
+        "data": "**Определение:**<a name=\"definition-1\"></a> Группа $G$ является *внутренним прямым произведением* своих подгрупп $A$ и $B$, если:\n\n1. $A \\vartriangleleft G$ и $B \\vartriangleleft G$.\n2. $A \\cap B = \\{e\\}$.\n3. $G = \\{ab|\\,\\,\\,\\, a \\in A, \\,\\,\\,\\, b \\in B\\} = A\\cdot B$.\n\n",
+        "data_type": "definition",
+        "url": "lection-group-product-znm-isomorphism-theore.html#definition-1",
+        "html": "<p><strong><a href=\"lection-group-product-znm-isomorphism-theore.html#definition-1\">Определение:</a></strong> Группа <span\nclass=\"math inline\">\\(G\\)</span> является <em>внутренним прямым\nпроизведением</em> своих подгрупп <span class=\"math inline\">\\(A\\)</span>\nи <span class=\"math inline\">\\(B\\)</span>, если:</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(A \\vartriangleleft G\\)</span> и <span\nclass=\"math inline\">\\(B \\vartriangleleft G\\)</span>.</li>\n<li><span class=\"math inline\">\\(A \\cap B = \\{e\\}\\)</span>.</li>\n<li><span class=\"math inline\">\\(G = \\{ab|\\,\\,\\,\\, a \\in A, \\,\\,\\,\\, b\n\\in B\\} = A\\cdot B\\)</span>.</li>\n</ol>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "свободна базис линейно независимое",
+        "data": "**Определение:**<a name=\"definition-2\"></a> Конечно порожденная абелева группа $G$ - *свободна*, если в $(G, +)$ существует *базис*, то есть множество $X \\subset G$, такое что:\n\n1. $<X> = G$, то есть $\\forall g \\in G \\,\\,\\,\\, \\exists \\lambda_1, \\ldots, \\lambda_n \\in \\mathbb{Z}: \\,\\,\\,\\, g = \\lambda_1 x_1 + \\ldots + \\lambda_n x_n, \\,\\,\\,\\, x_i \\in X$.\n2. $X$ - *линейно независимое*, то есть только тривиальная линейная комбинация элементов $X$ равна $0$. ^[Это как? Ведь у любого элемента в конечной группе есть порядок, а значит можно взять $\\operatorname{ord}x_i \\cdot x_i = 0$.]\n\n",
+        "data_type": "definition",
+        "url": "lection-group-product-znm-isomorphism-theore.html#definition-2",
+        "html": "<p><strong><a href=\"lection-group-product-znm-isomorphism-theore.html#definition-2\">Определение:</a></strong> Конечно\nпорожденная абелева группа <span class=\"math inline\">\\(G\\)</span> -\n<em>свободна</em>, если в <span class=\"math inline\">\\((G, +)\\)</span>\nсуществует <em>базис</em>, то есть множество <span\nclass=\"math inline\">\\(X \\subset G\\)</span>, такое что:</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(&lt;X&gt; = G\\)</span>, то есть <span\nclass=\"math inline\">\\(\\forall g \\in G \\,\\,\\,\\, \\exists \\lambda_1,\n\\ldots, \\lambda_n \\in \\mathbb{Z}: \\,\\,\\,\\, g = \\lambda_1 x_1 + \\ldots +\n\\lambda_n x_n, \\,\\,\\,\\, x_i \\in X\\)</span>.</li>\n<li><span class=\"math inline\">\\(X\\)</span> - <em>линейно\nнезависимое</em>, то есть только тривиальная линейная комбинация\nэлементов <span class=\"math inline\">\\(X\\)</span> равна <span\nclass=\"math inline\">\\(0\\)</span>. <a href=\"#fn1\" class=\"footnote-ref\"\nid=\"fnref1\" role=\"doc-noteref\"><sup>1</sup></a></li>\n</ol>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Это как? Ведь у любого элемента в конечной группе есть\nпорядок, а значит можно взять <span\nclass=\"math inline\">\\(\\operatorname{ord}x_i \\cdot x_i = 0\\)</span>.<a\nhref=\"#fnref1\" class=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-0\"></a> Прямое произведение групп - группа.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-group-product-znm-isomorphism-theore.html#statement-0",
+        "html": "<p><strong><a href=\"lection-group-product-znm-isomorphism-theore.html#statement-0\">Утверждение:</a></strong> Прямое\nпроизведение групп - группа.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-group-product-znm-isomorphism-theore.html#statement-0\">Утверждение:</a></strong> Прямое\nпроизведение групп - группа.</p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-1\"></a> Пусть $G = A\\cdot B$. Тогда\n\n1. $\\forall g \\in G \\,\\,\\,\\, \\exists! a \\in A, \\,\\,\\,\\, b \\in B: \\,\\,\\,\\, g = a\\cdot b$.\n2. $\\forall a \\in A, \\,\\,\\,\\, \\forall b \\in B \\,\\,\\,\\, a\\cdot b = b\\cdot a$.\n\n*Доказательство:* \n\n1. Пусть $g = a\\cdot b = a’\\cdot b’$. Тогда $A \\ni a’^{-1} a = b’b^{-1} \\in B$ и $A\\cap B = \\{e\\} \\implies a’^{-1} a = b’b^{-1} = e \\,\\,\\,\\,\\blacksquare$\n2. $bab^{-1}a^{-1}$. $A \\vartriangleleft G \\implies bab^{-1} \\in A \\implies bab^{-1}a^{-1} \\in A$. Аналогично $bab^{-1}a^{-1} \\in B \\implies bab^{-1}a^{-1} = e \\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-group-product-znm-isomorphism-theore.html#statement-1",
+        "html": "<p><strong><a href=\"lection-group-product-znm-isomorphism-theore.html#statement-1\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(G = A\\cdot B\\)</span>. Тогда</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(\\forall g \\in G \\,\\,\\,\\, \\exists! a \\in\nA, \\,\\,\\,\\, b \\in B: \\,\\,\\,\\, g = a\\cdot b\\)</span>.</li>\n<li><span class=\"math inline\">\\(\\forall a \\in A, \\,\\,\\,\\, \\forall b \\in\nB \\,\\,\\,\\, a\\cdot b = b\\cdot a\\)</span>.</li>\n</ol>\n<p><em>Доказательство:</em></p>\n<ol type=\"1\">\n<li>Пусть <span class=\"math inline\">\\(g = a\\cdot b = a’\\cdot\nb’\\)</span>. Тогда <span class=\"math inline\">\\(A \\ni a’^{-1} a =\nb’b^{-1} \\in B\\)</span> и <span class=\"math inline\">\\(A\\cap B = \\{e\\}\n\\implies a’^{-1} a = b’b^{-1} = e \\,\\,\\,\\,\\blacksquare\\)</span></li>\n<li><span class=\"math inline\">\\(bab^{-1}a^{-1}\\)</span>. <span\nclass=\"math inline\">\\(A \\vartriangleleft G \\implies bab^{-1} \\in A\n\\implies bab^{-1}a^{-1} \\in A\\)</span>. Аналогично <span\nclass=\"math inline\">\\(bab^{-1}a^{-1} \\in B \\implies bab^{-1}a^{-1} = e\n\\,\\,\\,\\,\\blacksquare\\)</span></li>\n</ol>",
+        "statement_html": "<p><strong><a href=\"lection-group-product-znm-isomorphism-theore.html#statement-1\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(G = A\\cdot B\\)</span>. Тогда</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(\\forall g \\in G \\,\\,\\,\\, \\exists! a \\in\nA, \\,\\,\\,\\, b \\in B: \\,\\,\\,\\, g = a\\cdot b\\)</span>.</li>\n<li><span class=\"math inline\">\\(\\forall a \\in A, \\,\\,\\,\\, \\forall b \\in\nB \\,\\,\\,\\, a\\cdot b = b\\cdot a\\)</span>.</li>\n</ol>",
+        "proof_html": "<p></p>\n<ol type=\"1\">\n<li>Пусть <span class=\"math inline\">\\(g = a\\cdot b = a’\\cdot\nb’\\)</span>. Тогда <span class=\"math inline\">\\(A \\ni a’^{-1} a =\nb’b^{-1} \\in B\\)</span> и <span class=\"math inline\">\\(A\\cap B = \\{e\\}\n\\implies a’^{-1} a = b’b^{-1} = e \\,\\,\\,\\,\\blacksquare\\)</span></li>\n<li><span class=\"math inline\">\\(bab^{-1}a^{-1}\\)</span>. <span\nclass=\"math inline\">\\(A \\vartriangleleft G \\implies bab^{-1} \\in A\n\\implies bab^{-1}a^{-1} \\in A\\)</span>. Аналогично <span\nclass=\"math inline\">\\(bab^{-1}a^{-1} \\in B \\implies bab^{-1}a^{-1} = e\n\\,\\,\\,\\,\\blacksquare\\)</span></li>\n</ol>"
+    },
+    {
+        "keyword": "связь инутреннего и внешнего произведения",
+        "data": "**Утверждение:**<a name=\"statement-2\"></a> (*связь инутреннего и внешнего произведения*) Группа $G$ является (внутренним) произведением своих подгрупп $A$ и $B$, если $\\exists \\varphi: G \\to X\\times Y$, $\\varphi$ - изоморфизм, $X$ и $Y$ группы, $X \\simeq A$, $Y \\simeq B$.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-group-product-znm-isomorphism-theore.html#statement-2",
+        "html": "<p><strong><a href=\"lection-group-product-znm-isomorphism-theore.html#statement-2\">Утверждение:</a></strong> (<em>связь\nинутреннего и внешнего произведения</em>) Группа <span\nclass=\"math inline\">\\(G\\)</span> является (внутренним) произведением\nсвоих подгрупп <span class=\"math inline\">\\(A\\)</span> и <span\nclass=\"math inline\">\\(B\\)</span>, если <span\nclass=\"math inline\">\\(\\exists \\varphi: G \\to X\\times Y\\)</span>, <span\nclass=\"math inline\">\\(\\varphi\\)</span> - изоморфизм, <span\nclass=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span> группы, <span class=\"math inline\">\\(X\n\\simeq A\\)</span>, <span class=\"math inline\">\\(Y \\simeq B\\)</span>.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-group-product-znm-isomorphism-theore.html#statement-2\">Утверждение:</a></strong> (<em>связь\nинутреннего и внешнего произведения</em>) Группа <span\nclass=\"math inline\">\\(G\\)</span> является (внутренним) произведением\nсвоих подгрупп <span class=\"math inline\">\\(A\\)</span> и <span\nclass=\"math inline\">\\(B\\)</span>, если <span\nclass=\"math inline\">\\(\\exists \\varphi: G \\to X\\times Y\\)</span>, <span\nclass=\"math inline\">\\(\\varphi\\)</span> - изоморфизм, <span\nclass=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span> группы, <span class=\"math inline\">\\(X\n\\simeq A\\)</span>, <span class=\"math inline\">\\(Y \\simeq B\\)</span>.</p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "критерий изоморфности произведения групп вычетов по модулям $n$ и $m$ группе вычетов по модулю $n\\cdot m$",
+        "data": "**Теорема:**<a name=\"theorem-0\"></a> (*критерий изоморфности произведения групп вычетов по модулям $n$ и $m$ группе вычетов по модулю $n\\cdot m$*) \n\n$$\\mathbb{Z}_{n\\cdot m}\\simeq \\mathbb{Z}_n \\oplus \\mathbb{Z}_m \\iff \\gcd(n, m) = 1$$\n\n*Доказательство:* \n\n$\\bbox[4px, border: 1px solid black]{\\Longrightarrow}$ Пусть $\\gcd(n, m) = k \\ne 1$. Тогда у каждой из групп $\\mathbb{Z}_n$ и $\\mathbb{Z}_m$ есть подгруппа порядка $k$. Следовательно, в группе $\\mathbb{Z}_n \\oplus \\mathbb{Z}_m$ есть две погруппы порядка $k$: $\\frac{n}{k}\\mathbb{Z}_n \\oplus \\{0\\}$ и $\\{0\\} \\oplus \\frac{m}{k}\\mathbb{Z}_m$, а следовательно [по теореме](lection-group.html#theorem-2) группа $\\mathbb{Z}_n \\oplus \\mathbb{Z}_m$ нециклическая, а значит неизоморфна $\\mathbb{Z}_{n\\cdot m}$\n\n$\\bbox[4px, border: 1px solid black]{\\Longleftarrow}$ Рассмотрим подгруппы $<m> = m\\cdot\\mathbb{Z}_{mn} \\simeq \\mathbb{Z}_n$ и $<n> = n\\cdot\\mathbb{Z}_{mn} \\simeq \\mathbb{Z}_m$. Докажем, что $\\mathbb{Z}_{nm} = m\\mathbb{Z}_{nm}\\oplus n \\mathbb{Z}_{nm}$.\n\n1. Эти подгруппы нормальны, так как абелевы.\n2. Пусть $x \\in m\\mathbb{Z}_{nm}\\cap n \\mathbb{Z}_{nm} \\implies m \\,\\,|\\,\\, x$ и $n \\,\\,|\\,\\, x$, следовательно, так как $\\gcd(n, m) = 1$, $x = 0$.\n3. $\\gcd(n, m) = 1 \\implies \\exists u, v \\in \\mathbb{Z}: \\,\\,\\,\\, u\\cdot n + v\\cdot m = 1$ и $u\\cdot n \\in n \\mathbb{Z}_{nm}, \\,\\,\\,\\, v\\cdot m \\in m \\mathbb{Z}_{nm} \\implies 1 \\in m\\mathbb{Z}_{nm}\\oplus n \\mathbb{Z}_{nm} \\,\\,\\,\\,\\blacksquare$ \n\n",
+        "data_type": "theorem",
+        "url": "lection-group-product-znm-isomorphism-theore.html#theorem-0",
+        "html": "<p><strong><a href=\"lection-group-product-znm-isomorphism-theore.html#theorem-0\">Теорема:</a></strong> (<em>критерий\nизоморфности произведения групп вычетов по модулям <span\nclass=\"math inline\">\\(n\\)</span> и <span\nclass=\"math inline\">\\(m\\)</span> группе вычетов по модулю <span\nclass=\"math inline\">\\(n\\cdot m\\)</span></em>)</p>\n<p><span class=\"math display\">\\[\\mathbb{Z}_{n\\cdot m}\\simeq \\mathbb{Z}_n\n\\oplus \\mathbb{Z}_m \\iff \\gcd(n, m) = 1\\]</span></p>\n<p><em>Доказательство:</em></p>\n<p><span class=\"math inline\">\\(\\bbox[4px, border: 1px solid\nblack]{\\Longrightarrow}\\)</span> Пусть <span\nclass=\"math inline\">\\(\\gcd(n, m) = k \\ne 1\\)</span>. Тогда у каждой из\nгрупп <span class=\"math inline\">\\(\\mathbb{Z}_n\\)</span> и <span\nclass=\"math inline\">\\(\\mathbb{Z}_m\\)</span> есть подгруппа порядка <span\nclass=\"math inline\">\\(k\\)</span>. Следовательно, в группе <span\nclass=\"math inline\">\\(\\mathbb{Z}_n \\oplus \\mathbb{Z}_m\\)</span> есть две\nпогруппы порядка <span class=\"math inline\">\\(k\\)</span>: <span\nclass=\"math inline\">\\(\\frac{n}{k}\\mathbb{Z}_n \\oplus \\{0\\}\\)</span> и\n<span class=\"math inline\">\\(\\{0\\} \\oplus\n\\frac{m}{k}\\mathbb{Z}_m\\)</span>, а следовательно <a\nhref=\"lection-group.html#theorem-2\">по теореме</a> группа <span\nclass=\"math inline\">\\(\\mathbb{Z}_n \\oplus \\mathbb{Z}_m\\)</span>\nнециклическая, а значит неизоморфна <span\nclass=\"math inline\">\\(\\mathbb{Z}_{n\\cdot m}\\)</span></p>\n<p><span class=\"math inline\">\\(\\bbox[4px, border: 1px solid\nblack]{\\Longleftarrow}\\)</span> Рассмотрим подгруппы <span\nclass=\"math inline\">\\(&lt;m&gt; = m\\cdot\\mathbb{Z}_{mn} \\simeq\n\\mathbb{Z}_n\\)</span> и <span class=\"math inline\">\\(&lt;n&gt; =\nn\\cdot\\mathbb{Z}_{mn} \\simeq \\mathbb{Z}_m\\)</span>. Докажем, что <span\nclass=\"math inline\">\\(\\mathbb{Z}_{nm} = m\\mathbb{Z}_{nm}\\oplus n\n\\mathbb{Z}_{nm}\\)</span>.</p>\n<ol type=\"1\">\n<li>Эти подгруппы нормальны, так как абелевы.</li>\n<li>Пусть <span class=\"math inline\">\\(x \\in m\\mathbb{Z}_{nm}\\cap n\n\\mathbb{Z}_{nm} \\implies m \\,\\,|\\,\\, x\\)</span> и <span\nclass=\"math inline\">\\(n \\,\\,|\\,\\, x\\)</span>, следовательно, так как\n<span class=\"math inline\">\\(\\gcd(n, m) = 1\\)</span>, <span\nclass=\"math inline\">\\(x = 0\\)</span>.</li>\n<li><span class=\"math inline\">\\(\\gcd(n, m) = 1 \\implies \\exists u, v \\in\n\\mathbb{Z}: \\,\\,\\,\\, u\\cdot n + v\\cdot m = 1\\)</span> и <span\nclass=\"math inline\">\\(u\\cdot n \\in n \\mathbb{Z}_{nm}, \\,\\,\\,\\, v\\cdot m\n\\in m \\mathbb{Z}_{nm} \\implies 1 \\in m\\mathbb{Z}_{nm}\\oplus n\n\\mathbb{Z}_{nm} \\,\\,\\,\\,\\blacksquare\\)</span></li>\n</ol>",
+        "statement_html": "<p><strong><a href=\"lection-group-product-znm-isomorphism-theore.html#theorem-0\">Теорема:</a></strong> (<em>критерий\nизоморфности произведения групп вычетов по модулям <span\nclass=\"math inline\">\\(n\\)</span> и <span\nclass=\"math inline\">\\(m\\)</span> группе вычетов по модулю <span\nclass=\"math inline\">\\(n\\cdot m\\)</span></em>)</p>\n<p><span class=\"math display\">\\[\\mathbb{Z}_{n\\cdot m}\\simeq \\mathbb{Z}_n\n\\oplus \\mathbb{Z}_m \\iff \\gcd(n, m) = 1\\]</span></p>",
+        "proof_html": "<p></p>\n<p><span class=\"math inline\">\\(\\bbox[4px, border: 1px solid\nblack]{\\Longrightarrow}\\)</span> Пусть <span\nclass=\"math inline\">\\(\\gcd(n, m) = k \\ne 1\\)</span>. Тогда у каждой из\nгрупп <span class=\"math inline\">\\(\\mathbb{Z}_n\\)</span> и <span\nclass=\"math inline\">\\(\\mathbb{Z}_m\\)</span> есть подгруппа порядка <span\nclass=\"math inline\">\\(k\\)</span>. Следовательно, в группе <span\nclass=\"math inline\">\\(\\mathbb{Z}_n \\oplus \\mathbb{Z}_m\\)</span> есть две\nпогруппы порядка <span class=\"math inline\">\\(k\\)</span>: <span\nclass=\"math inline\">\\(\\frac{n}{k}\\mathbb{Z}_n \\oplus \\{0\\}\\)</span> и\n<span class=\"math inline\">\\(\\{0\\} \\oplus\n\\frac{m}{k}\\mathbb{Z}_m\\)</span>, а следовательно <a\nhref=\"lection-group.html#theorem-2\">по теореме</a> группа <span\nclass=\"math inline\">\\(\\mathbb{Z}_n \\oplus \\mathbb{Z}_m\\)</span>\nнециклическая, а значит неизоморфна <span\nclass=\"math inline\">\\(\\mathbb{Z}_{n\\cdot m}\\)</span></p>\n<p><span class=\"math inline\">\\(\\bbox[4px, border: 1px solid\nblack]{\\Longleftarrow}\\)</span> Рассмотрим подгруппы <span\nclass=\"math inline\">\\(&lt;m&gt; = m\\cdot\\mathbb{Z}_{mn} \\simeq\n\\mathbb{Z}_n\\)</span> и <span class=\"math inline\">\\(&lt;n&gt; =\nn\\cdot\\mathbb{Z}_{mn} \\simeq \\mathbb{Z}_m\\)</span>. Докажем, что <span\nclass=\"math inline\">\\(\\mathbb{Z}_{nm} = m\\mathbb{Z}_{nm}\\oplus n\n\\mathbb{Z}_{nm}\\)</span>.</p>\n<ol type=\"1\">\n<li>Эти подгруппы нормальны, так как абелевы.</li>\n<li>Пусть <span class=\"math inline\">\\(x \\in m\\mathbb{Z}_{nm}\\cap n\n\\mathbb{Z}_{nm} \\implies m \\,\\,|\\,\\, x\\)</span> и <span\nclass=\"math inline\">\\(n \\,\\,|\\,\\, x\\)</span>, следовательно, так как\n<span class=\"math inline\">\\(\\gcd(n, m) = 1\\)</span>, <span\nclass=\"math inline\">\\(x = 0\\)</span>.</li>\n<li><span class=\"math inline\">\\(\\gcd(n, m) = 1 \\implies \\exists u, v \\in\n\\mathbb{Z}: \\,\\,\\,\\, u\\cdot n + v\\cdot m = 1\\)</span> и <span\nclass=\"math inline\">\\(u\\cdot n \\in n \\mathbb{Z}_{nm}, \\,\\,\\,\\, v\\cdot m\n\\in m \\mathbb{Z}_{nm} \\implies 1 \\in m\\mathbb{Z}_{nm}\\oplus n\n\\mathbb{Z}_{nm} \\,\\,\\,\\,\\blacksquare\\)</span></li>\n</ol>"
+    }
+]

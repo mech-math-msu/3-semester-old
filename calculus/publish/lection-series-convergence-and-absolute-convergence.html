@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#сходимость-знакопостоянных-рядов-продолжение"
+id="toc-сходимость-знакопостоянных-рядов-продолжение">Сходимость
+знакопостоянных рядов: продолжение</a>
+<ul>
+<li><a href="#схема-куммера" id="toc-схема-куммера">Схема
+Куммера</a></li>
+<li><a
+href="#следствя-из-схемы-куммера-признаки-раабе-бертрана-и-гаусса"
+id="toc-следствя-из-схемы-куммера-признаки-раабе-бертрана-и-гаусса">Следствя
+из схемы Куммера: признаки Раабе, Бертрана и Гаусса</a></li>
+<li><a href="#абсолютная-сходимость"
+id="toc-абсолютная-сходимость">Абсолютная сходимость</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="сходимость-знакопостоянных-рядов-продолжение">Сходимость
+знакопостоянных рядов: продолжение</h1>
+<hr />
+<h2 id="схема-куммера">Схема Куммера</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> (<em>схема Куммера
+или фабрика по производству новых признаков сходимости</em>)</p>
+<p>Рассмотрим ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n\)</span> и последовательность <span
+class="math inline">\(\{c_n\}_{n = 1}^{\infty}\)</span>. Пусть <span
+class="math inline">\(a_n, c_n &gt; 0 \,\,\,\, \forall n \in
+\mathbb{N}\)</span>.</p>
+<ol type="1">
+<li><p>Если <span class="math inline">\(\gamma_n = c_n \cdot
+\frac{a_n}{a_{n + 1}} - c_{n + 1} \geqslant \alpha &gt; 0\)</span>, то
+ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n\)</span> сходится.</p></li>
+<li><p>Если ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}\frac1{c_n}\)</span> расходится и <span
+class="math inline">\(\gamma_n = c_n \cdot \frac{a_n}{a_{n + 1}} - c_{n
++ 1} \leqslant 0\)</span>, то ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span>
+расходится.</p></li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li><span class="math display">\[c_n \cdot \frac{a_n}{a_{n + 1}} - c_{n
++ 1} \geqslant \alpha &gt; 0\]</span> <span class="math display">\[c_n
+\cdot a_n - c_{n + 1}\cdot a_{n + 1}\geqslant \alpha\cdot a_{n + 1} &gt;
+0\]</span></li>
+</ol>
+<p>Суммируем от <span class="math inline">\(1\)</span> до <span
+class="math inline">\(N\)</span>:</p>
+<p><span class="math display">\[c_1 \cdot a_1 - c_{N + 1}\cdot a_{N + 1}
+\geqslant \alpha \cdot \displaystyle \sum_{n =
+2}^{\infty}a_n\]</span></p>
+<p>Частичные суммы ограничены, и члены ряда положительны, а значит <a
+href="lection-series-convergence.html#theorem-2">по признаку</a> ряд
+сходится.</p>
+<ol start="2" type="1">
+<li><span class="math display">\[c_n \cdot \frac{a_n}{a_{n + 1}} - c_{n
++ 1} \leqslant 0\]</span></li>
+</ol>
+<p><span class="math display">\[\frac{a_n}{a_{n + 1}} \leqslant
+\frac{\frac1{c_n}}{\frac1{c_{n + 1}}}\]</span></p>
+<p>Перемножаем от <span class="math inline">\(1\)</span> до <span
+class="math inline">\(N\)</span>:</p>
+<blockquote>
+<p>Все начинает со страшной силой сокращаться…</p>
+</blockquote>
+<p><span class="math display">\[\frac{a_1}{a_{N + 1}} \leqslant
+\frac{\frac1{c_1}}{\frac1{c_{N + 1}}}\]</span> <span
+class="math display">\[a_{N + 1} \geqslant \frac{a_1c_1}{c_{N +
+1}}\]</span></p>
+<p>По <a href="lection-series-convergence.html#theorem-0">признаку
+сравнения</a> ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n\)</span> расходится <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2
+id="следствя-из-схемы-куммера-признаки-раабе-бертрана-и-гаусса">Следствя
+из схемы Куммера: признаки Раабе, Бертрана и Гаусса</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> (<em>признак
+Раабе</em>) Рассмотрим ряд <span class="math inline">\(\displaystyle
+\sum_{n = 1}^{\infty}a_n\)</span>. Пусть <span class="math inline">\(a_n
+&gt; 0 \,\,\,\, \forall n \in \mathbb{N}\)</span>.</p>
+<p>Тогда, если <span class="math inline">\(n\cdot\left(\frac{a_n}{a_{n +
+1}} - 1\right) &gt; 1\)</span>, то ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span>
+сходится.</p>
+<p>Если <span class="math inline">\(n\cdot\left(\frac{a_n}{a_{n + 1}} -
+1\right) \leqslant 1\)</span>, то ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span>
+расходится.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(c_n = n
+\,\,\,\,\blacksquare\)</span></p>
+<blockquote>
+<p>Почему вообще кто-то придумал признак Раабе? Потому что в <a
+href="lection-series-convergence.html#theorem-5">признаке Д’Аламбера</a>
+в <span class="math inline">\(1\)</span> нельзя ничего сказать про
+сходимость, поэтому вычитаем <span class="math inline">\(1\)</span> и
+смотрим, что можно сделать. <a href="#fn1" class="footnote-ref"
+id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+</blockquote>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> (<em>признак
+Раабе в предельной форме</em>) Рассмотрим ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span>.
+Пусть <span class="math inline">\(a_n &gt; 0 \,\,\,\, \forall n \in
+\mathbb{N}\)</span>.</p>
+<p>Тогда, если <span class="math inline">\(\exists \displaystyle
+\lim_{n\to \infty}\left(n\cdot\left(\frac{a_n}{a_{n + 1}} -
+1\right)\right) &gt; 1\)</span>, то ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span>
+сходится.</p>
+<p>Если <span class="math inline">\(\exists \displaystyle \lim_{n\to
+\infty}\left(n\cdot\left(\frac{a_n}{a_{n + 1}} - 1\right)\right) &lt;
+1\)</span>, то ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n\)</span> расходится.</p>
+<p><em>Доказательство:</em> Понять почему исчезает равенство <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> (<em>Признак
+Бертрана</em>) Рассмотрим ряд <span class="math inline">\(\displaystyle
+\sum_{n = 1}^{\infty}a_n\)</span>. Пусть <span class="math inline">\(a_n
+&gt; 0 \,\,\,\, \forall n \in \mathbb{N}\)</span>. Тогда</p>
+<ol type="1">
+<li>Если <span class="math inline">\(\ln(n)\left[ n\left(\frac{a_n}{a_{n
++ 1}} - 1\right) - 1\right] &gt; 1\)</span>, то ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span>
+сходится.</li>
+<li>Если <span class="math inline">\(\ln(n)\left[ n\left(\frac{a_n}{a_{n
++ 1}} - 1\right) - 1\right] \leqslant 1\)</span>, то ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span>
+расходится.</li>
+</ol>
+<p><em>Доказательство:</em> <span class="math inline">\(c_n = n
+\ln(n)\)</span></p>
+<p><span class="math display">\[\gamma_n = n \ln(n)  \frac{a_n}{a_{n +
+1}} - (n + 1) \ln(n + 1)=\]</span> <span class="math display">\[= n
+\ln(n)  \frac{a_n}{a_{n + 1}} + n \ln(n) - n \ln(n) - (n + 1) \ln(n +
+1)=\]</span> <span class="math display">\[= n \ln(n)
+\left(\frac{a_n}{a_{n + 1}} - 1\right) + n \ln(n) - \ln(n) + \ln(n)  -
+(n + 1) \ln(n + 1)=\]</span> <span class="math display">\[= \ln(n)\left[
+n\left(\frac{a_n}{a_{n + 1}} - 1\right) - 1\right] + (n + 1) \ln(n) - (n
++ 1) \ln(n + 1)=\]</span> <span class="math display">\[= \ln(n)\left[
+n\left(\frac{a_n}{a_{n + 1}} - 1\right) - 1\right] + (n + 1) \ln\left(1
+- \frac1{n + 1}\right)=\]</span> <span class="math display">\[=
+\ln(n)\left[ n\left(\frac{a_n}{a_{n + 1}} - 1\right) - 1\right] + (n +
+1)\left(-\frac1{n + 1} +
+\overline{\overline{o}}\left(-\frac1n\right)\right)=\]</span> <span
+class="math display">\[= \ln(n)\left[ n\left(\frac{a_n}{a_{n + 1}} -
+1\right) - 1\right] -\frac{n}{n + 1} -\frac1{n + 1} +
+\overline{\overline{o}}\left(-\frac1n\right)=\]</span> <span
+class="math display">\[= \ln(n)\left[ n\left(\frac{a_n}{a_{n + 1}} -
+1\right) - 1\right] -1 +
+\underline{\underline{O}}\left(\frac1n\right)=\]</span> <span
+class="math display">\[= \ln(n)\left[ n\left(\frac{a_n}{a_{n + 1}} -
+1\right) - 1\right] -1 + \beta_n =\]</span></p>
+<p><span class="math inline">\(\beta_n =
+\underline{\underline{O}}\left(\frac1n\right)\)</span> и <span
+class="math inline">\(\beta_n &lt; 0 \,\,\,\, \forall n \in
+\mathbb{N}\)</span>, а значит по <a
+href="lection-series-convergence-and-absolute-convergence.html#theorem-0">схеме
+Куммера</a>:</p>
+<ol type="1">
+<li>Если <span class="math inline">\(\ln(n)\left[ n\left(\frac{a_n}{a_{n
++ 1}} - 1\right) - 1\right] &gt; 1\)</span>, то ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span>
+сходится.</li>
+<li>Если <span class="math inline">\(\ln(n)\left[ n\left(\frac{a_n}{a_{n
++ 1}} - 1\right) - 1\right] \leqslant 1\)</span>, то ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span>
+расходится <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<p><strong>Следствие:</strong><a name="corollary-1"></a> (<em>признак
+Бертрана в предельной форме</em>) Рассмотрим ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span>.
+Пусть <span class="math inline">\(a_n &gt; 0 \,\,\,\, \forall n \in
+\mathbb{N}\)</span>. Тогда</p>
+<ol type="1">
+<li>Если <span class="math inline">\(\exists\displaystyle \lim_{n\to
+\infty}\ln(n)\left[ n\left(\frac{a_n}{a_{n + 1}} - 1\right) - 1\right]
+&gt; 1\)</span>, то ряд <span class="math inline">\(\displaystyle
+\sum_{n = 1}^{\infty}a_n\)</span> сходится.</li>
+<li>Если <span class="math inline">\(\exists\displaystyle \lim_{n\to
+\infty}\ln(n)\left[ n\left(\frac{a_n}{a_{n + 1}} - 1\right) - 1\right]
+&lt; 1\)</span>, то ряд <span class="math inline">\(\displaystyle
+\sum_{n = 1}^{\infty}a_n\)</span> расходится.</li>
+</ol>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-3"></a> (<em>признак
+Гаусса</em>) Рассмотрим ряд <span class="math inline">\(\displaystyle
+\sum_{n = 1}^{\infty}a_n\)</span>. Пусть <span class="math inline">\(a_n
+&gt; 0 \,\,\,\, \forall n \in \mathbb{N}\)</span> и <span
+class="math inline">\(\frac{a_n}{a_{n + 1}} = \lambda + \frac{\mu}{n} +
+\underline{\underline{O}}\left(\frac{1}{n^{1 + \delta}}\right), \,\,\,\,
+\delta &gt; 0\)</span>. Тогда</p>
+<ul>
+<li>Если <span class="math inline">\(\lambda &gt; 1\)</span>, то ряд
+<span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n\)</span> сходится,</li>
+<li>Если <span class="math inline">\(\lambda &lt; 1\)</span>, то ряд
+<span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n\)</span> расходится,</li>
+<li>Если <span class="math inline">\(\lambda = 1\)</span>, то
+<ul>
+<li>если <span class="math inline">\(\mu &gt; 1\)</span> ряд
+сходится,</li>
+<li>если <span class="math inline">\(\mu \leqslant 1\)</span> ряд
+расходится.</li>
+</ul></li>
+</ul>
+<p><em>Доказательство:</em></p>
+<p>Если <span class="math inline">\(\lambda &gt; 1\)</span> или <span
+class="math inline">\(\lambda &lt; 1\)</span>, то <a
+href="lection-series-convergence.html#theorem-5">по признаку Д’Аламбера
+в предельной форме</a>.</p>
+<p>Если <span class="math inline">\(\lambda = 1\)</span> и <span
+class="math inline">\(\mu &gt; 1\)</span> или <span
+class="math inline">\(\mu &lt; 1\)</span>, то <a
+href="lection-series-convergence-and-absolute-convergence.html#theorem-1">по
+признаку Раабе</a>. <a href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a></p>
+<p>Если <span class="math inline">\(\lambda = 1\)</span> и <span
+class="math inline">\(\mu = 1\)</span>, то <span
+class="math inline">\(\frac{a_n}{a_{n + 1}} = 1 + \frac1{n} +
+\underline{\underline{O}}\left(\frac{1}{n^{1 + \delta}}\right)\)</span>.
+Домножим на <span class="math inline">\(n\ln(n)\)</span>:</p>
+<p><span class="math display">\[\ln(n)\left[n\left(\frac{a_n}{a_{n + 1}}
+- 1\right) - 1\right] =
+\underline{\underline{O}}\left(\frac{\ln(n)}{n^{\delta}}\right)
+\implies\]</span></p>
+<p><span class="math display">\[\displaystyle \lim_{n\to
+\infty}\ln(n)\left[n\left(\frac{a_n}{a_{n + 1}} - 1\right) - 1\right] =
+0\]</span></p>
+<p>Значит <a
+href="lection-series-convergence-and-absolute-convergence.html#corollary-1">по
+признаку Бертрана в предельной форме</a> ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span>
+расходится <span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="абсолютная-сходимость">Абсолютная сходимость</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span>
+<em>сходится абсолютно</em>, если сходится ряд <span
+class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}|a_n|\)</span>.</p>
+<p>Если ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n\)</span> сходится, а ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}|a_n|\)</span>
+расходится, то <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n\)</span> <em>сходится условно</em>.</p>
+<p><strong>Теорема:</strong><a name="theorem-4"></a> Если ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}|a_n|\)</span>
+сходится, то ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n\)</span> сходится.</p>
+<p><em>Доказательство:</em> <a
+href="lection-series.html#theorem-0">Критерий Коши</a> и <span
+class="math inline">\(\displaystyle \left|\sum_{n = k + 1}^{m}a_n\right|
+\leqslant \left|\sum_{n = k + 1}^{m}|a_n|\right| &lt; \varepsilon
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Биекция
+<span class="math inline">\(\sigma: \mathbb{N} \to \mathbb{N}\)</span> -
+<em>перестановка</em>.</p>
+<p><strong>Лемма:</strong><a name="lemma-0"></a> Пусть <span
+class="math inline">\(\sigma: \mathbb{N} \to \mathbb{N}\)</span> -
+биекция, ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n\)</span> - сходится и <span class="math inline">\(a_n
+\geqslant 0 \,\,\,\, \forall n \in \mathbb{N}\)</span>. Тогда ряд <span
+class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_{\sigma(n)}\)</span> - сходится.</p>
+<p><em>Доказательство:</em> Обозначим частичные суммы рядов <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span> и
+<span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_{\sigma(n)} \,\,\,\, S_k\)</span> и <span
+class="math inline">\(S^{\sigma}_k\)</span> соответственно. Пусть <span
+class="math inline">\(N = \displaystyle\max_{0 \leqslant n \leqslant
+k}\{\sigma(n)\}\)</span>. Тогда <span class="math inline">\(S^{\sigma}_k
+\leqslant S_N \leqslant S_k\)</span> <a href="#fn3" class="footnote-ref"
+id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
+<p>Значит по <a
+href="lection-series-convergence.html#theorem-0">признаку сравнения</a>
+ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_{\sigma(n)}\)</span> сходится и сумма <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_{\sigma(n)} =
+A’ \leqslant A\)</span>. Аналогично, взяв <span
+class="math inline">\(\sigma^{-1}\)</span>, получаем <span
+class="math inline">\(A \leqslant A’ \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-5"></a> Пусть <span
+class="math inline">\(\sigma: \mathbb{N} \to \mathbb{N}\)</span> -
+биекция, ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n\)</span> - сходится абсолютно.</p>
+<p>Тогда ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_{\sigma(n)}\)</span> сходится абсолютно и <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n =
+\displaystyle \sum_{n = 1}^{\infty}a_{\sigma(n)}\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p>Рассмотрим ряды <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}(a_n + |a_n|)\)</span> и <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}(a_{\sigma(n)}
++ |a_{\sigma(n)}|)\)</span>.</p>
+<p>Это ряды с неотрицательными членами и ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}(a_n +
+|a_n|)\)</span> сходится, как сумма двух сходящихся рядов, а значит <a
+href="#lemma-0">по лемме</a> ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}(a_{\sigma(n)}
++ |a_{\sigma(n)}|)\)</span> сходится. Следовательно, ряд <span
+class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}|a_{\sigma(n)}|\)</span> сходится, как разность двух
+сходящихся рядов <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Рассмотрим
+ряды <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n\)</span> и <span class="math inline">\(\displaystyle
+\sum_{k = 1}^{\infty}b_k\)</span>. Пусть <span
+class="math inline">\(\varkappa: \mathbb{N} \to \mathbb{N} \times
+\mathbb{N}\)</span> - биекция. <span class="math inline">\(\displaystyle
+\sum_{\substack{\varkappa = 1\\ \varkappa = \varkappa(n,
+k)}}^{\infty}a_n\cdot b_k\)</span> - <em>произведение рядов</em> <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span> и
+<span class="math inline">\(\displaystyle \sum_{k =
+1}^{\infty}b_k\)</span> <em>по правилу</em> <span
+class="math inline">\(\varkappa\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-6"></a> Пусть ряды <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span> и
+<span class="math inline">\(\displaystyle \sum_{k =
+1}^{\infty}b_k\)</span> сходятся абсолютно, <span
+class="math inline">\(\varkappa: \mathbb{N} \to \mathbb{N} \times
+\mathbb{N}\)</span> - биекция. Тогда ряд <span
+class="math inline">\(\displaystyle \sum_{\substack{\varkappa = 1\\
+\varkappa = \varkappa(n, k)}}^{\infty}a_n\cdot b_k\)</span> сходится и
+<span class="math inline">\(\displaystyle \sum_{\substack{\varkappa =
+1\\ \varkappa = \varkappa(n, k)}}^{\infty}a_n\cdot b_k = A \cdot
+B\)</span>, где <span class="math inline">\(A = \displaystyle \sum_{n =
+1}^{\infty}a_n\)</span> и <span class="math inline">\(B = \displaystyle
+\sum_{k = 1}^{\infty}b_k\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p>Записываем члены ряда в табличку:</p>
+<p><span class="math display">\[\begin{array}{cccc} a_1b_1 &amp; a_2b_1
+&amp; a_3b_1 &amp; \ldots\\
+a_1b_2 &amp; a_2b_2 &amp; a_3b_2 &amp; \dots\\
+a_1b_3 &amp; a_2b_3 &amp; a_3b_3 &amp; \dots\\
+a_1b_4 &amp; a_2b_4 &amp; a_3b_4 &amp; \dots\\
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots\\\end{array}\]</span></p>
+<p>Нумеруем по уголкам.</p>
+<details>
+<summary>
+Просто прикольная картинка
+</summary>
+<center>
+<object data="img/snake.svg" width="300" height="300">
+</object>
+</center>
+</details>
+<p><span class="math display">\[\displaystyle \sum_{\varkappa =
+1}^{N^2}a_n b_k = \left(\displaystyle \sum_{n = 1}^{N}a_n\right)\cdot
+\left(\displaystyle \sum_{k = 1}^{N}b_k\right)\]</span></p>
+<p><span class="math display">\[\left|\displaystyle \sum_{\varkappa =
+1}^{N^2 + m}a_n b_k - \displaystyle \sum_{\varkappa = 1}^{N^2}a_n
+b_k\right| \leqslant |a_{N + 1}| \displaystyle \sum_{i = 1}^{N + 1}|b_i|
++ |b_{N + 1}| \displaystyle \sum_{j = 1}^{N}|a_j|
+\,\,\,\,\blacksquare\]</span></p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Кстати, признак Д’Аламбера - это тоже следствие схемы
+Куммера.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><span class="math display">\[\displaystyle \lim_{n\to
+\infty}n\left(\frac{a_n}{a_{n + 1}} - 1\right) = \mu\]</span><a
+href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Так как в сумме <span class="math inline">\(S_N\)</span>
+содрежатся все члены суммы <span
+class="math inline">\(S^{\sigma}_k\)</span><a href="#fnref3"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>
