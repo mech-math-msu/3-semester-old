@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#вторая-теорема-абеля-для-степеннных-рядов"
+id="toc-вторая-теорема-абеля-для-степеннных-рядов">Вторая теорема Абеля
+для степеннных рядов</a></li>
+<li><a href="#теорема-таубера-и-литтлвуда"
+id="toc-теорема-таубера-и-литтлвуда">Теорема Таубера и Литтлвуда</a>
+<ul>
+<li><a href="#random-facts-по-топологии"
+id="toc-random-facts-по-топологии">Random facts по топологии</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="вторая-теорема-абеля-для-степеннных-рядов">Вторая теорема Абеля
+для степеннных рядов</h1>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> (<em>2-я теорема
+Абеля</em>) Пусть <span class="math inline">\(\displaystyle \sum_{n =
+0}^{\infty}a_n = A\)</span> <a href="#fn1" class="footnote-ref"
+id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<p>Тогда ряд <span class="math inline">\(\displaystyle \sum_{n =
+0}^{\infty}a_nx^n \underset{[0, 1]}{\rightrightarrows}
+S(x)\)</span>.</p>
+<p><em>Доказательство:</em> <a
+href="lection-functional-series.html#theorem-3">по признаку Дирихле</a>
+<a href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h1 id="теорема-таубера-и-литтлвуда">Теорема Таубера и Литтлвуда</h1>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> (<em>теорема
+Таубера</em>) Пусть <span class="math inline">\(S(x) = \displaystyle
+\sum_{n = 0}^{\infty}a_nx^n, \,\,\,\, x \in [0, 1)\)</span> и <span
+class="math inline">\(\exists \displaystyle \lim_{x\to 1-0}S(x) =
+A\)</span>. Если <span class="math inline">\(a_n =
+\overline{\overline{o}}\left(\frac1n\right)\)</span> при <span
+class="math inline">\(n \to \infty\)</span>, то <span
+class="math inline">\(\displaystyle \sum_{n = 0}^{\infty}a_n =
+A\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p>Пусть <span class="math inline">\(N_x = \left[\frac{1}{1 -
+x}\right]\)</span>.</p>
+<p>И <span class="math inline">\(\varphi(x) = \displaystyle
+\sum^{N_x}_{n = 0}a_n - \displaystyle \sum^{\infty}_{n = 0}a_n
+x^n\)</span>.</p>
+<p>Доказать теорему значит доказать, что <span
+class="math inline">\(\displaystyle \lim_{x\to 1-0}\varphi(x) =
+0\)</span> <a href="#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a>.</p>
+<p><span class="math display">\[\varphi(x) = \displaystyle \sum^{N_x}_{n
+= 0}a_n - \displaystyle \sum^{\infty}_{n = 0}a_n x^n = \displaystyle
+\sum^{N_x}_{n = 0}a_n(1 - x^n) - \displaystyle \sum^{\infty}_{n = N_x +
+1}a_n x^n\]</span></p>
+<p><span class="math display">\[\left|\displaystyle \sum^{\infty}_{n =
+N_x + 1}a_n x^n\right| \leqslant \displaystyle \sum^{\infty}_{n = N_x +
+1}|a_n| x^n \leqslant \displaystyle \sum^{\infty}_{n = N_x +
+1}\frac{\varepsilon}n x^n \leqslant\]</span> <span
+class="math display">\[\leqslant \frac{\varepsilon}{N_x} \displaystyle
+\sum^{\infty}_{n = N_x + 1}x^n \leqslant \frac{\varepsilon}{N_x}
+\displaystyle \sum^{\infty}_{n = 0}x^n = \frac{\varepsilon}{N_x} N_x =
+\varepsilon\]</span></p>
+<p><span class="math display">\[\left|\displaystyle \sum^{N_x}_{n =
+0}a_n(1 - x^n)\right| = \displaystyle \sum^{N_x}_{n = 0}|a_n|(1 - x)(1 +
+x^2 + \ldots + x^{n - 1})\leqslant\]</span> <span
+class="math display">\[\leqslant (1 - x)\displaystyle \sum^{N_x}_{n =
+0}|a_n|n \leqslant \frac1{N_x} \displaystyle \sum^{N_x}_{n = 0}|a_n| \to
+0, \,\,\,\, x \to 1-0\]</span></p>
+<p><span class="math display">\[\Downarrow\]</span></p>
+<p><span class="math display">\[|\varphi(x)|\leqslant
+\left|\displaystyle \sum^{N_x}_{n = 0}a_n(1 - x^n)\right|
++\left|\displaystyle \sum^{\infty}_{n = N_x + 1}a_n x^n\right| \leqslant
+2 \varepsilon \,\,\,\, \forall \varepsilon &gt; 0 \,\,\,\,
+\blacksquare\]</span></p>
+<h2 id="random-facts-по-топологии">Random facts по топологии</h2>
+<hr />
+<blockquote>
+<p><em>Гильбертов кирпич</em> - это пример компакта в <span
+class="math inline">\(\infty\)</span>-мерном пространстве. Это такой
+параллелипипед со сторонами <span
+class="math inline">\(\frac{1}{2^n}\)</span>. Его объем равен <span
+class="math inline">\(0\)</span>.</p>
+</blockquote>
+<blockquote>
+<p>Сфера в <span class="math inline">\(\infty\)</span>-мерном
+пространстве не компакт.</p>
+</blockquote>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Ряд сходится.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><span class="math inline">\(|x^n| \leqslant 1 \,\,\,\,
+\forall x \in [0, 1]\)</span>.<a href="#fnref2" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Так как <span class="math inline">\(\displaystyle
+\lim_{x\to 1-0}N_x = \infty\)</span> и <span
+class="math inline">\(\displaystyle \sum^{\infty}_{n = 0}a_n x^n = S(x)
+\to A\)</span> при <span class="math inline">\(x \to 1-0\)</span>.<a
+href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>
