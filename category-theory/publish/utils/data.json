@@ -1,0 +1,128 @@
+[
+    {
+        "keyword": "универсум малые множества большие множества большое множество",
+        "data": "**Определение:**<a name=\"definition-1\"></a> *Универсум* - некоторый класс. ^[Достаточно большое «множество»]\n\n*Малые множества* - элементы универсума.\n\n*Большие множества* - множества, не являющиеся малыми.\n\n> Если взять $U = \\{x|\\,\\,\\,\\, \\exists y: \\,\\,\\,\\, x \\in y\\}$, то малые множества - это множества, а большие множества - это классы, не являющиеся множествами. ^[Например, в смысле этого определения универсума, класс всех малых множеств - *большое множество*.]\n\n",
+        "data_type": "definition",
+        "url": "lection-category-def-examples-functor-def.html#definition-1",
+        "html": "<p><strong><a href=\"lection-category-def-examples-functor-def.html#definition-1\">Определение:</a></strong>\n<em>Универсум</em> - некоторый класс. <a href=\"#fn1\"\nclass=\"footnote-ref\" id=\"fnref1\" role=\"doc-noteref\"><sup>1</sup></a></p>\n<p><em>Малые множества</em> - элементы универсума.</p>\n<p><em>Большие множества</em> - множества, не являющиеся малыми.</p>\n<blockquote>\n<p>Если взять <span class=\"math inline\">\\(U = \\{x|\\,\\,\\,\\, \\exists y:\n\\,\\,\\,\\, x \\in y\\}\\)</span>, то малые множества - это множества, а\nбольшие множества - это классы, не являющиеся множествами. <a\nhref=\"#fn2\" class=\"footnote-ref\" id=\"fnref2\"\nrole=\"doc-noteref\"><sup>2</sup></a></p>\n</blockquote>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Достаточно большое «множество»<a href=\"#fnref1\"\nclass=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n<li id=\"fn2\"><p>Например, в смысле этого определения универсума, класс\nвсех малых множеств - <em>большое множество</em>.<a href=\"#fnref2\"\nclass=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "1-е определение категории категория множество объектов множество морфизмов",
+        "data": "**Определение:**<a name=\"definition-0\"></a> (*1-е определение категории*)\n\n*Категория* $\\C$ - это пара $(\\Ob \\C, \\Mor \\C)$, где \n\n$\\Ob \\C$ - *множество объектов*, \n\n$\\Mor\\C$ - *множество морфизмов* ^[Стрелки между объектами.], такая что:\n\n1. $\\forall f \\in \\Mor\\C\\,\\,\\,\\, \\exists a \\in \\Ob\\C$, обозначается $\\dom f$ и $\\exists b \\in \\Ob\\C$, обозначается $\\cod f$ ^[Пишут $f: a \\to b$ и говорят, что $f$ стрелка из $a$ в $b$.],\n2. $\\forall a \\in \\Ob\\C \\,\\,\\,\\, \\exists \\id _a \\in \\Mor\\C: \\,\\,\\,\\, \\cod \\id_a = \\dom \\id_a = a$.\n\nПо определению $\\Mor\\C \\times_{\\Ob\\C} \\Mor\\C = \\{(f, g): \\,\\,\\,\\, f, g \\in \\Mor\\C, \\,\\,\\,\\, \\dom f = \\cod g \\}$. Определена операция $\\circ: \\,\\,\\,\\, \\Mor\\C \\times_{\\Ob\\C} \\Mor\\C \\to \\Mor\\C$, такая что:\n\n3. $\\forall (f, g) \\in \\Mor\\C \\times_{\\Ob\\C} \\Mor\\C \\,\\,\\,\\, \\dom f\\circ g = \\dom g$,\n4. $\\forall (f, g) \\in \\Mor\\C \\times_{\\Ob\\C} \\Mor\\C \\,\\,\\,\\, \\cod f\\circ g = \\cod f$,\n5. $f(gh) = (fg)h$,\n6. $\\forall f: a \\to b \\,\\,\\,\\, \\id_b f = f\\id_a = f$.\n\nМножество всех морфизмов $a \\to b$ обозначается $\\Hom_{\\C}(a, b)$ или $\\C(a, b)$.\n\n> Вообще категория задается набором морфизмов, так как каждый объект задается своей единичной стрелкой.\n\n",
+        "data_type": "definition",
+        "url": "lection-category-def-examples-functor-def.html#definition-0",
+        "html": "<p><strong><a href=\"lection-category-def-examples-functor-def.html#definition-0\">Определение:</a></strong> (<em>1-е\nопределение категории</em>)</p>\n<p><em>Категория</em> <span class=\"math inline\">\\(\\C\\)</span> - это пара\n<span class=\"math inline\">\\((\\Ob \\C, \\Mor \\C)\\)</span>, где</p>\n<p><span class=\"math inline\">\\(\\Ob \\C\\)</span> - <em>множество\nобъектов</em>,</p>\n<p><span class=\"math inline\">\\(\\Mor\\C\\)</span> - <em>множество\nморфизмов</em> <a href=\"#fn1\" class=\"footnote-ref\" id=\"fnref1\"\nrole=\"doc-noteref\"><sup>1</sup></a>, такая что:</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(\\forall f \\in \\Mor\\C\\,\\,\\,\\, \\exists a\n\\in \\Ob\\C\\)</span>, обозначается <span class=\"math inline\">\\(\\dom\nf\\)</span> и <span class=\"math inline\">\\(\\exists b \\in \\Ob\\C\\)</span>,\nобозначается <span class=\"math inline\">\\(\\cod f\\)</span> <a href=\"#fn2\"\nclass=\"footnote-ref\" id=\"fnref2\"\nrole=\"doc-noteref\"><sup>2</sup></a>,</li>\n<li><span class=\"math inline\">\\(\\forall a \\in \\Ob\\C \\,\\,\\,\\, \\exists \\id\n_a \\in \\Mor\\C: \\,\\,\\,\\, \\cod \\id_a = \\dom \\id_a = a\\)</span>.</li>\n</ol>\n<p>По определению <span class=\"math inline\">\\(\\Mor\\C \\times_{\\Ob\\C}\n\\Mor\\C = \\{(f, g): \\,\\,\\,\\, f, g \\in \\Mor\\C, \\,\\,\\,\\, \\dom f = \\cod g\n\\}\\)</span>. Определена операция <span class=\"math inline\">\\(\\circ:\n\\,\\,\\,\\, \\Mor\\C \\times_{\\Ob\\C} \\Mor\\C \\to \\Mor\\C\\)</span>, такая\nчто:</p>\n<ol start=\"3\" type=\"1\">\n<li><span class=\"math inline\">\\(\\forall (f, g) \\in \\Mor\\C \\times_{\\Ob\\C}\n\\Mor\\C \\,\\,\\,\\, \\dom f\\circ g = \\dom g\\)</span>,</li>\n<li><span class=\"math inline\">\\(\\forall (f, g) \\in \\Mor\\C \\times_{\\Ob\\C}\n\\Mor\\C \\,\\,\\,\\, \\cod f\\circ g = \\cod f\\)</span>,</li>\n<li><span class=\"math inline\">\\(f(gh) = (fg)h\\)</span>,</li>\n<li><span class=\"math inline\">\\(\\forall f: a \\to b \\,\\,\\,\\, \\id_b f =\nf\\id_a = f\\)</span>.</li>\n</ol>\n<p>Множество всех морфизмов <span class=\"math inline\">\\(a \\to b\\)</span>\nобозначается <span class=\"math inline\">\\(\\Hom_{\\C}(a, b)\\)</span> или\n<span class=\"math inline\">\\(\\C(a, b)\\)</span>.</p>\n<blockquote>\n<p>Вообще категория задается набором морфизмов, так как каждый объект\nзадается своей единичной стрелкой.</p>\n</blockquote>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Стрелки между объектами.<a href=\"#fnref1\"\nclass=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n<li id=\"fn2\"><p>Пишут <span class=\"math inline\">\\(f: a \\to b\\)</span> и\nговорят, что <span class=\"math inline\">\\(f\\)</span> стрелка из <span\nclass=\"math inline\">\\(a\\)</span> в <span\nclass=\"math inline\">\\(b\\)</span>.<a href=\"#fnref2\" class=\"footnote-back\"\nrole=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "предпорядок рефлексивность транзитивность",
+        "data": "**Определение:**<a name=\"definition-2\"></a> Бинарное отношение $\\leqslant$ на множестве $M$ - *предпорядок*, если $\\forall a, b, c \\in M$:\n\n1. $a \\leqslant a$ (*рефлексивность*),\n2. $a \\leqslant b$ и $b \\leqslant c \\implies a \\leqslant c$ (*транзитивность*)\n\n",
+        "data_type": "definition",
+        "url": "lection-category-def-examples-functor-def.html#definition-2",
+        "html": "<p><strong><a href=\"lection-category-def-examples-functor-def.html#definition-2\">Определение:</a></strong> Бинарное\nотношение <span class=\"math inline\">\\(\\leqslant\\)</span> на множестве\n<span class=\"math inline\">\\(M\\)</span> - <em>предпорядок</em>, если\n<span class=\"math inline\">\\(\\forall a, b, c \\in M\\)</span>:</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(a \\leqslant a\\)</span>\n(<em>рефлексивность</em>),</li>\n<li><span class=\"math inline\">\\(a \\leqslant b\\)</span> и <span\nclass=\"math inline\">\\(b \\leqslant c \\implies a \\leqslant c\\)</span>\n(<em>транзитивность</em>)</li>\n</ol>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "двойственная к категория",
+        "data": "**Определение:**<a name=\"definition-3\"></a> Пусть $\\C$ - категория. *Двойственная к* $\\C$ *категория* - это категория $\\C^{\\operatorname{op}}$, у которой $\\Ob \\C^{\\operatorname{op}} = \\Ob \\C$ и стрелки развернуты.\n\n",
+        "data_type": "definition",
+        "url": "lection-category-def-examples-functor-def.html#definition-3",
+        "html": "<p><strong><a href=\"lection-category-def-examples-functor-def.html#definition-3\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(\\C\\)</span> - категория. <em>Двойственная к</em>\n<span class=\"math inline\">\\(\\C\\)</span> <em>категория</em> - это\nкатегория <span class=\"math inline\">\\(\\C^{\\operatorname{op}}\\)</span>, у\nкоторой <span class=\"math inline\">\\(\\Ob \\C^{\\operatorname{op}} = \\Ob\n\\C\\)</span> и стрелки развернуты.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "**Определение:**<a name=\"definition-4\"></a> Пусть $\\C$ и $\\D$ категории. Функтор $F: \\C \\to \\D$ - это пара отображений ^[Оба отображения обозначаются $F$.] $F: \\Ob \\C \\to \\Ob \\D$ и $F: \\Mor \\C \\to \\Mor \\D$, причем:\n\n1. $F\\id_a = \\id_{F_a} \\,\\,\\,\\, \\forall a \\in \\Ob \\C$ ^[Сохранение единицы.],\n2. $F(fg) = (Ff)(Fg) \\,\\,\\,\\,\\forall (f, g) \\in \\Mor\\C\\times_{\\Ob C}\\Mor\\C$ ^[Для любых морфизмов, у которых определена композиция, функтор сохраняет композицию.].\n\n",
+        "data_type": "definition",
+        "url": "lection-category-def-examples-functor-def.html#definition-4",
+        "html": "<p><strong><a href=\"lection-category-def-examples-functor-def.html#definition-4\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(\\C\\)</span> и <span\nclass=\"math inline\">\\(\\D\\)</span> категории. Функтор <span\nclass=\"math inline\">\\(F: \\C \\to \\D\\)</span> - это пара отображений <a\nhref=\"#fn1\" class=\"footnote-ref\" id=\"fnref1\"\nrole=\"doc-noteref\"><sup>1</sup></a> <span class=\"math inline\">\\(F: \\Ob\n\\C \\to \\Ob \\D\\)</span> и <span class=\"math inline\">\\(F: \\Mor \\C \\to \\Mor\n\\D\\)</span>, причем:</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(F\\id_a = \\id_{F_a} \\,\\,\\,\\, \\forall a\n\\in \\Ob \\C\\)</span> <a href=\"#fn2\" class=\"footnote-ref\" id=\"fnref2\"\nrole=\"doc-noteref\"><sup>2</sup></a>,</li>\n<li><span class=\"math inline\">\\(F(fg) = (Ff)(Fg) \\,\\,\\,\\,\\forall (f, g)\n\\in \\Mor\\C\\times_{\\Ob C}\\Mor\\C\\)</span> <a href=\"#fn3\"\nclass=\"footnote-ref\" id=\"fnref3\"\nrole=\"doc-noteref\"><sup>3</sup></a>.</li>\n</ol>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Оба отображения обозначаются <span\nclass=\"math inline\">\\(F\\)</span>.<a href=\"#fnref1\" class=\"footnote-back\"\nrole=\"doc-backlink\">↩︎</a></p></li>\n<li id=\"fn2\"><p>Сохранение единицы.<a href=\"#fnref2\"\nclass=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n<li id=\"fn3\"><p>Для любых морфизмов, у которых определена композиция,\nфунктор сохраняет композицию.<a href=\"#fnref3\" class=\"footnote-back\"\nrole=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ковариантные контравариантные",
+        "data": "**Определение:**<a name=\"definition-5\"></a> \n\nФункторы из $\\C \\to \\D$ - *ковариантные*.\n\nФункторы из $\\C \\to \\D^{\\operatorname{op}}$ - *контравариантные*.\n\n",
+        "data_type": "definition",
+        "url": "lection-category-def-examples-functor-def.html#definition-5",
+        "html": "<p><strong><a href=\"lection-category-def-examples-functor-def.html#definition-5\">Определение:</a></strong></p>\n<p>Функторы из <span class=\"math inline\">\\(\\C \\to \\D\\)</span> -\n<em>ковариантные</em>.</p>\n<p>Функторы из <span class=\"math inline\">\\(\\C \\to\n\\D^{\\operatorname{op}}\\)</span> - <em>контравариантные</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "унивалентный полный",
+        "data": "**Определение:**<a name=\"definition-6\"></a> \n\nПусть $F: \\C \\to \\D$ - функтор.\n\nЕсли $\\forall a, b \\in \\Ob\\C$ отображение $\\C(a, b) \\to \\D(F_a, F_b)$ инъективно, то функтор $F$ - *унивалентный*.\n\nЕсли $\\forall a, b \\in \\Ob\\C$ отображение $\\C(a, b) \\to \\D(F_a, F_b)$ сюръективно, то функтор $F$ - *полный*.\n\n",
+        "data_type": "definition",
+        "url": "lection-category-def-examples-functor-def.html#definition-6",
+        "html": "<p><strong><a href=\"lection-category-def-examples-functor-def.html#definition-6\">Определение:</a></strong></p>\n<p>Пусть <span class=\"math inline\">\\(F: \\C \\to \\D\\)</span> -\nфунктор.</p>\n<p>Если <span class=\"math inline\">\\(\\forall a, b \\in \\Ob\\C\\)</span>\nотображение <span class=\"math inline\">\\(\\C(a, b) \\to \\D(F_a,\nF_b)\\)</span> инъективно, то функтор <span\nclass=\"math inline\">\\(F\\)</span> - <em>унивалентный</em>.</p>\n<p>Если <span class=\"math inline\">\\(\\forall a, b \\in \\Ob\\C\\)</span>\nотображение <span class=\"math inline\">\\(\\C(a, b) \\to \\D(F_a,\nF_b)\\)</span> сюръективно, то функтор <span\nclass=\"math inline\">\\(F\\)</span> - <em>полный</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "подкатегория",
+        "data": "**Определение:**<a name=\"definition-7\"></a> *Подкатегория* категории $\\C$ - это категория, множеством объектов которой является подмножеством объектов категории $\\C$ и множество морфизмов является подмножеством морфизмов.\n\n",
+        "data_type": "definition",
+        "url": "lection-category-def-examples-functor-def.html#definition-7",
+        "html": "<p><strong><a href=\"lection-category-def-examples-functor-def.html#definition-7\">Определение:</a></strong>\n<em>Подкатегория</em> категории <span class=\"math inline\">\\(\\C\\)</span>\n- это категория, множеством объектов которой является подмножеством\nобъектов категории <span class=\"math inline\">\\(\\C\\)</span> и множество\nморфизмов является подмножеством морфизмов.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "изоморфизм",
+        "data": "**Определение:**<a name=\"definition-0\"></a> Пусть $\\C$ - категория. Морфизм $f: a \\to b \\,\\,\\,\\, a, b \\in \\Ob\\C$ - *изоморфизм*, если $\\exists g \\in \\Mor \\C: \\,\\,\\,\\, gf = \\id_a$ и $fg = \\id_b$.\n\n",
+        "data_type": "definition",
+        "url": "lection-isomorhism-functor-cat-comma-cat-arrow-cat-yoneda-lemma.html#definition-0",
+        "html": "<p><strong><a href=\"lection-isomorhism-functor-cat-comma-cat-arrow-cat-yoneda-lemma.html#definition-0\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(\\C\\)</span> - категория. Морфизм <span\nclass=\"math inline\">\\(f: a \\to b \\,\\,\\,\\, a, b \\in \\Ob\\C\\)</span> -\n<em>изоморфизм</em>, если <span class=\"math inline\">\\(\\exists g \\in \\Mor\n\\C: \\,\\,\\,\\, gf = \\id_a\\)</span> и <span class=\"math inline\">\\(fg =\n\\id_b\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "изоморфизм категорий",
+        "data": "**Определение:**<a name=\"definition-1\"></a> Функтор $F: \\C \\to \\D$ - *изоморфизм категорий* $\\C$ и $\\D$, если $F: \\Ob \\C \\to \\Ob \\D$ - биекция и $F: \\Mor \\C \\to \\Mor \\D$ - биекция.\n\n",
+        "data_type": "definition",
+        "url": "lection-isomorhism-functor-cat-comma-cat-arrow-cat-yoneda-lemma.html#definition-1",
+        "html": "<p><strong><a href=\"lection-isomorhism-functor-cat-comma-cat-arrow-cat-yoneda-lemma.html#definition-1\">Определение:</a></strong> Функтор\n<span class=\"math inline\">\\(F: \\C \\to \\D\\)</span> - <em>изоморфизм\nкатегорий</em> <span class=\"math inline\">\\(\\C\\)</span> и <span\nclass=\"math inline\">\\(\\D\\)</span>, если <span class=\"math inline\">\\(F:\n\\Ob \\C \\to \\Ob \\D\\)</span> - биекция и <span class=\"math inline\">\\(F:\n\\Mor \\C \\to \\Mor \\D\\)</span> - биекция.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "коммутативна",
+        "data": "**Определение:**<a name=\"definition-3\"></a> Диаграмма *коммутативна*, если композиции функций над стрелками, примененные к объектам в вершинах дают одинаковый результат при любом пути по диаграмме.\n\n",
+        "data_type": "definition",
+        "url": "lection-isomorhism-functor-cat-comma-cat-arrow-cat-yoneda-lemma.html#definition-3",
+        "html": "<p><strong><a href=\"lection-isomorhism-functor-cat-comma-cat-arrow-cat-yoneda-lemma.html#definition-3\">Определение:</a></strong> Диаграмма\n<em>коммутативна</em>, если композиции функций над стрелками,\nпримененные к объектам в вершинах дают одинаковый результат при любом\nпути по диаграмме.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "естественное преобразование функторов",
+        "data": "**Определение:**<a name=\"definition-2\"></a> Пусть заданы функторы $F, G: \\C \\to \\D$. $\\alpha: F \\Rightarrow G$ - *естественное преобразование функторов*, если $\\forall c \\in \\Ob \\C \\exists \\alpha_c \\in \\Hom_{\\C}(F_c, G_c)$, причем $\\forall c, c’ \\in \\Ob \\C$ и $\\forall f \\in \\C(c, c’)$ следующая диаграмма коммутативна:\n\n$$\\begin{CD}\n    Fc @>\\alpha_c>> Gc\\\\\n    @VFfVV @VVGfV\\\\\n    Fc’ @>\\alpha_{c’}>> Gc’\n\\end{CD}\n$$\n\nЕсли существует естественное преобразование между функторами $F$ и $G$, то пишут $F \\cong G$.\n\n",
+        "data_type": "definition",
+        "url": "lection-isomorhism-functor-cat-comma-cat-arrow-cat-yoneda-lemma.html#definition-2",
+        "html": "<p><strong><a href=\"lection-isomorhism-functor-cat-comma-cat-arrow-cat-yoneda-lemma.html#definition-2\">Определение:</a></strong> Пусть заданы\nфункторы <span class=\"math inline\">\\(F, G: \\C \\to \\D\\)</span>. <span\nclass=\"math inline\">\\(\\alpha: F \\Rightarrow G\\)</span> -\n<em>естественное преобразование функторов</em>, если <span\nclass=\"math inline\">\\(\\forall c \\in \\Ob \\C \\exists \\alpha_c \\in\n\\Hom_{\\C}(F_c, G_c)\\)</span>, причем <span class=\"math inline\">\\(\\forall\nc, c’ \\in \\Ob \\C\\)</span> и <span class=\"math inline\">\\(\\forall f \\in\n\\C(c, c’)\\)</span> следующая диаграмма коммутативна:</p>\n<p><span class=\"math display\">\\[\\begin{CD}\n    Fc @&gt;\\alpha_c&gt;&gt; Gc\\\\\n    @VFfVV @VVGfV\\\\\n    Fc’ @&gt;\\alpha_{c’}&gt;&gt; Gc’\n\\end{CD}\n\\]</span></p>\n<p>Если существует естественное преобразование между функторами <span\nclass=\"math inline\">\\(F\\)</span> и <span\nclass=\"math inline\">\\(G\\)</span>, то пишут <span class=\"math inline\">\\(F\n\\cong G\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "эквивалентность категорий",
+        "data": "**Определение:**<a name=\"definition-4\"></a> Функтор $F: \\C \\to \\D$ - *эквивалентность категорий*, если $\\exists$ функтор $G: \\D \\to \\C$, такой что $FG \\cong \\id_{\\D}$ и $GF \\cong \\id_{\\C}$.\n\n",
+        "data_type": "definition",
+        "url": "lection-isomorhism-functor-cat-comma-cat-arrow-cat-yoneda-lemma.html#definition-4",
+        "html": "<p><strong><a href=\"lection-isomorhism-functor-cat-comma-cat-arrow-cat-yoneda-lemma.html#definition-4\">Определение:</a></strong> Функтор\n<span class=\"math inline\">\\(F: \\C \\to \\D\\)</span> - <em>эквивалентность\nкатегорий</em>, если <span class=\"math inline\">\\(\\exists\\)</span>\nфунктор <span class=\"math inline\">\\(G: \\D \\to \\C\\)</span>, такой что\n<span class=\"math inline\">\\(FG \\cong \\id_{\\D}\\)</span> и <span\nclass=\"math inline\">\\(GF \\cong \\id_{\\C}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "лемма йонеды",
+        "data": "**Лемма:**<a name=\"lemma-0\"></a> (*лемма Йонеды*) Пусть $K: \\C \\to \\Set$ - функтор. Тогда отображение $\\Nat(C(c, -), K) \\to K_c$ биекция, если $\\Nat(C(c, -), K) \\ni \\alpha \\mapsto \\alpha_c \\in \\Mor \\C$.\n\n",
+        "data_type": "lemma",
+        "url": "lection-isomorhism-functor-cat-comma-cat-arrow-cat-yoneda-lemma.html#lemma-0",
+        "html": "<p><strong><a href=\"lection-isomorhism-functor-cat-comma-cat-arrow-cat-yoneda-lemma.html#lemma-0\">Лемма:</a></strong> (<em>лемма Йонеды</em>)\nПусть <span class=\"math inline\">\\(K: \\C \\to \\Set\\)</span> - функтор.\nТогда отображение <span class=\"math inline\">\\(\\Nat(C(c, -), K) \\to\nK_c\\)</span> биекция, если <span class=\"math inline\">\\(\\Nat(C(c, -), K)\n\\ni \\alpha \\mapsto \\alpha_c \\in \\Mor \\C\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    }
+]

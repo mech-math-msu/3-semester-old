@@ -816,3 +816,20 @@ Prism.languages.python = {
     operator: /[-+%=]=?|!=|:=|\*\*?=?|\/\/?=?|<[<=>]?|>[=>]?|[&|^~]/,
     punctuation: /[{}[\];(),.:]/
 }, Prism.languages.python["string-interpolation"].inside.interpolation.inside.rest = Prism.languages.python, Prism.languages.py = Prism.languages.python;
+Prism.languages.gnuplot = {
+    comment: {
+        pattern: /(^|[^\\])# .*/,
+        lookbehind: !0,
+        greedy: !0
+    },
+    string: {
+        pattern: /(?:[rub]|br|rb)?("|')(?:\\.|(?!\1)[^\\\r\n])*\1/i,
+        greedy: !0
+    },
+    keyword: /\b(?:_(?=\s*:)|linestyle|style|using|line|linespoints|points|lines|smooth|csplines|point|linecolor|rgb|linetype|linewidth|linecolor|pointtype|pointsize|lt|lw|lc|pt|ps|xrange|yrange|term|unset|terminal|ratio|size|in|is|lambda|match|nonlocal|not|or|pass|print|raise|return|try|while|with|yield)\b/,
+    builtin: /\b(?:__import__|set|plot|index|with|using|apply|ascii|basestring|bin|bool|buffer|bytearray|bytes|callable|chr|classmethod|cmp|coerce|compile|complex|delattr|dict|dir|divmod|enumerate|eval|execfile|file|filter|float|format|frozenset|getattr|globals|hasattr|hash|help|hex|id|input|int|intern|isinstance|issubclass|iter|len|list|locals|long|map|max|memoryview|min|next|object|oct|open|ord|pow|property|range|raw_input|reduce|reload|repr|reversed|round|set|setattr|slice|sorted|staticmethod|str|sum|super|tuple|type|unichr|unicode|vars|xrange|zip)\b/,
+    // boolean: /\b(?:False|None|True)\b/,
+    number: /\b0(?:b(?:_?[01])+|o(?:_?[0-7])+|x(?:_?[a-f0-9])+)\b|(?:\b\d+(?:_\d+)*(?:\.(?:\d+(?:_\d+)*)?)?|\B\.\d+(?:_\d+)*)(?:e[+-]?\d+(?:_\d+)*)?j?(?!\w)/i,
+    // operator: /[-+%=]=?|!=|:=|\*\*?=?|\/\/?=?|<[<=>]?|>[=>]?|[&|^~]/,
+    punctuation: /[{}[\];(),.:]/
+}

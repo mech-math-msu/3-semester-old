@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Теория категорий</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+    <script>
+        window.MathJax = {
+            loader: {load: ['[tex]/amscd']},
+            tex: {packages: {'[+]': ['amscd']}}
+        };
+    </script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Теория категорий</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#изоморфизмы" id="toc-изоморфизмы">Изоморфизмы</a>
+<ul>
+<li><a href="#примеры-изоморфизмов"
+id="toc-примеры-изоморфизмов">Примеры изоморфизмов</a></li>
+</ul></li>
+<li><a href="#естественные-отображения"
+id="toc-естественные-отображения">Естественные отображения</a>
+<ul>
+<li><a href="#пример" id="toc-пример">Пример</a></li>
+<li><a href="#категория-функторов-категорий"
+id="toc-категория-функторов-категорий">Категория функторов
+категорий</a></li>
+<li><a href="#категория-стрелок" id="toc-категория-стрелок">Категория
+стрелок</a></li>
+<li><a href="#категория-запятой" id="toc-категория-запятой">Категория
+запятой </a></li>
+</ul></li>
+<li><a href="#лемма-йонеды" id="toc-лемма-йонеды">Лемма Йонеды</a>
+<ul>
+<li><a href="#вложение-йонеды" id="toc-вложение-йонеды">Вложение
+Йонеды</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<p><span class="math inline">\(\newcommand{\cod}{\mathop{\rm
+cod}\nolimits}\)</span> <span
+class="math inline">\(\newcommand{\dom}{\mathop{\rm
+dom}\nolimits}\)</span> <span
+class="math inline">\(\newcommand{\Mor}{\mathop{\rm
+Mor}\nolimits}\)</span> <span
+class="math inline">\(\newcommand{\Ob}{\mathop{\rm
+Ob}\nolimits}\)</span> <span
+class="math inline">\(\newcommand{\Hom}{\mathop{\rm Hom}}\)</span> <span
+class="math inline">\(\newcommand{\id}{\mathop{\rm id}}\)</span> <span
+class="math inline">\(\newcommand{\D}{\mathbf{D}}\)</span> <span
+class="math inline">\(\newcommand{\Grp}{\mathbf{Grp}}\)</span> <span
+class="math inline">\(\newcommand{\Rng}{\mathbf{Rng}}\)</span> <span
+class="math inline">\(\newcommand{\CRng}{\mathbf{CRng}}\)</span> <span
+class="math inline">\(\newcommand{\C}{\mathbf{C}}\)</span> <span
+class="math inline">\(\newcommand{\Matr}{\mathbf{Matr}}\)</span> <span
+class="math inline">\(\newcommand{\Vect}{\mathbf{Vect}}\)</span> <span
+class="math inline">\(\newcommand{\G}{\mathbf{G}}\)</span> <span
+class="math inline">\(\newcommand{\Top}{\mathbf{Top}}\)</span> <span
+class="math inline">\(\newcommand{\Ass}{\mathbf{Ass}}\)</span> <span
+class="math inline">\(\newcommand{\Set}{\mathbf{Set}}\)</span> <span
+class="math inline">\(\newcommand{\Funct}{\mathbf{Funct}}\)</span> <span
+class="math inline">\(\newcommand{\Nat}{\mathbf{Nat}}\)</span></p>
+<h1 id="изоморфизмы">Изоморфизмы</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(\C\)</span> - категория. Морфизм <span
+class="math inline">\(f: a \to b \,\,\,\, a, b \in \Ob\C\)</span> -
+<em>изоморфизм</em>, если <span class="math inline">\(\exists g \in \Mor
+\C: \,\,\,\, gf = \id_a\)</span> и <span class="math inline">\(fg =
+\id_b\)</span>.</p>
+<h2 id="примеры-изоморфизмов">Примеры изоморфизмов</h2>
+<hr />
+<ol type="1">
+<li>В <span class="math inline">\(\Set\)</span> - биекции.</li>
+<li>В <span class="math inline">\(\Grp\)</span> - изоморфизмы
+групп.</li>
+<li>В <span class="math inline">\(\Top\)</span> - гомеоморфизмы.</li>
+<li>В <span class="math inline">\(\G\)</span> - все морфизмы (т.е.
+элементы группы <span class="math inline">\(G\)</span>) являются
+изоморфизмами.</li>
+</ol>
+<p><strong>Определение:</strong><a name="definition-1"></a> Функтор
+<span class="math inline">\(F: \C \to \D\)</span> - <em>изоморфизм
+категорий</em> <span class="math inline">\(\C\)</span> и <span
+class="math inline">\(\D\)</span>, если <span class="math inline">\(F:
+\Ob \C \to \Ob \D\)</span> - биекция и <span class="math inline">\(F:
+\Mor \C \to \Mor \D\)</span> - биекция.</p>
+<h1 id="естественные-отображения">Естественные отображения</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-3"></a> Диаграмма
+<em>коммутативна</em>, если композиции функций над стрелками,
+примененные к объектам в вершинах дают одинаковый результат при любом
+пути по диаграмме.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Пусть заданы
+функторы <span class="math inline">\(F, G: \C \to \D\)</span>. <span
+class="math inline">\(\alpha: F \Rightarrow G\)</span> -
+<em>естественное преобразование функторов</em>, если <span
+class="math inline">\(\forall c \in \Ob \C \exists \alpha_c \in
+\Hom_{\C}(F_c, G_c)\)</span>, причем <span class="math inline">\(\forall
+c, c’ \in \Ob \C\)</span> и <span class="math inline">\(\forall f \in
+\C(c, c’)\)</span> следующая диаграмма коммутативна:</p>
+<p><span class="math display">\[\begin{CD}
+    Fc @&gt;\alpha_c&gt;&gt; Gc\\
+    @VFfVV @VVGfV\\
+    Fc’ @&gt;\alpha_{c’}&gt;&gt; Gc’
+\end{CD}
+\]</span></p>
+<p>Если существует естественное преобразование между функторами <span
+class="math inline">\(F\)</span> и <span
+class="math inline">\(G\)</span>, то пишут <span class="math inline">\(F
+\cong G\)</span>.</p>
+<blockquote>
+<p>Если считать, что функтор <span class="math inline">\(F\)</span>
+создает в категории <span class="math inline">\(\D\)</span> изображение
+(всех объектов и всех стрелок) категории <span
+class="math inline">\(\C\)</span>, то естественное преобразование <span
+class="math inline">\(\alpha\)</span> - это совокупность стрелок,
+отображающих (или переводящих) картинку <span
+class="math inline">\(F\)</span> в картинку <span
+class="math inline">\(G\)</span>, причем коммутативны всевозможные
+квадраты (и параллелограммы!) вроде изображенного выше.</p>
+</blockquote>
+<h2 id="пример">Пример</h2>
+<hr />
+<p>Определитель матрицы является естественным преобразованием функторов
+<span class="math inline">\(GL_n: \CRng \to \Grp\)</span> <a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> и
+<span class="math inline">\(\times: \CRng \to \Grp\)</span> <a
+href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a>, так как матрица невырождена, если
+ее определитель обратим.</p>
+<p><span class="math display">\[\begin{CD}
+    GL_n(K) @&gt;\det_K&gt;&gt; K^{\times}\\
+    @VGLfVV @VVf^{\times}V\\
+    GL_n(K’) @&gt;\det_{K’}&gt;&gt; K’^{\times}
+\end{CD}
+\]</span></p>
+<h2 id="категория-функторов-категорий">Категория функторов
+категорий</h2>
+<hr />
+<p>Обозначается: <span class="math inline">\(\Funct(\C, \D)\)</span> или
+<span class="math inline">\(\D^{\C}\)</span>.</p>
+<p>Объекты категории функторов - все функторы <span
+class="math inline">\(F: \C \to \D\)</span>.</p>
+<p>Морфизмы - естественные преобразования.</p>
+<p><span class="math inline">\(\hom\)</span>-множества этой категории
+обозначаются: <span class="math inline">\(\Nat(F, G)\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-4"></a> Функтор
+<span class="math inline">\(F: \C \to \D\)</span> - <em>эквивалентность
+категорий</em>, если <span class="math inline">\(\exists\)</span>
+функтор <span class="math inline">\(G: \D \to \C\)</span>, такой что
+<span class="math inline">\(FG \cong \id_{\D}\)</span> и <span
+class="math inline">\(GF \cong \id_{\C}\)</span>.</p>
+<h2 id="категория-стрелок">Категория стрелок</h2>
+<hr />
+<p>Категория <span class="math inline">\(\mathbf{2}\)</span> состоит из
+двух объектов <span class="math inline">\(1\)</span> и <span
+class="math inline">\(2\)</span>, и <span
+class="math inline">\(3\)</span>-х морфизмов: <span
+class="math inline">\(\id_1, \,\,\,\, \id_2\)</span> и <span
+class="math inline">\(f: 1 \to 2\)</span>.</p>
+<p>Категория функторов из <span class="math inline">\(\mathbf{2} \to
+\C\)</span>, где <span class="math inline">\(\C\)</span> - произвольная
+категория - <em>категория стрелок</em>.</p>
+<p>Объектов <span class="math inline">\(\mathbf{2}\)</span> всего два,
+поэтому морфизмов естественного преобразования тоже два: <span
+class="math inline">\(\alpha_1, \alpha_2\)</span> и следовательно каждый
+морфизм категории стрелок - это пара <span
+class="math inline">\((\alpha_1, \alpha_2)\)</span>.</p>
+<blockquote>
+<p>Такое построение оснований математики с помощью единственного
+универсума обеспечивает (в рамках теории множеств) корректный способ
+рассмотрения категорий всех малых множеств и всех малых групп. Но здесь
+отсутствуют множества для реализации некоторых метакатегорий, таких как
+метакатегория всех множеств или всех групп. По этой причине серьезно
+обсуждалась возможность построения теории категорий (и всей математики)
+вне рамок теории множеств. Вот почему мы вначале дали определение
+категории С без использования понятия множества, рассматривая аксиомы
+просто как аксиомы первого порядка с неопределяемыми терминами «объект
+категории <span class="math inline">\(\C\)</span>», «стрелка в категории
+<span class="math inline">\(\C\)</span>», «композиция», «единица»,
+«область» и «кообласть». На этом языке можно сформулировать аксиомы
+элементарной теории, т. е. теории первого порядка, категории всех
+множеств - в противовес обычным аксиомам для отношения принадлежности, -
+получив понятие элементарного топоса (см. Мас Lane, Moerdijk [1992])
+1).</p>
+</blockquote>
+<h2 id="категория-запятой">Категория запятой <a href="#fn3"
+class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a></h2>
+<hr />
+<p>Пусть даны категории и функторы <span class="math inline">\(\C
+\overset{F}{\to} \mathbf{E} \overset{G}{\leftarrow} \D\)</span>.</p>
+<p>Построим категорию <span class="math inline">\(F \downarrow
+G\)</span>:</p>
+<p>Объекты в ней это <span class="math display">\[(c, d, f): \,\,\,\,
+\begin{CD}
+    Fc\\
+    @VfVV\\
+    Gd
+\end{CD}, \,\,\,\, c \in \Ob \C, \,\,\,\, d \in \Ob\D\]</span></p>
+<p>Стрелки <span class="math display">\[(k, h): \,\,\,\, \begin{CD}
+    Fc @&gt;Fk&gt;&gt; Fc’\\
+    @VfVV @VVf’V\\
+    Gd @&gt;Gh&gt;&gt; Gd’
+\end{CD},\,\,\,\, k: c \to c’,\,\,\,\, h: d \to d’\]</span>.</p>
+<h1 id="лемма-йонеды">Лемма Йонеды</h1>
+<hr />
+<h2 id="вложение-йонеды">Вложение Йонеды</h2>
+<hr />
+<p><strong>Лемма:</strong><a name="lemma-0"></a> (<em>лемма Йонеды</em>)
+Пусть <span class="math inline">\(K: \C \to \Set\)</span> - функтор.
+Тогда отображение <span class="math inline">\(\Nat(C(c, -), K) \to
+K_c\)</span> биекция, если <span class="math inline">\(\Nat(C(c, -), K)
+\ni \alpha \mapsto \alpha_c \in \Mor \C\)</span>.</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Функтор взятия полной линейной группы ассоциативного
+коммутативного кольца с единицей.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Группа обратимых элементов ассоциативного коммутативного
+кольца с единицей.<a href="#fnref2" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Comma category<a href="#fnref3" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -22,7 +22,8 @@
     <script>
       window.MathJax = {
   loader: {load: ['[tex]/bbox']},
-  tex: {packages: {'[+]': ['bbox']}}
+  tex: {packages: {'[+]': ['bbox'],
+                    '[+]': ['html']}}
 };
     </script>
 </head>
@@ -106,7 +107,7 @@ class="math inline">\(bab^{-1}a^{-1} \in B \implies bab^{-1}a^{-1} = e
 \,\,\,\,\blacksquare\)</span></li>
 </ol>
 <p><strong>Утверждение:</strong><a name="statement-2"></a> (<em>связь
-инутреннего и внешнего произведения</em>) Группа <span
+внутреннего и внешнего произведения</em>) Группа <span
 class="math inline">\(G\)</span> является (внутренним) произведением
 своих подгрупп <span class="math inline">\(A\)</span> и <span
 class="math inline">\(B\)</span>, если <span
@@ -160,32 +161,6 @@ class="math inline">\(u\cdot n \in n \mathbb{Z}_{nm}, \,\,\,\, v\cdot m
 \in m \mathbb{Z}_{nm} \implies 1 \in m\mathbb{Z}_{nm}\oplus n
 \mathbb{Z}_{nm} \,\,\,\,\blacksquare\)</span></li>
 </ol>
-<p><strong>Определение:</strong><a name="definition-2"></a> Конечно
-порожденная абелева группа <span class="math inline">\(G\)</span> -
-<em>свободна</em>, если в <span class="math inline">\((G, +)\)</span>
-существует <em>базис</em>, то есть множество <span
-class="math inline">\(X \subset G\)</span>, такое что:</p>
-<ol type="1">
-<li><span class="math inline">\(&lt;X&gt; = G\)</span>, то есть <span
-class="math inline">\(\forall g \in G \,\,\,\, \exists \lambda_1,
-\ldots, \lambda_n \in \mathbb{Z}: \,\,\,\, g = \lambda_1 x_1 + \ldots +
-\lambda_n x_n, \,\,\,\, x_i \in X\)</span>.</li>
-<li><span class="math inline">\(X\)</span> - <em>линейно
-независимое</em>, то есть только тривиальная линейная комбинация
-элементов <span class="math inline">\(X\)</span> равна <span
-class="math inline">\(0\)</span>. <a href="#fn1" class="footnote-ref"
-id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
-</ol>
-<section id="footnotes" class="footnotes footnotes-end-of-document"
-role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1"><p>Это как? Ведь у любого элемента в конечной группе есть
-порядок, а значит можно взять <span
-class="math inline">\(\operatorname{ord}x_i \cdot x_i = 0\)</span>.<a
-href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 <a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
 <a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
 <a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#функциональные-ряды"
+id="toc-функциональные-ряды">Функциональные ряды</a>
+<ul>
+<li><a href="#определения" id="toc-определения">Определения</a></li>
+<li><a href="#критерии-сходимости-и-прочие-теоремы"
+id="toc-критерии-сходимости-и-прочие-теоремы">Критерии сходимости и
+прочие теоремы </a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="функциональные-ряды">Функциональные ряды</h1>
+<hr />
+<h2 id="определения">Определения</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(\{f_n(x)\}_{n = 1}^{\infty}\)</span> определена на
+<span class="math inline">\(X \subset \mathbb{R}\)</span>. Пара <span
+class="math inline">\((f_n(x)\}_{n = 1}^{\infty}, \{S_N(x) =
+\displaystyle \sum_{n = 1}^{N}f_n(x)\}_{n = 1}^{\infty})\)</span> -
+<em>функциональный ряд на</em> <span
+class="math inline">\(X\)</span>.</p>
+<p><strong>Обозначается:</strong> <span
+class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}f_n(x)\)</span></p>
+<p><strong>Определение:</strong><a name="definition-2"></a>
+(<em>сходимость функционального ряда</em>) Ряд <span
+class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}f_n(x)\underset{X}{\rightarrow} S(x)\)</span> <a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>,
+если <span class="math inline">\(\exists \displaystyle \lim_{n\to
+\infty}S_n(x) = S(x)\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a>
+(<em>равномерная сходимость функционального ряда</em>) <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}f_n(x)
+\underset{X}{\rightrightarrows}\)</span>, если <span
+class="math inline">\(S_n(x) \underset{X}{\rightrightarrows}
+S(x)\)</span>. <a href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a></p>
+<h2 id="критерии-сходимости-и-прочие-теоремы">Критерии сходимости и
+прочие теоремы <a href="#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a></h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> (<em>критерий Коши
+сходимости функционального ряда</em>) <span
+class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}f_n(x)\underset{X}{\rightrightarrows} S(x) \iff \forall
+\varepsilon &gt; 0 \,\,\,\, \exists N \in \mathbb{N}: \,\,\,\,\forall x
+\in X, \,\,\,\, \forall k, m &gt; N \,\,\,\, \left|\displaystyle \sum_{n
+= k + 1}^{m}f_n(x)\right| &lt; \varepsilon\)</span>.</p>
+<p><em>Доказательство:</em> см. определение функционального ряда <a
+href="#fn4" class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> (<em>необходимое
+условие равномерной сходимости функционального ряда</em>) <span
+class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}f_n(x)\underset{X}{\rightrightarrows}S(x) \implies
+\left|f_n(x)\right|\underset{X}{\rightrightarrows} 0\)</span>.</p>
+<p><em>Доказательство:</em> Критерий Коши при <span
+class="math inline">\(m = k \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> (<em>признак
+Вейерштрасса равномерной сходимости функционального ряда</em>)
+Рассмотрим <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}f_n(x)\)</span>. Если <span class="math inline">\(\exists
+\{c_n\}_{n = 1}^{\infty}\)</span>, такая что <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}c_n\)</span>
+сходится и <span class="math inline">\(\forall n \in \mathbb{N} \,\,\,\,
+\forall x \in X \,\,\,\, |f_n(x)| &lt; c_n\)</span>, то <span
+class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}f_n(x)\underset{X}{\rightrightarrows}\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math display">\[\left|\displaystyle \sum_{n = k +
+1}^{m}f_n(x)\right| \leqslant \displaystyle \sum_{n = k +
+1}^{m}\left|f_n(x)\right| \leqslant \displaystyle \sum_{n = k +
+1}^{m}\left|c_n\right| &lt; \varepsilon
+\,\,\,\,\blacksquare\]</span></p>
+<p><strong>Теорема:</strong><a name="theorem-3"></a> (<em>признак
+Дирихле</em>)</p>
+<p>Ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}f_n(x)g_n(x)\underset{X}{\rightrightarrows}\)</span>,
+если</p>
+<ol type="1">
+<li><span class="math inline">\(\exists M &gt; 0: \,\,\,\, \forall n \in
+\mathbb{N} \,\,\,\, \forall x \in X \,\,\,\, \left|f_n(x)\right| &lt;
+M\)</span>,</li>
+<li><span class="math inline">\(\displaystyle \lim_{n\to \infty}g_n(x) =
+0, \,\,\,\, \forall x \in X \,\,\,\, \{f_n(x)\}_{n =
+1}^{\infty}\)</span> монотонна.</li>
+</ol>
+<p><em>Доказательство:</em> аналогично признаку Дирихле <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-4"></a> (<em>признак
+Абеля</em>)</p>
+<p>Ряд <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}f_n(x)g_n(x)\underset{X}{\rightrightarrows}\)</span>,
+если</p>
+<ol type="1">
+<li><span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}f_n(x)\underset{X}{\rightrightarrows}\)</span>,</li>
+<li><span class="math inline">\(\forall x \in X\)</span>
+последовательность <span class="math inline">\(\{g_n(x)\}_{n =
+1}^{\infty}\)</span> монотонна и ограничена.</li>
+</ol>
+<p><em>Доказательство:</em> аналогично признаку Абеля <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p><em>Сходится к</em> <span
+class="math inline">\(S(x)\)</span><a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Функциональный ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}f_n(x)\)</span>
+равномерно сходится к <span class="math inline">\(S(x)\)</span>, если
+функциональная последовательность его частичных сумм равномерно сходится
+к <span class="math inline">\(S(x)\)</span>.<a href="#fnref2"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Все просто переформулировка теорем для
+последовательностей.<a href="#fnref3" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Это даже не теорема, а переобозначение.<a href="#fnref4"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

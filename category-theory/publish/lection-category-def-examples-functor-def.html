@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Теория категорий</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+    <script>
+        window.MathJax = {
+            loader: {load: ['[tex]/amscd']},
+            tex: {packages: {'[+]': ['amscd']}}
+        };
+    </script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Теория категорий</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#теория-категорий" id="toc-теория-категорий">Теория
+категорий</a>
+<ul>
+<li><a href="#определения" id="toc-определения">Определения</a></li>
+<li><a href="#примеры-категорий" id="toc-примеры-категорий">Примеры
+категорий</a></li>
+<li><a href="#двойственная-категория"
+id="toc-двойственная-категория">Двойственная категория</a></li>
+</ul></li>
+<li><a href="#функторы" id="toc-функторы">Функторы</a>
+<ul>
+<li><a href="#определения-1" id="toc-определения-1">Определения</a></li>
+<li><a href="#примеры-функторов" id="toc-примеры-функторов">Примеры
+функторов</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<p><span class="math inline">\(\newcommand{\cod}{\mathop{\rm
+cod}\nolimits}\)</span> <span
+class="math inline">\(\newcommand{\dom}{\mathop{\rm
+dom}\nolimits}\)</span> <span
+class="math inline">\(\newcommand{\Mor}{\mathop{\rm
+Mor}\nolimits}\)</span> <span
+class="math inline">\(\newcommand{\Ob}{\mathop{\rm
+Ob}\nolimits}\)</span> <span
+class="math inline">\(\newcommand{\Hom}{\mathop{\rm Hom}}\)</span> <span
+class="math inline">\(\newcommand{\id}{\mathop{\rm id}}\)</span> <span
+class="math inline">\(\newcommand{\C}{\mathbf{C}}\)</span> <span
+class="math inline">\(\newcommand{\D}{\mathbf{D}}\)</span> <span
+class="math inline">\(\newcommand{\Grp}{\mathbf{Grp}}\)</span> <span
+class="math inline">\(\newcommand{\CRng}{\mathbf{CRng}}\)</span> <span
+class="math inline">\(\newcommand{\Matr}{\mathbf{Matr}}\)</span> <span
+class="math inline">\(\newcommand{\Vect}{\mathbf{Vect}}\)</span> <span
+class="math inline">\(\newcommand{\G}{\mathbf{G}}\)</span> <span
+class="math inline">\(\newcommand{\Top}{\mathbf{Top}}\)</span> <span
+class="math inline">\(\newcommand{\Ass}{\mathbf{Ass}}\)</span> <span
+class="math inline">\(\newcommand{\Set}{\mathbf{Set}}\)</span></p>
+<h1 id="теория-категорий">Теория категорий</h1>
+<hr />
+<p><strong>Об обозначениях:</strong> Пусть задано отображение <span
+class="math inline">\(f: A \to B\)</span>. В зависимости от настроения
+образ элемента <span class="math inline">\(a \in A\)</span> при
+отображении <span class="math inline">\(f\)</span> обозначается: <span
+class="math inline">\(f(a)\)</span>, или <span
+class="math inline">\(f_a\)</span>, или <span
+class="math inline">\(fa\)</span>.</p>
+<h2 id="определения">Определения</h2>
+<hr />
+<blockquote>
+<p>В теории множеств, чтобы избежать парадоксов аналогичных парадоксу
+Рассела, используются понятия классов и множеств, где множества - это те
+классы, которые являются элементами других классов.</p>
+</blockquote>
+<p>В теории категорий будет проще придерживаться терминологии малых и
+большх множеств.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a>
+<em>Универсум</em> - некоторый класс. <a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p><em>Малые множества</em> - элементы универсума.</p>
+<p><em>Большие множества</em> - множества, не являющиеся малыми.</p>
+<blockquote>
+<p>Если взять <span class="math inline">\(U = \{x|\,\,\,\, \exists y:
+\,\,\,\, x \in y\}\)</span>, то малые множества - это множества, а
+большие множества - это классы, не являющиеся множествами. <a
+href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a></p>
+</blockquote>
+<p><strong>Определение:</strong><a name="definition-0"></a> (<em>1-е
+определение категории</em>)</p>
+<p><em>Категория</em> <span class="math inline">\(\C\)</span> - это пара
+<span class="math inline">\((\Ob \C, \Mor \C)\)</span>, где</p>
+<p><span class="math inline">\(\Ob \C\)</span> - <em>множество
+объектов</em>,</p>
+<p><span class="math inline">\(\Mor\C\)</span> - <em>множество
+морфизмов</em> <a href="#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a>, такая что:</p>
+<ol type="1">
+<li><span class="math inline">\(\forall f \in \Mor\C\,\,\,\, \exists a
+\in \Ob\C\)</span>, обозначается <span class="math inline">\(\dom
+f\)</span> и <span class="math inline">\(\exists b \in \Ob\C\)</span>,
+обозначается <span class="math inline">\(\cod f\)</span> <a href="#fn4"
+class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a>,</li>
+<li><span class="math inline">\(\forall a \in \Ob\C \,\,\,\, \exists \id
+_a \in \Mor\C: \,\,\,\, \cod \id_a = \dom \id_a = a\)</span>.</li>
+</ol>
+<p>По определению <span class="math inline">\(\Mor\C \times_{\Ob\C}
+\Mor\C = \{(f, g): \,\,\,\, f, g \in \Mor\C, \,\,\,\, \dom f = \cod g
+\}\)</span>. Определена операция <span class="math inline">\(\circ:
+\,\,\,\, \Mor\C \times_{\Ob\C} \Mor\C \to \Mor\C\)</span>, такая
+что:</p>
+<ol start="3" type="1">
+<li><span class="math inline">\(\forall (f, g) \in \Mor\C \times_{\Ob\C}
+\Mor\C \,\,\,\, \dom f\circ g = \dom g\)</span>,</li>
+<li><span class="math inline">\(\forall (f, g) \in \Mor\C \times_{\Ob\C}
+\Mor\C \,\,\,\, \cod f\circ g = \cod f\)</span>,</li>
+<li><span class="math inline">\(f(gh) = (fg)h\)</span>,</li>
+<li><span class="math inline">\(\forall f: a \to b \,\,\,\, \id_b f =
+f\id_a = f\)</span>.</li>
+</ol>
+<p>Множество всех морфизмов <span class="math inline">\(a \to b\)</span>
+обозначается <span class="math inline">\(\Hom_{\C}(a, b)\)</span> или
+<span class="math inline">\(\C(a, b)\)</span>.</p>
+<blockquote>
+<p>Вообще категория задается набором морфизмов, так как каждый объект
+задается своей единичной стрелкой.</p>
+</blockquote>
+<h2 id="примеры-категорий">Примеры категорий</h2>
+<hr />
+<dl>
+<dt><strong>Категория множеств</strong></dt>
+<dd>
+<p>Обозначается <span class="math inline">\(\Set\)</span>.</p>
+<p>Объекты - малые множества.</p>
+<p>Морфизмы - отображения между множествами.</p>
+</dd>
+<dt><strong>Категория групп</strong></dt>
+<dd>
+<p>Обозначается <span class="math inline">\(\Grp\)</span>.</p>
+<p>Объекты - группы.</p>
+<p>Морфизмы - гомоморфизмы групп.</p>
+</dd>
+<dt><strong>Категория моноид</strong></dt>
+<dd>
+<p>Категория с одним объектом.</p>
+<p>Моноидом является, например, любой объект категории <span
+class="math inline">\(c \in \C\)</span> с множеством морфизмов <span
+class="math inline">\(\Hom_{\C}(c, c)\)</span>.</p>
+</dd>
+<dt><strong>Категория группы</strong></dt>
+<dd>
+<p>Обозначается <span class="math inline">\(\G\)</span>.</p>
+<p>Множество объектов состоит из единицы группы <span
+class="math inline">\(\Ob\C = \{e\}\)</span>.</p>
+<p>Морфизмы - все элементы группы, а <span
+class="math inline">\(\circ\)</span> из <a
+href="#definition-0">определения категории</a> - это умножение элементов
+группы.</p>
+<p>Это моноид с обратимыми стрелками.</p>
+</dd>
+<dt><strong>Категория матриц</strong></dt>
+<dd>
+<p>Обозначается <span class="math inline">\(\Matr_{\mathbb{K}}\)</span>,
+где <span class="math inline">\(\mathbb{K}\)</span> - любое
+коммутативное, ассоциативное кольцо с единицей.</p>
+<p>Объекты - натуральные числа. <a href="#fn5" class="footnote-ref"
+id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<p><span class="math inline">\(\Hom_{\Matr_{\mathbf{K}}}(m, n)\)</span>
+- это матрицы размера <span class="math inline">\(n\times m\)</span>, а
+<span class="math inline">\(\circ\)</span> - это произведение
+матриц.</p>
+</dd>
+<dt><strong>Категория колец</strong></dt>
+<dd>
+<p>Обозначается <span class="math inline">\(\CRng\)</span>.</p>
+<p>Объекты - ассоциативные, коммутативные кольца с единицей.</p>
+<p>Морфизмы - гомоморфизмы колец.</p>
+</dd>
+<dt><strong>Категория векторных пространств над полем <span
+class="math inline">\(\mathbf{K}\)</span></strong></dt>
+<dd>
+<p>Обозначается <span class="math inline">\(\Vect_{\mathbb{K}}\)</span>,
+где <span class="math inline">\(\mathbb{K}\)</span> - любое поле.</p>
+<p>Объекты - векторные пространства над полем <span
+class="math inline">\(\mathbf{K}\)</span>.</p>
+<p><span class="math inline">\(\Hom_{\Vect_{\mathbf{K}}}(U, V)\)</span>
+- это линейные отображения пространства <span class="math inline">\(U
+\to V\)</span>.</p>
+</dd>
+<dt><strong>Категория топологических пространств</strong></dt>
+<dd>
+<p>Обозначается <span class="math inline">\(\Top\)</span>.</p>
+<p>Объекты - топологические пространства.</p>
+<p>Морфизмы - непрерывные отображения.</p>
+</dd>
+</dl>
+<p><strong>Определение:</strong><a name="definition-2"></a> Бинарное
+отношение <span class="math inline">\(\leqslant\)</span> на множестве
+<span class="math inline">\(M\)</span> - <em>предпорядок</em>, если
+<span class="math inline">\(\forall a, b, c \in M\)</span>:</p>
+<ol type="1">
+<li><span class="math inline">\(a \leqslant a\)</span>
+(<em>рефлексивность</em>),</li>
+<li><span class="math inline">\(a \leqslant b\)</span> и <span
+class="math inline">\(b \leqslant c \implies a \leqslant c\)</span>
+(<em>транзитивность</em>)</li>
+</ol>
+<dl>
+<dt><strong>Категория предпорядка</strong></dt>
+<dd>
+<p>Пусть задано множество <span class="math inline">\(M\)</span> с
+предпорядком <span class="math inline">\(\leqslant\)</span>.</p>
+<p>Объекты - это элементы множества <span
+class="math inline">\(M\)</span>.</p>
+<p><span class="math inline">\(|\Hom_{\mathbf{M}}(m, n)| \leqslant
+1\)</span> и <span class="math inline">\(\Hom_{\mathbf{M}}(m, n) \ne
+\varnothing \iff m \leqslant n\)</span>.</p>
+</dd>
+</dl>
+<h2 id="двойственная-категория">Двойственная категория</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-3"></a> Пусть <span
+class="math inline">\(\C\)</span> - категория. <em>Двойственная к</em>
+<span class="math inline">\(\C\)</span> <em>категория</em> - это
+категория <span class="math inline">\(\C^{\operatorname{op}}\)</span>, у
+которой <span class="math inline">\(\Ob \C^{\operatorname{op}} = \Ob
+\C\)</span> и стрелки развернуты.</p>
+<h1 id="функторы">Функторы</h1>
+<hr />
+<h2 id="определения-1">Определения</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть <span
+class="math inline">\(\C\)</span> и <span
+class="math inline">\(\D\)</span> категории. Функтор <span
+class="math inline">\(F: \C \to \D\)</span> - это пара отображений <a
+href="#fn6" class="footnote-ref" id="fnref6"
+role="doc-noteref"><sup>6</sup></a> <span class="math inline">\(F: \Ob
+\C \to \Ob \D\)</span> и <span class="math inline">\(F: \Mor \C \to \Mor
+\D\)</span>, причем:</p>
+<ol type="1">
+<li><span class="math inline">\(F\id_a = \id_{F_a} \,\,\,\, \forall a
+\in \Ob \C\)</span> <a href="#fn7" class="footnote-ref" id="fnref7"
+role="doc-noteref"><sup>7</sup></a>,</li>
+<li><span class="math inline">\(F(fg) = (Ff)(Fg) \,\,\,\,\forall (f, g)
+\in \Mor\C\times_{\Ob C}\Mor\C\)</span> <a href="#fn8"
+class="footnote-ref" id="fnref8"
+role="doc-noteref"><sup>8</sup></a>.</li>
+</ol>
+<p><strong>Определение:</strong><a name="definition-5"></a></p>
+<p>Функторы из <span class="math inline">\(\C \to \D\)</span> -
+<em>ковариантные</em>.</p>
+<p>Функторы из <span class="math inline">\(\C \to
+\D^{\operatorname{op}}\)</span> - <em>контравариантные</em>.</p>
+<h2 id="примеры-функторов">Примеры функторов</h2>
+<hr />
+<dl>
+<dt><strong>Забывающие функторы</strong></dt>
+<dd>
+<p><span class="math inline">\(F: \Grp \to \Set\)</span></p>
+<p><span class="math inline">\(F: \Top \to \Set\)</span></p>
+<p>Эти функторы переводят гомоморфизм или непрерывное отображение в
+отображение множеств.</p>
+</dd>
+<dt><strong>Функтор вложения</strong></dt>
+<dd>
+<p><span class="math inline">\(\C \hookrightarrow \D\)</span></p>
+</dd>
+<dt><strong><span class="math inline">\(GL_n\)</span></strong></dt>
+<dd>
+<p>Зафиксируем <span class="math inline">\(n \in \mathbb{N}\)</span>.
+<span class="math inline">\(GL_n: \CRng \to \Grp, \,\,\,\, \Ob\CRng \ni
+K \mapsto GL_n(K) \in \Grp\)</span>, а гомоморфизм колец является
+гомоморфизмом колец.</p>
+</dd>
+<dt><strong>Функтор взятия группы обратимых элементов
+кольца</strong></dt>
+<dd>
+<p><span class="math inline">\(\times: \CRng \to \Grp, \,\,\,\, \Ob\CRng
+\ni K \mapsto K^{\times} \in \Grp\)</span>, а гомоморфизм колец является
+гомоморфизмом колец.</p>
+</dd>
+<dt><strong><span
+class="math inline">\(\Hom\)</span>-функторы</strong></dt>
+<dd>
+<p>Пусть <span class="math inline">\(\C\)</span> - категория. И пусть ее
+<span class="math inline">\(\hom\)</span>-множества являются малыми
+множествами. Зафиксируем объект <span class="math inline">\(a \in \Ob
+\C\)</span>. Построим функтор: <span class="math inline">\(\hom(a, -):
+\C \to \Set\)</span>. <span class="math inline">\(\forall b \in \Ob\C
+\,\,\,\, \hom(a, b): b \mapsto \hom(a, b)\)</span> и каждая стрелка
+<span class="math inline">\(f: b \to b’\)</span> переводится в функцию
+<span class="math inline">\(\hom(a, f): \hom(a, b) \to \hom(a, b’):
+\,\,\,\, f \mapsto g\circ f \,\,\,\, \forall g \in \hom(a, b)\)</span>.
+Это ковариантный <span class="math inline">\(\hom\)</span>-функтор.</p>
+<p>Контравариантный <span class="math inline">\(\hom\)</span>-функтор
+можно записать в ковариантном виде: <span class="math inline">\(\hom(-,
+c): \C^{\operatorname{op}} \to \Set, \,\,\,\, a \in \Ob \C \,\,\,\,
+\hom(a, c): a \mapsto \hom(a, c)\)</span> и каждая стрелка <span
+class="math inline">\(g: b \to b’\)</span> переводится в функцию <span
+class="math inline">\(\hom(g, c): \hom(b, c) \to \hom(b’, c): \,\,\,\, g
+\mapsto f\circ g \,\,\,\, \forall f \in \hom(b, c)\)</span>.</p>
+</dd>
+<dt><strong>Функтор абелианизации группы</strong></dt>
+<dd>
+<p><span class="math inline">\(\Grp \to \mathbf{Ab}, \,\,\,\, G \to G /
+[G, G]\)</span></p>
+<p><span class="math inline">\([G, G]\)</span> - коммутант группы.</p>
+</dd>
+</dl>
+<p><strong>Определение:</strong><a name="definition-6"></a></p>
+<p>Пусть <span class="math inline">\(F: \C \to \D\)</span> -
+функтор.</p>
+<p>Если <span class="math inline">\(\forall a, b \in \Ob\C\)</span>
+отображение <span class="math inline">\(\C(a, b) \to \D(F_a,
+F_b)\)</span> инъективно, то функтор <span
+class="math inline">\(F\)</span> - <em>унивалентный</em>.</p>
+<p>Если <span class="math inline">\(\forall a, b \in \Ob\C\)</span>
+отображение <span class="math inline">\(\C(a, b) \to \D(F_a,
+F_b)\)</span> сюръективно, то функтор <span
+class="math inline">\(F\)</span> - <em>полный</em>.</p>
+<p><strong>Определение:</strong><a name="definition-7"></a>
+<em>Подкатегория</em> категории <span class="math inline">\(\C\)</span>
+- это категория, множеством объектов которой является подмножеством
+объектов категории <span class="math inline">\(\C\)</span> и множество
+морфизмов является подмножеством морфизмов.</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Достаточно большое «множество»<a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Например, в смысле этого определения универсума, класс
+всех малых множеств - <em>большое множество</em>.<a href="#fnref2"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Стрелки между объектами.<a href="#fnref3"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Пишут <span class="math inline">\(f: a \to b\)</span> и
+говорят, что <span class="math inline">\(f\)</span> стрелка из <span
+class="math inline">\(a\)</span> в <span
+class="math inline">\(b\)</span>.<a href="#fnref4" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Кто бы мог подумать 😵<a href="#fnref5"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Оба отображения обозначаются <span
+class="math inline">\(F\)</span>.<a href="#fnref6" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Сохранение единицы.<a href="#fnref7"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Для любых морфизмов, у которых определена композиция,
+функтор сохраняет композицию.<a href="#fnref8" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>
