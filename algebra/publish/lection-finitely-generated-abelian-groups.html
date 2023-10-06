@@ -41,12 +41,25 @@ id="toc-конечно-порожденные-абелевы-группы">Ко�
 группы</a>
 <ul>
 <li><a href="#определения" id="toc-определения">Определения</a></li>
-<li><a href="#свойства" id="toc-свойства">Свойства</a>
+<li><a href="#общий-вид-конечно-порожденной-свободной-абелевой-группы"
+id="toc-общий-вид-конечно-порожденной-свободной-абелевой-группы">Общий
+вид конечно порожденной свободной абелевой группы</a></li>
+<li><a href="#основное-свойство-свободной-абелевой-группы"
+id="toc-основное-свойство-свободной-абелевой-группы">Основное свойство
+свободной абелевой группы</a></li>
+<li><a href="#примитивные-элементы"
+id="toc-примитивные-элементы">Примитивные элементы</a>
 <ul>
 <li><a href="#пример-ненулевых-непримитивных-элементов"
 id="toc-пример-ненулевых-непримитивных-элементов">Пример ненулевых
 непримитивных элементов</a></li>
 </ul></li>
+<li><a href="#общий-вид-конечно-порожденной-абелевой-группы"
+id="toc-общий-вид-конечно-порожденной-абелевой-группы">Общий вид конечно
+порожденной абелевой группы</a></li>
+<li><a href="#о-конечных-подгруппах-мультипликативной-группы-поля"
+id="toc-о-конечных-подгруппах-мультипликативной-группы-поля">О конечных
+подгруппах мультипликативной группы поля</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -75,7 +88,8 @@ class="math inline">\(\forall g \in G \,\,\,\, \exists \lambda_1,
 элементов <span class="math inline">\(X\)</span> равна <span
 class="math inline">\(0\)</span>.</li>
 </ol>
-<h2 id="свойства">Свойства</h2>
+<h2 id="общий-вид-конечно-порожденной-свободной-абелевой-группы">Общий
+вид конечно порожденной свободной абелевой группы</h2>
 <hr />
 <p><strong>Теорема:</strong><a name="theorem-0"></a> (<em>строение
 конечно порожденных свободных абелевых групп</em>) Конечно порожденная
@@ -93,17 +107,21 @@ class="math inline">\(\{(1, \ldots, 0), (0, 1, \ldots, 0), \ldots, (0,
 <span class="math inline">\(G\)</span>. Построим гомоморфизм <span
 class="math inline">\(\varphi: \mathbb{Z}^n \to G: \,\,\,\, (k_1,
 \ldots, k_n) \mapsto \displaystyle \sum_{i = 1}^{n}k_i x_i\)</span>.</p>
-<p>Гомомрфность и сюръективность по определению.</p>
+<p>Гомомофность и сюръективность по определению.</p>
 <p>Инъективность <a
 href="lection-group-quotient-group-homomorphism-theore.html#lemma-0">по
 лемме</a>, так как ядро тривиально <span
 class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="основное-свойство-свободной-абелевой-группы">Основное свойство
+свободной абелевой группы</h2>
+<hr />
 <p><strong>Теорема:</strong><a name="theorem-1"></a> (<em>основное
 свойство конечно порожденных абелевых групп</em>) Любая <span
 class="math inline">\(n\)</span>-порожденная абелева группа порядка
 <span class="math inline">\(n\)</span> изомофна некоторой факторгруппе
-конечно порожденной абелевой группы порядка <span
-class="math inline">\(n\)</span>.</p>
+<span class="math inline">\(\mathbb{Z}^n\)</span> <a href="#fn1"
+class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a>.</p>
 <p><em>Доказательство:</em> <span class="math inline">\(G =
 \left\langle\{g_1, \ldots, g_n\}\right\rangle\)</span>. <span
 class="math inline">\(\mathbb{Z}^n\)</span> <a href="#theorem-0">конечно
@@ -113,6 +131,8 @@ class="math inline">\(\varphi: (k_1, \ldots, k_n) \mapsto \displaystyle
 href="lection-group-quotient-group-homomorphism-theore.html#theorem-0">По
 теореме о гомоморфизме</a> <span class="math inline">\(G \simeq
 \mathbb{Z}^n / \ker \varphi \,\,\,\,\blacksquare\)</span></p>
+<h2 id="примитивные-элементы">Примитивные элементы</h2>
+<hr />
 <p><strong>Определение:</strong><a name="definition-1"></a> Элемент
 <span class="math inline">\(g\)</span> конечно порожденной абелевой
 группы <span class="math inline">\(G\)</span> <em>примитивный</em>, если
@@ -163,6 +183,9 @@ class="math inline">\(g \in pG \implies g = p g’ = p\left(\displaystyle
 \alpha_1 \implies \blades\)</span></p>
 <p><span class="math inline">\(\boxed{3 \Rightarrow 1}\)</span> Что-то
 пошло не так.</p>
+<h2 id="общий-вид-конечно-порожденной-абелевой-группы">Общий вид конечно
+порожденной абелевой группы</h2>
+<hr />
 <p><strong>Теорема:</strong><a name="theorem-3"></a> (<em>куча всего про
 подгруппы конечно порожденной абелевой группы</em>)</p>
 <p>Пусть <span class="math inline">\(G\)</span> - конечно порожденная
@@ -197,7 +220,51 @@ class="math inline">\(\exists \{f_2 + &lt;e_1&gt;, \ldots, f_n +
 <p>Докажем, что <span class="math inline">\(e_1, f_2, \ldots,
 f_n\)</span> базис <span class="math inline">\(G\)</span>.</p>
 <p><span class="math inline">\(\boxed{\operatorname{II}}\)</span> В
-<span class="math inline">\(H\)</span> нет примитивного элемента.</p>
+<span class="math inline">\(H\)</span> нет примитивного элемента. Пусть
+<span class="math inline">\(k\)</span> максимальное натуральное число,
+такое что <span class="math inline">\(H \subset kG\)</span>. Такое <span
+class="math inline">\(k\)</span> существует, если <span
+class="math inline">\(H\)</span> не является тривиальной. <a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>Рассмотрим <span class="math inline">\(h \in H, \,\,\,\, h =
+\displaystyle \sum_{}^{N}\lambda_i e_i\)</span>, такой что <span
+class="math inline">\(\gcd\{\lambda_i\} = k\)</span>. <a href="#fn3"
+class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>
+Тогда по случаю <span class="math inline">\(\operatorname{I}\)</span>
+существует базис <span class="math inline">\(\{e_1’, \ldots,
+e_n’\}\)</span> в <span class="math inline">\(kF\)</span>, такой что
+<span class="math inline">\(\exists k_1, \ldots, k_n: \,\,\,\, \{k_1e_1
+’, \ldots, k_n e_n’\}\)</span> - базис в <span class="math inline">\(kH
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-2"></a> <span
+class="math inline">\(T(G) = \{g \in G: \,\,\,\, \operatorname{ord}g
+&lt; \infty\}\)</span> - <em>периодическая часть группы</em>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Если <span
+class="math inline">\(G\)</span> - абелева, то <span
+class="math inline">\(T(G)\)</span> подгруппа.</p>
+<p><em>Доказательство:</em> В абелевой группе произведение элементов
+конечного порядка дает элемент конечного порядка <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Группа <span
+class="math inline">\(G\)</span> <em>без кручения</em>, если в ней нет
+нетривиальных элементов конечного порядка.</p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> <span
+class="math inline">\(G / T(G)\)</span> - без кручения.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(\exists g
++ T(G): \,\,\,\, k(g + T(G)) = T(G) \implies kg + kT(G) = T(G) \implies
+kg \in T(G) \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть <span
+class="math inline">\(p\)</span> - протсое. <span
+class="math inline">\(T_p(G) = \{g \in G| \operatorname{ord}g =
+p\}\)</span> - <span class="math inline">\(p\)</span>-компонента группы
+<span class="math inline">\(G\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Если <span
+class="math inline">\(G\)</span> абелева, то <span
+class="math inline">\(T_p(G)\)</span> - подгруппа.</p>
+<p><em>Доказательство:</em> Произведение элементов порядка <span
+class="math inline">\(p\)</span> - элемент порядка <span
+class="math inline">\(p\)</span> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <p><strong>Следствие:</strong><a name="corollary-0"></a>
 (<em>главное</em>) Любая конечно порожденная абелева группа
 раскладывается в прямую сумму циклических групп.</p>
@@ -205,8 +272,77 @@ f_n\)</span> базис <span class="math inline">\(G\)</span>.</p>
 порожденная абелева группа. Тогда <span class="math inline">\(G \simeq
 \underbrace{\mathbb{Z}\oplus\ldots\oplus \mathbb{Z}}_{k}\oplus
 \mathbb{Z}_{p_1^{\alpha_1}}\oplus\ldots\oplus
-\mathbb{Z}_{p_m^{\alpha_m}}\)</span>.</p>
+\mathbb{Z}_{p_m^{\alpha_m}}\)</span>. Причем такое разложение
+единственно с точностью до перестановки слагаемых.</p>
 <p><em>Доказательство:</em></p>
+<p><span class="math display">\[G\oplus F / A \oplus B \simeq G/A \oplus
+F/B\]</span> <a href="#fn4" class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a>.</p>
+<p>По основному свойству конечно порожденной группы <span
+class="math inline">\(G \simeq F / N\)</span>, где <span
+class="math inline">\(F\)</span> - свободная абелева группа, а <span
+class="math inline">\(N\)</span> ее подгруппа. <span
+class="math inline">\(F \simeq \mathbb{Z}^n\)</span>, а <span
+class="math inline">\(N \simeq k_1\mathbb{Z}\oplus \ldots \oplus k_n
+\mathbb{Z}\)</span> по предыдущей теореме <span
+class="math inline">\(\implies G \simeq \mathbb{Z}\oplus\ldots\oplus
+\mathbb{Z} /k_1\mathbb{Z}\oplus \ldots \oplus k_n \mathbb{Z} =
+\mathbb{Z}^k\oplus \mathbb{Z}_{p_1^{\alpha_1}}\oplus\ldots\oplus
+\mathbb{Z}_{p_m^{\alpha_m}} \,\,\,\,\blacksquare\)</span></p>
+<p>Докажем единственность. Возьмем фактор группу <span
+class="math inline">\(G\)</span> по <span
+class="math inline">\(T_(G)\)</span>. Получим <span
+class="math inline">\(G/T(G)\simeq \mathbb{Z}^m \implies m\)</span>
+определено однозначно.</p>
+<p>Далее рассматриваем группу вида <span class="math inline">\(G \simeq
+\mathbb{Z}_{p_1^{\alpha_1}}\oplus\ldots\oplus
+\mathbb{Z}_{p_k^{\alpha_k}}\)</span>.</p>
+<p>Иии…</p>
+<h2 id="о-конечных-подгруппах-мультипликативной-группы-поля">О конечных
+подгруппах мультипликативной группы поля</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Конечная
+подгруппа мультипликативной группы поля циклическая.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(H \subset
+\mathbb{F}^{*}\)</span>. <span class="math inline">\(H =
+&lt;a_1&gt;_{k_1}\times\ldots\times &lt;a_n&gt;_{k_n}\)</span> по
+предыдущей теореме. <span class="math inline">\(H\)</span> циклическая
+<span class="math inline">\(\iff \gcd\{k_i, k_j\} = 1 \,\,\,\, i \ne
+j\)</span>. <a href="#fn5" class="footnote-ref" id="fnref5"
+role="doc-noteref"><sup>5</sup></a>. Докажем: пусть <span
+class="math inline">\(p \,\,|\,\, k_1\)</span> и <span
+class="math inline">\(p \,\,|\,\, k_2\)</span>. Рассмотрим уравнение
+<span class="math inline">\(x^p = 1\)</span>, оно имеет <span
+class="math inline">\(p\)</span> решений в <span
+class="math inline">\(&lt;a_1&gt;_{k_1}\)</span> <strong>?</strong> и
+<span class="math inline">\(p\)</span> решений в <span
+class="math inline">\(&lt;a_2&gt;_{k_2}\)</span>, но не может иметь
+более <span class="math inline">\(p\)</span> решений в поле <span
+class="math inline">\(\mathbb{F} \implies \blades\)</span></p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Свободной конечно порожденной абелевой группы.<a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Вообще <span class="math inline">\(k = \gcd\{g_1,
+\ldots, g_k\}\)</span>, где <span class="math inline">\(k_i\)</span>
+максимальные элементы, порождающие <span
+class="math inline">\(H\)</span>. Но это не точно.<a href="#fnref2"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Такой элемент существует, так как иначе <span
+class="math inline">\(k\)</span> не максимально.<a href="#fnref3"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Так ка можно построить гомоморфизм <span
+class="math inline">\(f: (g, h) \mapsto (gA, hB)\)</span>, ядро которого
+<span class="math inline">\(A\oplus B\)</span>, а образ <span
+class="math inline">\(G/A \oplus F/B\)</span><a href="#fnref4"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Так как в этом случае решается уравнение <span
+class="math inline">\(x_1 k_1 + \ldots x_n k_n = 1\)</span>.<a
+href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 <a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
 <a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
 <a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>

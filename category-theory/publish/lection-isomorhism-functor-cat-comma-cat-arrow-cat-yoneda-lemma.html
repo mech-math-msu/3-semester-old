@@ -232,10 +232,24 @@ G\)</span>:</p>
 <h2 id="вложение-йонеды">Вложение Йонеды</h2>
 <hr />
 <p><strong>Лемма:</strong><a name="lemma-0"></a> (<em>лемма Йонеды</em>)
-Пусть <span class="math inline">\(K: \C \to \Set\)</span> - функтор.
-Тогда отображение <span class="math inline">\(\Nat(C(c, -), K) \to
-K_c\)</span> биекция, если <span class="math inline">\(\Nat(C(c, -), K)
-\ni \alpha \mapsto \alpha_c \in \Mor \C\)</span>.</p>
+Пусть <span class="math inline">\(F: \C \to \Set\)</span> - функтор.
+Тогда отображение <span class="math inline">\(\Nat(\C(c, -), F) \to
+F_c\)</span> биекция, если <span class="math inline">\(\Nat(\C(c, -), F)
+\ni \alpha \mapsto \alpha_c(\id_c)\)</span> <a href="#fn4"
+class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a>.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math display">\[\begin{CD}
+    \C(c, c) @&gt;\alpha_c&gt;&gt; F(c)\\
+    @Vf_{*} = \D(r, f)VV @VVF(f)V\\
+    \D(c, d) @&gt;\alpha_d&gt;&gt; F(d)
+\end{CD}
+\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,
+\begin{CD}
+    c\\
+    @VfVV\\
+    d
+\end{CD}\]</span></p>
 <section id="footnotes" class="footnotes footnotes-end-of-document"
 role="doc-endnotes">
 <hr />
@@ -248,6 +262,15 @@ role="doc-backlink">↩︎</a></p></li>
 role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>Comma category<a href="#fnref3" class="footnote-back"
 role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p><span class="math inline">\(\alpha_c\)</span> - морфизм
+между образами объекта при функторах <span
+class="math inline">\(F\)</span> и <span class="math inline">\(\C(c,
+-)\)</span>, то есть отображение между множествами, так как оба функтора
+в категорию <span class="math inline">\(\Set\)</span>, а <span
+class="math inline">\(\id_c\)</span> принадлежит образу объекта <span
+class="math inline">\(c\)</span> при функторе <span
+class="math inline">\(\C(c, -)\)</span>.<a href="#fnref4"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>

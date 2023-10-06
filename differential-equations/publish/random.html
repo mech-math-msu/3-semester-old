@@ -22,7 +22,11 @@
 
   function random() {
       let statement = data[get_random_int(data.length)];
-      random_div.innerHTML = statement.statement_html + `<details><summary>Докажите теорему, а потом проверьте доказательство)</summary>${statement.proof_html}</details>`;
+      if (statement.data_type == "definition") {
+          random_div.innerHTML = statement.keyword + `<details><summary>Запишите определения данных выше терминов и проверьте себя)</summary>${statement.html}</details>`;
+      } else {
+          random_div.innerHTML = statement.statement_html + `<details><summary>Докажите теорему, а потом проверьте доказательство)</summary>${statement.proof_html}</details>`;
+      }
       MathJax.typeset();
   }
   random();

@@ -22,7 +22,11 @@
 
   function random() {
       let statement = data[get_random_int(data.length)];
-      random_div.innerHTML = statement.statement_html + `<details><summary>Докажите теорему, а потом проверьте доказательство)</summary>${statement.proof_html}</details>`;
+      if (statement.data_type == "definition") {
+          random_div.innerHTML = statement.keyword + `<details><summary>Запишите определения данных выше терминов и проверьте себя)</summary>${statement.html}</details>`;
+      } else {
+          random_div.innerHTML = statement.statement_html + `<details><summary>Докажите теорему, а потом проверьте доказательство)</summary>${statement.proof_html}</details>`;
+      }
       MathJax.typeset();
   }
   random();
@@ -30,6 +34,12 @@
   <script
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
   type="text/javascript"></script>
+    <script>
+        window.MathJax = {
+            loader: {load: ['[tex]/amscd']},
+            tex: {packages: {'[+]': ['amscd']}}
+        };
+    </script>
 <!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
  <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
   <!--[if lt IE 9]>
