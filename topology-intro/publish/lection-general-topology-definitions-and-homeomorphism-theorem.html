@@ -29,19 +29,145 @@
 <summary>Содержание</summary>
 <nav id="TOC" role="doc-toc">
 <ul>
-<li><a href="#основные-определения-и-теорема-о-гомеоморфизме"
-id="toc-основные-определения-и-теорема-о-гомеоморфизме">Основные
-определения и теорема о гомеоморфизме</a>
+<li><a href="#основные-определения"
+id="toc-основные-определения">Основные определения</a>
+<ul>
+<li><a href="#метрические-пространства"
+id="toc-метрические-пространства">Метрические пространства</a></li>
+<li><a href="#специальные-точки-и-множества-в-топологии"
+id="toc-специальные-точки-и-множества-в-топологии">Специальные точки и
+множества в топологии</a></li>
+<li><a href="#индуцированная-топология"
+id="toc-индуцированная-топология">Индуцированная топология</a></li>
+</ul></li>
+<li><a href="#непрерывные-отображения"
+id="toc-непрерывные-отображения">Непрерывные отображения</a></li>
+<li><a href="#гомеоморфизм" id="toc-гомеоморфизм">Гомеоморфизм</a>
 <ul>
 <li><a href="#теорема-о-гомеоморфизме"
 id="toc-теорема-о-гомеоморфизме">Теорема о гомеоморфизме</a></li>
 </ul></li>
+<li><a
+href="#инварианты-топологичеких-пространств-при-непрерывных-отображениях"
+id="toc-инварианты-топологичеких-пространств-при-непрерывных-отображениях">Инварианты
+топологичеких пространств при непрерывных отображениях</a>
+<ul>
+<li><a href="#связность" id="toc-связность">Связность</a>
+<ul>
+<li><a href="#линейная-связность" id="toc-линейная-связность">Линейная
+связность</a></li>
+</ul></li>
+<li><a href="#компактность" id="toc-компактность">Компактность</a></li>
+<li><a href="#отделимость" id="toc-отделимость">Отделимость</a>
+<ul>
+<li><a href="#хаусдорфовость"
+id="toc-хаусдорфовость">Хаусдорфовость</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#переходим-в-какой-то-матан"
+id="toc-переходим-в-какой-то-матан">Переходим в какой-то матан</a></li>
+<li><a href="#все-стало-еще-хуже-пришла-алгебра"
+id="toc-все-стало-еще-хуже-пришла-алгебра">Все стало еще хуже: пришла
+алгебра</a></li>
 </ul>
 </nav>
 </details>
-<h1 id="основные-определения-и-теорема-о-гомеоморфизме">Основные
-определения и теорема о гомеоморфизме</h1>
+<h1 id="основные-определения">Основные определения</h1>
 <hr />
+<p><strong>Определение:</strong><a name="definition-0"></a>
+<em>топология</em></p>
+<p><strong>Определение:</strong><a name="definition-1"></a>
+<em>замкнутое множество</em></p>
+<p><strong>Определение:</strong><a name="definition-2"></a>
+<em>топология через замкнутые множества</em></p>
+<p><strong>Определение:</strong><a name="definition-3"></a>
+<em>База</em> на <span class="math inline">\(X\)</span> - это набор
+<span class="math inline">\(B\)</span> подмножеств <span
+class="math inline">\(X\)</span> такой, что:</p>
+<ol type="1">
+<li><span class="math inline">\(\forall x \in X \,\,\,\, \exists \beta
+\in B: \,\,\,\, x \in \beta\)</span>.</li>
+<li><span class="math inline">\(\exists \beta: \,\,\,\, x \in \beta
+\subset \beta_1 \cap \beta_2 \,\,\,\, \forall x \in \beta_1 \cap
+\beta_2\)</span>.</li>
+</ol>
+<p><strong>Лемма:</strong><a name="lemma-0"></a> Пусть <span
+class="math inline">\(B\)</span> база на <span
+class="math inline">\(X\)</span>. Пусть <span
+class="math inline">\(\tau_{B}\)</span> - это множество всех объединений
+элементов базы. Тогда <span class="math inline">\(\tau_{B}\)</span> -
+топология на <span class="math inline">\(X\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Определение:</strong><a name="definition-4"></a>
+<em>Предбаза</em> - это такой набор множеств, что все конечные
+пересечения элементов предбазы составляют базу.</p>
+<p><strong>Определение:</strong><a name="definition-5"></a> <em>Покрытие
+множества</em> <span class="math inline">\(X\)</span> - это набор
+множеств, объединение которых совпадает с <span
+class="math inline">\(X\)</span>.</p>
+<p><strong>Лемма:</strong><a name="lemma-1"></a> Набор подмножеств <span
+class="math inline">\(B\)</span> множества <span
+class="math inline">\(X\)</span> является предбазой <span
+class="math inline">\(\iff X\)</span> является покрытием множества <span
+class="math inline">\(X\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<h2 id="метрические-пространства">Метрические пространства</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-6"></a>
+<em>метрика</em></p>
+<p><strong>Определение:</strong><a name="definition-7"></a>
+<em>метрическое пространство</em></p>
+<p><strong>Определение:</strong><a name="definition-8"></a>
+<em>метризуемое множество</em></p>
+<p><strong>Определение:</strong><a name="definition-9"></a>
+<em>норма</em></p>
+<h2 id="специальные-точки-и-множества-в-топологии">Специальные точки и
+множества в топологии</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-10"></a> <em>точка
+прикосновения</em></p>
+<p><em>внутренняя точка</em></p>
+<p><strong>Определение:</strong><a name="definition-11"></a>
+<em>замыкание</em></p>
+<p><em>внутренность</em></p>
+<p><strong>Лемма:</strong><a name="lemma-2"></a> (<em>почти
+очевидная</em>)</p>
+<ol type="1">
+<li>Замыкание множества - замкнутое множество.</li>
+<li>Внутренность множества - открытое множество.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
+class="math inline">\(X\)</span> - топологическое пространство, <span
+class="math inline">\(A \subset X\)</span>. Тогда <span
+class="math inline">\(\overline{A} = \cap \{U \in X: \,\,\,\, A \subset
+U\)</span> и <span class="math inline">\(U\)</span> - замкнуто <span
+class="math inline">\(\}\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<h2 id="индуцированная-топология">Индуцированная топология</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-12"></a>
+<em>Индуцированная топология</em></p>
+<h1 id="непрерывные-отображения">Непрерывные отображения</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-13"></a>
+<em>непрерывно в точке</em> прообраз открытого множества открыт.</p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> непрерывно
+<span class="math inline">\(\iff\)</span> определение с
+окрестностями</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> <span
+class="math inline">\(f: X \to Y\)</span> непрерывно <span
+class="math inline">\(\iff\)</span> <span class="math inline">\(f: X \to
+Y\)</span> непрерывно на базе <span
+class="math inline">\(X\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<h1 id="гомеоморфизм">Гомеоморфизм</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-14"></a>
+<em>гомеоморфизм</em></p>
+<p><strong>Определение:</strong><a name="definition-15"></a>
+<em>гомеоморфны</em></p>
 <h2 id="теорема-о-гомеоморфизме">Теорема о гомеоморфизме</h2>
 <hr />
 <blockquote>
@@ -73,6 +199,163 @@ role="doc-noteref"><sup>3</sup></a></p></li>
 </ol>
 <p>Далее понятно <span
 class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h1
+id="инварианты-топологичеких-пространств-при-непрерывных-отображениях">Инварианты
+топологичеких пространств при непрерывных отображениях</h1>
+<hr />
+<h2 id="связность">Связность</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-16"></a>
+<em>несвязно</em>, <em>связно</em></p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Образ
+связного множества при непрерывном отображении связен.</p>
+<p><em>Доказательство:</em></p>
+<h3 id="линейная-связность">Линейная связность</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-17"></a> Образ
+отрезка с естественной топологией при непрерывном отображении в
+топологическое пространство - <em>(непрерывная) кривая</em>,
+<em>соединяющая</em> образы концов отрезка.</p>
+<p><strong>Определение:</strong><a name="definition-18"></a>
+Пространство <em>линейно связно</em>, если любые две точки можно
+соединить непрерывной кривой.</p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a> Пространство
+линейно связно <span class="math inline">\(\implies\)</span>
+пространство связно.</p>
+<p><em>Доказательство:</em></p>
+<h2 id="компактность">Компактность</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-19"></a>
+Пространство <span class="math inline">\(X\)</span> - <em>компакт</em>,
+если из любого его открытого покрытия можно выделить конечное
+подпокрытие.</p>
+<p><strong>Определение:</strong><a name="definition-20"></a>
+Подмножество <span class="math inline">\(A \subset X\)</span>
+топологического пространства <span class="math inline">\(X\)</span> -
+<em>компактно</em>, если из любого его открытого покрытия можно выделить
+конечное подпокрытие.</p>
+<p><strong>Утверждение:</strong><a name="statement-5"></a> Образ
+компактного подмножества при непрерывном отображении компактен.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Утверждение:</strong><a name="statement-6"></a> Замкнутое
+подмножество компактного пространства компактно.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Лемма:</strong><a name="lemma-3"></a> (<em>Лебега</em>) Пусть
+<span class="math inline">\(X\)</span> компактное метрическое
+пространство. Пусть <span class="math inline">\(\{U_{\alpha}\}\)</span>
+открытое покрытие <span class="math inline">\(X\)</span>. Тогда <span
+class="math inline">\(\exists r &gt; 0\)</span>, такое что любой
+открытый шар радиуса <span class="math inline">\(r\)</span> целиком
+лежит в одном из <span class="math inline">\(U_{\alpha}\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Определение:</strong><a name="definition-21"></a> <span
+class="math inline">\(r\)</span> из предыдущей леммы - <em>число
+Лебега</em> покрытия <span
+class="math inline">\(U_{\alpha}\)</span>.</p>
+<h2 id="отделимость">Отделимость</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-22"></a>
+(<strong>T1</strong>) Топологическое пространство <span
+class="math inline">\(X\)</span> обладает <span
+class="math inline">\(\operatorname{T1}\)</span>, если <span
+class="math inline">\(\forall x, y \in X \,\,\,\, \exists U_x, U_y \in
+\tau_X: \,\,\,\, x \not\in U_y\)</span> и <span class="math inline">\(y
+\not\in U_x\)</span>.</p>
+<p><strong>Лемма:</strong><a name="lemma-4"></a> Если <span
+class="math inline">\(X\)</span> обладает <span
+class="math inline">\(\operatorname{T1}\)</span>, то любая точка <span
+class="math inline">\(X\)</span> замкнута.</p>
+<p><em>Доказательство:</em></p>
+<h3 id="хаусдорфовость">Хаусдорфовость</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-23"></a>
+(<strong>T2</strong>) Топологическое пространство <span
+class="math inline">\(X\)</span> <em>хаусдорфово</em>, если <span
+class="math inline">\(\forall x, y \in X \,\,\,\, \exists U_x, U_y \in
+\tau_X: \,\,\,\, U_x \cap U_y = \varnothing\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-24"></a> Пусть <span
+class="math inline">\(\{x_n\}_{n = 1}^{\infty}\)</span> -
+последовательность точек <span class="math inline">\(X\)</span>. <span
+class="math inline">\(x \in X\)</span> - <em>предел</em>
+последовательности <span class="math inline">\(x_n\)</span>, если
+дополнение любой окрестности <span class="math inline">\(x\)</span>
+содержит конечное количество членов последовательнсти.</p>
+<p><strong>Утверждение:</strong><a name="statement-7"></a> Если <span
+class="math inline">\(X\)</span> хаусдорфово, то любая
+последовательность имеет не более одного предела.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Определение:</strong><a name="definition-25"></a>
+(<strong>T3</strong>) Топологическое пространство <span
+class="math inline">\(X\)</span> обладает <span
+class="math inline">\(\operatorname{T3}\)</span>, если <span
+class="math inline">\(\forall x \in X\)</span> и любого замкнутого <span
+class="math inline">\(A \subset X: \,\,\,\, x \not\in A \,\,\,\, \exists
+U_x, U_A \in \tau_X: \,\,\,\, U_x \cap U_A = \varnothing\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-26"></a>
+(<strong>T4</strong>) Топологическое пространство <span
+class="math inline">\(X\)</span> обладает <span
+class="math inline">\(\operatorname{T4}\)</span>, если для любых
+замкнутых <span class="math inline">\(A, B \subset X: \,\,\,\, A \cap B
+= \varnothing \,\,\,\, \exists U_A, U_B \in \tau_X: \,\,\,\, U_A \cap
+U_B = \varnothing\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-27"></a> Если <span
+class="math inline">\(X\)</span> обладает <span
+class="math inline">\(\operatorname{T1}\)</span> и <span
+class="math inline">\(\operatorname{T3}\)</span>, то <span
+class="math inline">\(X\)</span> - <em>регулярно</em>.</p>
+<p><strong>Определение:</strong><a name="definition-28"></a> Если <span
+class="math inline">\(X\)</span> обладает <span
+class="math inline">\(\operatorname{T1}\)</span> и <span
+class="math inline">\(\operatorname{T4}\)</span>, то <span
+class="math inline">\(X\)</span> - <em>нормально</em>.</p>
+<p><strong>Факт:</strong> Нормально <span
+class="math inline">\(\implies\)</span> регулярно <span
+class="math inline">\(\implies\)</span> хаусдорфово.</p>
+<p><strong>Утверждение:</strong><a name="statement-8"></a> Если
+пространство компактно и хаусдорфово, то оно нормально.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Лемма:</strong><a name="lemma-5"></a> Компактное подмножество
+хаусдорфова пространства замкнуто.</p>
+<p><em>Доказательство:</em></p>
+<h1 id="переходим-в-какой-то-матан">Переходим в какой-то матан</h1>
+<hr />
+<p><strong>Лемма:</strong><a name="lemma-6"></a> (<em>Урысона</em>)
+Пусть <span class="math inline">\(X\)</span> - нормальное пространство,
+<span class="math inline">\(A, B \subset X\)</span> замкнуты и <span
+class="math inline">\(A \cap B = \varnothing\)</span>. Тогда <span
+class="math inline">\(\exists f: X \to [0, 1]: \,\,\,\, f_{|A} =
+0\)</span> и <span class="math inline">\(f_{|B} = 1\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Определение:</strong><a name="definition-29"></a> Норма
+функции <span class="math inline">\(f: X \to \mathbb{R}\)</span>
+ограниченной на <span class="math inline">\(\mathbb{R}\)</span> - это
+<span class="math inline">\(||f|| = \displaystyle\sup_{x \in
+X}|f(x)|\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> (<em>Титце</em>)
+Пусть <span class="math inline">\(X\)</span> - нормальное пространство,
+<span class="math inline">\(A \subset X\)</span> замкнуто. Тогда для
+любой непрерывной функции <span class="math inline">\(f: A \to
+\mathbb{R}\)</span> существует непрерывная функция <span
+class="math inline">\(F: X \to \mathbb{R}\)</span>, такая, что <span
+class="math inline">\(F_{|A} = f\)</span>. Если <span
+class="math inline">\(||f|| \leqslant 1\)</span>, то <span
+class="math inline">\(||F|| \leqslant 1\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<h1 id="все-стало-еще-хуже-пришла-алгебра">Все стало еще хуже: пришла
+алгебра</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-30"></a> Набор
+функций <span class="math inline">\(A \subset C(X)\)</span><a
+href="#fn4" class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a> <em>разделяет точки</em>
+топологического пространства <span class="math inline">\(X\)</span>,
+если <span class="math inline">\(\forall x, y \in X \,\,\,\, \exists f
+\in A: \,\,\,\, f(x) = 0\)</span> и <span class="math inline">\(f(y) =
+1\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-9"></a> Если <span
+class="math inline">\(A \subset C(X)\)</span> разделяет точки и содержит
+константы, то <span class="math inline">\(A\)</span> подалгебра</p>
+<p><em>Доказательство:</em></p>
 <section id="footnotes" class="footnotes footnotes-end-of-document"
 role="doc-endnotes">
 <hr />
@@ -86,6 +369,10 @@ class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 class="math inline">\(X\)</span> - компактно, то <span
 class="math inline">\(Y\)</span> - компактно.<a href="#fnref3"
 class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Напоминание: <span class="math inline">\(C(X)\)</span> -
+непрерывные на <span class="math inline">\(X\)</span> функции. Функция -
+отображение в <span class="math inline">\(\mathbb{R}\)</span>.<a
+href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>

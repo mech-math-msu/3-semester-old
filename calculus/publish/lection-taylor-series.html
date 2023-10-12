@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#ряды-тейлора" id="toc-ряды-тейлора">Ряды Тейлора</a>
+<ul>
+<li><a href="#ряды-тейлора-разных-функци-могут-совпадать-пример"
+id="toc-ряды-тейлора-разных-функци-могут-совпадать-пример">Ряды Тейлора
+разных функци могут совпадать: пример</a></li>
+<li><a href="#признак-сходимости-ряда-тейлора"
+id="toc-признак-сходимости-ряда-тейлора">Признак сходимости ряда
+Тейлора</a></li>
+</ul></li>
+<li><a href="#бесконечные-произведения"
+id="toc-бесконечные-произведения">Бесконечные произведения</a>
+<ul>
+<li><a href="#необходимое-условие-сходимости"
+id="toc-необходимое-условие-сходимости">Необходимое условие
+сходимости</a>
+<ul>
+<li><a href="#пример" id="toc-пример">Пример</a></li>
+</ul></li>
+<li><a href="#ужасная-теорема" id="toc-ужасная-теорема">Ужасная
+теорема</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="ряды-тейлора">Ряды Тейлора</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(f(x) \subset C^{\infty}(B(x_0))\)</span>. Ряд
+<span class="math inline">\(\displaystyle \sum_{n =
+0}^{\infty}\frac{f^{(n)}(x_0)}{n!}(x - x_0)^n\)</span> - <em>ряд
+Тейлора</em> функции <span class="math inline">\(f(x)\)</span>.</p>
+<h2 id="ряды-тейлора-разных-функци-могут-совпадать-пример">Ряды Тейлора
+разных функци могут совпадать: пример</h2>
+<hr />
+<p><span class="math display">\[f(x) = \begin{cases}
+    e^{-\frac{1}{x^2}}, x \ne 0\\
+    0, x = 0
+\end{cases} \,\,\,\,\,\,\,\,\,\,\,\, g(x) \equiv 0\]</span></p>
+<p><span class="math display">\[\displaystyle \sum_{n =
+0}^{\infty}\frac{f^{(n)}(0)}{n!}x^n = \displaystyle \sum_{n =
+0}^{\infty}0\cdot x^n = \displaystyle \sum_{n =
+0}^{\infty}\frac{g^{(n)}(0)}{n!}x^n\]</span></p>
+<p><img src="img/etominusxsquared.png" /></p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(\displaystyle \sum_{n = 0}^{\infty}a_nx^n =
+f(x)\)</span> в <span class="math inline">\(B(0)\)</span>. Тогда <span
+class="math inline">\(a_n = \frac{f^{(n)}(0)}{n!}\)</span>, то есть
+<span class="math inline">\(\displaystyle \sum_{n =
+0}^{\infty}\frac{f^{(n)}(0)}{n!}x^n\)</span> ряд Тейлора функции <span
+class="math inline">\(f(x)\)</span>.</p>
+<p><em>Доказательство:</em> Сумма степенного ряда бесконечно
+дифференцируема в интервале сходимости <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="признак-сходимости-ряда-тейлора">Признак сходимости ряда
+Тейлора</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Пусть <span
+class="math inline">\(f(x) \in C^{\infty}(B(0))\)</span> и <span
+class="math inline">\([-\delta, \delta] \subset B(0)\)</span>. Если
+<span class="math inline">\(\exists A &gt; 0 \,\,\,\, \forall x \in
+[-\delta, \delta]\,\,\,\, \forall n \in \mathbb{N} \,\,\,\, |f^{(n)}(x)|
+&lt; A^n\)</span>, то при <span class="math inline">\(x \in [-\delta,
+\delta] \,\,\,\, \displaystyle \sum_{n =
+0}^{\infty}\frac{f^{(n)}(0)}{n!}x^n = f(x)\)</span>.</p>
+<p><em>Доказательство:</em> Оценим остаток формулы Тейлора:</p>
+<p><span class="math display">\[\left|f(x) - \displaystyle \sum_{n =
+0}^{N}\frac{f^{(n)}(0)}{n!}x^n\right| = \left|\frac{f^{(N + 1)}(\xi)}{(N
++ 1)!}x^{N + 1}\right| \leqslant \frac{A^{N + 1}\cdot \delta^{N + 1}}{(N
++ 1)!}\overset{N \to \infty}{\to} 0 \,\,\,\,\blacksquare\]</span></p>
+<h1 id="бесконечные-произведения">Бесконечные произведения</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-1"></a> Пара <span
+class="math inline">\(\left(\{u_n\}_{n = 1}^{\infty}, \{\Pi_n =
+\displaystyle \prod_{k = 1}^{n}u_k\}_{n = 1}^{\infty}\right)\)</span> -
+<em>бесконечное произведение</em>.</p>
+<p><strong>Обозначается:</strong> <span
+class="math inline">\(\displaystyle \prod_{n =
+1}^{\infty}u_n\)</span></p>
+<p><strong>Определение:</strong><a name="definition-2"></a></p>
+<p>Если <span class="math inline">\(\exists \displaystyle \lim_{n\to
+\infty}\Pi_n = 0\)</span>, то бесконечное произведение <span
+class="math inline">\(\displaystyle \prod_{n = 1}^{\infty}u_n\)</span>
+<em>расходится к нулю</em>.</p>
+<p>Если <span class="math inline">\(\exists \displaystyle \lim_{n\to
+\infty}\Pi_n \ne 0\)</span>, то бесконечное произведение <span
+class="math inline">\(\displaystyle \prod_{n = 1}^{\infty}u_n\)</span>
+<em>сходится</em>.</p>
+<p>Если <span class="math inline">\(\not\exists \displaystyle \lim_{n\to
+\infty}\Pi_n\)</span>, то бесконечное произведение <span
+class="math inline">\(\displaystyle \prod_{n = 1}^{\infty}u_n\)</span>
+<em>расходится</em>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Если <span
+class="math inline">\(\exists u_n = 0\)</span>, то бесконечное
+произведение <span class="math inline">\(\displaystyle \prod_{n =
+1}^{\infty}u_n\)</span> расходится к нулю.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p>Далее <span class="math inline">\(u_n &gt; 0\)</span>.</p>
+<h2 id="необходимое-условие-сходимости">Необходимое условие
+сходимости</h2>
+<p><strong>Утверждение:</strong><a name="statement-1"></a>
+(<em>необходимое условие сходимости</em>) Если <span
+class="math inline">\(\displaystyle \prod_{n = 1}^{\infty}u_n\)</span>
+сходится, то <span class="math inline">\(\displaystyle \lim_{n\to
+\infty}\Pi_n = 1\)</span>.</p>
+<p><em>Доказательство:</em> Поделить два соседних частичных произведения
+<span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p>Далее <span class="math inline">\(u_n = 1 + a_n\)</span>, где <span
+class="math inline">\(a_n &gt; -1\)</span> и выполнено необходимое
+условие.</p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> <span
+class="math inline">\(\displaystyle \prod_{n =
+1}^{\infty}(1+a_n)\)</span> сходится <span
+class="math inline">\(\iff\)</span> <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}\ln(1+
+a_n)\)</span> сходится.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-3"></a> <span
+class="math inline">\(\displaystyle \prod_{n =
+1}^{\infty}(1+a_n)\)</span> <em>сходится абсолютно</em>, если <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}\ln(1+
+a_n)\)</span> сходится абсолютно.</p>
+<p><strong>Теорема:</strong><a name="theorem-3"></a> <span
+class="math inline">\(\displaystyle \prod_{n =
+1}^{\infty}(1+a_n)\)</span> сходится абсолютно <span
+class="math inline">\(\iff \displaystyle \sum_{n =
+1}^{\infty}a_n\)</span> сходится абсолютно.</p>
+<p><em>Доказательство:</em> Признак сравнения <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-4"></a> Рассмотрим <span
+class="math inline">\(\displaystyle \prod_{i = 0}^{\infty}(1+
+a_n)\)</span>. Если <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n\)</span> сходится, то <span
+class="math inline">\(\displaystyle \prod_{i = 0}^{\infty}(1+
+a_n)\)</span> сходится или расходится одновременно с <span
+class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}a_n^2\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(\ln(1 + a_n) -
+a_n \sim -\frac{a_n^2}{2} \,\,\,\,\blacksquare\)</span></p>
+<h3 id="пример">Пример</h3>
+<hr />
+<p>Рассмотрим <span class="math inline">\(\zeta(s) = \displaystyle
+\sum_{n = 1}^{\infty}\frac{1}{n^s}, \,\,\,\, s &gt; 1\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-4"></a> <span
+class="math inline">\(\zeta(s)\)</span> - <em>Дзета-функция
+Римана</em>.</p>
+<p>Пусть <span class="math inline">\(p_n = 2, 3, 5\)</span> - простые
+числа.</p>
+<p>Рассмотрим <span class="math inline">\(\displaystyle \prod_{i =
+1}^{\infty}\left(1 - \frac1{p_n^s}\right)^{-1} = \displaystyle
+\lim_{n\to \infty}\displaystyle \prod_{i = 1}^{N}\left(1 -
+\frac1{p_n^s}\right)^{-1}\)</span>.</p>
+<p><span class="math inline">\(\prod_{i = 1}^{N}\left(1 -
+\frac1{p_n^s}\right)^{-1} = \prod_{i = 1}^{N}\left(\displaystyle \sum_{k
+= 0}^{\infty}\frac1{p_n^{sk}}\right)^{-1}\)</span>.</p>
+<p>Пусть <span class="math inline">\(N_1\)</span> максимальное такое,
+что в произведении <span class="math inline">\(\prod_{i =
+1}^{N}\left(\displaystyle \sum_{k =
+0}^{\infty}\frac1{p_n^{sk}}\right)^{-1}\)</span> что-то выполнено.
+<strong>?</strong></p>
+<p><span class="math display">\[\displaystyle \sum_{m =
+1}^{N_1}\frac1{m^s} &lt; \prod_{i = 1}^{N}\left(1 -
+\frac1{p_n^s}\right)^{-1} &lt; \displaystyle \sum_{m =
+1}^{\infty}\frac1{m^s}\]</span></p>
+<p><span class="math display">\[\Downarrow\]</span></p>
+<p>При <span class="math inline">\(s &gt; 1 \,\,\,\, \displaystyle
+\sum_{n = 1}^{\infty}\frac1{n^s} = \displaystyle \prod_{k =
+1}^{\infty}\left(1 - \frac1{p_k^s}\right)^{-1}\)</span>.</p>
+<h2 id="ужасная-теорема">Ужасная теорема</h2>
+<hr />
+<p><strong>Лемма:</strong><a name="lemma-0"></a></p>
+<p><span class="math display">\[\left|\displaystyle \prod_{k = 1}^{n}(1
++ a_k) - 1\right| \leqslant \displaystyle \prod_{k = 1}^{n}(1 + |a_k|) -
+1\]</span></p>
+<p><em>Доказательство:</em> База: <span class="math inline">\(|a_1| = (1
++ |a_1|) - 1\)</span>.</p>
+<p>Шаг: <span class="math inline">\(\left|\displaystyle \prod_{k = 1}^{n
++ 1}(1 + a_k) - 1\right| = \left|\displaystyle \prod_{k = 1}^{n + 1}(1 +
+a_k) - \displaystyle \prod_{k = 1}^{n}(1 + a_k) + \displaystyle \prod_{k
+= 1}^{n}(1 + a_k) - 1\right|\leqslant\)</span> <span
+class="math inline">\(\leqslant \left|\displaystyle \prod_{k = 1}^{n}(1
++ a_k)\cdot a_{n + 1}\right| + \left|\displaystyle \prod_{k = 1}^{n}(1 +
+a_k) - 1\right| \leqslant \displaystyle \prod_{k = 1}^{n}(1 + a_k)\cdot
+|a_{n + 1}| + \displaystyle \prod_{k = 1}^{n}(1 + |a_k|) - 1
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-5"></a> <span
+class="math inline">\(\forall x \ne \pi k, k \in \mathbb{Z}\)</span>
+верно:</p>
+<p><span class="math display">\[\sin x = x\cdot \displaystyle \prod_{k =
+1}^{\infty}\left(1 - \frac{x^2}{\pi^2 k^2}\right)\]</span></p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\exists\{P_n(y)\}_{n = 0}^{\infty}\)</span> -
+последовательность многочленов, такая, что <span
+class="math inline">\(\sin(2n + 1)t = (2n + 1)\sin t \cdot P_n(\sin^2
+t)\)</span>.</p>
+<p>Докажем по индукции. <span class="math inline">\(P_0 = 1\)</span>.
+Имеем при <span class="math inline">\(n = 0 \,\,\,\, \sin t = \sin
+t\)</span>. При <span class="math inline">\(n = 1 \,\,\,\, \sin 3t =
+3\sin t - 4 \sin^3 t = 3\sin t \left(1 - \frac43 \sin^2
+t\right)\)</span>.</p>
+<p><span class="math inline">\(\sin(2n + 1)t + \sin (2n - 3)t = 2\sin(2n
+- 1)t \cdot \cos 2t\)</span>.</p>
+<p><span class="math inline">\(\sin (2n - 1)t\)</span> и <span
+class="math inline">\(\sin (2n - 3)\)</span> заменяем по предположению
+индукции. Имеем</p>
+<p><span class="math inline">\(\sin(2n + 1)t = 2(2n - 1)\sin t P_{n -
+1}(\sin^2 t)\cdot (1 - 2\sin^2 t) - (2n - 3)\sin t P_{n - 2}(\sin^2
+t)\)</span>. Индукция окончена.</p>
+<p><span class="math inline">\(\sin (2n + 1)t = 0\)</span> при <span
+class="math inline">\(t = \frac{\pi k}{2n + 1}, \,\,\,\, k \in
+\mathbb{Z} \implies P_n(\sin^2 t) = 0\)</span> при <span
+class="math inline">\(t = \frac{\pi k}{2n + 1}, \,\,\,\, k \in \{1,
+\ldots, n\}\)</span>, то есть <span class="math inline">\(P_n(y) =
+0\)</span> при <span class="math inline">\(y = \sin^2\frac{\pi k}{2n +
+1}, \,\,\,\, k \in \{1, \ldots, n\}\)</span>, так как <span
+class="math inline">\(n\)</span> степень многочлена - это все корни.
+Следовательно <span class="math inline">\(P_n(y) = A\cdot \displaystyle
+\prod_{k = 1}^{n}\left(1 - \frac{y}{\sin^2\frac{\pi k}{2n +
+1}}\right)\)</span>.</p>
+<p><span class="math inline">\(\frac{\sin(2n + 1)t}{(2n + 1)\sin t} =
+P_n(\sin^2 t)\)</span> при <span class="math inline">\(t \to 0 \,\,\,\,
+1 = 1 \implies A = 1\)</span>.</p>
+<p><span class="math inline">\(\frac{\sin(2n + 1)t}{(2n + 1)\sin t} =
+\displaystyle \prod_{k = 1}^{n}(1 - \frac{\sin^2 t}{\sin^2\frac{\pi
+k}{2n + 1}}) \implies \frac{\sin x}{(2n + 1)\sin \frac{x}{2n + 1}} =
+\displaystyle \prod_{k = 1}^{n}\left(1 - \frac{\sin^2 \frac{x}{2n +
+1}}{\sin^2\frac{\pi k}{2n + 1}}\right)\)</span></p>
+<p><span class="math display">\[\displaystyle \prod_{k = 1}^{n}\left(1 -
+\frac{\sin^2 \frac{x}{2n + 1}}{\sin^2\frac{\pi k}{2n + 1}}\right)
+\overset{\forall x \in \mathbb{R}, \,\,\,\, x \ne \pi k \,\,\,\, |x|
+&lt; 2n + 1}{\underset{m \in \mathbb{N}, \,\,\,\, m &lt; n}{=}}
+\displaystyle \prod_{k = 1}^{m}\left(1 - \frac{\sin^2 \frac{x}{2n +
+1}}{\sin^2\frac{\pi k}{2n + 1}}\right)\cdot \displaystyle \prod_{k = m +
+1}^{n}\left(1 - \frac{\sin^2 \frac{x}{2n + 1}}{\sin^2\frac{\pi k}{2n +
+1}}\right)=\]</span> <span class="math display">\[= \displaystyle
+\prod_{k = 1}^{m}\left(1 - \frac{\sin^2 \frac{x}{2n +
+1}}{\sin^2\frac{\pi k}{2n + 1}}\right)\cdot P_{n, m}(x)\]</span></p>
+<p><span class="math inline">\(\left|P_{n, m}(x) - 1\right| \leqslant
+\displaystyle \prod_{k = m + 1}^{n}\left(1 - \frac{\sin^2 \frac{x}{2n +
+1}}{\sin^2\frac{\pi k}{2n + 1}}\right) - 1 \leqslant \displaystyle
+\prod_{k = m + 1}^{n}\left(1 + \frac{x^2}{4k^2}\right) - 1\)</span>, так
+как при <span class="math inline">\(x \in [0,
+\frac{\pi}2]\,\,\,\,\frac2{\pi}x \leqslant \sin x \leqslant
+x\)</span>.</p>
+<p>Разделили на две части каждая из которых зависит от <span
+class="math inline">\(n\)</span> в одном параметре, а следовательно
+можно устремлять <span class="math inline">\(n \to \infty\)</span>.</p>
+<p><span class="math display">\[\frac{\sin x}{(2n + 1)\sin \frac{x}{2n +
+1}} = \displaystyle \prod_{k = 1}^{n}\left(1 - \frac{\sin^2 \frac{x}{2n
++ 1}}{\sin^2\frac{\pi k}{2n + 1}}\right)\cdot P_{n, m}(x)\]</span></p>
+<p><span class="math display">\[\displaystyle \lim_{n\to
+\infty}\displaystyle \prod_{k = 1}^{n}\left(1 - \frac{\sin^2 \frac{x}{2n
++ 1}}{\sin^2\frac{\pi k}{2n + 1}}\right) = \displaystyle \prod_{k = m +
+1}^{n}\left(1 + \frac{x^2}{4k^2}\right)\]</span></p>
+<p>Устремляем <span class="math inline">\(m \to \infty\)</span>.</p>
+<p><span class="math display">\[\exists \displaystyle \lim_{n\to
+\infty}P_{n, m} = P_m \overset{m \to \infty}{\to} 1
+\,\,\,\,\blacksquare\]</span></p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> (<em>формула
+Валлиса</em>) Подставить в разложение <span class="math inline">\(x =
+\frac{\pi}2\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>
