@@ -52,15 +52,19 @@ id="toc-длина-орбиты-равна-индексу-стабилизато
 id="toc-центр-группы-простого-порядка-нетривиален">Центр группы простого
 порядка нетривиален</a></li>
 <li><a
-href="#действие-группы-g-на-x---это-гомоморфизм-g-в-группу-перестановок-x"
-id="toc-действие-группы-g-на-x---это-гомоморфизм-g-в-группу-перестановок-x">Действие
+href="#действие-группы-g-на-x-это-гомоморфизм-g-в-группу-перестановок-x"
+id="toc-действие-группы-g-на-x-это-гомоморфизм-g-в-группу-перестановок-x">Действие
 группы <span class="math inline">\(G\)</span> на <span
-class="math inline">\(X\)</span> - это гомоморфизм <span
+class="math inline">\(X\)</span> – это гомоморфизм <span
 class="math inline">\(G\)</span> в группу перестановок <span
 class="math inline">\(X\)</span></a></li>
 </ul></li>
-<li><a href="#теоремы-силова" id="toc-теоремы-силова">Теоремы
-Силова</a></li>
+<li><a href="#теоремы-силова" id="toc-теоремы-силова">Теоремы Силова</a>
+<ul>
+<li><a href="#лемма-бернсайда-о-количестве-орбит-конечной-группы"
+id="toc-лемма-бернсайда-о-количестве-орбит-конечной-группы">Лемма
+Бернсайда о количестве орбит конечной группы</a></li>
+</ul></li>
 </ul>
 </nav>
 </details>
@@ -73,7 +77,7 @@ transform: rotate(225deg)}{\Large{\dagger}}}\)</span></p>
 <hr />
 <p><strong>Определение:</strong><a name="definition-0"></a> <em>Действие
 группы</em> <span class="math inline">\(G\)</span> <em>на множестве</em>
-<span class="math inline">\(X\)</span> - это отображение <span
+<span class="math inline">\(X\)</span> – это отображение <span
 class="math inline">\(G\times X \overset{\circ}{\to}X, \,\,\,\, (g,
 x)\mapsto g\circ x\)</span> и</p>
 <ol type="1">
@@ -84,7 +88,7 @@ X\)</span>.</li>
 </ol>
 <p><strong>Определение:</strong><a name="definition-1"></a>
 <em>Орбита</em> элемента <span class="math inline">\(x \in X\)</span>
-при действии группы <span class="math inline">\(G\)</span> - это <span
+при действии группы <span class="math inline">\(G\)</span> – это <span
 class="math inline">\(G\circ x = \{g\circ x \,\,\,\, \forall g \in
 G\}\)</span>.</p>
 <h2 id="пример">Пример</h2>
@@ -104,15 +108,15 @@ x)\cap (G\circ x’) \implies y = g \circ x = g’ \circ x’ \implies x =
 (g^{-1}g’)x’ \in G \circ x’ \,\,\,\,\blacksquare\)</span></p>
 <p><strong>Определение:</strong><a name="definition-2"></a> <span
 class="math inline">\(\operatorname{St}(x) = \{g \in G: \,\,\,\, g\circ
-x = x\}\)</span> - <em>стабилизатор точки</em> <span
+x = x\}\)</span> – <em>стабилизатор точки</em> <span
 class="math inline">\(x \in X\)</span>.</p>
 <p><strong>Утверждение:</strong><a name="statement-0"></a> <span
-class="math inline">\(\operatorname{St}(x)\)</span> - подгруппа в <span
+class="math inline">\(\operatorname{St}(x)\)</span> – подгруппа в <span
 class="math inline">\(G\)</span>.</p>
 <p><em>Доказательство:</em> <span
 class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <p><strong>Определение:</strong><a name="definition-3"></a> <span
-class="math inline">\(|G\circ x|\)</span> - <em>длина орбиты</em>.</p>
+class="math inline">\(|G\circ x|\)</span> – <em>длина орбиты</em>.</p>
 <h2 id="длина-орбиты-равна-индексу-стабилизатора">Длина орбиты равна
 индексу стабилизатора</h2>
 <hr />
@@ -137,7 +141,7 @@ href="#fn1" class="footnote-ref" id="fnref1"
 role="doc-noteref"><sup>1</sup></a></p>
 <p><strong>Определение:</strong><a name="definition-4"></a> <span
 class="math inline">\(\operatorname{C}(x) = \{g \in G: \,\,\,\, gx =
-xg\}\)</span> - <em>централизатор</em> элемента <span
+xg\}\)</span> – <em>централизатор</em> элемента <span
 class="math inline">\(x \in G\)</span>.</p>
 <h2 id="примеры-действий">Примеры действий</h2>
 <hr />
@@ -151,12 +155,12 @@ class="math inline">\(x \in G\)</span>.</p>
 При таком действии одна орбита и все стабилизаторы тривиальны.</li>
 <li><span class="math inline">\(G\)</span> действует на себя
 <em>сопряжением</em> <span class="math inline">\(g\circ x =
-gxg^{-1}\)</span>. Орбиты - классы сопряженности, стабилизаторы -
+gxg^{-1}\)</span>. Орбиты – классы сопряженности, стабилизаторы –
 централизаторы элементов.</li>
-<li>Пусть <span class="math inline">\(H \subset G\)</span> - подгруппа.
+<li>Пусть <span class="math inline">\(H \subset G\)</span> – подгруппа.
 <span class="math inline">\(G\)</span> действует на <span
-class="math inline">\(\{gH|\,\,\,\, g \in G\}: \,\,\,\ g\circ (x\circ H)
-= gxH\)</span> - <em>действие левыми сдвигами по подгруппе</em> <span
+class="math inline">\(\{gH|\,\,\,\, g \in G\}: \,\,\,\ g\circ (x H) =
+gxH\)</span> – <em>действие левыми сдвигами по подгруппе</em> <span
 class="math inline">\(H\)</span>.</li>
 </ol>
 <h2 id="центр-группы-простого-порядка-нетривиален">Центр группы простого
@@ -178,9 +182,9 @@ class="math inline">\(p \,\,|\,\, |G| \implies\)</span> количество о�
 длины <span class="math inline">\(1\)</span> делится на <span
 class="math inline">\(p \,\,\,\,\blacksquare\)</span></p>
 <h2
-id="действие-группы-g-на-x---это-гомоморфизм-g-в-группу-перестановок-x">Действие
+id="действие-группы-g-на-x-это-гомоморфизм-g-в-группу-перестановок-x">Действие
 группы <span class="math inline">\(G\)</span> на <span
-class="math inline">\(X\)</span> - это гомоморфизм <span
+class="math inline">\(X\)</span> – это гомоморфизм <span
 class="math inline">\(G\)</span> в группу перестановок <span
 class="math inline">\(X\)</span></h2>
 <hr />
@@ -199,16 +203,16 @@ class="math inline">\(\varphi: g \mapsto (g\circ)\)</span>.</p>
 class="math inline">\(G\)</span> в <span
 class="math inline">\(S(X)\)</span>? Потому что существует <span
 class="math inline">\(g^{-1}\circ\)</span>.</li>
-<li>Почему <span class="math inline">\(\varphi\)</span> - гомоморфизм?
+<li>Почему <span class="math inline">\(\varphi\)</span> – гомоморфизм?
 <span class="math inline">\(\varphi(g g’) = (g g’)\circ =
 (g\circ)(g’\circ) = \varphi(g)\varphi(g’)\)</span>.</li>
-<li>Почему <span class="math inline">\(\Phi\)</span> - биекция?
+<li>Почему <span class="math inline">\(\Phi\)</span> – биекция?
 <ul>
 <li>Инъективность прямая проверка.</li>
 <li>Сюръективность: Пусть <span class="math inline">\(\varphi: G \to
-S(X)\)</span> - гомоморфизм. Проверим, что <span
+S(X)\)</span> – гомоморфизм. Проверим, что <span
 class="math inline">\(\circ: \,\,\,\, g\circ x = \varphi(g)(x)\)</span>
-- действие. <span class="math inline">\((g g’)\circ x = \varphi((g
+– действие. <span class="math inline">\((g g’)\circ x = \varphi((g
 g’))(x) = \varphi(g)(\varphi(g’)(x)) = g\circ (g’\circ x)\)</span> и
 <span class="math inline">\(e\circ x = \varphi(e)(x) =
 \operatorname{id}(x) = x \,\,\,\,\blacksquare\)</span></li>
@@ -217,35 +221,54 @@ g’))(x) = \varphi(g)(\varphi(g’)(x)) = g\circ (g’\circ x)\)</span> и
 <h1 id="теоремы-силова">Теоремы Силова</h1>
 <hr />
 <p><strong>Определение:</strong><a name="definition-6"></a> Пусть <span
-class="math inline">\(G\)</span> - конечная группа и <span
+class="math inline">\(G\)</span> – конечная группа и <span
 class="math inline">\(|G| = p^k\cdot m\)</span>, причем <span
 class="math inline">\(p \nmid m\)</span>. Тогда подгруппа <span
 class="math inline">\(G\)</span> порядка <span
-class="math inline">\(p^k\)</span> - <em>силовская</em> <span
+class="math inline">\(p^k\)</span> – <em>силовская</em> <span
 class="math inline">\(p\)</span>-<em>подгруппа</em>.</p>
+<p><strong>Определение:</strong><a name="definition-7"></a>
+<em>Нормализатор</em> <span
+class="math inline">\(\operatorname{N}(H)\)</span> подгруппы <span
+class="math inline">\(H\)</span> - это <span class="math inline">\(\{g
+\in G| \,\,\,\, gH g^{-1} = H\}\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Нормализатор
+– нормальная подгруппа.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <p><strong>Теорема:</strong><a name="theorem-3"></a> Пусть <span
-class="math inline">\(G\)</span> - конечная группа, <span
-class="math inline">\(p\)</span> - простое число. Тогда</p>
+class="math inline">\(G\)</span> – конечная группа, <span
+class="math inline">\(p\)</span> – простое число. Тогда</p>
 <ol type="1">
 <li>Если <span
 class="math inline">\(p^k\,\,|\,\,\left|G\right|\)</span>, то существует
 подгруппа <span class="math inline">\(H\)</span> группы <span
 class="math inline">\(G\)</span>, такая что <span
-class="math inline">\(|H| = p^k\)</span>.</li>
-<li></li>
-<li></li>
+class="math inline">\(|H| = p^k\)</span>. <a href="#fn4"
+class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a></li>
+<li>Все подгруппы порядка <span class="math inline">\(p^k\)</span>
+сопряжены некоторой силовской <span
+class="math inline">\(p\)</span>-подгруппе. <a href="#fn5"
+class="footnote-ref" id="fnref5"
+role="doc-noteref"><sup>5</sup></a></li>
+<li>Пусть число силовских <span
+class="math inline">\(p\)</span>-подгрупп – <span
+class="math inline">\(N_p\)</span>. Тогда <span
+class="math inline">\(N_x \equiv 1 \,\,\mod \,\, p\)</span> и <span
+class="math inline">\(m \,\,|\,\, N_p\)</span>.</li>
 </ol>
 <p><em>Доказательство:</em></p>
 <p><span class="math display">\[\boxed{1}\]</span></p>
 <p><span class="math inline">\(\boxed{\operatorname{I}}\)</span> Пусть
 <span class="math inline">\(p\,\,|\,\,|Z(G)|\)</span>. <span
-class="math inline">\(Z(G)\)</span> - это конечная абелева группа.
+class="math inline">\(Z(G)\)</span> – это конечная абелева группа.
 Следовательно <span class="math inline">\(\exists g \in Z(G): \,\,\,\,
-\operatorname{ord}g = p\)</span> <a href="#fn4" class="footnote-ref"
-id="fnref4" role="doc-noteref"><sup>4</sup></a>. <span
+\operatorname{ord}g = p\)</span> <a href="#fn6" class="footnote-ref"
+id="fnref6" role="doc-noteref"><sup>6</sup></a>. <span
 class="math inline">\(p^{k - 1}\,\,|\,\,\left|G/\langle
-g\rangle\right|\)</span> <a href="#fn5" class="footnote-ref" id="fnref5"
-role="doc-noteref"><sup>5</sup></a>. По предположению индукции
+g\rangle\right|\)</span> <a href="#fn7" class="footnote-ref" id="fnref7"
+role="doc-noteref"><sup>7</sup></a>. По предположению индукции
 существует <span class="math inline">\(\hat{H} \subset G/\langle
 g\rangle\)</span>, такая, что <span class="math inline">\(|\hat{H}| =
 p^{k - 1}\)</span>. В качестве <span class="math inline">\(H\)</span>
@@ -256,16 +279,114 @@ g\rangle \in G/\langle g\rangle \,\,\,\,\blacksquare\)</span></p>
 <span class="math inline">\(p \nmid |Z(G)|\)</span>. Рассмотрим действие
 сопряжением группы на себя. Так как <span class="math inline">\(|G| =
 |G\circ x_1|+ \ldots + |G\circ x_n|\)</span> и порядок <span
-class="math inline">\(Z(G)\)</span> - это количество орбит длины <span
+class="math inline">\(Z(G)\)</span> – это количество орбит длины <span
 class="math inline">\(1\)</span>, существует орбита неединичной длины
 <span class="math inline">\(G\circ x\)</span>, такая, что <span
 class="math inline">\(p \nmid |G\circ x| = \frac{|G|}{|C(x)|} \implies
-p^k \,\,|\,\, |C(x)|\)</span> <a href="#fn6" class="footnote-ref"
-id="fnref6" role="doc-noteref"><sup>6</sup></a>. Значит по предположению
+p^k \,\,|\,\, |C(x)|\)</span> <a href="#fn8" class="footnote-ref"
+id="fnref8" role="doc-noteref"><sup>8</sup></a>. Значит по предположению
 индукции <span class="math inline">\(\exists H \subset C(x)\)</span>,
 такая, что <span class="math inline">\(p^k \,\,|\,\,|H|
-\,\,\,\,\blacksquare\)</span> <a href="#fn7" class="footnote-ref"
-id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
+\,\,\,\,\blacksquare\)</span> <a href="#fn9" class="footnote-ref"
+id="fnref9" role="doc-noteref"><sup>9</sup></a></p>
+<p><span class="math display">\[\boxed{2}\]</span></p>
+<p>Пусть <span class="math inline">\(S\)</span> – силовская <span
+class="math inline">\(p\)</span>-подгруппа, <span
+class="math inline">\(P\)</span> – <span
+class="math inline">\(p\)</span>-подгруппа.</p>
+<p>Рассмотрим <a href="lection-group-action.html#definition-5">действие
+левыми сдвигами</a> группы <span class="math inline">\(P\)</span> на
+<span class="math inline">\(\{gS|\,\,\,\, g \in G\}\)</span>. <span
+class="math inline">\(|\{gS\}| = m\)</span>, так как <span
+class="math inline">\(|G|/|S| = m\)</span>. <span
+class="math inline">\(m = \displaystyle \sum\)</span> длин орбит <span
+class="math inline">\(= k_1 + \ldots + k_l\)</span>. <span
+class="math inline">\(k_i = p^n_i\)</span>, так как длина орбиты равна
+индексу стабилизатора, и, в частности, делит порядок группы <span
+class="math inline">\(P\)</span>. Но <span
+class="math inline">\(p\)</span> не делит <span
+class="math inline">\(m\)</span>, а следовательно существует
+одноэлементная орбита <span class="math inline">\(P\circ (g’S)\)</span>,
+то есть <span class="math inline">\(\forall g \in P \,\,\,\, g g’S = g’S
+\iff g’^{-1}g g’S \in S \iff P \subset g’^{-1}S g’\)</span>. Если <span
+class="math inline">\(P\)</span> силовская, то <span
+class="math inline">\(P = g’^{-1}S g’ \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> Силовская <span
+class="math inline">\(p\)</span>-подгруппа <span
+class="math inline">\(S\)</span> нормальна <span
+class="math inline">\(\iff S\)</span> единственна.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><span class="math display">\[\boxed{3}\]</span></p>
+<p>Рассмотрим действие сопряжением группы <span
+class="math inline">\(S\)</span> на множество силовских подгрупп <span
+class="math inline">\(G\)</span>. <span class="math inline">\(N_p =
+p^{k_1} + \ldots + p^{k_n}\)</span>. Есть одна одноточечная орбита <span
+class="math inline">\(\{S\}\)</span>, <span class="math inline">\(s\circ
+S = s S s^{-1} = S \,\,\,\, \forall s \in S\)</span>. Докажем, что
+других одноточеных орбит нет. Пусть <span
+class="math inline">\(\{H\}\)</span> – одноточечная орбита, то есть
+<span class="math inline">\(\forall s \in S \,\,\,\, sH s^{-1} = H
+\implies S \subset \operatorname{N}(H) \implies\)</span> в <span
+class="math inline">\(G\)</span> две силовские <span
+class="math inline">\(p\)</span>-подгруппы и <span
+class="math inline">\(H\)</span> – нормальна <span
+class="math inline">\(\implies S = H \,\,\,\,\blacksquare\)</span></p>
+<h2 id="лемма-бернсайда-о-количестве-орбит-конечной-группы">Лемма
+Бернсайда о количестве орбит конечной группы</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-8"></a> Пусть группа
+<span class="math inline">\(G\)</span> действует на множестве <span
+class="math inline">\(X\)</span>. <span
+class="math inline">\(\operatorname{Fix}(g) = \{x \in X: \,\,\,\, g\circ
+x = x\}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-9"></a> <em>Точка
+неподвижна</em>, если ее фиксатор одноэлементен.</p>
+<p><strong>Теорема:</strong><a name="theorem-4"></a> Пусть <span
+class="math inline">\(G\)</span> – конечная группа, <span
+class="math inline">\(X\)</span> - конечное множество и <span
+class="math inline">\(G\)</span> действует на <span
+class="math inline">\(X\)</span>. Тогда число орбит равно среднему числу
+неподвижных точек.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math inline">\(X = X_1\sqcup X_2 \ldots\sqcup
+X_k\)</span>, где <span class="math inline">\(X_i\)</span> - орбита.
+Нарисуем табличку:</p>
+<p><span class="math display">\[\begin{array}{c|c|c|}
+&amp; g_1 &amp; g_2\\
+\hline
+x_1 &amp; \checkmark &amp; \checkmark\\
+\hline
+x_2 &amp; \checkmark &amp; \\
+\hline
+\end{array}\]</span></p>
+<p>Имеем <span class="math inline">\(\displaystyle \sum_{g \in
+G}^{}|\operatorname{Fix}(g)| = \displaystyle \sum_{x \in
+X}^{}\operatorname{St}(x) = \displaystyle \sum_{x \in
+X_1}^{}|\operatorname{St}(x)| + \ldots + \displaystyle \sum_{x \in
+X_k}^{}|\operatorname{St}(x)|\)</span>.</p>
+<p><span class="math inline">\(\displaystyle \sum_{x \in
+X_1}^{}\frac{|G|}{|G \circ x|} = \displaystyle \sum_{x \in X_1}^{}|X_1|
+= |G| \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-5"></a> Конечную подгруппу
+нельзя представить, как объединение сопряженных собственных
+подгрупп.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(G =
+\cup_{g \in G}gHg^{-1}\)</span>, где <span
+class="math inline">\(H\)</span> - подгруппа. Рассмотрим действие группы
+<span class="math inline">\(G\)</span> на множестве <span
+class="math inline">\(\{gHg^{-1}: \,\,\,\, g \in G\}\)</span>. Орбита
+одна, так как любую подгруппу вида <span
+class="math inline">\(gHg^{-1}\)</span> можем получить сопряжением.
+Рассмотрим <span class="math inline">\(\operatorname{Fix}(g)\)</span>.
+<span class="math inline">\(gHg^{-1} \in \operatorname{Fix}(g) \implies
+\forall g \in G \,\,\,\, |\operatorname{Fix}(g)| \geqslant 1\)</span> и
+по лемме Бернсайда <span class="math inline">\(\frac1{|G|}\displaystyle
+\sum_{g \in G}|\operatorname{Fix}(g)| = 1 \implies
+|\operatorname{Fix}(g)| = 1 \,\,\,\, \forall g \in G\)</span>, но <span
+class="math inline">\(\operatorname{Fix}(e) = \{gHg^{-1}: \,\,\,\, g \in
+G\} \implies \{gHg^{-1}: \,\,\,\, g \in G\} = \{H\} \implies H
+\vartriangleleft G \,\,\,\,\blacksquare\)</span></p>
 <section id="footnotes" class="footnotes footnotes-end-of-document"
 role="doc-endnotes">
 <hr />
@@ -274,21 +395,27 @@ role="doc-endnotes">
 class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>Она же класс сопряженности элемента.<a href="#fnref2"
 class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p><span class="math inline">\(S(X)\)</span> - группа
+<li id="fn3"><p><span class="math inline">\(S(X)\)</span> – группа
 перестановок <span class="math inline">\(X\)</span>.<a href="#fnref3"
 class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>См. задачу 3.11<a href="#fnref4" class="footnote-back"
+<li id="fn4"><p>В частности, существует силовская <span
+class="math inline">\(p\)</span>-подгруппа.<a href="#fnref4"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>В частности, все силовские <span
+class="math inline">\(p\)</span>-подгруппы сопряжены.<a href="#fnref5"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>См. задачу 3.11<a href="#fnref6" class="footnote-back"
 role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Факторизовать можем, так как любая подгруппа <span
+<li id="fn7"><p>Факторизовать можем, так как любая подгруппа <span
 class="math inline">\(Z(G)\)</span> нормальна в <span
-class="math inline">\(G\)</span>.<a href="#fnref5" class="footnote-back"
+class="math inline">\(G\)</span>.<a href="#fnref7" class="footnote-back"
 role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p><span class="math inline">\(|G\circ x| =
+<li id="fn8"><p><span class="math inline">\(|G\circ x| =
 \frac{|G|}{|C(x)|}\)</span>, так как <a href="#theorem-1">теорема</a>.<a
-href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p><span class="math inline">\(|C(x)| &lt; |G|\)</span>,
+href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p><span class="math inline">\(|C(x)| &lt; |G|\)</span>,
 так как <span class="math inline">\(x \not\in Z(G)\)</span><a
-href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>

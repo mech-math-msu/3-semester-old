@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+    <script>
+      window.MathJax = {
+  loader: {load: ['[tex]/bbox']},
+  tex: {packages: {'[+]': ['bbox'],
+                    '[+]': ['html']}}
+};
+    </script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#коммутант-группы" id="toc-коммутант-группы">Коммутант
+группы</a>
+<ul>
+<li><a href="#коммутанты-некоторых-групп"
+id="toc-коммутанты-некоторых-групп">Коммутанты некоторых групп</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="коммутант-группы">Коммутант группы</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(G\)</span> – группа, <span
+class="math inline">\(g, h \in G\)</span>. Множество <span
+class="math inline">\([g, h] \rightleftharpoons ghg^{-1}h^{-1}\)</span>
+– <em>коммутатор элементов</em> <span class="math inline">\(g\)</span> и
+<span class="math inline">\(h\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\(G\)</span> – группа. Множество <span
+class="math inline">\([G, G] \rightleftharpoons \langle\{[g, h]|\,\,\,\,
+g, h \in G\}\rangle\)</span> – <em>коммутант группы</em> <span
+class="math inline">\(G\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
+class="math inline">\(G\)</span> – группа. Тогда</p>
+<ol type="1">
+<li><span class="math inline">\([G, G] \vartriangleleft G\)</span>,</li>
+<li><span class="math inline">\(G\)</span> – абелева <span
+class="math inline">\(\iff [G, G] = \{e\}\)</span>,</li>
+<li><span class="math inline">\(G/[G, G]\)</span> – абелева.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<p><span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<blockquote>
+<p>Следующее утверждение понятно, потому что любая подгруппа в абелевой
+группе нормальна.</p>
+</blockquote>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> <span
+class="math inline">\(H\)</span> – подгруппа в группе <span
+class="math inline">\(G\)</span> содержащая коммутант <span
+class="math inline">\(G \implies H \vartriangleleft G\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(ghg^{-1} =
+ghg^{-1}h^{-1}h = [g, h]h \in H \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Пусть <span
+class="math inline">\(G\)</span> – группа, <span
+class="math inline">\(H\)</span> – подгруппа <span
+class="math inline">\(G\)</span>. Тогда <span class="math inline">\(H
+\vartriangleleft G\)</span> и <span class="math inline">\(G / H\)</span>
+– абелева <span class="math inline">\(\iff [G, G] \subset
+H\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p>Прямая проверка <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="коммутанты-некоторых-групп">Коммутанты некоторых групп</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-2"></a>
+<em>Трансвекция</em> – это матрица вида: <span
+class="math inline">\(\left(\begin{array}{lllll} 1 &amp; 0 &amp; \dots
+&amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; \dots &amp; 0 \\ 0 &amp;
+\ddots &amp; \ddots &amp; \lambda &amp; 0 \\ 0 &amp; \dots &amp; 0 &amp;
+1 &amp; 0 \\ 0 &amp; 0 &amp; \dots &amp; 0 &amp; 1
+\end{array}\right)\)</span>, где <span class="math inline">\(\lambda \ne
+0\)</span> и <span class="math inline">\(\lambda\)</span> на позиции
+<span class="math inline">\(i \ne j\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a></p>
+<ol type="1">
+<li><span class="math inline">\(A_n\)</span> порождается тройными
+циклами,</li>
+<li><span class="math inline">\(S_n\)</span> порождается
+транспозициями,</li>
+<li><span class="math inline">\(SL_n(\mathbb{F})\)</span> порождается
+трансвекциями,</li>
+<li><span class="math inline">\(GL_n(\mathbb{F})\)</span> порождается
+матрицами элементраных преобразований.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a></p>
+<ol type="1">
+<li><span class="math inline">\([S_n, S_n] = A_n\)</span></li>
+<li><span class="math inline">\([A_n, A_n] = A_n, \,\,\,\, \forall n
+\geqslant 5\)</span></li>
+<li><span class="math inline">\([GL_n(\mathbb{F}), GL_n(\mathbb{F})] =
+SL_n(\mathbb{F}), \,\,\,\, \forall \mathbb{F}: \,\,\,\, |\mathbb{F}|
+&gt; 3\)</span></li>
+<li><span class="math inline">\([SL_n(\mathbb{F}), SL_n(\mathbb{F})] =
+SL_n(\mathbb{F}), \,\,\,\, \forall \mathbb{F}: \,\,\,\, |\mathbb{F}|
+&gt; 3\)</span></li>
+</ol>
+<p><em>Доказательство:</em></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

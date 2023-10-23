@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#теоремы-о-несобственных-интегралах-с-параметром"
+id="toc-теоремы-о-несобственных-интегралах-с-параметром">Теоремы о
+несобственных интегралах с параметром</a>
+<ul>
+<li><a href="#интегрирование-несобственного-интеграла"
+id="toc-интегрирование-несобственного-интеграла">Интегрирование
+несобственного интеграла</a></li>
+<li><a
+href="#признак-дини-равномерной-сходимости-функциональной-последовательности"
+id="toc-признак-дини-равномерной-сходимости-функциональной-последовательности">Признак
+Дини равномерной сходимости функциональной последовательности</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="теоремы-о-несобственных-интегралах-с-параметром">Теоремы о
+несобственных интегралах с параметром</h1>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(f(x, y) \in C([a, +\infty)\times[\alpha,
+\beta])\)</span>, <span class="math inline">\(f’_y(x, y) \in C([a,
++\infty)\times[\alpha, \beta])\)</span>, <span
+class="math inline">\(\displaystyle\int\limits_a^{+\infty} f(x, y)dx =
+F(y)\)</span> и <span
+class="math inline">\(\displaystyle\int\limits_a^{+\infty} f’_y(x, y)dx
+\overset{[\alpha, \beta]}{\rightrightarrows} G(y)\)</span>.</p>
+<p>Тогда <span class="math inline">\(\exists F’(y) = G(y)\)</span>.</p>
+<p><em>Доказательство:</em> Рассмотрим <span
+class="math inline">\(\{t_n\}_{n = 1}^{\infty} \,\,\,\, t_n \underset{n
+\to \infty}\to +\infty\)</span>. Пусть <span
+class="math inline">\(F_n(y) = \displaystyle\int\limits_a^{t_n} f(x,
+y)dx\)</span>. <span class="math inline">\(F_{n}(y)\)</span> непрерывна
+<span class="math inline">\(\forall n \in \mathbb{N}\)</span>, так как
+<a
+href="lection-definite-integral-parameter.html#theorem-0">теорема</a>.
+<span class="math inline">\(F_n(y) \overset{Y}{\to} F(y)\)</span>.</p>
+<p><a href="lection-definite-integral-parameter.html#theorem-1">По
+теореме</a> <span class="math inline">\(\forall n \in \mathbb{N}
+\,\,\,\, F’_n(y) = \displaystyle\int\limits_a^{t_n} f’_y(x, y)dx
+\overset{[\alpha, \beta]}{\rightrightarrows} G(y) \implies\)</span> <a
+href="lection-functional-series-theorems.html#theorem-1">по теореме</a>
+<span class="math inline">\(\exists F’(y) = G(y)
+\,\,\,\,\blacksquare\)</span></p>
+<h2 id="интегрирование-несобственного-интеграла">Интегрирование
+несобственного интеграла</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Пусть <span
+class="math inline">\(f(x, y) \in C([a, +\infty)\times[\alpha,
+\beta])\)</span> и <span
+class="math inline">\(\displaystyle\int\limits_a^{+\infty} f(x, y)dx
+\overset{[\alpha, \beta]}{\rightrightarrows} F(y)\)</span>.</p>
+<p>Тогда <span
+class="math inline">\(\displaystyle\int\limits_{\alpha}^{\beta}F(y)dy =
+\displaystyle\int\limits_{\alpha}^{\beta}\left(\displaystyle\int\limits_a^{+\infty}
+f(x, y)dx\right)dy =
+\displaystyle\int\limits_a^{+\infty}\left(\displaystyle\int\limits_{\alpha}^{\beta}
+f(x, y)dy\right)dx\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(\forall \{t_n\},
+\,\,\,\, t_n \to \infty,\,\,\,\, n \to \infty \,\,\,\,
+\displaystyle\int\limits_a^{t_n} f(x, y)dx = F_n(y) \overset{[\alpha,
+\beta]}{\rightrightarrows} F(y)\)</span>.</p>
+<p>По <a
+href="lection-functional-series-theorems.html#theorem-1">теореме</a>
+<span class="math inline">\(\exists \displaystyle \lim_{n\to
+\infty}\displaystyle\int\limits_{\alpha}^{\beta}
+\left(\displaystyle\int\limits_a^{t_n} f(x, y)dx\right)dy =
+\displaystyle\int\limits_{\alpha}^{\beta} F(y)dy =
+\displaystyle\int\limits_{\alpha}^{\beta}\left(\displaystyle\int\limits_a^{+\infty}
+f(x, y)dx\right)dy\)</span>, а следовательно, так как <a
+href="lection-definite-integral-parameter.html#theorem-2">по теореме</a>
+<span class="math inline">\(\forall n \in \mathbb{N} \,\,\,\,
+\displaystyle\int\limits_{\alpha}^{\beta}
+\left(\displaystyle\int\limits_a^{t_n} f(x, y)dx\right) dy =
+\displaystyle\int\limits_a^{t_n}
+\left(\displaystyle\int\limits_{\alpha}^{\beta} f(x, y)dy\right)
+dx\)</span>, <span class="math inline">\(\exists \displaystyle
+\lim_{n\to \infty}\displaystyle\int\limits_a^{t_n}
+\left(\displaystyle\int\limits_{\alpha}^{\beta} f(x, y)dy\right) dx =
+\displaystyle \lim_{n\to
+\infty}\displaystyle\int\limits_{\alpha}^{\beta}
+\left(\displaystyle\int\limits_a^{t_n} f(x, y)dx\right)dy
+\overset{\operatorname{Heine}}{=}
+\displaystyle\int\limits_a^{+\infty}\left(\displaystyle\int\limits_{\alpha}^{\beta}
+f(x, y)dy\right)dx \,\,\,\,\blacksquare\)</span></p>
+<p><strong>?</strong> по гейне</p>
+<h2
+id="признак-дини-равномерной-сходимости-функциональной-последовательности">Признак
+Дини равномерной сходимости функциональной последовательности</h2>
+<hr />
+<p><strong>Лемма:</strong><a name="lemma-0"></a> (<em>Дини</em>) <span
+class="math inline">\(f_n(x) \in C[a, b]\)</span>, <span
+class="math inline">\(f_n(x)\)</span> монотонна на <span
+class="math inline">\([a, b] \,\,\,\, \forall x \in [a, b]\)</span>,
+<span class="math inline">\(f_n(x) \to f(x), \,\,\,\, n \to
+\infty\)</span> и <span class="math inline">\(f(x) \in C[a,
+b]\)</span>.</p>
+<p>Тогда <span class="math inline">\(f_n(x) \overset{[a,
+b]}{\rightrightarrows} f(x)\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(\forall x_0 \in
+[a, b] \,\,\,\, \forall \varepsilon &gt; 0 \,\,\,\, \exists
+n_{\varepsilon, x_0} \in \mathbb{N}: \,\,\,\, \forall n \geqslant
+n_{\varepsilon, x_0} \,\,\,\, |f_n(x_0) - f(x_0)| &lt;
+\varepsilon\)</span></p>
+<p><span class="math inline">\(f(x)\)</span> и <span
+class="math inline">\(f_(x)\)</span> - непрерывны, а следовательно <span
+class="math inline">\(\forall x_0 \in [a, b] \,\,\,\, \exists
+\delta_{\varepsilon, x_0} &gt; 0: \,\,\,\, |f_{n_{\varepsilon, x_0}}(x)
+- f(x)| \leqslant |f_{n_{\varepsilon, x_0}}(x) - f_{n_{\varepsilon,
+x_0}}(x_0) - (f(x) - f(x_0))| \leqslant |f_{n_{\varepsilon, x_0}}(x) -
+f_{n_{\varepsilon, x_0}}(x_0)| + |f(x) - f(x_0)| &lt; 2 \varepsilon
+\,\,\,\, \forall x \in B_{\delta_{\varepsilon, x_0}}(x_0)\)</span>.</p>
+<p><span class="math inline">\(f_n(x)\)</span> - монотонны и <span
+class="math inline">\(|f_{n_{\varepsilon, x_0}}(x) - f(x)| &lt;
+2\varepsilon \,\,\,\, \forall x \in B_{\delta_{\varepsilon,
+x_0}}(x_0)\)</span>, а следовательно <span class="math inline">\(|f_n(x)
+- f(x)| &lt; 2 \varepsilon \,\,\,\, \forall n &gt; n_{\varepsilon,
+x_0}\,\,\,\, \forall x \in B_{\delta_{\varepsilon,
+x_0}}(x_0)\)</span>.</p>
+<p>Возьмем покрытие отрезка <span class="math inline">\([a, b] \,\,\,\,
+\cup_{x_0 \in [a, b]}B_{\delta_{\varepsilon, x_0}}(x_0)\)</span> и
+выделим его конечное подпокрытие <span class="math inline">\(\cup_{x_i,
+\,\,\,\,i \in \{1, \ldots, N\}}B_{\delta_{\varepsilon,
+x_i}}(x_i)\)</span>.</p>
+<p>Пусть <span class="math inline">\(N_{\varepsilon} = \max_{i \in \{1,
+\ldots, N\}}\{n_{\varepsilon, x_i}\}\)</span>. Имеем <span
+class="math inline">\(\forall n &gt; N_{\varepsilon} \,\,\,\, |f_n(x) -
+f(x)| &lt; 2 \varepsilon \,\,\,\, \forall x \in [a, b]
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> <span
+class="math inline">\(f(x, y) \in C([a, +\infty)\times[b,
++\infty))\)</span>, <span class="math inline">\(f(x, y) \geqslant
+0\)</span>,</p>
+<p><span class="math inline">\(\displaystyle\int\limits_a^{+\infty} f(x,
+y)dx = G(y) \in C[b, +\infty)\)</span>,</p>
+<p><span class="math inline">\(\displaystyle\int\limits_b^{+\infty} f(x,
+y)dy = H(x) \in C[a, +\infty)\)</span>.</p>
+<p>Если <span class="math inline">\(\exists
+\displaystyle\int\limits_b^{+\infty} G(y)dy = \mathcal{I}\)</span>, то
+<span class="math inline">\(\exists \displaystyle\int\limits_a^{+\infty}
+H(x)dx = \mathcal{I}\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p>Рассмотрим последовательности <span class="math inline">\(\{a_n\}_{n
+= 1}^{\infty}, \,\,\,\, a_n \to \infty, \,\,\,\, n \to \infty\)</span> и
+<span class="math inline">\(\{b_n\}_{n = 1}^{\infty}, \,\,\,\, b_n \to
+\infty, \,\,\,\, n \to \infty\)</span>.</p>
+<p>Пусть <span class="math inline">\(G_n(y) =
+\displaystyle\int\limits_a^{a_n} f(x, y)dx\)</span> и <span
+class="math inline">\(H_n(x) = \displaystyle\int\limits_b^{b_n} f(x,
+y)dy\)</span>.</p>
+<p>Имеем <span class="math inline">\(G_n(y) \to G(y), \,\,\,\, n \to
+\infty\)</span> и <span class="math inline">\(H_n(x) \to H(x), \,\,\,\,
+n \to \infty\)</span>.</p>
+<p>Значит <a
+href="lection-indefinite-integral-parameter-theorems.html#lemma-0">по
+признаку Дини</a> <span class="math inline">\(G_n(y) \overset{[b,
+b_n]}{\rightrightarrows} G(y)\)</span> и <span
+class="math inline">\(H_n(x) \overset{[a, a_n]}{\rightrightarrows}
+H(x)\)</span>.</p>
+<p>Значит <a href="lection-functional-series-theorems.html#theorem-1">по
+теореме</a> <span class="math inline">\(\exists \displaystyle \lim_{n\to
+\infty}\displaystyle\int\limits_b^{b_n} G_n(y)dy =
+\displaystyle\int\limits_b^{b_n}\left(\displaystyle\int\limits_a^{a_n}
+f(x, y)dx\right)dy\)</span> и <span class="math inline">\(\exists
+\displaystyle \lim_{n\to \infty}\displaystyle\int\limits_a^{a_n}
+H_n(x)dx =
+\displaystyle\int\limits_a^{a_n}\left(\displaystyle\int\limits_b^{b_n}
+f(x, y)dy\right)dx\)</span>.</p>
+<p>По <a
+href="lection-definite-integral-parameter.html#theorem-2">теореме</a>
+<span
+class="math inline">\(\displaystyle\int\limits_b^{b_n}\left(\displaystyle\int\limits_a^{a_n}
+f(x, y)dx\right)dy =
+\displaystyle\int\limits_a^{a_n}\left(\displaystyle\int\limits_b^{b_n}
+f(x, y)dy\right)dx \,\,\,\, \forall n \in \mathbb{N}\)</span>.</p>
+<p>Значит <span class="math inline">\(\displaystyle\int\limits_a^{a_n}
+H(x)dx=\displaystyle \lim_{n\to \infty}\displaystyle\int\limits_a^{a_n}
+H_n(x)dx = \displaystyle \lim_{n\to
+\infty}\displaystyle\int\limits_b^{b_n} G_n(y)dy =
+\displaystyle\int\limits_b^{b_n} G(y)dy\)</span>.</p>
+<p><span
+class="math inline">\(\exists\displaystyle\int\limits_b^{+\infty} G(y)dy
+= \mathcal{I} \implies \exists \displaystyle \lim_{n\to
+\infty}\displaystyle\int\limits_a^{a_n} H(x)dx =
+\displaystyle\int\limits_a^{+\infty} H(x)dx = \mathcal{I}
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> Пусть все
+условия теоремы выше, кроме неотрицательности функции выполнены для
+<span class="math inline">\(f(x, y)\)</span> и <span
+class="math inline">\(|f(x, y)|\)</span>. Если <span
+class="math inline">\(\exists
+\displaystyle\int\limits_b^{+\infty}\left(\displaystyle\int\limits_a^{+\infty}
+f(x, y)dx\right)dy = \mathcal{I}\)</span>, то <span
+class="math inline">\(\exists\displaystyle\int\limits_a^{+\infty}\left(\displaystyle\int\limits_b^{+\infty}
+f(x, y)dy\right)dx = \mathcal{I}\)</span>.</p>
+<p><em>Доказательство:</em> Применить теорему к <span
+class="math inline">\(|f(x, y)| - f(x, y)\)</span> и <span
+class="math inline">\(|f(x, y)| + f(x, y)
+\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

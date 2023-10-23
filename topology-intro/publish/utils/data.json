@@ -1,19 +1,19 @@
 [
     {
-        "keyword": "топология",
-        "data": "**Определение:**<a name=\"definition-0\"></a> *топология*\n\n",
+        "keyword": "топология открытое точка окрестность точки топологическое пространство",
+        "data": "**Определение:**<a name=\"definition-0\"></a> Пусть задано множество $X$. Рассмотрим семейство $\\tau_X$ подмножеств множества $X$, удовлетворяющих условиям:\n\n1) $\\varnothing \\in \\tau_X$ и $X \\in \\tau_X$,\n2) $\\forall U, V \\in \\tau_X \\,\\,\\,\\, U \\cap V \\in \\tau_X$,\n3) $\\forall \\Lambda \\,\\,\\,\\, \\cup_{\\alpha \\in \\Lambda}U_{\\alpha} \\in \\tau_X$.\n\n$\\tau_X$ - это *топология* на множестве $X$.\n\nЭлемент $\\tau_X$ - *открытое* множество.\n\nЭлемент $x \\in X$ - *точка*.\n\nЕсли $x \\in U \\in \\tau_X$, то $U$ - *окрестность точки* $x$.\n\nЕсли на множестве $X$ задана топология $\\tau_X$, то $\\langle X, \\tau_X \\rangle$ - *топологическое пространство*.\n\n",
         "data_type": "definition",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-0",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-0\">Определение:</a></strong>\n<em>топология</em></p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-0\">Определение:</a></strong> Пусть задано\nмножество <span class=\"math inline\">\\(X\\)</span>. Рассмотрим семейство\n<span class=\"math inline\">\\(\\tau_X\\)</span> подмножеств множества <span\nclass=\"math inline\">\\(X\\)</span>, удовлетворяющих условиям:</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(\\varnothing \\in \\tau_X\\)</span> и <span\nclass=\"math inline\">\\(X \\in \\tau_X\\)</span>,</li>\n<li><span class=\"math inline\">\\(\\forall U, V \\in \\tau_X \\,\\,\\,\\, U \\cap\nV \\in \\tau_X\\)</span>,</li>\n<li><span class=\"math inline\">\\(\\forall \\Lambda \\,\\,\\,\\, \\cup_{\\alpha\n\\in \\Lambda}U_{\\alpha} \\in \\tau_X\\)</span>.</li>\n</ol>\n<p><span class=\"math inline\">\\(\\tau_X\\)</span> - это <em>топология</em>\nна множестве <span class=\"math inline\">\\(X\\)</span>.</p>\n<p>Элемент <span class=\"math inline\">\\(\\tau_X\\)</span> -\n<em>открытое</em> множество.</p>\n<p>Элемент <span class=\"math inline\">\\(x \\in X\\)</span> -\n<em>точка</em>.</p>\n<p>Если <span class=\"math inline\">\\(x \\in U \\in \\tau_X\\)</span>, то\n<span class=\"math inline\">\\(U\\)</span> - <em>окрестность точки</em>\n<span class=\"math inline\">\\(x\\)</span>.</p>\n<p>Если на множестве <span class=\"math inline\">\\(X\\)</span> задана\nтопология <span class=\"math inline\">\\(\\tau_X\\)</span>, то <span\nclass=\"math inline\">\\(\\langle X, \\tau_X \\rangle\\)</span> -\n<em>топологическое пространство</em>.</p>",
         "statement_html": "",
         "proof_html": ""
     },
     {
         "keyword": "замкнутое множество",
-        "data": "**Определение:**<a name=\"definition-1\"></a> *замкнутое множество*\n\n",
+        "data": "**Определение:**<a name=\"definition-1\"></a> Пусть задано топологическое пространство $X$. $V \\subset \\tau_X$ - *замкнутое множество*, если $U = X \\setminus V$ - открытое множество.\n\n",
         "data_type": "definition",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-1",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-1\">Определение:</a></strong>\n<em>замкнутое множество</em></p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-1\">Определение:</a></strong> Пусть задано\nтопологическое пространство <span class=\"math inline\">\\(X\\)</span>.\n<span class=\"math inline\">\\(V \\subset \\tau_X\\)</span> - <em>замкнутое\nмножество</em>, если <span class=\"math inline\">\\(U = X \\setminus\nV\\)</span> - открытое множество.</p>",
         "statement_html": "",
         "proof_html": ""
     },
@@ -36,6 +36,24 @@
         "proof_html": ""
     },
     {
+        "keyword": "порождена базой",
+        "data": "**Определение:**<a name=\"definition-36\"></a> Пусть $B$ база на множестве $X$. Топология $\\tau_B$ из предыдущего утверждения *порождена базой* $B$.\n\n",
+        "data_type": "definition",
+        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-36",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-36\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(B\\)</span> база на множестве <span\nclass=\"math inline\">\\(X\\)</span>. Топология <span\nclass=\"math inline\">\\(\\tau_B\\)</span> из предыдущего утверждения\n<em>порождена базой</em> <span class=\"math inline\">\\(B\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "база топологии (  топологического пространства)",
+        "data": "**Определение:**<a name=\"definition-32\"></a> *База топологии (  топологического пространства)* $\\rangle X, \\tau_X\\langle$ - это база на множестве $X$, такая что $\\tau_B = \\tau_X$.\n\n",
+        "data_type": "definition",
+        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-32",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-32\">Определение:</a></strong> <em>База\nтопологии ( топологического пространства)</em> <span\nclass=\"math inline\">\\(\\rangle X, \\tau_X\\langle\\)</span> - это база на\nмножестве <span class=\"math inline\">\\(X\\)</span>, такая что <span\nclass=\"math inline\">\\(\\tau_B = \\tau_X\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
         "keyword": "предбаза",
         "data": "**Определение:**<a name=\"definition-4\"></a> *Предбаза* - это такой набор множеств, что все конечные пересечения элементов предбазы составляют базу.\n\n",
         "data_type": "definition",
@@ -46,109 +64,145 @@
     },
     {
         "keyword": "покрытие множества",
-        "data": "**Определение:**<a name=\"definition-5\"></a> *Покрытие множества* $X$ - это набор множеств, объединение которых совпадает с $X$.\n\n",
+        "data": "**Определение:**<a name=\"definition-5\"></a> *Покрытие множества* $X$ - это набор множеств, объединение которых содержит $X$.\n\n",
         "data_type": "definition",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-5",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-5\">Определение:</a></strong> <em>Покрытие\nмножества</em> <span class=\"math inline\">\\(X\\)</span> - это набор\nмножеств, объединение которых совпадает с <span\nclass=\"math inline\">\\(X\\)</span>.</p>",
-        "statement_html": "",
-        "proof_html": ""
-    },
-    {
-        "keyword": "метрика",
-        "data": "**Определение:**<a name=\"definition-6\"></a> *метрика*\n\n",
-        "data_type": "definition",
-        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-6",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-6\">Определение:</a></strong>\n<em>метрика</em></p>",
-        "statement_html": "",
-        "proof_html": ""
-    },
-    {
-        "keyword": "метрическое пространство",
-        "data": "**Определение:**<a name=\"definition-7\"></a> *метрическое пространство*\n\n",
-        "data_type": "definition",
-        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-7",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-7\">Определение:</a></strong>\n<em>метрическое пространство</em></p>",
-        "statement_html": "",
-        "proof_html": ""
-    },
-    {
-        "keyword": "метризуемое множество",
-        "data": "**Определение:**<a name=\"definition-8\"></a> *метризуемое множество*\n\n",
-        "data_type": "definition",
-        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-8",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-8\">Определение:</a></strong>\n<em>метризуемое множество</em></p>",
-        "statement_html": "",
-        "proof_html": ""
-    },
-    {
-        "keyword": "норма",
-        "data": "**Определение:**<a name=\"definition-9\"></a> *норма*\n\n",
-        "data_type": "definition",
-        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-9",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-9\">Определение:</a></strong>\n<em>норма</em></p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-5\">Определение:</a></strong> <em>Покрытие\nмножества</em> <span class=\"math inline\">\\(X\\)</span> - это набор\nмножеств, объединение которых содержит <span\nclass=\"math inline\">\\(X\\)</span>.</p>",
         "statement_html": "",
         "proof_html": ""
     },
     {
         "keyword": "точка прикосновения внутренняя точка",
-        "data": "**Определение:**<a name=\"definition-10\"></a> *точка прикосновения*\n\n*внутренняя точка*\n\n",
+        "data": "**Определение:**<a name=\"definition-10\"></a> Пусть $X$ - топологическое пространство. $x \\in A \\subset X$ - *точка прикосновения* подмножества $A$, если пересечение любой окрестности точки $x$ и $A$ непусто.\n\n$x \\in A \\subset X$ - *внутренняя точка* подмножества $A$, если существует окрестность точки $x$, содержащаяся в $A$.\n\n",
         "data_type": "definition",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-10",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-10\">Определение:</a></strong> <em>точка\nприкосновения</em></p>\n<p><em>внутренняя точка</em></p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-10\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(X\\)</span> - топологическое пространство. <span\nclass=\"math inline\">\\(x \\in A \\subset X\\)</span> - <em>точка\nприкосновения</em> подмножества <span class=\"math inline\">\\(A\\)</span>,\nесли пересечение любой окрестности точки <span\nclass=\"math inline\">\\(x\\)</span> и <span\nclass=\"math inline\">\\(A\\)</span> непусто.</p>\n<p><span class=\"math inline\">\\(x \\in A \\subset X\\)</span> -\n<em>внутренняя точка</em> подмножества <span\nclass=\"math inline\">\\(A\\)</span>, если существует окрестность точки\n<span class=\"math inline\">\\(x\\)</span>, содержащаяся в <span\nclass=\"math inline\">\\(A\\)</span>.</p>",
         "statement_html": "",
         "proof_html": ""
     },
     {
         "keyword": "замыкание внутренность",
-        "data": "**Определение:**<a name=\"definition-11\"></a> *замыкание*\n\n*внутренность*\n\n",
+        "data": "**Определение:**<a name=\"definition-11\"></a> *Замыкание* множества $A \\subset X$ - это множество всех точек прикосновения $X$. Обозначается $\\overline{A}$ или $\\operatorname{Cl}A$.\n\n*Внутренность* множества $A \\subset X$ - это множество всех внутренних точек $X$. Обозначается $\\operatorname{Int}A$.\n\n",
         "data_type": "definition",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-11",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-11\">Определение:</a></strong>\n<em>замыкание</em></p>\n<p><em>внутренность</em></p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-11\">Определение:</a></strong>\n<em>Замыкание</em> множества <span class=\"math inline\">\\(A \\subset\nX\\)</span> - это множество всех точек прикосновения <span\nclass=\"math inline\">\\(X\\)</span>. Обозначается <span\nclass=\"math inline\">\\(\\overline{A}\\)</span> или <span\nclass=\"math inline\">\\(\\operatorname{Cl}A\\)</span>.</p>\n<p><em>Внутренность</em> множества <span class=\"math inline\">\\(A \\subset\nX\\)</span> - это множество всех внутренних точек <span\nclass=\"math inline\">\\(X\\)</span>. Обозначается <span\nclass=\"math inline\">\\(\\operatorname{Int}A\\)</span>.</p>",
         "statement_html": "",
         "proof_html": ""
     },
     {
-        "keyword": "индуцированная топология",
-        "data": "**Определение:**<a name=\"definition-12\"></a> *Индуцированная топология*\n\n",
+        "keyword": "прообраз точки прообраз подмножества",
+        "data": "**Определение:**<a name=\"definition-33\"></a> Пусть $f: X \\to Y$ - отображение.\n\n*Прообраз точки* $y \\in Y$ при отображении $f$ - это $f^{-1}(x) = \\{x \\in X: \\,\\,\\,\\, f(x) = y\\}$.\n\n*Прообраз подмножества* $V \\in Y$ при отображении $f$ - это $f^{-1}(V) = \\cup_{y \\in V}f^{-1}(y)$.\n\n",
         "data_type": "definition",
-        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-12",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-12\">Определение:</a></strong>\n<em>Индуцированная топология</em></p>",
+        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-33",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-33\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(f: X \\to Y\\)</span> - отображение.</p>\n<p><em>Прообраз точки</em> <span class=\"math inline\">\\(y \\in Y\\)</span>\nпри отображении <span class=\"math inline\">\\(f\\)</span> - это <span\nclass=\"math inline\">\\(f^{-1}(x) = \\{x \\in X: \\,\\,\\,\\, f(x) =\ny\\}\\)</span>.</p>\n<p><em>Прообраз подмножества</em> <span class=\"math inline\">\\(V \\in\nY\\)</span> при отображении <span class=\"math inline\">\\(f\\)</span> - это\n<span class=\"math inline\">\\(f^{-1}(V) = \\cup_{y \\in\nV}f^{-1}(y)\\)</span>.</p>",
         "statement_html": "",
         "proof_html": ""
     },
     {
         "keyword": "непрерывно в точке",
-        "data": "**Определение:**<a name=\"definition-13\"></a> *непрерывно в точке* прообраз открытого множества открыт.\n\n",
+        "data": "**Определение:**<a name=\"definition-13\"></a> Пусть $X$ и $Y$ - топологические пространства. Отображение $f: X \\to Y$ *непрерывно в точке* $x \\in X$, если прообраз любого открытого в $Y$ множества открыт в $X$.\n\n",
         "data_type": "definition",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-13",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-13\">Определение:</a></strong>\n<em>непрерывно в точке</em> прообраз открытого множества открыт.</p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-13\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span> - топологические пространства.\nОтображение <span class=\"math inline\">\\(f: X \\to Y\\)</span>\n<em>непрерывно в точке</em> <span class=\"math inline\">\\(x \\in\nX\\)</span>, если прообраз любого открытого в <span\nclass=\"math inline\">\\(Y\\)</span> множества открыт в <span\nclass=\"math inline\">\\(X\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "непрерывно",
+        "data": "**Определение:**<a name=\"definition-34\"></a> Пусть $X$ и $Y$ - топологические пространства. Отображение $f: X \\to Y$ *непрерывно*, если $f$ непрерывно в каждой точке множества $X$.\n\n",
+        "data_type": "definition",
+        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-34",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-34\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span> - топологические пространства.\nОтображение <span class=\"math inline\">\\(f: X \\to Y\\)</span>\n<em>непрерывно</em>, если <span class=\"math inline\">\\(f\\)</span>\nнепрерывно в каждой точке множества <span\nclass=\"math inline\">\\(X\\)</span>.</p>",
         "statement_html": "",
         "proof_html": ""
     },
     {
         "keyword": "гомеоморфизм",
-        "data": "**Определение:**<a name=\"definition-14\"></a> *гомеоморфизм*\n\n",
+        "data": "**Определение:**<a name=\"definition-14\"></a> Пусть $X$ и $Y$ - топологические пространства. Отображение $f: X \\to Y$ *гомеоморфизм*, если $f$ непрерывно, биективно и $f^{-1}$ непрерывно.\n\n",
         "data_type": "definition",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-14",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-14\">Определение:</a></strong>\n<em>гомеоморфизм</em></p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-14\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span> - топологические пространства.\nОтображение <span class=\"math inline\">\\(f: X \\to Y\\)</span>\n<em>гомеоморфизм</em>, если <span class=\"math inline\">\\(f\\)</span>\nнепрерывно, биективно и <span class=\"math inline\">\\(f^{-1}\\)</span>\nнепрерывно.</p>",
         "statement_html": "",
         "proof_html": ""
     },
     {
         "keyword": "гомеоморфны",
-        "data": "**Определение:**<a name=\"definition-15\"></a> *гомеоморфны*\n\n",
+        "data": "**Определение:**<a name=\"definition-15\"></a> Топологические пространства $X$ и $Y$ *гомеоморфны*, если существует гомеоморфизм $f: X \\to Y$.\n\n",
         "data_type": "definition",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-15",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-15\">Определение:</a></strong>\n<em>гомеоморфны</em></p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-15\">Определение:</a></strong>\nТопологические пространства <span class=\"math inline\">\\(X\\)</span> и\n<span class=\"math inline\">\\(Y\\)</span> <em>гомеоморфны</em>, если\nсуществует гомеоморфизм <span class=\"math inline\">\\(f: X \\to\nY\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "функция",
+        "data": "**Определение:**<a name=\"definition-31\"></a> Отображение $f: X \\to \\mathbb{R}$ - *функция*.\n\n",
+        "data_type": "definition",
+        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-31",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-31\">Определение:</a></strong> Отображение\n<span class=\"math inline\">\\(f: X \\to \\mathbb{R}\\)</span> -\n<em>функция</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "метрика",
+        "data": "**Определение:**<a name=\"definition-6\"></a> Функция $\\rho: X\\times X \\to \\mathbb{R}$ - *метрика*, если $\\forall x, y, z \\in X$\n\n1) $\\rho(x, y) \\geqslant 0$ и $\\rho(x, y) = 0 \\iff x = y$,\n2) $\\rho(x, y) = \\rho(y, x)$,\n3) $\\rho(x, y) + \\rho(y, z) \\geqslant \\rho(x, z)$.\n\n",
+        "data_type": "definition",
+        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-6",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-6\">Определение:</a></strong> Функция\n<span class=\"math inline\">\\(\\rho: X\\times X \\to \\mathbb{R}\\)</span> -\n<em>метрика</em>, если <span class=\"math inline\">\\(\\forall x, y, z \\in\nX\\)</span></p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(\\rho(x, y) \\geqslant 0\\)</span> и <span\nclass=\"math inline\">\\(\\rho(x, y) = 0 \\iff x = y\\)</span>,</li>\n<li><span class=\"math inline\">\\(\\rho(x, y) = \\rho(y, x)\\)</span>,</li>\n<li><span class=\"math inline\">\\(\\rho(x, y) + \\rho(y, z) \\geqslant\n\\rho(x, z)\\)</span>.</li>\n</ol>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "открытый шар радиуса с центром в точке",
+        "data": "**Определение:**<a name=\"definition-35\"></a> Пусть на $X$ задана метрика $\\rho$. *Открытый шар радиуса* $\\varepsilon$ *с центром в точке* $x_0 \\in X$ - это $O_{\\varepsilon}(x_0) = \\{x \\in X: \\,\\,\\,\\, \\rho(x, x_0) < \\varepsilon\\}$.\n\nЕсли неважно какой центр у шара, то будем писать $O_{\\varepsilon}$.\n\n",
+        "data_type": "definition",
+        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-35",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-35\">Определение:</a></strong> Пусть на\n<span class=\"math inline\">\\(X\\)</span> задана метрика <span\nclass=\"math inline\">\\(\\rho\\)</span>. <em>Открытый шар радиуса</em> <span\nclass=\"math inline\">\\(\\varepsilon\\)</span> <em>с центром в точке</em>\n<span class=\"math inline\">\\(x_0 \\in X\\)</span> - это <span\nclass=\"math inline\">\\(O_{\\varepsilon}(x_0) = \\{x \\in X: \\,\\,\\,\\, \\rho(x,\nx_0) &lt; \\varepsilon\\}\\)</span>.</p>\n<p>Если неважно какой центр у шара, то будем писать <span\nclass=\"math inline\">\\(O_{\\varepsilon}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "метрическое пространство",
+        "data": "**Определение:**<a name=\"definition-7\"></a> *Метрическое пространство* - это топологическое пространство, порожденное базой открытых шаров.\n\n",
+        "data_type": "definition",
+        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-7",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-7\">Определение:</a></strong>\n<em>Метрическое пространство</em> - это топологическое пространство,\nпорожденное базой открытых шаров.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "метризуемое множество",
+        "data": "**Определение:**<a name=\"definition-8\"></a> Если на $X$ можно ввести метрику, то $X$ - *метризуемое множество*.\n\n",
+        "data_type": "definition",
+        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-8",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-8\">Определение:</a></strong> Если на\n<span class=\"math inline\">\\(X\\)</span> можно ввести метрику, то <span\nclass=\"math inline\">\\(X\\)</span> - <em>метризуемое множество</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "норма",
+        "data": "**Определение:**<a name=\"definition-9\"></a> Пусть $X$ - векторное пространство. Функция $h: X \\to \\mathbb{R}$ - *норма*, если $\\forall x, y \\in X$\n\n1) $h(x) \\geqslant 0$ и $h(x) = 0 \\iff x = 0$,\n2) $\\lambda\\cdot h(x) = h(\\lambda\\cdot x)$,\n3) $h(x + y) \\geqslant h(x) + h(y)$.\n\n",
+        "data_type": "definition",
+        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-9",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-9\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(X\\)</span> - векторное пространство. Функция <span\nclass=\"math inline\">\\(h: X \\to \\mathbb{R}\\)</span> - <em>норма</em>,\nесли <span class=\"math inline\">\\(\\forall x, y \\in X\\)</span></p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(h(x) \\geqslant 0\\)</span> и <span\nclass=\"math inline\">\\(h(x) = 0 \\iff x = 0\\)</span>,</li>\n<li><span class=\"math inline\">\\(\\lambda\\cdot h(x) = h(\\lambda\\cdot\nx)\\)</span>,</li>\n<li><span class=\"math inline\">\\(h(x + y) \\geqslant h(x) +\nh(y)\\)</span>.</li>\n</ol>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "индуцированная топология",
+        "data": "**Определение:**<a name=\"definition-12\"></a> Пусть $A$ подмножество топологического пространства $X$. *Индуцированная топология* - это топология на $A$, в которой открытыми множествами являются множества вида $U \\cap A, \\,\\,\\,\\, U \\in \\tau_X$.\n\n",
+        "data_type": "definition",
+        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-12",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-12\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(A\\)</span> подмножество топологического\nпространства <span class=\"math inline\">\\(X\\)</span>. <em>Индуцированная\nтопология</em> - это топология на <span\nclass=\"math inline\">\\(A\\)</span>, в которой открытыми множествами\nявляются множества вида <span class=\"math inline\">\\(U \\cap A, \\,\\,\\,\\, U\n\\in \\tau_X\\)</span>.</p>",
         "statement_html": "",
         "proof_html": ""
     },
     {
         "keyword": "несвязно связно",
-        "data": "**Определение:**<a name=\"definition-16\"></a> *несвязно*, *связно*\n\n",
+        "data": "**Определение:**<a name=\"definition-16\"></a> Топологичекое пространство $X$ *несвязно*, если представляется в виде объединения непересекающихся открытых подмножеств.\n\nИначе $X$ *связно*.\n\n",
         "data_type": "definition",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-16",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-16\">Определение:</a></strong>\n<em>несвязно</em>, <em>связно</em></p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-16\">Определение:</a></strong>\nТопологичекое пространство <span class=\"math inline\">\\(X\\)</span>\n<em>несвязно</em>, если представляется в виде объединения\nнепересекающихся открытых подмножеств.</p>\n<p>Иначе <span class=\"math inline\">\\(X\\)</span> <em>связно</em>.</p>",
         "statement_html": "",
         "proof_html": ""
     },
@@ -190,28 +244,28 @@
     },
     {
         "keyword": "число лебега",
-        "data": "**Определение:**<a name=\"definition-21\"></a> $r$ из предыдущей леммы - *число Лебега* покрытия $U_{\\alpha}$.\n\n",
+        "data": "**Определение:**<a name=\"definition-21\"></a> Максимальное $r$, удовлетворяющее условиям предыдущей леммы, - *число Лебега* покрытия $U_{\\alpha}$.\n\n",
         "data_type": "definition",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-21",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-21\">Определение:</a></strong> <span\nclass=\"math inline\">\\(r\\)</span> из предыдущей леммы - <em>число\nЛебега</em> покрытия <span\nclass=\"math inline\">\\(U_{\\alpha}\\)</span>.</p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-21\">Определение:</a></strong>\nМаксимальное <span class=\"math inline\">\\(r\\)</span>, удовлетворяющее\nусловиям предыдущей леммы, - <em>число Лебега</em> покрытия <span\nclass=\"math inline\">\\(U_{\\alpha}\\)</span>.</p>",
         "statement_html": "",
         "proof_html": ""
     },
     {
-        "keyword": " ",
-        "data": "**Определение:**<a name=\"definition-22\"></a> (**T1**) Топологическое пространство $X$ обладает $\\operatorname{T1}$, если $\\forall x, y \\in X \\,\\,\\,\\, \\exists U_x, U_y \\in \\tau_X: \\,\\,\\,\\, x \\not\\in U_y$ и $y \\not\\in U_x$.\n\n",
+        "keyword": "",
+        "data": "**Определение:**<a name=\"definition-22\"></a> ($\\operatorname{T_1}$) Топологическое пространство $X$ обладает $\\operatorname{T_1}$, если $\\forall x, y \\in X \\,\\,\\,\\, \\exists U_x, U_y \\in \\tau_X: \\,\\,\\,\\, x \\not\\in U_y$ и $y \\not\\in U_x$.\n\n",
         "data_type": "definition",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-22",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-22\">Определение:</a></strong>\n(<strong>T1</strong>) Топологическое пространство <span\nclass=\"math inline\">\\(X\\)</span> обладает <span\nclass=\"math inline\">\\(\\operatorname{T1}\\)</span>, если <span\nclass=\"math inline\">\\(\\forall x, y \\in X \\,\\,\\,\\, \\exists U_x, U_y \\in\n\\tau_X: \\,\\,\\,\\, x \\not\\in U_y\\)</span> и <span class=\"math inline\">\\(y\n\\not\\in U_x\\)</span>.</p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-22\">Определение:</a></strong> (<span\nclass=\"math inline\">\\(\\operatorname{T_1}\\)</span>) Топологическое\nпространство <span class=\"math inline\">\\(X\\)</span> обладает <span\nclass=\"math inline\">\\(\\operatorname{T_1}\\)</span>, если <span\nclass=\"math inline\">\\(\\forall x, y \\in X \\,\\,\\,\\, \\exists U_x, U_y \\in\n\\tau_X: \\,\\,\\,\\, x \\not\\in U_y\\)</span> и <span class=\"math inline\">\\(y\n\\not\\in U_x\\)</span>.</p>",
         "statement_html": "",
         "proof_html": ""
     },
     {
-        "keyword": "  хаусдорфово",
-        "data": "**Определение:**<a name=\"definition-23\"></a> (**T2**) Топологическое пространство $X$ *хаусдорфово*, если $\\forall x, y \\in X \\,\\,\\,\\, \\exists U_x, U_y \\in \\tau_X: \\,\\,\\,\\, U_x \\cap U_y = \\varnothing$.\n\n",
+        "keyword": "хаусдорфово",
+        "data": "**Определение:**<a name=\"definition-23\"></a> ($\\operatorname{T_2}$) Топологическое пространство $X$ *хаусдорфово*, если $\\forall x, y \\in X \\,\\,\\,\\, \\exists U_x, U_y \\in \\tau_X: \\,\\,\\,\\, U_x \\cap U_y = \\varnothing$.\n\n",
         "data_type": "definition",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-23",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-23\">Определение:</a></strong>\n(<strong>T2</strong>) Топологическое пространство <span\nclass=\"math inline\">\\(X\\)</span> <em>хаусдорфово</em>, если <span\nclass=\"math inline\">\\(\\forall x, y \\in X \\,\\,\\,\\, \\exists U_x, U_y \\in\n\\tau_X: \\,\\,\\,\\, U_x \\cap U_y = \\varnothing\\)</span>.</p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-23\">Определение:</a></strong> (<span\nclass=\"math inline\">\\(\\operatorname{T_2}\\)</span>) Топологическое\nпространство <span class=\"math inline\">\\(X\\)</span>\n<em>хаусдорфово</em>, если <span class=\"math inline\">\\(\\forall x, y \\in\nX \\,\\,\\,\\, \\exists U_x, U_y \\in \\tau_X: \\,\\,\\,\\, U_x \\cap U_y =\n\\varnothing\\)</span>.</p>",
         "statement_html": "",
         "proof_html": ""
     },
@@ -225,38 +279,38 @@
         "proof_html": ""
     },
     {
-        "keyword": " ",
-        "data": "**Определение:**<a name=\"definition-25\"></a> (**T3**) Топологическое пространство $X$ обладает $\\operatorname{T3}$, если $\\forall x \\in X$ и любого замкнутого $A \\subset X: \\,\\,\\,\\, x \\not\\in A \\,\\,\\,\\, \\exists U_x, U_A \\in \\tau_X: \\,\\,\\,\\, U_x \\cap U_A = \\varnothing$.\n\n",
+        "keyword": "",
+        "data": "**Определение:**<a name=\"definition-25\"></a> ($\\operatorname{T_3}$) Топологическое пространство $X$ обладает $\\operatorname{T_3}$, если $\\forall x \\in X$ и любого замкнутого $A \\subset X: \\,\\,\\,\\, x \\not\\in A \\,\\,\\,\\, \\exists U_x, U_A \\in \\tau_X: \\,\\,\\,\\, U_x \\cap U_A = \\varnothing$.\n\n",
         "data_type": "definition",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-25",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-25\">Определение:</a></strong>\n(<strong>T3</strong>) Топологическое пространство <span\nclass=\"math inline\">\\(X\\)</span> обладает <span\nclass=\"math inline\">\\(\\operatorname{T3}\\)</span>, если <span\nclass=\"math inline\">\\(\\forall x \\in X\\)</span> и любого замкнутого <span\nclass=\"math inline\">\\(A \\subset X: \\,\\,\\,\\, x \\not\\in A \\,\\,\\,\\, \\exists\nU_x, U_A \\in \\tau_X: \\,\\,\\,\\, U_x \\cap U_A = \\varnothing\\)</span>.</p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-25\">Определение:</a></strong> (<span\nclass=\"math inline\">\\(\\operatorname{T_3}\\)</span>) Топологическое\nпространство <span class=\"math inline\">\\(X\\)</span> обладает <span\nclass=\"math inline\">\\(\\operatorname{T_3}\\)</span>, если <span\nclass=\"math inline\">\\(\\forall x \\in X\\)</span> и любого замкнутого <span\nclass=\"math inline\">\\(A \\subset X: \\,\\,\\,\\, x \\not\\in A \\,\\,\\,\\, \\exists\nU_x, U_A \\in \\tau_X: \\,\\,\\,\\, U_x \\cap U_A = \\varnothing\\)</span>.</p>",
         "statement_html": "",
         "proof_html": ""
     },
     {
-        "keyword": " ",
-        "data": "**Определение:**<a name=\"definition-26\"></a> (**T4**) Топологическое пространство $X$ обладает $\\operatorname{T4}$, если для любых замкнутых $A, B \\subset X: \\,\\,\\,\\, A \\cap B = \\varnothing \\,\\,\\,\\, \\exists U_A, U_B \\in \\tau_X: \\,\\,\\,\\, U_A \\cap U_B = \\varnothing$.\n\n",
+        "keyword": "",
+        "data": "**Определение:**<a name=\"definition-26\"></a> ($\\operatorname{T_4}$) Топологическое пространство $X$ обладает $\\operatorname{T_4}$, если для любых замкнутых $A, B \\subset X: \\,\\,\\,\\, A \\cap B = \\varnothing \\,\\,\\,\\, \\exists U_A, U_B \\in \\tau_X: \\,\\,\\,\\, U_A \\cap U_B = \\varnothing$.\n\n",
         "data_type": "definition",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-26",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-26\">Определение:</a></strong>\n(<strong>T4</strong>) Топологическое пространство <span\nclass=\"math inline\">\\(X\\)</span> обладает <span\nclass=\"math inline\">\\(\\operatorname{T4}\\)</span>, если для любых\nзамкнутых <span class=\"math inline\">\\(A, B \\subset X: \\,\\,\\,\\, A \\cap B\n= \\varnothing \\,\\,\\,\\, \\exists U_A, U_B \\in \\tau_X: \\,\\,\\,\\, U_A \\cap\nU_B = \\varnothing\\)</span>.</p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-26\">Определение:</a></strong> (<span\nclass=\"math inline\">\\(\\operatorname{T_4}\\)</span>) Топологическое\nпространство <span class=\"math inline\">\\(X\\)</span> обладает <span\nclass=\"math inline\">\\(\\operatorname{T_4}\\)</span>, если для любых\nзамкнутых <span class=\"math inline\">\\(A, B \\subset X: \\,\\,\\,\\, A \\cap B\n= \\varnothing \\,\\,\\,\\, \\exists U_A, U_B \\in \\tau_X: \\,\\,\\,\\, U_A \\cap\nU_B = \\varnothing\\)</span>.</p>",
         "statement_html": "",
         "proof_html": ""
     },
     {
         "keyword": "регулярно",
-        "data": "**Определение:**<a name=\"definition-27\"></a> Если $X$ обладает $\\operatorname{T1}$ и $\\operatorname{T3}$, то $X$ - *регулярно*.\n\n",
+        "data": "**Определение:**<a name=\"definition-27\"></a> Если $X$ обладает $\\operatorname{T_1}$ и $\\operatorname{T_3}$, то $X$ - *регулярно*.\n\n",
         "data_type": "definition",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-27",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-27\">Определение:</a></strong> Если <span\nclass=\"math inline\">\\(X\\)</span> обладает <span\nclass=\"math inline\">\\(\\operatorname{T1}\\)</span> и <span\nclass=\"math inline\">\\(\\operatorname{T3}\\)</span>, то <span\nclass=\"math inline\">\\(X\\)</span> - <em>регулярно</em>.</p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-27\">Определение:</a></strong> Если <span\nclass=\"math inline\">\\(X\\)</span> обладает <span\nclass=\"math inline\">\\(\\operatorname{T_1}\\)</span> и <span\nclass=\"math inline\">\\(\\operatorname{T_3}\\)</span>, то <span\nclass=\"math inline\">\\(X\\)</span> - <em>регулярно</em>.</p>",
         "statement_html": "",
         "proof_html": ""
     },
     {
         "keyword": "нормально",
-        "data": "**Определение:**<a name=\"definition-28\"></a> Если $X$ обладает $\\operatorname{T1}$ и $\\operatorname{T4}$, то $X$ - *нормально*.\n\n",
+        "data": "**Определение:**<a name=\"definition-28\"></a> Если $X$ обладает $\\operatorname{T_1}$ и $\\operatorname{T_4}$, то $X$ - *нормально*.\n\n",
         "data_type": "definition",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-28",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-28\">Определение:</a></strong> Если <span\nclass=\"math inline\">\\(X\\)</span> обладает <span\nclass=\"math inline\">\\(\\operatorname{T1}\\)</span> и <span\nclass=\"math inline\">\\(\\operatorname{T4}\\)</span>, то <span\nclass=\"math inline\">\\(X\\)</span> - <em>нормально</em>.</p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#definition-28\">Определение:</a></strong> Если <span\nclass=\"math inline\">\\(X\\)</span> обладает <span\nclass=\"math inline\">\\(\\operatorname{T_1}\\)</span> и <span\nclass=\"math inline\">\\(\\operatorname{T_4}\\)</span>, то <span\nclass=\"math inline\">\\(X\\)</span> - <em>нормально</em>.</p>",
         "statement_html": "",
         "proof_html": ""
     },
@@ -280,84 +334,120 @@
     },
     {
         "keyword": "доказательство:",
-        "data": "**Утверждение:**<a name=\"statement-0\"></a> Пусть $X$ - топологическое пространство, $A \\subset X$. Тогда $\\overline{A} = \\cap \\{U \\in X: \\,\\,\\,\\, A \\subset U$ и $U$ - замкнуто $\\}$.\n\n*Доказательство:*\n\n",
+        "data": "**Утверждение:**<a name=\"statement-10\"></a> Пусть $X$ - топологическое пространство. Тогда $\\cup_{i = 1}^{n}U_i \\in \\tau_X$, где $n \\in \\mathbb{N}$ и $U_i \\in \\tau_X \\,\\,\\,\\, \\forall i \\in \\{1, \\ldots, n\\}$.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-10",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-10\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(X\\)</span> - топологическое пространство. Тогда\n<span class=\"math inline\">\\(\\cup_{i = 1}^{n}U_i \\in \\tau_X\\)</span>, где\n<span class=\"math inline\">\\(n \\in \\mathbb{N}\\)</span> и <span\nclass=\"math inline\">\\(U_i \\in \\tau_X \\,\\,\\,\\, \\forall i \\in \\{1, \\ldots,\nn\\}\\)</span>.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-10\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(X\\)</span> - топологическое пространство. Тогда\n<span class=\"math inline\">\\(\\cup_{i = 1}^{n}U_i \\in \\tau_X\\)</span>, где\n<span class=\"math inline\">\\(n \\in \\mathbb{N}\\)</span> и <span\nclass=\"math inline\">\\(U_i \\in \\tau_X \\,\\,\\,\\, \\forall i \\in \\{1, \\ldots,\nn\\}\\)</span>.</p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-0\"></a> Пусть $X$ - топологическое пространство, $A \\subset X$. Тогда $\\overline{A} = \\cap \\{U \\in X: \\,\\,\\,\\, A \\subset V$ и $V$ - замкнуто $\\}$.\n\n*Доказательство:* Пусть $x \\in \\cap \\{V \\in X: \\,\\,\\,\\, A \\subset V$ и $V$ - замкнуто $\\} \\implies \\exists V \\subset X: \\,\\,\\,\\, A \\subset V$, $x \\in V$ и $V$ - замкнуто $\\implies \\forall U_x \\in \\tau_X \\,\\,\\,\\, U_x \\cap V \\ne \\varnothing \\implies U_x \\cap A \\ne \\varnothing \\,\\,\\,\\,\\blacksquare$\n\n",
         "data_type": "statement",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-0",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-0\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(X\\)</span> - топологическое пространство, <span\nclass=\"math inline\">\\(A \\subset X\\)</span>. Тогда <span\nclass=\"math inline\">\\(\\overline{A} = \\cap \\{U \\in X: \\,\\,\\,\\, A \\subset\nU\\)</span> и <span class=\"math inline\">\\(U\\)</span> - замкнуто <span\nclass=\"math inline\">\\(\\}\\)</span>.</p>\n<p><em>Доказательство:</em></p>",
-        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-0\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(X\\)</span> - топологическое пространство, <span\nclass=\"math inline\">\\(A \\subset X\\)</span>. Тогда <span\nclass=\"math inline\">\\(\\overline{A} = \\cap \\{U \\in X: \\,\\,\\,\\, A \\subset\nU\\)</span> и <span class=\"math inline\">\\(U\\)</span> - замкнуто <span\nclass=\"math inline\">\\(\\}\\)</span>.</p>",
-        "proof_html": "<p></p>"
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-0\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(X\\)</span> - топологическое пространство, <span\nclass=\"math inline\">\\(A \\subset X\\)</span>. Тогда <span\nclass=\"math inline\">\\(\\overline{A} = \\cap \\{U \\in X: \\,\\,\\,\\, A \\subset\nV\\)</span> и <span class=\"math inline\">\\(V\\)</span> - замкнуто <span\nclass=\"math inline\">\\(\\}\\)</span>.</p>\n<p><em>Доказательство:</em> Пусть <span class=\"math inline\">\\(x \\in \\cap\n\\{V \\in X: \\,\\,\\,\\, A \\subset V\\)</span> и <span\nclass=\"math inline\">\\(V\\)</span> - замкнуто <span\nclass=\"math inline\">\\(\\} \\implies \\exists V \\subset X: \\,\\,\\,\\, A\n\\subset V\\)</span>, <span class=\"math inline\">\\(x \\in V\\)</span> и <span\nclass=\"math inline\">\\(V\\)</span> - замкнуто <span\nclass=\"math inline\">\\(\\implies \\forall U_x \\in \\tau_X \\,\\,\\,\\, U_x \\cap\nV \\ne \\varnothing \\implies U_x \\cap A \\ne \\varnothing\n\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-0\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(X\\)</span> - топологическое пространство, <span\nclass=\"math inline\">\\(A \\subset X\\)</span>. Тогда <span\nclass=\"math inline\">\\(\\overline{A} = \\cap \\{U \\in X: \\,\\,\\,\\, A \\subset\nV\\)</span> и <span class=\"math inline\">\\(V\\)</span> - замкнуто <span\nclass=\"math inline\">\\(\\}\\)</span>.</p>",
+        "proof_html": "<p> Пусть <span class=\"math inline\">\\(x \\in \\cap\n\\{V \\in X: \\,\\,\\,\\, A \\subset V\\)</span> и <span\nclass=\"math inline\">\\(V\\)</span> - замкнуто <span\nclass=\"math inline\">\\(\\} \\implies \\exists V \\subset X: \\,\\,\\,\\, A\n\\subset V\\)</span>, <span class=\"math inline\">\\(x \\in V\\)</span> и <span\nclass=\"math inline\">\\(V\\)</span> - замкнуто <span\nclass=\"math inline\">\\(\\implies \\forall U_x \\in \\tau_X \\,\\,\\,\\, U_x \\cap\nV \\ne \\varnothing \\implies U_x \\cap A \\ne \\varnothing\n\\,\\,\\,\\,\\blacksquare\\)</span></p>"
     },
     {
         "keyword": "доказательство:",
-        "data": "**Утверждение:**<a name=\"statement-1\"></a> непрерывно $\\iff$ определение с окрестностями\n\n*Доказательство:*\n\n",
+        "data": "**Утверждение:**<a name=\"statement-11\"></a> Пусть $f: X \\to Y$ - отображение. Тогда $\\forall V_{\\alpha} \\in Y \\,\\,\\,\\, f^{-1}\\left(\\cup_{\\alpha \\in \\Lambda}V_{\\alpha}\\right) = \\cup_{\\alpha \\in \\Lambda}f^{-1}(V_{\\alpha})$.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-11",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-11\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(f: X \\to Y\\)</span> - отображение. Тогда <span\nclass=\"math inline\">\\(\\forall V_{\\alpha} \\in Y \\,\\,\\,\\,\nf^{-1}\\left(\\cup_{\\alpha \\in \\Lambda}V_{\\alpha}\\right) = \\cup_{\\alpha\n\\in \\Lambda}f^{-1}(V_{\\alpha})\\)</span>.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-11\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(f: X \\to Y\\)</span> - отображение. Тогда <span\nclass=\"math inline\">\\(\\forall V_{\\alpha} \\in Y \\,\\,\\,\\,\nf^{-1}\\left(\\cup_{\\alpha \\in \\Lambda}V_{\\alpha}\\right) = \\cup_{\\alpha\n\\in \\Lambda}f^{-1}(V_{\\alpha})\\)</span>.</p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "непрерывно в точке",
+        "data": "**Утверждение:**<a name=\"statement-1\"></a> Пусть $X$ и $Y$ - топологические пространства. Отображение $f: X \\to Y$ *непрерывно в точке* $x \\in X \\iff \\forall U_{f(x)} \\in \\tau_Y \\,\\,\\,\\, \\exists U_x \\in \\tau_X: \\,\\,\\,\\, f(U_x) \\subset U_{f(x)}$.\n\n*Доказательство:*\n\n",
         "data_type": "statement",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-1",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-1\">Утверждение:</a></strong> непрерывно\n<span class=\"math inline\">\\(\\iff\\)</span> определение с\nокрестностями</p>\n<p><em>Доказательство:</em></p>",
-        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-1\">Утверждение:</a></strong> непрерывно\n<span class=\"math inline\">\\(\\iff\\)</span> определение с\nокрестностями</p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-1\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span> - топологические пространства.\nОтображение <span class=\"math inline\">\\(f: X \\to Y\\)</span>\n<em>непрерывно в точке</em> <span class=\"math inline\">\\(x \\in X \\iff\n\\forall U_{f(x)} \\in \\tau_Y \\,\\,\\,\\, \\exists U_x \\in \\tau_X: \\,\\,\\,\\,\nf(U_x) \\subset U_{f(x)}\\)</span>.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-1\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span> - топологические пространства.\nОтображение <span class=\"math inline\">\\(f: X \\to Y\\)</span>\n<em>непрерывно в точке</em> <span class=\"math inline\">\\(x \\in X \\iff\n\\forall U_{f(x)} \\in \\tau_Y \\,\\,\\,\\, \\exists U_x \\in \\tau_X: \\,\\,\\,\\,\nf(U_x) \\subset U_{f(x)}\\)</span>.</p>",
         "proof_html": "<p></p>"
     },
     {
         "keyword": "доказательство:",
-        "data": "**Утверждение:**<a name=\"statement-2\"></a> $f: X \\to Y$ непрерывно $\\iff$ $f: X \\to Y$ непрерывно на базе $X$.\n\n*Доказательство:*\n\n",
+        "data": "**Утверждение:**<a name=\"statement-2\"></a> Пусть $X$ и $Y$ - топологические пространства. Отображение $f: X \\to Y$ непрерывно $\\iff$ прообраз любого элемента базы топологии на $Y$ при отображении $f$ открыт в $X$.\n\n*Доказательство:* Любое открытое множество в топологии $\\tau_Y$ - это объединение элементов базы топлогии на $Y$ и прообраз объединения множеств - это объединение прообразов $\\,\\,\\,\\,\\blacksquare$\n\n",
         "data_type": "statement",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-2",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-2\">Утверждение:</a></strong> <span\nclass=\"math inline\">\\(f: X \\to Y\\)</span> непрерывно <span\nclass=\"math inline\">\\(\\iff\\)</span> <span class=\"math inline\">\\(f: X \\to\nY\\)</span> непрерывно на базе <span\nclass=\"math inline\">\\(X\\)</span>.</p>\n<p><em>Доказательство:</em></p>",
-        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-2\">Утверждение:</a></strong> <span\nclass=\"math inline\">\\(f: X \\to Y\\)</span> непрерывно <span\nclass=\"math inline\">\\(\\iff\\)</span> <span class=\"math inline\">\\(f: X \\to\nY\\)</span> непрерывно на базе <span\nclass=\"math inline\">\\(X\\)</span>.</p>",
-        "proof_html": "<p></p>"
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-2\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span> - топологические пространства.\nОтображение <span class=\"math inline\">\\(f: X \\to Y\\)</span> непрерывно\n<span class=\"math inline\">\\(\\iff\\)</span> прообраз любого элемента базы\nтопологии на <span class=\"math inline\">\\(Y\\)</span> при отображении\n<span class=\"math inline\">\\(f\\)</span> открыт в <span\nclass=\"math inline\">\\(X\\)</span>.</p>\n<p><em>Доказательство:</em> Любое открытое множество в топологии <span\nclass=\"math inline\">\\(\\tau_Y\\)</span> - это объединение элементов базы\nтоплогии на <span class=\"math inline\">\\(Y\\)</span> и прообраз\nобъединения множеств - это объединение прообразов <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-2\">Утверждение:</a></strong> Пусть <span\nclass=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span> - топологические пространства.\nОтображение <span class=\"math inline\">\\(f: X \\to Y\\)</span> непрерывно\n<span class=\"math inline\">\\(\\iff\\)</span> прообраз любого элемента базы\nтопологии на <span class=\"math inline\">\\(Y\\)</span> при отображении\n<span class=\"math inline\">\\(f\\)</span> открыт в <span\nclass=\"math inline\">\\(X\\)</span>.</p>",
+        "proof_html": "<p> Любое открытое множество в топологии <span\nclass=\"math inline\">\\(\\tau_Y\\)</span> - это объединение элементов базы\nтоплогии на <span class=\"math inline\">\\(Y\\)</span> и прообраз\nобъединения множеств - это объединение прообразов <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
     },
     {
         "keyword": "доказательство:",
-        "data": "**Утверждение:**<a name=\"statement-3\"></a> Образ связного множества при непрерывном отображении связен.\n\n*Доказательство:*\n\n",
+        "data": "**Утверждение:**<a name=\"statement-12\"></a> Пусть на множестве $X$ задана метрика. Тогда множество всех открытых шаров $O$ является базой.\n\n*Доказательство:*\n\n1. $\\forall x \\in X \\,\\,\\,\\, \\exists O_{1}(x)$,\n2. $\\forall x \\in O_{\\varepsilon_1}(x_1)\\cap O_{\\varepsilon_2}(x_2) \\,\\,\\,\\, \\rho(x, x_1) < \\varepsilon_1$ и $\\rho(x, x_2) < \\varepsilon_2 \\implies x \\in O_{\\min\\{\\varepsilon_1, \\varepsilon_2\\}}(x) \\subset O_{\\varepsilon_1}(x_1)\\cap O_{\\varepsilon_2}(x_2) \\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-12",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-12\">Утверждение:</a></strong> Пусть на\nмножестве <span class=\"math inline\">\\(X\\)</span> задана метрика. Тогда\nмножество всех открытых шаров <span class=\"math inline\">\\(O\\)</span>\nявляется базой.</p>\n<p><em>Доказательство:</em></p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(\\forall x \\in X \\,\\,\\,\\, \\exists\nO_{1}(x)\\)</span>,</li>\n<li><span class=\"math inline\">\\(\\forall x \\in O_{\\varepsilon_1}(x_1)\\cap\nO_{\\varepsilon_2}(x_2) \\,\\,\\,\\, \\rho(x, x_1) &lt; \\varepsilon_1\\)</span>\nи <span class=\"math inline\">\\(\\rho(x, x_2) &lt; \\varepsilon_2 \\implies x\n\\in O_{\\min\\{\\varepsilon_1, \\varepsilon_2\\}}(x) \\subset\nO_{\\varepsilon_1}(x_1)\\cap O_{\\varepsilon_2}(x_2)\n\\,\\,\\,\\,\\blacksquare\\)</span></li>\n</ol>",
+        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-12\">Утверждение:</a></strong> Пусть на\nмножестве <span class=\"math inline\">\\(X\\)</span> задана метрика. Тогда\nмножество всех открытых шаров <span class=\"math inline\">\\(O\\)</span>\nявляется базой.</p>",
+        "proof_html": "<p></p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(\\forall x \\in X \\,\\,\\,\\, \\exists\nO_{1}(x)\\)</span>,</li>\n<li><span class=\"math inline\">\\(\\forall x \\in O_{\\varepsilon_1}(x_1)\\cap\nO_{\\varepsilon_2}(x_2) \\,\\,\\,\\, \\rho(x, x_1) &lt; \\varepsilon_1\\)</span>\nи <span class=\"math inline\">\\(\\rho(x, x_2) &lt; \\varepsilon_2 \\implies x\n\\in O_{\\min\\{\\varepsilon_1, \\varepsilon_2\\}}(x) \\subset\nO_{\\varepsilon_1}(x_1)\\cap O_{\\varepsilon_2}(x_2)\n\\,\\,\\,\\,\\blacksquare\\)</span></li>\n</ol>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-3\"></a> Образ связного множества при непрерывном отображении связен.\n\n*Доказательство:* Предположим обратное. Пусть при непрерывном отображении $f: X \\to Y$ образ $f(A)$ связного множества $A \\subset X$ несвязен, то есть $f(A) = U \\sqcup V$ и $U, V$ открыты в $Y$. Отображение непрерывно $\\implies f^{-1}(U)$ и $f^{-1}(V)$ открыты в $X$. $A = f^{-1}(f(A)) = f^{-1}(U \\sqcup V) = f^{-1}(U)\\sqcup f^{-1}(V) \\implies A$ несвязно $\\blades$\n\n",
         "data_type": "statement",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-3",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-3\">Утверждение:</a></strong> Образ\nсвязного множества при непрерывном отображении связен.</p>\n<p><em>Доказательство:</em></p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-3\">Утверждение:</a></strong> Образ\nсвязного множества при непрерывном отображении связен.</p>\n<p><em>Доказательство:</em> Предположим обратное. Пусть при непрерывном\nотображении <span class=\"math inline\">\\(f: X \\to Y\\)</span> образ <span\nclass=\"math inline\">\\(f(A)\\)</span> связного множества <span\nclass=\"math inline\">\\(A \\subset X\\)</span> несвязен, то есть <span\nclass=\"math inline\">\\(f(A) = U \\sqcup V\\)</span> и <span\nclass=\"math inline\">\\(U, V\\)</span> открыты в <span\nclass=\"math inline\">\\(Y\\)</span>. Отображение непрерывно <span\nclass=\"math inline\">\\(\\implies f^{-1}(U)\\)</span> и <span\nclass=\"math inline\">\\(f^{-1}(V)\\)</span> открыты в <span\nclass=\"math inline\">\\(X\\)</span>. <span class=\"math inline\">\\(A =\nf^{-1}(f(A)) = f^{-1}(U \\sqcup V) = f^{-1}(U)\\sqcup f^{-1}(V) \\implies\nA\\)</span> несвязно <span class=\"math inline\">\\(\\blades\\)</span></p>",
         "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-3\">Утверждение:</a></strong> Образ\nсвязного множества при непрерывном отображении связен.</p>",
+        "proof_html": "<p> Предположим обратное. Пусть при непрерывном\nотображении <span class=\"math inline\">\\(f: X \\to Y\\)</span> образ <span\nclass=\"math inline\">\\(f(A)\\)</span> связного множества <span\nclass=\"math inline\">\\(A \\subset X\\)</span> несвязен, то есть <span\nclass=\"math inline\">\\(f(A) = U \\sqcup V\\)</span> и <span\nclass=\"math inline\">\\(U, V\\)</span> открыты в <span\nclass=\"math inline\">\\(Y\\)</span>. Отображение непрерывно <span\nclass=\"math inline\">\\(\\implies f^{-1}(U)\\)</span> и <span\nclass=\"math inline\">\\(f^{-1}(V)\\)</span> открыты в <span\nclass=\"math inline\">\\(X\\)</span>. <span class=\"math inline\">\\(A =\nf^{-1}(f(A)) = f^{-1}(U \\sqcup V) = f^{-1}(U)\\sqcup f^{-1}(V) \\implies\nA\\)</span> несвязно <span class=\"math inline\">\\(\\blades\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-13\"></a> Отрезок, как подмножество вещественной прямой с естественной топологией, - связен.\n\n*Доказательство:*\n\n",
+        "data_type": "statement",
+        "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-13",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-13\">Утверждение:</a></strong> Отрезок, как\nподмножество вещественной прямой с естественной топологией, -\nсвязен.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-13\">Утверждение:</a></strong> Отрезок, как\nподмножество вещественной прямой с естественной топологией, -\nсвязен.</p>",
         "proof_html": "<p></p>"
     },
     {
         "keyword": "доказательство:",
-        "data": "**Утверждение:**<a name=\"statement-4\"></a> Пространство линейно связно $\\implies$ пространство связно.\n\n*Доказательство:*\n\n",
+        "data": "**Утверждение:**<a name=\"statement-4\"></a> Пространство $X$ линейно связно $\\implies$ пространство $X$ связно.\n\n*Доказательство:* $X$ - линейно связно $\\implies \\forall x, y \\in X \\,\\,\\,\\, \\exists f: [a, b] \\in X: \\,\\,\\,\\, f(a) = x, \\,\\,\\,\\, f(b) = y$ и $f$ - непрерывно. Пусть $X$ несвязно, то есть $X = U \\sqcap V$, где $U$ и $V$ открыты. Взяв точки $x \\in U$ и $y \\in V$ и соединяющую их непрерывную кривую $f: [a, b] \\to X$ получим, что $[a, b] = f^{-1}(U)\\sqcup f^{-1}(V)$ - несвязен $\\blades$ \n\n",
         "data_type": "statement",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-4",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-4\">Утверждение:</a></strong> Пространство\nлинейно связно <span class=\"math inline\">\\(\\implies\\)</span>\nпространство связно.</p>\n<p><em>Доказательство:</em></p>",
-        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-4\">Утверждение:</a></strong> Пространство\nлинейно связно <span class=\"math inline\">\\(\\implies\\)</span>\nпространство связно.</p>",
-        "proof_html": "<p></p>"
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-4\">Утверждение:</a></strong> Пространство\n<span class=\"math inline\">\\(X\\)</span> линейно связно <span\nclass=\"math inline\">\\(\\implies\\)</span> пространство <span\nclass=\"math inline\">\\(X\\)</span> связно.</p>\n<p><em>Доказательство:</em> <span class=\"math inline\">\\(X\\)</span> -\nлинейно связно <span class=\"math inline\">\\(\\implies \\forall x, y \\in X\n\\,\\,\\,\\, \\exists f: [a, b] \\in X: \\,\\,\\,\\, f(a) = x, \\,\\,\\,\\, f(b) =\ny\\)</span> и <span class=\"math inline\">\\(f\\)</span> - непрерывно. Пусть\n<span class=\"math inline\">\\(X\\)</span> несвязно, то есть <span\nclass=\"math inline\">\\(X = U \\sqcap V\\)</span>, где <span\nclass=\"math inline\">\\(U\\)</span> и <span\nclass=\"math inline\">\\(V\\)</span> открыты. Взяв точки <span\nclass=\"math inline\">\\(x \\in U\\)</span> и <span class=\"math inline\">\\(y\n\\in V\\)</span> и соединяющую их непрерывную кривую <span\nclass=\"math inline\">\\(f: [a, b] \\to X\\)</span> получим, что <span\nclass=\"math inline\">\\([a, b] = f^{-1}(U)\\sqcup f^{-1}(V)\\)</span> -\nнесвязен <span class=\"math inline\">\\(\\blades\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-4\">Утверждение:</a></strong> Пространство\n<span class=\"math inline\">\\(X\\)</span> линейно связно <span\nclass=\"math inline\">\\(\\implies\\)</span> пространство <span\nclass=\"math inline\">\\(X\\)</span> связно.</p>",
+        "proof_html": "<p> <span class=\"math inline\">\\(X\\)</span> -\nлинейно связно <span class=\"math inline\">\\(\\implies \\forall x, y \\in X\n\\,\\,\\,\\, \\exists f: [a, b] \\in X: \\,\\,\\,\\, f(a) = x, \\,\\,\\,\\, f(b) =\ny\\)</span> и <span class=\"math inline\">\\(f\\)</span> - непрерывно. Пусть\n<span class=\"math inline\">\\(X\\)</span> несвязно, то есть <span\nclass=\"math inline\">\\(X = U \\sqcap V\\)</span>, где <span\nclass=\"math inline\">\\(U\\)</span> и <span\nclass=\"math inline\">\\(V\\)</span> открыты. Взяв точки <span\nclass=\"math inline\">\\(x \\in U\\)</span> и <span class=\"math inline\">\\(y\n\\in V\\)</span> и соединяющую их непрерывную кривую <span\nclass=\"math inline\">\\(f: [a, b] \\to X\\)</span> получим, что <span\nclass=\"math inline\">\\([a, b] = f^{-1}(U)\\sqcup f^{-1}(V)\\)</span> -\nнесвязен <span class=\"math inline\">\\(\\blades\\)</span></p>"
     },
     {
         "keyword": "доказательство:",
-        "data": "**Утверждение:**<a name=\"statement-5\"></a> Образ компактного подмножества при непрерывном отображении компактен.\n\n*Доказательство:*\n\n",
+        "data": "**Утверждение:**<a name=\"statement-5\"></a> Образ компактного подмножества при непрерывном отображении компактен.\n\n*Доказательство:* Пусть $\\cup_{\\alpha \\in \\Lambda}U_{\\alpha}$ - открытое покрытие образа $f(K)$ компактного множества $K$ топологического пространства $X$ при непрерывном отображении $f: X \\to Y$. Рассмотрим покрытие $\\cup_{\\alpha \\in \\Lambda}f^{-1}(U_{\\alpha}) = f^{-1}(\\cup_{\\alpha \\in \\Lambda}U_{\\alpha})$ множества $K$. $K$ - компакт $\\implies \\exists \\cup_{i = 1}^{n}U_{\\alpha_i} \\supset K$. $\\cup_{i = 1}^{n}f(U_{\\alpha_i})$ искомое подпокрытие $\\,\\,\\,\\,\\blacksquare$\n\n",
         "data_type": "statement",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-5",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-5\">Утверждение:</a></strong> Образ\nкомпактного подмножества при непрерывном отображении компактен.</p>\n<p><em>Доказательство:</em></p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-5\">Утверждение:</a></strong> Образ\nкомпактного подмножества при непрерывном отображении компактен.</p>\n<p><em>Доказательство:</em> Пусть <span\nclass=\"math inline\">\\(\\cup_{\\alpha \\in \\Lambda}U_{\\alpha}\\)</span> -\nоткрытое покрытие образа <span class=\"math inline\">\\(f(K)\\)</span>\nкомпактного множества <span class=\"math inline\">\\(K\\)</span>\nтопологического пространства <span class=\"math inline\">\\(X\\)</span> при\nнепрерывном отображении <span class=\"math inline\">\\(f: X \\to Y\\)</span>.\nРассмотрим покрытие <span class=\"math inline\">\\(\\cup_{\\alpha \\in\n\\Lambda}f^{-1}(U_{\\alpha}) = f^{-1}(\\cup_{\\alpha \\in\n\\Lambda}U_{\\alpha})\\)</span> множества <span\nclass=\"math inline\">\\(K\\)</span>. <span class=\"math inline\">\\(K\\)</span>\n- компакт <span class=\"math inline\">\\(\\implies \\exists \\cup_{i =\n1}^{n}U_{\\alpha_i} \\supset K\\)</span>. <span\nclass=\"math inline\">\\(\\cup_{i = 1}^{n}f(U_{\\alpha_i})\\)</span> искомое\nподпокрытие <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
         "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-5\">Утверждение:</a></strong> Образ\nкомпактного подмножества при непрерывном отображении компактен.</p>",
-        "proof_html": "<p></p>"
+        "proof_html": "<p> Пусть <span\nclass=\"math inline\">\\(\\cup_{\\alpha \\in \\Lambda}U_{\\alpha}\\)</span> -\nоткрытое покрытие образа <span class=\"math inline\">\\(f(K)\\)</span>\nкомпактного множества <span class=\"math inline\">\\(K\\)</span>\nтопологического пространства <span class=\"math inline\">\\(X\\)</span> при\nнепрерывном отображении <span class=\"math inline\">\\(f: X \\to Y\\)</span>.\nРассмотрим покрытие <span class=\"math inline\">\\(\\cup_{\\alpha \\in\n\\Lambda}f^{-1}(U_{\\alpha}) = f^{-1}(\\cup_{\\alpha \\in\n\\Lambda}U_{\\alpha})\\)</span> множества <span\nclass=\"math inline\">\\(K\\)</span>. <span class=\"math inline\">\\(K\\)</span>\n- компакт <span class=\"math inline\">\\(\\implies \\exists \\cup_{i =\n1}^{n}U_{\\alpha_i} \\supset K\\)</span>. <span\nclass=\"math inline\">\\(\\cup_{i = 1}^{n}f(U_{\\alpha_i})\\)</span> искомое\nподпокрытие <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
     },
     {
         "keyword": "доказательство:",
-        "data": "**Утверждение:**<a name=\"statement-6\"></a> Замкнутое подмножество компактного пространства компактно.\n\n*Доказательство:*\n\n",
+        "data": "**Утверждение:**<a name=\"statement-6\"></a> Замкнутое подмножество компактного пространства компактно.\n\n*Доказательство:* Рассмотрим покрытие $U = \\cup_{\\alpha \\in \\Lambda}U_{\\alpha}$ замкнутого множества $V$ в компактном пространстве $X$. Хотим выделить конечное подпокрытие. $V$ закнуто $\\implies X \\setminus V$ - открыто. Добавим $X \\setminus V$ к $U$, получим покрытие всего $X$. $X$ компактно $\\implies \\exists \\cup_{i = 1}^{n}U_{\\alpha_i} \\supset X$. $\\cup_{i = 1}^{n}U_{\\alpha_i} \\setminus (X \\setminus V)$ искомое подпокрытие $\\,\\,\\,\\,\\blacksquare$\n\n",
         "data_type": "statement",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-6",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-6\">Утверждение:</a></strong> Замкнутое\nподмножество компактного пространства компактно.</p>\n<p><em>Доказательство:</em></p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-6\">Утверждение:</a></strong> Замкнутое\nподмножество компактного пространства компактно.</p>\n<p><em>Доказательство:</em> Рассмотрим покрытие <span\nclass=\"math inline\">\\(U = \\cup_{\\alpha \\in \\Lambda}U_{\\alpha}\\)</span>\nзамкнутого множества <span class=\"math inline\">\\(V\\)</span> в компактном\nпространстве <span class=\"math inline\">\\(X\\)</span>. Хотим выделить\nконечное подпокрытие. <span class=\"math inline\">\\(V\\)</span> закнуто\n<span class=\"math inline\">\\(\\implies X \\setminus V\\)</span> - открыто.\nДобавим <span class=\"math inline\">\\(X \\setminus V\\)</span> к <span\nclass=\"math inline\">\\(U\\)</span>, получим покрытие всего <span\nclass=\"math inline\">\\(X\\)</span>. <span class=\"math inline\">\\(X\\)</span>\nкомпактно <span class=\"math inline\">\\(\\implies \\exists \\cup_{i =\n1}^{n}U_{\\alpha_i} \\supset X\\)</span>. <span\nclass=\"math inline\">\\(\\cup_{i = 1}^{n}U_{\\alpha_i} \\setminus (X\n\\setminus V)\\)</span> искомое подпокрытие <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
         "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-6\">Утверждение:</a></strong> Замкнутое\nподмножество компактного пространства компактно.</p>",
-        "proof_html": "<p></p>"
+        "proof_html": "<p> Рассмотрим покрытие <span\nclass=\"math inline\">\\(U = \\cup_{\\alpha \\in \\Lambda}U_{\\alpha}\\)</span>\nзамкнутого множества <span class=\"math inline\">\\(V\\)</span> в компактном\nпространстве <span class=\"math inline\">\\(X\\)</span>. Хотим выделить\nконечное подпокрытие. <span class=\"math inline\">\\(V\\)</span> закнуто\n<span class=\"math inline\">\\(\\implies X \\setminus V\\)</span> - открыто.\nДобавим <span class=\"math inline\">\\(X \\setminus V\\)</span> к <span\nclass=\"math inline\">\\(U\\)</span>, получим покрытие всего <span\nclass=\"math inline\">\\(X\\)</span>. <span class=\"math inline\">\\(X\\)</span>\nкомпактно <span class=\"math inline\">\\(\\implies \\exists \\cup_{i =\n1}^{n}U_{\\alpha_i} \\supset X\\)</span>. <span\nclass=\"math inline\">\\(\\cup_{i = 1}^{n}U_{\\alpha_i} \\setminus (X\n\\setminus V)\\)</span> искомое подпокрытие <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
     },
     {
         "keyword": "доказательство:",
-        "data": "**Утверждение:**<a name=\"statement-7\"></a> Если $X$ хаусдорфово, то любая последовательность имеет не более одного предела.\n\n*Доказательство:*\n\n",
+        "data": "**Утверждение:**<a name=\"statement-7\"></a> Если $X$ хаусдорфово, то любая последовательность имеет не более одного предела.\n\n*Доказательство:* Пусть $x_1$ и $x_2$ пределы последовательности $\\{a_n\\}_{n = 1}^{\\infty}$. $X$ хаусдорфово $\\implies \\exists U_{x_1}, U_{x_2} \\in \\tau_X: \\,\\,\\,\\, U_{x_1}\\cap U_{x_2} = \\varnothing$ и каждая из этих окрестностей содержит бесконечное количество точек, а значит дополнение к $U_{x_1}$ содержит бесконечное количество точек $\\blades$\n\n",
         "data_type": "statement",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-7",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-7\">Утверждение:</a></strong> Если <span\nclass=\"math inline\">\\(X\\)</span> хаусдорфово, то любая\nпоследовательность имеет не более одного предела.</p>\n<p><em>Доказательство:</em></p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-7\">Утверждение:</a></strong> Если <span\nclass=\"math inline\">\\(X\\)</span> хаусдорфово, то любая\nпоследовательность имеет не более одного предела.</p>\n<p><em>Доказательство:</em> Пусть <span\nclass=\"math inline\">\\(x_1\\)</span> и <span\nclass=\"math inline\">\\(x_2\\)</span> пределы последовательности <span\nclass=\"math inline\">\\(\\{a_n\\}_{n = 1}^{\\infty}\\)</span>. <span\nclass=\"math inline\">\\(X\\)</span> хаусдорфово <span\nclass=\"math inline\">\\(\\implies \\exists U_{x_1}, U_{x_2} \\in \\tau_X:\n\\,\\,\\,\\, U_{x_1}\\cap U_{x_2} = \\varnothing\\)</span> и каждая из этих\nокрестностей содержит бесконечное количество точек, а значит дополнение\nк <span class=\"math inline\">\\(U_{x_1}\\)</span> содержит бесконечное\nколичество точек <span class=\"math inline\">\\(\\blades\\)</span></p>",
         "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-7\">Утверждение:</a></strong> Если <span\nclass=\"math inline\">\\(X\\)</span> хаусдорфово, то любая\nпоследовательность имеет не более одного предела.</p>",
-        "proof_html": "<p></p>"
+        "proof_html": "<p> Пусть <span\nclass=\"math inline\">\\(x_1\\)</span> и <span\nclass=\"math inline\">\\(x_2\\)</span> пределы последовательности <span\nclass=\"math inline\">\\(\\{a_n\\}_{n = 1}^{\\infty}\\)</span>. <span\nclass=\"math inline\">\\(X\\)</span> хаусдорфово <span\nclass=\"math inline\">\\(\\implies \\exists U_{x_1}, U_{x_2} \\in \\tau_X:\n\\,\\,\\,\\, U_{x_1}\\cap U_{x_2} = \\varnothing\\)</span> и каждая из этих\nокрестностей содержит бесконечное количество точек, а значит дополнение\nк <span class=\"math inline\">\\(U_{x_1}\\)</span> содержит бесконечное\nколичество точек <span class=\"math inline\">\\(\\blades\\)</span></p>"
     },
     {
         "keyword": "доказательство:",
-        "data": "**Утверждение:**<a name=\"statement-8\"></a> Если пространство компактно и хаусдорфово, то оно нормально.\n\n*Доказательство:*\n\n",
+        "data": "**Утверждение:**<a name=\"statement-8\"></a> Если пространство $X$ компактно и хаусдорфово, то оно нормально.\n\n*Доказательство:* $X$ хаусдорфово $\\implies X$ обладает $T_1$.\n\nДокажем, что $X$ регулярно. Пусть $A \\subset X$ - замкнуто и $X \\ni x_0 \\not\\in A$. $X$ хаусдорфово $\\implies \\forall x \\in A \\exists U_x, U_{x,\\,\\, x_0} \\in \\tau_X: \\,\\,\\,\\, U_x \\cap U_{x,\\,\\, x_0} = \\varnothing$. Рассмотрим открытое покрытие $\\{U_x\\}_{x \\in A}$ множества $A$. Любое замкнутое подмножество компактного пространства компактно, а следовательно $\\exists \\{U_{x_i}\\}_{i = 1}^n$ конечное покрытие $A$. Возьмем в качестве непересекающихся окрестностей $A$ и $x_0$ множества $\\cup_{i = 1}^{n}U_{x_i} \\supset A$ и $\\cap_{i = 1}^{n}U_{x_0, \\,\\, x_i} \\ni x_0$. Доказали регулярность.\n\nДокажем, что $X$ нормально. Рассмотрим $A, B$ замкнутые непересекающиеся подмножества $X$. $X$ регулярно $\\implies \\forall x \\in A \\,\\,\\,\\, \\exists U_x, U_{B, \\,\\, x} \\in \\tau_X: \\,\\,\\,\\, U_x \\cap U_{B, \\,\\, x} = \\varnothing$. Рассмотрим открытое покрытие $\\{U_x\\}_{x \\in A}$ множества $A$. Любое замкнутое подмножество компактного пространства компактно, а следовательно $\\exists \\{U_{x_i}\\}_{i = 1}^n$ конечное покрытие $A$. Возьмем в качестве непересекающихся окрестностей $A$ и $B$ множества $\\cup_{i = 1}^{n}U_{x_i} \\supset A$ и $\\cap_{i = 1}^{n}U_{B, \\,\\, x_i} \\supset B \\,\\,\\,\\,\\blacksquare$\n\n",
         "data_type": "statement",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-8",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-8\">Утверждение:</a></strong> Если\nпространство компактно и хаусдорфово, то оно нормально.</p>\n<p><em>Доказательство:</em></p>",
-        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-8\">Утверждение:</a></strong> Если\nпространство компактно и хаусдорфово, то оно нормально.</p>",
-        "proof_html": "<p></p>"
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-8\">Утверждение:</a></strong> Если\nпространство <span class=\"math inline\">\\(X\\)</span> компактно и\nхаусдорфово, то оно нормально.</p>\n<p><em>Доказательство:</em> <span class=\"math inline\">\\(X\\)</span>\nхаусдорфово <span class=\"math inline\">\\(\\implies X\\)</span> обладает\n<span class=\"math inline\">\\(T_1\\)</span>.</p>\n<p>Докажем, что <span class=\"math inline\">\\(X\\)</span> регулярно. Пусть\n<span class=\"math inline\">\\(A \\subset X\\)</span> - замкнуто и <span\nclass=\"math inline\">\\(X \\ni x_0 \\not\\in A\\)</span>. <span\nclass=\"math inline\">\\(X\\)</span> хаусдорфово <span\nclass=\"math inline\">\\(\\implies \\forall x \\in A \\exists U_x, U_{x,\\,\\,\nx_0} \\in \\tau_X: \\,\\,\\,\\, U_x \\cap U_{x,\\,\\, x_0} =\n\\varnothing\\)</span>. Рассмотрим открытое покрытие <span\nclass=\"math inline\">\\(\\{U_x\\}_{x \\in A}\\)</span> множества <span\nclass=\"math inline\">\\(A\\)</span>. Любое замкнутое подмножество\nкомпактного пространства компактно, а следовательно <span\nclass=\"math inline\">\\(\\exists \\{U_{x_i}\\}_{i = 1}^n\\)</span> конечное\nпокрытие <span class=\"math inline\">\\(A\\)</span>. Возьмем в качестве\nнепересекающихся окрестностей <span class=\"math inline\">\\(A\\)</span> и\n<span class=\"math inline\">\\(x_0\\)</span> множества <span\nclass=\"math inline\">\\(\\cup_{i = 1}^{n}U_{x_i} \\supset A\\)</span> и <span\nclass=\"math inline\">\\(\\cap_{i = 1}^{n}U_{x_0, \\,\\, x_i} \\ni\nx_0\\)</span>. Доказали регулярность.</p>\n<p>Докажем, что <span class=\"math inline\">\\(X\\)</span> нормально.\nРассмотрим <span class=\"math inline\">\\(A, B\\)</span> замкнутые\nнепересекающиеся подмножества <span class=\"math inline\">\\(X\\)</span>.\n<span class=\"math inline\">\\(X\\)</span> регулярно <span\nclass=\"math inline\">\\(\\implies \\forall x \\in A \\,\\,\\,\\, \\exists U_x,\nU_{B, \\,\\, x} \\in \\tau_X: \\,\\,\\,\\, U_x \\cap U_{B, \\,\\, x} =\n\\varnothing\\)</span>. Рассмотрим открытое покрытие <span\nclass=\"math inline\">\\(\\{U_x\\}_{x \\in A}\\)</span> множества <span\nclass=\"math inline\">\\(A\\)</span>. Любое замкнутое подмножество\nкомпактного пространства компактно, а следовательно <span\nclass=\"math inline\">\\(\\exists \\{U_{x_i}\\}_{i = 1}^n\\)</span> конечное\nпокрытие <span class=\"math inline\">\\(A\\)</span>. Возьмем в качестве\nнепересекающихся окрестностей <span class=\"math inline\">\\(A\\)</span> и\n<span class=\"math inline\">\\(B\\)</span> множества <span\nclass=\"math inline\">\\(\\cup_{i = 1}^{n}U_{x_i} \\supset A\\)</span> и <span\nclass=\"math inline\">\\(\\cap_{i = 1}^{n}U_{B, \\,\\, x_i} \\supset B\n\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#statement-8\">Утверждение:</a></strong> Если\nпространство <span class=\"math inline\">\\(X\\)</span> компактно и\nхаусдорфово, то оно нормально.</p>",
+        "proof_html": "<p> <span class=\"math inline\">\\(X\\)</span>\nхаусдорфово <span class=\"math inline\">\\(\\implies X\\)</span> обладает\n<span class=\"math inline\">\\(T_1\\)</span>.</p>\n<p>Докажем, что <span class=\"math inline\">\\(X\\)</span> регулярно. Пусть\n<span class=\"math inline\">\\(A \\subset X\\)</span> - замкнуто и <span\nclass=\"math inline\">\\(X \\ni x_0 \\not\\in A\\)</span>. <span\nclass=\"math inline\">\\(X\\)</span> хаусдорфово <span\nclass=\"math inline\">\\(\\implies \\forall x \\in A \\exists U_x, U_{x,\\,\\,\nx_0} \\in \\tau_X: \\,\\,\\,\\, U_x \\cap U_{x,\\,\\, x_0} =\n\\varnothing\\)</span>. Рассмотрим открытое покрытие <span\nclass=\"math inline\">\\(\\{U_x\\}_{x \\in A}\\)</span> множества <span\nclass=\"math inline\">\\(A\\)</span>. Любое замкнутое подмножество\nкомпактного пространства компактно, а следовательно <span\nclass=\"math inline\">\\(\\exists \\{U_{x_i}\\}_{i = 1}^n\\)</span> конечное\nпокрытие <span class=\"math inline\">\\(A\\)</span>. Возьмем в качестве\nнепересекающихся окрестностей <span class=\"math inline\">\\(A\\)</span> и\n<span class=\"math inline\">\\(x_0\\)</span> множества <span\nclass=\"math inline\">\\(\\cup_{i = 1}^{n}U_{x_i} \\supset A\\)</span> и <span\nclass=\"math inline\">\\(\\cap_{i = 1}^{n}U_{x_0, \\,\\, x_i} \\ni\nx_0\\)</span>. Доказали регулярность.</p>\n<p>Докажем, что <span class=\"math inline\">\\(X\\)</span> нормально.\nРассмотрим <span class=\"math inline\">\\(A, B\\)</span> замкнутые\nнепересекающиеся подмножества <span class=\"math inline\">\\(X\\)</span>.\n<span class=\"math inline\">\\(X\\)</span> регулярно <span\nclass=\"math inline\">\\(\\implies \\forall x \\in A \\,\\,\\,\\, \\exists U_x,\nU_{B, \\,\\, x} \\in \\tau_X: \\,\\,\\,\\, U_x \\cap U_{B, \\,\\, x} =\n\\varnothing\\)</span>. Рассмотрим открытое покрытие <span\nclass=\"math inline\">\\(\\{U_x\\}_{x \\in A}\\)</span> множества <span\nclass=\"math inline\">\\(A\\)</span>. Любое замкнутое подмножество\nкомпактного пространства компактно, а следовательно <span\nclass=\"math inline\">\\(\\exists \\{U_{x_i}\\}_{i = 1}^n\\)</span> конечное\nпокрытие <span class=\"math inline\">\\(A\\)</span>. Возьмем в качестве\nнепересекающихся окрестностей <span class=\"math inline\">\\(A\\)</span> и\n<span class=\"math inline\">\\(B\\)</span> множества <span\nclass=\"math inline\">\\(\\cup_{i = 1}^{n}U_{x_i} \\supset A\\)</span> и <span\nclass=\"math inline\">\\(\\cap_{i = 1}^{n}U_{B, \\,\\, x_i} \\supset B\n\\,\\,\\,\\,\\blacksquare\\)</span></p>"
     },
     {
         "keyword": "доказательство:",
@@ -388,65 +478,65 @@
     },
     {
         "keyword": "доказательство:",
-        "data": "**Лемма:**<a name=\"lemma-0\"></a> Пусть $B$ база на $X$. Пусть $\\tau_{B}$ - это множество всех объединений элементов базы. Тогда $\\tau_{B}$ - топология на $X$.\n\n*Доказательство:*\n\n",
+        "data": "**Лемма:**<a name=\"lemma-0\"></a> Пусть $B$ база на $X$. Пусть $\\tau_{B}$ - это множество всех объединений элементов базы. Тогда $\\tau_{B}$ - топология на $X$.\n\n*Доказательство:* Проверим по определению:\n\n1. $\\varnothing \\in \\tau_B$, так как $\\varnothing$ - это объединение по пустому множеству. $X \\in \\tau_B$, так как $\\forall x \\in X \\,\\,\\,\\, \\exists U_x \\in B: \\,\\,\\,\\, x \\in U_x \\implies X = \\cup_{x \\in X}U_x$.\n2. Следует из пункта $2$ определения базы.\n3. Следует из определения $\\tau_B \\,\\,\\,\\,\\blacksquare$\n\n",
         "data_type": "lemma",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-0",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-0\">Лемма:</a></strong> Пусть <span\nclass=\"math inline\">\\(B\\)</span> база на <span\nclass=\"math inline\">\\(X\\)</span>. Пусть <span\nclass=\"math inline\">\\(\\tau_{B}\\)</span> - это множество всех объединений\nэлементов базы. Тогда <span class=\"math inline\">\\(\\tau_{B}\\)</span> -\nтопология на <span class=\"math inline\">\\(X\\)</span>.</p>\n<p><em>Доказательство:</em></p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-0\">Лемма:</a></strong> Пусть <span\nclass=\"math inline\">\\(B\\)</span> база на <span\nclass=\"math inline\">\\(X\\)</span>. Пусть <span\nclass=\"math inline\">\\(\\tau_{B}\\)</span> - это множество всех объединений\nэлементов базы. Тогда <span class=\"math inline\">\\(\\tau_{B}\\)</span> -\nтопология на <span class=\"math inline\">\\(X\\)</span>.</p>\n<p><em>Доказательство:</em> Проверим по определению:</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(\\varnothing \\in \\tau_B\\)</span>, так как\n<span class=\"math inline\">\\(\\varnothing\\)</span> - это объединение по\nпустому множеству. <span class=\"math inline\">\\(X \\in \\tau_B\\)</span>,\nтак как <span class=\"math inline\">\\(\\forall x \\in X \\,\\,\\,\\, \\exists U_x\n\\in B: \\,\\,\\,\\, x \\in U_x \\implies X = \\cup_{x \\in X}U_x\\)</span>.</li>\n<li>Следует из пункта <span class=\"math inline\">\\(2\\)</span> определения\nбазы.</li>\n<li>Следует из определения <span class=\"math inline\">\\(\\tau_B\n\\,\\,\\,\\,\\blacksquare\\)</span></li>\n</ol>",
         "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-0\">Лемма:</a></strong> Пусть <span\nclass=\"math inline\">\\(B\\)</span> база на <span\nclass=\"math inline\">\\(X\\)</span>. Пусть <span\nclass=\"math inline\">\\(\\tau_{B}\\)</span> - это множество всех объединений\nэлементов базы. Тогда <span class=\"math inline\">\\(\\tau_{B}\\)</span> -\nтопология на <span class=\"math inline\">\\(X\\)</span>.</p>",
-        "proof_html": "<p></p>"
+        "proof_html": "<p> Проверим по определению:</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(\\varnothing \\in \\tau_B\\)</span>, так как\n<span class=\"math inline\">\\(\\varnothing\\)</span> - это объединение по\nпустому множеству. <span class=\"math inline\">\\(X \\in \\tau_B\\)</span>,\nтак как <span class=\"math inline\">\\(\\forall x \\in X \\,\\,\\,\\, \\exists U_x\n\\in B: \\,\\,\\,\\, x \\in U_x \\implies X = \\cup_{x \\in X}U_x\\)</span>.</li>\n<li>Следует из пункта <span class=\"math inline\">\\(2\\)</span> определения\nбазы.</li>\n<li>Следует из определения <span class=\"math inline\">\\(\\tau_B\n\\,\\,\\,\\,\\blacksquare\\)</span></li>\n</ol>"
     },
     {
         "keyword": "доказательство:",
-        "data": "**Лемма:**<a name=\"lemma-1\"></a> Набор подмножеств $B$ множества $X$ является предбазой $\\iff X$ является покрытием множества $X$.\n\n*Доказательство:*\n\n",
+        "data": "**Лемма:**<a name=\"lemma-1\"></a> Набор подмножеств $B$ множества $X$ является предбазой $\\iff X$ является покрытием множества $X$.\n\n*Доказательство:* \n\n$\\boxed{\\Longrightarrow}$ $B$ предбаза $\\implies$ конечные пересечения элементов $B$ - это база, а следовательно для любого $x \\in X$ найдется $U \\in B: \\,\\,\\,\\, x \\in U$.\n\n$\\boxed{\\Longleftarrow}$ $\\,\\,\\,\\,\\blacksquare$\n\n",
         "data_type": "lemma",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-1",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-1\">Лемма:</a></strong> Набор подмножеств <span\nclass=\"math inline\">\\(B\\)</span> множества <span\nclass=\"math inline\">\\(X\\)</span> является предбазой <span\nclass=\"math inline\">\\(\\iff X\\)</span> является покрытием множества <span\nclass=\"math inline\">\\(X\\)</span>.</p>\n<p><em>Доказательство:</em></p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-1\">Лемма:</a></strong> Набор подмножеств <span\nclass=\"math inline\">\\(B\\)</span> множества <span\nclass=\"math inline\">\\(X\\)</span> является предбазой <span\nclass=\"math inline\">\\(\\iff X\\)</span> является покрытием множества <span\nclass=\"math inline\">\\(X\\)</span>.</p>\n<p><em>Доказательство:</em></p>\n<p><span class=\"math inline\">\\(\\boxed{\\Longrightarrow}\\)</span> <span\nclass=\"math inline\">\\(B\\)</span> предбаза <span\nclass=\"math inline\">\\(\\implies\\)</span> конечные пересечения элементов\n<span class=\"math inline\">\\(B\\)</span> - это база, а следовательно для\nлюбого <span class=\"math inline\">\\(x \\in X\\)</span> найдется <span\nclass=\"math inline\">\\(U \\in B: \\,\\,\\,\\, x \\in U\\)</span>.</p>\n<p><span class=\"math inline\">\\(\\boxed{\\Longleftarrow}\\)</span> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
         "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-1\">Лемма:</a></strong> Набор подмножеств <span\nclass=\"math inline\">\\(B\\)</span> множества <span\nclass=\"math inline\">\\(X\\)</span> является предбазой <span\nclass=\"math inline\">\\(\\iff X\\)</span> является покрытием множества <span\nclass=\"math inline\">\\(X\\)</span>.</p>",
-        "proof_html": "<p></p>"
+        "proof_html": "<p></p>\n<p><span class=\"math inline\">\\(\\boxed{\\Longrightarrow}\\)</span> <span\nclass=\"math inline\">\\(B\\)</span> предбаза <span\nclass=\"math inline\">\\(\\implies\\)</span> конечные пересечения элементов\n<span class=\"math inline\">\\(B\\)</span> - это база, а следовательно для\nлюбого <span class=\"math inline\">\\(x \\in X\\)</span> найдется <span\nclass=\"math inline\">\\(U \\in B: \\,\\,\\,\\, x \\in U\\)</span>.</p>\n<p><span class=\"math inline\">\\(\\boxed{\\Longleftarrow}\\)</span> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
     },
     {
-        "keyword": "почти очевидная",
-        "data": "**Лемма:**<a name=\"lemma-2\"></a> (*почти очевидная*)\n\n1. Замыкание множества - замкнутое множество.\n2. Внутренность множества - открытое множество.\n\n*Доказательство:*\n\n",
+        "keyword": "о замыкании и внутренности",
+        "data": "**Лемма:**<a name=\"lemma-2\"></a> (*о замыкании и внутренности*)\n\n1. Внутренность множества - открытое множество.\n2. Замыкание множества - замкнутое множество.\n\n\n*Доказательство:*\n\nПусть $X$ - топологическое пространство, $A \\subset X$.\n\n1. Докажем, что $\\operatorname{Int}A$ открыто. $\\forall x \\in A \\,\\,\\,\\, \\exists U_x \\in \\tau_X: \\,\\,\\,\\, x \\in U_x \\implies \\operatorname{Int}A = \\cup_{x \\in X}U_x$.\n2. Докажем, что $\\operatorname{Cl}A$ замкнуто. Пусть $x \\in X \\setminus A \\implies \\exists U_x \\in \\tau_X: \\,\\,\\,\\, U_x \\cap A = \\varnothing \\implies X \\setminus A = \\cup_{x \\in X \\setminus A}U_x \\,\\,\\,\\,\\blacksquare$\n\n",
         "data_type": "lemma",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-2",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-2\">Лемма:</a></strong> (<em>почти\nочевидная</em>)</p>\n<ol type=\"1\">\n<li>Замыкание множества - замкнутое множество.</li>\n<li>Внутренность множества - открытое множество.</li>\n</ol>\n<p><em>Доказательство:</em></p>",
-        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-2\">Лемма:</a></strong> (<em>почти\nочевидная</em>)</p>\n<ol type=\"1\">\n<li>Замыкание множества - замкнутое множество.</li>\n<li>Внутренность множества - открытое множество.</li>\n</ol>",
-        "proof_html": "<p></p>"
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-2\">Лемма:</a></strong> (<em>о замыкании и\nвнутренности</em>)</p>\n<ol type=\"1\">\n<li>Внутренность множества - открытое множество.</li>\n<li>Замыкание множества - замкнутое множество.</li>\n</ol>\n<p><em>Доказательство:</em></p>\n<p>Пусть <span class=\"math inline\">\\(X\\)</span> - топологическое\nпространство, <span class=\"math inline\">\\(A \\subset X\\)</span>.</p>\n<ol type=\"1\">\n<li>Докажем, что <span\nclass=\"math inline\">\\(\\operatorname{Int}A\\)</span> открыто. <span\nclass=\"math inline\">\\(\\forall x \\in A \\,\\,\\,\\, \\exists U_x \\in \\tau_X:\n\\,\\,\\,\\, x \\in U_x \\implies \\operatorname{Int}A = \\cup_{x \\in\nX}U_x\\)</span>.</li>\n<li>Докажем, что <span class=\"math inline\">\\(\\operatorname{Cl}A\\)</span>\nзамкнуто. Пусть <span class=\"math inline\">\\(x \\in X \\setminus A \\implies\n\\exists U_x \\in \\tau_X: \\,\\,\\,\\, U_x \\cap A = \\varnothing \\implies X\n\\setminus A = \\cup_{x \\in X \\setminus A}U_x\n\\,\\,\\,\\,\\blacksquare\\)</span></li>\n</ol>",
+        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-2\">Лемма:</a></strong> (<em>о замыкании и\nвнутренности</em>)</p>\n<ol type=\"1\">\n<li>Внутренность множества - открытое множество.</li>\n<li>Замыкание множества - замкнутое множество.</li>\n</ol>",
+        "proof_html": "<p></p>\n<p>Пусть <span class=\"math inline\">\\(X\\)</span> - топологическое\nпространство, <span class=\"math inline\">\\(A \\subset X\\)</span>.</p>\n<ol type=\"1\">\n<li>Докажем, что <span\nclass=\"math inline\">\\(\\operatorname{Int}A\\)</span> открыто. <span\nclass=\"math inline\">\\(\\forall x \\in A \\,\\,\\,\\, \\exists U_x \\in \\tau_X:\n\\,\\,\\,\\, x \\in U_x \\implies \\operatorname{Int}A = \\cup_{x \\in\nX}U_x\\)</span>.</li>\n<li>Докажем, что <span class=\"math inline\">\\(\\operatorname{Cl}A\\)</span>\nзамкнуто. Пусть <span class=\"math inline\">\\(x \\in X \\setminus A \\implies\n\\exists U_x \\in \\tau_X: \\,\\,\\,\\, U_x \\cap A = \\varnothing \\implies X\n\\setminus A = \\cup_{x \\in X \\setminus A}U_x\n\\,\\,\\,\\,\\blacksquare\\)</span></li>\n</ol>"
     },
     {
         "keyword": "лебега",
-        "data": "**Лемма:**<a name=\"lemma-3\"></a> (*Лебега*) Пусть $X$ компактное метрическое пространство. Пусть $\\{U_{\\alpha}\\}$ открытое покрытие $X$. Тогда $\\exists r > 0$, такое что любой открытый шар радиуса $r$ целиком лежит в одном из $U_{\\alpha}$.\n\n*Доказательство:*\n\n",
+        "data": "**Лемма:**<a name=\"lemma-3\"></a> (*Лебега*) Пусть $X$ компактное метрическое пространство. Пусть $\\{U_{\\alpha}\\}$ открытое покрытие $X$. Тогда $\\exists r > 0$, такое что любой открытый шар радиуса $r$ целиком лежит в одном из $U_{\\alpha}$.\n\n*Доказательство:* $X$ компактно $\\implies \\exists \\cup_{i = 1}^nU_{\\alpha_i} \\supset X$. $\\forall U_{\\alpha} \\,\\,\\,\\, \\exists O_{\\varepsilon_{\\alpha}} \\subset U_{\\alpha}$, так как $X$ метрическое пространство. Возьмем $r = \\min_{i \\in \\{1, \\ldots, n\\}} O_{\\varepsilon_{\\alpha_i}} \\,\\,\\,\\,\\blacksquare$\n\n",
         "data_type": "lemma",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-3",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-3\">Лемма:</a></strong> (<em>Лебега</em>) Пусть\n<span class=\"math inline\">\\(X\\)</span> компактное метрическое\nпространство. Пусть <span class=\"math inline\">\\(\\{U_{\\alpha}\\}\\)</span>\nоткрытое покрытие <span class=\"math inline\">\\(X\\)</span>. Тогда <span\nclass=\"math inline\">\\(\\exists r &gt; 0\\)</span>, такое что любой\nоткрытый шар радиуса <span class=\"math inline\">\\(r\\)</span> целиком\nлежит в одном из <span class=\"math inline\">\\(U_{\\alpha}\\)</span>.</p>\n<p><em>Доказательство:</em></p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-3\">Лемма:</a></strong> (<em>Лебега</em>) Пусть\n<span class=\"math inline\">\\(X\\)</span> компактное метрическое\nпространство. Пусть <span class=\"math inline\">\\(\\{U_{\\alpha}\\}\\)</span>\nоткрытое покрытие <span class=\"math inline\">\\(X\\)</span>. Тогда <span\nclass=\"math inline\">\\(\\exists r &gt; 0\\)</span>, такое что любой\nоткрытый шар радиуса <span class=\"math inline\">\\(r\\)</span> целиком\nлежит в одном из <span class=\"math inline\">\\(U_{\\alpha}\\)</span>.</p>\n<p><em>Доказательство:</em> <span class=\"math inline\">\\(X\\)</span>\nкомпактно <span class=\"math inline\">\\(\\implies \\exists \\cup_{i =\n1}^nU_{\\alpha_i} \\supset X\\)</span>. <span class=\"math inline\">\\(\\forall\nU_{\\alpha} \\,\\,\\,\\, \\exists O_{\\varepsilon_{\\alpha}} \\subset\nU_{\\alpha}\\)</span>, так как <span class=\"math inline\">\\(X\\)</span>\nметрическое пространство. Возьмем <span class=\"math inline\">\\(r =\n\\min_{i \\in \\{1, \\ldots, n\\}} O_{\\varepsilon_{\\alpha_i}}\n\\,\\,\\,\\,\\blacksquare\\)</span></p>",
         "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-3\">Лемма:</a></strong> (<em>Лебега</em>) Пусть\n<span class=\"math inline\">\\(X\\)</span> компактное метрическое\nпространство. Пусть <span class=\"math inline\">\\(\\{U_{\\alpha}\\}\\)</span>\nоткрытое покрытие <span class=\"math inline\">\\(X\\)</span>. Тогда <span\nclass=\"math inline\">\\(\\exists r &gt; 0\\)</span>, такое что любой\nоткрытый шар радиуса <span class=\"math inline\">\\(r\\)</span> целиком\nлежит в одном из <span class=\"math inline\">\\(U_{\\alpha}\\)</span>.</p>",
-        "proof_html": "<p></p>"
+        "proof_html": "<p> <span class=\"math inline\">\\(X\\)</span>\nкомпактно <span class=\"math inline\">\\(\\implies \\exists \\cup_{i =\n1}^nU_{\\alpha_i} \\supset X\\)</span>. <span class=\"math inline\">\\(\\forall\nU_{\\alpha} \\,\\,\\,\\, \\exists O_{\\varepsilon_{\\alpha}} \\subset\nU_{\\alpha}\\)</span>, так как <span class=\"math inline\">\\(X\\)</span>\nметрическое пространство. Возьмем <span class=\"math inline\">\\(r =\n\\min_{i \\in \\{1, \\ldots, n\\}} O_{\\varepsilon_{\\alpha_i}}\n\\,\\,\\,\\,\\blacksquare\\)</span></p>"
     },
     {
         "keyword": "доказательство:",
-        "data": "**Лемма:**<a name=\"lemma-4\"></a> Если $X$ обладает $\\operatorname{T1}$, то любая точка $X$ замкнута.\n\n*Доказательство:*\n\n",
+        "data": "**Лемма:**<a name=\"lemma-4\"></a> $X$ обладает $\\operatorname{T_1}\\iff$ любая точка $X$ замкнута.\n\n*Доказательство:*\n\n$\\boxed{\\Longrightarrow}$ Зафиксируем $x_0 \\in X$. Докажем, что $\\{x_0\\}$ - замкнуто. $X$ обладает $\\operatorname{T_1}\\implies \\forall x \\in X \\setminus \\{x_0\\} \\exists U_x \\in \\tau_X: \\,\\,\\,\\, x_0 \\not\\in U_x \\implies X \\setminus \\{x_0\\}$ - открыто $\\implies \\{x_0\\}$ - замкнуто.\n\n$\\boxed{\\Longrightarrow}$ $\\,\\,\\,\\,\\blacksquare$\n\n",
         "data_type": "lemma",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-4",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-4\">Лемма:</a></strong> Если <span\nclass=\"math inline\">\\(X\\)</span> обладает <span\nclass=\"math inline\">\\(\\operatorname{T1}\\)</span>, то любая точка <span\nclass=\"math inline\">\\(X\\)</span> замкнута.</p>\n<p><em>Доказательство:</em></p>",
-        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-4\">Лемма:</a></strong> Если <span\nclass=\"math inline\">\\(X\\)</span> обладает <span\nclass=\"math inline\">\\(\\operatorname{T1}\\)</span>, то любая точка <span\nclass=\"math inline\">\\(X\\)</span> замкнута.</p>",
-        "proof_html": "<p></p>"
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-4\">Лемма:</a></strong> <span\nclass=\"math inline\">\\(X\\)</span> обладает <span\nclass=\"math inline\">\\(\\operatorname{T_1}\\iff\\)</span> любая точка <span\nclass=\"math inline\">\\(X\\)</span> замкнута.</p>\n<p><em>Доказательство:</em></p>\n<p><span class=\"math inline\">\\(\\boxed{\\Longrightarrow}\\)</span>\nЗафиксируем <span class=\"math inline\">\\(x_0 \\in X\\)</span>. Докажем, что\n<span class=\"math inline\">\\(\\{x_0\\}\\)</span> - замкнуто. <span\nclass=\"math inline\">\\(X\\)</span> обладает <span\nclass=\"math inline\">\\(\\operatorname{T_1}\\implies \\forall x \\in X\n\\setminus \\{x_0\\} \\exists U_x \\in \\tau_X: \\,\\,\\,\\, x_0 \\not\\in U_x\n\\implies X \\setminus \\{x_0\\}\\)</span> - открыто <span\nclass=\"math inline\">\\(\\implies \\{x_0\\}\\)</span> - замкнуто.</p>\n<p><span class=\"math inline\">\\(\\boxed{\\Longrightarrow}\\)</span> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-4\">Лемма:</a></strong> <span\nclass=\"math inline\">\\(X\\)</span> обладает <span\nclass=\"math inline\">\\(\\operatorname{T_1}\\iff\\)</span> любая точка <span\nclass=\"math inline\">\\(X\\)</span> замкнута.</p>",
+        "proof_html": "<p></p>\n<p><span class=\"math inline\">\\(\\boxed{\\Longrightarrow}\\)</span>\nЗафиксируем <span class=\"math inline\">\\(x_0 \\in X\\)</span>. Докажем, что\n<span class=\"math inline\">\\(\\{x_0\\}\\)</span> - замкнуто. <span\nclass=\"math inline\">\\(X\\)</span> обладает <span\nclass=\"math inline\">\\(\\operatorname{T_1}\\implies \\forall x \\in X\n\\setminus \\{x_0\\} \\exists U_x \\in \\tau_X: \\,\\,\\,\\, x_0 \\not\\in U_x\n\\implies X \\setminus \\{x_0\\}\\)</span> - открыто <span\nclass=\"math inline\">\\(\\implies \\{x_0\\}\\)</span> - замкнуто.</p>\n<p><span class=\"math inline\">\\(\\boxed{\\Longrightarrow}\\)</span> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
     },
     {
         "keyword": "доказательство:",
-        "data": "**Лемма:**<a name=\"lemma-5\"></a> Компактное подмножество хаусдорфова пространства замкнуто.\n\n*Доказательство:*\n\n",
+        "data": "**Лемма:**<a name=\"lemma-5\"></a> Компактное подмножество $K$ хаусдорфова пространства $X$ замкнуто.\n\n*Доказательство:* Рассмотрим $x_0 \\in X \\setminus K$. $X$ хаусдорфово $\\implies \\forall x \\in K \\exists U_x, U_{x,\\,\\, x_0} \\in \\tau_X: \\,\\,\\,\\, U_x \\cap U_{x,\\,\\, x_0} = \\varnothing$. Рассмотрим открытое покрытие $\\{U_x\\}_{x \\in K}$ множества $K$. $K$ компактно, а следовательно $\\exists \\{U_{x_i}\\}_{i = 1}^n$ конечное покрытие $K$. $x_0 \\in \\cap_{i = 1}^{n}U_{x_0, \\,\\, x_i} \\in \\tau_X$ и $\\left(\\cap_{i = 1}^{n}U_{x_0, \\,\\, x_i}\\right) \\cap K = \\varnothing \\implies X \\setminus K$ - открыто $\\implies K$ - замкнуто $\\,\\,\\,\\,\\blacksquare$\n\n",
         "data_type": "lemma",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-5",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-5\">Лемма:</a></strong> Компактное подмножество\nхаусдорфова пространства замкнуто.</p>\n<p><em>Доказательство:</em></p>",
-        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-5\">Лемма:</a></strong> Компактное подмножество\nхаусдорфова пространства замкнуто.</p>",
-        "proof_html": "<p></p>"
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-5\">Лемма:</a></strong> Компактное подмножество\n<span class=\"math inline\">\\(K\\)</span> хаусдорфова пространства <span\nclass=\"math inline\">\\(X\\)</span> замкнуто.</p>\n<p><em>Доказательство:</em> Рассмотрим <span class=\"math inline\">\\(x_0\n\\in X \\setminus K\\)</span>. <span class=\"math inline\">\\(X\\)</span>\nхаусдорфово <span class=\"math inline\">\\(\\implies \\forall x \\in K \\exists\nU_x, U_{x,\\,\\, x_0} \\in \\tau_X: \\,\\,\\,\\, U_x \\cap U_{x,\\,\\, x_0} =\n\\varnothing\\)</span>. Рассмотрим открытое покрытие <span\nclass=\"math inline\">\\(\\{U_x\\}_{x \\in K}\\)</span> множества <span\nclass=\"math inline\">\\(K\\)</span>. <span class=\"math inline\">\\(K\\)</span>\nкомпактно, а следовательно <span class=\"math inline\">\\(\\exists\n\\{U_{x_i}\\}_{i = 1}^n\\)</span> конечное покрытие <span\nclass=\"math inline\">\\(K\\)</span>. <span class=\"math inline\">\\(x_0 \\in\n\\cap_{i = 1}^{n}U_{x_0, \\,\\, x_i} \\in \\tau_X\\)</span> и <span\nclass=\"math inline\">\\(\\left(\\cap_{i = 1}^{n}U_{x_0, \\,\\, x_i}\\right)\n\\cap K = \\varnothing \\implies X \\setminus K\\)</span> - открыто <span\nclass=\"math inline\">\\(\\implies K\\)</span> - замкнуто <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-5\">Лемма:</a></strong> Компактное подмножество\n<span class=\"math inline\">\\(K\\)</span> хаусдорфова пространства <span\nclass=\"math inline\">\\(X\\)</span> замкнуто.</p>",
+        "proof_html": "<p> Рассмотрим <span class=\"math inline\">\\(x_0\n\\in X \\setminus K\\)</span>. <span class=\"math inline\">\\(X\\)</span>\nхаусдорфово <span class=\"math inline\">\\(\\implies \\forall x \\in K \\exists\nU_x, U_{x,\\,\\, x_0} \\in \\tau_X: \\,\\,\\,\\, U_x \\cap U_{x,\\,\\, x_0} =\n\\varnothing\\)</span>. Рассмотрим открытое покрытие <span\nclass=\"math inline\">\\(\\{U_x\\}_{x \\in K}\\)</span> множества <span\nclass=\"math inline\">\\(K\\)</span>. <span class=\"math inline\">\\(K\\)</span>\nкомпактно, а следовательно <span class=\"math inline\">\\(\\exists\n\\{U_{x_i}\\}_{i = 1}^n\\)</span> конечное покрытие <span\nclass=\"math inline\">\\(K\\)</span>. <span class=\"math inline\">\\(x_0 \\in\n\\cap_{i = 1}^{n}U_{x_0, \\,\\, x_i} \\in \\tau_X\\)</span> и <span\nclass=\"math inline\">\\(\\left(\\cap_{i = 1}^{n}U_{x_0, \\,\\, x_i}\\right)\n\\cap K = \\varnothing \\implies X \\setminus K\\)</span> - открыто <span\nclass=\"math inline\">\\(\\implies K\\)</span> - замкнуто <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
     },
     {
         "keyword": "урысона",
-        "data": "**Лемма:**<a name=\"lemma-6\"></a> (*Урысона*) Пусть $X$ - нормальное пространство, $A, B \\subset X$ замкнуты и $A \\cap B = \\varnothing$. Тогда $\\exists f: X \\to [0, 1]: \\,\\,\\,\\, f_{|A} = 0$ и $f_{|B} = 1$.\n\n*Доказательство:*\n\n",
+        "data": "**Лемма:**<a name=\"lemma-6\"></a> (*Урысона*) Пусть $X$ - нормальное пространство, $A, B \\subset X$ замкнуты и $A \\cap B = \\varnothing$. Тогда $\\exists f: X \\to [0, 1]: \\,\\,\\,\\, f_{|A} = 0, f_{|B} = 1$ и $f$ непрерывна.\n\n*Доказательство:*\n\n",
         "data_type": "lemma",
         "url": "lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-6",
-        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-6\">Лемма:</a></strong> (<em>Урысона</em>)\nПусть <span class=\"math inline\">\\(X\\)</span> - нормальное пространство,\n<span class=\"math inline\">\\(A, B \\subset X\\)</span> замкнуты и <span\nclass=\"math inline\">\\(A \\cap B = \\varnothing\\)</span>. Тогда <span\nclass=\"math inline\">\\(\\exists f: X \\to [0, 1]: \\,\\,\\,\\, f_{|A} =\n0\\)</span> и <span class=\"math inline\">\\(f_{|B} = 1\\)</span>.</p>\n<p><em>Доказательство:</em></p>",
-        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-6\">Лемма:</a></strong> (<em>Урысона</em>)\nПусть <span class=\"math inline\">\\(X\\)</span> - нормальное пространство,\n<span class=\"math inline\">\\(A, B \\subset X\\)</span> замкнуты и <span\nclass=\"math inline\">\\(A \\cap B = \\varnothing\\)</span>. Тогда <span\nclass=\"math inline\">\\(\\exists f: X \\to [0, 1]: \\,\\,\\,\\, f_{|A} =\n0\\)</span> и <span class=\"math inline\">\\(f_{|B} = 1\\)</span>.</p>",
+        "html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-6\">Лемма:</a></strong> (<em>Урысона</em>)\nПусть <span class=\"math inline\">\\(X\\)</span> - нормальное пространство,\n<span class=\"math inline\">\\(A, B \\subset X\\)</span> замкнуты и <span\nclass=\"math inline\">\\(A \\cap B = \\varnothing\\)</span>. Тогда <span\nclass=\"math inline\">\\(\\exists f: X \\to [0, 1]: \\,\\,\\,\\, f_{|A} = 0,\nf_{|B} = 1\\)</span> и <span class=\"math inline\">\\(f\\)</span>\nнепрерывна.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"lection-general-topology-definitions-and-homeomorphism-theorem.html#lemma-6\">Лемма:</a></strong> (<em>Урысона</em>)\nПусть <span class=\"math inline\">\\(X\\)</span> - нормальное пространство,\n<span class=\"math inline\">\\(A, B \\subset X\\)</span> замкнуты и <span\nclass=\"math inline\">\\(A \\cap B = \\varnothing\\)</span>. Тогда <span\nclass=\"math inline\">\\(\\exists f: X \\to [0, 1]: \\,\\,\\,\\, f_{|A} = 0,\nf_{|B} = 1\\)</span> и <span class=\"math inline\">\\(f\\)</span>\nнепрерывна.</p>",
         "proof_html": "<p></p>"
     }
 ]

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#собственные-интегралы-с-параметром"
+id="toc-собственные-интегралы-с-параметром">Собственные интегралы с
+параметром</a>
+<ul>
+<li><a href="#дифференцируемость-интеграла-с-параметром"
+id="toc-дифференцируемость-интеграла-с-параметром">Дифференцируемость
+интеграла с параметром</a></li>
+<li><a href="#интегрирование-интеграла-с-параметром"
+id="toc-интегрирование-интеграла-с-параметром">Интегрирование интеграла
+с параметром</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="собственные-интегралы-с-параметром">Собственные интегралы с
+параметром</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(\forall y \in [a, b] \,\,\,\, \varphi(y) \leqslant
+\psi(y)\)</span>. Пусть <span class="math inline">\(G = \{(x, y):
+\,\,\,\, \varphi(y) \leqslant x \leqslant \psi(y), \,\,\,\, y \in [a,
+b]\}\)</span>. Пусть <span class="math inline">\(f(x, y)\)</span>
+определена на <span class="math inline">\(G\)</span> и <span
+class="math inline">\(\forall y_0 \,\,\,\, f(x, y_0) \in R[\varphi(y_0),
+\psi(y_0)]\)</span>.</p>
+<p>Функция <span class="math inline">\(F(y) =
+\displaystyle\int\limits_{\varphi(y)}^{\psi(y)} f(x, y)dx\)</span> -
+<em>интеграл с параметром</em>.</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> (<em>Непрерывность
+интеграла с параметром непрерывных функций</em>) Если <span
+class="math inline">\(f(x, y) \in C(G), \,\,\,\, \varphi(y), \psi(y) \in
+C[a, b]\)</span>, то <span class="math inline">\(F(y) \in C[a,
+b]\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math display">\[\forall y \in [a, b] \,\,\,\, \left|F(y
++ \Delta y) - F(y)\right| = \left|\displaystyle\int\limits_{\varphi(y +
+\Delta y)}^{\psi(y + \Delta y)} f(x, y)dx -
+\displaystyle\int\limits_{\varphi(y)}^{\psi(y)} f(x,
+y)dx\right|=\]</span> <span class="math display">\[=
+\left|\displaystyle\int\limits_{\varphi(y + \Delta y)}^{\varphi(y)} f(x,
+y + \Delta y)dx + \displaystyle\int\limits_{\psi(y)}^{\psi(y + \Delta
+y)} f(x, y + \Delta y)dx +
+\displaystyle\int\limits_{\varphi(y)}^{\psi(y)} \left(f(x, y + \Delta y)
+- f(x, y)dx\right)\right|\leqslant\]</span> <span
+class="math display">\[\leqslant |\varphi(y + \Delta y) -
+\varphi(y)|\cdot\displaystyle\max_{G}|f(x, y + \Delta y)| + |\psi(y +
+\Delta y) - \psi(y)|\cdot\displaystyle\max_{G}|f(x, y + \Delta
+y)|+\]</span> <span class="math display">\[+ |\varphi(y) -
+\psi(y)|\cdot\displaystyle\max_{G}|f(x, y + \Delta y) - f(x, y)|
+\leqslant 3 \varepsilon \,\,\,\,\blacksquare\]</span></p>
+<h2 id="дифференцируемость-интеграла-с-параметром">Дифференцируемость
+интеграла с параметром</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Пусть <span
+class="math inline">\(\varphi, \psi \in C^{1}[a, b]\)</span>. Пусть
+<span class="math inline">\(f(x, y) \in C(G)\)</span> и <span
+class="math inline">\(f’_y(x, y) \in C(G)\)</span>. Тогда <span
+class="math inline">\(F(y) \in C^{1}[a, b]\)</span> и <span
+class="math inline">\(F’(y) =
+\displaystyle\int\limits_{\varphi(y)}^{\psi(y)} f’_y(x, y)dx +
+f(\psi(y), y)\cdot \psi’(y) - f(\varphi(y), y)\cdot
+\varphi’(y)\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math display">\[\frac1{\Delta y}\left(F(y + \Delta y) -
+F(y)\right)=\]</span> <span class="math display">\[= \frac1{\Delta
+y}\left(\displaystyle\int\limits_{\varphi(y + \Delta y)}^{\varphi(y)}
+f(x, y + \Delta y)dx + \displaystyle\int\limits_{\psi(y)}^{\psi(y +
+\Delta y)} f(x, y + \Delta y)dx +
+\displaystyle\int\limits_{\varphi(y)}^{\psi(y)} \left(f(x, y + \Delta y)
+- f(x, y)dx\right)\right)=\]</span> <span class="math display">\[=
+\frac1{\Delta y}\displaystyle\int\limits_{\varphi(y)}^{\psi(y)}
+\left(f’_y(x, y + \theta\Delta y)\Delta y dx\right) + \frac1{\Delta y}
+(\psi(y + \Delta y) - \psi(y))\cdot f(\xi_1, y + \Delta y) -
+\frac1{\Delta y}(\varphi(y + \Delta y) - \varphi(y))\cdot f(\xi_2, y +
+\Delta y)\]</span></p>
+<p>Последнее верно <a
+href="https://mech-math-msu.github.io/lections/math-analysis/lection-28.03.23#theorem-1">по
+первой теореме о средних для интеграла стилтьеса</a>, далее
+рассматриваем предел при <span class="math inline">\(\Delta y \to
+0\)</span></p>
+<p><span class="math inline">\(F’(y)\)</span> очевидно непрерывна <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="интегрирование-интеграла-с-параметром">Интегрирование интеграла
+с параметром</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-2"></a> Пусть <span
+class="math inline">\(G = [a, b]\times [c, d]\)</span>. Пусть <span
+class="math inline">\(f(x, y) \in C(G)\)</span>. Тогда <span
+class="math inline">\(\displaystyle\int\limits_c^d F(y)dy =
+\displaystyle\int\limits_c^d \left(\displaystyle\int\limits_a^b f(x,
+y)dx\right) dy = \displaystyle\int\limits_a^b
+\left(\displaystyle\int\limits_c^d f(x, y)dy\right) dx\)</span>.</p>
+<p><em>Доказательство:</em> Рассмотрим <span
+class="math inline">\(\varphi(t, y) = \displaystyle\int\limits_a^t f(x,
+y)dx\)</span>. Покажем, что <span class="math inline">\(\varphi(t,
+y)\)</span> непрерывна на <span class="math inline">\(G\)</span>.</p>
+<p><span class="math inline">\(|\varphi(t + \Delta t, y + \Delta y) -
+\varphi(t, y)| = \left|\displaystyle\int\limits_a^{t+\Delta t} f(x, y +
+\Delta y)dx - \displaystyle\int\limits_a^t f(x, y)dx\right|\)</span>
+<strong>?</strong></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

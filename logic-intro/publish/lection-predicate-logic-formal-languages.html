@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Введение в математическую логику</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Введение в математическую логику</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#логические-языки" id="toc-логические-языки">Логические
+языки</a>
+<ul>
+<li><a href="#язык-и-структура" id="toc-язык-и-структура">Язык и
+структура</a></li>
+</ul></li>
+<li><a href="#логика-высказываний-логика-предикатов-нулевого-порядка"
+id="toc-логика-высказываний-логика-предикатов-нулевого-порядка">Логика
+высказываний (Логика предикатов нулевого порядка)</a>
+<ul>
+<li><a href="#формальный-синтаксис-логики-высказываний"
+id="toc-формальный-синтаксис-логики-высказываний">Формальный синтаксис
+логики высказываний</a></li>
+<li><a href="#формальная-семантика-логики-высказываний"
+id="toc-формальная-семантика-логики-высказываний">Формальная семантика
+логики высказываний</a></li>
+</ul></li>
+<li><a href="#логика-предикатов-первого-порядка"
+id="toc-логика-предикатов-первого-порядка">Логика предикатов первого
+порядка</a>
+<ul>
+<li><a href="#синтаксис-логики-первого-порядка"
+id="toc-синтаксис-логики-первого-порядка">Синтаксис логики первого
+порядка</a></li>
+<li><a href="#сигнатура-логики-первого-порядка"
+id="toc-сигнатура-логики-первого-порядка">Сигнатура логики первого
+порядка</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="логические-языки">Логические языки</h1>
+<hr />
+<p>Знак <span class="math inline">\(\rightleftharpoons\)</span>
+обозначает равно по определению.</p>
+<p><strong>Определение:</strong><a name="definition-0"></a></p>
+<p><em>Алфавит</em> – это некоторое множество, его элементы –
+<em>символы</em> или <em>буквы</em>.</p>
+<p><em>Слово</em> в алфавите <span class="math inline">\(\Sigma\)</span>
+– это конечная последовательность символов.</p>
+<p><em>Длина слова</em> – это количество элементов в последовательности
+символов, составляющей слово.</p>
+<p>Слово нулевой длины обозначается <span
+class="math inline">\(\varepsilon\)</span>.</p>
+<p>Если <span class="math inline">\(w_1\)</span> и <span
+class="math inline">\(w_2\)</span> слова в некотором алфавите, то слово
+<span class="math inline">\(w_1w_2\)</span>, полученное приписыванием
+<span class="math inline">\(w_2\)</span> в конец <span
+class="math inline">\(w_1\)</span> – <em>конкатенация слов</em>.</p>
+<p>Если <span class="math inline">\(w\)</span> – слово и <span
+class="math inline">\(n \in \mathbb{N}\)</span>, то <span
+class="math inline">\(x^n\)</span> – это <span
+class="math inline">\(\underbrace{x\ldots x}_{n}\)</span>. <span
+class="math inline">\(x^0 \rightleftharpoons \varepsilon\)</span>.</p>
+<p>Множество всех слов в алфавите <span
+class="math inline">\(\Sigma\)</span> обозначается <span
+class="math inline">\(\Sigma^{*}\)</span>.</p>
+<p>Подмножества <span class="math inline">\(\Sigma^{*}\)</span> –
+<em>словарные множества</em> или <em>языки</em>.</p>
+<h2 id="язык-и-структура">Язык и структура</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-1"></a>
+<em>Формальная теория</em> – это</p>
+<ol type="1">
+<li>Объединение алфавитов (конечных или счетных) – <span
+class="math inline">\(\Sigma\)</span>. <span
+class="math inline">\(\Sigma\)</span> – <em>сигнатура</em>.</li>
+<li>Некоторое подмножество <span class="math inline">\(\operatorname{Fm}
+\subset \Sigma^{*}\)</span>. Элемент <span
+class="math inline">\(\operatorname{Fm}\)</span> –
+<em>формула</em>.</li>
+<li>Подмножество формул <span class="math inline">\(\operatorname{Ax}
+\subset \operatorname{Fm}\)</span>. Элемент <span
+class="math inline">\(\operatorname{Ax}\)</span> –
+<em>аксиома</em>.</li>
+<li>Конечное множество отношений на формулах.</li>
+</ol>
+<p><em>Синтаксис</em> – это отношение, определяющее принадлежность слова
+множеству формул.</p>
+<p><em>Семантика</em> – это отображение <span
+class="math inline">\(\operatorname{Fm} \to ?\)</span>. <a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<h1 id="логика-высказываний-логика-предикатов-нулевого-порядка">Логика
+высказываний (Логика предикатов нулевого порядка)</h1>
+<hr />
+<h2 id="формальный-синтаксис-логики-высказываний">Формальный синтаксис
+логики высказываний</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-5"></a></p>
+<p>Пусть <span class="math inline">\(\operatorname{Var}\)</span> –
+алфавит. Его элементы (символы) – <em>пропозициональные
+переменные</em>.</p>
+<p>Пусть <span class="math inline">\(\operatorname{Prop} = \{\neg, \vee,
+\wedge, \rightarrow, \ldots\}\)</span> – алфавит. Его элементы –
+<em>пропозииональные связки</em>.</p>
+<p>Пусть сигнатура – это <span
+class="math inline">\(\operatorname{Var}\cup \operatorname{Prop} \cup
+\{«(», «)», «,»\}\)</span>.</p>
+<p><em>Формула</em> определяется индуктивно:</p>
+<ol type="1">
+<li><span class="math inline">\(x \in \operatorname{Var}\)</span> –
+<em>формула</em>.</li>
+<li><span class="math inline">\(\neg F\)</span> – <em>формула</em>, если
+<span class="math inline">\(F\)</span> – формула.</li>
+<li><span class="math inline">\(F \vee F’\)</span> – <em>формула</em>,
+если <span class="math inline">\(F\)</span> и <span
+class="math inline">\(F’\)</span> – формулы.</li>
+<li><span class="math inline">\(F \wedge F’\)</span> – <em>формула</em>,
+если <span class="math inline">\(F\)</span> и <span
+class="math inline">\(F’\)</span> – формулы.</li>
+</ol>
+<h2 id="формальная-семантика-логики-высказываний">Формальная семантика
+логики высказываний</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-4"></a></p>
+<p>Пусть <span class="math inline">\(U\)</span> – множество. <span
+class="math inline">\(U\)</span> – <em>универсум</em>.</p>
+<p>Отображение <span class="math inline">\(f: \operatorname{Var} \to
+\mathcal{P}(U)\)</span> – <em>оценка</em>.</p>
+<p><em>Значение</em> <span class="math inline">\(f(A)\)</span> формулы
+<span class="math inline">\(A\)</span> <em>при оценке</em> <span
+class="math inline">\(f\)</span> определеятся индуктивно:</p>
+<ol type="1">
+<li><span class="math inline">\(f(\neg A) = U \setminus
+f(A)\)</span>.</li>
+<li><span class="math inline">\(f(A \vee B) = f(A) \cup
+f(B)\)</span>.</li>
+<li><span class="math inline">\(f(A \wedge B) = f(A)\cap
+f(B)\)</span>.</li>
+</ol>
+<p><strong>Определение:</strong><a name="definition-7"></a> Возьмем
+<span class="math inline">\(U = \{1\}\)</span>. Тогда <span
+class="math inline">\(\mathcal{P}(U) = \{\{1\}, \varnothing\}\)</span>.
+Назовем <span class="math inline">\(\{1\}\)</span> – <em>истина</em>, а
+<span class="math inline">\(\varnothing\)</span> – <em>ложь</em>.</p>
+<p>Формула <em>истинная</em>, если ее значение при оценке – истина.
+Формула <em>ложная</em>, если ее значение при оценке – ложь.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Формула,
+истинная при какой-то оценке переменных, – <em>выполнимая</em>.</p>
+<p>Формула, истинная при любой оценке переменных, – <em>тавтология</em>
+или <em>тождественно истинная</em>.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Формулы
+<em>равносильны</em>, если при каждой оценке переменных их значения
+совпадают.</p>
+<h1 id="логика-предикатов-первого-порядка">Логика предикатов первого
+порядка</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-6"></a> Пусть <span
+class="math inline">\(M \ne \varnothing\)</span>.</p>
+<p><span class="math inline">\(Q \subset M^n\)</span> – <span
+class="math inline">\(n\)</span>-<em>арный предикат на</em>
+(<em>отношение</em>) <span class="math inline">\(M\)</span>.</p>
+<p><span class="math inline">\(f: M^n \to M\)</span> – <span
+class="math inline">\(n\)</span>-<em>арная функция на</em> <span
+class="math inline">\(M\)</span>.</p>
+<h2 id="синтаксис-логики-первого-порядка">Синтаксис логики первого
+порядка</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-8"></a></p>
+<p><span class="math inline">\(\operatorname{Pred}_{\Sigma} \ne
+\varnothing\)</span> – алфавит <em>предикатных символов</em>.</p>
+<p><span class="math inline">\(\operatorname{Func}_{\Sigma}\)</span> –
+алфавит <em>функциональных символов</em>.</p>
+<p><span class="math inline">\(\operatorname{Const}_{\Sigma}\)</span> –
+алфавит <em>констант</em>.</p>
+<p><span class="math inline">\(\operatorname{Var}_{\Sigma}\)</span> –
+алфавит <em>индивидных</em> или <em>предметных переменных</em>.</p>
+<p><em>Сигнатура</em> – это <span class="math inline">\(\Sigma =
+\operatorname{Func}_{\Sigma}\cup
+\operatorname{Pred}_{\Sigma}\cup\operatorname{Const}_{\Sigma}\)</span> и
+<em>функция валентности</em></p>
+<p><span class="math display">\[\operatorname{arity}:
+\operatorname{Func}_{\Sigma} \cup \operatorname{Pred}_{\Sigma} \to
+\mathbb{N} \setminus \{0\},\]</span></p>
+<p>сопоставляющая каждому функциональному и предикатному символу
+количество его аргументов.</p>
+<p><em>Язык сигнатуры</em> – это <span
+class="math inline">\(\operatorname{Var}_{\Sigma}\cup \{\neg, \vee,
+\wedge, \rightarrow, \leftrightarrow, \forall, \exists, «(», «)»,
+«,»\}\)</span></p>
+<p><em>Терм</em> определяется идуктивно:</p>
+<ol type="1">
+<li>Символ переменной или константы – <em>терм</em>.</li>
+<li>Если <span class="math inline">\(f \in \operatorname{Func}_{\Sigma},
+\,\,\,\, \operatorname{arity}(f) = n\)</span> и <span
+class="math inline">\(t_1, \ldots,t_n\)</span> – термы, то <span
+class="math inline">\(f(t_1, \ldots, t_n)\)</span> – <em>терм</em>.</li>
+</ol>
+<p><em>Атомарная формула (атом)</em> – это <span
+class="math inline">\(p(t_1, \ldots, t_n)\)</span>, где <span
+class="math inline">\(p \in \operatorname{Pred}_{\Sigma}, \,\,\,\,
+\operatorname{arity}(p) = n\)</span> и <span class="math inline">\(t_1,
+\ldots,t_n\)</span> – термы.</p>
+<p><em>Формула</em> определяется индуктивно:</p>
+<ol type="1">
+<li>Атом – <em>формула</em>.</li>
+<li>Если <span class="math inline">\(F\)</span> и <span
+class="math inline">\(F’\)</span> – формулы и <span
+class="math inline">\(x \in \operatorname{Var}_{\Sigma}\)</span>, то
+<ul>
+<li><span class="math inline">\(\neg F\)</span> – <em>формула</em>,</li>
+<li><span class="math inline">\(F \vee F’\)</span> –
+<em>формула</em>,</li>
+<li><span class="math inline">\(F \wedge F’\)</span> –
+<em>формула</em>,</li>
+<li><span class="math inline">\(F \rightarrow F’\)</span> –
+<em>формула</em>,</li>
+<li><span class="math inline">\(F \leftrightarrow F’\)</span> –
+<em>формула</em>,</li>
+<li><span class="math inline">\(\forall x F\)</span> –
+<em>формула</em>,</li>
+<li><span class="math inline">\(\exists x F\)</span> –
+<em>формула</em>.</li>
+</ul></li>
+</ol>
+<h2 id="сигнатура-логики-первого-порядка">Сигнатура логики первого
+порядка</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-7"></a> Зафиксируем
+<span class="math inline">\(U \ne \varnothing\)</span>.</p>
+<p>Пусть <span class="math inline">\(\operatorname{I}: c_i \mapsto
+\overline{c}_i \in U\)</span>,</p>
+<p><span class="math inline">\(\operatorname{I}: P^n_i \mapsto
+\overline{P}^n_i \in U, \,\,\,\, \overline{P}^n_i \subset
+U^n\)</span>,</p>
+<p><span class="math inline">\(\operatorname{I}: f^n_i \mapsto
+\overline{f}^n_i \in U, \,\,\,\, \overline{f}^n_i: U^n \to U\)</span>,
+где <span class="math inline">\(c_i \in \operatorname{Const}_{\Sigma},
+\,\,\,\, P^n_i \in \operatorname{Pred}_{\Sigma}\)</span> и <span
+class="math inline">\(\operatorname{arity}(P^n_i) = n\)</span>, <span
+class="math inline">\(f^n_i \in \operatorname{Func}_{\Sigma}\)</span> и
+<span class="math inline">\(\operatorname{arity}(f^n_i) =
+n\)</span>.</p>
+<p><span class="math inline">\(\operatorname{I}\)</span> –
+<em>интерпретация</em> сигнатуры <span
+class="math inline">\(\Sigma\)</span>. <span
+class="math inline">\(U\)</span> – <em>универсум</em> или <em>носитель
+интерпретации</em>.</p>
+<p><em>Алгебраическая структура (модель) сигнатуры</em> <span
+class="math inline">\(A_{\Sigma}\)</span> – это интерпретация и
+универсум.</p>
+<p><strong>Определение:</strong><a name="definition-12"></a> Пусть <span
+class="math inline">\(\varphi\)</span> - формула. В формулах <span
+class="math inline">\((\forall x \varphi)\)</span> и <span
+class="math inline">\((\exists x \varphi) \,\,\,\, \varphi\)</span> -
+это <em>область действия квантора</em>.</p>
+<p>Если <span class="math inline">\(\varphi\)</span> содержит <span
+class="math inline">\(x \in \operatorname{Var}_{\Sigma}\)</span>, то
+<span class="math inline">\(x\)</span> - <em>связанная
+переменная</em>.</p>
+<p>Иначе <span class="math inline">\(x\)</span> - <em>свободная
+переменная</em>.</p>
+<p>Формула <em>замкнутая</em>, если в ней нет свободных переменных.</p>
+<p><strong>Определение:</strong><a name="definition-11"></a></p>
+<p>Отображение <span class="math inline">\(\theta:
+\operatorname{Var}_{\Sigma} \to U\)</span> - <em>оценка переменных</em>
+или <em>контекст</em>.</p>
+<p>Бескванторная формула при заданной оценке переменных - это формула
+логики высказываний и можно определить ее <a
+href="#definition-7">истинность</a>.</p>
+<p>Формула <span class="math inline">\((\exists x \varphi)\)</span>
+истинна, если существует контекст, в котором формула <span
+class="math inline">\(\varphi\)</span> - истинна.</p>
+<p>Формула <span class="math inline">\((\forall x \varphi)\)</span>
+истинна, если <span class="math inline">\(\varphi\)</span> истинна в
+любом контексте.</p>
+<p>Истинность формулы <span class="math inline">\(\varphi\)</span> в
+контексте <span class="math inline">\(\theta\)</span> в алгебраической
+структуре <span class="math inline">\(A_{\Sigma}\)</span> обозначается
+<span class="math inline">\(A_{\Sigma}, \theta \models
+\varphi\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-12"></a> Формула
+<span class="math inline">\(\varphi\)</span> <em>общезначима</em>, если
+<span class="math inline">\(\varphi\)</span> истинна в любой
+алгебраической структуре в любом контексте. Обозначается: <span
+class="math inline">\(\models \varphi\)</span>.</p>
+<p>Формулы <span class="math inline">\(\varphi\)</span> и <span
+class="math inline">\(\psi\)</span> <em>эквивалентны</em>, если <span
+class="math inline">\(\models \varphi \to \psi\)</span> и <span
+class="math inline">\(\models \psi \to \varphi\)</span>.</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>В множество значений, но его тут нет.<a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>
