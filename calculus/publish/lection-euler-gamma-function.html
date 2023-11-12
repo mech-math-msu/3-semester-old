@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#эйлеровы-интегралы" id="toc-эйлеровы-интегралы">Эйлеровы
+интегралы</a>
+<ul>
+<li><a href="#основное-функциональное-тождество-для-гамма-функции"
+id="toc-основное-функциональное-тождество-для-гамма-функции">Основное
+функциональное тождество для гамма-функции</a></li>
+<li><a href="#формула-дополнения-для-гамма-функции"
+id="toc-формула-дополнения-для-гамма-функции">Формула дополнения для
+гамма-функции</a></li>
+<li><a href="#интеграл-эйлера-пуассона"
+id="toc-интеграл-эйлера-пуассона">Интеграл Эйлера-Пуассона</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="эйлеровы-интегралы">Эйлеровы интегралы</h1>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(\Gamma_n(x) = \frac{(n - 1)!\cdot
+n^x}{\displaystyle \prod_{k = 0}^{n - 1}\left(x + k\right)}, \,\,\,\, x
+\not\in \{0, -1, -2, \ldots\}\)</span>.</p>
+<p><span class="math display">\[\exists \displaystyle \lim_{n\to
+\infty}\Gamma_n(x) = \Gamma(x)\]</span></p>
+<p><em>Доказательство:</em></p>
+<p><span class="math display">\[\Gamma_n(x) = \frac{(n - 1)!\cdot
+n^x}{\displaystyle \prod_{k = 0}^{n - 1}\left(x + k\right)} = \frac{1}{x
+\displaystyle \prod_{k = 1}^{n - 1}\left(\frac{x}{k} + 1\right)}\cdot
+\frac{n^x}{(n - 1)^x}\cdot \ldots \cdot \frac{2^x}{1^x} = \frac{1}{x}
+\displaystyle \prod_{i = 1}^{n - 1}\left(\frac{x}{k} +
+1\right)^{-1}\cdot \left(\frac{1}{k} + 1\right)^x
+\,\,\,\,\blacksquare\]</span></p>
+<p><strong>Определение:</strong><a name="definition-0"></a> <span
+class="math inline">\(\Gamma(x)\)</span> – <em>гамма функция
+Эйлера</em>.</p>
+<h2 id="основное-функциональное-тождество-для-гамма-функции">Основное
+функциональное тождество для гамма-функции</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> <span
+class="math display">\[\Gamma(x + 1) = x\Gamma(x)\]</span></p>
+<p><em>Доказательство:</em></p>
+<p><span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> <span
+class="math display">\[\Gamma(n + 1) = n! \cdot \Gamma(1) =
+n!\]</span></p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> При <span
+class="math inline">\(x &gt; 0 \,\,\,\, \Gamma(x) =
+\displaystyle\int\limits_0^{+\infty} t^{x - 1} e^{-t} dt\)</span></p>
+<p><em>Доказательство:</em></p>
+<h2 id="формула-дополнения-для-гамма-функции">Формула дополнения для
+гамма-функции</h2>
+<p><strong>Теорема:</strong><a name="theorem-3"></a> (<em>Формула
+дополнения для гамма-функции</em>) <span
+class="math display">\[\Gamma(x)\cdot \Gamma(1 - x) =
+\frac{\pi}{\sin(\pi x)} \,\,\,\, \forall x \in \mathbb{R} \setminus
+\mathbb{Z}\]</span></p>
+<p><em>Доказательство:</em></p>
+<h2 id="интеграл-эйлера-пуассона">Интеграл Эйлера-Пуассона</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-4"></a> <span
+class="math display">\[\displaystyle\int\limits_{-\infty}^{+\infty}
+e^{-x^2}dx = 2 \displaystyle\int\limits_0^{+\infty} e^{-x^2}dx =
+\displaystyle\int\limits_0^{+\infty} e^{-t}t^{-\frac12}dx =
+\Gamma\left(\frac12\right) = \sqrt{\pi}\]</span></p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>
