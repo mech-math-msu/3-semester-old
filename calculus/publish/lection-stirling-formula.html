@@ -31,6 +31,15 @@
 <ul>
 <li><a href="#формула-стирлинга" id="toc-формула-стирлинга">Формула
 Стирлинга</a></li>
+<li><a href="#бета-функция" id="toc-бета-функция">Бета-функция</a>
+<ul>
+<li><a href="#связь-бета-и-гамма-функций"
+id="toc-связь-бета-и-гамма-функций">Связь бета и гамма-функций</a></li>
+<li><a
+href="#теорема-вейерштрасса-о-приближении-непрерывной-функции-многочленами"
+id="toc-теорема-вейерштрасса-о-приближении-непрерывной-функции-многочленами">Теорема
+Вейерштрасса о приближении непрерывной функции многочленами</a></li>
+</ul></li>
 </ul>
 </nav>
 </details>
@@ -100,6 +109,115 @@ d(x^2)=\]</span> <span class="math display">\[= \sqrt{2\pi n} +
 \sqrt{2\pi n} + 2 - \beta_n =\sqrt{2\pi n}\left(1 + \frac{2 -
 \beta_n}{\sqrt{2\pi n}}\right) = \sqrt{2\pi n}\left(1 +
 \frac{\alpha_n}{\sqrt{n}}\right) \,\,\,\,\blacksquare\]</span></p>
+<h1 id="бета-функция">Бета-функция</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> (<em>второй
+интеграл Эйлера</em>)</p>
+<p><span class="math display">\[B(\alpha, \beta) =
+\displaystyle\int\limits_0^1 t^{\alpha - 1}(1 - t)^{\beta - 1}dt,
+\,\,\,\, \alpha &gt; 0, \,\,\,\, \beta &gt; 0\]</span></p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> <span
+class="math display">\[B(\alpha, \beta) = B(\beta, \alpha)\]</span></p>
+<p><em>Доказательство:</em> <span class="math inline">\(t = 1 - x
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> <span
+class="math display">\[B(\alpha + 1, \beta) = \frac{\alpha}{\alpha +
+\beta}\cdot B(\alpha, \beta)\]</span></p>
+<p><em>Доказательство:</em> по частям</p>
+<h2 id="связь-бета-и-гамма-функций">Связь бета и гамма-функций</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> (<em>связь бета и
+гамма-функций</em>)</p>
+<p><span class="math display">\[B(\alpha, \beta) =
+\frac{\Gamma(\alpha)\cdot \Gamma(\beta)}{\Gamma(\alpha +
+\beta)}\]</span></p>
+<p><em>Доказательство:</em></p>
+<p>Пусть <span class="math inline">\(t = \frac{1}{1 + x} \implies 1 - t
+= \frac{x}{1 + x}\)</span> и <span class="math inline">\(dt =
+-\frac{dx}{1 + x}^2\)</span>.</p>
+<p><span class="math display">\[B(\alpha, \beta) =
+\displaystyle\int\limits_0^1 t^{\alpha - 1}(1 - t)^{\beta - 1}dt =
+\displaystyle\int\limits_0^{+\infty} \frac{x^{\beta - 1}}{(1 +
+x)^{\alpha + \beta}}dx\]</span></p>
+<p>Делаем замену <span class="math inline">\(x = (t + 1)y\)</span> в
+<span class="math inline">\(\Gamma(\alpha + \beta)\)</span>. Получим
+<span class="math inline">\(\Gamma(\alpha + \beta) =
+\displaystyle\int\limits_0^{+\infty} (t + 1)^{\alpha + \beta}\cdot
+y^{\alpha + \beta - 1}e^{-(t + 1)y}dy\)</span>.</p>
+<p><span class="math display">\[B(\alpha, \beta)\cdot \Gamma(\alpha +
+\beta) = \displaystyle\int\limits_0^{+\infty} \frac{x^{\beta - 1}}{(1 +
+x)^{\alpha + \beta}}\Gamma(\alpha + \beta)dx =
+\displaystyle\int\limits_0^{+\infty} \frac{x^{\beta - 1}}{(1 +
+x)^{\alpha + \beta}}\left(\displaystyle\int\limits_0^{+\infty} (t +
+1)^{\alpha + \beta}\cdot y^{\alpha + \beta - 1}e^{-(t +
+1)y}dy\right)dx=\]</span> <span
+class="math display">\[=\displaystyle\int\limits_0^{+\infty} y^{\alpha -
+1}e^{-y}\left(\displaystyle\int\limits_0^{+\infty} (ty)^{\beta -
+1}e^{-ty}d(ty)\right)dy = \Gamma(\beta)\cdot \Gamma(\alpha)
+\,\,\,\,\blacksquare\]</span></p>
+<p>Тут используется теорема о изменении порядка интегралов, а для нее
+необходима неотрицательность и непрерывность, поэтому рассуждения выше
+для <span class="math inline">\(\alpha &gt; 1\)</span> и <span
+class="math inline">\(\beta &gt; 1\)</span>.</p>
+<h2
+id="теорема-вейерштрасса-о-приближении-непрерывной-функции-многочленами">Теорема
+Вейерштрасса о приближении непрерывной функции многочленами</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-3"></a> (<em>Вейерштрасса о
+приближении многочленами</em>) Пусть <span class="math inline">\(f(x)
+\in C[a, b] \,\,\,\, \exists \{P_n(x)\}_{n = 1}, \,\,\,\, P_n\)</span> –
+многочлены, такие что <span class="math inline">\(P_n(x) \overset{[a,
+b]}{\rightrightarrows} f(x)\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p>Без ограничения общности пусть <span class="math inline">\(f(x) \in
+C[0, 1]\)</span> и <span class="math inline">\(f(0) = f(1) = 0\)</span>,
+так как отрезок <span class="math inline">\([a, b]\)</span> можно
+перевести в отрезок <span class="math inline">\([0, 1]\)</span> линейной
+заменой, то есть многочлен останется многочленом. Пусть <span
+class="math inline">\(f(x) \equiv 0, \,\,\,\, x \not\in [0, 1] \implies
+f(x) \in C(\mathbb{R})\)</span>.</p>
+<p>Пусть <span class="math inline">\(\{c_n\}_{n = 1}^{\infty}: \,\,\,\,
+c_n \displaystyle\int\limits_{-1}^1 (1 - x^2)^ndx = 1\)</span>.</p>
+<p><img src="img/sing.png" /></p>
+<p>Оценим <span class="math inline">\(c_n:\)</span> <span
+class="math inline">\(1 = c_n 2 \displaystyle\int\limits_0^1 (1 -
+x^2)^ndx \geqslant 2c_n \displaystyle\int\limits_0^{\frac1{\sqrt{n}}} (1
+- x^2)^n dx \geqslant 2c_n \displaystyle\int\limits_0^{\frac1{\sqrt{n}}}
+(1 - nx^2) dx=\)</span> <span class="math inline">\(= 2 c_n
+\left(\frac1{\sqrt{n}} - \frac{1}{3\sqrt{n}}\right) = \frac43\cdot
+\frac{c_n}{\sqrt{n}} &gt; \frac{c_n}{\sqrt{n}} \implies c_n &lt;
+\sqrt{n}\)</span>. <a href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a></p>
+<p><span class="math display">\[\forall \delta &gt; 0 \,\,\,\, c_n(1-
+x^2)^n \leqslant c_n(1 - \delta^2)^n \overset{n \to \infty}{\to} 0
+\implies c_n(1- x^2)^n \overset{[-1,-\delta]\cup[\delta,
+1]}{\rightrightarrows} 0\]</span></p>
+<p><span class="math display">\[f_n(x) =
+c_n\cdot\displaystyle\int\limits_{-1}^1 f(x + t)(1- t^2)^ndt\]</span>
+<span class="math display">\[|f_n(x) - f(x)| =
+\left|c_n\cdot\displaystyle\int\limits_{-1}^1 f(x + t)(1- t^2)^ndt -
+f(x)c_n\displaystyle\int\limits_{-1}^1 (1 - x^2)^ndx\right|=\]</span>
+<span class="math display">\[= c_n\left|\displaystyle\int\limits_{-1}^1
+(1- t^2)^n (f(x + t) - f(x))\right| \leqslant
+c_n\displaystyle\int\limits_{-1}^{-\delta} (1- t^2)^n |f(x + t) -
+f(x)|dt+\]</span> <span class="math display">\[+
+c_n\displaystyle\int\limits_{\delta}^1 (1- t^2)^n |f(x + t) -
+f(x)|dt+\]</span> <span class="math display">\[+ c_n
+\displaystyle\int\limits_{-\delta}^{\delta} (1- t^2)^n |f(x + t) -
+f(x)|dt \leqslant \varepsilon + 2M\varepsilon \implies\]</span> <span
+class="math display">\[\implies f_n(x) \overset{[0,
+1]}{\rightrightarrows}f(x)\]</span> <span class="math display">\[f_n(x)
+= c_n\cdot \displaystyle\int\limits_x^{1-x} f(x + t)(1-t^2)^ndt
+\overset{\tau = x+t}{=} c_n\cdot \displaystyle\int\limits_0^1 f(\tau)(1
+- (x - \tau)^2)^nd\tau\]</span></p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Это назвается ядро сингулярного разложения.<a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 <a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
 <a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
 <a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>

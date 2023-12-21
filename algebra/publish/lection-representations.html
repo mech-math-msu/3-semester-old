@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+    <script>
+      window.MathJax = {
+  loader: {load: ['[tex]/bbox']},
+  tex: {packages: {'[+]': ['bbox'],
+                    '[+]': ['html']}}
+};
+    </script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#представления" id="toc-представления">Представления</a>
+<ul>
+<li><a href="#примеры-представлений"
+id="toc-примеры-представлений">Примеры представлений</a></li>
+<li><a href="#теорема-машке" id="toc-теорема-машке">Теорема
+Машке</a></li>
+<li><a href="#лемма-шура" id="toc-лемма-шура">Лемма Шура</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="представления">Представления</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> <em>Линейное
+представление группы</em> <span class="math inline">\(G\)</span> <em>над
+полем</em> <span class="math inline">\(F\)</span> – это гомоморфизм
+<span class="math inline">\(G \to GL(V)\)</span>, где <span
+class="math inline">\(V\)</span> – векторное пространство над <span
+class="math inline">\(F\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a>
+<em>Матричное представление группы</em> <span
+class="math inline">\(G\)</span> <em>над полем</em> <span
+class="math inline">\(F\)</span> – это гомоморфизм <span
+class="math inline">\(G \to GL_n(V)\)</span>, где <span
+class="math inline">\(V\)</span> – векторное пространство над <span
+class="math inline">\(F\)</span> размерности <span
+class="math inline">\(n\)</span>.</p>
+<h2 id="примеры-представлений">Примеры представлений</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-2"></a>
+<em>Тривиальное представление</em> – это <span class="math inline">\(G
+\to GL_n(F): g \mapsto E\)</span>, где <span
+class="math inline">\(E\)</span> – единичная матрица.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Пусть <span
+class="math inline">\(V = \langle e_1, \ldots, e_n \rangle\)</span>.
+Представление <span class="math inline">\(\varphi: S_n \to GL(V):
+\varphi(\sigma)(e_i) = e_{\sigma(i)}\)</span> – <em>мономиальное
+представление</em></p>
+<p><strong>Определение:</strong><a name="definition-5"></a>
+Подпространство <span class="math inline">\(U\)</span> векторного
+пространства <span class="math inline">\(V\)</span> <em>инвариантно</em>
+относительно представления <span class="math inline">\(\varphi: G \to
+GL(V)\)</span>, если <span class="math inline">\(\forall g \in G,
+\,\,\,\, \forall u \in U \,\,\,\, \varphi(g)(u) \in U\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-4"></a>
+<em>Подпредстваление</em> – представления <span
+class="math inline">\(\varphi: G \to GL(V)\)</span> – это сужение <span
+class="math inline">\(\varphi\)</span> на инвариантное подпространство
+<span class="math inline">\(U\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-6"></a>
+Представление <span class="math inline">\(\varphi: G \to GL(V)\)</span>
+<em>неприводимо</em>, если существует ровно два инвариантных
+подпространства относительно этого представления, а именно <span
+class="math inline">\(V\)</span> и <span
+class="math inline">\(\{0\}\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Мономиальное
+представление приводимо.</p>
+<p><em>Доказательство:</em></p>
+<p>Рассмотрим инвариантное подпространство <span
+class="math inline">\(\{\displaystyle \sum_{i = 1}^{n}\alpha_i
+e_i|\,\,\,\, \displaystyle \sum_{i = 1}^{n}\alpha_i = 0\}\)</span> или
+<span class="math inline">\(\langle e_1 + e_2 + \ldots + e_n \rangle
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-7"></a> <em>Прямая
+сумма представлений</em> <span class="math inline">\(\varphi: G \to
+GL(V)\)</span> и <span class="math inline">\(\psi: G \to GL(W)\)</span>
+– это представление <span class="math inline">\(\varphi\oplus \psi: G
+\to GL(V\oplus W): (\varphi\oplus \psi(g))(v + w) =
+\varphi(g)(v)+\psi(g)(w)\)</span>.</p>
+<p>В матричной записи: <span class="math inline">\((\varphi\oplus
+\psi(g)) = \left(\begin{array}{cc} \varphi(g) &amp; 0 \\ 0 &amp; \psi(g)
+\end{array}\right)\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-8"></a>
+Представления <span class="math inline">\(\varphi: G \to GL(V)\)</span>
+и <span class="math inline">\(\psi: G \to GL(W)\)</span>
+<em>изоморфны</em>, если существует изоморфизм <span
+class="math inline">\(\alpha\)</span> векторных пространств <span
+class="math inline">\(V\)</span> и <span
+class="math inline">\(W\)</span>, такой что <span
+class="math inline">\(\forall g \in G, \,\,\,\,\forall v \in V \,\,\,\,
+\alpha(\varphi(g)(v)) = \psi(g)\alpha(v)\)</span>. Отображение <span
+class="math inline">\(\alpha\)</span> – <em>изоморфизм
+представлений</em>.</p>
+<p>Если <span class="math inline">\(\alpha\)</span> – гомоморфизм <span
+class="math inline">\(V\)</span> и <span
+class="math inline">\(W\)</span>, то <span
+class="math inline">\(\alpha\)</span> – <em>гомоморфизм
+представлений</em>.</p>
+<p><strong>Упражнение:</strong> Записать определение в матричной
+форме.</p>
+<p><strong>Определение:</strong><a name="definition-10"></a> Пусть <span
+class="math inline">\(\alpha\)</span> – гомоморфизм представлений <span
+class="math inline">\(\varphi: G \to GL(V)\)</span> и <span
+class="math inline">\(\psi: G \to GL(W)\)</span>. <em>Ядро</em> <span
+class="math inline">\(\operatorname{ker} \alpha\)</span> – гомоморфизма
+<span class="math inline">\(\alpha\)</span> – это <span
+class="math inline">\(\{v \in V| \,\,\,\, \alpha(v) =
+\vec{0}\}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-9"></a> Отображение
+<span class="math inline">\(p: V \to V\)</span> – <em>проектор</em>,
+если выполнено одно из условий:</p>
+<ol type="1">
+<li><span class="math inline">\(p^2 = p\)</span>,</li>
+<li><span class="math inline">\(p|_{p(V)} =
+\operatorname{id}\)</span>,</li>
+<li><span class="math inline">\(p = \left(\begin{array}{cccc} 1 &amp; 0
+&amp; \dots &amp; 0\\ 0 &amp; \ddots &amp; 0 &amp; \vdots\\ 0 &amp;
+\dots &amp; 1 &amp; 0\\ 0 &amp; \dots &amp; 0 &amp; 0
+\end{array}\right)\)</span>,</li>
+<li><span class="math inline">\(V = \operatorname{Im}p \oplus
+\operatorname{Ker}p\)</span>.</li>
+</ol>
+<p>Пусть <span class="math inline">\(\operatorname{Im}p = U\)</span> и
+<span class="math inline">\(\operatorname{Ker}p = W\)</span>. Тогда
+<span class="math inline">\(p\)</span> – <em>проектор на</em> <span
+class="math inline">\(U\)</span> <em>вдоль</em> <span
+class="math inline">\(W\)</span>.</p>
+<h2 id="теорема-машке">Теорема Машке</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> (<em>Машке</em>)
+Пусть <span class="math inline">\(G\)</span> – конечная группа и <span
+class="math inline">\(\operatorname{char}F \nmid |G|\)</span>, <span
+class="math inline">\(V\)</span> – векторное пространство над полем
+<span class="math inline">\(F\)</span>. Тогда любое конечномерное
+представление <span class="math inline">\(\varphi: G \to GL(V)\)</span>
+изоморфно прямой сумме неприводимых представлений.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(V \ne U
+\ne \{0\}\)</span> – инвариантное относительно <span
+class="math inline">\(\varphi\)</span> пространство. Если такого
+пространства нет, то теорема доказана.</p>
+<p>Хотим найти инвариантное относительно <span
+class="math inline">\(\varphi\)</span> пространство <span
+class="math inline">\(W\)</span>, такое что <span
+class="math inline">\(V = U \oplus W\)</span>. Если такое
+подпространство существует, то по предположению индукции теорема
+доказана.</p>
+<p>Найдем <span class="math inline">\(W\)</span>. Пусть <span
+class="math inline">\(W\)</span> – это какое-то дополнение <span
+class="math inline">\(U\)</span>.</p>
+<p>Пусть <span class="math inline">\(p\)</span> – проектор на <span
+class="math inline">\(U\)</span> вдоль <span
+class="math inline">\(W\)</span>. Тогда <span
+class="math inline">\(\forall g \in G \,\,\,\, \varphi(g)p
+\varphi(g^{-1})\)</span> – проектор на <span
+class="math inline">\(U\)</span>, так как <span
+class="math inline">\(\forall u \in U \,\,\,\, \varphi(g)p
+\varphi(g)^{-1}(u) = \varphi(g)p(\varphi(g)^{-1}(u)) =
+\varphi(g)(\varphi(g)^{-1}(u)) = u\)</span>.</p>
+<p>Рассмотрим <span class="math inline">\(\pi = \frac1{|G|}
+\displaystyle \sum_{g \in G}\varphi(g)p \varphi(g)^{-1}\)</span>. <span
+class="math inline">\(\forall u \in U \,\,\,\,\frac1{|G|}\displaystyle
+\sum_{g \in G}\varphi(g)p \varphi(g)^{-1}(u) = \frac1{|G|} |G|\cdot u =
+u\)</span>, то есть <span class="math inline">\(\pi\)</span> – проектор
+на <span class="math inline">\(U\)</span>.</p>
+<p>Докажем, что <span class="math inline">\(\pi\)</span> коммутирует с
+<span class="math inline">\(\varphi(g_0) \,\,\,\, \forall g_0 \in
+G\)</span>. <span class="math inline">\(\varphi(g_0)\pi
+\varphi(g_0)^{-1} = \frac1{|G|} \displaystyle \sum_{g \in
+G}\varphi(g_0)\varphi(g)p \varphi(g)^{-1}\varphi(g_0)^{-1} = \frac1{|G|}
+\displaystyle \sum_{g \in G}(\varphi(g_0)\varphi(g))p
+(\varphi(g_0)\varphi(g))^{-1} = \frac1{|G|} \displaystyle \sum_{g’ \in
+G}\varphi(g’)p \varphi(g’)^{-1} = \pi\)</span>.</p>
+<p>То есть <span class="math inline">\(\operatorname{Ker}\pi\)</span> –
+инвариантное относительно <span class="math inline">\(\varphi\)</span>
+пространство. <a href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a></p>
+<p>То есть <span class="math inline">\(V = U \oplus
+\operatorname{Ker}\pi\)</span> и теорема доказана <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="лемма-шура">Лемма Шура</h2>
+<hr />
+<p><strong>Лемма:</strong><a name="lemma-1"></a> Пусть <span
+class="math inline">\(\alpha\)</span> – гомоморфизм представлений <span
+class="math inline">\(\phi: G \to GL(V)\)</span> и <span
+class="math inline">\(\psi: G \to GL(W)\)</span>. Тогда <span
+class="math inline">\(\operatorname{ker}\alpha\)</span> инвариантно
+относительно <span class="math inline">\(\varphi\)</span> и <span
+class="math inline">\(\operatorname{img} \alpha\)</span> инвариантно
+относительно <span class="math inline">\(\psi\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li><span class="math inline">\(\forall g \in G \,\,\,\, \forall v \in
+\operatorname{ker} \alpha \,\,\,\, \alpha(\varphi(g)(v)) =
+\psi(g)(\alpha(v)) = \psi(g)(\vec{0}) = \vec{0} \implies \varphi(g)(v)
+\in \operatorname{ker} \alpha \,\,\,\, \forall g \in G \,\,\,\, \forall
+v \in \operatorname{ker} \alpha\)</span>,</li>
+<li><span class="math inline">\(\forall g \in G \,\,\,\, \forall
+\alpha(v) = w \in \operatorname{img} \alpha \,\,\,\, \psi(g)(\alpha(v))
+= \alpha(\varphi(g)(v)) \in \operatorname{img} \alpha
+\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<p><strong>Лемма:</strong><a name="lemma-0"></a> (<em>Шура</em>) Пусть
+<span class="math inline">\(\alpha\)</span> – гомоморфизм неприводимых
+представлений <span class="math inline">\(\phi: G \to GL(V)\)</span> и
+<span class="math inline">\(\psi: G \to GL(W)\)</span>. Тогда <span
+class="math inline">\(\alpha\)</span> – изоморфизм или тривиальный
+гомоморфизм.</p>
+<p><em>Доказательство:</em></p>
+<p>По предыдущей лемме <span
+class="math inline">\(\operatorname{ker}\alpha\)</span> инвариантное
+подпространство относительно <span
+class="math inline">\(\varphi\)</span> и <span
+class="math inline">\(\operatorname{img} \alpha\)</span> инвариантное
+подпространство относительно <span
+class="math inline">\(\psi\)</span>.</p>
+<p>Так как <span class="math inline">\(\varphi\)</span> и <span
+class="math inline">\(\psi\)</span> неприводимые, <span
+class="math inline">\(\operatorname{ker}\alpha = V\)</span> и в таком
+случае утверждение доказано, так как <span
+class="math inline">\(\alpha\)</span> тривиальный или <span
+class="math inline">\(\operatorname{ker}\alpha = \{\vec{0}\}\)</span>.
+Если <span class="math inline">\(\operatorname{img}\alpha = W\)</span>,
+то <span class="math inline">\(\alpha\)</span> – изоморфизм, а случай
+<span class="math inline">\(\operatorname{img}\alpha =
+\{\vec{0}\}\)</span> невозможен <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> Над <span
+class="math inline">\(\mathbb{C}\)</span> гомоморфизм <span
+class="math inline">\(\alpha\)</span> неприводимых представлений <span
+class="math inline">\(\varphi\)</span> и <span
+class="math inline">\(\psi\)</span> скалярный.</p>
+<p><em>Доказательство:</em> Над <span
+class="math inline">\(\mathbb{C}\)</span> у любого оператора существует
+собственное значение <span class="math inline">\(\lambda\)</span>, а
+следовательно <span class="math inline">\(\operatorname{ker}(\alpha -
+\lambda\operatorname{id}) \ne \{\vec{0}\} \implies\)</span> по лемме
+Шура <span class="math inline">\(\alpha = \lambda\operatorname{id}
+\,\,\,\,\blacksquare\)</span></p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p><span class="math inline">\(v \in \operatorname{Ker}\pi
+\,\,\,\, \pi(\varphi(v)) = \varphi(\pi(v)) = \varphi(0) = 0 \implies
+\varphi(v) \in \operatorname{Ker}\pi\)</span>.<a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

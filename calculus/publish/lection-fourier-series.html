@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#ряды-фурье" id="toc-ряды-фурье">Ряды Фурье</a>
+<ul>
+<li><a href="#минимальное-свойство-коэффицентов-фурье"
+id="toc-минимальное-свойство-коэффицентов-фурье">Минимальное свойство
+коэффицентов Фурье</a>
+<ul>
+<li><a href="#неравенство-бесселя"
+id="toc-неравенство-бесселя">Неравенство Бесселя</a></li>
+</ul></li>
+<li><a href="#рассуждение" id="toc-рассуждение">Рассуждение</a></li>
+<li><a href="#принцип-локализации-римана"
+id="toc-принцип-локализации-римана">Принцип локализации Римана</a></li>
+<li><a href="#достаточное-условие-равномерной-сходимости-ряда-фурье"
+id="toc-достаточное-условие-равномерной-сходимости-ряда-фурье">Достаточное
+условие равномерной сходимости ряда Фурье</a></li>
+<li><a href="#достаточное-условие-дифференцируемости-ряда-фурье"
+id="toc-достаточное-условие-дифференцируемости-ряда-фурье">Достаточное
+условие дифференцируемости ряда Фурье</a></li>
+<li><a href="#интегрирование-ряда-фурье"
+id="toc-интегрирование-ряда-фурье">Интегрирование ряда Фурье</a></li>
+<li><a href="#пример-обязательный" id="toc-пример-обязательный">Пример
+(обязательный)</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="ряды-фурье">Ряды Фурье</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Выражение
+вида <span class="math inline">\(\frac{a_0}2 + \displaystyle \sum_{n =
+1}^{k}(a_n \cos (nx) + b_n\sin(nx))\)</span> – <em>тригонометрический
+многочлен степени</em> <span class="math inline">\(k\)</span>.</p>
+<p><span class="math inline">\(\{1, \{\sin(nx)\}_{n = 1}^{\infty},
+\{\cos(nx)\}_{n = 1}^{\infty}\}\)</span> – <em>тригонометрическая
+система</em>.</p>
+<p><span class="math inline">\(\frac{a_0}2 + \displaystyle \sum_{n =
+1}^{\infty}(a_n\cos(nx) + b_n\sin(nx))\)</span> – <em>тригонометрический
+ряд</em>.</p>
+<p><strong>Лемма:</strong><a name="lemma-0"></a></p>
+<ol type="1">
+<li><span class="math inline">\(\displaystyle\int\limits_{-\pi}^{\pi}
+1^2dx = 2\pi\)</span>,</li>
+<li><span class="math inline">\(\displaystyle\int\limits_{-\pi}^{\pi}
+\sin^2(nx)dx = \pi\)</span>,</li>
+<li><span class="math inline">\(\displaystyle\int\limits_{-\pi}^{\pi}
+\cos^2(nx)dx = \pi\)</span>,</li>
+<li><span class="math inline">\(\displaystyle\int\limits_{-\pi}^{\pi}
+\cos(nx)\cos(mx)dx = 0 \,\,\,\, \forall n \ne m\)</span>,</li>
+<li><span class="math inline">\(\displaystyle\int\limits_{-\pi}^{\pi}
+\sin(nx)\sin(mx)dx = 0 \,\,\,\, \forall n \ne m\)</span>,</li>
+<li><span class="math inline">\(\displaystyle\int\limits_{-\pi}^{\pi}
+\sin(nx)\cos(mx)dx = 0 \,\,\,\, \forall n \ne m\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<blockquote>
+<p>WOW</p>
+</blockquote>
+<ol type="1">
+<li><span class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+<li>формула понижения степени <span class="math inline">\(\cos^2(nx) =
+\frac12(1 + \cos(2nx)) \,\,\,\,\blacksquare\)</span></li>
+<li>см. 2. <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+<li>косинус суммы в произведение <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+<li>см. 4. <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+<li>нечетная по симметричному отрезку <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> <span
+class="math display">\[\frac{a_0}2 + \displaystyle \sum_{n =
+1}^{\infty}(a_n\cos(nx) + b_n\sin(nx)) \overset{[-\pi, \pi]}{\to} S(x)
+\implies \begin{cases}
+    a_n = \frac1{\pi}\displaystyle\int\limits_{-\pi}^{\pi}
+S(x)\cos(nx)dx\\
+    b_n = \frac1{\pi}\displaystyle\int\limits_{-\pi}^{\pi}
+S(x)\sin(nx)dx
+\end{cases}\]</span></p>
+<p><em>Доказательство:</em></p>
+<p>Интегралы <span
+class="math inline">\(\frac1{\pi}\displaystyle\int\limits_{-\pi}^{\pi}
+S(x)\cos(nx)dx\)</span> и <span class="math inline">\(b_n =
+\frac1{\pi}\displaystyle\int\limits_{-\pi}^{\pi} S(x)\sin(nx)dx\)</span>
+существуют, так как <span class="math inline">\(S(x)\)</span>
+непрерывна.</p>
+<p><span class="math display">\[\frac{a_0\cos(kx)}2 + \displaystyle
+\sum_{n = 1}^{\infty}(a_n\cos(nx) + b_n\sin(nx)) \overset{[-\pi,
+\pi]}{\to} S(x)\implies\]</span> <span class="math display">\[\implies
+\frac{a_0}2 + \displaystyle \sum_{n = 1}^{\infty}(a_n\cos(nx)\cos(kx) +
+b_n\sin(nx)\cos(kx)) \overset{[-\pi, \pi]}{\to} S(x)\cos(kx)
+\implies\]</span></p>
+<p><span class="math display">\[\implies
+\frac1{\pi}\displaystyle\int\limits_{-\pi}^{\pi}
+S(x)\cos(nx)dx=\]</span> <span class="math display">\[=
+\frac{a_0}2\frac1{\pi}\displaystyle\int\limits_{-\pi}^{\pi}\cos(kx)dx +
+\displaystyle \sum_{n =
+1}^{\infty}\left(\frac{a_n}{\pi}\displaystyle\int\limits_{-\pi}^{\pi}\cos(nx)\cos(kx)dx
++
+\frac{b_n}{\pi}\displaystyle\int\limits_{-\pi}^{\pi}\sin(nx)\cos(kx)\right)
+= a_k \,\,\,\,\blacksquare\]</span></p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\(\exists
+\displaystyle\int\limits_{-\pi}^{\pi}f(x)dx\)</span> и <span
+class="math inline">\(\exists
+\displaystyle\int\limits_{-\pi}^{\pi}|f(x)|dx\)</span>. Тогда <span
+class="math inline">\(\exists a_n =
+\displaystyle\int\limits_{-\pi}^{\pi}f(x)\cos(nx)\)</span> и <span
+class="math inline">\(\exists b_n =
+\displaystyle\int\limits_{-\pi}^{\pi}f(x)\sin(nx)\)</span>.</p>
+<p><span class="math inline">\(a_n\)</span> и <span
+class="math inline">\(b_n\)</span> – <em>коэффиценты Фурье функции</em>
+<span class="math inline">\(f(x)\)</span>.</p>
+<p><span class="math inline">\(\frac{a_0}2 + \displaystyle \sum_{n =
+1}^{\infty}(a_n\cos(nx) + b_n\sin(nx))\)</span> – <em>ряд Фурье
+функции</em> <span class="math inline">\(f(x)\)</span>.</p>
+<p><strong>Фанфакт:</strong> <span class="math inline">\(\exists
+\displaystyle\int\limits_{-\pi}^{\pi}f^2(x)dx \implies \exists
+\displaystyle\int\limits_{-\pi}^{\pi}|f(x)|dx\)</span></p>
+<p><em>Доказательство:</em></p>
+<p><span class="math inline">\((|f(x)| - 1)^2 \geqslant 0 \implies
+|f(x)| \leqslant \frac{1 + f^2(x)}{2}\)</span></p>
+<p><span class="math inline">\(\exists
+\displaystyle\int\limits_{-\pi}^{\pi}\frac{1 + f^2(x)}{2}dx
+\implies\)</span> по признаку Вейерштрасса <span
+class="math inline">\(\exists
+\displaystyle\int\limits_{-\pi}^{\pi}|f(x)|dx
+\,\,\,\,\blacksquare\)</span></p>
+<h2 id="минимальное-свойство-коэффицентов-фурье">Минимальное свойство
+коэффицентов Фурье</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> (<em>Минимальное
+свойство коэффицентов Фурье</em>) Пусть <span
+class="math inline">\(\exists
+\displaystyle\int\limits_{-\pi}^{\pi}f(x)dx\)</span> и <span
+class="math inline">\(\exists
+\displaystyle\int\limits_{-\pi}^{\pi}f^2(x)dx\)</span>.</p>
+<p><span class="math inline">\(T_n(x) = \frac{A_0}2 + \displaystyle
+\sum_{k = 1}^{n}(A_k \cos(kx) + B_k\sin(kx))\)</span> –
+<em>тригонометрический многочлен степени</em> <span
+class="math inline">\(n\)</span>.</p>
+<p>Пусть <span class="math inline">\(S_n(x)\)</span> – частичная сумма
+ряда Фурье функции <span class="math inline">\(f(x)\)</span>, то есть
+<span class="math inline">\(S_n(x) = \frac{a_0}2 + \displaystyle \sum_{k
+= 1}^{n}(a_k \cos(kx) + a_k\sin(kx))\)</span>.</p>
+<p>Тогда <span
+class="math inline">\(\displaystyle\int\limits_{-\pi}^{\pi} (f(x) -
+S_n(x))^2dx = \displaystyle\min_{T_n: \,\,\,\, \operatorname{deg}T_n
+\leqslant n}\displaystyle\int\limits_{-\pi}^{\pi} (f(x) -
+T_n(x))^2dx\)</span></p>
+<p><em>Доказательство:</em></p>
+<p><span class="math display">\[\displaystyle\int\limits_{-\pi}^{\pi}
+(f(x) - T_n(x))^2dx = \displaystyle\int\limits_{-\pi}^{\pi} (f(x) -
+\frac{A_0}2 - \displaystyle \sum_{k = 1}^{n}(A_k \cos(kx) +
+B_k\sin(kx)))^2dx =\]</span> <span
+class="math display">\[=\displaystyle\int\limits_{-\pi}^{\pi} (f^2(x) +
+\frac{A^2_0}4 - f(x)A_0 + \ldots)dx \leqslant \ldots \leqslant\]</span>
+<span class="math display">\[\leqslant
+\displaystyle\int\limits_{-\pi}^{\pi}f^2(x)dx + \frac{\pi}2\left(A_0^2 -
+a_0^2\right) + \pi \displaystyle \sum_{k = 1}^{n}((A_k - a_k)^2 + (B_k -
+b_k)^2) - \pi \displaystyle \sum_{k = 1}^{n}(a^2_k + b^2_k) -
+\frac{\pi}2 a_0^2\]</span></p>
+<p>Минимум последней функции в нужных точках <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h3 id="неравенство-бесселя">Неравенство Бесселя</h3>
+<hr />
+<p><strong>Следствие:</strong><a name="corollary-0"></a>
+(<em>Неравенство Бесселя</em>) В условиях теоремы <span
+class="math inline">\(\frac{1}{\pi}\displaystyle\int\limits_{-\pi}^{\pi}f^2(x)dx
+\geqslant \displaystyle \sum_{k = 1}^{n}(a^2_k + b^2_k) +
+\frac{a_0^2}2\)</span></p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\frac{1}{\pi}\displaystyle\int\limits_{-\pi}^{\pi}f^2(x)dx
+- \displaystyle \sum_{k = 1}^{n}(a^2_k + b^2_k) - \frac{a_0^2}2
+\geqslant 0\)</span>, так как минимум неотрицательной штуки <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-1"></a> В условиях
+теоремы <span class="math inline">\(a_k \overset{k \to \infty}{\to}
+0\)</span> и <span class="math inline">\(b_k \overset{k \to \infty}{\to}
+0\)</span>.</p>
+<p><em>Доказательство:</em> Ряд сходится, так как <a
+href="#corollary-0">частичные суммы ограничены</a>, а следовательно
+<span class="math inline">\(a^2_k + b^2_k \overset{k \to \infty}{\to} 0
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Лемма:</strong><a name="lemma-1"></a> Пусть <span
+class="math inline">\(f(x)\)</span> <span
+class="math inline">\(2\pi\)</span>-периодическая функция и <span
+class="math inline">\(f(x) \in R[-\pi, \pi]\)</span>. Тогда <span
+class="math inline">\(\forall a \in \mathbb{R}\,\,\,\,
+\displaystyle\int\limits_{-\pi}^{\pi} f(x)dx =
+\displaystyle\int\limits_{a-\pi}^{a+\pi} f(x)dx\)</span>.</p>
+<p><em>Доказательство:</em> Записываем как сумму интегралов <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Функция
+<span class="math inline">\(D_n(t) = \frac12 + \displaystyle \sum_{k =
+1}^{n}\cos(kt)\)</span> – <em>ядро Дирихле</em>.</p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> (<em>Свойства ядра
+Дирихле</em>)</p>
+<ol type="1">
+<li><span class="math inline">\(D_n(x)\)</span> – четная,</li>
+<li><span class="math inline">\(D_n(x)\)</span> – непрерывная на <span
+class="math inline">\(\mathbb{R}\)</span>,</li>
+<li><span class="math inline">\(D_n(x)\)</span> – <span
+class="math inline">\(2\pi\)</span>-периодическая,</li>
+<li><span class="math inline">\(D_n(0) = \frac12 + n\)</span>,</li>
+<li><span
+class="math inline">\(\frac{1}{\pi}\displaystyle\int\limits_{-\pi}^{\pi}
+D_n(x)dx = 1\)</span>,</li>
+<li><span class="math inline">\(D_n(x) = \frac{\sin\left(\left(n +
+\frac12\right)x\right)}{2\sin\left(\frac{x}{2}\right)}\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol start="6" type="1">
+<li>Умножить и разделить на <span
+class="math inline">\(\sin\left(\frac{x}2\right)
+\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<h2 id="рассуждение">Рассуждение</h2>
+<hr />
+<p>Пусть <span class="math inline">\(f(x)\)</span> – <span
+class="math inline">\(2\pi\)</span>-периодическая функция.</p>
+<p><span class="math display">\[S_n(x) = \frac{a_0}2 + \displaystyle
+\sum_{k = 1}^{n}(a_k \cos (kx) + b_k\sin(kx))=\]</span></p>
+<p><span class="math display">\[=\frac12 \cdot
+\frac{1}{\pi}\displaystyle\int\limits_{-\pi}^{\pi} f(t)dt +
+\displaystyle \sum_{k =
+1}^{n}\left(\cos(kx)\frac1{\pi}\displaystyle\int\limits_{-\pi}^{\pi}f(t)\cos(kt)dt
++
+\sin(kx)\frac1{\pi}\displaystyle\int\limits_{-\pi}^{\pi}f(t)\sin(kt)dt\right)=\]</span>
+<span
+class="math display">\[=\frac1{\pi}\displaystyle\int\limits_{-\pi}^{\pi}f(t)\left(\frac12
++ \displaystyle \sum_{k = 1}^{n}(\cos(kx)\cos(kt) +
+\sin(kx)\sin(kt))\right)dt=\]</span> <span
+class="math display">\[=\frac1{\pi}\displaystyle\int\limits_{-\pi}^{\pi}f(t)\left(\frac12
++ \displaystyle \sum_{k = 1}^{n}\cos(k(t - x))\right)dt=\]</span> <span
+class="math display">\[=
+\frac{1}{\pi}\displaystyle\int\limits_{-\pi}^{\pi} f(t)D_n(t -
+x)dt\]</span></p>
+<p>Сделаем замену <span class="math inline">\(\tau = t - x\)</span></p>
+<p>Имеем <span class="math inline">\(S_n(x) =
+\frac{1}{\pi}\displaystyle\int\limits_{-\pi-x}^{\pi - x} f(\tau +
+x)D_n(\tau)d\tau=\)</span> <span class="math display">\[=
+\frac{1}{\pi}\displaystyle\int\limits_{-\pi}^{\pi} f(\tau +
+x)D_n(\tau)d\tau\]</span></p>
+<p>Так как <span class="math inline">\(D_n(x)\)</span> нечетная функция
+при замене <span class="math inline">\(\tau\)</span> на <span
+class="math inline">\(-\tau\)</span> получим</p>
+<p><span class="math display">\[S_n(x) = \frac1{\pi}
+\displaystyle\int\limits_{-\pi}^{\pi} f(\tau -
+x)D_n(\tau)d\tau\]</span></p>
+<p>Сложив последние два равенства, получим:</p>
+<p><span class="math display">\[S_n(x) = \frac12
+\frac1{\pi}\displaystyle\int\limits_{-\pi}^{\pi}(f(\tau + x) + f(\tau -
+x))D_n(\tau)d\tau\]</span></p>
+<p><span class="math inline">\(f(x + \tau) + f(x - \tau)\)</span> –
+четная, поэтому</p>
+<p><span class="math display">\[S_n(x) =
+\frac{1}{\pi}\displaystyle\int\limits_0^{\pi}(f(x + \tau) + f(x -
+\tau))D_n(\tau)d\tau\]</span></p>
+<h2 id="принцип-локализации-римана">Принцип локализации Римана</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-3"></a> (<em>принцип
+локализации Римана</em>)</p>
+<p><span class="math inline">\(\forall x \in [-\pi, \pi] \,\,\,\,
+\exists \displaystyle \lim_{n\to \infty}S_n(x) \iff \forall \pi &gt;
+\delta &gt; 0 \,\,\,\, \exists\displaystyle \lim_{n\to
+\infty}\displaystyle\int\limits_0^{\delta}(f(x + \tau) + f(x -
+\tau))D_n(\tau)d\tau\)</span></p>
+<p><em>Доказательство:</em></p>
+<p><span
+class="math display">\[\displaystyle\int\limits_{\delta}^{\pi}(f(x +
+\tau) + f(x - \tau))D_n(\tau)d\tau =
+\displaystyle\int\limits_{\delta}^{\pi}(f(x + \tau) + f(x -
+\tau))\frac{\sin(n +
+\frac12)\tau}{2\sin\left(\frac{\tau}{2}\right)}d\tau =\]</span></p>
+<p><span class="math display">\[=
+\displaystyle\int\limits_{\delta}^{\pi}(f(x + \tau) + f(x -
+\tau))\frac{1}{2\sin\left(\frac{\tau}{2}\right)}
+(\sin(n\tau)\cos\left(\frac12\tau\right) +
+\cos(n\tau)\sin\left(\frac12\tau\right))d\tau =\]</span></p>
+<p><span class="math display">\[=
+\displaystyle\int\limits_{\delta}^{\pi}\frac{f(x + \tau) + f(x -
+\tau)}{2}(\sin(n\tau)\operatorname{ctg}\left(\frac12\tau\right) +
+\cos(n\tau))d\tau\]</span></p>
+<p>Пусть</p>
+<p><span class="math display">\[g(\tau) = \begin{cases}
+\frac{f(x + \tau) + f(x - \tau)}{2}, \,\,\,\,\tau \in [\delta, \pi]\\
+0, \,\,\,\, \tau \in [0, \delta]    
+\end{cases}\]</span></p>
+<p><span class="math display">\[h(\tau) = \begin{cases}
+\frac{f(x + \tau) + f(x -
+\tau)}{2}\operatorname{ctg}\left(\frac12\tau\right), \,\,\,\,\tau \in
+[\delta, \pi]\\
+0, \,\,\,\, \tau \in [0, \delta]    
+\end{cases}\]</span></p>
+<p>Имеем <span
+class="math inline">\(\displaystyle\int\limits_{\delta}^{\pi}(f(x +
+\tau) + f(x - \tau))D_n(\tau)d\tau =
+\displaystyle\int\limits_{-\pi}^{\pi}g(\tau)\cos(n\tau) d\tau +
+\displaystyle\int\limits_{-\pi}^{\pi}h(\tau)\sin(n\tau) d\tau\)</span>,
+а это коэффиценты рядов Фурье функций <span
+class="math inline">\(g\)</span> и <span
+class="math inline">\(h\)</span>, а следовательно <a
+href="#corollary-1">по лемме</a> стремятся к нулю при <span
+class="math inline">\(n \to \infty\)</span>.</p>
+<p><span class="math display">\[\displaystyle \lim_{n\to
+\infty}\left(\displaystyle\int\limits_0^{\delta}(f(x + \tau) + f(x -
+\tau))D_n(\tau)d\tau + \displaystyle\int\limits_{\delta}^{\pi}(f(x +
+\tau) + f(x - \tau))D_n(\tau)d\tau\right)=\]</span> <span
+class="math display">\[= \displaystyle \lim_{n\to
+\infty}\displaystyle\int\limits_0^{\delta}(f(x + \tau) + f(x -
+\tau))D_n(\tau)d\tau = \displaystyle \lim_{n\to \infty}S_n(x)
+\,\,\,\,\blacksquare\]</span></p>
+<p><strong>Теорема:</strong><a name="theorem-4"></a> (<em>признак
+Дини</em>) Пусть <span class="math inline">\(f(x)\)</span> – <span
+class="math inline">\(2\pi\)</span>-периодическая функция и <span
+class="math inline">\(\exists
+\displaystyle\int\limits_{-\pi}^{\pi}f(x)dx, \,\,\,\, \exists
+\displaystyle\int\limits_{-\pi}^{\pi}f^2(x)dx\)</span>. Пусть <span
+class="math inline">\(x_0 \in [-\pi, \pi]\)</span> и <span
+class="math inline">\(\exists \displaystyle \lim_{h\to 0+}f(x_0 + h) =
+f_{+}(x_0), \,\,\,\,\exists \displaystyle \lim_{h\to 0+}f(x_0 - h) =
+f_{-}(x_0)\)</span>.</p>
+<p>Если <span class="math inline">\(\exists \delta &gt; 0: \,\,\,\,
+\displaystyle\int\limits_0^{\delta}\frac{|f(x_0 + t) + f(x_0 - t) -
+f_{+}(x_0) - f_{-}(x_0)|}{t}dt\)</span>, то <span
+class="math inline">\(\exists \displaystyle \lim_{n\to \infty}S_n(x_0) =
+\frac{f_{+}(x_0) + f_{-}(x_0)}{2}\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><span
+class="math display">\[\exists\displaystyle\int\limits_{0}^{\pi}\frac{|f(x_0
++ t) + f(x_0 - t) - f_{+}(x_0) -
+f_{-}(x_0)|}{2\sin\left(\frac{t}{2}\right)}dt \iff
+\exists\displaystyle\int\limits_{0}^{\pi}\frac{|f(x_0 + t) + f(x_0 - t)
+- f_{+}(x_0) - f_{-}(x_0)|}{t}dt\]</span></p>
+<p><span class="math display">\[\left|S_n(x_0) - \frac{f_{+}(x_0) +
+f_{-}(x_0)}{2}\right|=\]</span> <span class="math display">\[=
+\left|\frac{1}{\pi}\displaystyle\int\limits_{0}^{\pi}(f(x + \tau) + f(x
+- \tau))D_n(\tau)d\tau - \frac{f_{+}(x_0) +
+f_{-}(x_0)}{2\pi}\displaystyle\int\limits_{-\pi}^{\pi}D_n(t)dt\right|=\]</span>
+<span
+class="math display">\[=\left|\frac{1}{\pi}\displaystyle\int\limits_{0}^{\pi}(f(x_0
++ t) + f(x_0 - t) - f_{+}(x_0) - f_{-}(x_0))\frac{\sin(n +
+\frac12)t}{2\sin\left(\frac{t}{2}\right)}dt\right|\]</span></p>
+<p><span
+class="math display">\[\exists\displaystyle\int\limits_{0}^{\pi}\frac{|f(x_0
++ t) + f(x_0 - t) - f_{+}(x_0) -
+f_{-}(x_0)|}{2\sin\left(\frac{t}{2}\right)}dt \implies\]</span> <span
+class="math display">\[\implies\forall \varepsilon &gt; 0 \,\,\,\,
+\exists \delta_{\varepsilon} \in (0, \delta): \,\,\,\,
+\displaystyle\int\limits_{0}^{\delta_{\varepsilon}}\frac{|f(x_0 + t) +
+f(x_0 - t) - f_{+}(x_0) - f_{-}(x_0)|}{2\sin\left(\frac{t}{2}\right)}dt
+&lt; \varepsilon\]</span></p>
+<p>Аналогично доказательству в предыдущей теореме <span
+class="math inline">\(\displaystyle\int\limits_{\delta}^{\pi}(f(x_0 + t)
++ f(x_0 - t) - f_{+}(x_0) - f_{-}(x_0))\frac{\sin(n +
+\frac12)t}{2\sin\left(\frac{t}{2}\right)}dt \overset{n\to \infty}{\to}
+0\)</span></p>
+<p><span class="math display">\[\left|S_n(x_0) - \frac{f_{+}(x_0) +
+f_{-}(x_0)}{2}\right|=\]</span> <span
+class="math display">\[=\displaystyle\int\limits_{0}^{\delta}\left|f(x_0
++ t) + f(x_0 - t) - f_{+}(x_0) - f_{-}(x_0)\right|\left|\frac{\sin(n +
+\frac12)t}{2\sin\left(\frac{t}{2}\right)}\right|dt+\]</span> <span
+class="math display">\[+\displaystyle\int\limits_{\delta}^{\pi}(f(x_0 +
+t) + f(x_0 - t) - f_{+}(x_0) - f_{-}(x_0))\frac{\sin(n +
+\frac12)t}{2\sin\left(\frac{t}{2}\right)}dt \leqslant
+\frac{2\varepsilon}{\pi} \,\,\,\,\blacksquare\]</span></p>
+<p><strong>Следствие:</strong><a name="corollary-2"></a> Пусть <span
+class="math inline">\(f(x)\)</span> гёльдерова в точке <span
+class="math inline">\(x_0\)</span>. Тогда ряд Фурье <span
+class="math inline">\(f(x)\)</span> в точке <span
+class="math inline">\(x_0\)</span> сходится к <span
+class="math inline">\(\frac{f_{+}(x_0) - f_{-}(x_0)}2\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><span
+class="math inline">\(\displaystyle\int\limits_0^{\delta}\frac{|f(x_0 +
+t) + f(x_0 - t) - f_{+}(x_0) - f_{-}(x_0)|}{t}dt \leqslant
+\displaystyle\int\limits_0^{\delta}\frac{|f(x_0 + t) - f_{+}(x_0)| +
+|f(x_0 - t)- f_{-}(x_0)|}{t}dt \leqslant
+2\displaystyle\int\limits_0^{\delta}Cx^{\alpha - 1}dx\)</span> –
+сходится и далее по предыдущей теореме <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
+class="math inline">\(f(x) \in \mathcal{D}\)</span>. Тогда <span
+class="math inline">\(f(x)\)</span> гёльдерова.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2
+id="достаточное-условие-равномерной-сходимости-ряда-фурье">Достаточное
+условие равномерной сходимости ряда Фурье</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-5"></a> (<em>достаточное
+условие равномерной сходимости ряда Фурье</em>) Пусть <span
+class="math inline">\(f(x) \in C[-\pi, \pi], \,\,\,\, f(-\pi) =
+f(\pi)\)</span> и <span class="math inline">\(f(x)\)</span> доопределена
+до <span class="math inline">\(2\pi\)</span>-периодической функции на
+<span class="math inline">\(\mathbb{R}\)</span>. Пусть <span
+class="math inline">\(f’(x)\)</span> существует и непрерывна на <span
+class="math inline">\([-\pi, \pi]\)</span> всюду кроме конечного числа
+точек и там где <span class="math inline">\(f’(x)\)</span> не определена
+существуют пределы справа и слева. Тогда <span
+class="math inline">\(\frac{a_0}2 + \displaystyle \sum_{n =
+1}^{\infty}a_n\cos(nx) + b_n\sin(nx)
+\overset{\mathbb{R}}{\rightrightarrows}\)</span>.</p>
+<p>Пусть <span class="math inline">\(f(x)\)</span> <span
+class="math inline">\(2\pi\)</span>-периодическая, <span
+class="math inline">\(\exists
+\displaystyle\int\limits_{-\pi}^{\pi}f(x)dx, \,\,\,\, \exists
+\displaystyle\int\limits_{-\pi}^{\pi}f^2(x)dx\)</span>. Если <span
+class="math inline">\(f(x) \in \mathcal{D}[-\pi, \pi] \,\,\,\, \exists
+\displaystyle\int\limits_{-\pi}^{\pi}f’(x)dx, \,\,\,\, \exists
+\displaystyle\int\limits_{-\pi}^{\pi} \left(f’(x)\right)^2
+dx\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math inline">\(\exists
+\displaystyle\int\limits_{-\pi}^{\pi} \left(f’(x)\right)^2 dx\)</span>,
+а следовательно <a href="#corollary-1">по следствию</a> ряд <span
+class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}\alpha_n^2 +
+\beta_n^2\)</span>, где <span class="math inline">\(\alpha_n\)</span> и
+<span class="math inline">\(\beta_n\)</span> – коэффиценты Фурье функции
+<span class="math inline">\(f’(x)\)</span>, сходится.</p>
+<p><span class="math display">\[\alpha_n =
+\frac1{\pi}\displaystyle\int\limits_{-\pi}^{\pi} f’(x)\cos(nx)dx =
+\frac1{\pi}f(x)\cos(nx)_{\left|_{-\pi}^{\pi}\right.} +
+\frac1{\pi}n\displaystyle\int\limits_{-\pi}^{\pi} f(x)\sin(nx)dx =
+a_n\cdot n\]</span></p>
+<p><span class="math display">\[\beta_n = \ldots = -b_n\cdot
+n\]</span></p>
+<p><span class="math display">\[\left|a_n\cos(nx) - b_n\sin(nx)\right|
+\leqslant |a_n| + |b_n| = \frac1n\cdot\left(|\alpha_n|+|\beta_n|\right)
+\leqslant \frac1{n^2}\cdot\left(\alpha_n^2 + 2|\alpha_n||\beta_n| +
+\beta_n^2\right) \leqslant \frac2{n^2} + \alpha_n^2 + \beta_n^2
+\implies\]</span></p>
+<p><span class="math inline">\(\implies\)</span> по признаку
+Вейерштрасса ряд сходится <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="достаточное-условие-дифференцируемости-ряда-фурье">Достаточное
+условие дифференцируемости ряда Фурье</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-3"></a> Функция
+<span class="math inline">\(f(x)\)</span> <em>гёльдерова</em>, если
+<span class="math inline">\(\exists \gamma \in (0, 1)\,\,\,\, \exists C
+&gt; 0\,\,\,\, \forall \mathbb{R} \,\,\,\, \forall \Delta x &gt; 0
+\,\,\,\, |f(x + \Delta x) - f(x)| &lt; C\cdot|\Delta
+x|^{\gamma}\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-6"></a> (<em>достаточное
+условие дифференцируемости ряда Фурье</em>) Пусть <span
+class="math inline">\(f(x) \in C[-\pi, \pi], \,\,\,\, f(-\pi) =
+f(\pi)\)</span> и <span class="math inline">\(f(x)\)</span> доопределена
+до <span class="math inline">\(2\pi\)</span>-периодической функции на
+<span class="math inline">\(\mathbb{R}\)</span>. Пусть <span
+class="math inline">\(f’(x)\)</span> гёльдерова.</p>
+<p>Тогда <span class="math inline">\(f’(x) = \displaystyle \sum_{n =
+1}^{\infty}\alpha_n \cos(nx) + \beta_n\sin(nx) = \cos(nx) +
+\beta_n\sin(nx) = \left(\frac{a_0}2 + \displaystyle \sum_{n =
+1}^{\infty}a_n\cos(nx) + b_n\sin(nx)\right)’\)</span> <a
+href="#theorem-5">по предыдущей теореме</a>.</p>
+<p><em>Доказательство:</em> <strong>?</strong> почему гёльдерова
+соответствует условиям теоремы?</p>
+<p>Производная получается без равномерной сходимости формально.</p>
+<h2 id="интегрирование-ряда-фурье">Интегрирование ряда Фурье</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-7"></a> Пусть <span
+class="math inline">\(\exists
+\displaystyle\int\limits_{-\pi}^{\pi}f(x)dx, \,\,\,\, \exists
+\displaystyle\int\limits_{-\pi}^{\pi}f^2(x)dx\)</span>. <span
+class="math inline">\(F(x) = \displaystyle\int\limits_0^x \left(f(t) -
+\frac{a_0}2\right)dt = \frac{A_0}2 + \displaystyle \sum_{n =
+1}^{\infty}-\frac{b_n}n \cos(nx) + \frac{a_n}n \sin(nx)\)</span> и этот
+ряд равномерно сходится.</p>
+<p><em>Доказательство:</em></p>
+<p>Сходится равномерно по Вейерштрассу.</p>
+<p>Запишем коэффиценты Фурье для функции <span
+class="math inline">\(F(x)\)</span>:</p>
+<p><span class="math display">\[A_n = \frac1{\pi}
+\displaystyle\int\limits_{-\pi}^{\pi}\left(\displaystyle\int\limits_0^x
+\left(f(t) - \frac{a_0}2\right)dt\right)\cos(nx) dx = \frac1{\pi n}
+\displaystyle\int\limits_{-\pi}^{\pi}\left(\displaystyle\int\limits_0^x
+\left(f(t) - \frac{a_0}2\right)dt\right)d\sin(nx) =\]</span> <span
+class="math display">\[= -\frac1{\pi n}
+\displaystyle\int\limits_{-\pi}^{\pi}f(x)\sin(nx)dx = -\frac1n
+b_n\]</span></p>
+<p><span class="math display">\[B_n = \frac1n a_n\]</span></p>
+<p>Подставим <span class="math inline">\(0\)</span>: <span
+class="math inline">\(0 = \frac{A_0}2 - \displaystyle \sum_{n =
+1}^{\infty}\frac{b_n}n \,\,\,\,\blacksquare\)</span></p>
+<h2 id="пример-обязательный">Пример (обязательный)</h2>
+<hr />
+<p><span class="math inline">\(f(x) = |x|\)</span> на <span
+class="math inline">\([-\pi, \pi]\)</span>.</p>
+<p>Получить <span class="math inline">\(\displaystyle \sum_{n =
+1}^{\infty}\frac1{n^2} = \frac{\pi^2}6\)</span>.</p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

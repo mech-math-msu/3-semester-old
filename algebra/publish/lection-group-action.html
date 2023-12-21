@@ -232,8 +232,8 @@ class="math inline">\(p\)</span>-<em>подгруппа</em>.</p>
 class="math inline">\(\operatorname{N}(H)\)</span> подгруппы <span
 class="math inline">\(H\)</span> - это <span class="math inline">\(\{g
 \in G| \,\,\,\, gH g^{-1} = H\}\)</span>.</p>
-<p><strong>Утверждение:</strong><a name="statement-3"></a> Нормализатор
-– нормальная подгруппа.</p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Подгруппа
+является нормальной подгруппой в своем нормализаторе.</p>
 <p><em>Доказательство:</em> <span
 class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <p><strong>Теорема:</strong><a name="theorem-3"></a> Пусть <span
@@ -255,8 +255,8 @@ role="doc-noteref"><sup>5</sup></a></li>
 <li>Пусть число силовских <span
 class="math inline">\(p\)</span>-подгрупп – <span
 class="math inline">\(N_p\)</span>. Тогда <span
-class="math inline">\(N_x \equiv 1 \,\,\mod \,\, p\)</span> и <span
-class="math inline">\(m \,\,|\,\, N_p\)</span>.</li>
+class="math inline">\(N_p \equiv 1\mod p\)</span> и <span
+class="math inline">\(N_p \,\,|\,\, m\)</span>.</li>
 </ol>
 <p><em>Доказательство:</em></p>
 <p><span class="math display">\[\boxed{1}\]</span></p>
@@ -308,9 +308,10 @@ class="math inline">\(p\)</span> не делит <span
 class="math inline">\(m\)</span>, а следовательно существует
 одноэлементная орбита <span class="math inline">\(P\circ (g’S)\)</span>,
 то есть <span class="math inline">\(\forall g \in P \,\,\,\, g g’S = g’S
-\iff g’^{-1}g g’S \in S \iff P \subset g’^{-1}S g’\)</span>. Если <span
-class="math inline">\(P\)</span> силовская, то <span
-class="math inline">\(P = g’^{-1}S g’ \,\,\,\,\blacksquare\)</span></p>
+\iff g’^{-1}g g’S \in S \iff g’^{-1}g g’ \in S \iff P \subset
+g’Sg’^{-1}\)</span>. Если <span class="math inline">\(P\)</span>
+силовская, то <span class="math inline">\(P = g’Sg’^{-1}
+\,\,\,\,\blacksquare\)</span></p>
 <p><strong>Следствие:</strong><a name="corollary-0"></a> Силовская <span
 class="math inline">\(p\)</span>-подгруппа <span
 class="math inline">\(S\)</span> нормальна <span
@@ -341,7 +342,7 @@ class="math inline">\(X\)</span>. <span
 class="math inline">\(\operatorname{Fix}(g) = \{x \in X: \,\,\,\, g\circ
 x = x\}\)</span>.</p>
 <p><strong>Определение:</strong><a name="definition-9"></a> <em>Точка
-неподвижна</em>, если ее фиксатор одноэлементен.</p>
+неподвижна</em></p>
 <p><strong>Теорема:</strong><a name="theorem-4"></a> Пусть <span
 class="math inline">\(G\)</span> – конечная группа, <span
 class="math inline">\(X\)</span> - конечное множество и <span
@@ -379,11 +380,14 @@ class="math inline">\(\{gHg^{-1}: \,\,\,\, g \in G\}\)</span>. Орбита
 одна, так как любую подгруппу вида <span
 class="math inline">\(gHg^{-1}\)</span> можем получить сопряжением.
 Рассмотрим <span class="math inline">\(\operatorname{Fix}(g)\)</span>.
-<span class="math inline">\(gHg^{-1} \in \operatorname{Fix}(g) \implies
-\forall g \in G \,\,\,\, |\operatorname{Fix}(g)| \geqslant 1\)</span> и
-по лемме Бернсайда <span class="math inline">\(\frac1{|G|}\displaystyle
-\sum_{g \in G}|\operatorname{Fix}(g)| = 1 \implies
-|\operatorname{Fix}(g)| = 1 \,\,\,\, \forall g \in G\)</span>, но <span
+<span class="math inline">\(gHg^{-1} \in
+\operatorname{Fix}(g’)\)</span>, если <span class="math inline">\(g’ \in
+gHg^{-1}\implies\)</span>, так как предположили, что вся группа
+покрывается, <span class="math inline">\(\forall g \in G \,\,\,\,
+|\operatorname{Fix}(g)| \geqslant 1\)</span> и по лемме Бернсайда <span
+class="math inline">\(\frac1{|G|}\displaystyle \sum_{g \in
+G}|\operatorname{Fix}(g)| = 1 \implies |\operatorname{Fix}(g)| = 1
+\,\,\,\, \forall g \in G\)</span>, но <span
 class="math inline">\(\operatorname{Fix}(e) = \{gHg^{-1}: \,\,\,\, g \in
 G\} \implies \{gHg^{-1}: \,\,\,\, g \in G\} = \{H\} \implies H
 \vartriangleleft G \,\,\,\,\blacksquare\)</span></p>

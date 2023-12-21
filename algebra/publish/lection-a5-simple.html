@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+    <script>
+      window.MathJax = {
+  loader: {load: ['[tex]/bbox']},
+  tex: {packages: {'[+]': ['bbox'],
+                    '[+]': ['html']}}
+};
+    </script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#простота-группы-a_5" id="toc-простота-группы-a_5">Простота
+группы <span class="math inline">\(A_5\)</span></a></li>
+</ul>
+</nav>
+</details>
+<h1 id="простота-группы-a_5">Простота группы <span
+class="math inline">\(A_5\)</span></h1>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> <span
+class="math inline">\(A_n\)</span> – простая группа при <span
+class="math inline">\(n \geqslant 5\)</span>.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(\{e\} \ne
+N \vartriangleleft A_n\)</span>. Хотим доказать, что <span
+class="math inline">\(N = A_n\)</span>. Для этого достаточно показать,
+что <span class="math inline">\(A_n\)</span> содержит тройной цикл, так
+как все тройные циклы сопряжены в <span
+class="math inline">\(A_n\)</span> и порождают <span
+class="math inline">\(A_n\)</span>.</p>
+<p>Рассмотрим <span class="math inline">\(\operatorname{id} = \sigma \in
+N\)</span>.</p>
+<p>Разберем случаи:</p>
+<p><span class="math display">\[\boxed{I}\]</span> Пусть <span
+class="math inline">\(\sigma = (a b c d \ldots) \ldots\)</span>, то есть
+в <span class="math inline">\(\sigma\)</span> нашелся цикл длины <span
+class="math inline">\(4\)</span> или больше.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Если <span
+class="math inline">\(p &lt; q \,\,\,\, q \equiv 1 (\mod p), \,\,\,\, p,
+q\)</span> – простые, то <span class="math inline">\(\exists\)</span>
+неабелева группа порядка <span class="math inline">\(p\cdot
+q\)</span>.</p>
+<p><em>Доказательство:</em> Рассмотрим группу <span
+class="math inline">\(\left{\left(\begin{array}{cc} \alpha &amp; \beta
+\\ 0 &amp; 1 \end{array}\right)| \,\,\,\, \alpha, \beta \in
+\mathbb{Z}_q, \,\,\,\, \alpha^p = 1\right}
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Группы порядка
+<span class="math inline">\(p^2\)</span> абелевы.</p>
+<p><em>Доказательство:</em> Порядок центра группы делит <span
+class="math inline">\(p^2\)</span> и не равен <span
+class="math inline">\(1\)</span> <a
+href="lection-group-action.html#theorem-2">по теореме</a>.</p>
+<p>Пусть <span class="math inline">\(|Z(G)| = p^2 \implies Z(G) = G
+\implies G\)</span> – абелева.</p>
+<p>Пусть <span class="math inline">\(|Z(G)| = p \implies |G/Z(G)| = p
+\implies G/Z(G)\)</span> – циклическая и <span
+class="math inline">\(Z(G)\)</span> – циклическая <span
+class="math inline">\(\implies G/Z(G) = \langle gZ(G)\rangle\)</span> и
+<span class="math inline">\(Z(G) = \langle g’ \rangle\)</span>. <span
+class="math inline">\(Z(G) = g’Z(G) = g^m Z(G) \implies g = g’\)</span>.
+Докажем, что <span class="math inline">\(G = \langle g \rangle\)</span>.
+Рассмотрим <span class="math inline">\(h \in G \,\,\,\, hZ(G) \in G/Z(G)
+\implies hZ(G) = (gZ(G))^l = g^l Z(G) \implies h \in g^l Z(G) \implies h
+= g^l (g’)^k = g^{l + k} \,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

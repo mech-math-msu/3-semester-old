@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+    <script>
+      window.MathJax = {
+  loader: {load: ['[tex]/bbox']},
+  tex: {packages: {'[+]': ['bbox'],
+                    '[+]': ['html']}}
+};
+    </script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#регулярные-представления"
+id="toc-регулярные-представления">Регулярные представления</a>
+<ul>
+<li><a href="#основное-свойство-регулярного-представления"
+id="toc-основное-свойство-регулярного-представления">Основное свойство
+регулярного представления</a></li>
+</ul></li>
+<li><a href="#число-неприводимых-представлений-конечной-группы"
+id="toc-число-неприводимых-представлений-конечной-группы">Число
+неприводимых представлений конечной группы</a></li>
+<li><a href="#представления-абелевых-групп"
+id="toc-представления-абелевых-групп">Представления абелевых
+групп</a></li>
+</ul>
+</nav>
+</details>
+<p><span class="math display">\[\newcommand{\xdownarrow}[1]{%
+  {\left\downarrow\vbox to #1{}\right.\kern-\nulldelimiterspace}
+}\]</span></p>
+<h1 id="регулярные-представления">Регулярные представления</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(G\)</span> – группа и <span
+class="math inline">\(V\)</span> – векторное пространство размерности
+<span class="math inline">\(n = |G|\)</span>. Пусть базис <span
+class="math inline">\(V\)</span> – это <span
+class="math inline">\(\{e_g| \,\,\,\, g \in G\}\)</span>. Представление
+<span class="math inline">\(\rho: G \to GL(V): \rho(g)(e_{g’}) = e_{g
+g’}\)</span> – <em>регулярное</em>.</p>
+<h2 id="основное-свойство-регулярного-представления">Основное свойство
+регулярного представления</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-0"></a> (<em>основное
+свойство регулярного представления</em>) Пусть <span
+class="math inline">\(\rho: G \to GL(V)\)</span> – регулярное
+представление.</p>
+<p>Тогда для любого представления <span class="math inline">\(\varphi: G
+\to GL(W)\)</span> и <span class="math inline">\(\forall w \in W
+\,\,\,\, \exists !\)</span> гомоморфизм <span
+class="math inline">\(\alpha\)</span> представлений <span
+class="math inline">\(\rho\)</span> и <span
+class="math inline">\(\varphi\)</span>, такой что <span
+class="math inline">\(\rho(e_1) = w\)</span>, где <span
+class="math inline">\(e_1\)</span> – вектор базиса, соответствующий
+единице группы.</p>
+<p>Или существует гомоморфизм <span class="math inline">\(\alpha \mapsto
+\alpha(e_1)\)</span> между множеством <span
+class="math inline">\(\operatorname{Hom}(\rho, \varphi)\)</span>
+гомоморфизмов представлений <span class="math inline">\(\rho\)</span> и
+<span class="math inline">\(\varphi: G \to GL(W)\)</span> и <span
+class="math inline">\(W\)</span> и <span class="math inline">\(\dim W =
+\dim \varphi = \dim \operatorname{Hom}(\rho, \varphi)\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<h1 id="число-неприводимых-представлений-конечной-группы">Число
+неприводимых представлений конечной группы</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-1"></a>
+<em>Размерность представления</em> <span class="math inline">\(\varphi:
+G \to GL(V)\)</span> – это размерность векторного пространства <span
+class="math inline">\(V\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(G\)</span> – конечная группа. <span
+class="math inline">\(\rho: G \to GL(V)\)</span> – регулярное
+представление. Тогда каждое неприводимое представление <span
+class="math inline">\(\psi_i\)</span> группы входит в разложение <span
+class="math inline">\(\rho\)</span> в прямую сумму неприводимых <span
+class="math inline">\(\dim \psi\)</span> раз и, как следствие, <span
+class="math inline">\(|G| = \dim \rho = \displaystyle
+\sum(\dim\psi_i)^2\)</span>, где <span
+class="math inline">\(\psi_i\)</span> всевозможные неприводимые
+представления.</p>
+<p><em>Доказательство:</em></p>
+<p>Пусть <span class="math inline">\(\psi\)</span> – неприводимое
+представление.</p>
+<p>По основному свойству регулярного представления <span
+class="math inline">\(\dim \psi = \dim \operatorname{Hom}(\rho, \psi) =
+\dim \operatorname{Hom}(\psi_1\oplus\ldots\oplus\psi_k, \psi) =\)</span>
+<strong>??</strong> <span class="math inline">\(=\oplus\dim
+\operatorname{Hom}(\psi_i, \psi)\)</span>.</p>
+<p><span class="math inline">\(\dim \operatorname{Hom}(\psi_i, \psi) =
+1\)</span> <strong>??</strong>, если <span class="math inline">\(\psi_i
+\simeq \psi\)</span> и по лемме Шура <span class="math inline">\(\dim
+\operatorname{Hom}(\psi_i, \psi) = 0\)</span>, если <span
+class="math inline">\(\psi_i \not\simeq \psi\)</span>.</p>
+<p>То есть <span class="math inline">\(\dim \psi = \displaystyle
+\sum_{\psi_i \simeq \psi} 1 \,\,\,\,\blacksquare\)</span></p>
+<h1 id="представления-абелевых-групп">Представления абелевых групп</h1>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Число
+неприводимых комплексных представлений конечной абелевой группы <span
+class="math inline">\(G\)</span> равно <span
+class="math inline">\(|G|\)</span> и все они одномерны.</p>
+<p><em>Доказательство:</em></p>
+<p>Группа абелева, а значит матрицы операторов коммутируют между собой и
+дальше см. Бунину.</p>
+<p><span class="math inline">\(G = \langle a \rangle_n\times \langle b
+\rangle_m\ldots\)</span></p>
+<p>Пусть <span class="math inline">\(\varepsilon \in \sqrt[n]{1},
+\,\,\,\, \delta \in \sqrt[m]{1}, \ldots\)</span>.</p>
+<p>Построим одномерное преставление группы <span
+class="math inline">\(G\)</span>.</p>
+<p>Пусть <span class="math inline">\(\varphi_{\delta \varepsilon\ldots}:
+G \to \mathbb{C}^{*}: a^kb^l\ldots \mapsto \varepsilon^k \delta^l
+\ldots\)</span>.</p>
+<p>Это представление, для различных корней из единицы такие
+представления неизоморфны <strong>?</strong> и таких представлений <span
+class="math inline">\(n\times m \times\ldots = |G|
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Число
+одномерных представлений конечной группы <span
+class="math inline">\(G\)</span> над <span
+class="math inline">\(\mathbb{C}\)</span> равно индексу коммутанта.</p>
+<p><em>Доказательство:</em> Одномерное представление над <span
+class="math inline">\(\mathbb{C}\)</span> – это гомоморфизм <span
+class="math inline">\(G \to \mathbb{C}^{*}\)</span>.</p>
+<p><span class="math display">\[\begin{array}{cc}
+G &amp; \overset{\varphi}{\longrightarrow} &amp; \mathbb{C}^{*}\\
+\pi \Big\downarrow &amp; \nearrow &amp; \\
+G /[G; G] &amp; &amp;
+\end{array}\]</span></p>
+<p>Эта диаграмма коммутативна, то есть <span
+class="math inline">\(\varphi = \pi\circ \psi\)</span>, где <span
+class="math inline">\(\psi\)</span> некоторое представление <span
+class="math inline">\(G/[G;G]\)</span>, а по предыдущему утверждению
+число представлений <span class="math inline">\(G/[G;G]\)</span> равно
+<span class="math inline">\(|G/[G;G]| \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Число неизоморфных
+неприводимых комплексных представлений конечной группы равно числу
+классов сопряженности этой группы.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\operatorname{Hom}(\rho, \rho)\)</span> – алгебра
+над <span class="math inline">\(\mathbb{C}\)</span> относительно
+композиции. Чегооо, вообще? Кому это очевидно.</p>
+<p>А число классов сопряженности – это размерность центра алгебры. Еще
+очевидней.</p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

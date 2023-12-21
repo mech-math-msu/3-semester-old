@@ -117,10 +117,9 @@ class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <hr />
 <p><strong>Теорема:</strong><a name="theorem-1"></a> (<em>основное
 свойство конечно порожденных абелевых групп</em>) Любая <span
-class="math inline">\(n\)</span>-порожденная абелева группа порядка
-<span class="math inline">\(n\)</span> изомофна некоторой факторгруппе
-<span class="math inline">\(\mathbb{Z}^n\)</span> <a href="#fn1"
-class="footnote-ref" id="fnref1"
+class="math inline">\(n\)</span>-порожденная абелева группа изомофна
+некоторой факторгруппе <span class="math inline">\(\mathbb{Z}^n\)</span>
+<a href="#fn1" class="footnote-ref" id="fnref1"
 role="doc-noteref"><sup>1</sup></a>.</p>
 <p><em>Доказательство:</em> <span class="math inline">\(G =
 \left\langle\{g_1, \ldots, g_n\}\right\rangle\)</span>. <span
@@ -187,13 +186,13 @@ class="math inline">\(g \in pG \implies g = p g’ = p\left(\displaystyle
 порожденной абелевой группы</h2>
 <hr />
 <p><strong>Теорема:</strong><a name="theorem-3"></a> (<em>куча всего про
-подгруппы конечно порожденной абелевой группы</em>)</p>
-<p>Пусть <span class="math inline">\(G\)</span> - конечно порожденная
-абелева группа, <span class="math inline">\(H \subset G\)</span> -
-подгруппа.</p>
+подгруппы свободной конечно порожденной абелевой группы</em>)</p>
+<p>Пусть <span class="math inline">\(G\)</span> – свободная конечно
+порожденная абелева группа, <span class="math inline">\(H \subset
+G\)</span> – ее подгруппа.</p>
 <ol type="1">
-<li><span class="math inline">\(H\)</span> является конечно порожденной
-абелевой группы.</li>
+<li><span class="math inline">\(H\)</span> является свободной конечно
+порожденной абелевой группы.</li>
 <li><span class="math inline">\(\operatorname{rk}H \leqslant
 \operatorname{rk}G\)</span>.</li>
 <li>Пусть <span class="math inline">\(\{e_1, \ldots, e_n\}\)</span>
@@ -207,16 +206,15 @@ class="math inline">\(H\)</span>.</li>
 <span class="math inline">\(e_1, \ldots, e_n\)</span> - базис <span
 class="math inline">\(G\)</span> и <span class="math inline">\(e_1 \in
 H\)</span>. Докажем по индукции по рангу группы <span
-class="math inline">\(G\)</span>. <a
-href="lection-finitely-generated-abelian-groups.html#theorem-1">По
-основному свойству</a> <span class="math inline">\(G /
-&lt;e_1&gt;\)</span> конечно порожденная абелева группа с базисом: <span
-class="math inline">\(e_2 + &lt;e_1&gt;, \ldots, e_n +
-&lt;e_1&gt;\)</span>. По предположению индукции <span
-class="math inline">\(\exists \{f_2 + &lt;e_1&gt;, \ldots, f_n +
-&lt;e_1&gt;\}: \,\,\,\, \exists k_2, \ldots, k_n \in \mathbb{Z}:
-\,\,\,\, \{k_2f_2 + &lt;e_1&gt;, \ldots, k_nf_n + &lt;e_1&gt;\}\)</span>
-- базис <span class="math inline">\(H/&lt;e_1&gt;\)</span>.</p>
+class="math inline">\(G\)</span>. <span class="math inline">\(G /
+\langle e_1 \rangle\)</span> конечно порожденная абелева группа с
+базисом: <span class="math inline">\(e_2 + \langle e_1 \rangle, \ldots,
+e_n + \langle e_1 \rangle\)</span>. По предположению индукции <span
+class="math inline">\(\exists \{f_2 + \langle e_1 \rangle, \ldots, f_n +
+\langle e_1 \rangle\}: \,\,\,\, \exists k_2, \ldots, k_n \in \mathbb{Z}:
+\,\,\,\, \{k_2f_2 + \langle e_1 \rangle, \ldots, k_nf_n + \langle e_1
+\rangle\}\)</span> - базис <span class="math inline">\(H/\langle e_1
+\rangle\)</span>.</p>
 <p>Докажем, что <span class="math inline">\(e_1, f_2, \ldots,
 f_n\)</span> базис <span class="math inline">\(G\)</span>.</p>
 <p><span class="math inline">\(\boxed{\operatorname{II}}\)</span> В
@@ -251,8 +249,8 @@ class="math inline">\(G\)</span> <em>без кручения</em>, если в �
 <p><strong>Утверждение:</strong><a name="statement-1"></a> <span
 class="math inline">\(G / T(G)\)</span> - без кручения.</p>
 <p><em>Доказательство:</em> Пусть <span class="math inline">\(\exists g
-+ T(G): \,\,\,\, k(g + T(G)) = T(G) \implies kg + kT(G) = T(G) \implies
-kg \in T(G) \,\,\,\,\blacksquare\)</span></p>
++ T(G): \,\,\,\, kg + T(G) = T(G) \implies kg \in T(G)
+\,\,\,\,\blacksquare\)</span></p>
 <p><strong>Определение:</strong><a name="definition-4"></a> Пусть <span
 class="math inline">\(p\)</span> - простое. <span
 class="math inline">\(T_p(G) = \{g \in G| \operatorname{ord}g =
@@ -292,7 +290,7 @@ class="math inline">\(\implies G \simeq \mathbb{Z}\oplus\ldots\oplus
 \mathbb{Z}_{p_m^{\alpha_m}} \,\,\,\,\blacksquare\)</span></p>
 <p>Докажем единственность. Возьмем фактор группу <span
 class="math inline">\(G\)</span> по <span
-class="math inline">\(T_(G)\)</span>. Получим <span
+class="math inline">\(T(G)\)</span>. Получим <span
 class="math inline">\(G/T(G)\simeq \mathbb{Z}^m \implies m\)</span>
 определено однозначно.</p>
 <p>Далее рассматриваем группу вида <span class="math inline">\(G \simeq
@@ -305,8 +303,8 @@ class="math inline">\(G/T(G)\simeq \mathbb{Z}^m \implies m\)</span>
 <p><strong>Утверждение:</strong><a name="statement-0"></a> Конечная
 подгруппа мультипликативной группы поля циклическая.</p>
 <p><em>Доказательство:</em> Пусть <span class="math inline">\(H \subset
-\mathbb{F}^{*}\)</span>. <span class="math inline">\(H =
-&lt;a_1&gt;_{k_1}\times\ldots\times &lt;a_n&gt;_{k_n}\)</span> по
+\mathbb{F}^{*}\)</span>. <span class="math inline">\(H = \langle a_1
+\rangle_{k_1}\times\ldots\times \langle a_n \rangle_{k_n}\)</span> по
 предыдущей теореме. <span class="math inline">\(H\)</span> циклическая
 <span class="math inline">\(\iff \gcd\{k_i, k_j\} = 1 \,\,\,\, i \ne
 j\)</span>. <a href="#fn5" class="footnote-ref" id="fnref5"
@@ -315,11 +313,11 @@ class="math inline">\(p \,\,|\,\, k_1\)</span> и <span
 class="math inline">\(p \,\,|\,\, k_2\)</span>. Рассмотрим уравнение
 <span class="math inline">\(x^p = 1\)</span>, оно имеет <span
 class="math inline">\(p\)</span> решений в <span
-class="math inline">\(&lt;a_1&gt;_{k_1}\)</span> <strong>?</strong> и
-<span class="math inline">\(p\)</span> решений в <span
-class="math inline">\(&lt;a_2&gt;_{k_2}\)</span>, но не может иметь
-более <span class="math inline">\(p\)</span> решений в поле <span
-class="math inline">\(\mathbb{F} \implies \blades\)</span></p>
+class="math inline">\(\langle a_1 \rangle_{k_1}\)</span>
+<strong>?</strong> и <span class="math inline">\(p\)</span> решений в
+<span class="math inline">\(\langle a_2 \rangle_{k_2}\)</span>, но не
+может иметь более <span class="math inline">\(p\)</span> решений в поле
+<span class="math inline">\(\mathbb{F} \implies \blades\)</span></p>
 <section id="footnotes" class="footnotes footnotes-end-of-document"
 role="doc-endnotes">
 <hr />

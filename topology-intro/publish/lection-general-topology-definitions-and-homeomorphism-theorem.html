@@ -67,12 +67,11 @@ id="toc-инварианты-топологичеких-пространств-�
 <li><a href="#хаусдорфовость"
 id="toc-хаусдорфовость">Хаусдорфовость</a></li>
 </ul></li>
+<li><a href="#урысоновость" id="toc-урысоновость">Урысоновость</a></li>
 </ul></li>
-<li><a href="#переходим-в-какой-то-матан"
-id="toc-переходим-в-какой-то-матан">Переходим в какой-то матан</a></li>
-<li><a href="#все-стало-еще-хуже-пришла-алгебра"
-id="toc-все-стало-еще-хуже-пришла-алгебра">Все стало еще хуже: пришла
-алгебра</a></li>
+<li><a href="#теорема-стоуна-вейерштрасса"
+id="toc-теорема-стоуна-вейерштрасса">Теорема
+Стоуна-Вейерштрасса</a></li>
 </ul>
 </nav>
 </details>
@@ -678,7 +677,7 @@ class="math inline">\(\left(\cap_{i = 1}^{n}U_{x_0, \,\, x_i}\right)
 \cap K = \varnothing \implies X \setminus K\)</span> - открыто <span
 class="math inline">\(\implies K\)</span> - замкнуто <span
 class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
-<h1 id="переходим-в-какой-то-матан">Переходим в какой-то матан</h1>
+<h2 id="урысоновость">Урысоновость</h2>
 <hr />
 <p><strong>Лемма:</strong><a name="lemma-6"></a> (<em>Урысона</em>)
 Пусть <span class="math inline">\(X\)</span> - нормальное пространство,
@@ -687,7 +686,28 @@ class="math inline">\(A \cap B = \varnothing\)</span>. Тогда <span
 class="math inline">\(\exists f: X \to [0, 1]: \,\,\,\, f_{|A} = 0,
 f_{|B} = 1\)</span> и <span class="math inline">\(f\)</span>
 непрерывна.</p>
-<p><em>Доказательство:</em></p>
+<p><em>Доказательство:</em> Рассмотрим множество <span
+class="math inline">\(\Lambda = \{\frac{k}{2^n}, \,\,\,\, k, n \in
+\mathbb{N}\cup \{0\}, \,\,\,\, k \leqslant 2^n\}\)</span>. Докажем, что
+существуют такие открытые подмножества <span
+class="math inline">\(\{U_{\alpha}\}_{\alpha \in \Lambda}\)</span>, что
+<span class="math inline">\(A \subset U_0\)</span> и <span
+class="math inline">\(B \subset X \setminus U_1\)</span> и <span
+class="math inline">\(\operatorname{Cl}U_{\alpha} \subset U_{\beta},
+\,\,\,\, \forall \alpha &lt; \beta\)</span>.</p>
+<p><img src="publish/img/uryson.png" /></p>
+<p>Пусть <span class="math inline">\(U_1 = X \setminus B\)</span>.
+Тогда, так как пространство нормально <span
+class="math inline">\(\exists U_0 \supset A: \,\,\,\,
+\operatorname{Cl}U_0 \cap B = \varnothing \implies \exists U_{\frac12}
+\supset \operatorname{Cl}U_0: \,\,\,\, \operatorname{Cl}U_{\frac12} \cap
+B = \varnothing\)</span>.</p>
+<p>Пусть <span class="math inline">\(f(x) = \inf\{\alpha \in \Lambda:
+\,\,\,\, x \in \operatorname{Cl}U_{\alpha}\}\)</span>.</p>
+<p><span class="math inline">\(f_{|A} = 0\)</span> и <span
+class="math inline">\(f_{|B} = 1\)</span>. Докажем, что <span
+class="math inline">\(f\)</span> непрерывно. <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <p><strong>Определение:</strong><a name="definition-29"></a> Норма
 функции <span class="math inline">\(f: X \to \mathbb{R}\)</span>
 ограниченной на <span class="math inline">\(\mathbb{R}\)</span> - это
@@ -702,9 +722,11 @@ class="math inline">\(F: X \to \mathbb{R}\)</span>, такая, что <span
 class="math inline">\(F_{|A} = f\)</span>. Если <span
 class="math inline">\(||f|| \leqslant 1\)</span>, то <span
 class="math inline">\(||F|| \leqslant 1\)</span>.</p>
-<p><em>Доказательство:</em></p>
-<h1 id="все-стало-еще-хуже-пришла-алгебра">Все стало еще хуже: пришла
-алгебра</h1>
+<p><em>Доказательство:</em> Достаточно доказать, для <span
+class="math inline">\(f: A \to [-1, 1]\)</span>, так как <span
+class="math inline">\(\tan: [-1, 1] \to \mathbb{R}\)</span> –
+непрерывен.</p>
+<h1 id="теорема-стоуна-вейерштрасса">Теорема Стоуна-Вейерштрасса</h1>
 <hr />
 <p><strong>Определение:</strong><a name="definition-30"></a> Набор
 функций <span class="math inline">\(A \subset C(X)\)</span><a
@@ -744,5 +766,6 @@ href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
 <a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
 <script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

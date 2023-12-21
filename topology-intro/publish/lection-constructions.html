@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Введение в топологию</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Введение в топологию</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#еще-способы-получить-новую-топологию-из-уже-имеющихся"
+id="toc-еще-способы-получить-новую-топологию-из-уже-имеющихся">Еще
+способы получить новую топологию из уже имеющихся</a>
+<ul>
+<li><a href="#топология-произведения"
+id="toc-топология-произведения">Топология произведения</a></li>
+<li><a href="#фактор-топология"
+id="toc-фактор-топология">Фактор-топология</a>
+<ul>
+<li><a href="#стягивание-подпространства-в-точку"
+id="toc-стягивание-подпространства-в-точку">Стягивание подпространства в
+точку</a></li>
+<li><a href="#пространство-с-отмеченной-точкой"
+id="toc-пространство-с-отмеченной-точкой">Пространство с отмеченной
+точкой</a></li>
+</ul></li>
+<li><a href="#цилиндр-и-конус" id="toc-цилиндр-и-конус">Цилиндр и
+конус</a></li>
+<li><a
+href="#компактно-открытая-топология-на-пространстве-непрерывных-отображений"
+id="toc-компактно-открытая-топология-на-пространстве-непрерывных-отображений">Компактно-открытая
+топология на пространстве непрерывных отображений</a></li>
+</ul></li>
+<li><a href="#гомотопии" id="toc-гомотопии">Гомотопии</a></li>
+<li><a href="#ретракции" id="toc-ретракции">Ретракции</a>
+<ul>
+<li><a
+href="#свойство-продолжения-гомотопии-homotopy-extension-property"
+id="toc-свойство-продолжения-гомотопии-homotopy-extension-property">Свойство
+продолжения гомотопии (homotopy extension property)</a></li>
+<li><a href="#первый-признак-гомотопической-эквивалентности-пространств"
+id="toc-первый-признак-гомотопической-эквивалентности-пространств">Первый
+признак гомотопической эквивалентности пространств</a></li>
+<li><a href="#второй-признак-гомотопической-эквивалентности-пространств"
+id="toc-второй-признак-гомотопической-эквивалентности-пространств">Второй
+признак гомотопической эквивалентности пространств</a></li>
+</ul></li>
+<li><a href="#пути" id="toc-пути">Пути</a></li>
+<li><a href="#фундаментальная-группа"
+id="toc-фундаментальная-группа">Фундаментальная группа</a>
+<ul>
+<li><a href="#ассоциативность-умножения-гомотопных-классов-путей"
+id="toc-ассоциативность-умножения-гомотопных-классов-путей">Ассоциативность
+умножения гомотопных классов путей</a></li>
+<li><a
+href="#наличие-единицы-при-умножении-гомотопических-классов-путей"
+id="toc-наличие-единицы-при-умножении-гомотопических-классов-путей">Наличие
+единицы при умножении гомотопических классов путей</a></li>
+<li><a
+href="#существование-обратного-элемента-при-умножении-гомотопных-классов-путей"
+id="toc-существование-обратного-элемента-при-умножении-гомотопных-классов-путей">Существование
+обратного элемента при умножении гомотопных классов путей</a></li>
+<li><a href="#собственно-фундаментальная-группа"
+id="toc-собственно-фундаментальная-группа">Собственно фундаментальная
+группа</a>
+<ul>
+<li><a href="#самый-простой-пример-фундаментальной-группы"
+id="toc-самый-простой-пример-фундаментальной-группы">Самый простой
+пример фундаментальной группы</a></li>
+</ul></li>
+<li><a href="#фанфакт-что-такое-алгебраическая-топология"
+id="toc-фанфакт-что-такое-алгебраическая-топология">Фанфакт: что такое
+алгебраическая топология?</a></li>
+<li><a href="#гомоморфизм-фундаментальных-групп"
+id="toc-гомоморфизм-фундаментальных-групп">Гомоморфизм фундаментальных
+групп</a></li>
+<li><a href="#зачем-нужны-отмеченные-точки"
+id="toc-зачем-нужны-отмеченные-точки">Зачем нужны отмеченные
+точки?</a></li>
+<li><a
+href="#изоморфизм-фундаментальных-групп-гомотопически-эквивалентных-пространств"
+id="toc-изоморфизм-фундаментальных-групп-гомотопически-эквивалентных-пространств">Изоморфизм
+фундаментальных групп гомотопически эквивалентных пространств</a></li>
+<li><a href="#фундаментальная-группа-окружности"
+id="toc-фундаментальная-группа-окружности">Фундаментальная группа
+окружности</a></li>
+<li><a href="#теорема-о-неподвижной-точке-брауэра"
+id="toc-теорема-о-неподвижной-точке-брауэра">Теорема о неподвижной точке
+(Брауэра)</a></li>
+<li><a href="#основная-теорема-алгебры"
+id="toc-основная-теорема-алгебры">Основная теорема алгебры</a></li>
+</ul></li>
+<li><a href="#свободное-произведение-и-теорема-ван-кампена"
+id="toc-свободное-произведение-и-теорема-ван-кампена">Свободное
+произведение и теорема ван Кампена</a></li>
+<li><a href="#накрытия" id="toc-накрытия">Накрытия</a>
+<ul>
+<li><a
+href="#пример-линейно-связного-но-не-локально-линейно-свзного-пространства"
+id="toc-пример-линейно-связного-но-не-локально-линейно-свзного-пространства">Пример
+линейно связного, но не локально линейно свзного пространства</a></li>
+<li><a href="#примеры-накрытий" id="toc-примеры-накрытий">Примеры
+накрытий</a></li>
+<li><a href="#универсальные-накрытия"
+id="toc-универсальные-накрытия">Универсальные накрытия</a>
+<ul>
+<li><a href="#пример" id="toc-пример">Пример</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<p><span
+class="math inline">\(\newcommand\blades{\,\,\,\,\style{display:
+inline-block; transform:
+rotate(135deg)}{\Large{\dagger}}\kern-7pt\style{display: inline-block;
+transform: rotate(225deg)}{\Large{\dagger}}}\)</span></p>
+<h1 id="еще-способы-получить-новую-топологию-из-уже-имеющихся">Еще
+способы получить новую топологию из уже имеющихся</h1>
+<hr />
+<h2 id="топология-произведения">Топология произведения</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\((X, \tau_X)\)</span> и <span
+class="math inline">\((Y, \tau_Y)\)</span> – топологические
+пространства. <em>Топология произведения</em> <span
+class="math inline">\(X\times Y\)</span> - это топология, порожденная
+базой <span class="math inline">\(\{U\times V: \,\,\,\, U \in \tau_X,
+\,\,\,\, V \in \tau_Y\}\)</span> на декартовом произведении <span
+class="math inline">\(X\times Y\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Предбаза
+топологии произведения <span class="math inline">\(X\times Y\)</span> -
+это <span class="math inline">\(\{U\times Y| \,\,\,\,U \in \tau_X\}\cup
+\{X\times V|\,\,\,\, V \in \tau_Y\}\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\(X\times Y\)</span> – топология произведения.</p>
+<p>Отображение <span class="math inline">\(\pi_X: X \times Y \to X,
+\,\,\,\, \pi_X: (x, y) \mapsto x\)</span> – <em>проекция на</em> <span
+class="math inline">\(X\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Проекции
+<span class="math inline">\(\pi_X\)</span> и <span
+class="math inline">\(\pi_Y\)</span> непрерывны, как отображения <span
+class="math inline">\(X\times Y \to X\)</span> и <span
+class="math inline">\(X\times Y \to Y\)</span> соответственно.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Топология
+произведения – это топология с наименьшим количеством открытых множеств,
+относительно которой отображения проекции непрерывны.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-5"></a>
+(<em>универсальность произведения</em>) <span
+class="math inline">\(\varphi: Z \to X\times Y\)</span> непрерывно <span
+class="math inline">\(\iff\)</span> непрерывны композиции <span
+class="math inline">\(\varphi \circ \pi_X\)</span> и <span
+class="math inline">\(\varphi\circ \pi_Y\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math inline">\(\boxed{\Longrightarrow}\)</span>
+Композиция непрерывных отображений непрерывна.</p>
+<p><span class="math inline">\(\boxed{\Longleftarrow}\)</span> Прообраз
+открытого множества из базы открыт <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Пусть <span
+class="math inline">\(X\)</span> – топологическое пространство.
+Отображение <span class="math inline">\(x \mapsto (x, x) \in X\times
+X\)</span> – <em>диагональное отображение</em>. Образ <span
+class="math inline">\(X\)</span> при диагональном отображении –
+<em>диагональ</em>. Обозначается: <span
+class="math inline">\(\triangle\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a> <span
+class="math inline">\(X\)</span> – хаусдорфово <span
+class="math inline">\(\iff \triangle\)</span> – замкнуто.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math inline">\((x, y) \in (X \times X) \setminus
+\triangle \iff x \ne y \iff \exists U_x, U_y \in \tau_X: \,\,\,\, U_x
+\cap U_y = \varnothing \iff U_x \times U_y \subset (X \times X)
+\setminus \triangle \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Пусть <span
+class="math inline">\(X\)</span> и <span
+class="math inline">\(Y\)</span> компактны. Тогда <span
+class="math inline">\(X\times Y\)</span> компактно.</p>
+<p><em>Доказательство:</em> Достаточно проверить на базе. Пусть <span
+class="math inline">\(\{U_{\alpha}\times V_{\alpha}: \,\,\,\, U_{\alpha}
+\in \tau_X,\,\,\,\, V_{\alpha} \in \tau_Y \}_{\alpha \in
+\Lambda}\)</span>. Зафиксируем <span class="math inline">\(x\)</span> и,
+в силу компактности <span class="math inline">\(Y\)</span>, выберем
+конечное подпокрытие <span class="math inline">\(\{U^x_{\alpha_i}\times
+V^x_{\alpha_i}\}_{i = 1}^n\)</span>. Пусть <span
+class="math inline">\(W^x = \cap_{i = 1}^n U^x_{\alpha_i}\)</span></p>
+<h2 id="фактор-топология">Фактор-топология</h2>
+<hr />
+<blockquote>
+<p>И как мы до сюда добрались без этого?</p>
+</blockquote>
+<p><strong>Определение:</strong><a name="definition-3"></a> Пусть на
+<span class="math inline">\(X\)</span> задано отношение эквивалентности
+– <span class="math inline">\(\sim\)</span>. Пусть <span
+class="math inline">\(X\)</span> – топологическое пространство.
+<em>Отображение проекции</em> – это <span class="math inline">\(\pi: X
+\to \{[x]_{\sim}|\,\,\,\, x \in X\}, \,\,\,\, x \mapsto
+[x]_{\sim}\)</span>, где <span class="math inline">\([x]_{\sim}\)</span>
+– класс эквивалентности точки <span class="math inline">\(x\)</span>.
+Зададим на множестве классов эквивалентности <span
+class="math inline">\(\{[x]_{\sim}|\,\,\,\, x \in X\}\)</span>
+топологию. Открытыми считаются множества, прообраз которых при
+отображении проекции открыт в <span
+class="math inline">\(X\)</span>.</p>
+<p>Такая топология – <em>фактор-топология</em> и обозначается <span
+class="math inline">\(X/\sim\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-6"></a> Отображении
+проекции <span class="math inline">\(\pi: X \to X/\sim\)</span>
+непрерывно.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-7"></a>
+<em>Фактор-топология</em> – топология с наибольшим количеством открытых
+множеств, относительно которой отображение проекции непрерывно.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h3 id="стягивание-подпространства-в-точку">Стягивание подпространства в
+точку</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-4"></a> Обозначение
+<span class="math inline">\(X/A\)</span>, где <span
+class="math inline">\(A \subset X\)</span> обозначает, что берется
+фактор-топология относительно отношения эквивалентности, при котором
+<span class="math inline">\(x \sim y \iff x = y\)</span> или <span
+class="math inline">\(x \in A\)</span> и <span class="math inline">\(y
+\in A\)</span>. Топология <span class="math inline">\(X/A\)</span>
+получена <em>стягиванием подпространства в точку</em>.</p>
+<p><strong>Лемма:</strong><a name="lemma-0"></a> Пусть <span
+class="math inline">\(X\)</span> регулярно, <span
+class="math inline">\(A \subset X\)</span> замкнуто. Тогда <span
+class="math inline">\(X/A\)</span> хаусдорфово.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h3 id="пространство-с-отмеченной-точкой">Пространство с отмеченной
+точкой</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-5"></a>
+Фактор-пространство <span class="math inline">\((X \sqcup Y) /
+\sim\)</span> несвязной суммы пространств <span class="math inline">\(X
+\sqcup Y\)</span> по отношению эквивалентности <span
+class="math inline">\(x \sim y \iff x = y\)</span> или <span
+class="math inline">\(x = x_0\)</span> и <span class="math inline">\(y =
+y_0\)</span>, где <span class="math inline">\(x_0 \in X\)</span> и <span
+class="math inline">\(y_0 \in Y\)</span> – фиксированные точки.</p>
+<h2 id="цилиндр-и-конус">Цилиндр и конус</h2>
+<hr />
+<p><strong>Обозначение:</strong> <span class="math inline">\(I = [0,
+1]\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-6"></a>
+<em>Цилиндр</em> - это топология произведения <span
+class="math inline">\(X\times I\)</span>.</p>
+<p><span class="math inline">\(X \times 1\)</span> – <em>верхнее
+основание цилинра</em>, <span class="math inline">\(X \times 0\)</span>
+– <em>нижнее основание цилиндра</em>.</p>
+<p><strong>Определение:</strong><a name="definition-7"></a>
+<em>Конус</em> - это <span class="math inline">\((X\times I)/(X\times
+1)\)</span> (стягиваем верхнее основание цилиндра в точку).</p>
+<p><span class="math inline">\([X\times 1]_{\sim}\)</span> – <em>вершина
+конуса</em>, <span class="math inline">\(\cup_{x \in X}[(x,
+0)]_{\sim}\)</span> – <em>основание конуса</em>.</p>
+<h2
+id="компактно-открытая-топология-на-пространстве-непрерывных-отображений">Компактно-открытая
+топология на пространстве непрерывных отображений</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-8"></a> Обозначим за
+<span class="math inline">\(\mathcal{C}(X, Y)\)</span> или <span
+class="math inline">\(Y^X\)</span> множество непрерывных отображений
+<span class="math inline">\(X \to Y\)</span>. Рассмотрим топологию на
+<span class="math inline">\(\mathcal{C}(X, Y)\)</span> с предбазой <span
+class="math inline">\(\{W(K, U)\}\)</span>, где <span
+class="math inline">\(W(K, U) \subset \mathcal{C}(X, Y)\)</span>, <span
+class="math inline">\(K\)</span> - компакт и <span
+class="math inline">\(f(K) \subset U\)</span>.</p>
+<p>Множество непрерывных функций <span class="math inline">\(X \to
+\mathbb{R}\)</span> обозначается: <span
+class="math inline">\(\mathcal{C}(X)\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-8"></a> Пусть <span
+class="math inline">\(X\)</span> – компактное пространство, <span
+class="math inline">\(Y\)</span> – метрическое, с метрикой <span
+class="math inline">\(\rho_0\)</span>. Тогда метрика <span
+class="math inline">\(\rho(f, g) = \sup_{x \in X}\{\rho_0(f(x),
+g(x))\}\)</span> задает компактно-открытую топологию на <span
+class="math inline">\(\mathcal{C}(X, Y)\)</span>.</p>
+<p><em>Доказательство:</em> Докажем корректность определения метрики.
+<span class="math inline">\(\rho_0(f(x), g(x))\)</span> непрерывна, как
+отображение <span class="math inline">\(f: X \to \mathbb{R}, \,\,\,\, f:
+x \mapsto \rho_0(f(x), g(x))\)</span>. Непрерывный образ компактного
+множества - компакт, а следовательно <span
+class="math inline">\(f(X)\)</span> - компакт в <span
+class="math inline">\(\mathbb{R}\)</span>, то есть ограниченное (отсюда
+следует существование <span class="math inline">\(\sup_{x \in
+X}\{\rho_0(f(x), g(x))\}\)</span>) и замкнутое (отсюда следует
+принадлежность супремума множеству, а значит существования
+максимума).</p>
+<p>Проверим, что <span class="math inline">\(\rho\)</span> -
+метрика:</p>
+<ol type="1">
+<li>Неотрицательность следует из неотрицательности <span
+class="math inline">\(\rho_0\)</span>. Докажем, что если <span
+class="math inline">\(\rho(f, g) = 0\)</span>, то <span
+class="math inline">\(f = g\)</span>. Из неотрицательности <span
+class="math inline">\(\rho_0\)</span> и того , что <span
+class="math inline">\(\rho(f, g) = 0\)</span> следует, что <span
+class="math inline">\(\forall x \in X \,\,\,\, \rho_0(f(x), g(x)) = 0
+\implies \forall x \in X \,\,\,\, f(x) = g(x)\)</span>. Если <span
+class="math inline">\(f = g\)</span>, то <span
+class="math inline">\(\rho(f, g)\)</span> очевидно <span
+class="math inline">\(0\)</span>.</li>
+<li>Симметричность: <span class="math inline">\(\rho(f, g) =
+\displaystyle\max_{x \in X}\{\rho_0(f(x), g(x))\} = \displaystyle\max_{x
+\in X}\{\rho_0(g(x), f(x))\} = \rho(g, f)\)</span>.</li>
+<li><span class="math inline">\(\rho(f, g) + \rho(g, h) =
+\displaystyle\max_{x \in X}\{\rho_0(f(x), g(x))\} + \displaystyle\max_{x
+\in X}\{\rho_0(g(x), h(x))\} \geqslant\)</span> <span
+class="math inline">\(\geqslant \displaystyle\max_{x \in
+X}\{\rho_0(f(x), g(x)) + \rho_0(g(x), h(x))\} \geqslant
+\displaystyle\max_{x \in X}\{\rho_0(f(x), h(x))\} = \rho(f,
+h)\)</span>.</li>
+</ol>
+<p>Докажем, что порожденная метрикой <span
+class="math inline">\(\rho\)</span> топология компактно-открытая.
+Рассмотрим <span class="math inline">\(K \subset X\)</span> - компакт и
+<span class="math inline">\(U \subset Y\)</span> - открытое в топологии
+<span class="math inline">\(Y\)</span>. Хотим, чтобы множество <span
+class="math inline">\(W(K, U) = \{\mathcal{C}(X, Y) \ni f: K \to
+U|\,\,\,\, f(K) \subset U\}\)</span> было открыто в <span
+class="math inline">\(\mathcal{C}(X, Y)\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-9"></a>
+Универсальное отображение <span class="math inline">\(l: X\times
+\mathcal{C}(X, Y) \to Y, \,\,\,\, x \mapsto f(x)\)</span> –
+<em>отображение вычисления</em>.</p>
+<p><strong>Определение:</strong><a name="definition-10"></a>
+Пространство <span class="math inline">\((X, \tau_X)\)</span>
+<em>локально компактно</em>, если <span class="math inline">\(\forall x
+\in X, \,\,\,\, \exists U_x \in \tau_X: \,\,\,\,
+\operatorname{Cl}U_x\)</span> компактно.</p>
+<p><strong>Утверждение:</strong><a name="statement-9"></a>
+(<em>экспоненциальный закон</em>) Определено каноническое отображение
+<span class="math inline">\(\Phi: \mathcal{C}(X\times Y, Z) \to
+\mathcal{C}(X, \mathcal{C}(Y, Z))\)</span> или <span
+class="math inline">\(\Phi: Z^{X\times Y} \to (Z^{Y})^X\)</span>.</p>
+<p><span class="math inline">\(\Phi: \mathcal{C}(X\times Y, Z) \ni f
+\mapsto \Phi(f), \,\,\,\, \Phi(f): X \to \mathcal{C}(Y, Z), \,\,\,\,
+\Phi(f): x \mapsto f(x, Y)\)</span>, где <span
+class="math inline">\(f(x, Y)\)</span> обозначает отображение <span
+class="math inline">\(f(x, Y): Y \to Z, \,\,\,\, f(x, Y): y \mapsto f(x,
+y)\)</span>.</p>
+<p>Если <span class="math inline">\(X\)</span> хаусдорфово, то <span
+class="math inline">\(\Phi\)</span> – непрерывно, Если <span
+class="math inline">\(X\)</span> хаусдорфово, <span
+class="math inline">\(Y\)</span> хаусдорфово и локально компактно, то
+<span class="math inline">\(\Phi\)</span> – гомеоморфизм.</p>
+<p><em>Доказательство:</em></p>
+<p><img src="publish/img/exponential-law.png" /></p>
+<h1 id="гомотопии">Гомотопии</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-11"></a> Непрерывные
+отображения <span class="math inline">\(f, g: X \to Y\)</span>
+<em>гомотопные</em>, если существует непрерывное отображение <span
+class="math inline">\(F: X\times I \to Y\)</span>, такое что <span
+class="math inline">\(F(x, 0) = f(x)\)</span> и <span
+class="math inline">\(F(x, 1) = g(x)\)</span>. Отображение <span
+class="math inline">\(F\)</span> – <em>гомотопия</em>.</p>
+<p>Зафиксируем <span class="math inline">\(t \in I\)</span>. Отображение
+<span class="math inline">\(F(x, t)\)</span> обозначается <span
+class="math inline">\(F_t(x)\)</span>. <span class="math inline">\(F_0 =
+f\)</span> и <span class="math inline">\(F_1 = g\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-11"></a> Каждое из
+отображений <span class="math inline">\(F_t(x)\)</span> –
+непрерывно.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<blockquote>
+<p>Гомотопию между <span class="math inline">\(f\)</span> и <span
+class="math inline">\(g\)</span> можно рассматривать и как непрерывное
+семейство непрерывных отображений, соединяющее <span
+class="math inline">\(f\)</span> и <span
+class="math inline">\(g\)</span>.</p>
+</blockquote>
+<p><strong>Утверждение:</strong><a name="statement-10"></a> Гомотопность
+– это отношение эквивалентности на функциях.</p>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li><span class="math inline">\(f \sim f\)</span>, так как в качестве
+гомотопии можно взять <span class="math inline">\(f\)</span>.</li>
+<li><span class="math inline">\(f \sim g \implies g \sim f\)</span>, так
+как, если <span class="math inline">\(F\)</span> - гомотопия <span
+class="math inline">\(f\)</span> и <span
+class="math inline">\(g\)</span>, то в качестве гомотопии функций <span
+class="math inline">\(g\)</span> и <span
+class="math inline">\(f\)</span> можно взять отображение <span
+class="math inline">\(\hat{F}(x, t) = F(x, 1 - t)\)</span>.</li>
+<li><span class="math inline">\(f\sim g\)</span> и <span
+class="math inline">\(g \sim h \implies f \sim h\)</span>, так как, если
+<span class="math inline">\(F_{fg}\)</span> и <span
+class="math inline">\(F_{gh}\)</span> – гомотопии соответствующих пар
+функций, то в качестве гомотопии функций <span
+class="math inline">\(f\)</span> и <span
+class="math inline">\(h\)</span> можно взять <span
+class="math inline">\(F_{fh} = \begin{cases}  F_{fg}(x, 2t), \,\,\,\, t
+\in [0, \frac12]\\  F_{gh}(x, 2t - 1), \,\,\,\, t \in [\frac12, 1]
+\end{cases}\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<p>Гомотопные отображения <strong>обозначаются</strong> <span
+class="math inline">\(f \sim g\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-12"></a>
+Фактор-множество гомотопных отображений <span class="math inline">\(X
+\to Y\)</span> обозначается <span class="math inline">\([X, Y]\)</span>
+или <span class="math inline">\(\pi(X, Y)\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-13"></a>
+Топологические пространства <span class="math inline">\(X\)</span> и
+<span class="math inline">\(Y\)</span> <em>гомотопически
+эквивалентны</em>, если существуют непрерывные <span
+class="math inline">\(f: X \to Y\)</span> и <span
+class="math inline">\(g: Y \to X\)</span>, такие что <span
+class="math inline">\(f\circ g\)</span> гомотопно <span
+class="math inline">\(\operatorname{id}_X\)</span> и <span
+class="math inline">\(g\circ f\)</span> гомотопно <span
+class="math inline">\(\operatorname{id}_Y\)</span>.</p>
+<p>При этом <span class="math inline">\(f\)</span> и <span
+class="math inline">\(g\)</span> – <em>гомотопически обратные</em>
+отображения.</p>
+<p>Если <span class="math inline">\(f\)</span> имеет гомотопически
+обратное отображение, то <span class="math inline">\(f\)</span> –
+<em>гомотопически обратимо</em> или <em>гомотопическая
+эквивалентность</em>.</p>
+<p>Гомотопически эквивалентные пространства
+<strong>обозначаются</strong> <span class="math inline">\(X \simeq
+Y\)</span>. Далее изоморфные пространства обозначаются <span
+class="math inline">\(X \cong Y\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-13"></a>
+Гомотопическая эквивалентность – отношение эквивалентности на
+топологических пространствах.</p>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li><span class="math inline">\(X \simeq X\)</span>, так как в качестве
+гомомтопической эквивалентности можно взять <span
+class="math inline">\(\operatorname{id}_X\)</span>,</li>
+<li>Пусть <span class="math inline">\(X \simeq Y\)</span>, то есть
+существует гомотопическая эквивалентность <span
+class="math inline">\(f\)</span>. В качестве гомотопической
+эквивалентности <span class="math inline">\(Y\)</span> и <span
+class="math inline">\(X\)</span> возьмем обратное отображение к <span
+class="math inline">\(f\)</span>,</li>
+<li><span class="math inline">\(X \simeq Y\)</span> и <span
+class="math inline">\(Y \simeq Z \implies X \simeq Z\)</span> в качестве
+гомомтопической эквивалентности возьмем композицию <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<h1 id="ретракции">Ретракции</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-18"></a> Гомотопия
+<span class="math inline">\(H: X \times I \to Y\)</span> <em>связана
+на</em> <span class="math inline">\(A \subset X\)</span>, если <span
+class="math inline">\(\forall t \in I, \,\,\,\, \forall a \in A \,\,\,\,
+H(a, t) = H(a, 0)\)</span>.</p>
+<p>Такая гомотопия еще называется <em><span
+class="math inline">\(A\)</span>-гомотопия</em>. Существование <span
+class="math inline">\(A\)</span>-гомотопии функций <span
+class="math inline">\(f\)</span> и <span
+class="math inline">\(g\)</span> <strong>обозначим</strong> <span
+class="math inline">\(f \sim_{A} g\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-14"></a> <span
+class="math inline">\(X\)</span> – топологическое пространство, <span
+class="math inline">\(A \subset X\)</span>. Непрерывное отображение
+<span class="math inline">\(\rho: X \to A\)</span> – <em>ретракция</em>,
+если <span class="math inline">\(\rho_{|A} =
+\operatorname{id}_A\)</span> <a href="#fn1" class="footnote-ref"
+id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<p><span class="math inline">\(\rho\)</span> – <em>деформационная
+ретракция</em>, если <span class="math inline">\(\rho\)</span> –
+ретракция и <span class="math inline">\(\rho\)</span> гомотопно <span
+class="math inline">\(\operatorname{id}_X\)</span>.</p>
+<p><span class="math inline">\(\rho\)</span> – <em>строгая
+деформационная ретракция</em>, если <span
+class="math inline">\(\rho\)</span> – деформационная ретракция и
+гомотопия <span class="math inline">\(\rho\)</span> и <span
+class="math inline">\(\operatorname{id}_X\)</span> связана на <span
+class="math inline">\(A\)</span>.</p>
+<p>Если существует ретракция <span class="math inline">\(X \to
+A\)</span>, то <span class="math inline">\(A\)</span> –
+<em>ретракт</em>.</p>
+<p><strong>Лемма:</strong><a name="lemma-1"></a> Не существует ретракции
+<span class="math inline">\([0, 1] \to \{0, 1\}\)</span>.</p>
+<p><em>Доказательство:</em> Пусть существует. <span
+class="math inline">\(\{0, 1\}\)</span> с индуцированной топологией
+несвязно, а следовательно отрезок несвязен <span
+class="math inline">\(\blades\)</span></p>
+<p><strong>Лемма:</strong><a name="lemma-2"></a> Пусть <span
+class="math inline">\(X\)</span> – топологическое пространство. <span
+class="math inline">\(A \subset X\)</span> – ретракт <span
+class="math inline">\(X\iff\)</span> любое непрерывное отображение <span
+class="math inline">\(g: A \to Y\)</span> в произвольное топологическое
+пространство <span class="math inline">\(Y\)</span> продолжается до
+непрерывного отображения <span class="math inline">\(X \to
+Y\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math inline">\(\boxed{\Longrightarrow}\)</span> <span
+class="math inline">\(A \subset X\)</span> – ретракт <span
+class="math inline">\(\implies \exists f: X \to A\)</span> – непрерывное
+отображение и <span class="math inline">\(f_{|A} = \operatorname{id}_A
+\implies g\circ f\)</span> искомое отображение.</p>
+<p><span class="math inline">\(\boxed{\Longleftarrow}\)</span> <span
+class="math inline">\(\operatorname{id}_A: A \to A\)</span> –
+непрерывное отображение. Оно продолжается до непрерывного отображения
+<span class="math inline">\(\rho: X \to A
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Обозначение:</strong> <span
+class="math inline">\(B^n\)</span> – <span
+class="math inline">\(n\)</span>-мерный шар с индуцированной из <span
+class="math inline">\(R^n\)</span> топологией.</p>
+<p>Одномерный шар – отрезок,</p>
+<p>Двумерный шар – круг.</p>
+<p><strong>Обозначение:</strong> <span
+class="math inline">\(S^n\)</span> – <span
+class="math inline">\(n\)</span>-мерная сфера.</p>
+<h2
+id="свойство-продолжения-гомотопии-homotopy-extension-property">Свойство
+продолжения гомотопии (homotopy extension property)</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-16"></a> Пусть <span
+class="math inline">\(A \subset X\)</span>, <span
+class="math inline">\(X\)</span> – топологическое пространство. Пара
+<span class="math inline">\((X, A)\)</span> <em>обладает свойством
+продолжения гомотопии</em>, если любое непрерывное отображение <span
+class="math inline">\(f: X\times \{0\} \cup A\times I \to Y\)</span>
+продолжается до непрерывного отображения <span class="math inline">\(F:
+X \times I \to Y\)</span>. <a href="#fn2" class="footnote-ref"
+id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p><strong>Почему свойство продолжения гомотопии?</strong> Потому что
+задано отображение <span class="math inline">\(f_0: X \to Y\)</span>
+(это <span class="math inline">\(f|_{X\times 0}\)</span>) и гомотопия
+<span class="math inline">\(A\times I \to Y\)</span>, которую надо
+продолжить до гомотопии <span class="math inline">\(f_t: X\times I \to
+Y\)</span>.</p>
+<h2
+id="первый-признак-гомотопической-эквивалентности-пространств">Первый
+признак гомотопической эквивалентности пространств</h2>
+<p><strong>Утверждение:</strong><a name="statement-14"></a> Пусть <span
+class="math inline">\(A \subset X\)</span> замкнуто. Пара <span
+class="math inline">\((X, A)\)</span> обладает свойством продолжения
+гомотопии <span class="math inline">\(\iff X\times \{0\} \cup A\times
+I\)</span> – ретракт <span class="math inline">\(X\times I\)</span>.</p>
+<p><em>Доказательство:</em> <a href="#lemma-2">см. лемму</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Вопрос:</strong> где в доказательстве используется
+замкнутость <span class="math inline">\(A\)</span>?</p>
+<p><strong>Определение:</strong><a name="definition-15"></a>
+Пространство <em>стягиваемо</em>, если оно гомотопически эквивалентно
+точке или, что тоже самое, тождественное отображение <span
+class="math inline">\(\operatorname{id}: X \to X\)</span> <em>гомотопно
+нулю</em>, то есть постоянному отображению <span class="math inline">\(X
+\to \operatorname{pt}\)</span>.</p>
+<h2
+id="второй-признак-гомотопической-эквивалентности-пространств">Второй
+признак гомотопической эквивалентности пространств</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-12"></a> Пусть <span
+class="math inline">\((X, A)\)</span> обладает свойством продолжения
+гомотопии и <span class="math inline">\(A\)</span> стягиваемо. Тогда
+<span class="math inline">\(\pi: X \to X / A\)</span> – гомотопическая
+эквивалентность.</p>
+<p><em>Доказательство:</em></p>
+<p>Нужно доказать, что <span class="math inline">\(\exists \pi^{-1}: X /
+A \to X: \,\,\,\, \pi\circ \pi^{-1} \sim \operatorname{id}_{X /
+A}\)</span> и <span class="math inline">\(\pi^{-1}\circ \pi \sim
+\operatorname{id}_X\)</span>.</p>
+<p><span class="math inline">\(A\)</span> стягиваемо, то есть <span
+class="math inline">\(c: A \to \operatorname{pt}\)</span> гомотопно
+<span class="math inline">\(\operatorname{id}_A\)</span>, а значит
+существует непрерывное <span class="math inline">\(F’: A \times I \to
+A\)</span>, такое что <span class="math inline">\(F’_0 =
+\operatorname{id}_A\)</span> и <span class="math inline">\(F’_1 =
+\operatorname{pt}\)</span>.</p>
+<p>Пусть <span class="math inline">\(F: X\times I\to X\)</span>
+продолжение гомотопии <span class="math inline">\(F’\)</span>. <span
+class="math inline">\(F_t(A) \subset A \forall t \in I\)</span>, а
+значит <span class="math inline">\(\forall t \in I\)</span> определено
+отображение <span class="math inline">\(G_t: X /A \to X/A\)</span>,
+которое переводит класс эквивалентности <span
+class="math inline">\([x]\)</span> элемента <span
+class="math inline">\(x \in X\)</span> в <span
+class="math inline">\([F_t([x])]\)</span>. Пусть <span
+class="math inline">\(\pi^{-1}: X/A \to X: \begin{cases}  [x] \mapsto
+x,\,\,\,\, x\in X\setminus A\\  [x] \mapsto \operatorname{pt}, \,\,\,\,
+x \in A \end{cases}\)</span>.</p>
+<center>
+<object data="img/retract-diagram.svg" width="300" height="300">
+</object>
+</center>
+<p>Тогда <span class="math inline">\(\pi\circ \pi^{-1} \sim
+\operatorname{id}_{X}\)</span> посредством <span
+class="math inline">\(F_t\)</span> и <span
+class="math inline">\(\pi^{-1}\circ \pi \sim
+\operatorname{id}_{X/A}\)</span> посредством <span
+class="math inline">\(G_t \,\,\,\,\blacksquare\)</span></p>
+<p><a href="#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a></p>
+<h1 id="пути">Пути</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-17"></a></p>
+<p>Непрерывное отображение <span class="math inline">\(\gamma: I \to
+X\)</span> – <em>путь в</em> <span class="math inline">\(X\)</span>,
+<em>соединяющий точки</em> <span
+class="math inline">\(\gamma(0)\)</span> и <span
+class="math inline">\(\gamma(1)\)</span>.</p>
+<p>Путь – <em>петля</em>, если <span class="math inline">\(\gamma(0) =
+\gamma(1)\)</span>. Это петля <em>в точке</em> <span
+class="math inline">\(X \ni x_0 = \gamma(0) = \gamma(1)\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-19"></a>
+<em>Пути</em> <span class="math inline">\(\gamma_1: I \to X\)</span> и
+<span class="math inline">\(\gamma_2: I \to X\)</span>
+<em>гомотопны</em>, если существует <span class="math inline">\(\{0,
+1\}\)</span>-гомотопия между ними, то есть <span
+class="math inline">\(\exists F: I\times I \to X: \,\,\,\, F(t, 0) =
+\gamma_1(t)\)</span>, <span class="math inline">\(F(t, 1) =
+\gamma_2(t)\)</span> и <span class="math inline">\(F(0, t) = F(0, 0) =
+\gamma(0)\)</span> и <span class="math inline">\(F(1, t) = F(1, 0) =
+\gamma(1)\)</span>.</p>
+<p><span class="math inline">\(\{0, 1\}\)</span>-гомотопический класс
+пути <span class="math inline">\(s\)</span>
+<strong>обозначается</strong> <span class="math inline">\([s]\)</span>.
+В дальнейшем пишу просто гомотопический класс.</p>
+<p><strong>Определение:</strong><a name="definition-20"></a> Пусть <span
+class="math inline">\(\gamma_1\)</span> и <span
+class="math inline">\(\gamma_2\)</span> пути и <span
+class="math inline">\(\gamma_1(1) = \gamma_2(0)\)</span>.
+<em>Произведение путей</em> <span class="math inline">\(\gamma_1
+\gamma_2\)</span> – это путь <span class="math inline">\(\gamma:
+\begin{cases}\gamma_1(t),\,\,\,\, t \in [0, \frac12]\\ \gamma_2(2t - 1),
+\,\,\,\, t \in [\frac12, 1]\end{cases}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-21"></a>
+(<em>Произведение <span class="math inline">\(\{0,
+1\}\)</span>-гомотопических классов путей</em>)</p>
+<p><span class="math inline">\([u][v] = [uv], \,\,\,\, u, v\)</span> –
+пути, которые можно перемножать.</p>
+<p><strong>Утверждение:</strong><a name="statement-15"></a>
+(<em>корректность определения произведения гомотопических классов</em>)
+Пусть <span class="math inline">\(u, v, u’, v’\)</span> – пути,
+определено <span class="math inline">\(uv\)</span>, <span
+class="math inline">\([u] = [u’]\)</span> и <span
+class="math inline">\([v] = [v’]\)</span>. Тогда</p>
+<ol type="1">
+<li><span class="math inline">\(\exists u’ v’\)</span>,</li>
+<li><span class="math inline">\(uv\)</span> <span
+class="math inline">\(\{0, 1\}\)</span>-гомотопно <span
+class="math inline">\(u’ v’\)</span>, а следовательно <span
+class="math inline">\([uv] = [u’v’]\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li><span class="math inline">\([u] = [u’] \implies u(1) =
+u’(1)\)</span> и <span class="math inline">\([v] = [v’] \implies v(0) =
+v’(0)\)</span>, а значит <span class="math inline">\(\exists u’
+v’\)</span>.</li>
+<li><span class="math inline">\(uv \sim_{\{0, 1\}} u’ v’\)</span>
+посредством гомотопии <span class="math inline">\(u_t v_t\)</span>, где
+<span class="math inline">\(u_t\)</span> и <span
+class="math inline">\(v_t\)</span> гомотопии <span
+class="math inline">\(u\)</span> и <span
+class="math inline">\(u’\)</span> и <span
+class="math inline">\(v\)</span> и <span
+class="math inline">\(v’\)</span> соответсвенно <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<h1 id="фундаментальная-группа">Фундаментальная группа</h1>
+<hr />
+<p><strong>Обозначим</strong> множество петель в точке <span
+class="math inline">\(x_0 \in X\)</span> за <span
+class="math inline">\(\Omega_1(X, x_0)\)</span>, а множество классов
+<span class="math inline">\(\{0, 1\}\)</span>-гомотопности таких петель
+за <span class="math inline">\(\pi_1(X, x_0)\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-27"></a>
+<em>Перепараметризация пути</em> <span class="math inline">\(\gamma: I
+\to X\)</span> – это композиция <span class="math inline">\(\gamma\circ
+\varphi\)</span>, где <span class="math inline">\(\varphi: I \to
+I\)</span> – непрерывное отображение.</p>
+<p><strong>Лемма:</strong><a name="lemma-5"></a> Перепараметризация пути
+сохраняет класс гомотопической эквивалентности пути, то есть <span
+class="math inline">\(\forall \gamma: I \to X\)</span> и <span
+class="math inline">\(\forall \varphi: I \to I \,\,\,\, \gamma\circ
+\varphi \sim_{\{0, 1\}} \gamma\)</span>.</p>
+<p><em>Доказательство:</em> Рассмотрим гомотопию <span
+class="math inline">\(\gamma\circ \varphi_t\)</span>, где <span
+class="math inline">\(\varphi_t(s): (1 - t)\varphi(s) + ts
+\,\,\,\,\blacksquare\)</span></p>
+<p>Если <span class="math inline">\(\varphi: I \to I: s \mapsto
+s^2\)</span> (на графике <span style="color:#d6430d">рыжий</span>), то
+<span class="math inline">\(\varphi_t(s): I \to I: s \mapsto (1 - t)s^2
++ ts\)</span> (на графике <span
+style="color:#7bc99a">бирюзовый</span>)</p>
+<center>
+<canvas id="main-canvas">
+</canvas>
+</center>
+<center>
+<div id="slider-div">
+<span class="math inline">\(t:\)</span>
+<input type="range" id="slider" min="0" max="1" step="0.01" value="0.5">
+</div>
+</center>
+<h2
+id="ассоциативность-умножения-гомотопных-классов-путей">Ассоциативность
+умножения гомотопных классов путей</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Умножение
+гомотопических классов путей ассоциативно.</p>
+<p><em>Доказательство:</em></p>
+<p>Хотим для любых <span class="math inline">\(u \in [u], \,\,\,\, v \in
+[v], \,\,\,\, w \in [w] \,\,\,\, (uv)w \sim_{\{0, 1\}}
+u(vw)\)</span>.</p>
+<p>Заметим что <span class="math inline">\(u(vw)\)</span> – это
+перепараметризация пути <span class="math inline">\((uv)w\)</span> с
+помощью отображения <span class="math inline">\(I \to I\)</span>,
+показанного на рисунке ниже.</p>
+<center>
+<canvas id="canvas2">
+</canvas>
+</center>
+<blockquote>
+<p>Если вы хотите понять смысл <a href="#theorem-0">теоремы</a>, то
+нужно прежде всего осознать, что пути <span
+class="math inline">\((uv)w\)</span> и <span
+class="math inline">\(u(vw)\)</span> имеют одну и ту же траекторию, а
+различаются лишь «расписанием движения» по ней. Поэтому для того чтобы
+найти гомотопию между ними, нужно лишь найти непрерывный способ перехода
+от расписания одного из них на расписание другого.</p>
+</blockquote>
+<h2
+id="наличие-единицы-при-умножении-гомотопических-классов-путей">Наличие
+единицы при умножении гомотопических классов путей</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-22"></a> Пусть <span
+class="math inline">\(x_0 \in X\)</span>. <strong>Обозначим</strong>
+<span class="math inline">\(e_{x_0}\)</span> петлю (путь) <span
+class="math inline">\(I \to X: t \mapsto x_0\)</span>. <span
+class="math inline">\(e_{x_0}\)</span> – <em>единичная петля
+(путь)</em>.</p>
+<p><strong>Утверждение:</strong><a name="statement-16"></a> <span
+class="math inline">\([e_{x_0}]\)</span> – единица относительно
+умножения гомотопных классов путей, начинающихся в точке <span
+class="math inline">\(x_0\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p>Пусть <span class="math inline">\(\gamma: I \to X\)</span> и <span
+class="math inline">\(\gamma(0) = x_0\)</span>. Тогда <span
+class="math inline">\(e_{x_0}\gamma\)</span> – это перепараметризация
+пути <span class="math inline">\(\gamma\)</span> с помощью отображения
+<span class="math inline">\(I \to I\)</span>, показанного на рисунке
+ниже.</p>
+<center>
+<canvas id="canvas3">
+</canvas>
+</center>
+<p>Тогда <span class="math inline">\(\gamma e_{x_0}\)</span> – это
+перепараметризация пути <span class="math inline">\(\gamma\)</span> с
+помощью отображения <span class="math inline">\(I \to I\)</span>,
+показанного на рисунке ниже.</p>
+<center>
+<canvas id="canvas4">
+</canvas>
+</center>
+<p>Следовательно <span class="math inline">\(e_{x_0}\gamma \sim_{\{0,
+1\}} \gamma \sim_{\{0, 1\}} \gamma e_{x_0}
+\,\,\,\,\blacksquare\)</span></p>
+<h2
+id="существование-обратного-элемента-при-умножении-гомотопных-классов-путей">Существование
+обратного элемента при умножении гомотопных классов путей</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-23"></a> Пусть <span
+class="math inline">\(u: I \to X\)</span> – путь. <em>Обратный путь</em>
+<span class="math inline">\(u^{-1}\)</span> – это <span
+class="math inline">\(I \to X: t \mapsto u(t - 1)\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-17"></a> Для любого
+пути <span class="math inline">\(u\)</span> класс гомотопической
+эквивалентности обратного пути <span
+class="math inline">\([u^{-1}]\)</span> является обратным по умножению к
+<span class="math inline">\(u\)</span>, то есть <span
+class="math inline">\([u][u^{-1}] = [e]\)</span>, где <span
+class="math inline">\(e\)</span> некоторая единица.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(u u^{-1}
+\sim_{\{0, 1\}} e_{u(0)}\)</span> посредством гомотопии <span
+class="math inline">\(f_t f^{-1}_t\)</span>, где <span
+class="math display">\[f_t: \begin{cases}
+    u(s), \,\,\,\, s \in [0, 1 - t]\\
+    u(1 - t), \,\,\,\, s \in [1 - t, 1]
+\end{cases} \,\,\,\,\blacksquare\]</span></p>
+<h2 id="собственно-фундаментальная-группа">Собственно фундаментальная
+группа</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-24"></a>
+<em>Фундаментальная группа</em> пространства <span
+class="math inline">\(X\)</span> в точке <span
+class="math inline">\(x_0\)</span> – это <span
+class="math inline">\(\pi_1(X, x_0)\)</span> с операцией умножения <span
+class="math inline">\(\{0, 1\}\)</span>-гомотопических классов
+петель.</p>
+<h3 id="самый-простой-пример-фундаментальной-группы">Самый простой
+пример фундаментальной группы</h3>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-24"></a>
+Фундаментальная группа выпуклого пространства <span
+class="math inline">\(X\)</span> в <span
+class="math inline">\(\mathbb{R}^n\)</span> с отмеченной точкой <span
+class="math inline">\(x_0\)</span> тривиальна.</p>
+<p><em>Доказательство:</em> Любые две петли <span
+class="math inline">\(\gamma_1\)</span> и <span
+class="math inline">\(\gamma_2\)</span> можно соединить гомотопией <span
+class="math inline">\(f_t: (1 - t)\gamma_1(s) + \gamma_2(s)t
+\,\,\,\,\blacksquare\)</span></p>
+<h2 id="фанфакт-что-такое-алгебраическая-топология">Фанфакт: что такое
+алгебраическая топология?</h2>
+<hr />
+<blockquote>
+<p>Изобретается конструкция, которая по всякому топологическому
+пространству <span class="math inline">\(X\)</span> сооружает некоторый
+алгебраический объект <span class="math inline">\(A(X)\)</span>. Это
+может быть группа, кольцо, пространство с квадратичной формой и т. п.
+Сопутствующая конструкция по всякому непрерывному отображению <span
+class="math inline">\(f: X \to Y\)</span> создаёт гомоморфизм <span
+class="math inline">\(A(f): A(X) \to A(Y)\)</span>. Эти конструкции
+должны удовлетворять некоторым естественным условиям, которые позволили
+бы связывать топологические явления с их алгебраическими образами.</p>
+</blockquote>
+<h2 id="гомоморфизм-фундаментальных-групп">Гомоморфизм фундаментальных
+групп</h2>
+<hr />
+<p><span class="math inline">\(f: (X, x_0) \to (Y, y_0)\)</span>
+<strong>обозначает</strong>, что <span class="math inline">\(f: X \to
+Y\)</span> – непрерывное отображение, такое что <span
+class="math inline">\(f(x_0) = y_0\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-18"></a> Пусть <span
+class="math inline">\(f: (X, x_0) \to (Y, y_0)\)</span>. Тогда <span
+class="math inline">\(f_{\ast}: [u] \mapsto [f\circ u]\)</span> –
+гомоморфизм фундаментальных групп <span class="math inline">\(\pi_1(X,
+x_0)\)</span> и <span class="math inline">\(\pi_2(Y, y_0)\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p>Корректность определения <span
+class="math inline">\(f_{\ast}\)</span>. Пусть <span
+class="math inline">\(u \sim_{\{0, 1\}} v \implies f\circ u \sim_{\{0,
+1\}} f\circ v \implies f_{\ast}([u]) = [f\circ u] = [f\circ v] =
+f_{\ast}([v])\)</span>.</p>
+<p>Гомоморфность: <span class="math inline">\(f_{\ast}([u][v]) =
+[f\circ(uv)] \overset{?}{=} [(f\circ u)(f\circ v)] = [f\circ u][f\circ
+v] = f_{\ast}([u])f_{\ast}([v])\)</span>. Почему переход <span
+class="math inline">\(\overset{?}{=}\)</span> правда? <a href="#fn4"
+class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>
+<span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-28"></a> <span
+class="math inline">\(f_{\ast}\)</span> – <em>индуцированный</em>
+отображением <span class="math inline">\(f\)</span> гомоморфизм.</p>
+<p><strong>Утверждение:</strong><a name="statement-25"></a>
+(<em>основные свойства индуцированного гомоморфизма</em>)</p>
+<ol type="1">
+<li><span class="math inline">\(\operatorname{id}_{\ast} =
+\operatorname{id}_{\pi_1(X, x_0)}\)</span>,</li>
+<li><span class="math inline">\((\varphi \psi)_{\ast} = \varphi_{\ast}
+\psi_{\ast}\)</span></li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol start="2" type="1">
+<li><span class="math inline">\((\varphi \psi)u = \varphi (\psi u)
+\implies (\varphi \psi)_{\ast}([u]) = [(\varphi \psi)u] = [\varphi (\psi
+u)] = \varphi_{\ast}([\psi u]) = \varphi_{\ast} \psi_{\ast}([u])
+\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<blockquote>
+<p>Из предыдущего утверждения следует, что фундаментальная группа –
+функтор. Я когда-нибудь это осознаю.</p>
+</blockquote>
+<h2 id="зачем-нужны-отмеченные-точки">Зачем нужны отмеченные точки?</h2>
+<hr />
+<blockquote>
+<p>Грубо говоря, выбор отмеченной точки влияет на фундаментальную группу
+следующим образом:</p>
+<ul>
+<li>Если мы изменяем отмеченную точку, оставаясь в пределах одной
+компоненты линейной связности, то фундаментальная группа остается в
+одном и том же классе изоморфных групп.</li>
+<li>Однако если фундаментальная группа не коммутативна, невозможно найти
+естественного изоморфизма между фундаментальными группами с разными
+отмеченными точками, даже если они лежат в одной и той же компоненте
+линейной связности.</li>
+<li>Если же отмеченные точки лежат в разных компонентах линейной
+связности, то соответствующие фундаментальные группы вообще никак не
+связаны друг с другом.</li>
+</ul>
+</blockquote>
+<p>Зафиксируем точки <span class="math inline">\(x_0\)</span> и <span
+class="math inline">\(x_1\)</span> в топологическом пространстве <span
+class="math inline">\(X\)</span>. Пусть <span
+class="math inline">\(\gamma\)</span> путь, соединяющий точки <span
+class="math inline">\(x_0\)</span> и <span
+class="math inline">\(x_1\)</span>. Определим отображение <span
+class="math inline">\(T_{\gamma}: \pi_1(X, x_0) \to \pi_1(X, x_1):
+\,\,\,\, [\delta] \mapsto [\gamma]^{-1}[\delta][\gamma]\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-19"></a> <span
+class="math inline">\(T_{\gamma}\)</span> изоморфизм групп <span
+class="math inline">\(\pi_1(X, x_0)\)</span> и <span
+class="math inline">\(\pi_1(X, x_1)\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li>Гомоморфность: <span class="math inline">\(T_{\gamma}(\delta \sigma)
+= [\gamma]^{-1}[\delta \sigma][\gamma] =
+[\gamma]^{-1}[\delta][\gamma]^{-1}[\gamma][\sigma][\gamma] =
+T_{\gamma}(\delta)T_{\gamma}(\sigma)\)</span>,</li>
+<li>Докажем существование обратного отображения: (<span
+class="math inline">\(\gamma’\)</span> соединяет точки <span
+class="math inline">\(x_0\)</span> и <span
+class="math inline">\(x_1\)</span>) <span
+class="math inline">\(T_{\gamma’}\circ T_{\gamma}(\delta) =
+[\gamma’]^{-1}[\gamma]^{-1}[\delta][\gamma][\gamma’] =
+[\gamma’\gamma]^{-1}[\delta][\gamma\gamma’] = T_{\gamma\gamma’} \implies
+T_{\gamma}\circ T_{\gamma^{-1}} = T_{e_{x_0}} =
+\operatorname{id}_{\pi_1(X, x_0)}\)</span> аналогично для <span
+class="math inline">\(T_{\gamma^{-1}}\circ T_{\gamma}
+\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<p><strong>Утверждение:</strong><a name="statement-20"></a> Если точки
+<span class="math inline">\(x_0\)</span> и <span
+class="math inline">\(x_1\)</span> лежат в одной и той же компоненте
+линейной связности пространства <span class="math inline">\(X\)</span>,
+то группы <span class="math inline">\(\pi_1(X, x_0)\)</span> и <span
+class="math inline">\(\pi_1(X, x_1)\)</span> изоморфны.</p>
+<p><em>Доказательство:</em> переформулировка предыдущего утверждения
+<span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Пусть <span
+class="math inline">\(x_0\)</span> и <span
+class="math inline">\(x_1\)</span> точки топологического пространства
+<span class="math inline">\(X\)</span>, путь <span
+class="math inline">\(\gamma\)</span> соединяет <span
+class="math inline">\(x_0\)</span> и <span
+class="math inline">\(x_1\)</span>.</p>
+<p>Изоморфизм <span class="math inline">\(T_{\gamma}\)</span> не зависит
+от выбора <span class="math inline">\(\gamma \iff \pi_1(X, x_0)\)</span>
+абелева.</p>
+<p><em>Доказательство:</em></p>
+<h2
+id="изоморфизм-фундаментальных-групп-гомотопически-эквивалентных-пространств">Изоморфизм
+фундаментальных групп гомотопически эквивалентных пространств</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-21"></a> Пусть <span
+class="math inline">\(f, g: X \to Y\)</span>, <span
+class="math inline">\(f \sim g\)</span> и в пространстве <span
+class="math inline">\(X\)</span> зафиксирована точка <span
+class="math inline">\(x_0\)</span>. Обозначим <span
+class="math inline">\(F_t(x_0) = \gamma(t)\)</span>. <span
+class="math inline">\(\gamma: I \to Y\)</span>, то есть путь в <span
+class="math inline">\(Y\)</span>. Построим по этому пути отображение
+<span class="math inline">\(T_{\gamma}: \pi_1(Y, \gamma(0) = f(x_0)) \to
+\pi_1(Y, \gamma(1) = g(x_0)): [\delta] \mapsto
+[\gamma]^{-1}[\delta][\gamma]\)</span>. Тогда <span
+class="math inline">\(g_{\ast} = T_{\gamma}\circ f_{\ast}\)</span>.</p>
+<p><em>Доказательство:</em> Пусть <span
+class="math inline">\(\gamma_t(s) = \gamma(ts)\)</span>. Тогда
+отображение <span class="math inline">\(u \mapsto \gamma_t (F_t u)
+\gamma_t^{-1}\)</span> – гомотопия петель <span
+class="math inline">\(gu\)</span> и <span class="math inline">\(\gamma
+fu \gamma^{-1}\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> Если пространства
+<span class="math inline">\(X\)</span> и <span
+class="math inline">\(Y\)</span> линейно связны и гомотопически
+эквивалентны, то их фундаментальные группы изоморфны.</p>
+<p><em>Доказательство:</em> следует из предыдущего <a
+href="#statement-21">утверждения</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="фундаментальная-группа-окружности">Фундаментальная группа
+окружности</h2>
+<hr />
+<p><img src="img/nakrytie.png" /> <img src="img/S1toRnakr.png" /> <img
+src="img/S1toRnakrproof.png" /></p>
+<p><strong>Напоминание:</strong> <span class="math inline">\(S^1 = \{(x,
+y)| \,\,\,\, x^2 + y^2 = 1\} = \{z \in \mathbb{C}| \,\,\,\, |z| =
+1\}\)</span>.</p>
+<p><strong>Лемма:</strong><a name="lemma-3"></a> Рассмотрим отображение
+<span class="math inline">\(p: (\mathbb{R}, 0) \to (S^1, s_0): x \mapsto
+e^{2\pi i x}\)</span>. Пусть определено отображение <span
+class="math inline">\(\gamma: (S^1, s_0) \to (S^1, s_0)\)</span>. Тогда
+существует единственное отображение <span class="math inline">\(f: (S^1,
+s_0) \to (\mathbb{R}, 0)\)</span>, такое что композиция <span
+class="math inline">\(f\circ p\)</span> непрерывна.</p>
+<p><em>Доказательство:</em></p>
+<p><img src="img/35.1podnyatie.png" /></p>
+<p><img src="img/theorem-nakrytie.png" /> <img
+src="img/theorem-nakrytie-proof.png" /></p>
+<p><strong>Утверждение:</strong><a name="statement-22"></a>
+(<em>фундаментальная группа окружности</em>) <span
+class="math display">\[\pi_1(S^1) \simeq \mathbb{Z}\]</span></p>
+<p><em>Доказательство:</em></p>
+<p><strong>Лемма:</strong><a name="lemma-4"></a> (<em>Теорема Борсука в
+размерности два</em>) Не существует ретракции <span
+class="math inline">\(D^2\)</span> на его границу.</p>
+<p><em>Доказательство:</em> Пусть существует ретракция <span
+class="math inline">\(\rho: D^2 \to S^1\)</span> и <span
+class="math inline">\(\rho_{|S^1} = \operatorname{id}_{S^1}\)</span>, то
+есть <span class="math inline">\(S^1 \hookrightarrow D^1
+\overset{\rho}{\to} S^1\)</span> – это <span
+class="math inline">\(\operatorname{id}_{S^1}\)</span>. Имеем <span
+class="math inline">\(\pi_1(S^1) \hookrightarrow_{\ast} \pi_1(D^2)
+\overset{\rho_{\ast}}{\to} \pi_1(S^1)\)</span>, что невозможно, так как
+<span class="math inline">\(\pi_1(D^2)\)</span> – тривиальная группа, а
+<span class="math inline">\(\pi_1(S^1) \simeq \mathbb{Z}
+\,\,\,\,\blacksquare\)</span></p>
+<h2 id="теорема-о-неподвижной-точке-брауэра">Теорема о неподвижной точке
+(Брауэра)</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-3"></a> (<em>Брауэра</em>)
+Для любого непрерывного отображения <span class="math inline">\(f: D^2
+\to D^2 \,\,\,\, \exists x \in D^2: \,\,\,\, f(x) = x\)</span>.</p>
+<p><em>Доказательство:</em> Предположить обратное и построить ретракцию
+<span class="math inline">\(D^2\)</span> на <span
+class="math inline">\(S^1\)</span>, проведя прямую через <span
+class="math inline">\(x\)</span> и <span
+class="math inline">\(f(x)\)</span> и взяв ее пересечение с <span
+class="math inline">\(S^1 \,\,\,\,\blacksquare\)</span></p>
+<h2 id="основная-теорема-алгебры">Основная теорема алгебры</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-4"></a> У любого многочлена
+<span class="math inline">\(f(z) = z^n + a_{n - 1}z^{n - 1} + \ldots +
+a_1 z + a_0\)</span> над полем <span
+class="math inline">\(\mathbb{C}\)</span> существует корень.</p>
+<p><em>Доказательство:</em></p>
+<blockquote>
+<p>Топология – это прекрасно!</p>
+</blockquote>
+<h1 id="свободное-произведение-и-теорема-ван-кампена">Свободное
+произведение и теорема ван Кампена</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-25"></a> Пусть <span
+class="math inline">\(G\)</span> и <span
+class="math inline">\(H\)</span> группы. Множество <span
+class="math inline">\(G\ast H\)</span>, состоящее из приведенных слов, с
+операцией конкатенации – <em>свободное произведение групп</em> <span
+class="math inline">\(G\)</span> и <span
+class="math inline">\(H\)</span>.</p>
+<p>Понятно что делать, если группа задана не более чем счетным набором
+порождающих <a href="#fn5" class="footnote-ref" id="fnref5"
+role="doc-noteref"><sup>5</sup></a>, а что делать иначе непонятно и
+непонятно какая группа задается более чем счетным набором
+порождающих?</p>
+<p><strong>Утверждение:</strong><a name="statement-23"></a>
+(<em>корректность определения</em>) <span class="math inline">\(G\ast
+H\)</span> – группа относительно операции конкатенации.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-26"></a>
+(<em>основное свойство свободного произведения</em>) Любые гомоморфизмы
+<span class="math inline">\(\alpha: H \to K\)</span> и <span
+class="math inline">\(\beta: G \to K\)</span> единственным образом
+продолжаются до гомоморфизма <span class="math inline">\(\varphi: H \ast
+G \to K\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\varphi(h_1g_1h_2g_2\ldots) =
+\alpha(h_1)\beta(g_1)\ldots \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-26"></a>
+<em>Амальгамированное произведение групп</em> <span
+class="math inline">\(G\)</span> и <span
+class="math inline">\(H\)</span> <em>по группе</em> <span
+class="math inline">\(K\)</span> <em>с заданными гомоморфизмами</em>
+<span class="math inline">\(\varphi: K \to G\)</span> и <span
+class="math inline">\(\psi: K \to H\)</span> – это факторгруппа <span
+class="math inline">\(G\ast H / N\)</span>, где <span
+class="math inline">\(N\)</span> – нормальное замыкание группы,
+порожденной <span
+class="math inline">\(\{\varphi(k)\psi(k^{-1})|\,\,\,\, k \in
+K\}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-29"></a>
+Топологическое пространство <span class="math inline">\(X\)</span>
+<em>вкладывается</em> в топологическое пространство <span
+class="math inline">\(Y\)</span>, если <span
+class="math inline">\(X\)</span> гомеоморфно некоторому подпространству
+<span class="math inline">\(Y\)</span>. Такой гомеоморфизм –
+<em>вложение</em>.</p>
+<p><strong>Теорема:</strong><a name="theorem-5"></a> Пусть
+топологическое пространство <span class="math inline">\(X = A \cup
+B\)</span>, где <span class="math inline">\(A\)</span> и <span
+class="math inline">\(B\)</span> открытые линейно связные подмножества
+<span class="math inline">\(X\)</span>. Пусть <span
+class="math inline">\(A\cap B\)</span> линейно связно и <span
+class="math inline">\(x_0 \in A\cap B\)</span>. Рассмотрим гомоморфизм
+<span class="math inline">\(\Phi: \pi_1(A, x_0)\ast \pi_1(B, x_0) \to
+\pi_1(X, x_0)\)</span>, являющийся продолжением гомоморфизмов <span
+class="math inline">\(a: \pi_1(A, x_0) \to \pi_1(X, x_0)\)</span> и
+<span class="math inline">\(b: \pi_1(B, x_0) \to \pi_1(X, x_0)\)</span>
+индуцированных включениями <span class="math inline">\(A \hookrightarrow
+X\)</span> и <span class="math inline">\(B \hookrightarrow X\)</span>.
+Пусть <span class="math inline">\(\alpha: \pi_1(A\cap B, x_0) \to
+\pi_1(A, x_0)\)</span> – гомоморфизм индуцированный включением и
+аналогично <span class="math inline">\(\beta: \pi_1(A\cap B, x_0) \to
+\pi_1(B, x_0)\)</span>. Тогда</p>
+<ol type="1">
+<li><span class="math inline">\(\Phi\)</span> – сюръекция,</li>
+<li><span class="math inline">\(\operatorname{Ker}\Phi = N\)</span>, где
+<span class="math inline">\(N\)</span> – нормальное замыкание группы,
+порожденной <span
+class="math inline">\(\{\alpha(w)\beta(w)^{-1}|\,\,\,\, w \in A \cap
+B\}\)</span>, или эквивалентно<span class="math inline">\(\pi_1(X, x_0)
+\simeq \pi_1(A, x_0)\ast_{N} \pi_1(B, x_0)\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li>Идея: разбить произвольную петлю <span class="math inline">\(\gamma:
+I \to X\)</span> на произведение петель, каждая из которых целиком лежит
+в <span class="math inline">\(A\)</span> или <span
+class="math inline">\(B\)</span>. Если это удалось, то первый пункт
+доказан, так как вложением полученных петель получим <span
+class="math inline">\(\gamma\)</span>.</li>
+</ol>
+<p>Реализация идеи: рассмотрим разбиение <span class="math inline">\(0 =
+t_0 &lt; \ldots &lt; t_n = 1\)</span> отрезка <span
+class="math inline">\([0, 1]\)</span>, такое что <span
+class="math inline">\(\forall i \in \{1, \ldots, n\} \,\,\,\,
+\gamma([t_{i - 1}, t_i]) \subset A\)</span> или <span
+class="math inline">\(\gamma([t_{i - 1}, t_i]) \subset A\)</span>. <a
+href="#fn6" class="footnote-ref" id="fnref6"
+role="doc-noteref"><sup>6</sup></a></p>
+<p>Обозначим за <span class="math inline">\(\gamma_i\)</span> путь,
+полученный сужением <span class="math inline">\(\gamma\)</span> на <span
+class="math inline">\([t_{i - 1}, t_i]\)</span>.</p>
+<p>Если <span class="math inline">\(\gamma([t_{i - 1}, t_i]) \subset
+A\)</span> и <span class="math inline">\(\gamma([t_{i}, t_{i + 1}])
+\subset A\)</span>, то выбросим <span class="math inline">\(t_i\)</span>
+из разбиения.</p>
+<p>Теперь <span class="math inline">\(\forall t_i \,\,\,\, \gamma(t_i)
+\in A\cap B\)</span>, поэтому, в силу линейной связности <span
+class="math inline">\(A\cap B\)</span>, для каждого <span
+class="math inline">\(i \in \{1, \ldots, n\}\)</span> можем построить
+путь <span class="math inline">\(\rho_i\)</span>, соединяющий <span
+class="math inline">\(x_0 = \gamma(0)\)</span> и <span
+class="math inline">\(\gamma(t_i)\)</span> и целиком лежащий в <span
+class="math inline">\(A\cap B\)</span>.</p>
+<p><span class="math inline">\(\gamma = \gamma_1\gamma_2\ldots \gamma_n
+=
+(\gamma_1\rho_1\rho_1^{-1})(\gamma_2\rho_2\rho_2^{-1})\ldots(\gamma_n\rho_n\rho_n^{-1})\)</span>,
+где каждая скобка вида <span
+class="math inline">\((\gamma_i\rho_i\rho_i^{-1})\)</span> петля,
+целиком лежащая в <span class="math inline">\(A\)</span> или <span
+class="math inline">\(B\)</span>. Сюръективность доказана.</p>
+<ol start="2" type="1">
+<li>Докажем, что <span class="math inline">\(N =
+\operatorname{Ker}\Phi\)</span>.</li>
+</ol>
+<ul>
+<li><p><span class="math inline">\(N \subset
+\operatorname{Ker}\Phi\)</span>, так как включения на элементах из <span
+class="math inline">\(A\cap B\)</span> дейсвуют одинаково, то есть <span
+class="math inline">\(\alpha(w)\beta(w)^{-1} = \vec{1} \forall w \in A
+\cap B\)</span>.</p></li>
+<li><p>Пусть <span class="math inline">\(w = [u_1][v_1][u_2][v_2]\ldots
+[u_n][v_n]\in \pi_1(A, x_0)\ast \pi_1(B, x_0)\)</span> и <span
+class="math inline">\(w \in \operatorname{Ker}\Phi\)</span>, то есть
+<span class="math inline">\(a([u_1])b([v_1])\ldots a([u_n])b([v_n]) =
+\Phi(w) \sim_{\{0, 1\}} e_{x_0}\)</span>. Рассмотрим гомотопию <span
+class="math inline">\(H: I \times I \to X\)</span>. Существуют разбиения
+<span class="math inline">\(0 = t_0 &lt; \ldots &lt; t_n\)</span> и
+<span class="math inline">\(0 = s_0 &lt; \ldots &lt; s_m\)</span>
+отрезка <span class="math inline">\([0, 1]\)</span>, что <span
+class="math inline">\(\forall i \in \{1, \ldots, n\}, \,\,\,\, \forall j
+\in \{1, \ldots, m\} \,\,\,\, H([t_{i - 1}, t_i]\times [s_{i - 1}, s_i])
+\subset A\)</span> или <span class="math inline">\(H([t_{i - 1},
+t_i]\times [s_{i - 1}, s_i]) \subset B\)</span>. Соединим каждую точку
+<span class="math inline">\(H((t_i, s_j))\)</span> с <span
+class="math inline">\(x_0\)</span> путем <span
+class="math inline">\(\rho_{ij}\)</span>, лежащим в <span
+class="math inline">\(A\cap B\)</span>. <a href="#fn7"
+class="footnote-ref" id="fnref7"
+role="doc-noteref"><sup>7</sup></a></p></li>
+</ul>
+<p><span class="math inline">\(\forall j \in \{1, \ldots, m\} \,\,\,\,
+F(t, s_j): I \to X\)</span> – петля в <span
+class="math inline">\(X\)</span>. Как в доказательстве сюръективности
+можем с помощью разбиения <span class="math inline">\(t_i\)</span>
+представить <span class="math inline">\(F(t, s_j)\)</span> как <span
+class="math inline">\((\gamma_{j1}\rho_{j1}\rho_{j1}^{-1})(\gamma_{j2}\rho_{j2}\rho_{j2}^{-1})\ldots(\gamma_{jn}\rho_{jn}\rho_{jn}^{-1})\)</span></p>
+<h1 id="накрытия">Накрытия</h1>
+<hr />
+<blockquote>
+<p>Во многом фундаментальную группу и накрытия можно рассматривать как
+две точки зрения на одно и тоже.</p>
+</blockquote>
+<p><strong>Определение:</strong><a name="definition-30"></a>
+Топологическое пространство <span class="math inline">\(X\)</span>
+<em>локально линейно связно</em>, если у любой точки <span
+class="math inline">\(x \in X\)</span> и любой окрестности <span
+class="math inline">\(U_x\)</span> точки <span
+class="math inline">\(x\)</span> существует линейно связная окрестность
+<span class="math inline">\(V_x \subset U_x\)</span>.</p>
+<h3
+id="пример-линейно-связного-но-не-локально-линейно-свзного-пространства">Пример
+линейно связного, но не локально линейно свзного пространства</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-31"></a>
+<em>Гребень</em> – это <span class="math inline">\(\{(t, 0)|\,\,\,\, t
+\in [0, 1]\}\cap\{(0, t)|\,\,\,\, t \in [0, 1]\}\cap\{(\frac1n,
+t)|\,\,\,\, t \in [0, 1]\}\)</span>.</p>
+<center>
+<canvas id="canvas-comb">
+</canvas>
+</center>
+<p><strong>Утверждение:</strong><a name="statement-27"></a> Гребень не
+локально линейно связен.</p>
+<p><em>Доказательство:</em> см.картинку <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-32"></a> Пусть <span
+class="math inline">\(Y\)</span> и <span
+class="math inline">\(X\)</span> – линейно связные и локально линейно
+связные топологические пространства и <span class="math inline">\(p: Y
+\to X\)</span> – непрерывное отображение. Пусть у каждой точки <span
+class="math inline">\(x \in X\)</span> существует окрестность <span
+class="math inline">\(U_x \in \tau_X\)</span>, такая что <span
+class="math inline">\(p^{-1}(U_x) = \sqcup_{\alpha}V_{\alpha}\)</span> и
+<span class="math inline">\(\forall \alpha \,\,\,\, p_{|V_{\alpha}}:
+V_{\alpha} \to U_x\)</span> – гомеоморфизм.</p>
+<h2 id="примеры-накрытий">Примеры накрытий</h2>
+<hr />
+<ul>
+<li><p>У любого пространства <span class="math inline">\(X\)</span>
+существует тривиальное накрытие <span class="math inline">\(Y =
+X\)</span> и <span class="math inline">\(p =
+\operatorname{id}\)</span>.</p></li>
+<li><p><span class="math inline">\(Y = \mathbb{R}^{1} \,\,\,\, X = S^1
+\,\,\,\, p(t) = e^{2\pi i t}\)</span>.</p></li>
+<li><p><span class="math inline">\(X = \mathbb{R}P^2 \,\,\,\, Y = S^2
+\,\,\,\, p\)</span> – отождествление противоположных точек.</p></li>
+</ul>
+<p><strong>Лемма:</strong><a name="lemma-6"></a> (<em>поднятие
+пути</em>) Пусть <span class="math inline">\((Y, p, X)\)</span> –
+накрытие, <span class="math inline">\(x_0 \in X, \,\,\,\, y_0 \in Y
+\,\,\,\, p(y_0) = x_0, \,\,\,\,\gamma: [0, 1] \to X \,\,\,\, \gamma(0) =
+x_0\)</span>. Тогда <span class="math inline">\(\exists!\)</span> путь
+<span class="math inline">\(\tilde{\gamma}: [0, 1] \to Y\)</span>, такой
+что <span class="math inline">\(p\circ \tilde{\gamma} = \gamma\)</span>.
+<a href="#fn8" class="footnote-ref" id="fnref8"
+role="doc-noteref"><sup>8</sup></a></p>
+<p><em>Доказательство:</em></p>
+<p>В силу леммы Лебега выберем разбиение <span class="math inline">\(0
+&lt; t_0 &lt; \ldots &lt; t_n\)</span> отрезка <span
+class="math inline">\([0, 1]\)</span>, так чтобы <span
+class="math inline">\(\gamma([t_i, t_{i+1}]) \subset U_{i}\)</span>, где
+<span class="math inline">\(U_{i}\)</span> окрестность, прообраз которой
+состоит из дизъюнктного объединения <span
+class="math inline">\(V_{i\alpha}\)</span>.</p>
+<p>Выберем среди <span class="math inline">\(V_{i\alpha}\)</span>
+окрестность <span class="math inline">\(V_{i}\)</span>, содержащую <span
+class="math inline">\(y_0\)</span>. <span
+class="math inline">\(p_{|V_i}\)</span> – это гомеоморфизм <span
+class="math inline">\(U_i\)</span> и <span
+class="math inline">\(V_i\)</span>, то есть, рассмотрев композицию <span
+class="math inline">\(p_{|V_i}^{-1}\circ
+\gamma_{|\gamma^{-1}(U_i)}\)</span> и перепараметризовав ее, получим
+поднятие пути <span class="math inline">\(\gamma([t_i, t_{i +
+1}])\)</span>, далее выберем среди <span class="math inline">\(V_{(i+1)
+\alpha}\)</span> окрестность, содержащую нужную точку и т.д. <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p>Если что это несложно сделать аккуратно.</p>
+<p><strong>Лемма:</strong><a name="lemma-7"></a> (<em>поднятие
+гомотопии</em>) Пусть <span class="math inline">\((\tilde{X}, p,
+X)\)</span> – накрытие. <span class="math inline">\(f: Y \times I \to
+X\)</span> – гомотопия и <span class="math inline">\(\tilde{f}_0: Y \to
+\tilde{X}\)</span> – непрерывное отображение поднимающее <span
+class="math inline">\(f_0\)</span>, то есть диаграмма слева
+коммутативна. Тогда диаграмма справа коммутативна.</p>
+<p><img src="img/cover-lemma.png" /></p>
+<!-- <center><div id="container" style="position: relative; width: 300px; height: 300px;">
+<canvas id="canvas-diag" style="position: absolute; left: 0px; top: 0px;"></canvas>
+</div></center> -->
+<p><em>Доказательство:</em> При фиксированном <span
+class="math inline">\(y\)</span> поднятие <span
+class="math inline">\(\tilde{f}_y\)</span> для <span
+class="math inline">\(f: \{y\}\times I \to X\)</span> существует по
+предыдущей лемме. А следовательно определено отображение <span
+class="math inline">\(\tilde{f}\)</span>. Непрерывность проверяется
+поточечно. Единственность следует из единственности в лемме <a
+href="#fn9" class="footnote-ref" id="fnref9"
+role="doc-noteref"><sup>9</sup></a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Лемма:</strong><a name="lemma-8"></a> Пусть <span
+class="math inline">\((\tilde{X}, p, X)\)</span> – накрытие. Тогда <span
+class="math inline">\(p_{*}: \pi_1(\tilde{X}, x_0) \to \pi_1(X,
+p(x_0))\)</span> – инъективен, то есть <span
+class="math inline">\(p_{*}(\pi_1(\tilde{X}, x_0))\)</span> подгруппа в
+<span class="math inline">\(\pi_1(X, p(x_0))\)</span>, причем она
+состоит из тех классов петель, поднятия которых – петли.</p>
+<p><em>Доказательство:</em> По предыдущей лемме ядро тривиально. <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-6"></a> Пусть <span
+class="math inline">\((\tilde{X}, p, X)\)</span> – накрытие. <span
+class="math inline">\(f: (Y, y_0) \to (X, x_0)\)</span> и <span
+class="math inline">\(Y\)</span> линейно связно и локально линейно
+связно. Поднятие <span class="math inline">\(\tilde{f}: (Y, y_0) \to
+(\tilde{X}, \tilde{x}_0)\)</span> отображения <span
+class="math inline">\(f\)</span> существует <span
+class="math inline">\(\iff f_{*}(\pi_1(Y, y_0)) \subset
+p_{*}(\pi_1(\tilde{X}, \tilde{x}_0))\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<h2 id="универсальные-накрытия">Универсальные накрытия</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-33"></a> Накрытие
+<span class="math inline">\((\tilde{X}, p, X)\)</span>
+<em>универсальное</em>, если <span class="math inline">\(\pi_1(X) =
+\{e\}\)</span>.</p>
+<h3 id="пример">Пример</h3>
+<p><span class="math inline">\((\mathbb{R}^1, p, S^1)\)</span> –
+универсально.</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Или, что тоже самое <span class="math inline">\(\rho^2 =
+\rho\)</span>. Да-да, это почти проектор.<a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Что вообще значит значок <span
+class="math inline">\(\cup\)</span> в определении? Что любая пара
+отображений <span class="math inline">\(X\times \{0\} \to Y\)</span> и
+<span class="math inline">\(A\times I \to Y\)</span>, которые совпадают
+на <span class="math inline">\(A\times \{0\}\)</span> могут быть
+продолжены до отображения <span class="math inline">\(X \times I \to
+Y\)</span>.<a href="#fnref2" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Вы знали: эйлерова характеристика пространства зависит
+только от его гомотопического типа?<a href="#fnref3"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Расписать определения того и другого.<a href="#fnref4"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Вообще, набор порождающих – это не свободная группа?<a
+href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Как получить такое разбиение: <span
+class="math inline">\(\gamma\)</span> – непрерывно, а значит у каждой
+точки <span class="math inline">\(t \in [0, 1]\)</span> существует
+окрестность <span class="math inline">\(U_t\)</span>, образ которой
+целиком содержится в <span class="math inline">\(A\)</span> или <span
+class="math inline">\(B\)</span>, так как <span
+class="math inline">\(A\)</span> и <span
+class="math inline">\(B\)</span> открыты. Отрезок компакт, поэтому можем
+выбрать конечное подпокрытие из <span
+class="math inline">\(U_t\)</span>.<a href="#fnref6"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Можем аналогично доказательству сюръективности.<a
+href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>такое <span
+class="math inline">\(\tilde{\gamma}\)</span> – это <em>поднятие
+пути</em> <span class="math inline">\(\gamma\)</span>.<a href="#fnref8"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Да, там я ее не доказала.<a href="#fnref9"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

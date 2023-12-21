@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    canvas {
+      border: 1px solid #000;
+    }
+  </style>
+  <title>3D Torus and Trefoil Knot</title>
+</head>
+<body>
+  <canvas id="torus-canvas" width="400" height="400"></canvas>
+
+  <script>
+    const canvas = document.getElementById('torus-canvas');
+    const ctx = canvas.getContext('2d');
+
+    function drawTorus() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      const centerX = canvas.width / 2;
+      const centerY = canvas.height / 2;
+
+      const majorRadius = 50;
+      const minorRadius = 20;
+
+      for (let theta = 0; theta < 2 * Math.PI; theta += 0.1) {
+        for (let phi = 0; phi < 2 * Math.PI; phi += 0.1) {
+          const x = centerX + (majorRadius + minorRadius * Math.cos(theta)) * Math.cos(phi);
+          const y = centerY + (majorRadius + minorRadius * Math.cos(theta)) * Math.sin(phi);
+          const z = minorRadius * Math.sin(theta);
+
+          const intensity = Math.abs(Math.cos(theta)); // Simulating shading
+
+          const color = `rgba(0, 0, 255, ${intensity})`;
+
+          ctx.beginPath();
+          ctx.arc(x, y, 2, 0, 2 * Math.PI);
+          ctx.fillStyle = color;
+          ctx.fill();
+        }
+      }
+    }
+
+    function drawTrefoilKnot() {
+      const centerX = canvas.width / 2;
+      const centerY = canvas.height / 2;
+
+      const scale = 5;
+      const numPoints = 500;
+
+      ctx.beginPath();
+      ctx.moveTo(centerX, centerY);
+
+      for (let t = 0; t <= 2 * Math.PI; t += (2 * Math.PI) / numPoints) {
+        const x = centerX + scale * (Math.sin(t) + 2 * Math.sin(2 * t));
+        const y = centerY + scale * (Math.cos(t) - 2 * Math.cos(2 * t));
+
+        ctx.lineTo(x, y);
+      }
+
+      ctx.strokeStyle = 'red';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+    }
+
+    drawTorus();
+    drawTrefoilKnot();
+  </script>
+</body>
+</html>

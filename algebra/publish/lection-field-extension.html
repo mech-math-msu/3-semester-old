@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+    <script>
+      window.MathJax = {
+  loader: {load: ['[tex]/bbox']},
+  tex: {packages: {'[+]': ['bbox'],
+                    '[+]': ['html']}}
+};
+    </script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#поле-расширений" id="toc-поле-расширений">Поле
+расширений</a></li>
+<li><a href="#классификация-конечных-полей"
+id="toc-классификация-конечных-полей">Классификация конечных полей</a>
+<ul>
+<li><a href="#критерий-вложимости-для-конечных-полей"
+id="toc-критерий-вложимости-для-конечных-полей">Критерий вложимости для
+конечных полей</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="поле-расширений">Поле расширений</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> <em>Поле
+разложения для</em> <span class="math inline">\(f \in F[x]\)</span> –
+это поле <span class="math inline">\(G \supset F\)</span>:</p>
+<ol type="1">
+<li><span class="math inline">\(f\)</span> раскладывается на линейные
+множители над <span class="math inline">\(G\)</span>,</li>
+<li>Из <span class="math inline">\(F \subset H \subsetneq G\)</span>
+следует, что <span class="math inline">\(f\)</span> не раскладывается на
+линейные множители над <span class="math inline">\(H\)</span>.</li>
+</ol>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(F\)</span> – поле, <span
+class="math inline">\(\operatorname{const} \ne f \in F[x]\)</span>.
+Тогда поле разложения для <span class="math inline">\(f\)</span>
+существует и единственно с точностью до изоморфизма алгебр.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math display">\[\boxed{\exists}\]</span></p>
+<p>Разложим <span class="math inline">\(f\)</span> на неприводимые
+множители. Выберем один из них и обозначим его <span
+class="math inline">\(p\)</span>. Рассмотрим поле <span
+class="math inline">\(F[y]/pF[y] = \hat{F}\)</span>. В поле <span
+class="math inline">\(\hat{F}\)</span> <span
+class="math inline">\(p\)</span> имеет корень. <a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>
+Этот корень является корнем <span class="math inline">\(f\)</span>.
+Значит <span class="math inline">\(f = (x - c)g\)</span> в <span
+class="math inline">\(\hat{F}\)</span>, и поле разложения для <span
+class="math inline">\(g\)</span> существует по предположению индукции по
+степени многочлена.</p>
+<p><span class="math display">\[\boxed{!}\]</span></p>
+<p>Пусть <span class="math inline">\(G\)</span> и <span
+class="math inline">\(G’\)</span> поля разложения многочлена <span
+class="math inline">\(F\)</span> и <span
+class="math inline">\(c\)</span> – корень этого многочлена. Рассмотрим
+простое расширение <span class="math inline">\(F(c) \subset
+G\)</span>.</p>
+<p><span class="math inline">\(c\)</span> – алгебраический <span
+class="math inline">\(\implies F(c) \simeq F[y]/\mu_{c}(y)F[y] =
+\hat{F}\)</span>.</p>
+<p>Дальше непонятно.</p>
+<h1 id="классификация-конечных-полей">Классификация конечных полей</h1>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Поле из <span
+class="math inline">\(n \in \mathbb{N}\)</span> элементов существует
+<span class="math inline">\(\iff n = p^k\)</span>, где <span
+class="math inline">\(p\)</span> - простое.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math inline">\(\boxed{\longrightarrow}\)</span> <span
+class="math inline">\(|F| &lt; \infty \implies \operatorname{char}F =
+p\)</span>, где <span class="math inline">\(p\)</span> – простое.
+Рассмотрим <span class="math inline">\(F =\{\underbrace{1+\ldots +
+1}_{k}|\,\,\,\, k \in \mathbb{N}\} \simeq \mathbb{Z}_p\)</span>.</p>
+<p><span class="math inline">\(F\)</span> – векторное пространство над
+<span class="math inline">\(\mathbb{Z}_p\)</span> и <span
+class="math inline">\(\dim_{\mathbb{Z}_p}F &lt; \infty \implies |F| =
+p^{\dim_{\mathbb{Z}_p}F}\)</span>.</p>
+<p><span class="math inline">\(\boxed{\longleftarrow}\)</span>
+Рассмотрим <span class="math inline">\(f(x) = x^{p^k} - x \in
+\mathbb{Z}_p[x]\)</span>. Пусть <span class="math inline">\(F\)</span> –
+это поле разложения для <span class="math inline">\(f \implies\)</span>
+в <span class="math inline">\(F \,\,\,\, f = (x - \alpha_1)\ldots(x -
+\alpha_{p^k})\)</span>.</p>
+<p>Все <span class="math inline">\(\alpha_i\)</span> различны, так как
+иначе <span class="math inline">\(\alpha_i\)</span> – корень
+производной, <span class="math inline">\(f’ = p^k x^{p^k - 1} - 1 =
+-1\)</span> не имеет корней.</p>
+<p>Докажем, что множество <span class="math inline">\(\{\alpha_i|
+\,\,\,\, i \in \{1, \ldots, p^k\}\} = F\)</span>. Заметим, что в <span
+class="math inline">\(\mathbb{Z}_p[x]\)</span> выполнено <span
+class="math inline">\((\alpha_i + \alpha_j)^{p^k} = \alpha_i^{p^k} +
+\alpha_j^{p^k}\)</span>. <a href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a> Значит <span
+class="math inline">\(f(\alpha_i + \alpha_j) = (\alpha_i +
+\alpha_j)^{p^k} - (\alpha_i + \alpha_j) = \alpha_i^{p^k} - \alpha_i +
+\alpha_j^{p^k} - \alpha_j = 0\)</span>. Произведение аналогично.</p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> Поле из <span
+class="math inline">\(p^k\)</span> изоморфно полю разложения <span
+class="math inline">\(F\)</span> многочлена <span
+class="math inline">\(f = x^{p^k} - x\)</span> над <span
+class="math inline">\(\mathbb{Z}_p\)</span>.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(F\)</span>
+– поле и <span class="math inline">\(|F| = p^k\)</span>. Докажем, что
+<span class="math inline">\(\forall \alpha \in F \,\,\,\, f(\alpha) =
+0\)</span>.</p>
+<ol type="1">
+<li><span class="math inline">\(\alpha = 0 \implies f(\alpha) = 0 =
+0^{p^k} - 0\)</span>,</li>
+<li><span class="math inline">\(\alpha \ne 0 \implies \alpha \in
+F^{*}\)</span> <a href="#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a>. <span class="math inline">\(|F^{*}|
+= p^k - 1 \implies\)</span> по теореме Лагранжа <span
+class="math inline">\(\alpha^{p^k - 1} = \alpha^{p^k} - 1 =
+0\)</span>.</li>
+</ol>
+<p>Значит <span class="math inline">\(F\)</span> – поле разложения для
+<span class="math inline">\(f\)</span> и следовательно единственно <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> Пусть <span
+class="math inline">\(F\)</span> – конечное поле и <span
+class="math inline">\(|F| = p^k\)</span>. По теореме мультипликативная
+группа поля <span class="math inline">\(F^{*}\)</span> циклическая.
+Пусть <span class="math inline">\(F^{*} = \langle \alpha
+\rangle\)</span>. <span class="math inline">\(F = \mathbb{Z}_p(\alpha)
+\simeq \mathbb{Z}_p[x]/\mu_{\alpha}(x)\mathbb{Z}_p[x]\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="критерий-вложимости-для-конечных-полей">Критерий вложимости для
+конечных полей</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-3"></a> Пусть <span
+class="math inline">\(F\)</span> и <span
+class="math inline">\(G\)</span> – поля, <span class="math inline">\(|F|
+= p^k\)</span> и <span class="math inline">\(|G| = q^m\)</span>. Тогда
+<span class="math inline">\(F\)</span> вкладывается в <span
+class="math inline">\(G \iff p = q\)</span> и <span
+class="math inline">\(k \,\,|\,\, m\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>так как <span class="math inline">\(\hat{F}\)</span> –
+это расширение поля <span class="math inline">\(F\)</span>, в котором
+<span class="math inline">\(p\)</span> чей-то минимальный многочлен.<a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Доказывается, например, разложением в бином. Кхм,
+например.<a href="#fnref2" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>мультипликативная группа поля.<a href="#fnref3"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

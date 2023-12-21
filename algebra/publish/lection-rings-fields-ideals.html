@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+    <script>
+      window.MathJax = {
+  loader: {load: ['[tex]/bbox']},
+  tex: {packages: {'[+]': ['bbox'],
+                    '[+]': ['html']}}
+};
+    </script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#алгебраические-структуры"
+id="toc-алгебраические-структуры">Алгебраические структуры</a>
+<ul>
+<li><a href="#кольцо" id="toc-кольцо">Кольцо</a></li>
+<li><a href="#поле-и-тело" id="toc-поле-и-тело">Поле и тело</a></li>
+<li><a href="#примеры-колец" id="toc-примеры-колец">Примеры
+колец</a></li>
+<li><a href="#алгебра" id="toc-алгебра">Алгебра</a>
+<ul>
+<li><a href="#примеры" id="toc-примеры">Примеры</a></li>
+</ul></li>
+<li><a href="#идеал" id="toc-идеал">Идеал</a></li>
+<li><a href="#факторкольцо-и-факторалгебра"
+id="toc-факторкольцо-и-факторалгебра">Факторкольцо и
+факторалгебра</a></li>
+<li><a href="#главные-идеалы" id="toc-главные-идеалы">Главные
+идеалы</a></li>
+<li><a href="#кольца-главных-идеалов"
+id="toc-кольца-главных-идеалов">Кольца главных идеалов</a></li>
+<li><a href="#когда-факторкольцо-является-полем"
+id="toc-когда-факторкольцо-является-полем">Когда факторкольцо является
+полем?</a></li>
+<li><a href="#поле-это-векторное-пространство-над-подполем"
+id="toc-поле-это-векторное-пространство-над-подполем">Поле это векторное
+пространство над подполем</a>
+<ul>
+<li><a href="#пример" id="toc-пример">Пример</a></li>
+</ul></li>
+<li><a href="#теорема-о-строении-простого-расширения-поля"
+id="toc-теорема-о-строении-простого-расширения-поля">Теорема о строении
+простого расширения поля</a></li>
+<li><a href="#башня-расширений" id="toc-башня-расширений">Башня
+расширений</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="алгебраические-структуры">Алгебраические структуры</h1>
+<hr />
+<h2 id="кольцо">Кольцо</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a>
+<em>Кольцо</em> – это <span class="math inline">\((R, +, \cdot),
+\,\,\,\, R\times R\overset{+}{\to} R\)</span> и <span
+class="math inline">\(R\times R \overset{\cdot}{\to} R\)</span>, такая
+что</p>
+<ol type="1">
+<li><span class="math inline">\((R, +)\)</span> – абелева группа,</li>
+<li><span class="math inline">\(\forall x, y, z \in R \,\,\,\, x(y + z)
+= xy + xz\)</span> и <span class="math inline">\((x + y)z = xz +
+yz\)</span>.</li>
+</ol>
+<h2 id="поле-и-тело">Поле и тело</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-1"></a>
+<em>Тело</em> – это ассоциативное кольцо с единицей не равной <span
+class="math inline">\(0\)</span>, в котором любой ненулевой элемент
+обратим.</p>
+<p><strong>Самопроверка:</strong> Чем тело отличается от поля?</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Отображение
+<span class="math inline">\(\varphi: R \to S\)</span> – <em>гомоморфизм
+колец</em> <span class="math inline">\(R\)</span> и <span
+class="math inline">\(S\)</span>, если <span
+class="math inline">\(\forall x, y \in R\)</span></p>
+<ol type="1">
+<li><span class="math inline">\(\varphi(x + y) = \varphi(x) +
+\varphi(y)\)</span>,</li>
+<li><span class="math inline">\(\varphi(xy) =
+\varphi(x)\varphi(y)\)</span>.</li>
+</ol>
+<h2 id="примеры-колец">Примеры колец</h2>
+<hr />
+<ol type="1">
+<li><p>Множество векторов с операциями сложения и векторного умножения –
+кольцо (некоммутативное и неассоциативное).</p></li>
+<li><p>Пусть <span class="math inline">\(X\)</span> – множество. Тогда
+множество его подмножеств <span
+class="math inline">\(\mathcal{P}(X)\)</span> – кольцо относительно
+операций <span class="math inline">\(A \triangle B = (A \setminus B)\cup
+(B \setminus A)\)</span> и пересечения (ассоциативное, коммутативное и с
+единицей).</p></li>
+</ol>
+<h2 id="алгебра">Алгебра</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-4"></a> <em>Алгебра
+над полем</em> <span class="math inline">\(\mathbb{F}\)</span> - это
+множество <span class="math inline">\(A\)</span> с операциями умножения
+<span class="math inline">\(\cdot: A \times A \to A\)</span>, умножения
+на скаляр <span class="math inline">\(\cdot: \mathbb{F}\times A \to
+A\)</span> и сложения <span class="math inline">\(+:A\times A \to
+A\)</span>, такое что:</p>
+<ol type="1">
+<li>Относительно сложения и умножения на скаляр <span
+class="math inline">\(A\)</span> – векторное пространство,</li>
+<li>Относительно сложения и умножения <span
+class="math inline">\(A\)</span> – кольцо,</li>
+<li><span class="math inline">\(\forall x, y, z \in A \,\,\,\, (\lambda
+x) y = \lambda (xy) = x (\lambda y)\)</span>.</li>
+</ol>
+<h3 id="примеры">Примеры</h3>
+<hr />
+<ol type="1">
+<li>Алгебра многочленов от одной переменной над полем <span
+class="math inline">\(\mathbb{F}\)</span>,
+<strong>обозначающаяся</strong> <span
+class="math inline">\(F[x]\)</span>.</li>
+<li>Алгебра матриц <span
+class="math inline">\(M_n(\mathbb{F})\)</span>.</li>
+<li>Алгебра рациональных дробей над полем <span
+class="math inline">\(\mathbb{F}\)</span>,
+<strong>обозначающаяся</strong> <span
+class="math inline">\(F(x)\)</span>.</li>
+</ol>
+<p><strong>Определение:</strong><a name="definition-2"></a> Отображение
+<span class="math inline">\(\varphi: A_1 \to A_2\)</span> –
+<em>гомоморфизм алгебр</em> <span class="math inline">\(A_1\)</span> и
+<span class="math inline">\(A_2\)</span>, если <span
+class="math inline">\(\forall x, y \in A_1\)</span></p>
+<ol type="1">
+<li><span class="math inline">\(\varphi(x + y) = \varphi(x) +
+\varphi(y)\)</span>,</li>
+<li><span class="math inline">\(\varphi(xy) =
+\varphi(x)\varphi(y)\)</span>,</li>
+<li><span class="math inline">\(\varphi(\lambda x) = \lambda
+\varphi(x)\)</span>.</li>
+</ol>
+<p><strong>Факт:</strong> Ядро гомоморфизма алгебр (колец) идеал в
+алгебре (кольце).</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="идеал">Идеал</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-3"></a>
+<em>Идеал</em> – это <span class="math inline">\(I \subset R\)</span>,
+где <span class="math inline">\(R\)</span> – кольцо (алгебра), такое
+что</p>
+<ol type="1">
+<li><span class="math inline">\(I\)</span> подгруппа по сложению
+(подпространство),</li>
+<li><span class="math inline">\(\forall r \in R \,\,\,\, \forall i \in I
+\,\,\,\, ri \in I\)</span> и <span class="math inline">\(ir \in
+I\)</span>.</li>
+</ol>
+<p><strong>Обозначается:</strong> <span class="math inline">\(I
+\vartriangleleft R\)</span>.</p>
+<p>Второе условие эквивалентно тому, что <span class="math inline">\(rI
+\subset I \supset Ir\)</span>. Если выполнено левое включение, то <span
+class="math inline">\(I\)</span> <em>левый идеал</em> и аналогично
+правый.</p>
+<h2 id="факторкольцо-и-факторалгебра">Факторкольцо и факторалгебра</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
+class="math inline">\(R\)</span> – кольцо (алгебра). Пусть <span
+class="math inline">\(I \subset R\)</span>. Определим <span
+class="math inline">\(v + I = \{v + i|\,\,\,\, i \in I\}, \,\,\,\, v \in
+R \,\,\,\, (\lambda (v + I) = \lambda v + I)\)</span>.</p>
+<p>Определим сложение и умножение на множестве <span
+class="math inline">\(R/I = \{v + I|\,\,\,\, v \in R\}\)</span>:</p>
+<p><span class="math inline">\((v + I) + (v’ + I) = (v + v’) +
+I\)</span>,</p>
+<p><span class="math inline">\((v + I)\cdot(v’ + I) = v\cdot v’ +
+I\)</span>.</p>
+<p>Тогда <span class="math inline">\(R/I\)</span> – группа относительно
+введенных операций <span class="math inline">\(\iff I \vartriangleleft
+R\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-6"></a> Пусть <span
+class="math inline">\(R\)</span> – кольцо (алгебра). Пусть <span
+class="math inline">\(I \vartriangleleft R\)</span>. Множество <span
+class="math inline">\(R/I\)</span> с введенными выше операциями сложения
+и умножения – <em>факторкольцо (факторалгебра)</em>.</p>
+<h2 id="главные-идеалы">Главные идеалы</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-7"></a> Гомоморфизм
+<span class="math inline">\(R \overset{\pi}{\to} R/I: r \mapsto r +
+I\)</span> – <em>канонический гомоморфизм</em>.</p>
+<p><strong>Факт:</strong> <span
+class="math inline">\(\operatorname{ker}\pi = I\)</span>.</p>
+<h2 id="кольца-главных-идеалов">Кольца главных идеалов</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-9"></a> Пусть <span
+class="math inline">\(A\)</span> – ассоциативное коммутативное кольцо с
+единицей. <span class="math inline">\(S \subset A\)</span>.</p>
+<p>Множество <span class="math inline">\((S) = \{a_1s_1 +\ldots +
+a_ns_n| \,\,\,\, a_i \in A, \,\,\,\, s_i \in S, \,\,\,\, n \in
+\mathbb{N}\}\)</span> – <em>идеал, порожденный</em> <span
+class="math inline">\(S\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-8"></a> Идеал в
+кольце (алгебре) <em>главный</em>, если он порождается одним
+элементом.</p>
+<p><strong>Определение:</strong><a name="definition-10"></a> Кольцо
+(ассоциативное и коммутативное) без делителей нуля, в котором все идеалы
+главные – <em>кольцо главных идеалов</em>.</p>
+<p><strong>Лемма:</strong><a name="lemma-0"></a> Любое поле является
+кольцом главных идеалов.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a></p>
+<ol type="1">
+<li><span class="math inline">\(\mathbb{Z}\)</span> – кольцо главных
+идеалов,</li>
+<li><span class="math inline">\(F[x]\)</span> – кольцо главных
+идеалов.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li>Все идеалы имеют вид <span class="math inline">\(k\mathbb{Z} =
+(k)\)</span>,</li>
+<li>Пусть <span class="math inline">\(I \vartriangleleft F[x]\)</span>.
+Рассмотрим многочлен <span class="math inline">\(0 \ne f \in I\)</span>
+наименьшей степени. <span class="math inline">\(\forall h \in I \,\,\,\,
+h = gf + r \implies \deg r &lt; \deg f \implies r = 0 \implies I = (f)
+\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<h2 id="когда-факторкольцо-является-полем">Когда факторкольцо является
+полем?</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> <span
+class="math inline">\(F[x]/fF[x]\)</span> – поле <span
+class="math inline">\(\iff f\)</span> неприводимый.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math inline">\((f) = fF[x] = I\)</span>.</p>
+<p><span class="math inline">\(\boxed{\Longrightarrow}\)</span> Пусть
+<span class="math inline">\(f = gh \implies f + I = 0 = (g + I)(h + I)
+\implies g + I = 0\)</span> или <span class="math inline">\(h + I = 0
+\implies g \in I\)</span> или <span class="math inline">\(h \in I
+\implies g = fk\)</span> или <span class="math inline">\(h =
+fs\)</span>, что невозможно, так как <span class="math inline">\(\deg g
+&lt; \deg f\)</span>.</p>
+<p><span class="math inline">\(\boxed{\Longleftarrow}\)</span> Нужно
+проверить наличие обратного элемента. Пусть <span
+class="math inline">\(g \not\in I \implies \gcd{(f, g)} = 1 \implies
+\exists u, v \in F[x]: \,\,\,\, fu + gv = 1\)</span>. <span
+class="math inline">\(fu \in I \implies fu + gv + I = gv + I = 1 + I
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-11"></a>
+<em>Характеристика</em> поля <span class="math inline">\(F\)</span> –
+это минимальное натуральное <span class="math inline">\(n\)</span>,
+такое что <span class="math inline">\(\underbrace{1 + \ldots +1}_{n} =
+0\)</span>.</p>
+<p><strong>Обозначается:</strong> <span
+class="math inline">\(\operatorname{char}F\)</span>.</p>
+<p>Если такого <span class="math inline">\(n\)</span> не существует, то
+<span class="math inline">\(\operatorname{char}F = 0\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> <span
+class="math inline">\(\operatorname{char}F = 0\)</span> или <span
+class="math inline">\(\operatorname{char}F\)</span> – простое число.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> <span
+class="math inline">\(F\)</span> конечное поле <span
+class="math inline">\(\implies |F| = p^k\)</span>.</p>
+<p><em>Доказательство:</em> Будет доказано позже. Пусть <span
+class="math inline">\(\operatorname{char}F = p\)</span>. Рассмотрим
+<span class="math inline">\(\{0, 1, 1+1, \ldots, 1+\ldots+1\} \simeq
+\mathbb{Z}_p\)</span>.</p>
+<h2 id="поле-это-векторное-пространство-над-подполем">Поле это векторное
+пространство над подполем</h2>
+<hr />
+<p><strong>Замечание:</strong> Пусть <span
+class="math inline">\(F\)</span> – поле и <span
+class="math inline">\(G\)</span> – его подполе. Тогда можно
+рассматривать <span class="math inline">\(F\)</span>, как векторное
+пространство над <span class="math inline">\(G\)</span>.</p>
+<h3 id="пример">Пример</h3>
+<p><span class="math inline">\(\mathbb{C}\)</span> – это векторное
+пространство над <span class="math inline">\(\mathbb{R}\)</span> с
+базисом <span class="math inline">\(\{1, i\}\)</span>, то есть <span
+class="math inline">\(\dim_{\mathbb{R}} \mathbb{C} = 2\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Для любого простого
+<span class="math inline">\(p\)</span> и натурального <span
+class="math inline">\(k\)</span> существует единственное с точностью до
+изоморфизма поле из <span class="math inline">\(p^k\)</span>
+элементов.</p>
+<p><em>Доказательство:</em> Будет доказано позже.</p>
+<p><strong>Определение:</strong><a name="definition-12"></a> Пусть <span
+class="math inline">\(F\)</span> – поле, <span
+class="math inline">\(G\)</span> – его подполе. Множество <span
+class="math inline">\(G(\alpha) =
+\left\lbrace\frac{f(\alpha)}{g(\alpha)}| \,\,\,\, f, g \in G[x],
+\,\,\,\, g(\alpha) \ne 0\right\rbrace\)</span> – <em>простое
+расширение</em> <span class="math inline">\(G\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a> Пусть <span
+class="math inline">\(F\)</span> – поле, <span
+class="math inline">\(G\)</span> – его подполе. Простое расширение <span
+class="math inline">\(G\)</span> – это поле.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Определение:</strong><a name="definition-13"></a> Пусть <span
+class="math inline">\(F\)</span> – поле, <span
+class="math inline">\(\alpha \in F\)</span>.</p>
+<p>Если <span class="math inline">\(\exists 0 \ne f \in F: \,\,\,\,
+f(\alpha) = 0\)</span>, то <span class="math inline">\(\alpha\)</span> –
+<em>алгебраический элемент поля</em> <span
+class="math inline">\(F\)</span>.</p>
+<p>Иначе <span class="math inline">\(\alpha\)</span> –
+<em>трансцендентный элемент</em>.</p>
+<h2 id="теорема-о-строении-простого-расширения-поля">Теорема о строении
+простого расширения поля</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-2"></a> Пусть <span
+class="math inline">\(F(\alpha)\)</span> – простое расширение поля <span
+class="math inline">\(F\)</span>.</p>
+<p>Тогда выполнено одно из следующих утверждений:</p>
+<ol type="1">
+<li><span class="math inline">\(F(\alpha) \simeq F[x]/fF[x]\)</span> для
+некоторого <span class="math inline">\(f \in F[x]\)</span>,</li>
+<li><span class="math inline">\(F(\alpha) \simeq F(x)\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<p><span class="math display">\[\boxed{\operatorname{I}}\]</span></p>
+<p>Пусть <span class="math inline">\(\alpha\)</span> – алгебраический
+элемент, то есть <span class="math inline">\(\exists f \in
+F[x]\)</span>, такой что <span class="math inline">\(f(\alpha) =
+0\)</span>. Обозначим <span class="math inline">\(\mu_{\alpha}\)</span>
+аннулирующий многочлен минимальной степени. <span
+class="math inline">\(\mu_{\alpha}\)</span> неприводим (Пусть <span
+class="math inline">\(mu_{\alpha} = gh \implies 0 = \mu_{\alpha}(\alpha)
+= g(\alpha)h(\alpha) \implies g(\alpha) = 0\)</span> или <span
+class="math inline">\(h(\alpha) = 0\)</span>. Противоречие.)</p>
+<p>Рассмотрим гомоморфизм <span class="math inline">\(F[x]
+\overset{\varphi}{\to} F(\alpha): f \mapsto f(\alpha)\)</span>. По
+теореме о гомоморфизме для колец <a href="#fn1" class="footnote-ref"
+id="fnref1" role="doc-noteref"><sup>1</sup></a> <span
+class="math inline">\(\operatorname{Im} \varphi \simeq
+F[x]/\operatorname{Ker} \varphi\)</span>.</p>
+<p><span class="math inline">\(g \in \operatorname{Ker} \varphi \implies
+g(\alpha) = 0 \implies g = \mu_{\alpha}h \implies
+\operatorname{Ker}\varphi = \mu_{\alpha}F[x]\)</span>.</p>
+<p>Почему <span class="math inline">\(\operatorname{Im}\varphi =
+F(\alpha)\)</span>? Рассмотрим <span
+class="math inline">\(\frac1{f(\alpha)} \in F(\alpha)\)</span>. <span
+class="math inline">\(f(\alpha) \ne 0 \implies \mu_{\alpha} \nmid f
+\implies \gcd{(\mu_{\alpha}, f)} = 1 \implies\)</span></p>
+<p><span class="math inline">\(\implies \exists u, v \in F[x]: \,\,\,\,
+1 = \mu_{\alpha}v + fu \implies 1 = f(\alpha)u(\alpha) \implies
+\frac1{f(\alpha)} = u(\alpha) \in \operatorname{Im}
+\varphi\)</span>.</p>
+<p><span class="math display">\[\boxed{\operatorname{II}}\]</span></p>
+<p>Пусть <span class="math inline">\(\alpha\)</span> – трансцендентный.
+Тогда рассмотрим гомоморфизм <span class="math inline">\(F(x) \to
+F(\alpha): \frac{f}{g} \mapsto \frac{f(\alpha)}{g(\alpha)}
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-14"></a> Подполе
+<span class="math inline">\(F\)</span> в поле <span
+class="math inline">\(G\)</span> <em>алгебраическое</em>, если любой
+элемент <span class="math inline">\(F\)</span> алгебраический.</p>
+<p><strong>Утверждение:</strong><a name="statement-5"></a> <span
+class="math inline">\(\dim_F G &lt; \infty \implies G\)</span>
+алгебраическое.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(\alpha \in
+G\)</span>. Так как пространство конечномерное, векторы <span
+class="math inline">\(1, \alpha, \alpha^2, \ldots\)</span> линейно
+зависимы, начиная с какого-то <span class="math inline">\(\alpha^k
+\implies \exists\)</span> коэффиценты не все равные нулю, такие что
+<span class="math inline">\(a_0 \cdot 1 + a_1 \cdot \alpha + \ldots +
+a_k \cdot \alpha^k = 0\)</span>, а это и есть искомый аннулирующий
+многочлен <span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="башня-расширений">Башня расширений</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-3"></a> (<em>о башне
+расширений</em>) Пусть <span class="math inline">\(F \subset G \subset
+H\)</span> и все это поля. Тогда</p>
+<p><span class="math display">\[\dim_F H = \dim_F G + \dim_G
+H\]</span></p>
+<p><em>Доказательство:</em></p>
+<p>Пусть <span class="math inline">\(\{g_1, \ldots, g_m\}\)</span> –
+базис в <span class="math inline">\(G\)</span> над <span
+class="math inline">\(F\)</span>, <span class="math inline">\(\{h_1,
+\ldots, h_n\}\)</span> – базис в <span class="math inline">\(H\)</span>
+над <span class="math inline">\(G\)</span>.</p>
+<p>Докажем, что <span class="math inline">\(\{g_i h_j|\,\,\,\, i \in
+\{1, \ldots, m\}, \,\,\,\, j \in \{1, \ldots, n\}\}\)</span> – базис в
+<span class="math inline">\(H\)</span> над <span
+class="math inline">\(F\)</span>.</p>
+<p>Докажем, что <span class="math inline">\(H\)</span> порождается <span
+class="math inline">\(\{1, \ldots, n\}\}\)</span>:</p>
+<p><span class="math display">\[h \in H \implies h = \displaystyle
+\sum_{i = 1}^{n}\lambda_i h_i,\,\,\,\, \lambda_i \in G\]</span> <span
+class="math display">\[\displaystyle \sum_{i = 1}^{n}h_i \displaystyle
+\sum_{j = 1}^{m}\mu_j g_j, \,\,\,\, \mu_j \in F\]</span> <span
+class="math display">\[\displaystyle \sum_{i \leqslant n, j \leqslant
+m}\mu_i g_j h_i\]</span></p>
+<p>Докажем, что <span class="math inline">\(\{1, \ldots, n\}\}\)</span>
+линейно независимы:</p>
+<p><span class="math display">\[\displaystyle \sum_{i, j}\alpha_{ij}g_j
+h_i\]</span> из того что <span class="math inline">\(g_j\)</span> и
+<span class="math inline">\(h_i\)</span> базисы следует <span
+class="math inline">\(\alpha_{ij} = 0 \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-4"></a> Пусть <span
+class="math inline">\(F \subset G\)</span> и <span
+class="math inline">\(F, G\)</span> – поля. Тогда множество
+алгебраических элементов поля <span class="math inline">\(G\)</span> над
+<span class="math inline">\(F\)</span> – это подполе в <span
+class="math inline">\(F\)</span>.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(\alpha,
+\beta \in G\)</span> – алгебраические. Хотим показать, что</p>
+<ol type="1">
+<li><span class="math inline">\(\alpha + \beta\)</span> –
+алгебраический,</li>
+<li><span class="math inline">\(\alpha\cdot \beta\)</span> –
+aлгебраический,</li>
+<li><span class="math inline">\(\frac1{\alpha}\)</span> –
+алгебраический.</li>
+</ol>
+<p>Рассмотрим <span class="math inline">\(\alpha\cdot
+\beta\)</span>.</p>
+<p><span class="math inline">\(F \subset F(\alpha) \subset
+F(\alpha)(\beta) \subset G\)</span>,</p>
+<p><span class="math inline">\(\infty &gt; \dim_F F(\alpha) = \deg
+\mu_{\alpha}\)</span>,</p>
+<p><span class="math inline">\(\infty &gt; \dim_{F(\alpha)}
+F(\alpha)(\beta) = \deg \mu_{\beta}\)</span>.</p>
+<p>По теореме о башне <span class="math inline">\(\dim_F
+F(\alpha)(\beta) = \dim_F F(\alpha) \cdot \dim_{F(\alpha)}
+F(\alpha)(\beta) &lt; \infty\)</span></p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>ее пока нет в конспектах.<a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>
