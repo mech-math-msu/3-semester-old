@@ -50,7 +50,7 @@ id="toc-коммутанты-некоторых-групп">Коммутанты
 <p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
 class="math inline">\(G\)</span> – группа, <span
 class="math inline">\(g, h \in G\)</span>. Множество <span
-class="math inline">\([g, h] \rightleftharpoons ghg^{-1}h^{-1}\)</span>
+class="math inline">\([g, h] \rightleftharpoons g^{-1}h^{-1}gh\)</span>
 – <em>коммутатор элементов</em> <span class="math inline">\(g\)</span> и
 <span class="math inline">\(h\)</span>.</p>
 <p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
@@ -74,20 +74,25 @@ class="math inline">\(\iff [G, G] = \{e\}\)</span>,</li>
 </blockquote>
 <p><strong>Утверждение:</strong><a name="statement-2"></a> <span
 class="math inline">\(H\)</span> – подгруппа в группе <span
-class="math inline">\(G\)</span> содержащая коммутант <span
+class="math inline">\(G\)</span>, содержащая коммутант <span
 class="math inline">\(G \implies H \vartriangleleft G\)</span>.</p>
 <p><em>Доказательство:</em> <span class="math inline">\(ghg^{-1} =
-ghg^{-1}h^{-1}h = [g, h]h \in H \,\,\,\,\blacksquare\)</span></p>
+ghg^{-1}h^{-1}h = [g^{-1}, h^{-1}]h \in H
+\,\,\,\,\blacksquare\)</span></p>
 <p><strong>Утверждение:</strong><a name="statement-1"></a> Пусть <span
 class="math inline">\(G\)</span> – группа, <span
 class="math inline">\(H\)</span> – подгруппа <span
 class="math inline">\(G\)</span>. Тогда <span class="math inline">\(H
 \vartriangleleft G\)</span> и <span class="math inline">\(G / H\)</span>
-– абелева <span class="math inline">\(\iff [G, G] \subset
-H\)</span>.</p>
+абелева <span class="math inline">\(\iff [G, G] \subset H\)</span>.</p>
 <p><em>Доказательство:</em></p>
-<p>Прямая проверка <span
-class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><span class="math inline">\(\boxed{\Longrightarrow}\)</span> <span
+class="math inline">\((xH)(yH) = (yH)(xH) \implies xy \in yxH \implies
+[x, y] \in H \,\,\,\,\blacksquare\)</span></p>
+<p><span class="math inline">\(\boxed{\Longrightarrow}\)</span> По
+предыдущему утверждению <span class="math inline">\(H \vartriangleleft
+G\)</span>. <span class="math inline">\([G, G] \subset H \implies [g,
+h]H = H \implies ghH = hgH \,\,\,\,\blacksquare\)</span></p>
 <h2 id="коммутанты-некоторых-групп">Коммутанты некоторых групп</h2>
 <hr />
 <p><strong>Определение:</strong><a name="definition-2"></a>
@@ -124,6 +129,25 @@ SL_n(\mathbb{F}), \,\,\,\, \forall \mathbb{F}: \,\,\,\, |\mathbb{F}|
 &gt; 3\)</span></li>
 </ol>
 <p><em>Доказательство:</em></p>
+<ol type="1">
+<li>При <span class="math inline">\(n = 1, 2\)</span> очев. Хотим
+доказать, что все тройные циклы содержатся в коммутанте и далее
+воспользоваться предыдущим утверждением.</li>
+</ol>
+<p><span class="math inline">\([(ij),(jk)] = (ij)(jk)(ij)(jk) = (kji)
+\,\,\,\,\blacksquare\)</span></p>
+<ol start="2" type="1">
+<li><p><span class="math inline">\([(ijk)(klm)] = \ldots =
+(kjm)\)</span> далее по предыдущей теореме <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p></li>
+<li><p>Рассмотрим гомоморфизм <span
+class="math inline">\(\operatorname{det}: GL_n(F) \to F^{*}\)</span>. По
+теореме о гомоморфизме <span class="math inline">\(GL_n(F)/SL_n(F)
+\simeq F^{*} \implies SL_n(F) \supset [GL_n(F), GL_n(F)]\)</span>. Чтобы
+доказать обратное включение надо включить мозги, а они у меня не
+работают <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p></li>
+</ol>
 <a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
 <a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
 <a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>

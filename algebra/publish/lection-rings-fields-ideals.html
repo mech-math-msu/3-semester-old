@@ -64,11 +64,26 @@ id="toc-поле-это-векторное-пространство-над-по�
 <ul>
 <li><a href="#пример" id="toc-пример">Пример</a></li>
 </ul></li>
+<li><a href="#простые-расширения-полей"
+id="toc-простые-расширения-полей">Простые расширения полей</a></li>
 <li><a href="#теорема-о-строении-простого-расширения-поля"
 id="toc-теорема-о-строении-простого-расширения-поля">Теорема о строении
 простого расширения поля</a></li>
+<li><a href="#алгебраические-расширения-полей"
+id="toc-алгебраические-расширения-полей">Алгебраические расширения
+полей</a>
+<ul>
+<li><a href="#примеры-1" id="toc-примеры-1">Примеры</a></li>
+</ul></li>
+<li><a href="#конечномерное-расширение-поля-является-алгебраическим"
+id="toc-конечномерное-расширение-поля-является-алгебраическим">Конечномерное
+расширение поля является алгебраическим</a></li>
 <li><a href="#башня-расширений" id="toc-башня-расширений">Башня
 расширений</a></li>
+<li><a
+href="#множество-алгебраических-элементов-алгебраическое-расширение"
+id="toc-множество-алгебраических-элементов-алгебраическое-расширение">Множество
+алгебраических элементов – алгебраическое расширение</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -95,6 +110,12 @@ yz\)</span>.</li>
 class="math inline">\(0\)</span>, в котором любой ненулевой элемент
 обратим.</p>
 <p><strong>Самопроверка:</strong> Чем тело отличается от поля?</p>
+<details>
+<summary>
+</summary>
+<p><strong>Определение:</strong><a name="definition-15"></a>
+<em>Поле</em> – это коммутативное тело.</p>
+</details>
 <p><strong>Определение:</strong><a name="definition-2"></a> Отображение
 <span class="math inline">\(\varphi: R \to S\)</span> – <em>гомоморфизм
 колец</em> <span class="math inline">\(R\)</span> и <span
@@ -184,7 +205,7 @@ I\)</span>.</li>
 <p>Второе условие эквивалентно тому, что <span class="math inline">\(rI
 \subset I \supset Ir\)</span>. Если выполнено левое включение, то <span
 class="math inline">\(I\)</span> <em>левый идеал</em> и аналогично
-правый.</p>
+<em>правый</em>.</p>
 <h2 id="факторкольцо-и-факторалгебра">Факторкольцо и факторалгебра</h2>
 <hr />
 <p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
@@ -272,6 +293,13 @@ class="math inline">\(g \not\in I \implies \gcd{(f, g)} = 1 \implies
 \exists u, v \in F[x]: \,\,\,\, fu + gv = 1\)</span>. <span
 class="math inline">\(fu \in I \implies fu + gv + I = gv + I = 1 + I
 \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-6"></a> Базис в
+алгебре <span class="math inline">\(F[x]/fF[x]\)</span> – это <span
+class="math inline">\(\{1 + (f), x + (f),\ldots, x^{n - 1} +
+(f)\}\)</span>, где <span class="math inline">\(f =
+\operatorname{deg}f\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <p><strong>Определение:</strong><a name="definition-11"></a>
 <em>Характеристика</em> поля <span class="math inline">\(F\)</span> –
 это минимальное натуральное <span class="math inline">\(n\)</span>,
@@ -312,6 +340,8 @@ class="math inline">\(k\)</span> существует единственное �
 изоморфизма поле из <span class="math inline">\(p^k\)</span>
 элементов.</p>
 <p><em>Доказательство:</em> Будет доказано позже.</p>
+<h2 id="простые-расширения-полей">Простые расширения полей</h2>
+<hr />
 <p><strong>Определение:</strong><a name="definition-12"></a> Пусть <span
 class="math inline">\(F\)</span> – поле, <span
 class="math inline">\(G\)</span> – его подполе. Множество <span
@@ -323,27 +353,41 @@ class="math inline">\(G(\alpha) =
 class="math inline">\(F\)</span> – поле, <span
 class="math inline">\(G\)</span> – его подполе. Простое расширение <span
 class="math inline">\(G\)</span> – это поле.</p>
-<p><em>Доказательство:</em></p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <p><strong>Определение:</strong><a name="definition-13"></a> Пусть <span
 class="math inline">\(F\)</span> – поле, <span
 class="math inline">\(\alpha \in F\)</span>.</p>
-<p>Если <span class="math inline">\(\exists 0 \ne f \in F: \,\,\,\,
+<p>Если <span class="math inline">\(\exists 0 \ne f \in F[x]: \,\,\,\,
 f(\alpha) = 0\)</span>, то <span class="math inline">\(\alpha\)</span> –
 <em>алгебраический элемент поля</em> <span
 class="math inline">\(F\)</span>.</p>
 <p>Иначе <span class="math inline">\(\alpha\)</span> –
 <em>трансцендентный элемент</em>.</p>
+<p><strong>Определение:</strong><a name="definition-16"></a> Пусть <span
+class="math inline">\(\alpha\)</span> – алгебраический элемент поля
+<span class="math inline">\(F\)</span>. Любой многочлен <span
+class="math inline">\(f \in F[x]\)</span>, такой что <span
+class="math inline">\(f(\alpha) = 0\)</span> –
+<em>аннулирующий</em>.</p>
+<p>Аннулирующий многочлен минимальной степени со старшим коэффицентом
+<span class="math inline">\(1\)</span> – <em>минимальный</em>.</p>
+<p><strong>Обозначается:</strong> <span
+class="math inline">\(\mu_{\alpha}(x)\)</span>.</p>
 <h2 id="теорема-о-строении-простого-расширения-поля">Теорема о строении
 простого расширения поля</h2>
 <hr />
 <p><strong>Теорема:</strong><a name="theorem-2"></a> Пусть <span
 class="math inline">\(F(\alpha)\)</span> – простое расширение поля <span
-class="math inline">\(F\)</span>.</p>
-<p>Тогда выполнено одно из следующих утверждений:</p>
+class="math inline">\(F\)</span>. Тогда</p>
 <ol type="1">
-<li><span class="math inline">\(F(\alpha) \simeq F[x]/fF[x]\)</span> для
-некоторого <span class="math inline">\(f \in F[x]\)</span>,</li>
-<li><span class="math inline">\(F(\alpha) \simeq F(x)\)</span>.</li>
+<li><p>Если <span class="math inline">\(\alpha\)</span> – алгебраический
+элемент поля <span class="math inline">\(F\)</span>, то <span
+class="math inline">\(F(\alpha) \simeq F[x]/fF[x]\)</span>, где <span
+class="math inline">\(f\)</span> – минимальный многочлен для <span
+class="math inline">\(\alpha\)</span>,</p></li>
+<li><p>Иначе <span class="math inline">\(F(\alpha) \simeq
+F(x)\)</span>.</p></li>
 </ol>
 <p><em>Доказательство:</em></p>
 <p><span class="math display">\[\boxed{\operatorname{I}}\]</span></p>
@@ -379,10 +423,33 @@ class="math inline">\(f(\alpha) \ne 0 \implies \mu_{\alpha} \nmid f
 Тогда рассмотрим гомоморфизм <span class="math inline">\(F(x) \to
 F(\alpha): \frac{f}{g} \mapsto \frac{f(\alpha)}{g(\alpha)}
 \,\,\,\,\blacksquare\)</span></p>
-<p><strong>Определение:</strong><a name="definition-14"></a> Подполе
-<span class="math inline">\(F\)</span> в поле <span
-class="math inline">\(G\)</span> <em>алгебраическое</em>, если любой
-элемент <span class="math inline">\(F\)</span> алгебраический.</p>
+<h2 id="алгебраические-расширения-полей">Алгебраические расширения
+полей</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-14"></a> Пусть <span
+class="math inline">\(F\)</span> подполе в поле <span
+class="math inline">\(G\)</span>. <span class="math inline">\(G\)</span>
+<em>алгебраическое</em> расширение поля <span
+class="math inline">\(F\)</span>, если любой элемент <span
+class="math inline">\(G\)</span> удовлетворяет некоторому многочлену
+<span class="math inline">\(f \in F[x]\)</span>.</p>
+<h3 id="примеры-1">Примеры</h3>
+<hr />
+<ul>
+<li><p><span class="math inline">\(\mathbb{C}\)</span> алгебраическое
+расширения над <span class="math inline">\(\mathbb{R}\)</span>, так как
+<span class="math inline">\(\mu_{1+i} = (x - (1 + i))(x - (1 -
+i))\)</span>.</p></li>
+<li><p><span class="math inline">\(\mathbb{R}\)</span> не является
+алгебраическим расширением над <span
+class="math inline">\(\mathbb{Q}\)</span>, так как, например, <span
+class="math inline">\(\pi\)</span> не удовлетворяет никакому многочлену
+с целыми коэффицентами.</p></li>
+</ul>
+<h2
+id="конечномерное-расширение-поля-является-алгебраическим">Конечномерное
+расширение поля является алгебраическим</h2>
+<hr />
 <p><strong>Утверждение:</strong><a name="statement-5"></a> <span
 class="math inline">\(\dim_F G &lt; \infty \implies G\)</span>
 алгебраическое.</p>
@@ -392,7 +459,7 @@ class="math inline">\(1, \alpha, \alpha^2, \ldots\)</span> линейно
 зависимы, начиная с какого-то <span class="math inline">\(\alpha^k
 \implies \exists\)</span> коэффиценты не все равные нулю, такие что
 <span class="math inline">\(a_0 \cdot 1 + a_1 \cdot \alpha + \ldots +
-a_k \cdot \alpha^k = 0\)</span>, а это и есть искомый аннулирующий
+a_k \cdot \alpha^k = 0\)</span>, а это и есть коэффиценты аннулирующего
 многочлен <span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <h2 id="башня-расширений">Башня расширений</h2>
 <hr />
@@ -412,25 +479,31 @@ class="math inline">\(F\)</span>, <span class="math inline">\(\{h_1,
 <span class="math inline">\(H\)</span> над <span
 class="math inline">\(F\)</span>.</p>
 <p>Докажем, что <span class="math inline">\(H\)</span> порождается <span
-class="math inline">\(\{1, \ldots, n\}\}\)</span>:</p>
+class="math inline">\(\{g_i h_j\}\)</span>:</p>
 <p><span class="math display">\[h \in H \implies h = \displaystyle
 \sum_{i = 1}^{n}\lambda_i h_i,\,\,\,\, \lambda_i \in G\]</span> <span
-class="math display">\[\displaystyle \sum_{i = 1}^{n}h_i \displaystyle
-\sum_{j = 1}^{m}\mu_j g_j, \,\,\,\, \mu_j \in F\]</span> <span
-class="math display">\[\displaystyle \sum_{i \leqslant n, j \leqslant
-m}\mu_i g_j h_i\]</span></p>
-<p>Докажем, что <span class="math inline">\(\{1, \ldots, n\}\}\)</span>
-линейно независимы:</p>
+class="math display">\[\lambda_i \in G \implies \lambda_i =
+\displaystyle \sum_{j = 1}^{m}\mu_{ij} g_j \implies h = \displaystyle
+\sum_{i = 1}^{n}h_i \displaystyle \sum_{j = 1}^{m}\mu_{ij} g_j, \,\,\,\,
+\mu_{ij} \in F\]</span> <span class="math display">\[\displaystyle
+\sum_{i \leqslant n, j \leqslant m}\mu_{ij} g_j h_i\]</span></p>
+<p>Докажем, что <span class="math inline">\(\{g_i h_j\}\)</span> линейно
+независимы:</p>
 <p><span class="math display">\[\displaystyle \sum_{i, j}\alpha_{ij}g_j
 h_i\]</span> из того что <span class="math inline">\(g_j\)</span> и
 <span class="math inline">\(h_i\)</span> базисы следует <span
 class="math inline">\(\alpha_{ij} = 0 \,\,\,\,\blacksquare\)</span></p>
+<h2
+id="множество-алгебраических-элементов-алгебраическое-расширение">Множество
+алгебраических элементов – алгебраическое расширение</h2>
+<hr />
 <p><strong>Теорема:</strong><a name="theorem-4"></a> Пусть <span
 class="math inline">\(F \subset G\)</span> и <span
 class="math inline">\(F, G\)</span> – поля. Тогда множество
 алгебраических элементов поля <span class="math inline">\(G\)</span> над
 <span class="math inline">\(F\)</span> – это подполе в <span
-class="math inline">\(F\)</span>.</p>
+class="math inline">\(G\)</span> <a href="#fn2" class="footnote-ref"
+id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
 <p><em>Доказательство:</em> Пусть <span class="math inline">\(\alpha,
 \beta \in G\)</span> – алгебраические. Хотим показать, что</p>
 <ol type="1">
@@ -441,23 +514,32 @@ aлгебраический,</li>
 <li><span class="math inline">\(\frac1{\alpha}\)</span> –
 алгебраический.</li>
 </ol>
-<p>Рассмотрим <span class="math inline">\(\alpha\cdot
-\beta\)</span>.</p>
+<p>Рассмотрим цепочку простых расширений:</p>
 <p><span class="math inline">\(F \subset F(\alpha) \subset
 F(\alpha)(\beta) \subset G\)</span>,</p>
+<p><a href="#theorem-2">По теореме о строении простого
+расширения</a></p>
 <p><span class="math inline">\(\infty &gt; \dim_F F(\alpha) = \deg
-\mu_{\alpha}\)</span>,</p>
+\mu_{\alpha}\)</span> и</p>
 <p><span class="math inline">\(\infty &gt; \dim_{F(\alpha)}
-F(\alpha)(\beta) = \deg \mu_{\beta}\)</span>.</p>
-<p>По теореме о башне <span class="math inline">\(\dim_F
-F(\alpha)(\beta) = \dim_F F(\alpha) \cdot \dim_{F(\alpha)}
-F(\alpha)(\beta) &lt; \infty\)</span></p>
+(F(\alpha))(\beta) = \deg \mu_{\beta}\)</span>.</p>
+<p><a href="#theorem-3">По теореме о башне</a> <span
+class="math inline">\(\dim_F F(\alpha)(\beta) = \dim_F F(\alpha) \cdot
+\dim_{F(\alpha)} F(\alpha)(\beta) &lt; \infty\)</span>, а значит
+согласно <a href="#statement-5">утверждению</a> <span
+class="math inline">\(F(\alpha)(\beta)\)</span> – алгебраическое
+расширение, а следовательно <span class="math inline">\(\alpha\cdot
+\beta\)</span>, <span class="math inline">\(\alpha + \beta\)</span> и
+<span class="math inline">\(\frac{1}{\beta}\)</span> – алгебраические
+элементы <span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <section id="footnotes" class="footnotes footnotes-end-of-document"
 role="doc-endnotes">
 <hr />
 <ol>
 <li id="fn1"><p>ее пока нет в конспектах.<a href="#fnref1"
 class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Расширение <span class="math inline">\(F\)</span><a
+href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>

@@ -100,7 +100,7 @@ class="math inline">\(V\)</span>.</p>
 class="math inline">\(G\)</span> – конечная группа. <span
 class="math inline">\(\rho: G \to GL(V)\)</span> – регулярное
 представление. Тогда каждое неприводимое представление <span
-class="math inline">\(\psi_i\)</span> группы входит в разложение <span
+class="math inline">\(\psi\)</span> группы входит в разложение <span
 class="math inline">\(\rho\)</span> в прямую сумму неприводимых <span
 class="math inline">\(\dim \psi\)</span> раз и, как следствие, <span
 class="math inline">\(|G| = \dim \rho = \displaystyle
@@ -108,20 +108,31 @@ class="math inline">\(|G| = \dim \rho = \displaystyle
 class="math inline">\(\psi_i\)</span> всевозможные неприводимые
 представления.</p>
 <p><em>Доказательство:</em></p>
-<p>Пусть <span class="math inline">\(\psi\)</span> – неприводимое
-представление.</p>
+<p>Пусть <span class="math inline">\(\psi: G \to GL(W)\)</span> –
+произвольное неприводимое представление.</p>
+<p>По теореме Машке <span class="math inline">\(\rho =
+\psi_1\oplus\ldots\oplus\psi_k\)</span>, где <span
+class="math inline">\(\psi_i\)</span> – неприводимые представления.</p>
 <p>По основному свойству регулярного представления <span
-class="math inline">\(\dim \psi = \dim \operatorname{Hom}(\rho, \psi) =
-\dim \operatorname{Hom}(\psi_1\oplus\ldots\oplus\psi_k, \psi) =\)</span>
-<strong>??</strong> <span class="math inline">\(=\oplus\dim
-\operatorname{Hom}(\psi_i, \psi)\)</span>.</p>
-<p><span class="math inline">\(\dim \operatorname{Hom}(\psi_i, \psi) =
-1\)</span> <strong>??</strong>, если <span class="math inline">\(\psi_i
-\simeq \psi\)</span> и по лемме Шура <span class="math inline">\(\dim
-\operatorname{Hom}(\psi_i, \psi) = 0\)</span>, если <span
-class="math inline">\(\psi_i \not\simeq \psi\)</span>.</p>
-<p>То есть <span class="math inline">\(\dim \psi = \displaystyle
-\sum_{\psi_i \simeq \psi} 1 \,\,\,\,\blacksquare\)</span></p>
+class="math inline">\(\dim W = \dim \psi = \dim \operatorname{Hom}(\rho,
+\psi) = \dim \operatorname{Hom}(\psi_1\oplus\ldots\oplus\psi_k,
+\psi)\)</span>, в частности <span class="math inline">\(V = \oplus
+V_i\)</span>.</p>
+<p>Пусть <span class="math inline">\(\alpha: V \to W\)</span> –
+гомоморфизм представлений <span class="math inline">\(\rho\)</span> и
+<span class="math inline">\(\psi\)</span>. Тогда по лемме Шура <span
+class="math inline">\(\alpha(V_i) = \{\mathbf{0}\}\)</span>, если <span
+class="math inline">\(\psi_i \not\simeq \psi\)</span>, и по той же лемме
+Шура <span class="math inline">\(\dim \operatorname{Hom}(\psi_i, \psi) =
+1\)</span>, если <span class="math inline">\(\psi_i \simeq \psi\)</span>
+<a href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a></p>
+<p>То есть <span class="math inline">\(W \simeq \operatorname{Hom}(\rho,
+\psi) = \oplus_{\psi_i \simeq \psi}\operatorname{Hom}(\psi_i,
+\psi)\)</span>.</p>
+<p>В частности <span class="math inline">\(\dim W = \dim \psi =
+\displaystyle \sum_{\psi_i \simeq \psi} 1
+\,\,\,\,\blacksquare\)</span></p>
 <h1 id="представления-абелевых-групп">Представления абелевых групп</h1>
 <hr />
 <p><strong>Утверждение:</strong><a name="statement-2"></a> Число
@@ -129,8 +140,8 @@ class="math inline">\(\psi_i \not\simeq \psi\)</span>.</p>
 class="math inline">\(G\)</span> равно <span
 class="math inline">\(|G|\)</span> и все они одномерны.</p>
 <p><em>Доказательство:</em></p>
-<p>Группа абелева, а значит матрицы операторов коммутируют между собой и
-дальше см. Бунину.</p>
+<p>Группа абелева, а значит матрицы операторов коммутируют между
+собой.</p>
 <p><span class="math inline">\(G = \langle a \rangle_n\times \langle b
 \rangle_m\ldots\)</span></p>
 <p>Пусть <span class="math inline">\(\varepsilon \in \sqrt[n]{1},
@@ -141,7 +152,7 @@ class="math inline">\(G\)</span>.</p>
 G \to \mathbb{C}^{*}: a^kb^l\ldots \mapsto \varepsilon^k \delta^l
 \ldots\)</span>.</p>
 <p>Это представление, для различных корней из единицы такие
-представления неизоморфны <strong>?</strong> и таких представлений <span
+представления неизоморфны и таких представлений <span
 class="math inline">\(n\times m \times\ldots = |G|
 \,\,\,\,\blacksquare\)</span></p>
 <p><strong>Утверждение:</strong><a name="statement-1"></a> Число
@@ -171,6 +182,17 @@ class="math inline">\(\operatorname{Hom}(\rho, \rho)\)</span> – алгебра
 композиции. Чегооо, вообще? Кому это очевидно.</p>
 <p>А число классов сопряженности – это размерность центра алгебры. Еще
 очевидней.</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Если неприводимые комплексные представления изоморфны,
+то их гомоморфизмы скалярные, а значит базис в <span
+class="math inline">\(\operatorname{Hom}(\psi_i, \psi)\)</span> – это
+любой гомоморфизм.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 <a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
 <a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
 <a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>

@@ -36,8 +36,8 @@
 <summary>Содержание</summary>
 <nav id="TOC" role="doc-toc">
 <ul>
-<li><a href="#поле-расширений" id="toc-поле-расширений">Поле
-расширений</a></li>
+<li><a href="#поле-разложения" id="toc-поле-разложения">Поле
+разложения</a></li>
 <li><a href="#классификация-конечных-полей"
 id="toc-классификация-конечных-полей">Классификация конечных полей</a>
 <ul>
@@ -48,7 +48,7 @@ id="toc-критерий-вложимости-для-конечных-полей
 </ul>
 </nav>
 </details>
-<h1 id="поле-расширений">Поле расширений</h1>
+<h1 id="поле-разложения">Поле разложения</h1>
 <hr />
 <p><strong>Определение:</strong><a name="definition-0"></a> <em>Поле
 разложения для</em> <span class="math inline">\(f \in F[x]\)</span> –
@@ -60,6 +60,13 @@ id="toc-критерий-вложимости-для-конечных-полей
 следует, что <span class="math inline">\(f\)</span> не раскладывается на
 линейные множители над <span class="math inline">\(H\)</span>.</li>
 </ol>
+<p><strong>Лемма:</strong><a name="lemma-0"></a> Пусть <span
+class="math inline">\(F\)</span> – поле, <span class="math inline">\(f
+\in F[x]\)</span> – неприводимый многочлен. Тогда <span
+class="math inline">\(\alpha = x + fF[x] \in F[x]/fF[x]\)</span> –
+корень многочлена <span class="math inline">\(f(y) \in
+F(\alpha)[y]\)</span>.</p>
+<p><em>Доказательство:</em></p>
 <p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
 class="math inline">\(F\)</span> – поле, <span
 class="math inline">\(\operatorname{const} \ne f \in F[x]\)</span>.
@@ -97,16 +104,16 @@ class="math inline">\(n \in \mathbb{N}\)</span> элементов сущест�
 <span class="math inline">\(\iff n = p^k\)</span>, где <span
 class="math inline">\(p\)</span> - простое.</p>
 <p><em>Доказательство:</em></p>
-<p><span class="math inline">\(\boxed{\longrightarrow}\)</span> <span
+<p><span class="math inline">\(\boxed{\Longrightarrow}\)</span> <span
 class="math inline">\(|F| &lt; \infty \implies \operatorname{char}F =
 p\)</span>, где <span class="math inline">\(p\)</span> – простое.
-Рассмотрим <span class="math inline">\(F =\{\underbrace{1+\ldots +
+Рассмотрим <span class="math inline">\(\hat{F} =\{\underbrace{1+\ldots +
 1}_{k}|\,\,\,\, k \in \mathbb{N}\} \simeq \mathbb{Z}_p\)</span>.</p>
 <p><span class="math inline">\(F\)</span> – векторное пространство над
-<span class="math inline">\(\mathbb{Z}_p\)</span> и <span
+<span class="math inline">\(\hat{F}\simeq\mathbb{Z}_p\)</span> и <span
 class="math inline">\(\dim_{\mathbb{Z}_p}F &lt; \infty \implies |F| =
 p^{\dim_{\mathbb{Z}_p}F}\)</span>.</p>
-<p><span class="math inline">\(\boxed{\longleftarrow}\)</span>
+<p><span class="math inline">\(\boxed{\Longleftarrow}\)</span>
 Рассмотрим <span class="math inline">\(f(x) = x^{p^k} - x \in
 \mathbb{Z}_p[x]\)</span>. Пусть <span class="math inline">\(F\)</span> –
 это поле разложения для <span class="math inline">\(f \implies\)</span>
@@ -124,7 +131,8 @@ class="math inline">\((\alpha_i + \alpha_j)^{p^k} = \alpha_i^{p^k} +
 role="doc-noteref"><sup>2</sup></a> Значит <span
 class="math inline">\(f(\alpha_i + \alpha_j) = (\alpha_i +
 \alpha_j)^{p^k} - (\alpha_i + \alpha_j) = \alpha_i^{p^k} - \alpha_i +
-\alpha_j^{p^k} - \alpha_j = 0\)</span>. Произведение аналогично.</p>
+\alpha_j^{p^k} - \alpha_j = 0\)</span>. Произведение аналогично <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <p><strong>Теорема:</strong><a name="theorem-2"></a> Поле из <span
 class="math inline">\(p^k\)</span> изоморфно полю разложения <span
 class="math inline">\(F\)</span> многочлена <span
