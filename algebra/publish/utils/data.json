@@ -946,6 +946,15 @@
     },
     {
         "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-5\"></a> Ядро гомоморфизма $\\varphi: G \\to H$, где $H$ абелева, содержит коммутант $[G, G]$.\n\n*Доказательство:*\n\n",
+        "data_type": "statement",
+        "url": "lection-group-commutant.html#statement-5",
+        "html": "<p><strong><a href=\"lection-group-commutant.html#statement-5\">Утверждение:</a></strong> Ядро\nгомоморфизма <span class=\"math inline\">\\(\\varphi: G \\to H\\)</span>, где\n<span class=\"math inline\">\\(H\\)</span> абелева, содержит коммутант <span\nclass=\"math inline\">\\([G, G]\\)</span>.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"lection-group-commutant.html#statement-5\">Утверждение:</a></strong> Ядро\nгомоморфизма <span class=\"math inline\">\\(\\varphi: G \\to H\\)</span>, где\n<span class=\"math inline\">\\(H\\)</span> абелева, содержит коммутант <span\nclass=\"math inline\">\\([G, G]\\)</span>.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "доказательство:",
         "data": "**Утверждение:**<a name=\"statement-4\"></a> \n\n1) $A_n$ порождается тройными циклами,\n2) $S_n$ порождается транспозициями,\n3) $SL_n(\\mathbb{F})$ порождается трансвекциями,\n4) $GL_n(\\mathbb{F})$ порождается матрицами элементраных преобразований.\n\n*Доказательство:*\n\n",
         "data_type": "statement",
         "url": "lection-group-commutant.html#statement-4",
@@ -1504,12 +1513,12 @@
     },
     {
         "keyword": "доказательство:",
-        "data": "**Лемма:**<a name=\"lemma-0\"></a> Пусть $F$ -- поле, $f \\in F[x]$ -- неприводимый многочлен. Тогда $\\alpha = x + fF[x] \\in F[x]/fF[x]$ -- корень многочлена $f(y) \\in F(\\alpha)[y]$.\n\n*Доказательство:* \n\n",
+        "data": "**Лемма:**<a name=\"lemma-0\"></a> Пусть $F$ -- поле, $f \\in F[x]$ -- неприводимый многочлен. Тогда $\\alpha = x + fF[x] \\in F[x]/fF[x]$ -- корень многочлена $f(y) \\in F(\\alpha)[y]$.\n\n*Доказательство:* $\\alpha \\in F[x]/fF[x] \\implies F(\\alpha) \\subset F[x]/fF[x]$. $f(\\alpha) = f(x + fF[x]) = 0$, так как $f \\in fF[x] \\implies \\alpha$ -- алгебраический $\\implies F(\\alpha) = F[x]/fF[x] \\,\\,\\,\\,\\blacksquare$\n\n",
         "data_type": "lemma",
         "url": "lection-field-extension.html#lemma-0",
-        "html": "<p><strong><a href=\"lection-field-extension.html#lemma-0\">Лемма:</a></strong> Пусть <span\nclass=\"math inline\">\\(F\\)</span> – поле, <span class=\"math inline\">\\(f\n\\in F[x]\\)</span> – неприводимый многочлен. Тогда <span\nclass=\"math inline\">\\(\\alpha = x + fF[x] \\in F[x]/fF[x]\\)</span> –\nкорень многочлена <span class=\"math inline\">\\(f(y) \\in\nF(\\alpha)[y]\\)</span>.</p>\n<p><em>Доказательство:</em></p>",
+        "html": "<p><strong><a href=\"lection-field-extension.html#lemma-0\">Лемма:</a></strong> Пусть <span\nclass=\"math inline\">\\(F\\)</span> – поле, <span class=\"math inline\">\\(f\n\\in F[x]\\)</span> – неприводимый многочлен. Тогда <span\nclass=\"math inline\">\\(\\alpha = x + fF[x] \\in F[x]/fF[x]\\)</span> –\nкорень многочлена <span class=\"math inline\">\\(f(y) \\in\nF(\\alpha)[y]\\)</span>.</p>\n<p><em>Доказательство:</em> <span class=\"math inline\">\\(\\alpha \\in\nF[x]/fF[x] \\implies F(\\alpha) \\subset F[x]/fF[x]\\)</span>. <span\nclass=\"math inline\">\\(f(\\alpha) = f(x + fF[x]) = 0\\)</span>, так как\n<span class=\"math inline\">\\(f \\in fF[x] \\implies \\alpha\\)</span> –\nалгебраический <span class=\"math inline\">\\(\\implies F(\\alpha) =\nF[x]/fF[x] \\,\\,\\,\\,\\blacksquare\\)</span></p>",
         "statement_html": "<p><strong><a href=\"lection-field-extension.html#lemma-0\">Лемма:</a></strong> Пусть <span\nclass=\"math inline\">\\(F\\)</span> – поле, <span class=\"math inline\">\\(f\n\\in F[x]\\)</span> – неприводимый многочлен. Тогда <span\nclass=\"math inline\">\\(\\alpha = x + fF[x] \\in F[x]/fF[x]\\)</span> –\nкорень многочлена <span class=\"math inline\">\\(f(y) \\in\nF(\\alpha)[y]\\)</span>.</p>",
-        "proof_html": "<p></p>"
+        "proof_html": "<p> <span class=\"math inline\">\\(\\alpha \\in\nF[x]/fF[x] \\implies F(\\alpha) \\subset F[x]/fF[x]\\)</span>. <span\nclass=\"math inline\">\\(f(\\alpha) = f(x + fF[x]) = 0\\)</span>, так как\n<span class=\"math inline\">\\(f \\in fF[x] \\implies \\alpha\\)</span> –\nалгебраический <span class=\"math inline\">\\(\\implies F(\\alpha) =\nF[x]/fF[x] \\,\\,\\,\\,\\blacksquare\\)</span></p>"
     },
     {
         "keyword": "автоморфизм фробениуса",
@@ -1710,6 +1719,15 @@
         "proof_html": ""
     },
     {
+        "keyword": "групповая алгебра",
+        "data": "**Определение:**<a name=\"definition-2\"></a> Пусть $G = \\{g_1, \\ldots, g_n\\}$ -- конечная группа. *Групповая алгебра* $\\mathbb{C}[G]$ -- это множество $\\{\\lambda_1g_1+\\ldots+\\lambda_ng_n| \\,\\,\\,\\,\\lambda_i \\in \\mathbb{C}\\}$ с операциями почленного сложения и умножения на $\\lambda \\in \\mathbb{C}$ и произведения $\\left(\\displaystyle \\sum_{g \\in G}\\lambda_g g\\right)\\cdot\\left(\\displaystyle \\sum_{g’ \\in G}\\lambda_{g’} g’\\right) = \\displaystyle \\sum_{g’’ \\in G}\\left(\\displaystyle \\sum_{g’’ = gg’}\\lambda_g \\lambda_{g’}\\right)g’’$.\n\n",
+        "data_type": "definition",
+        "url": "lection-regular-representations.html#definition-2",
+        "html": "<p><strong><a href=\"lection-regular-representations.html#definition-2\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(G = \\{g_1, \\ldots, g_n\\}\\)</span> – конечная\nгруппа. <em>Групповая алгебра</em> <span\nclass=\"math inline\">\\(\\mathbb{C}[G]\\)</span> – это множество <span\nclass=\"math inline\">\\(\\{\\lambda_1g_1+\\ldots+\\lambda_ng_n|\n\\,\\,\\,\\,\\lambda_i \\in \\mathbb{C}\\}\\)</span> с операциями почленного\nсложения и умножения на <span class=\"math inline\">\\(\\lambda \\in\n\\mathbb{C}\\)</span> и произведения <span\nclass=\"math inline\">\\(\\left(\\displaystyle \\sum_{g \\in G}\\lambda_g\ng\\right)\\cdot\\left(\\displaystyle \\sum_{g’ \\in G}\\lambda_{g’} g’\\right) =\n\\displaystyle \\sum_{g’’ \\in G}\\left(\\displaystyle \\sum_{g’’ =\ngg’}\\lambda_g \\lambda_{g’}\\right)g’’\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
         "keyword": "основное свойство регулярного представления",
         "data": "**Утверждение:**<a name=\"statement-0\"></a> (*основное свойство регулярного представления*) Пусть $\\rho: G \\to GL(V)$ -- регулярное представление.\n\nТогда для любого представления $\\varphi: G \\to GL(W)$ и $\\forall w \\in W \\,\\,\\,\\, \\exists !$ гомоморфизм $\\alpha$ представлений $\\rho$ и $\\varphi$, такой что $\\rho(e_1) = w$, где $e_1$ -- вектор базиса, соответствующий единице группы.\n\nИли существует гомоморфизм $\\alpha \\mapsto \\alpha(e_1)$ между множеством $\\operatorname{Hom}(\\rho, \\varphi)$ гомоморфизмов представлений $\\rho$ и $\\varphi: G \\to GL(W)$ и $W$ и $\\dim W = \\dim \\varphi = \\dim \\operatorname{Hom}(\\rho, \\varphi)$.\n\n*Доказательство:*\n\n\n",
         "data_type": "statement",
@@ -1738,6 +1756,60 @@
     },
     {
         "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-3\"></a> Множество эндоморфизмов $\\operatorname{Hom}(\\rho, \\rho)$ регулярного представления $\\rho: G \\to GL(V(F))$ -- алгебра над $F$ относительно композиции.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-regular-representations.html#statement-3",
+        "html": "<p><strong><a href=\"lection-regular-representations.html#statement-3\">Утверждение:</a></strong> Множество\nэндоморфизмов <span class=\"math inline\">\\(\\operatorname{Hom}(\\rho,\n\\rho)\\)</span> регулярного представления <span\nclass=\"math inline\">\\(\\rho: G \\to GL(V(F))\\)</span> – алгебра над <span\nclass=\"math inline\">\\(F\\)</span> относительно композиции.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-regular-representations.html#statement-3\">Утверждение:</a></strong> Множество\nэндоморфизмов <span class=\"math inline\">\\(\\operatorname{Hom}(\\rho,\n\\rho)\\)</span> регулярного представления <span\nclass=\"math inline\">\\(\\rho: G \\to GL(V(F))\\)</span> – алгебра над <span\nclass=\"math inline\">\\(F\\)</span> относительно композиции.</p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-4\"></a> Определение групповой алгебры корректно.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-regular-representations.html#statement-4",
+        "html": "<p><strong><a href=\"lection-regular-representations.html#statement-4\">Утверждение:</a></strong> Определение\nгрупповой алгебры корректно.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-regular-representations.html#statement-4\">Утверждение:</a></strong> Определение\nгрупповой алгебры корректно.</p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-5\"></a> Групповая алгебра изоморфна алгебре эндоморфизмов регулярного представления.\n\n*Доказательство:* Пусть $\\mathbb{C}[G]$ -- групповая алгебра, $G = \\{g_1, \\ldots, g_n\\}$ и $\\rho: G \\to GL(V)$. По определению регулярного представления существует базис $\\{e_{g_1}, \\ldots, e_{g_n}\\}$ в $V$. Построим изоморфизм $V$ и $\\mathbb{C}[G]: e_{g_i} \\mapsto g_i$. По основному свойству регулярного представления $\\operatorname{Hom}(\\rho, \\rho)\\cong V \\cong \\mathbb{C}[G] \\implies \\mathbb{C}[G]\\cong \\operatorname{Hom}(\\rho, \\rho) \\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "lection-regular-representations.html#statement-5",
+        "html": "<p><strong><a href=\"lection-regular-representations.html#statement-5\">Утверждение:</a></strong> Групповая\nалгебра изоморфна алгебре эндоморфизмов регулярного представления.</p>\n<p><em>Доказательство:</em> Пусть <span\nclass=\"math inline\">\\(\\mathbb{C}[G]\\)</span> – групповая алгебра, <span\nclass=\"math inline\">\\(G = \\{g_1, \\ldots, g_n\\}\\)</span> и <span\nclass=\"math inline\">\\(\\rho: G \\to GL(V)\\)</span>. По определению\nрегулярного представления существует базис <span\nclass=\"math inline\">\\(\\{e_{g_1}, \\ldots, e_{g_n}\\}\\)</span> в <span\nclass=\"math inline\">\\(V\\)</span>. Построим изоморфизм <span\nclass=\"math inline\">\\(V\\)</span> и <span\nclass=\"math inline\">\\(\\mathbb{C}[G]: e_{g_i} \\mapsto g_i\\)</span>. По\nосновному свойству регулярного представления <span\nclass=\"math inline\">\\(\\operatorname{Hom}(\\rho, \\rho)\\cong V \\cong\n\\mathbb{C}[G] \\implies \\mathbb{C}[G]\\cong \\operatorname{Hom}(\\rho, \\rho)\n\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-regular-representations.html#statement-5\">Утверждение:</a></strong> Групповая\nалгебра изоморфна алгебре эндоморфизмов регулярного представления.</p>",
+        "proof_html": "<p> Пусть <span\nclass=\"math inline\">\\(\\mathbb{C}[G]\\)</span> – групповая алгебра, <span\nclass=\"math inline\">\\(G = \\{g_1, \\ldots, g_n\\}\\)</span> и <span\nclass=\"math inline\">\\(\\rho: G \\to GL(V)\\)</span>. По определению\nрегулярного представления существует базис <span\nclass=\"math inline\">\\(\\{e_{g_1}, \\ldots, e_{g_n}\\}\\)</span> в <span\nclass=\"math inline\">\\(V\\)</span>. Построим изоморфизм <span\nclass=\"math inline\">\\(V\\)</span> и <span\nclass=\"math inline\">\\(\\mathbb{C}[G]: e_{g_i} \\mapsto g_i\\)</span>. По\nосновному свойству регулярного представления <span\nclass=\"math inline\">\\(\\operatorname{Hom}(\\rho, \\rho)\\cong V \\cong\n\\mathbb{C}[G] \\implies \\mathbb{C}[G]\\cong \\operatorname{Hom}(\\rho, \\rho)\n\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-6\"></a> Центр алгебры -- это подалгебра.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquared$\n\n",
+        "data_type": "statement",
+        "url": "lection-regular-representations.html#statement-6",
+        "html": "<p><strong><a href=\"lection-regular-representations.html#statement-6\">Утверждение:</a></strong> Центр алгебры\n– это подалгебра.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquared\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"lection-regular-representations.html#statement-6\">Утверждение:</a></strong> Центр алгебры\n– это подалгебра.</p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquared\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-7\"></a> Размерность центра групповой алгебры равна количеству классов сопряженности группы.\n\n*Доказательство:*\n\n",
+        "data_type": "statement",
+        "url": "lection-regular-representations.html#statement-7",
+        "html": "<p><strong><a href=\"lection-regular-representations.html#statement-7\">Утверждение:</a></strong> Размерность\nцентра групповой алгебры равна количеству классов сопряженности\nгруппы.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"lection-regular-representations.html#statement-7\">Утверждение:</a></strong> Размерность\nцентра групповой алгебры равна количеству классов сопряженности\nгруппы.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-8\"></a> Матрицы в $M_n(\\mathbb{C})$, коммутирующие со всеми -- это скалярные матрицы, то есть матрицы вида $\\lambda E, \\,\\,\\,\\, \\lambda \\in \\mathbb{C}$.\n\n*Доказательство:*\n\n",
+        "data_type": "statement",
+        "url": "lection-regular-representations.html#statement-8",
+        "html": "<p><strong><a href=\"lection-regular-representations.html#statement-8\">Утверждение:</a></strong> Матрицы в\n<span class=\"math inline\">\\(M_n(\\mathbb{C})\\)</span>, коммутирующие со\nвсеми – это скалярные матрицы, то есть матрицы вида <span\nclass=\"math inline\">\\(\\lambda E, \\,\\,\\,\\, \\lambda \\in\n\\mathbb{C}\\)</span>.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"lection-regular-representations.html#statement-8\">Утверждение:</a></strong> Матрицы в\n<span class=\"math inline\">\\(M_n(\\mathbb{C})\\)</span>, коммутирующие со\nвсеми – это скалярные матрицы, то есть матрицы вида <span\nclass=\"math inline\">\\(\\lambda E, \\,\\,\\,\\, \\lambda \\in\n\\mathbb{C}\\)</span>.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "доказательство:",
         "data": "**Теорема:**<a name=\"theorem-0\"></a> Пусть $G$ -- конечная группа. $\\rho: G \\to GL(V)$ -- регулярное представление. Тогда каждое неприводимое представление $\\psi$ группы входит в разложение $\\rho$ в прямую сумму неприводимых $\\dim \\psi$ раз и, как следствие, $|G| = \\dim \\rho = \\displaystyle \\sum(\\dim\\psi_i)^2$, где $\\psi_i$ всевозможные неприводимые представления.\n\n*Доказательство:*\n\nПусть $\\psi: G \\to GL(W)$ -- произвольное неприводимое представление.\n\nПо теореме Машке $\\rho = \\psi_1\\oplus\\ldots\\oplus\\psi_k$, где $\\psi_i$ -- неприводимые представления.\n\nПо основному свойству регулярного представления $\\dim W = \\dim \\psi = \\dim \\operatorname{Hom}(\\rho, \\psi) = \\dim \\operatorname{Hom}(\\psi_1\\oplus\\ldots\\oplus\\psi_k, \\psi)$, в частности $V = \\oplus V_i$.\n\nПусть $\\alpha: V \\to W$ -- гомоморфизм представлений $\\rho$ и $\\psi$. Тогда по лемме Шура $\\alpha(V_i) = \\{\\mathbf{0}\\}$, если $\\psi_i \\not\\simeq \\psi$, и по той же лемме Шура $\\dim \\operatorname{Hom}(\\psi_i, \\psi) = 1$, если $\\psi_i \\simeq \\psi$ ^[Если неприводимые комплексные представления изоморфны, то их гомоморфизмы скалярные, а значит базис в $\\operatorname{Hom}(\\psi_i, \\psi)$ -- это любой гомоморфизм.]\n\nТо есть $W \\simeq \\operatorname{Hom}(\\rho, \\psi) = \\oplus_{\\psi_i \\simeq \\psi}\\operatorname{Hom}(\\psi_i, \\psi)$.\n\nВ частности $\\dim W = \\dim \\psi = \\displaystyle \\sum_{\\psi_i \\simeq \\psi} 1 \\,\\,\\,\\,\\blacksquare$\n\n",
         "data_type": "theorem",
         "url": "lection-regular-representations.html#theorem-0",
@@ -1747,11 +1819,20 @@
     },
     {
         "keyword": "доказательство:",
-        "data": "**Теорема:**<a name=\"theorem-1\"></a> Число неизоморфных неприводимых комплексных представлений конечной группы равно числу классов сопряженности этой группы.\n\n*Доказательство:* $\\operatorname{Hom}(\\rho, \\rho)$ -- алгебра над $\\mathbb{C}$ относительно композиции. Чегооо, вообще? Кому это очевидно.\n\nА число классов сопряженности -- это размерность центра алгебры. Еще очевидней.\n\n",
+        "data": "**Теорема:**<a name=\"theorem-2\"></a> $\\mathbb{C}[G]\\cong M_{n_1}(\\mathbb{C})\\oplus\\ldots\\oplus M_{n_k}(\\mathbb{C})$, где $n_i$ -- размерности неприводимых комплексных представлений группы $G$.\n\n*Доказательство:*\n\nПостроим изоморфизм: $\\mathbb{C}[G] \\to M_{n_1}(\\mathbb{C})\\oplus\\ldots\\oplus M_{n_k}(\\mathbb{C}): e_{g} \\mapsto (\\varphi_{n_1}(g), \\ldots, \\varphi_{n_k}(g))$, где $\\varphi_{n_i}$ -- неприводимые комплексные представления группы.\n\n",
+        "data_type": "theorem",
+        "url": "lection-regular-representations.html#theorem-2",
+        "html": "<p><strong><a href=\"lection-regular-representations.html#theorem-2\">Теорема:</a></strong> <span\nclass=\"math inline\">\\(\\mathbb{C}[G]\\cong\nM_{n_1}(\\mathbb{C})\\oplus\\ldots\\oplus M_{n_k}(\\mathbb{C})\\)</span>, где\n<span class=\"math inline\">\\(n_i\\)</span> – размерности неприводимых\nкомплексных представлений группы <span\nclass=\"math inline\">\\(G\\)</span>.</p>\n<p><em>Доказательство:</em></p>\n<p>Построим изоморфизм: <span class=\"math inline\">\\(\\mathbb{C}[G] \\to\nM_{n_1}(\\mathbb{C})\\oplus\\ldots\\oplus M_{n_k}(\\mathbb{C}): e_{g} \\mapsto\n(\\varphi_{n_1}(g), \\ldots, \\varphi_{n_k}(g))\\)</span>, где <span\nclass=\"math inline\">\\(\\varphi_{n_i}\\)</span> – неприводимые комплексные\nпредставления группы.</p>",
+        "statement_html": "<p><strong><a href=\"lection-regular-representations.html#theorem-2\">Теорема:</a></strong> <span\nclass=\"math inline\">\\(\\mathbb{C}[G]\\cong\nM_{n_1}(\\mathbb{C})\\oplus\\ldots\\oplus M_{n_k}(\\mathbb{C})\\)</span>, где\n<span class=\"math inline\">\\(n_i\\)</span> – размерности неприводимых\nкомплексных представлений группы <span\nclass=\"math inline\">\\(G\\)</span>.</p>",
+        "proof_html": "<p></p>\n<p>Построим изоморфизм: <span class=\"math inline\">\\(\\mathbb{C}[G] \\to\nM_{n_1}(\\mathbb{C})\\oplus\\ldots\\oplus M_{n_k}(\\mathbb{C}): e_{g} \\mapsto\n(\\varphi_{n_1}(g), \\ldots, \\varphi_{n_k}(g))\\)</span>, где <span\nclass=\"math inline\">\\(\\varphi_{n_i}\\)</span> – неприводимые комплексные\nпредставления группы.</p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Теорема:**<a name=\"theorem-1\"></a> Число неизоморфных неприводимых комплексных представлений конечной группы равно числу классов сопряженности этой группы.\n\n*Доказательство:* Число классов сопряженности -- это размерность центра групповой алгебры. Групповая алгебра изоморфна прямой сумме матричных, а ее центр изоморфен прямой сумме центров. Центр матричной алгебры состоит из скалярных матриц, следовательно одномерный. Получаем, что размерность центра групповой алгебры совпадает с суммой размерностей центров матричных алгебр, а эти размерности $1$ $\\,\\,\\,\\,\\blacksquare$\n\n",
         "data_type": "theorem",
         "url": "lection-regular-representations.html#theorem-1",
-        "html": "<p><strong><a href=\"lection-regular-representations.html#theorem-1\">Теорема:</a></strong> Число неизоморфных\nнеприводимых комплексных представлений конечной группы равно числу\nклассов сопряженности этой группы.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\operatorname{Hom}(\\rho, \\rho)\\)</span> – алгебра\nнад <span class=\"math inline\">\\(\\mathbb{C}\\)</span> относительно\nкомпозиции. Чегооо, вообще? Кому это очевидно.</p>\n<p>А число классов сопряженности – это размерность центра алгебры. Еще\nочевидней.</p>",
+        "html": "<p><strong><a href=\"lection-regular-representations.html#theorem-1\">Теорема:</a></strong> Число неизоморфных\nнеприводимых комплексных представлений конечной группы равно числу\nклассов сопряженности этой группы.</p>\n<p><em>Доказательство:</em> Число классов сопряженности – это\nразмерность центра групповой алгебры. Групповая алгебра изоморфна прямой\nсумме матричных, а ее центр изоморфен прямой сумме центров. Центр\nматричной алгебры состоит из скалярных матриц, следовательно одномерный.\nПолучаем, что размерность центра групповой алгебры совпадает с суммой\nразмерностей центров матричных алгебр, а эти размерности <span\nclass=\"math inline\">\\(1\\)</span> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
         "statement_html": "<p><strong><a href=\"lection-regular-representations.html#theorem-1\">Теорема:</a></strong> Число неизоморфных\nнеприводимых комплексных представлений конечной группы равно числу\nклассов сопряженности этой группы.</p>",
-        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\operatorname{Hom}(\\rho, \\rho)\\)</span> – алгебра\nнад <span class=\"math inline\">\\(\\mathbb{C}\\)</span> относительно\nкомпозиции. Чегооо, вообще? Кому это очевидно.</p>\n<p>А число классов сопряженности – это размерность центра алгебры. Еще\nочевидней.</p>"
+        "proof_html": "<p> Число классов сопряженности – это\nразмерность центра групповой алгебры. Групповая алгебра изоморфна прямой\nсумме матричных, а ее центр изоморфен прямой сумме центров. Центр\nматричной алгебры состоит из скалярных матриц, следовательно одномерный.\nПолучаем, что размерность центра групповой алгебры совпадает с суммой\nразмерностей центров матричных алгебр, а эти размерности <span\nclass=\"math inline\">\\(1\\)</span> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
     }
 ]
