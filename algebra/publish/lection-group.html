@@ -36,6 +36,9 @@
 <summary>Содержание</summary>
 <nav id="TOC" role="doc-toc">
 <ul>
+<li><a href="#способы-получения-групп"
+id="toc-способы-получения-групп">Способы получения групп</a>
+<ul>
 <li><a href="#подгруппы" id="toc-подгруппы">Подгруппы</a></li>
 <li><a href="#системы-порождающих" id="toc-системы-порождающих">Системы
 порождающих</a></li>
@@ -44,9 +47,12 @@ id="toc-изоморфные-группы-и-теорема-кэли">Изомо
 Кэли</a></li>
 <li><a href="#циклические-группы"
 id="toc-циклические-группы">Циклические группы</a></li>
+</ul></li>
 </ul>
 </nav>
 </details>
+<h1 id="способы-получения-групп">Способы получения групп</h1>
+<hr />
 <h2 id="подгруппы">Подгруппы</h2>
 <hr />
 <p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
@@ -60,22 +66,22 @@ class="math inline">\((G, \cdot)\)</span> - группа, <span
 class="math inline">\(H \subset G\)</span>.</p>
 <p>Тогда <span class="math inline">\(H\)</span> - <em>подгруппа</em>
 группы <span class="math inline">\(G\)</span></p>
-<p><span class="math display">\[\Updownarrow\]</span></p>
+<p><span class="math inline">\(\Updownarrow\)</span></p>
 <p><span class="math inline">\((1) \,\,\,\, H \ne
 \varnothing\)</span>,</p>
 <p><span class="math inline">\((2) \,\,\,\, \forall h_1, h_2 \in H
 \,\,\,\, h_1 \cdot h_2 \in H\)</span>,</p>
 <p><span class="math inline">\((3) \,\,\,\, \forall h \in H \,\,\,\,
 h^{-1} \in H\)</span>.</p>
-<p><em>Доказательство:</em> <span class="math inline">\(\Downarrow
-\,\,\,\, \,\,\,\,\blacksquare\)</span></p>
-<p><span class="math inline">\(\Uparrow\)</span></p>
-<p>Докажем, что <span class="math inline">\(H\)</span> группа
-относительно операции <span class="math inline">\(\cdot\)</span>. <span
-class="math inline">\(H \ne \varnothing \Rightarrow \exists h \in H
-\Rightarrow h^{-1} \in H\)</span>. По <span class="math inline">\((2)
-\,\,\,\, e = h \cdot h^{-1} \in H \Rightarrow e \in H
+<p><em>Доказательство:</em></p>
+<p><span class="math inline">\(\Downarrow \,\,\,\,
 \,\,\,\,\blacksquare\)</span></p>
+<p><span class="math inline">\(\Uparrow\)</span> Докажем, что <span
+class="math inline">\(H\)</span> группа относительно операции <span
+class="math inline">\(\cdot\)</span>. <span class="math inline">\(H \ne
+\varnothing \Rightarrow \exists h \in H \Rightarrow h^{-1} \in
+H\)</span>. По <span class="math inline">\((2) \,\,\,\, e = h \cdot
+h^{-1} \in H \Rightarrow e \in H \,\,\,\,\blacksquare\)</span></p>
 <h2 id="системы-порождающих">Системы порождающих</h2>
 <hr />
 <p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
@@ -189,7 +195,7 @@ role="doc-noteref"><sup>3</sup></a></li>
 <p><strong>Теорема:</strong><a name="theorem-2"></a> (<em>о подгруппах
 циклических групп</em>)</p>
 <ol type="1">
-<li>Подгруппа циклической группы - циклическая.</li>
+<li>Подгруппа циклической группы – циклическая.</li>
 <li>У циклической группы порядка <span class="math inline">\(n \in
 \mathbb{N}\)</span> существует ровно по одной подгруппе каждого порядка,
 делящего <span class="math inline">\(n\)</span>, и других подгрупп
@@ -198,23 +204,22 @@ role="doc-noteref"><sup>3</sup></a></li>
 <p><em>Доказательство:</em></p>
 <ol type="1">
 <li><p>Пусть <span class="math inline">\(H\)</span> подгруппа <span
-class="math inline">\(G = \langle g \rangle\)</span>.br Пусть <span
+class="math inline">\(G = \langle g \rangle\)</span>. Пусть <span
 class="math inline">\(k = \min\{l \in \mathbb{N}| \,\,\,\, g^l \in
-H\}\)</span>. br Докажем, что <span class="math inline">\(H =
-&lt;g^k&gt;\)</span>. <span class="math inline">\(H \ni g^m = g^{q k +
-r} \,\,\,\, (k &gt; r \ge 0) = (g^k)^q\cdot g^r \Rightarrow r = 0
+H\}\)</span>. Докажем, что <span class="math inline">\(H = \langle g^k
+\rangle\)</span>. <span class="math inline">\(H \ni g^m = g^{q k + r}
+\,\,\,\, (k &gt; r \ge 0) = (g^k)^q\cdot g^r \Rightarrow r = 0
 \,\,\,\,\blacksquare\)</span></p></li>
 <li><p>Пусть <span class="math inline">\(G = \langle g
 \rangle_n\)</span> <a href="#fn4" class="footnote-ref" id="fnref4"
 role="doc-noteref"><sup>4</sup></a>, <span class="math inline">\(k
-\,\,|\,\, n\)</span>. Тогда <span
-class="math inline">\(&lt;g^{\frac{n}{k}}&gt;\)</span> - циклическая
-группа порядка <span class="math inline">\(k\)</span>. Существование
-доказано.</p></li>
+\,\,|\,\, n\)</span>. Тогда <span class="math inline">\(\langle
+g^{\frac{n}{k}}\rangle\)</span> - циклическая группа порядка <span
+class="math inline">\(k\)</span>. Существование доказано.</p></li>
 </ol>
 <p>Пусть <span class="math inline">\(H\)</span> циклическая подгруппа
 порядка <span class="math inline">\(k\)</span>, по рассуждению 1. <span
-class="math inline">\(H = &lt;g^{\frac{n}{k}}&gt;\)</span><span
+class="math inline">\(H = \langle g^{\frac{n}{k}} \rangle\)</span><span
 class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <section id="footnotes" class="footnotes footnotes-end-of-document"
 role="doc-endnotes">

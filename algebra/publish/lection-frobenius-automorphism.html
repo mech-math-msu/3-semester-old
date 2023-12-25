@@ -50,14 +50,27 @@ class="math inline">\(\mathbb{F}_{p^k}\)</span>.</p>
 <p><strong>Определение:</strong><a name="definition-0"></a> Автоморфизм
 <span class="math inline">\(F_{p^k} \to F_{p^k}: x \mapsto x^p\)</span>
 – <em>автоморфизм Фробениуса</em>.</p>
-<p><strong>Напоминание:</strong> Группа автоморфизмов – это <span
+<p><strong>Напоминание:</strong> Автоморфизм поля <span
+class="math inline">\(F\)</span> – это биективное отображение <span
+class="math inline">\(\varphi: F \to F\)</span>, такое что <span
+class="math inline">\(\forall x, y \in F \,\,\,\, \varphi(xy) =
+\varphi(x)\varphi(y)\)</span> и <span class="math inline">\(\varphi(x +
+y) = \varphi(x) + \varphi(y)\)</span>.</p>
+<p>Группа автоморфизмов – это <span
 class="math inline">\(\operatorname{Aut}(F_{p^k}) = \{\varphi: F_{p^k}
 \to F_{p^k}: \,\,\,\, \varphi(xy) = \varphi(x)\varphi(y), \,\,\,\,
-\varphi(x+y) = \varphi(x)+ \varphi(y)\}\)</span>.</p>
-<p><strong>Теорема:</strong><a name="theorem-0"></a> Группа
-автоморфизмов поля <span class="math inline">\(F_{p^k}\)</span>
-циклическая порядка <span class="math inline">\(k\)</span> и порождается
-автоморфизмом Фробениуса <span class="math inline">\(f\)</span>.</p>
+\varphi(x+y) = \varphi(x)+ \varphi(y)\}\)</span> с операцией
+композиции.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> <em>Группа
+Галуа</em> конечного расширения <a href="#fn1" class="footnote-ref"
+id="fnref1" role="doc-noteref"><sup>1</sup></a> <span
+class="math inline">\(G\)</span> поля <span
+class="math inline">\(F\)</span> – это группа автоморфизмов поля,
+сохраняющих элементы <span class="math inline">\(F\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Группа Галуа поля
+<span class="math inline">\(F_{p^k}\)</span> циклическая порядка <span
+class="math inline">\(k\)</span> и порождается автоморфизмом Фробениуса
+<span class="math inline">\(f\)</span>.</p>
 <p><em>Доказательство:</em></p>
 <p><span class="math inline">\(\boxed{\operatorname{I}} \,\,\,\,
 f\)</span> – автоморфизм.</p>
@@ -65,17 +78,32 @@ f\)</span> – автоморфизм.</p>
 <li>Почему <span class="math inline">\(f\)</span> – гомоморфизм?
 очев,</li>
 <li>Почему <span class="math inline">\(f\)</span> – инъекция? <span
-class="math inline">\(\ker f = \{0\}\)</span>,</li>
+class="math inline">\(\ker f = \{0\}\)</span>, так как в поле нет
+нильпотентов,</li>
 <li>Почему <span class="math inline">\(f\)</span> – сюръекция? типо
 очев.</li>
 </ul>
 <p><span class="math inline">\(\boxed{\operatorname{II}} \,\,\,\,
-\langle f \rangle = \operatorname{Aut}(F_{p^k})\)</span>.</p>
+\langle f \rangle =
+\operatorname{Gal}(F_{p^k}/\mathbb{Z}_p)\)</span>.</p>
+<ul>
+<li>Почему <span class="math inline">\(\operatorname{ord}f = k\)</span>?
+<span class="math inline">\(F_{p^k}\)</span> – это поле разложения для
+<span class="math inline">\(x^{p^k} - x\)</span> над <span
+class="math inline">\(\mathbb{Z}_p\)</span>, а следовательно <span
+class="math inline">\(\forall \alpha \in F \,\,\,\, \alpha^{p^k} -
+\alpha = 0 \implies f^k(x) = x^{p^k} = x \,\,\,\, \forall x \in F
+\,\,\,\,\blacksquare\)</span></li>
+</ul>
+<p>Получили, что автоморфизм Фробениуса порождает циклическую подгруппу
+порядка <span class="math inline">\(k\)</span> в группе автоморфизмов.
+Докажем, что это группа Галуа: <span class="math inline">\(f^l(x) =
+x^{p^l} \,\,\,\,\blacksquare\)</span></p>
 <p><strong>Теорема:</strong><a name="theorem-1"></a> Поле алгебраических
-чисел <span class="math inline">\(\mathbb{A}\)</span> <a href="#fn1"
-class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>
-алгебраически замкнуто. <a href="#fn2" class="footnote-ref" id="fnref2"
-role="doc-noteref"><sup>2</sup></a></p>
+чисел <span class="math inline">\(\mathbb{A}\)</span> <a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>
+алгебраически замкнуто. <a href="#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a></p>
 <p><em>Доказательство:</em> Пусть <span class="math inline">\(f(x) = x^n
 + a_{n - 1}x^{n - 1} +\ldots + a_0, \,\,\,\, a_k \in
 \mathbb{A}\)</span>.</p>
@@ -93,11 +121,14 @@ class="math inline">\(\mathbb{Q} \,\,\,\,\blacksquare\)</span></p>
 role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1"><p><span class="math inline">\(\mathbb{A} = \{\alpha \in
-\mathbb{C}|\,\,\,\, \exists f \in \mathbb{Q}[x]: \,\,\,\, f(\alpha) =
-0\}\)</span>.<a href="#fnref1" class="footnote-back"
+<li id="fn1"><p>Это чтобы все работало. Вообще там расширение Галуа, то
+есть нормальное и сепарабельное.<a href="#fnref1" class="footnote-back"
 role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Каждый многочлен имеет корень.<a href="#fnref2"
+<li id="fn2"><p><span class="math inline">\(\mathbb{A} = \{\alpha \in
+\mathbb{C}|\,\,\,\, \exists f \in \mathbb{Q}[x]: \,\,\,\, f(\alpha) =
+0\}\)</span>.<a href="#fnref2" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Каждый многочлен имеет корень.<a href="#fnref3"
 class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>

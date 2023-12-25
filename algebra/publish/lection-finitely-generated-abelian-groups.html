@@ -57,9 +57,6 @@ id="toc-пример-ненулевых-непримитивных-элемен�
 <li><a href="#общий-вид-конечно-порожденной-абелевой-группы"
 id="toc-общий-вид-конечно-порожденной-абелевой-группы">Общий вид конечно
 порожденной абелевой группы</a></li>
-<li><a href="#о-конечных-подгруппах-мультипликативной-группы-поля"
-id="toc-о-конечных-подгруппах-мультипликативной-группы-поля">О конечных
-подгруппах мультипликативной группы поля</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -79,8 +76,8 @@ transform: rotate(225deg)}{\Large{\dagger}}}\)</span></p>
 существует <em>базис</em>, то есть множество <span
 class="math inline">\(X \subset G\)</span>, такое что:</p>
 <ol type="1">
-<li><span class="math inline">\(&lt;X&gt; = G\)</span>, то есть <span
-class="math inline">\(\forall g \in G \,\,\,\, \exists \lambda_1,
+<li><span class="math inline">\(\langle X \rangle = G\)</span>, то есть
+<span class="math inline">\(\forall g \in G \,\,\,\, \exists \lambda_1,
 \ldots, \lambda_n \in \mathbb{Z}: \,\,\,\, g = \lambda_1 x_1 + \ldots +
 \lambda_n x_n, \,\,\,\, x_i \in X\)</span>.</li>
 <li><span class="math inline">\(X\)</span> - <em>линейно
@@ -133,10 +130,11 @@ href="lection-group-quotient-group-homomorphism-theore.html#theorem-0">По
 <h2 id="примитивные-элементы">Примитивные элементы</h2>
 <hr />
 <p><strong>Определение:</strong><a name="definition-1"></a> Элемент
-<span class="math inline">\(g\)</span> конечно порожденной абелевой
-группы <span class="math inline">\(G\)</span> <em>примитивный</em>, если
-существует базис <span class="math inline">\(G\)</span>, содержащий
-<span class="math inline">\(g\)</span>.</p>
+<span class="math inline">\(g\)</span> свободной конечно порожденной
+абелевой группы <span class="math inline">\(G\)</span>
+<em>примитивный</em>, если существует базис <span
+class="math inline">\(G\)</span>, содержащий <span
+class="math inline">\(g\)</span>.</p>
 <h3 id="пример-ненулевых-непримитивных-элементов">Пример ненулевых
 непримитивных элементов</h3>
 <hr />
@@ -180,8 +178,42 @@ class="math inline">\(\exists \{g, e_2, \ldots, e_n\}\)</span> - базис
 class="math inline">\(g \in pG \implies g = p g’ = p\left(\displaystyle
 \sum_{i = 2}^{n}\lambda_i e_i + g \lambda_1\right) \implies g = g p
 \alpha_1 \implies \blades\)</span></p>
-<p><span class="math inline">\(\boxed{3 \Rightarrow 1}\)</span> Что-то
-пошло не так.</p>
+<p><span class="math inline">\(\boxed{3 \Rightarrow 1}\)</span> <span
+class="math inline">\(\gcd{\{k_1, \ldots, k_n\}} = 1 \implies \exists
+u_1, \ldots, u_n \in \mathbb{Z}: \,\,\,\, k_1 u_1 + \ldots + k_n u_n =
+1\)</span>. Пусть <span class="math inline">\(\{e_1, \ldots,
+e_n\}\)</span> – базис <span class="math inline">\(G\)</span> и <span
+class="math inline">\(e_1 = (e_{11}, \ldots, e_{1n}), \ldots, e_n =
+(e_{n1}, \ldots, e_{nn})\)</span>. Пусть <span class="math inline">\(g =
+v_1 e_1 + \ldots + v_n e_n, v_i \in \mathbb{Z}\)</span>.</p>
+<p>Запишем удобнее:</p>
+<p><span class="math display">\[k_1 = v_1 e_{11} + \ldots + v_n
+e_{n1}\]</span> <span class="math display">\[k_2 = v_1 e_{12} + \ldots +
+v_n e_{n2}\]</span> <span class="math display">\[\vdots\]</span> <span
+class="math display">\[k_n = v_1 e_{1n} + \ldots + v_n
+e_{nn}\]</span></p>
+<p>Пусть <span class="math inline">\(u_1 \ne 0\)</span> <a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>Прибавим к верхнему равенству умноженному на <span
+class="math inline">\(u_1\)</span> остальные умноженные на <span
+class="math inline">\(u_i\)</span> соответственно. Получим:</p>
+<p><span class="math display">\[1 = v_1 (u_1 e_{11} +  \ldots + u_n
+e_{1n})+ \ldots + v_n (u_1 e_{n1} +  \ldots + u_n e_{nn})\]</span> <span
+class="math display">\[k_2 = v_1 e_{12} + \ldots + v_n e_{n2}\]</span>
+<span class="math display">\[\vdots\]</span> <span
+class="math display">\[k_n = v_1 e_{1n} + \ldots + v_n
+e_{nn}\]</span></p>
+<p>Теперь вычтем из каждого равенства, начиная со второго, первое
+умноженное на <span class="math inline">\(-k_i\)</span>. Получим:</p>
+<p><span class="math display">\[1 = v_1 e’_{11} + \ldots + v_n
+e’_{n1}\]</span> <span class="math display">\[0 = v_1 e’_{12} + \ldots +
+v_n e’_{n2}\]</span> <span class="math display">\[\vdots\]</span> <span
+class="math display">\[0 = v_1 e’_{1n} + \ldots + v_n
+e’_{nn}\]</span></p>
+<p>Здесь <span class="math inline">\(e’_{ij}\)</span> – новые базисные
+вектора и в таком базисе <span class="math inline">\(g = (1 0 \ldots
+0)\)</span>, а такой элемент можно включить в базис <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <h2 id="общий-вид-конечно-порожденной-абелевой-группы">Общий вид конечно
 порожденной абелевой группы</h2>
 <hr />
@@ -192,7 +224,7 @@ class="math inline">\(g \in pG \implies g = p g’ = p\left(\displaystyle
 G\)</span> – ее подгруппа.</p>
 <ol type="1">
 <li><span class="math inline">\(H\)</span> является свободной конечно
-порожденной абелевой группы.</li>
+порожденной абелевой группой.</li>
 <li><span class="math inline">\(\operatorname{rk}H \leqslant
 \operatorname{rk}G\)</span>.</li>
 <li>Пусть <span class="math inline">\(\{e_1, \ldots, e_n\}\)</span>
@@ -222,18 +254,19 @@ f_n\)</span> базис <span class="math inline">\(G\)</span>.</p>
 <span class="math inline">\(k\)</span> максимальное натуральное число,
 такое что <span class="math inline">\(H \subset kG\)</span>. Такое <span
 class="math inline">\(k\)</span> существует, если <span
-class="math inline">\(H\)</span> не является тривиальной. <a href="#fn2"
-class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+class="math inline">\(H\)</span> не является тривиальной. <a href="#fn3"
+class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
 <p>Рассмотрим <span class="math inline">\(h \in H, \,\,\,\, h =
 \displaystyle \sum_{}^{N}\lambda_i e_i\)</span>, такой что <span
-class="math inline">\(\gcd\{\lambda_i\} = k\)</span>. <a href="#fn3"
-class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>
+class="math inline">\(\gcd\{\lambda_i\} = k\)</span>. <a href="#fn4"
+class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>
 Тогда по случаю <span class="math inline">\(\operatorname{I}\)</span>
 существует базис <span class="math inline">\(\{e_1’, \ldots,
 e_n’\}\)</span> в <span class="math inline">\(kF\)</span>, такой что
 <span class="math inline">\(\exists k_1, \ldots, k_n: \,\,\,\, \{k_1e_1
 ’, \ldots, k_n e_n’\}\)</span> - базис в <span class="math inline">\(kH
 \,\,\,\,\blacksquare\)</span></p>
+<!-- Вообще, $\mathbb{Z} = \mathbb{Z}\oplus \ldots \oplus \mathbb{Z}$ и $H = v_1 \mathbb{Z} \oplus \ldots \oplus v_n \mathbb{Z} \implies k = \gcd{v_1, \ldots, v_n}$ и далее по критерию примитивности. -->
 <p><strong>Определение:</strong><a name="definition-2"></a> <span
 class="math inline">\(T(G) = \{g \in G: \,\,\,\, \operatorname{ord}g
 &lt; \infty\}\)</span> - <em>периодическая часть группы</em>.</p>
@@ -275,8 +308,8 @@ class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 единственно с точностью до перестановки слагаемых.</p>
 <p><em>Доказательство:</em></p>
 <p><span class="math display">\[G\oplus F / A \oplus B \simeq G/A \oplus
-F/B\]</span> <a href="#fn4" class="footnote-ref" id="fnref4"
-role="doc-noteref"><sup>4</sup></a>.</p>
+F/B\]</span> <a href="#fn5" class="footnote-ref" id="fnref5"
+role="doc-noteref"><sup>5</sup></a>.</p>
 <p>По основному свойству конечно порожденной группы <span
 class="math inline">\(G \simeq F / N\)</span>, где <span
 class="math inline">\(F\)</span> - свободная абелева группа, а <span
@@ -297,49 +330,28 @@ class="math inline">\(G/T(G)\simeq \mathbb{Z}^m \implies m\)</span>
 \mathbb{Z}_{p_1^{\alpha_1}}\oplus\ldots\oplus
 \mathbb{Z}_{p_k^{\alpha_k}}\)</span>.</p>
 <p>Иии…</p>
-<h2 id="о-конечных-подгруппах-мультипликативной-группы-поля">О конечных
-подгруппах мультипликативной группы поля</h2>
-<hr />
-<p><strong>Утверждение:</strong><a name="statement-0"></a> Конечная
-подгруппа мультипликативной группы поля циклическая.</p>
-<p><em>Доказательство:</em> Пусть <span class="math inline">\(H \subset
-\mathbb{F}^{*}\)</span>. <span class="math inline">\(H = \langle a_1
-\rangle_{k_1}\times\ldots\times \langle a_n \rangle_{k_n}\)</span> по
-предыдущей теореме. <span class="math inline">\(H\)</span> циклическая
-<span class="math inline">\(\iff \gcd\{k_i, k_j\} = 1 \,\,\,\, i \ne
-j\)</span>. <a href="#fn5" class="footnote-ref" id="fnref5"
-role="doc-noteref"><sup>5</sup></a>. Докажем: пусть <span
-class="math inline">\(p \,\,|\,\, k_1\)</span> и <span
-class="math inline">\(p \,\,|\,\, k_2\)</span>. Рассмотрим уравнение
-<span class="math inline">\(x^p = 1\)</span>, оно имеет <span
-class="math inline">\(p\)</span> решений в <span
-class="math inline">\(\langle a_1 \rangle_{k_1}\)</span>
-<strong>?</strong> и <span class="math inline">\(p\)</span> решений в
-<span class="math inline">\(\langle a_2 \rangle_{k_2}\)</span>, но не
-может иметь более <span class="math inline">\(p\)</span> решений в поле
-<span class="math inline">\(\mathbb{F} \implies \blades\)</span></p>
 <section id="footnotes" class="footnotes footnotes-end-of-document"
 role="doc-endnotes">
 <hr />
 <ol>
 <li id="fn1"><p>Свободной конечно порожденной абелевой группы.<a
 href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Вообще <span class="math inline">\(k = \gcd\{g_1,
+<li id="fn2"><p>Не все <span class="math inline">\(u_i = 0\)</span>,
+поэтому можем так считать.<a href="#fnref2" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Вообще <span class="math inline">\(k = \gcd\{g_1,
 \ldots, g_k\}\)</span>, где <span class="math inline">\(k_i\)</span>
 максимальные элементы, порождающие <span
-class="math inline">\(H\)</span>. Но это не точно.<a href="#fnref2"
+class="math inline">\(H\)</span>. Но это не точно.<a href="#fnref3"
 class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Такой элемент существует, так как иначе <span
-class="math inline">\(k\)</span> не максимально.<a href="#fnref3"
+<li id="fn4"><p>Такой элемент существует, так как иначе <span
+class="math inline">\(k\)</span> не максимально.<a href="#fnref4"
 class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Так ка можно построить гомоморфизм <span
+<li id="fn5"><p>Так ка можно построить гомоморфизм <span
 class="math inline">\(f: (g, h) \mapsto (gA, hB)\)</span>, ядро которого
 <span class="math inline">\(A\oplus B\)</span>, а образ <span
-class="math inline">\(G/A \oplus F/B\)</span><a href="#fnref4"
+class="math inline">\(G/A \oplus F/B\)</span><a href="#fnref5"
 class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Так как в этом случае решается уравнение <span
-class="math inline">\(x_1 k_1 + \ldots x_n k_n = 1\)</span>.<a
-href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>

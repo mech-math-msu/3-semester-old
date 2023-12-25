@@ -46,6 +46,8 @@ id="toc-алгебраические-структуры">Алгебраичес�
 <li><a href="#алгебра" id="toc-алгебра">Алгебра</a>
 <ul>
 <li><a href="#примеры" id="toc-примеры">Примеры</a></li>
+<li><a href="#алгебра-кватернионов"
+id="toc-алгебра-кватернионов">Алгебра кватернионов</a></li>
 </ul></li>
 <li><a href="#идеал" id="toc-идеал">Идеал</a></li>
 <li><a href="#факторкольцо-и-факторалгебра"
@@ -64,6 +66,12 @@ id="toc-поле-это-векторное-пространство-над-по�
 <ul>
 <li><a href="#пример" id="toc-пример">Пример</a></li>
 </ul></li>
+<li><a href="#простые-кольца-и-алгебры"
+id="toc-простые-кольца-и-алгебры">Простые кольца и алгебры</a></li>
+<li><a
+href="#конечномерные-алгебры-над-полем-комплексных-чисел-являющиеся-телами"
+id="toc-конечномерные-алгебры-над-полем-комплексных-чисел-являющиеся-телами">Конечномерные
+алгебры над полем комплексных чисел, являющиеся телами</a></li>
 <li><a href="#простые-расширения-полей"
 id="toc-простые-расширения-полей">Простые расширения полей</a></li>
 <li><a href="#теорема-о-строении-простого-расширения-поля"
@@ -116,10 +124,29 @@ class="math inline">\(0\)</span>, в котором любой ненулево�
 <p><strong>Определение:</strong><a name="definition-15"></a>
 <em>Поле</em> – это коммутативное тело.</p>
 </details>
+<p><strong>Определение:</strong><a name="definition-17"></a> Пусть <span
+class="math inline">\(F\)</span> – поле. <span
+class="math inline">\(G\)</span> – <em>подполе</em> поля <span
+class="math inline">\(F\)</span>, если <span class="math inline">\(G
+\subset F\)</span> и <span class="math inline">\(G\)</span> – поле.</p>
+<p><strong>Утверждение:</strong><a name="statement-7"></a> Пусть <span
+class="math inline">\(F\)</span> – поле. <span class="math inline">\(G
+\subset F\)</span> – подполе <span
+class="math inline">\(\iff\)</span></p>
+<ol type="1">
+<li><span class="math inline">\(G \ne \varnothing\)</span> и <span
+class="math inline">\(G \ne \{0\}\)</span>,</li>
+<li><span class="math inline">\(\forall a, b \in G \,\,\,\, a + b \in
+G\)</span> и <span class="math inline">\(a\cdot b \in G\)</span>,</li>
+<li><span class="math inline">\(\forall a \in G, \,\,\,\, a \ne 0
+\,\,\,\, a^{-1} \in G\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <p><strong>Определение:</strong><a name="definition-2"></a> Отображение
 <span class="math inline">\(\varphi: R \to S\)</span> – <em>гомоморфизм
-колец</em> <span class="math inline">\(R\)</span> и <span
-class="math inline">\(S\)</span>, если <span
+колец</em> (<em>полей</em>) <span class="math inline">\(R\)</span> и
+<span class="math inline">\(S\)</span>, если <span
 class="math inline">\(\forall x, y \in R\)</span></p>
 <ol type="1">
 <li><span class="math inline">\(\varphi(x + y) = \varphi(x) +
@@ -127,6 +154,14 @@ class="math inline">\(\forall x, y \in R\)</span></p>
 <li><span class="math inline">\(\varphi(xy) =
 \varphi(x)\varphi(y)\)</span>.</li>
 </ol>
+<p>Если гомоморфизм <span class="math inline">\(\varphi\)</span> –
+биекция, то <span class="math inline">\(\varphi\)</span> –
+<em>изоморфизм</em>.</p>
+<p>Если <span class="math inline">\(\varphi: R \to R\)</span> –
+гомоморфизм, то <span class="math inline">\(\varphi\)</span> –
+<em>эндоморфизм</em>.</p>
+<p>Биективный эндоморфизм или изоморфизм в себя –
+<em>автоморфизм</em>.</p>
 <h2 id="примеры-колец">Примеры колец</h2>
 <hr />
 <ol type="1">
@@ -170,6 +205,21 @@ class="math inline">\(\mathbb{F}\)</span>,
 <strong>обозначающаяся</strong> <span
 class="math inline">\(F(x)\)</span>.</li>
 </ol>
+<h3 id="алгебра-кватернионов">Алгебра кватернионов</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-19"></a> Множество
+<span class="math inline">\(\mathbb{H}\)</span> формальных выражений
+вида: <span class="math inline">\(a 1 + bi + cj + dk\)</span>, где <span
+class="math inline">\(a, b, c, d \in \mathbb{R}\)</span> – <em>алгебра
+кватернионов</em>. <span class="math inline">\(\mathbb{H}\)</span> –
+алгебра относительно умножения, заданного условиями <span
+class="math inline">\(i^2 = j^2 = k^2 = ijk = -1\)</span> и <span
+class="math inline">\(1 = (-1)^2\)</span> и покомпонентного
+сложения.</p>
+<p><strong>Утверждение:</strong><a name="statement-10"></a> Определение
+алгебры кватернионов корректно.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquared\)</span></p>
 <p><strong>Определение:</strong><a name="definition-2"></a> Отображение
 <span class="math inline">\(\varphi: A_1 \to A_2\)</span> –
 <em>гомоморфизм алгебр</em> <span class="math inline">\(A_1\)</span> и
@@ -296,7 +346,7 @@ class="math inline">\(fu \in I \implies fu + gv + I = gv + I = 1 + I
 <p><strong>Утверждение:</strong><a name="statement-6"></a> Базис в
 алгебре <span class="math inline">\(F[x]/fF[x]\)</span> – это <span
 class="math inline">\(\{1 + (f), x + (f),\ldots, x^{n - 1} +
-(f)\}\)</span>, где <span class="math inline">\(f =
+(f)\}\)</span>, где <span class="math inline">\(n =
 \operatorname{deg}f\)</span>.</p>
 <p><em>Доказательство:</em> <span
 class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
@@ -340,6 +390,42 @@ class="math inline">\(k\)</span> существует единственное �
 изоморфизма поле из <span class="math inline">\(p^k\)</span>
 элементов.</p>
 <p><em>Доказательство:</em> Будет доказано позже.</p>
+<h2 id="простые-кольца-и-алгебры">Простые кольца и алгебры</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-18"></a> Кольцо
+(алгебра) <em>простое(-я)</em>, если не содержит собственных
+идеалов.</p>
+<p><strong>Утверждение:</strong><a name="statement-8"></a> Кольцо матриц
+<span class="math inline">\(M_n(F)\)</span> над телом <span
+class="math inline">\(F\)</span> является простым.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(0 \ne A
+\in I \vartriangleright M_n(F)\)</span>. Домножением на подходящие
+матрицы получим, что любая матрица <span
+class="math inline">\(E_{ij}\)</span> лежит в <span
+class="math inline">\(I\)</span>, а значит <span class="math inline">\(I
+= M_n(F) \,\,\,\,\blacksquare\)</span></p>
+<h2
+id="конечномерные-алгебры-над-полем-комплексных-чисел-являющиеся-телами">Конечномерные
+алгебры над полем комплексных чисел, являющиеся телами</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-9"></a> Конечномерная
+алгебра <span class="math inline">\(A\)</span> над <span
+class="math inline">\(\mathbb{C}\)</span>, являющаяся телом изоморфна
+<span class="math inline">\(\mathbb{C}\)</span>.</p>
+<p><em>Доказательство:</em> Рассмотрим линейный оператор <span
+class="math inline">\(\lambda_t: A \to A: x \to tx\)</span>, где <span
+class="math inline">\(t \in A\)</span>. Любой линейный оператор над
+<span class="math inline">\(\mathbb{C}\)</span> имеет собственное
+значение и собственный вектор. Пусть <span
+class="math inline">\(\mathbb{C} \ni \alpha, v\)</span> – собственное
+значение и собственный вектор соотвественно. Так как <span
+class="math inline">\(tv = \alpha v\)</span> оператор <span
+class="math inline">\(\lambda_t - \alpha \mathcal{I}\)</span> необратим,
+значит, так как <span class="math inline">\(A\)</span> тело, <span
+class="math inline">\(\lambda_t - \alpha \mathcal{I} = 0 \implies
+\lambda_t = \alpha \mathcal{I}\)</span>. То есть построили изоморфизм
+<span class="math inline">\(A \to \mathbb{C}: t \to \alpha
+\,\,\,\,\blacksquare\)</span></p>
 <h2 id="простые-расширения-полей">Простые расширения полей</h2>
 <hr />
 <p><strong>Определение:</strong><a name="definition-12"></a> Пусть <span
@@ -374,6 +460,10 @@ class="math inline">\(f(\alpha) = 0\)</span> –
 <span class="math inline">\(1\)</span> – <em>минимальный</em>.</p>
 <p><strong>Обозначается:</strong> <span
 class="math inline">\(\mu_{\alpha}(x)\)</span>.</p>
+<p><strong>Лемма:</strong><a name="lemma-1"></a> Минимальный многочлен
+делит любой аннулирующий и неприводим.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquared\)</span></p>
 <h2 id="теорема-о-строении-простого-расширения-поля">Теорема о строении
 простого расширения поля</h2>
 <hr />

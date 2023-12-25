@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+    <script>
+      window.MathJax = {
+  loader: {load: ['[tex]/bbox']},
+  tex: {packages: {'[+]': ['bbox'],
+                    '[+]': ['html']}}
+};
+    </script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#описание-основных-групп"
+id="toc-описание-основных-групп">Описание основных групп</a>
+<ul>
+<li><a href="#группа-диэдра-группа-симметрий-правильного-n-угольника"
+id="toc-группа-диэдра-группа-симметрий-правильного-n-угольника">Группа
+Диэдра (Группа симметрий правильного <span
+class="math inline">\(n\)</span>-угольника)</a>
+<ul>
+<li><a href="#коммутант-группы-диэдра"
+id="toc-коммутант-группы-диэдра">Коммутант группы Диэдра</a></li>
+</ul></li>
+<li><a href="#группа-кватернионов-q_8"
+id="toc-группа-кватернионов-q_8">Группа кватернионов <span
+class="math inline">\(Q_8\)</span></a></li>
+<li><a href="#группа-перестановок-s_n"
+id="toc-группа-перестановок-s_n">Группа перестановок <span
+class="math inline">\(S_n\)</span></a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="описание-основных-групп">Описание основных групп</h1>
+<hr />
+<h2 id="группа-диэдра-группа-симметрий-правильного-n-угольника">Группа
+Диэдра (Группа симметрий правильного <span
+class="math inline">\(n\)</span>-угольника)</h2>
+<hr />
+<p><strong>Замечание:</strong> Группу Диэдра можно задать с помощью
+определяющего соотношения <span class="math inline">\(\langle r, s| r^n
+= e, \,\,\,\, s^{-1} = s, \,\,\,\, srs^{-1} = r^{-1} = r^{n - 1}
+\rangle\)</span>.</p>
+<p>Группа Диэдра порождается поворотом на минимальный угол <span
+class="math inline">\(r = \frac{2\pi}{n}\)</span> и любой из симметрий
+<span class="math inline">\(s\)</span>.</p>
+<p>При любом <span class="math inline">\(n\)</span> сопряжены повороты
+на <span class="math inline">\(\frac{2\pi k}{n}\)</span> и <span
+class="math inline">\(\frac{2\pi (n - k)}{n}\)</span>, поэтому при
+нечетном <span class="math inline">\(n\)</span> получаем <span
+class="math inline">\(\frac{n + 1}2\)</span> классов сопряженности
+поворотов <span class="math inline">\(\{e\}, \{\frac{2\pi}n, \frac{2\pi
+(n - 1)}n\}, \ldots, \{\frac{2\pi (\frac{n - 1}2)}n, \frac{2\pi (\frac{n
++ 1}2)}n \}\)</span>, а при четном поворот на <span
+class="math inline">\(\frac{2\pi (\frac{n}2)}n = \pi\)</span> совпадает
+с поворотом на <span class="math inline">\(\frac{2\pi (n -
+\frac{n}2)}n\)</span> и получаем <span class="math inline">\(\frac{n}2 +
+1\)</span> классов сопряженности.</p>
+<p>Все симметрии сопряжены при нечетном <span
+class="math inline">\(n\)</span>. При четном они образуют два класса
+сопряженности: симметрии, проходящие через середины противоположных
+сторон и симметрии, проходящие через противоположные вершины.</p>
+<p>Получаем <strong>при четном</strong> <span
+class="math inline">\(n\)</span> – <span class="math inline">\(\frac{n}2
++ 3\)</span> классов сопряженности, из которых <span
+class="math inline">\(\frac{n}2 - 1\)</span> <strong>классов
+сопярженности поворотов по две штуки, класс сопряженнности <span
+class="math inline">\(e\)</span> и класс сопряженности поворота <span
+class="math inline">\(\pi\)</span></strong> и <span
+class="math inline">\(2\)</span> <strong>класса сопряженности
+симметрий</strong>.</p>
+<p><strong>При нечетном</strong> <span class="math inline">\(n\)</span>
+– <span class="math inline">\(\frac{n + 3}2\)</span> классов
+сопряженности, из которых <span class="math inline">\(\frac{n + 1}2 -
+1\)</span> <strong>классов сопярженности поворотов по две штуки, класс
+сопряженнности <span class="math inline">\(e\)</span></strong> и <span
+class="math inline">\(1\)</span> <strong>класс сопряженности
+симметрий</strong>.</p>
+<h3 id="коммутант-группы-диэдра">Коммутант группы Диэдра</h3>
+<hr />
+<p>При <strong>нечетном</strong> <span class="math inline">\(n\)</span>
+– <strong>подгруппа поворотов</strong>.</p>
+<h2 id="группа-кватернионов-q_8">Группа кватернионов <span
+class="math inline">\(Q_8\)</span></h2>
+<hr />
+<p><strong>Замечание:</strong> Группу кватернионов можно задать с
+помощью определяющего соотношения <span class="math inline">\(\langle
+\pm 1, i, j, k| 1 = (-1)^2 = i^2 = j^2 = k^2, \,\,\,\, ijk = -1
+\rangle\)</span>.</p>
+<p>В группе кватернионов <span class="math inline">\(4\)</span> класса
+сопряженности <span class="math inline">\(\{\pm 1\}, \{\pm i\}, \{\pm
+j\}, \{\pm k\}\)</span>.</p>
+<h2 id="группа-перестановок-s_n">Группа перестановок <span
+class="math inline">\(S_n\)</span></h2>
+<hr />
+<p>Сопряжены все нечетные</p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

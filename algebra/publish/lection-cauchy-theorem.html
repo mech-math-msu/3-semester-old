@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+    <script>
+      window.MathJax = {
+  loader: {load: ['[tex]/bbox']},
+  tex: {packages: {'[+]': ['bbox'],
+                    '[+]': ['html']}}
+};
+    </script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#теорема-коши" id="toc-теорема-коши">Теорема Коши</a></li>
+</ul>
+</nav>
+</details>
+<h1 id="теорема-коши">Теорема Коши</h1>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> (<em>теорема
+Коши</em>) Если <span class="math inline">\(p\)</span> простой делитель
+порядка <span class="math inline">\(n\)</span> конечной группы <span
+class="math inline">\(G\)</span>, то существует <span
+class="math inline">\(g \in G\)</span>, такой что <span
+class="math inline">\(\operatorname{ord}g = p\)</span>.</p>
+<p><em>Доказательство:</em> Рассмотрим множество <span
+class="math inline">\(A = \{(g_1, \ldots, g_p)| \,\,\,\, g_1\cdot \ldots
+\cdot g_p = e\}\)</span>.</p>
+<p><span class="math inline">\(|A| = n^{p - 1}\)</span>, так как в
+качестве первых <span class="math inline">\(p - 1\)</span> элемента
+можно взять любые элементы <span class="math inline">\(G\)</span>, а в
+качестве <span class="math inline">\(p\)</span>-ого элемента нужно взять
+обратный к их проиведению.</p>
+<p><span class="math inline">\(A = \{(g, \ldots, g)|\,\,\,\, g^p = e\}
+\sqcup \{(g_1, \ldots, g_p)|\,\,\,\, \exists g_i \ne g_j\}\)</span>.</p>
+<p>Обозначим <span class="math inline">\(S = \{(g, \ldots, g)|\,\,\,\,
+g^p = e\}\)</span>, <span class="math inline">\(D = \{(g_1, \ldots,
+g_p)|\,\,\,\, \exists g_i \ne g_j\}\)</span>.</p>
+<p><span class="math display">\[(g_1, \ldots, g_p) \in D \,\,\,\,
+g_1\cdot\ldots\cdot g_p = e \implies g_1\cdot\ldots\cdot g_{p -
+1}=\]</span> <span class="math display">\[= g_p^{-1} \implies g_p\cdot
+g_1\cdot\ldots\cdot g_{p - 1} = e \implies (g_p, g_1, \ldots, g_{p - 1})
+\in D\]</span></p>
+<p>Аналогично <span class="math inline">\((g_{p - k + 1}, \ldots, g_p,
+g_1, \ldots, g_{p - k}) \in D, \,\,\,\, k \leqslant p - 1\)</span>.</p>
+<p>Докажем от противного, что все элементы полученные циклическими
+сдвигами различны. Пусть <span class="math inline">\(k &lt; p\)</span> и
+<span class="math inline">\((g_{p - k + 1}, \ldots, g_p, g_1, \ldots,
+g_{p - k}) = (g_1, \ldots, g_p)\)</span>. <span
+class="math inline">\(\gcd(p, k) = 1 \implies \exists u, v \in
+\mathbb{Z}: \,\,\,\, up + vk = 1\)</span>. А значит <span
+class="math inline">\((g_1, \ldots, g_p) = (g_{p - up + vk + 1}, \ldots,
+g_p, g_1, \ldots, g_{p - up + vk}) = (g_p, g_1, \ldots, g_{p -
+1})\)</span>, то есть <span class="math inline">\(g_1 = g_2 = \ldots =
+g_p\)</span>. Противоречие с определением <span
+class="math inline">\(D\)</span>.</p>
+<p>Значит <span class="math inline">\(|D|\)</span> делится на <span
+class="math inline">\(p \implies |S| = |A| - |D|\)</span> делится на
+<span class="math inline">\(p\)</span>.</p>
+<p><span class="math inline">\(|S| \ne \varnothing\)</span>, так как
+<span class="math inline">\((e, \ldots, e) \in S \implies \exists (g,
+\ldots, g) \in S: \,\,\,\, g^p = e\)</span> и <span
+class="math inline">\(g \ne e\)</span>. Так как <span
+class="math inline">\(p\)</span> - простое, <span
+class="math inline">\(\operatorname{ord}{g} = p
+\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>
