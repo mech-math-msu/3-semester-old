@@ -100,16 +100,16 @@ f(x, y + \Delta y)dx + \displaystyle\int\limits_{\psi(y)}^{\psi(y +
 \displaystyle\int\limits_{\varphi(y)}^{\psi(y)} \left(f(x, y + \Delta y)
 - f(x, y)dx\right)\right)=\]</span> <span class="math display">\[=
 \frac1{\Delta y}\displaystyle\int\limits_{\varphi(y)}^{\psi(y)}
-\left(f’_y(x, y + \theta\Delta y)\Delta y dx\right) + \frac1{\Delta y}
-(\psi(y + \Delta y) - \psi(y))\cdot f(\xi_1, y + \Delta y) -
-\frac1{\Delta y}(\varphi(y + \Delta y) - \varphi(y))\cdot f(\xi_2, y +
-\Delta y)\]</span></p>
+\left(f’_y(x, y + \theta\Delta y)\Delta y dx\right) +\]</span> <span
+class="math display">\[+ \frac1{\Delta y} (\psi(y + \Delta y) -
+\psi(y))\cdot f(\xi_1, y + \Delta y) - \frac1{\Delta y}(\varphi(y +
+\Delta y) - \varphi(y))\cdot f(\xi_2, y + \Delta y)\]</span></p>
 <p>Последнее верно <a
-href="https://mech-math-msu.github.io/lections/math-analysis/lection-28.03.23#theorem-1">по
-первой теореме о средних для интеграла стилтьеса</a>, далее
+href="https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-03.03.23.html#theorem-0">по
+второй теореме о средних для интеграла стилтьеса</a>, далее
 рассматриваем предел при <span class="math inline">\(\Delta y \to
 0\)</span></p>
-<p><span class="math inline">\(F’(y)\)</span> очевидно непрерывна <span
+<p><span class="math inline">\(F’(y)\)</span> непрерывна <span
 class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <h2 id="интегрирование-интеграла-с-параметром">Интегрирование интеграла
 с параметром</h2>
@@ -125,10 +125,27 @@ y)dx\right) dy = \displaystyle\int\limits_a^b
 class="math inline">\(\varphi(t, y) = \displaystyle\int\limits_a^t f(x,
 y)dx\)</span>. Покажем, что <span class="math inline">\(\varphi(t,
 y)\)</span> непрерывна на <span class="math inline">\(G\)</span>.</p>
-<p><span class="math inline">\(|\varphi(t + \Delta t, y + \Delta y) -
+<p><span class="math display">\[|\varphi(t + \Delta t, y + \Delta y) -
 \varphi(t, y)| = \left|\displaystyle\int\limits_a^{t+\Delta t} f(x, y +
-\Delta y)dx - \displaystyle\int\limits_a^t f(x, y)dx\right|\)</span>
-<strong>?</strong></p>
+\Delta y)dx - \displaystyle\int\limits_a^t f(x, y)dx\right|
+\leqslant\]</span> <span
+class="math display">\[\left|\displaystyle\int\limits_a^t (f(x, y +
+\Delta y) - f(x, y))dx\right| + \left|\displaystyle\int\limits_t^{t +
+\Delta t} f(x, y + \Delta y)dx\right| \leqslant |b - a| \varepsilon +
+\varepsilon \max_{G}|f(x, y)|\]</span></p>
+<p>Рассмотрим <span class="math inline">\(F_1(t) =
+\displaystyle\int\limits_a^t \left(\displaystyle\int\limits_c^d f(x,
+y)dy\right) dx\)</span>. <span class="math inline">\(F_1(t)’ =
+\displaystyle\int\limits_c^d f(t, y)dy\)</span>,</p>
+<p><span class="math inline">\(F_2(t) = \displaystyle\int\limits_c^d
+\left(\displaystyle\int\limits_a^t f(x, y)dx\right) dy\)</span>. <span
+class="math inline">\(F_2(t)’ = \displaystyle\int\limits_c^d f(t,
+y)dy\)</span>,</p>
+<p>Значит <span class="math inline">\(F_1(t) - F_2(t) = C\)</span>,
+подставляя <span class="math inline">\(a\)</span> вместо <span
+class="math inline">\(t\)</span> в каждый из интегралов, получаем, что
+константа равна <span class="math inline">\(0
+\,\,\,\,\blacksquare\)</span></p>
 <a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
 <a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
 <a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>

@@ -46,10 +46,10 @@
     },
     {
         "keyword": "область действия квантора связанная переменная свободная переменная замкнутая   оценка переменных контекст   общезначима эквивалентны",
-        "data": "**Определение:**<a name=\"definition-12\"></a> Пусть $\\varphi$ - формула. В формулах $(\\forall x \\varphi)$ и $(\\exists x \\varphi) \\,\\,\\,\\, \\varphi$ - это *область действия квантора*.\n\nЕсли $\\varphi$ содержит $x \\in \\operatorname{Var}_{\\Sigma}$, то $x$ - *связанная переменная*.\n\nИначе $x$ - *свободная переменная*.\n\nФормула *замкнутая*, если в ней нет свободных переменных.\n\n[//]: # (end-definition-12)\n\n**Определение:**<a name=\"definition-11\"></a> \n\nОтображение $\\theta: \\operatorname{Var}_{\\Sigma} \\to U$ - *оценка переменных* или *контекст*.\n\nБескванторная формула при заданной оценке переменных - это формула логики высказываний и можно определить ее [истинность](#definition-7).\n\nФормула $(\\exists x \\varphi)$ истинна, если существует контекст, в котором формула $\\varphi$ - истинна.\n\nФормула $(\\forall x \\varphi)$ истинна, если $\\varphi$ истинна в любом контексте.\n\nИстинность формулы $\\varphi$ в контексте $\\theta$ в алгебраической структуре $A_{\\Sigma}$ обозначается $A_{\\Sigma}, \\theta \\models \\varphi$.\n\n[//]: # (end-definition-11)\n\n**Определение:**<a name=\"definition-12\"></a> Формула $\\varphi$ *общезначима*, если $\\varphi$ истинна в любой алгебраической структуре в любом контексте. Обозначается: $\\models \\varphi$.\n\nФормулы $\\varphi$ и $\\psi$ *эквивалентны*, если $\\models \\varphi \\to \\psi$ и $\\models \\psi \\to \\varphi$.\n\n",
+        "data": "**Определение:**<a name=\"definition-12\"></a> Пусть $\\varphi$ - формула. В формулах $(\\forall x \\varphi)$ и $(\\exists x \\varphi) \\,\\,\\,\\, \\varphi$ - это *область действия квантора*.\n\nЕсли $\\varphi$ содержит $x \\in \\operatorname{Var}$, то $x$ - *связанная переменная*.\n\nИначе $x$ - *свободная переменная*.\n\nФормула *замкнутая*, если в ней нет свободных переменных.\n\n[//]: # (end-definition-12)\n\n**Определение:**<a name=\"definition-11\"></a> \n\nОтображение $\\theta: \\operatorname{Var}_{\\Sigma} \\to U$ - *оценка переменных* или *контекст*.\n\nБескванторная формула при заданной оценке переменных - это формула логики высказываний и можно определить ее [истинность](#definition-7).\n\nФормула $(\\exists x \\varphi)$ истинна, если существует контекст, в котором формула $\\varphi$ - истинна.\n\nФормула $(\\forall x \\varphi)$ истинна, если $\\varphi$ истинна в любом контексте.\n\nИстинность формулы $\\varphi$ в контексте $\\theta$ в алгебраической структуре $A_{\\Sigma}$ обозначается $A_{\\Sigma}, \\theta \\models \\varphi$.\n\n[//]: # (end-definition-11)\n\n**Определение:**<a name=\"definition-12\"></a> Формула $\\varphi$ *общезначима*, если $\\varphi$ истинна в любой алгебраической структуре в любом контексте. Обозначается: $\\models \\varphi$.\n\nФормулы $\\varphi$ и $\\psi$ *эквивалентны*, если $\\models \\varphi \\to \\psi$ и $\\models \\psi \\to \\varphi$.\n\n",
         "data_type": "definition",
         "url": "lection-predicate-logic-formal-languages.html#definition-12",
-        "html": "<p><strong><a href=\"lection-predicate-logic-formal-languages.html#definition-12\">Определение:</strong><a name=\"definition-12\"></a> Пусть <span\nclass=\"math inline\">\\(\\varphi\\)</span> - формула. В формулах <span\nclass=\"math inline\">\\((\\forall x \\varphi)\\)</span> и <span\nclass=\"math inline\">\\((\\exists x \\varphi) \\,\\,\\,\\, \\varphi\\)</span> -\nэто <em>область действия квантора</em>.</p>\n<p>Если <span class=\"math inline\">\\(\\varphi\\)</span> содержит <span\nclass=\"math inline\">\\(x \\in \\operatorname{Var}_{\\Sigma}\\)</span>, то\n<span class=\"math inline\">\\(x\\)</span> - <em>связанная\nпеременная</em>.</p>\n<p>Иначе <span class=\"math inline\">\\(x\\)</span> - <em>свободная\nпеременная</em>.</p>\n<p>Формула <em>замкнутая</em>, если в ней нет свободных переменных.</p>\n<p><strong>Определение:</strong><a name=\"definition-11\"></a></p>\n<p>Отображение <span class=\"math inline\">\\(\\theta:\n\\operatorname{Var}_{\\Sigma} \\to U\\)</span> - <em>оценка переменных</em>\nили <em>контекст</em>.</p>\n<p>Бескванторная формула при заданной оценке переменных - это формула\nлогики высказываний и можно определить ее <a\nhref=\"#definition-7\">истинность</a>.</p>\n<p>Формула <span class=\"math inline\">\\((\\exists x \\varphi)\\)</span>\nистинна, если существует контекст, в котором формула <span\nclass=\"math inline\">\\(\\varphi\\)</span> - истинна.</p>\n<p>Формула <span class=\"math inline\">\\((\\forall x \\varphi)\\)</span>\nистинна, если <span class=\"math inline\">\\(\\varphi\\)</span> истинна в\nлюбом контексте.</p>\n<p>Истинность формулы <span class=\"math inline\">\\(\\varphi\\)</span> в\nконтексте <span class=\"math inline\">\\(\\theta\\)</span> в алгебраической\nструктуре <span class=\"math inline\">\\(A_{\\Sigma}\\)</span> обозначается\n<span class=\"math inline\">\\(A_{\\Sigma}, \\theta \\models\n\\varphi\\)</span>.</p>\n<p><strong>Определение:</a></strong> Формула\n<span class=\"math inline\">\\(\\varphi\\)</span> <em>общезначима</em>, если\n<span class=\"math inline\">\\(\\varphi\\)</span> истинна в любой\nалгебраической структуре в любом контексте. Обозначается: <span\nclass=\"math inline\">\\(\\models \\varphi\\)</span>.</p>\n<p>Формулы <span class=\"math inline\">\\(\\varphi\\)</span> и <span\nclass=\"math inline\">\\(\\psi\\)</span> <em>эквивалентны</em>, если <span\nclass=\"math inline\">\\(\\models \\varphi \\to \\psi\\)</span> и <span\nclass=\"math inline\">\\(\\models \\psi \\to \\varphi\\)</span>.</p>",
+        "html": "<p><strong><a href=\"lection-predicate-logic-formal-languages.html#definition-12\">Определение:</strong><a name=\"definition-12\"></a> Пусть <span\nclass=\"math inline\">\\(\\varphi\\)</span> - формула. В формулах <span\nclass=\"math inline\">\\((\\forall x \\varphi)\\)</span> и <span\nclass=\"math inline\">\\((\\exists x \\varphi) \\,\\,\\,\\, \\varphi\\)</span> -\nэто <em>область действия квантора</em>.</p>\n<p>Если <span class=\"math inline\">\\(\\varphi\\)</span> содержит <span\nclass=\"math inline\">\\(x \\in \\operatorname{Var}\\)</span>, то <span\nclass=\"math inline\">\\(x\\)</span> - <em>связанная переменная</em>.</p>\n<p>Иначе <span class=\"math inline\">\\(x\\)</span> - <em>свободная\nпеременная</em>.</p>\n<p>Формула <em>замкнутая</em>, если в ней нет свободных переменных.</p>\n<p><strong>Определение:</strong><a name=\"definition-11\"></a></p>\n<p>Отображение <span class=\"math inline\">\\(\\theta:\n\\operatorname{Var}_{\\Sigma} \\to U\\)</span> - <em>оценка переменных</em>\nили <em>контекст</em>.</p>\n<p>Бескванторная формула при заданной оценке переменных - это формула\nлогики высказываний и можно определить ее <a\nhref=\"#definition-7\">истинность</a>.</p>\n<p>Формула <span class=\"math inline\">\\((\\exists x \\varphi)\\)</span>\nистинна, если существует контекст, в котором формула <span\nclass=\"math inline\">\\(\\varphi\\)</span> - истинна.</p>\n<p>Формула <span class=\"math inline\">\\((\\forall x \\varphi)\\)</span>\nистинна, если <span class=\"math inline\">\\(\\varphi\\)</span> истинна в\nлюбом контексте.</p>\n<p>Истинность формулы <span class=\"math inline\">\\(\\varphi\\)</span> в\nконтексте <span class=\"math inline\">\\(\\theta\\)</span> в алгебраической\nструктуре <span class=\"math inline\">\\(A_{\\Sigma}\\)</span> обозначается\n<span class=\"math inline\">\\(A_{\\Sigma}, \\theta \\models\n\\varphi\\)</span>.</p>\n<p><strong>Определение:</a></strong> Формула\n<span class=\"math inline\">\\(\\varphi\\)</span> <em>общезначима</em>, если\n<span class=\"math inline\">\\(\\varphi\\)</span> истинна в любой\nалгебраической структуре в любом контексте. Обозначается: <span\nclass=\"math inline\">\\(\\models \\varphi\\)</span>.</p>\n<p>Формулы <span class=\"math inline\">\\(\\varphi\\)</span> и <span\nclass=\"math inline\">\\(\\psi\\)</span> <em>эквивалентны</em>, если <span\nclass=\"math inline\">\\(\\models \\varphi \\to \\psi\\)</span> и <span\nclass=\"math inline\">\\(\\models \\psi \\to \\varphi\\)</span>.</p>",
         "statement_html": "",
         "proof_html": ""
     },
@@ -64,10 +64,10 @@
     },
     {
         "keyword": "шкала крипке мир достижим из истинностная оценка в шкале модель крипке истинна в мире",
-        "data": "**Определение:**<a name=\"definition-1\"></a> \n\nСемантика модальной логики - это модули Крипке.\n\n*Шкала Крипке* - это непустое множество $W$ и бинарное отношение $R \\subset W\\times W$ на $W$.\n\nЭлемент $W$ - *мир*. Если $\\langle w_1, w_2 \\rangle \\in R$, то $w_2$ *достижим из* $w_1$.\n\nШкала Крипке обозначается: $F = (W, R)$.\n\nОтображение $v: W \\times \\operatorname{Prop} \\to \\{0, 1\\}$ - *истинностная оценка в шкале* $F$.\n\n*Модель Крипке* - это $K = (W, R, v)$.\n\n### Истинность:\n\n1) Пропозиционная переменная $\\varphi$ *истинна в мире* $w \\in W$ модели Крипке $K$, если $v(x, P_i) = 1$,\n\n2) Истинность формулы, содержащей $\\neg, \\vee, \\wedge, \\rightarrow$ определяется по таблицам,\n\n3) $K, w \\models \\Box \\varphi \\rightleftharpoons \\forall w’ \\in R(w) \\,\\,\\,\\, K, w’ \\models \\varphi$,\n\n4) $K, w \\models \\Diamond \\varphi \\rightleftharpoons \\exists w’ \\in R(w) \\,\\,\\,\\, K, w’ \\models \\varphi$.\n\n\nИстинность формулы $\\varphi$ в мире $w \\in W$ модели $K = (W, R, v)$ обозначается: $w \\models \\varphi$.\n\n",
+        "data": "**Определение:**<a name=\"definition-1\"></a> \n\nСемантика модальной логики -- это модели Крипке.\n\n*Шкала Крипке* -- это непустое множество $W$ и бинарное отношение $R \\subset W\\times W$ на $W$.\n\nЭлемент $W$ -- *мир*. Если $\\langle w_1, w_2 \\rangle \\in R$, то $w_2$ *достижим из* $w_1$.\n\nШкала Крипке обозначается: $F = (W, R)$.\n\nОтображение $v: W \\times \\operatorname{Prop} \\to \\{0, 1\\}$ - *истинностная оценка в шкале* $F$.\n\n*Модель Крипке* - это $K = (W, R, v)$.\n\n### Истинность:\n\n1) Пропозиционная переменная $\\varphi$ *истинна в мире* $w \\in W$ модели Крипке $K$, если $v(x, P_i) = 1$,\n\n2) Истинность формулы, содержащей $\\neg, \\vee, \\wedge, \\rightarrow$ определяется по таблицам,\n\n3) $K, w \\models \\Box \\varphi \\rightleftharpoons \\forall w’ \\in R(w) \\,\\,\\,\\, K, w’ \\models \\varphi$,\n\n4) $K, w \\models \\Diamond \\varphi \\rightleftharpoons \\exists w’ \\in R(w) \\,\\,\\,\\, K, w’ \\models \\varphi$.\n\n\nИстинность формулы $\\varphi$ в мире $w \\in W$ модели $K = (W, R, v)$ обозначается: $w \\models \\varphi$.\n\n",
         "data_type": "definition",
         "url": "lection-modal-logic.html#definition-1",
-        "html": "<p><strong><a href=\"lection-modal-logic.html#definition-1\">Определение:</a></strong></p>\n<p>Семантика модальной логики - это модули Крипке.</p>\n<p><em>Шкала Крипке</em> - это непустое множество <span\nclass=\"math inline\">\\(W\\)</span> и бинарное отношение <span\nclass=\"math inline\">\\(R \\subset W\\times W\\)</span> на <span\nclass=\"math inline\">\\(W\\)</span>.</p>\n<p>Элемент <span class=\"math inline\">\\(W\\)</span> - <em>мир</em>. Если\n<span class=\"math inline\">\\(\\langle w_1, w_2 \\rangle \\in R\\)</span>, то\n<span class=\"math inline\">\\(w_2\\)</span> <em>достижим из</em> <span\nclass=\"math inline\">\\(w_1\\)</span>.</p>\n<p>Шкала Крипке обозначается: <span class=\"math inline\">\\(F = (W,\nR)\\)</span>.</p>\n<p>Отображение <span class=\"math inline\">\\(v: W \\times\n\\operatorname{Prop} \\to \\{0, 1\\}\\)</span> - <em>истинностная оценка в\nшкале</em> <span class=\"math inline\">\\(F\\)</span>.</p>\n<p><em>Модель Крипке</em> - это <span class=\"math inline\">\\(K = (W, R,\nv)\\)</span>.</p>\n<h3 id=\"истинность\">Истинность:</h3>\n<ol type=\"1\">\n<li><p>Пропозиционная переменная <span\nclass=\"math inline\">\\(\\varphi\\)</span> <em>истинна в мире</em> <span\nclass=\"math inline\">\\(w \\in W\\)</span> модели Крипке <span\nclass=\"math inline\">\\(K\\)</span>, если <span class=\"math inline\">\\(v(x,\nP_i) = 1\\)</span>,</p></li>\n<li><p>Истинность формулы, содержащей <span class=\"math inline\">\\(\\neg,\n\\vee, \\wedge, \\rightarrow\\)</span> определяется по таблицам,</p></li>\n<li><p><span class=\"math inline\">\\(K, w \\models \\Box \\varphi\n\\rightleftharpoons \\forall w’ \\in R(w) \\,\\,\\,\\, K, w’ \\models\n\\varphi\\)</span>,</p></li>\n<li><p><span class=\"math inline\">\\(K, w \\models \\Diamond \\varphi\n\\rightleftharpoons \\exists w’ \\in R(w) \\,\\,\\,\\, K, w’ \\models\n\\varphi\\)</span>.</p></li>\n</ol>\n<p>Истинность формулы <span class=\"math inline\">\\(\\varphi\\)</span> в\nмире <span class=\"math inline\">\\(w \\in W\\)</span> модели <span\nclass=\"math inline\">\\(K = (W, R, v)\\)</span> обозначается: <span\nclass=\"math inline\">\\(w \\models \\varphi\\)</span>.</p>",
+        "html": "<p><strong><a href=\"lection-modal-logic.html#definition-1\">Определение:</a></strong></p>\n<p>Семантика модальной логики – это модели Крипке.</p>\n<p><em>Шкала Крипке</em> – это непустое множество <span\nclass=\"math inline\">\\(W\\)</span> и бинарное отношение <span\nclass=\"math inline\">\\(R \\subset W\\times W\\)</span> на <span\nclass=\"math inline\">\\(W\\)</span>.</p>\n<p>Элемент <span class=\"math inline\">\\(W\\)</span> – <em>мир</em>. Если\n<span class=\"math inline\">\\(\\langle w_1, w_2 \\rangle \\in R\\)</span>, то\n<span class=\"math inline\">\\(w_2\\)</span> <em>достижим из</em> <span\nclass=\"math inline\">\\(w_1\\)</span>.</p>\n<p>Шкала Крипке обозначается: <span class=\"math inline\">\\(F = (W,\nR)\\)</span>.</p>\n<p>Отображение <span class=\"math inline\">\\(v: W \\times\n\\operatorname{Prop} \\to \\{0, 1\\}\\)</span> - <em>истинностная оценка в\nшкале</em> <span class=\"math inline\">\\(F\\)</span>.</p>\n<p><em>Модель Крипке</em> - это <span class=\"math inline\">\\(K = (W, R,\nv)\\)</span>.</p>\n<h3 id=\"истинность\">Истинность:</h3>\n<ol type=\"1\">\n<li><p>Пропозиционная переменная <span\nclass=\"math inline\">\\(\\varphi\\)</span> <em>истинна в мире</em> <span\nclass=\"math inline\">\\(w \\in W\\)</span> модели Крипке <span\nclass=\"math inline\">\\(K\\)</span>, если <span class=\"math inline\">\\(v(x,\nP_i) = 1\\)</span>,</p></li>\n<li><p>Истинность формулы, содержащей <span class=\"math inline\">\\(\\neg,\n\\vee, \\wedge, \\rightarrow\\)</span> определяется по таблицам,</p></li>\n<li><p><span class=\"math inline\">\\(K, w \\models \\Box \\varphi\n\\rightleftharpoons \\forall w’ \\in R(w) \\,\\,\\,\\, K, w’ \\models\n\\varphi\\)</span>,</p></li>\n<li><p><span class=\"math inline\">\\(K, w \\models \\Diamond \\varphi\n\\rightleftharpoons \\exists w’ \\in R(w) \\,\\,\\,\\, K, w’ \\models\n\\varphi\\)</span>.</p></li>\n</ol>\n<p>Истинность формулы <span class=\"math inline\">\\(\\varphi\\)</span> в\nмире <span class=\"math inline\">\\(w \\in W\\)</span> модели <span\nclass=\"math inline\">\\(K = (W, R, v)\\)</span> обозначается: <span\nclass=\"math inline\">\\(w \\models \\varphi\\)</span>.</p>",
         "statement_html": "",
         "proof_html": ""
     },
@@ -97,5 +97,707 @@
         "html": "<p><strong><a href=\"lection-modal-logic.html#statement-0\">Утверждение:</a></strong> <span\nclass=\"math inline\">\\(F \\models \\Box p \\to \\Box\\Box p \\iff F\\)</span> -\nтранзитивна, то есть <span class=\"math inline\">\\(xRy \\wedge yRz\n\\rightarrow xRz \\,\\,\\,\\, \\forall x, y, z \\in W\\)</span>.</p>\n<p><em>Доказательство:</em></p>",
         "statement_html": "<p><strong><a href=\"lection-modal-logic.html#statement-0\">Утверждение:</a></strong> <span\nclass=\"math inline\">\\(F \\models \\Box p \\to \\Box\\Box p \\iff F\\)</span> -\nтранзитивна, то есть <span class=\"math inline\">\\(xRy \\wedge yRz\n\\rightarrow xRz \\,\\,\\,\\, \\forall x, y, z \\in W\\)</span>.</p>",
         "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "множество элемент задавать принадлежать не принадлежать пустое подмножеством содержится в   (упорядоченная) пара первый элемент второй цепочка   объединение множеств пересечение множеств дополнение множества до декартово (прямое) произведение множеств",
+        "data": "**Определение:**<a name=\"definition-0\"></a> *Множество* -- неопределяемое понятие. Множества обычно обозначаются большими буквами.\n\n*Элемент* множества -- неопределяемое понятие. Обычно обозначаются маленькими буквами.\n\nМножества можно *задавать*: перечислением элементов $\\{1, 2, 3, \\{2, 5\\}\\}$ или правилом построения $\\{n \\in \\mathbb{N}| \\,\\,\\,\\, n \\equiv 7 \\mod 5\\}$, где $|$ обозначает «такие, что». ^[Вот символы $1, 2, 3, 5, 7, \\equiv, \\mod$ и $\\mathbb{N}$ не являются неопределяемыми.]\n\nЭлемент $x$ может *принадлежать* множеству $X$ или *не принадлежать* $X$. Принадлежность обозначается $x \\in X$. Если элемент не принадлежит множеству, то пишут $x \\not\\in X$.\n\nСуществует *пустое* множество, то есть множество, не содержащее элементов. Обозначается $\\varnothing$.\n\nПусть заданы множества $X$ и $Y$. Если $\\forall x \\in X \\,\\,\\,\\, x \\in Y$, то $X$ является *подмножеством* (*содержится в*) $Y$. Обозначается $X \\subset Y$. $\\varnothing \\subset X$, где $X$ -- множество, по определению.\n\n**факт:** $X \\subset X$.\n\n*(Упорядоченная) пара* $\\langle a, b \\rangle$ -- это множество вида $\\{a, \\{a, b\\}\\}$. При этом $a$ -- *первый элемент* пары, $b$ -- *второй*.\n\n*Цепочка* -- это упорядоченная конечная последовательность элементов множества. Обозначается $\\langle a, b, c, \\ldots\\rangle$.\n\n**факт:** Упорядоченная пара -- это цепочка длины $2$.\n\n### Операции над множествами\n\nПусть заданы множества $X$ и $Y$.\n\n- Множество $X \\cup Y = \\{x| \\,\\,\\,\\, x \\in X \\vee x \\in Y\\}$ -- *объединение множеств* $X$ и $Y$.\n- Множество $X \\cap Y = \\{x| \\,\\,\\,\\, x \\in X \\wedge x \\in Y\\}$ -- *пересечение множеств* $X$ и $Y$.\n- Множество $X \\setminus Y = \\{x| \\,\\,\\,\\, x \\in X \\vee x \\not\\in Y\\}$ -- *дополнение множества* $X$ *до* $Y$.\n- Множество $X \\times Y = \\{\\langle x, y \\rangle | \\,\\,\\,\\, x \\in X, \\,\\,\\,\\, y \\in Y\\}$ -- *декартово (прямое) произведение множеств* $X$ и $Y$. По индукции определяется произведение $n$ копий множества.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-0",
+        "html": "<p><strong><a href=\"all.html#definition-0\">Определение:</a></strong>\n<em>Множество</em> – неопределяемое понятие. Множества обычно\nобозначаются большими буквами.</p>\n<p><em>Элемент</em> множества – неопределяемое понятие. Обычно\nобозначаются маленькими буквами.</p>\n<p>Множества можно <em>задавать</em>: перечислением элементов <span\nclass=\"math inline\">\\(\\{1, 2, 3, \\{2, 5\\}\\}\\)</span> или правилом\nпостроения <span class=\"math inline\">\\(\\{n \\in \\mathbb{N}| \\,\\,\\,\\, n\n\\equiv 7 \\mod 5\\}\\)</span>, где <span class=\"math inline\">\\(|\\)</span>\nобозначает «такие, что». <a href=\"#fn1\" class=\"footnote-ref\" id=\"fnref1\"\nrole=\"doc-noteref\"><sup>1</sup></a></p>\n<p>Элемент <span class=\"math inline\">\\(x\\)</span> может\n<em>принадлежать</em> множеству <span class=\"math inline\">\\(X\\)</span>\nили <em>не принадлежать</em> <span class=\"math inline\">\\(X\\)</span>.\nПринадлежность обозначается <span class=\"math inline\">\\(x \\in\nX\\)</span>. Если элемент не принадлежит множеству, то пишут <span\nclass=\"math inline\">\\(x \\not\\in X\\)</span>.</p>\n<p>Существует <em>пустое</em> множество, то есть множество, не\nсодержащее элементов. Обозначается <span\nclass=\"math inline\">\\(\\varnothing\\)</span>.</p>\n<p>Пусть заданы множества <span class=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span>. Если <span\nclass=\"math inline\">\\(\\forall x \\in X \\,\\,\\,\\, x \\in Y\\)</span>, то\n<span class=\"math inline\">\\(X\\)</span> является <em>подмножеством</em>\n(<em>содержится в</em>) <span class=\"math inline\">\\(Y\\)</span>.\nОбозначается <span class=\"math inline\">\\(X \\subset Y\\)</span>. <span\nclass=\"math inline\">\\(\\varnothing \\subset X\\)</span>, где <span\nclass=\"math inline\">\\(X\\)</span> – множество, по определению.</p>\n<p><strong>факт:</strong> <span class=\"math inline\">\\(X \\subset\nX\\)</span>.</p>\n<p><em>(Упорядоченная) пара</em> <span class=\"math inline\">\\(\\langle a,\nb \\rangle\\)</span> – это множество вида <span class=\"math inline\">\\(\\{a,\n\\{a, b\\}\\}\\)</span>. При этом <span class=\"math inline\">\\(a\\)</span> –\n<em>первый элемент</em> пары, <span class=\"math inline\">\\(b\\)</span> –\n<em>второй</em>.</p>\n<p><em>Цепочка</em> – это упорядоченная конечная последовательность\nэлементов множества. Обозначается <span class=\"math inline\">\\(\\langle a,\nb, c, \\ldots\\rangle\\)</span>.</p>\n<p><strong>факт:</strong> Упорядоченная пара – это цепочка длины <span\nclass=\"math inline\">\\(2\\)</span>.</p>\n<h3 id=\"операции-над-множествами\">Операции над множествами</h3>\n<p>Пусть заданы множества <span class=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span>.</p>\n<ul>\n<li>Множество <span class=\"math inline\">\\(X \\cup Y = \\{x| \\,\\,\\,\\, x \\in\nX \\vee x \\in Y\\}\\)</span> – <em>объединение множеств</em> <span\nclass=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span>.</li>\n<li>Множество <span class=\"math inline\">\\(X \\cap Y = \\{x| \\,\\,\\,\\, x \\in\nX \\wedge x \\in Y\\}\\)</span> – <em>пересечение множеств</em> <span\nclass=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span>.</li>\n<li>Множество <span class=\"math inline\">\\(X \\setminus Y = \\{x| \\,\\,\\,\\,\nx \\in X \\vee x \\not\\in Y\\}\\)</span> – <em>дополнение множества</em>\n<span class=\"math inline\">\\(X\\)</span> <em>до</em> <span\nclass=\"math inline\">\\(Y\\)</span>.</li>\n<li>Множество <span class=\"math inline\">\\(X \\times Y = \\{\\langle x, y\n\\rangle | \\,\\,\\,\\, x \\in X, \\,\\,\\,\\, y \\in Y\\}\\)</span> – <em>декартово\n(прямое) произведение множеств</em> <span\nclass=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span>. По индукции определяется произведение\n<span class=\"math inline\">\\(n\\)</span> копий множества.</li>\n</ul>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Вот символы <span class=\"math inline\">\\(1, 2, 3, 5, 7,\n\\equiv, \\mod\\)</span> и <span class=\"math inline\">\\(\\mathbb{N}\\)</span>\nне являются неопределяемыми.<a href=\"#fnref1\" class=\"footnote-back\"\nrole=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "арное (местное) отношение (предикат) бинарное отношение нульместные отношения      ",
+        "data": "**Определение:**<a name=\"definition-1\"></a> $n$-*арное (местное)* *отношение (предикат)* -- это подмножество прямого произведения $X_1 \\times\\ldots\\times X_n$, где $X_i$ -- некоторые множество, $n \\in \\mathbb{N}$.\n\n*Бинарное отношение* -- это $2$-местное отношение, то есть $R \\subset X \\times Y$. В таком случае $\\langle x, y\\rangle \\in R$ обозначают $xRy$.\n\n*Нульместные отношения* -- это константы **И** и **Л** или $\\top$ и $\\bot$ или `true`{.cpp} и `false`{.cpp}.\n\n**Бинарное отношение на множестве** -- это $R \\subset X \\times X$. \n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-1",
+        "html": "<p><strong><a href=\"all.html#definition-1\">Определение:</a></strong> <span\nclass=\"math inline\">\\(n\\)</span>-<em>арное (местное)</em> <em>отношение\n(предикат)</em> – это подмножество прямого произведения <span\nclass=\"math inline\">\\(X_1 \\times\\ldots\\times X_n\\)</span>, где <span\nclass=\"math inline\">\\(X_i\\)</span> – некоторые множество, <span\nclass=\"math inline\">\\(n \\in \\mathbb{N}\\)</span>.</p>\n<p><em>Бинарное отношение</em> – это <span\nclass=\"math inline\">\\(2\\)</span>-местное отношение, то есть <span\nclass=\"math inline\">\\(R \\subset X \\times Y\\)</span>. В таком случае\n<span class=\"math inline\">\\(\\langle x, y\\rangle \\in R\\)</span>\nобозначают <span class=\"math inline\">\\(xRy\\)</span>.</p>\n<p><em>Нульместные отношения</em> – это константы <strong>И</strong> и\n<strong>Л</strong> или <span class=\"math inline\">\\(\\top\\)</span> и <span\nclass=\"math inline\">\\(\\bot\\)</span> или <code class=\"cpp\">true</code> и\n<code class=\"cpp\">false</code>.</p>\n<p><strong>Бинарное отношение на множестве</strong> – это <span\nclass=\"math inline\">\\(R \\subset X \\times X\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "рефлексивно иррефлексивно симметрично антисимметрично транзитивно класс эквивалентности элемента по отношению отношение эквивалентности отношение (строгого) порядка упорядоченным линейный порядок линейно упорядоченным наименьший элемент (недо)граф вершина соединены ребром путь соединяющий вершины дерево",
+        "data": "**Определение:**<a name=\"definition-2\"></a> Пусть $R$ -- бинарное отношение на множестве $X$.\n\n- $R$ *рефлексивно*, если $\\forall x \\in X \\,\\,\\,\\, xRx$, $R$ *иррефлексивно*, если $\\forall x \\in X \\,\\,\\,\\,\\neg xRx$,\n- $R$ *симметрично*, если $xRy \\implies yRx$, $R$ *антисимметрично*, если $xRy \\implies \\neg yRx$,\n- $R$ *транзитивно*, если $xRy \\wedge yRz \\implies zRz$.\n\n*класс эквивалентности элемента* $x \\in X$ *по отношению* $R \\subset X \\times X$ -- это $[x]_R = \\{y \\in X| \\,\\,\\,\\, xRy\\}$.\n\n### Эквивалентность\n\n$R$ -- *отношение эквивалентности*, если $R$ рефлексивно, симметрично и транзитивно.\n\n### Порядок\n\n$R$ -- *отношение (строгого) порядка*, если $R$ иррефлексивно ^[$x$ не меньше $x$], транзитивно ^[если $x$ меньше $y$ и $y$ меньше $z$, то $x$ меньше $z$] и антисимметрично ^[если $x$ меньше $y$, то $y$ не меньше $x$]. Часто $R$ обозначают $\\prec$.\n\nМножество, на котором определено отношение порядка, является *упорядоченным*.\n\nМинимальный элемент упорядоченного множества $X$ -- это $x \\in X$, такой, что $\\not\\exists y \\in X$, такой, что $x \\prec y$.\n\n$R$ -- *линейный порядок* на $X$, если $R$ -- отношение порядка на $X$ и $\\forall x, y \\in X \\,\\,\\,\\, xRy$ или $yRx$.\n\nМножество, на котором определено отношение линейного порядка, является *линейно упорядоченным*.\n\n*Наименьший элемент* линейно упорядоченного множества $X$ -- это $x \\in X$, такой, что $\\forall y \\in X \\setminus \\{x\\} \\,\\,\\,\\, x \\prec y$.\n\n### Граф\n\n*(недо)граф* -- это пара $\\langle V, R\\rangle$, где $R$ -- бинарное отношение на $V$. В таком случае $v \\in V$ -- *вершина*, если $v_1Rv_2$, то вершины $v_1$ и $v_2$ *соединены ребром*.\n\n*путь* в графе $\\langle V, R\\rangle$, *соединяющий вершины* $v_1$ и $v_n$, -- это $v_1Rv_2R\\ldots Rv_n$.\n\n*дерево* -- это граф, в котором любые две вершины соединены единственным путем.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-2",
+        "html": "<p><strong><a href=\"all.html#definition-2\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(R\\)</span> – бинарное отношение на множестве <span\nclass=\"math inline\">\\(X\\)</span>.</p>\n<ul>\n<li><span class=\"math inline\">\\(R\\)</span> <em>рефлексивно</em>, если\n<span class=\"math inline\">\\(\\forall x \\in X \\,\\,\\,\\, xRx\\)</span>, <span\nclass=\"math inline\">\\(R\\)</span> <em>иррефлексивно</em>, если <span\nclass=\"math inline\">\\(\\forall x \\in X \\,\\,\\,\\,\\neg xRx\\)</span>,</li>\n<li><span class=\"math inline\">\\(R\\)</span> <em>симметрично</em>, если\n<span class=\"math inline\">\\(xRy \\implies yRx\\)</span>, <span\nclass=\"math inline\">\\(R\\)</span> <em>антисимметрично</em>, если <span\nclass=\"math inline\">\\(xRy \\implies \\neg yRx\\)</span>,</li>\n<li><span class=\"math inline\">\\(R\\)</span> <em>транзитивно</em>, если\n<span class=\"math inline\">\\(xRy \\wedge yRz \\implies zRz\\)</span>.</li>\n</ul>\n<p><em>класс эквивалентности элемента</em> <span class=\"math inline\">\\(x\n\\in X\\)</span> <em>по отношению</em> <span class=\"math inline\">\\(R\n\\subset X \\times X\\)</span> – это <span class=\"math inline\">\\([x]_R =\n\\{y \\in X| \\,\\,\\,\\, xRy\\}\\)</span>.</p>\n<h3 id=\"эквивалентность\">Эквивалентность</h3>\n<p><span class=\"math inline\">\\(R\\)</span> – <em>отношение\nэквивалентности</em>, если <span class=\"math inline\">\\(R\\)</span>\nрефлексивно, симметрично и транзитивно.</p>\n<h3 id=\"порядок\">Порядок</h3>\n<p><span class=\"math inline\">\\(R\\)</span> – <em>отношение (строгого)\nпорядка</em>, если <span class=\"math inline\">\\(R\\)</span> иррефлексивно\n<a href=\"#fn1\" class=\"footnote-ref\" id=\"fnref1\"\nrole=\"doc-noteref\"><sup>1</sup></a>, транзитивно <a href=\"#fn2\"\nclass=\"footnote-ref\" id=\"fnref2\" role=\"doc-noteref\"><sup>2</sup></a> и\nантисимметрично <a href=\"#fn3\" class=\"footnote-ref\" id=\"fnref3\"\nrole=\"doc-noteref\"><sup>3</sup></a>. Часто <span\nclass=\"math inline\">\\(R\\)</span> обозначают <span\nclass=\"math inline\">\\(\\prec\\)</span>.</p>\n<p>Множество, на котором определено отношение порядка, является\n<em>упорядоченным</em>.</p>\n<p>Минимальный элемент упорядоченного множества <span\nclass=\"math inline\">\\(X\\)</span> – это <span class=\"math inline\">\\(x \\in\nX\\)</span>, такой, что <span class=\"math inline\">\\(\\not\\exists y \\in\nX\\)</span>, такой, что <span class=\"math inline\">\\(x \\prec\ny\\)</span>.</p>\n<p><span class=\"math inline\">\\(R\\)</span> – <em>линейный порядок</em> на\n<span class=\"math inline\">\\(X\\)</span>, если <span\nclass=\"math inline\">\\(R\\)</span> – отношение порядка на <span\nclass=\"math inline\">\\(X\\)</span> и <span class=\"math inline\">\\(\\forall\nx, y \\in X \\,\\,\\,\\, xRy\\)</span> или <span\nclass=\"math inline\">\\(yRx\\)</span>.</p>\n<p>Множество, на котором определено отношение линейного порядка,\nявляется <em>линейно упорядоченным</em>.</p>\n<p><em>Наименьший элемент</em> линейно упорядоченного множества <span\nclass=\"math inline\">\\(X\\)</span> – это <span class=\"math inline\">\\(x \\in\nX\\)</span>, такой, что <span class=\"math inline\">\\(\\forall y \\in X\n\\setminus \\{x\\} \\,\\,\\,\\, x \\prec y\\)</span>.</p>\n<h3 id=\"граф\">Граф</h3>\n<p><em>(недо)граф</em> – это пара <span class=\"math inline\">\\(\\langle V,\nR\\rangle\\)</span>, где <span class=\"math inline\">\\(R\\)</span> – бинарное\nотношение на <span class=\"math inline\">\\(V\\)</span>. В таком случае\n<span class=\"math inline\">\\(v \\in V\\)</span> – <em>вершина</em>, если\n<span class=\"math inline\">\\(v_1Rv_2\\)</span>, то вершины <span\nclass=\"math inline\">\\(v_1\\)</span> и <span\nclass=\"math inline\">\\(v_2\\)</span> <em>соединены ребром</em>.</p>\n<p><em>путь</em> в графе <span class=\"math inline\">\\(\\langle V,\nR\\rangle\\)</span>, <em>соединяющий вершины</em> <span\nclass=\"math inline\">\\(v_1\\)</span> и <span\nclass=\"math inline\">\\(v_n\\)</span>, – это <span\nclass=\"math inline\">\\(v_1Rv_2R\\ldots Rv_n\\)</span>.</p>\n<p><em>дерево</em> – это граф, в котором любые две вершины соединены\nединственным путем.</p>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p><span class=\"math inline\">\\(x\\)</span> не меньше <span\nclass=\"math inline\">\\(x\\)</span><a href=\"#fnref1\" class=\"footnote-back\"\nrole=\"doc-backlink\">↩︎</a></p></li>\n<li id=\"fn2\"><p>если <span class=\"math inline\">\\(x\\)</span> меньше <span\nclass=\"math inline\">\\(y\\)</span> и <span\nclass=\"math inline\">\\(y\\)</span> меньше <span\nclass=\"math inline\">\\(z\\)</span>, то <span\nclass=\"math inline\">\\(x\\)</span> меньше <span\nclass=\"math inline\">\\(z\\)</span><a href=\"#fnref2\" class=\"footnote-back\"\nrole=\"doc-backlink\">↩︎</a></p></li>\n<li id=\"fn3\"><p>если <span class=\"math inline\">\\(x\\)</span> меньше <span\nclass=\"math inline\">\\(y\\)</span>, то <span\nclass=\"math inline\">\\(y\\)</span> не меньше <span\nclass=\"math inline\">\\(x\\)</span><a href=\"#fnref3\" class=\"footnote-back\"\nrole=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "разбиение",
+        "data": "**Определение:**<a name=\"definition-5\"></a> *Разбиение* множества -- это набор его непересекающихся подмножеств, объединение которых дает все множество.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-5",
+        "html": "<p><strong><a href=\"all.html#definition-5\">Определение:</a></strong>\n<em>Разбиение</em> множества – это набор его непересекающихся\nподмножеств, объединение которых дает все множество.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "функционально отображение образ образ инъективно вложение сюръективно наложение биективно ~~навложение~~ взаимно однозначно",
+        "data": "**Определение:**<a name=\"definition-3\"></a> Бинарное отношение $R \\subset X \\times Y$ *функционально*, если $xRy \\wedge xRz \\implies y = z$ (каждому значению $x$ соответствует единственное значение $y$).\n\n*Отображение* -- это функциональное бинарное отношение $R \\subset X \\times Y$, такое что $\\forall x \\in X \\,\\,\\,\\, \\exists \\langle x, y\\rangle \\in R$. В таком случае отношение часто обозначают $f$ и вместо $f \\subset X \\times Y$ пишут $f: X \\to Y$, а вместо $xfy$ -- $y = f(x)$.\n\nПусть $f: X \\to Y$, $A \\subset X$ и $B \\subset Y$.\n\n- множество $f(A) = \\{f(a)| \\,\\,\\,\\, a \\in A\\}$ -- *образ* $A$ при отображении $f$.\n- множество $f^{-1}(B) = \\{x \\in X| \\,\\,\\,\\, f(x) \\in B\\}$ -- *образ* $A$ при отображении $f$.\n\n- отображение *инъективно* или *вложение*, если $f(x) = f(y) \\implies x = y$, обозначается $X \\hookrightarrow Y$,\n- отображение *сюръективно* или *наложение*, если $f(X) = Y$,\n- отображение *биективно* или *~~навложение~~ взаимно однозначно*, если оно сюръективно и инъективно.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-3",
+        "html": "<p><strong><a href=\"all.html#definition-3\">Определение:</a></strong> Бинарное\nотношение <span class=\"math inline\">\\(R \\subset X \\times Y\\)</span>\n<em>функционально</em>, если <span class=\"math inline\">\\(xRy \\wedge xRz\n\\implies y = z\\)</span> (каждому значению <span\nclass=\"math inline\">\\(x\\)</span> соответствует единственное значение\n<span class=\"math inline\">\\(y\\)</span>).</p>\n<p><em>Отображение</em> – это функциональное бинарное отношение <span\nclass=\"math inline\">\\(R \\subset X \\times Y\\)</span>, такое что <span\nclass=\"math inline\">\\(\\forall x \\in X \\,\\,\\,\\, \\exists \\langle x,\ny\\rangle \\in R\\)</span>. В таком случае отношение часто обозначают <span\nclass=\"math inline\">\\(f\\)</span> и вместо <span class=\"math inline\">\\(f\n\\subset X \\times Y\\)</span> пишут <span class=\"math inline\">\\(f: X \\to\nY\\)</span>, а вместо <span class=\"math inline\">\\(xfy\\)</span> – <span\nclass=\"math inline\">\\(y = f(x)\\)</span>.</p>\n<p>Пусть <span class=\"math inline\">\\(f: X \\to Y\\)</span>, <span\nclass=\"math inline\">\\(A \\subset X\\)</span> и <span\nclass=\"math inline\">\\(B \\subset Y\\)</span>.</p>\n<ul>\n<li><p>множество <span class=\"math inline\">\\(f(A) = \\{f(a)| \\,\\,\\,\\, a\n\\in A\\}\\)</span> – <em>образ</em> <span class=\"math inline\">\\(A\\)</span>\nпри отображении <span class=\"math inline\">\\(f\\)</span>.</p></li>\n<li><p>множество <span class=\"math inline\">\\(f^{-1}(B) = \\{x \\in X|\n\\,\\,\\,\\, f(x) \\in B\\}\\)</span> – <em>образ</em> <span\nclass=\"math inline\">\\(A\\)</span> при отображении <span\nclass=\"math inline\">\\(f\\)</span>.</p></li>\n<li><p>отображение <em>инъективно</em> или <em>вложение</em>, если <span\nclass=\"math inline\">\\(f(x) = f(y) \\implies x = y\\)</span>, обозначается\n<span class=\"math inline\">\\(X \\hookrightarrow Y\\)</span>,</p></li>\n<li><p>отображение <em>сюръективно</em> или <em>наложение</em>, если\n<span class=\"math inline\">\\(f(X) = Y\\)</span>,</p></li>\n<li><p>отображение <em>биективно</em> или <em><del>навложение</del>\nвзаимно однозначно</em>, если оно сюръективно и инъективно.</p></li>\n</ul>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "равномощны  ",
+        "data": "**Определение:**<a name=\"definition-4\"></a> Множества $X$ и $Y$ *равномощны*, если существует биективное отображение между ними.\n\n**Лемма:**<a name=\"lemma-2\"></a> Равномощность -- отношение эквивалентности.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n[//]: # (end-lemma-2)\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-4",
+        "html": "<p><strong><a href=\"all.html#definition-4\">Определение:</strong><a name=\"definition-4\"></a> Множества\n<span class=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span> <em>равномощны</em>, если существует\nбиективное отображение между ними.</p>\n<p><strong>Лемма:</a></strong> Равномощность –\nотношение эквивалентности.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"all.html#definition-4\">Определение:</strong><a name=\"definition-4\"></a> Множества\n<span class=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span> <em>равномощны</em>, если существует\nбиективное отображение между ними.</p>\n<p><strong>Лемма:</a></strong> Равномощность –\nотношение эквивалентности.</p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "ноль один два семь натуральные числа конечно элементно счетно",
+        "data": "**Определение:**<a name=\"definition-6\"></a> $\\varnothing$ -- *ноль* обозначается $0$, $\\{\\varnothing\\}$ -- *один* обозначается $1$, $\\{\\varnothing, \\{\\varnothing\\}\\}$ -- *два* обозначается $2$, $\\ldots$, $\\{ \\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}, \\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}\\}, \\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}, \\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}\\}\\}, \\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}, \\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}\\}, \\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}, \\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}\\}\\}\\}, \\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}, \\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}\\}, \\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}, \\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}\\}\\}, \\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}, \\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}\\}, \\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}, \\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}\\}\\}\\}\\} \\}$ -- *семь* обозначается $7$, $\\ldots$, $n + 1 = n \\cup \\{n\\}$.\n\nМножество таких элементов обозначается $\\mathbb{N}$ и называется *натуральные числа*.\n\nМножество $X$ *конечно* и $n$-*элементно*, если $X$ равномощно $\\{1, \\ldots, n\\}$.\n\nМножество $X$ *счетно*, если $X$ равномощно $\\mathbb{N}$.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-6",
+        "html": "<p><strong><a href=\"all.html#definition-6\">Определение:</a></strong> <span\nclass=\"math inline\">\\(\\varnothing\\)</span> – <em>ноль</em> обозначается\n<span class=\"math inline\">\\(0\\)</span>, <span\nclass=\"math inline\">\\(\\{\\varnothing\\}\\)</span> – <em>один</em>\nобозначается <span class=\"math inline\">\\(1\\)</span>, <span\nclass=\"math inline\">\\(\\{\\varnothing, \\{\\varnothing\\}\\}\\)</span> –\n<em>два</em> обозначается <span class=\"math inline\">\\(2\\)</span>, <span\nclass=\"math inline\">\\(\\ldots\\)</span>, <span class=\"math inline\">\\(\\{\n\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\},\n\\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}\\},\n\\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\},\n\\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}\\}\\},\n\\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\},\n\\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}\\},\n\\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\},\n\\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}\\}\\}\\},\n\\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\},\n\\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}\\},\n\\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\},\n\\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}\\}\\},\n\\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\},\n\\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}\\},\n\\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\},\n\\{\\varnothing, \\{\\varnothing\\}, \\{\\varnothing, \\{\\varnothing\\}\\}\\}\\}\\}\\}\n\\}\\)</span> – <em>семь</em> обозначается <span\nclass=\"math inline\">\\(7\\)</span>, <span\nclass=\"math inline\">\\(\\ldots\\)</span>, <span class=\"math inline\">\\(n + 1\n= n \\cup \\{n\\}\\)</span>.</p>\n<p>Множество таких элементов обозначается <span\nclass=\"math inline\">\\(\\mathbb{N}\\)</span> и называется <em>натуральные\nчисла</em>.</p>\n<p>Множество <span class=\"math inline\">\\(X\\)</span> <em>конечно</em> и\n<span class=\"math inline\">\\(n\\)</span>-<em>элементно</em>, если <span\nclass=\"math inline\">\\(X\\)</span> равномощно <span\nclass=\"math inline\">\\(\\{1, \\ldots, n\\}\\)</span>.</p>\n<p>Множество <span class=\"math inline\">\\(X\\)</span> <em>счетно</em>,\nесли <span class=\"math inline\">\\(X\\)</span> равномощно <span\nclass=\"math inline\">\\(\\mathbb{N}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "вполне упорядоченно полный порядок следующий за предыдущий для ноль",
+        "data": "**Определение:**<a name=\"definition-7\"></a> Множество *вполне упорядоченно*, если на нем задано отношение линейного порядка и каждое непустое подмножество имеет наименьший элемент. Соответствующее отношение линейного порядка -- *полный порядок*. Пустое множество вполне упорядочено по определению.\n\nПусть $X$ -- вполне упорядоченное множество, $x \\in X$.\n\n*Следующий за* $x$ элемент -- это наименьший элемент множества элементов больших $x$.\n\n*Предыдущий для* $x$ элемент -- это наибольший элемент множества элементов меньших $x$, если такой имеется.\n\n*Ноль* вполне $X$ -- это наименьший элемент $X$.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-7",
+        "html": "<p><strong><a href=\"all.html#definition-7\">Определение:</a></strong> Множество\n<em>вполне упорядоченно</em>, если на нем задано отношение линейного\nпорядка и каждое непустое подмножество имеет наименьший элемент.\nСоответствующее отношение линейного порядка – <em>полный порядок</em>.\nПустое множество вполне упорядочено по определению.</p>\n<p>Пусть <span class=\"math inline\">\\(X\\)</span> – вполне упорядоченное\nмножество, <span class=\"math inline\">\\(x \\in X\\)</span>.</p>\n<p><em>Следующий за</em> <span class=\"math inline\">\\(x\\)</span> элемент\n– это наименьший элемент множества элементов больших <span\nclass=\"math inline\">\\(x\\)</span>.</p>\n<p><em>Предыдущий для</em> <span class=\"math inline\">\\(x\\)</span>\nэлемент – это наибольший элемент множества элементов меньших <span\nclass=\"math inline\">\\(x\\)</span>, если такой имеется.</p>\n<p><em>Ноль</em> вполне <span class=\"math inline\">\\(X\\)</span> – это\nнаименьший элемент <span class=\"math inline\">\\(X\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "сумма двух полных порядков",
+        "data": "**Определение:**<a name=\"definition-8\"></a> *Сумма двух полных порядков* $<_1$ и $<_2$, определенных на $X$ и $Y$ соответсвенно, -- это порядок $< = <_1 + <_2$, который определен следующим образом: $x < y$, если $x \\in X$ и $y \\in Y$, или $x, y \\in X$ и $x <_1 y$, или $x, y \\in Y$ и $x <_2 y$.  \n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-8",
+        "html": "<p><strong><a href=\"all.html#definition-8\">Определение:</a></strong> <em>Сумма\nдвух полных порядков</em> <span class=\"math inline\">\\(&lt;_1\\)</span> и\n<span class=\"math inline\">\\(&lt;_2\\)</span>, определенных на <span\nclass=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span> соответсвенно, – это порядок <span\nclass=\"math inline\">\\(&lt; = &lt;_1 + &lt;_2\\)</span>, который определен\nследующим образом: <span class=\"math inline\">\\(x &lt; y\\)</span>, если\n<span class=\"math inline\">\\(x \\in X\\)</span> и <span\nclass=\"math inline\">\\(y \\in Y\\)</span>, или <span\nclass=\"math inline\">\\(x, y \\in X\\)</span> и <span\nclass=\"math inline\">\\(x &lt;_1 y\\)</span>, или <span\nclass=\"math inline\">\\(x, y \\in Y\\)</span> и <span\nclass=\"math inline\">\\(x &lt;_2 y\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "предельный   начальный отрезок собственный",
+        "data": "**Определение:**<a name=\"definition-9\"></a> Элемент вполне упорядоченного множества *предельный*, если он не ноль и не имеет предыдущего.\n\n**Пример:** Рассмотрим сумму полных порядков, определенных на $X$ и $Y$. Наименьший элемент $Y$ -- предельный в полученном порядке.\n\nПодмножество вполне упорядоченного множества -- *начальный отрезок*, если с каждым своим элементом содержит все меньшие его.\n\nНачальный отрезок *собственный*, если он не пустое множество и не все множество целиком.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-9",
+        "html": "<p><strong><a href=\"all.html#definition-9\">Определение:</a></strong> Элемент\nвполне упорядоченного множества <em>предельный</em>, если он не ноль и\nне имеет предыдущего.</p>\n<p><strong>Пример:</strong> Рассмотрим сумму полных порядков,\nопределенных на <span class=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span>. Наименьший элемент <span\nclass=\"math inline\">\\(Y\\)</span> – предельный в полученном порядке.</p>\n<p>Подмножество вполне упорядоченного множества – <em>начальный\nотрезок</em>, если с каждым своим элементом содержит все меньшие\nего.</p>\n<p>Начальный отрезок <em>собственный</em>, если он не пустое множество и\nне все множество целиком.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "индуктивное",
+        "data": "**Определение:**<a name=\"definition-10\"></a> Пусть $X$ -- вполне упорядоченнное множество. Пусть заданы значения функции $f$ на некотором начальном отрезке множества $X$, а значения на остальных элементах выражаются через заданные значения. Такое определение функции $f$ *индуктивное*.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-10",
+        "html": "<p><strong><a href=\"all.html#definition-10\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(X\\)</span> – вполне упорядоченнное множество.\nПусть заданы значения функции <span class=\"math inline\">\\(f\\)</span> на\nнекотором начальном отрезке множества <span\nclass=\"math inline\">\\(X\\)</span>, а значения на остальных элементах\nвыражаются через заданные значения. Такое определение функции <span\nclass=\"math inline\">\\(f\\)</span> <em>индуктивное</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "вкладывается",
+        "data": "**Определение:**<a name=\"definition-11\"></a> Вполне упорядоченное множество $A$ *вкладывается* в вполне упорядоченное множество $B$, если существует биективное отображение $f$ $A$ в некторый начальный отрезок множества $B$, такое что $a, b \\in A, \\,\\,\\,\\, a < b \\implies f(a) < f(b)$. \n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-11",
+        "html": "<p><strong><a href=\"all.html#definition-11\">Определение:</a></strong> Вполне\nупорядоченное множество <span class=\"math inline\">\\(A\\)</span>\n<em>вкладывается</em> в вполне упорядоченное множество <span\nclass=\"math inline\">\\(B\\)</span>, если существует биективное отображение\n<span class=\"math inline\">\\(f\\)</span> <span\nclass=\"math inline\">\\(A\\)</span> в некторый начальный отрезок множества\n<span class=\"math inline\">\\(B\\)</span>, такое что <span\nclass=\"math inline\">\\(a, b \\in A, \\,\\,\\,\\, a &lt; b \\implies f(a) &lt;\nf(b)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "функция выбора функция дополнения характеристическая функция",
+        "data": "**Определение:**<a name=\"definition-12\"></a> $2^A$, где $A$ -- множество, -- это множество всех подмножеств $A$.\n\n*Функция выбора* -- это отображение $2^A \\to A$, такое что образ любого подножества принадлежит этому подмножеству.\n\n*Функция дополнения* -- это функция, ставящая в соответствие подмножеству значение функции выбора на дополнении к подмножеству.\n\n*Характеристическая функция* подмножества $B \\subset A$ множества $A$ -- это функция $A \\to A: \\begin{cases}\n    1, b \\in B\\\\\n    0, b \\not\\in B \n\\end{cases}$.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-12",
+        "html": "<p><strong><a href=\"all.html#definition-12\">Определение:</a></strong> <span\nclass=\"math inline\">\\(2^A\\)</span>, где <span\nclass=\"math inline\">\\(A\\)</span> – множество, – это множество всех\nподмножеств <span class=\"math inline\">\\(A\\)</span>.</p>\n<p><em>Функция выбора</em> – это отображение <span\nclass=\"math inline\">\\(2^A \\to A\\)</span>, такое что образ любого\nподножества принадлежит этому подмножеству.</p>\n<p><em>Функция дополнения</em> – это функция, ставящая в соответствие\nподмножеству значение функции выбора на дополнении к подмножеству.</p>\n<p><em>Характеристическая функция</em> подмножества <span\nclass=\"math inline\">\\(B \\subset A\\)</span> множества <span\nclass=\"math inline\">\\(A\\)</span> – это функция <span\nclass=\"math inline\">\\(A \\to A: \\begin{cases}  1, b \\in B\\\\  0, b \\not\\in\nB \\end{cases}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "алфавит символы буквы слово длина слова конкатенация слов }$.\n\nподмножества $\\sigma^{ словарные множества языки",
+        "data": "**Определение:**<a name=\"definition-13\"></a>\n\n*Алфавит* -- это некоторое множество, его элементы -- *символы* или *буквы*.\n\n*Слово* в алфавите $\\Sigma$ -- это конечная последовательность символов.\n\n*Длина слова* -- это количество элементов в последовательности символов, составляющей слово.\n\nСлово нулевой длины обозначается $\\varepsilon$.\n\nЕсли $w_1$ и $w_2$ слова в некотором алфавите, то слово $w_1w_2$, полученное приписыванием $w_2$ в конец $w_1$ -- *конкатенация слов*.\n\nЕсли $w$ -- слово и $n \\in \\mathbb{N}$, то $x^n$ -- это $\\underbrace{x\\ldots x}_{n}$. $x^0 \\rightleftharpoons \\varepsilon$.\n\nМножество всех слов в алфавите $\\Sigma$ обозначается $\\Sigma^{*}$.\n\nПодмножества $\\Sigma^{*}$ -- *словарные множества* или *языки*.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-13",
+        "html": "<p><strong><a href=\"all.html#definition-13\">Определение:</a></strong></p>\n<p><em>Алфавит</em> – это некоторое множество, его элементы –\n<em>символы</em> или <em>буквы</em>.</p>\n<p><em>Слово</em> в алфавите <span class=\"math inline\">\\(\\Sigma\\)</span>\n– это конечная последовательность символов.</p>\n<p><em>Длина слова</em> – это количество элементов в последовательности\nсимволов, составляющей слово.</p>\n<p>Слово нулевой длины обозначается <span\nclass=\"math inline\">\\(\\varepsilon\\)</span>.</p>\n<p>Если <span class=\"math inline\">\\(w_1\\)</span> и <span\nclass=\"math inline\">\\(w_2\\)</span> слова в некотором алфавите, то слово\n<span class=\"math inline\">\\(w_1w_2\\)</span>, полученное приписыванием\n<span class=\"math inline\">\\(w_2\\)</span> в конец <span\nclass=\"math inline\">\\(w_1\\)</span> – <em>конкатенация слов</em>.</p>\n<p>Если <span class=\"math inline\">\\(w\\)</span> – слово и <span\nclass=\"math inline\">\\(n \\in \\mathbb{N}\\)</span>, то <span\nclass=\"math inline\">\\(x^n\\)</span> – это <span\nclass=\"math inline\">\\(\\underbrace{x\\ldots x}_{n}\\)</span>. <span\nclass=\"math inline\">\\(x^0 \\rightleftharpoons \\varepsilon\\)</span>.</p>\n<p>Множество всех слов в алфавите <span\nclass=\"math inline\">\\(\\Sigma\\)</span> обозначается <span\nclass=\"math inline\">\\(\\Sigma^{*}\\)</span>.</p>\n<p>Подмножества <span class=\"math inline\">\\(\\Sigma^{*}\\)</span> –\n<em>словарные множества</em> или <em>языки</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "сигнатура синтаксис }$. элементы синтаксиса --   или  .\n\n",
+        "data": "**Определение:**<a name=\"definition-14\"></a> *Сигнатура* -- это алфавит $\\Sigma$ допустимых при построении формулы символов. ^[Эти символы могут быть словами в другом алфавите.]\n\n*Синтаксис* -- это подмножество $\\Sigma^{*}$. Элементы синтаксиса -- *(составные) имена* или *формулы*.\n\n*Семантика* -- это про смысл формул.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-14",
+        "html": "<p><strong><a href=\"all.html#definition-14\">Определение:</a></strong>\n<em>Сигнатура</em> – это алфавит <span\nclass=\"math inline\">\\(\\Sigma\\)</span> допустимых при построении формулы\nсимволов. <a href=\"#fn1\" class=\"footnote-ref\" id=\"fnref1\"\nrole=\"doc-noteref\"><sup>1</sup></a></p>\n<p><em>Синтаксис</em> – это подмножество <span\nclass=\"math inline\">\\(\\Sigma^{*}\\)</span>. Элементы синтаксиса –\n<em>(составные) имена</em> или <em>формулы</em>.</p>\n<p><em>Семантика</em> – это про смысл формул.</p>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Эти символы могут быть словами в другом алфавите.<a\nhref=\"#fnref1\" class=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "предикатных символов имен отношений предикатов отношений предметных символов имен объектов констант сигнатура отображение валентности арности количества аргументов",
+        "data": "**Определение:**<a name=\"definition-15\"></a>\n\n$\\operatorname{Pred}_{\\Sigma} \\ne \\varnothing$ -- алфавит *предикатных символов*, или *имен отношений*, или *предикатов*, или *отношений*,\n\n$\\operatorname{Ob}_{\\Sigma} \\ne \\varnothing$ -- алфавит *предметных символов*, или *имен объектов*, или *констант*.\n\n*Сигнатура* -- это $\\Sigma = \\operatorname{Pred}_{\\Sigma}\\cup\\operatorname{Ob}_{\\Sigma}$ и *отображение валентности*, или *арности*, или *количества аргументов* $\\operatorname{arity}: \\operatorname{Pred}_{\\Sigma} \\to \\mathbb{N},$ сопоставляющая каждому имени отношения (предикатному символу) количество его аргументов. ^[Имена отношений валентности $0$ -- это константы истина или ложь.]\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-15",
+        "html": "<p><strong><a href=\"all.html#definition-15\">Определение:</a></strong></p>\n<p><span class=\"math inline\">\\(\\operatorname{Pred}_{\\Sigma} \\ne\n\\varnothing\\)</span> – алфавит <em>предикатных символов</em>, или\n<em>имен отношений</em>, или <em>предикатов</em>, или\n<em>отношений</em>,</p>\n<p><span class=\"math inline\">\\(\\operatorname{Ob}_{\\Sigma} \\ne\n\\varnothing\\)</span> – алфавит <em>предметных символов</em>, или\n<em>имен объектов</em>, или <em>констант</em>.</p>\n<p><em>Сигнатура</em> – это <span class=\"math inline\">\\(\\Sigma =\n\\operatorname{Pred}_{\\Sigma}\\cup\\operatorname{Ob}_{\\Sigma}\\)</span> и\n<em>отображение валентности</em>, или <em>арности</em>, или\n<em>количества аргументов</em> <span\nclass=\"math inline\">\\(\\operatorname{arity}: \\operatorname{Pred}_{\\Sigma}\n\\to \\mathbb{N},\\)</span> сопоставляющая каждому имени отношения\n(предикатному символу) количество его аргументов. <a href=\"#fn1\"\nclass=\"footnote-ref\" id=\"fnref1\" role=\"doc-noteref\"><sup>1</sup></a></p>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Имена отношений валентности <span\nclass=\"math inline\">\\(0\\)</span> – это константы истина или ложь.<a\nhref=\"#fnref1\" class=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "значение имени отношения/ предиката значение имени объекта интерпретация универсум носитель интерпретации алгебраическая структура (модель) сигнатуры",
+        "data": "**Определение:**<a name=\"definition-16\"></a> Зафиксируем $U \\ne \\varnothing$.\n\nПусть задано отображение $I: \\Sigma \\to U$ и\n\n$\\operatorname{I}: P \\mapsto \\overline{P} \\subset U^n$ *значение имени отношения/ предиката* ^[$P \\in \\operatorname{Pred}_{\\Sigma}$ и $\\operatorname{arity}(P) = n$],\n\n$\\operatorname{I}: v \\mapsto \\overline{v} \\in U$ *значение имени объекта*,\n\n$\\operatorname{I}$ -- *интерпретация* сигнатуры $\\Sigma$. $U$ -- *универсум* или *носитель интерпретации*.\n\n*Алгебраическая структура (модель) сигнатуры* $A_{\\Sigma}$ -- это интерпретация и универсум.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-16",
+        "html": "<p><strong><a href=\"all.html#definition-16\">Определение:</a></strong> Зафиксируем\n<span class=\"math inline\">\\(U \\ne \\varnothing\\)</span>.</p>\n<p>Пусть задано отображение <span class=\"math inline\">\\(I: \\Sigma \\to\nU\\)</span> и</p>\n<p><span class=\"math inline\">\\(\\operatorname{I}: P \\mapsto \\overline{P}\n\\subset U^n\\)</span> <em>значение имени отношения/ предиката</em> <a\nhref=\"#fn1\" class=\"footnote-ref\" id=\"fnref1\"\nrole=\"doc-noteref\"><sup>1</sup></a>,</p>\n<p><span class=\"math inline\">\\(\\operatorname{I}: v \\mapsto \\overline{v}\n\\in U\\)</span> <em>значение имени объекта</em>,</p>\n<p><span class=\"math inline\">\\(\\operatorname{I}\\)</span> –\n<em>интерпретация</em> сигнатуры <span\nclass=\"math inline\">\\(\\Sigma\\)</span>. <span\nclass=\"math inline\">\\(U\\)</span> – <em>универсум</em> или <em>носитель\nинтерпретации</em>.</p>\n<p><em>Алгебраическая структура (модель) сигнатуры</em> <span\nclass=\"math inline\">\\(A_{\\Sigma}\\)</span> – это интерпретация и\nуниверсум.</p>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p><span class=\"math inline\">\\(P \\in\n\\operatorname{Pred}_{\\Sigma}\\)</span> и <span\nclass=\"math inline\">\\(\\operatorname{arity}(P) = n\\)</span><a\nhref=\"#fnref1\" class=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "переменных язык сигнатуры терм контекст значение терма в контексте атомарная формула (атом) атомными формулами значение атомной формулы в контексте формула формула формула формула формула формула формула формула формула подформулы",
+        "data": "**Определение:**<a name=\"definition-17\"></a> Пусть задана сигнатура $\\Sigma$.\n\n$\\operatorname{Var}$ -- алфавит *переменных*.\n\n*Язык сигнатуры* -- это $\\operatorname{Var}\\cup \\{\\neg, \\vee, \\wedge, \\rightarrow, \\leftrightarrow, \\forall, \\exists, «(», «)», «,»\\}$\n\nСимвол переменной или константы -- *терм*.\n\n*Контекст* -- это отображение $\\operatorname{Var} \\to U$.\n\n*Значение терма в контексте* -- это элемент универсума, полученный при отображении, определенном выше. \n\n## Атомные формулы, их значение в контексте\n\n---\n\n*Атомарная формула (атом)* -- это $p(t_1, \\ldots, t_n)$, где $p \\in \\operatorname{Pred}_{\\Sigma}, \\,\\,\\,\\, \\operatorname{arity}(p) = n$ и $t_1, \\ldots,t_n$ -- термы, нульместные отношения являются *атомными формулами* по определению.\n\n*Значение атомной формулы* $p(t_1, \\ldots, t_n)$ *в контексте*.\n\n## Формулы логики отношений, индуктивное определение\n\n---\n\n*Формула* определяется индуктивно:\n\n1) Атом -- *формула*.\n2) Если $F$ и $F’$ -- формулы и $x \\in \\operatorname{Var}$, то\n    - $\\neg (F)$ -- *формула*,\n    - $(F) \\vee (F’)$ -- *формула*,\n    - $(F) \\wedge (F’)$ -- *формула*,\n    - $(F) \\rightarrow (F’)$ -- *формула*,\n    - $(F) \\leftrightarrow (F’)$ -- *формула*,\n    - $\\forall x (F)$ -- *формула*,\n    - $\\exists x (F)$ -- *формула*.\n\nПри этом $F$ и $F’$ -- *подформулы*.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-17",
+        "html": "<p><strong><a href=\"all.html#definition-17\">Определение:</a></strong> Пусть\nзадана сигнатура <span class=\"math inline\">\\(\\Sigma\\)</span>.</p>\n<p><span class=\"math inline\">\\(\\operatorname{Var}\\)</span> – алфавит\n<em>переменных</em>.</p>\n<p><em>Язык сигнатуры</em> – это <span\nclass=\"math inline\">\\(\\operatorname{Var}\\cup \\{\\neg, \\vee, \\wedge,\n\\rightarrow, \\leftrightarrow, \\forall, \\exists, «(», «)»,\n«,»\\}\\)</span></p>\n<p>Символ переменной или константы – <em>терм</em>.</p>\n<p><em>Контекст</em> – это отображение <span\nclass=\"math inline\">\\(\\operatorname{Var} \\to U\\)</span>.</p>\n<p><em>Значение терма в контексте</em> – это элемент универсума,\nполученный при отображении, определенном выше.</p>\n<h2 id=\"атомные-формулы-их-значение-в-контексте\">Атомные формулы, их\nзначение в контексте</h2>\n<hr />\n<p><em>Атомарная формула (атом)</em> – это <span\nclass=\"math inline\">\\(p(t_1, \\ldots, t_n)\\)</span>, где <span\nclass=\"math inline\">\\(p \\in \\operatorname{Pred}_{\\Sigma}, \\,\\,\\,\\,\n\\operatorname{arity}(p) = n\\)</span> и <span class=\"math inline\">\\(t_1,\n\\ldots,t_n\\)</span> – термы, нульместные отношения являются <em>атомными\nформулами</em> по определению.</p>\n<p><em>Значение атомной формулы</em> <span class=\"math inline\">\\(p(t_1,\n\\ldots, t_n)\\)</span> <em>в контексте</em>.</p>\n<h2 id=\"формулы-логики-отношений-индуктивное-определение\">Формулы логики\nотношений, индуктивное определение</h2>\n<hr />\n<p><em>Формула</em> определяется индуктивно:</p>\n<ol type=\"1\">\n<li>Атом – <em>формула</em>.</li>\n<li>Если <span class=\"math inline\">\\(F\\)</span> и <span\nclass=\"math inline\">\\(F’\\)</span> – формулы и <span\nclass=\"math inline\">\\(x \\in \\operatorname{Var}\\)</span>, то\n<ul>\n<li><span class=\"math inline\">\\(\\neg (F)\\)</span> –\n<em>формула</em>,</li>\n<li><span class=\"math inline\">\\((F) \\vee (F’)\\)</span> –\n<em>формула</em>,</li>\n<li><span class=\"math inline\">\\((F) \\wedge (F’)\\)</span> –\n<em>формула</em>,</li>\n<li><span class=\"math inline\">\\((F) \\rightarrow (F’)\\)</span> –\n<em>формула</em>,</li>\n<li><span class=\"math inline\">\\((F) \\leftrightarrow (F’)\\)</span> –\n<em>формула</em>,</li>\n<li><span class=\"math inline\">\\(\\forall x (F)\\)</span> –\n<em>формула</em>,</li>\n<li><span class=\"math inline\">\\(\\exists x (F)\\)</span> –\n<em>формула</em>.</li>\n</ul></li>\n</ol>\n<p>При этом <span class=\"math inline\">\\(F\\)</span> и <span\nclass=\"math inline\">\\(F’\\)</span> – <em>подформулы</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "область действия квантора связанная переменная свободная переменная замкнутая является высказыванием",
+        "data": "**Определение:**<a name=\"definition-18\"></a> Пусть $\\varphi$ - формула. В формулах $(\\forall x \\varphi)$ и $(\\exists x \\varphi) \\,\\,\\,\\, \\varphi$ - это *область действия квантора*.\n\nЕсли $\\varphi$ содержит $x \\in \\operatorname{Var}$, то $x$ - *связанная переменная*. Вообще это неформально и надо по индукции.\n\nИначе $x$ - *свободная переменная*.\n\nФормула *замкнутая* или *является высказыванием*, если в ней нет свободных переменных.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-18",
+        "html": "<p><strong><a href=\"all.html#definition-18\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(\\varphi\\)</span> - формула. В формулах <span\nclass=\"math inline\">\\((\\forall x \\varphi)\\)</span> и <span\nclass=\"math inline\">\\((\\exists x \\varphi) \\,\\,\\,\\, \\varphi\\)</span> -\nэто <em>область действия квантора</em>.</p>\n<p>Если <span class=\"math inline\">\\(\\varphi\\)</span> содержит <span\nclass=\"math inline\">\\(x \\in \\operatorname{Var}\\)</span>, то <span\nclass=\"math inline\">\\(x\\)</span> - <em>связанная переменная</em>. Вообще\nэто неформально и надо по индукции.</p>\n<p>Иначе <span class=\"math inline\">\\(x\\)</span> - <em>свободная\nпеременная</em>.</p>\n<p>Формула <em>замкнутая</em> или <em>является высказыванием</em>, если\nв ней нет свободных переменных.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "выполнимо",
+        "data": "**Определение:**<a name=\"definition-19\"></a> Высказывание *выполнимо*, если существует структура, в которой оно истинно.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-19",
+        "html": "<p><strong><a href=\"all.html#definition-19\">Определение:</a></strong>\nВысказывание <em>выполнимо</em>, если существует структура, в которой\nоно истинно.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "**Определение:**<a name=\"definition-20\"></a> Формулы эквивалентны, если их значения совпадают в любом контексте для любой структуры.\n\nДизъюнктивная нормальная форма -- это эквивалентная данной формула, состоящая из дизъюнкций элементарных конъюнкций.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-20",
+        "html": "<p><strong><a href=\"all.html#definition-20\">Определение:</a></strong> Формулы\nэквивалентны, если их значения совпадают в любом контексте для любой\nструктуры.</p>\n<p>Дизъюнктивная нормальная форма – это эквивалентная данной формула,\nсостоящая из дизъюнкций элементарных конъюнкций.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "предваренная нормальная форма",
+        "data": "**Определение:**<a name=\"definition-21\"></a> *Предваренная нормальная форма* -- это эквивалентная данной формула, где все кванторы стоят в начале формулы.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-21",
+        "html": "<p><strong><a href=\"all.html#definition-21\">Определение:</a></strong>\n<em>Предваренная нормальная форма</em> – это эквивалентная данной\nформула, где все кванторы стоят в начале формулы.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "пропозициональный язык (сигнатура) пропозициональных переменных возможность необходимость",
+        "data": "**Определение:**<a name=\"definition-22\"></a> \n\n*Пропозициональный язык (сигнатура)* - это \n\n1) Множество *пропозициональных переменных*: $\\operatorname{Prop} = \\{P_1, P_2, \\ldots\\}$,\n2) Логические связки: $\\neg, \\vee, \\wedge, \\rightarrow$,\n3) Модальности: $\\Diamond$ и $\\Box$ (*возможность* и *необходимость*),\n4) Скобки: $($, $)$.\n\n## Модальная логика. Индуктивное построение формул\n\n---\n\nФормулы определяются как и везде.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-22",
+        "html": "<p><strong><a href=\"all.html#definition-22\">Определение:</a></strong></p>\n<p><em>Пропозициональный язык (сигнатура)</em> - это</p>\n<ol type=\"1\">\n<li>Множество <em>пропозициональных переменных</em>: <span\nclass=\"math inline\">\\(\\operatorname{Prop} = \\{P_1, P_2,\n\\ldots\\}\\)</span>,</li>\n<li>Логические связки: <span class=\"math inline\">\\(\\neg, \\vee, \\wedge,\n\\rightarrow\\)</span>,</li>\n<li>Модальности: <span class=\"math inline\">\\(\\Diamond\\)</span> и <span\nclass=\"math inline\">\\(\\Box\\)</span> (<em>возможность</em> и\n<em>необходимость</em>),</li>\n<li>Скобки: <span class=\"math inline\">\\((\\)</span>, <span\nclass=\"math inline\">\\()\\)</span>.</li>\n</ol>\n<h2 id=\"модальная-логика.-индуктивное-построение-формул\">Модальная\nлогика. Индуктивное построение формул</h2>\n<hr />\n<p>Формулы определяются как и везде.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "шкала крипке мир достижим из (контекст) истинностная оценка в шкале модель крипке истинна в мире истинна в шкале истинна общезначима",
+        "data": "**Определение:**<a name=\"definition-23\"></a> Семантика модальной логики -- это модели Крипке.\n\n*Шкала Крипке* -- это непустое множество $W$ и бинарное отношение $R \\subset W\\times W$ на $W$.\n\nЭлемент $W$ -- *мир*. Если $\\langle w_1, w_2 \\rangle \\in R$, то $w_2$ *достижим из* $w_1$.\n\nШкала Крипке обозначается: $F = (W, R)$.\n\nОтображение $v: W \\times \\operatorname{Prop} \\to \\{0, 1\\}$ - *(контекст) истинностная оценка в шкале* $F$.\n\n*Модель Крипке* - это $K = (W, R, v)$.\n\n## Модальная логика. Свойства истинности\n\n---\n\n1) Пропозиционная переменная $P$ *истинна в мире* $w \\in W$ модели Крипке $K$, если $v(x, P) = 1$,\n\n2) Истинность формулы, содержащей $\\neg, \\vee, \\wedge, \\rightarrow$ определяется по таблицам,\n\n3) $K, w \\models \\Box \\varphi \\rightleftharpoons \\forall w’ \\in R(w) \\,\\,\\,\\, K, w’ \\models \\varphi$,\n\n4) $K, w \\models \\Diamond \\varphi \\rightleftharpoons \\exists w’ \\in R(w) \\,\\,\\,\\, K, w’ \\models \\varphi$.\n\n\nИстинность формулы $\\varphi$ в мире $w \\in W$ модели $K = (W, R, v)$ обозначается: $w \\models \\varphi$.\n\nЕсли формула $\\varphi$ истинна в любом мире шкалы $F$ в любом контексте, то $\\varphi$ *истинна в шкале*. Обозначается: $F \\models \\varphi$.\n\nФормула $\\varphi$ *истинна* или *общезначима*, если $\\varphi$ истинна в любой шкале. Обозначается: $\\models \\varphi$.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-23",
+        "html": "<p><strong><a href=\"all.html#definition-23\">Определение:</a></strong> Семантика\nмодальной логики – это модели Крипке.</p>\n<p><em>Шкала Крипке</em> – это непустое множество <span\nclass=\"math inline\">\\(W\\)</span> и бинарное отношение <span\nclass=\"math inline\">\\(R \\subset W\\times W\\)</span> на <span\nclass=\"math inline\">\\(W\\)</span>.</p>\n<p>Элемент <span class=\"math inline\">\\(W\\)</span> – <em>мир</em>. Если\n<span class=\"math inline\">\\(\\langle w_1, w_2 \\rangle \\in R\\)</span>, то\n<span class=\"math inline\">\\(w_2\\)</span> <em>достижим из</em> <span\nclass=\"math inline\">\\(w_1\\)</span>.</p>\n<p>Шкала Крипке обозначается: <span class=\"math inline\">\\(F = (W,\nR)\\)</span>.</p>\n<p>Отображение <span class=\"math inline\">\\(v: W \\times\n\\operatorname{Prop} \\to \\{0, 1\\}\\)</span> - <em>(контекст) истинностная\nоценка в шкале</em> <span class=\"math inline\">\\(F\\)</span>.</p>\n<p><em>Модель Крипке</em> - это <span class=\"math inline\">\\(K = (W, R,\nv)\\)</span>.</p>\n<h2 id=\"модальная-логика.-свойства-истинности\">Модальная логика.\nСвойства истинности</h2>\n<hr />\n<ol type=\"1\">\n<li><p>Пропозиционная переменная <span class=\"math inline\">\\(P\\)</span>\n<em>истинна в мире</em> <span class=\"math inline\">\\(w \\in W\\)</span>\nмодели Крипке <span class=\"math inline\">\\(K\\)</span>, если <span\nclass=\"math inline\">\\(v(x, P) = 1\\)</span>,</p></li>\n<li><p>Истинность формулы, содержащей <span class=\"math inline\">\\(\\neg,\n\\vee, \\wedge, \\rightarrow\\)</span> определяется по таблицам,</p></li>\n<li><p><span class=\"math inline\">\\(K, w \\models \\Box \\varphi\n\\rightleftharpoons \\forall w’ \\in R(w) \\,\\,\\,\\, K, w’ \\models\n\\varphi\\)</span>,</p></li>\n<li><p><span class=\"math inline\">\\(K, w \\models \\Diamond \\varphi\n\\rightleftharpoons \\exists w’ \\in R(w) \\,\\,\\,\\, K, w’ \\models\n\\varphi\\)</span>.</p></li>\n</ol>\n<p>Истинность формулы <span class=\"math inline\">\\(\\varphi\\)</span> в\nмире <span class=\"math inline\">\\(w \\in W\\)</span> модели <span\nclass=\"math inline\">\\(K = (W, R, v)\\)</span> обозначается: <span\nclass=\"math inline\">\\(w \\models \\varphi\\)</span>.</p>\n<p>Если формула <span class=\"math inline\">\\(\\varphi\\)</span> истинна в\nлюбом мире шкалы <span class=\"math inline\">\\(F\\)</span> в любом\nконтексте, то <span class=\"math inline\">\\(\\varphi\\)</span> <em>истинна в\nшкале</em>. Обозначается: <span class=\"math inline\">\\(F \\models\n\\varphi\\)</span>.</p>\n<p>Формула <span class=\"math inline\">\\(\\varphi\\)</span> <em>истинна</em>\nили <em>общезначима</em>, если <span\nclass=\"math inline\">\\(\\varphi\\)</span> истинна в любой шкале.\nОбозначается: <span class=\"math inline\">\\(\\models \\varphi\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "исчисление аксиомы правила вывода выводимы выводима выводима непротиворечиво полно",
+        "data": "**Определение:**<a name=\"definition-24\"></a> *Исчисление* -- это *аксиомы* и *правила вывода*.\n\nДля модальной логики аксиомы -- это тавтологии и формулы вида $\\Box(\\varphi \\to \\psi) \\to (\\Box \\varphi \\to \\Box \\psi)$. Аксиомы *выводимы*.\n\nПравила вывода: если $A$ и $A \\to B$ выводимы, то $B$ *выводима* (modus ponens), если $A$ выводима, то $\\Box A$ *выводима*.\n\nИсчисление *непротиворечиво*, если в нем выводимы только истины.\n\nИсчисление *полно*, если все истины выводимы.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-24",
+        "html": "<p><strong><a href=\"all.html#definition-24\">Определение:</a></strong>\n<em>Исчисление</em> – это <em>аксиомы</em> и <em>правила\nвывода</em>.</p>\n<p>Для модальной логики аксиомы – это тавтологии и формулы вида <span\nclass=\"math inline\">\\(\\Box(\\varphi \\to \\psi) \\to (\\Box \\varphi \\to \\Box\n\\psi)\\)</span>. Аксиомы <em>выводимы</em>.</p>\n<p>Правила вывода: если <span class=\"math inline\">\\(A\\)</span> и <span\nclass=\"math inline\">\\(A \\to B\\)</span> выводимы, то <span\nclass=\"math inline\">\\(B\\)</span> <em>выводима</em> (modus ponens), если\n<span class=\"math inline\">\\(A\\)</span> выводима, то <span\nclass=\"math inline\">\\(\\Box A\\)</span> <em>выводима</em>.</p>\n<p>Исчисление <em>непротиворечиво</em>, если в нем выводимы только\nистины.</p>\n<p>Исчисление <em>полно</em>, если все истины выводимы.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "окрестность открытое множество покрытие замкнутое",
+        "data": "**Определение:**<a name=\"definition-25\"></a> $B^{\\omega}$ -- множество бесконечных двоичных последовательностей.\n\n*Окрестность* -- это множество всех двоичных последовательностей, конечное начало которых совпадает с заданным.\n\n*Открытое множество* -- это объединение окрестностей.\n\n*Покрытие* множества -- это совокупность окрестностей, такая что их объединение совпадает с множеством.\n\nМножество *замкнутое*, если дополнение к нему открыто.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-25",
+        "html": "<p><strong><a href=\"all.html#definition-25\">Определение:</a></strong> <span\nclass=\"math inline\">\\(B^{\\omega}\\)</span> – множество бесконечных\nдвоичных последовательностей.</p>\n<p><em>Окрестность</em> – это множество всех двоичных\nпоследовательностей, конечное начало которых совпадает с заданным.</p>\n<p><em>Открытое множество</em> – это объединение окрестностей.</p>\n<p><em>Покрытие</em> множества – это совокупность окрестностей, такая\nчто их объединение совпадает с множеством.</p>\n<p>Множество <em>замкнутое</em>, если дополнение к нему открыто.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "логика высказваний значение на последовательности выполнимо",
+        "data": "**Определение:**<a name=\"definition-26\"></a> *Логика высказваний* -- это логика первого порядка, где все отношения нульместные, нет имен объектов, нет переменных и нет кванторов.\n\nСчитаем, что имена нульместных отношений образуют счетную последовательность $x_1, \\ldots, x_n, \\ldots$\n\n*Значение* формулы $\\varphi$, в которую входят имена нульместных отношений $x_{k_1}, \\ldots, x_{k_n}$, где $k_i$ индекс в последовательности имен, *на последовательности* $a_1a_2\\ldots \\in B^{\\omega}$ -- это значение формулы при интерпретации $I: x_{k_1} \\to a_{k_1}$. \n\nСемейство формул *выполнимо*, если существует последовательность, на которой все формулы семейства истинны.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-26",
+        "html": "<p><strong><a href=\"all.html#definition-26\">Определение:</a></strong> <em>Логика\nвысказваний</em> – это логика первого порядка, где все отношения\nнульместные, нет имен объектов, нет переменных и нет кванторов.</p>\n<p>Считаем, что имена нульместных отношений образуют счетную\nпоследовательность <span class=\"math inline\">\\(x_1, \\ldots, x_n,\n\\ldots\\)</span></p>\n<p><em>Значение</em> формулы <span\nclass=\"math inline\">\\(\\varphi\\)</span>, в которую входят имена\nнульместных отношений <span class=\"math inline\">\\(x_{k_1}, \\ldots,\nx_{k_n}\\)</span>, где <span class=\"math inline\">\\(k_i\\)</span> индекс в\nпоследовательности имен, <em>на последовательности</em> <span\nclass=\"math inline\">\\(a_1a_2\\ldots \\in B^{\\omega}\\)</span> – это\nзначение формулы при интерпретации <span class=\"math inline\">\\(I:\nx_{k_1} \\to a_{k_1}\\)</span>.</p>\n<p>Семейство формул <em>выполнимо</em>, если существует\nпоследовательность, на которой все формулы семейства истинны.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "выполнимо модель теория подтеория локально выполнима",
+        "data": "**Определение:**<a name=\"definition-27\"></a> Семейство высказываний (замкнутых формул) логики высказваний *выполнимо*, если существует структура (интерпретация и универсум), в которой каждая формула истинна.\n\nТакая структура -- *модель* семейства.\n\nСемейство высказываний (замкнутых формул) -- *теория*. Подмножество теории -- *подтеория*.\n\nТеория *локально выполнима*, если у каждой конечной подтеории есть модель.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-27",
+        "html": "<p><strong><a href=\"all.html#definition-27\">Определение:</a></strong> Семейство\nвысказываний (замкнутых формул) логики высказваний <em>выполнимо</em>,\nесли существует структура (интерпретация и универсум), в которой каждая\nформула истинна.</p>\n<p>Такая структура – <em>модель</em> семейства.</p>\n<p>Семейство высказываний (замкнутых формул) – <em>теория</em>.\nПодмножество теории – <em>подтеория</em>.</p>\n<p>Теория <em>локально выполнима</em>, если у каждой конечной подтеории\nесть модель.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "следует из",
+        "data": "**Определение:**<a name=\"definition-28\"></a> Высказывание *следует из* теории, если оно истинно в любой модели этой теории.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-28",
+        "html": "<p><strong><a href=\"all.html#definition-28\">Определение:</a></strong>\nВысказывание <em>следует из</em> теории, если оно истинно в любой модели\nэтой теории.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "равенство теория с равенством нормальная",
+        "data": "**Определение:**<a name=\"definition-29\"></a> *Равенство* -- это бинарное рефлексивное, симметричное и транзитивное отношение.\n\n\n*Теория с равенством* -- это теория $\\{\\forall u (u = u), \\,\\,\\,\\, \\forall u, v ((u = v) \\to (v = u)), \\,\\,\\,\\, \\forall u, v, w ((u = v)\\wedge(u = w) \\to (u = w))\\}$ и $\\{\\forall$ имени отношения $A(x_1, \\ldots, x_k)$ $\\forall x_1, \\ldots, x_k, y_1, \\ldots, y_k (((x_1 = y_1) \\wedge\\ldots\\wedge (x_k = y_k))\\wedge (A(x_1, \\ldots, x_k)) \\to A(y_1, \\ldots, y_k))\\}$.\n\nЕсли значение равенства в некоторой структуре -- совпадение объектов, то структура *нормальная*.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-29",
+        "html": "<p><strong><a href=\"all.html#definition-29\">Определение:</a></strong>\n<em>Равенство</em> – это бинарное рефлексивное, симметричное и\nтранзитивное отношение.</p>\n<p><em>Теория с равенством</em> – это теория <span\nclass=\"math inline\">\\(\\{\\forall u (u = u), \\,\\,\\,\\, \\forall u, v ((u =\nv) \\to (v = u)), \\,\\,\\,\\, \\forall u, v, w ((u = v)\\wedge(u = w) \\to (u =\nw))\\}\\)</span> и <span class=\"math inline\">\\(\\{\\forall\\)</span> имени\nотношения <span class=\"math inline\">\\(A(x_1, \\ldots, x_k)\\)</span> <span\nclass=\"math inline\">\\(\\forall x_1, \\ldots, x_k, y_1, \\ldots, y_k (((x_1\n= y_1) \\wedge\\ldots\\wedge (x_k = y_k))\\wedge (A(x_1, \\ldots, x_k)) \\to\nA(y_1, \\ldots, y_k))\\}\\)</span>.</p>\n<p>Если значение равенства в некоторой структуре – совпадение объектов,\nто структура <em>нормальная</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "**Определение:**<a name=\"definition-30\"></a> \n\n$\\mathbb{N}, \\mathbb{Q}, \\mathbb{R}, \\mathbb{Z}$,\n\n$\\mathbb{Q}, \\mathbb{R}, \\mathbb{Z}$,\n\n$\\mathbb{Q}, \\mathbb{R}$,\n\n$\\mathbb{N}$.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-30",
+        "html": "<p><strong><a href=\"all.html#definition-30\">Определение:</a></strong></p>\n<p><span class=\"math inline\">\\(\\mathbb{N}, \\mathbb{Q}, \\mathbb{R},\n\\mathbb{Z}\\)</span>,</p>\n<p><span class=\"math inline\">\\(\\mathbb{Q}, \\mathbb{R},\n\\mathbb{Z}\\)</span>,</p>\n<p><span class=\"math inline\">\\(\\mathbb{Q}, \\mathbb{R}\\)</span>,</p>\n<p><span class=\"math inline\">\\(\\mathbb{N}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "изоморфизм структур",
+        "data": "**Определение:**<a name=\"definition-31\"></a> Пусть задана сигнатура $\\Sigma$ и две ее структуры $U_1, I_1$ и $U_2, I_2$.\n\n*Изоморфизм структур* -- это биекция $\\psi: U_1 \\to U_2$, такая что для любого имени объекта $a \\in \\Sigma \\,\\,\\,\\, \\psi(I_1(a)) = I_2(a)$ и для любого имени отношения $P$ порядка $n \\,\\,\\,\\, \\forall v \\in U^n \\,\\,\\,\\, I_1(P)(v) = I_2(P)(\\psi(v))$. \n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-31",
+        "html": "<p><strong><a href=\"all.html#definition-31\">Определение:</a></strong> Пусть\nзадана сигнатура <span class=\"math inline\">\\(\\Sigma\\)</span> и две ее\nструктуры <span class=\"math inline\">\\(U_1, I_1\\)</span> и <span\nclass=\"math inline\">\\(U_2, I_2\\)</span>.</p>\n<p><em>Изоморфизм структур</em> – это биекция <span\nclass=\"math inline\">\\(\\psi: U_1 \\to U_2\\)</span>, такая что для любого\nимени объекта <span class=\"math inline\">\\(a \\in \\Sigma \\,\\,\\,\\,\n\\psi(I_1(a)) = I_2(a)\\)</span> и для любого имени отношения <span\nclass=\"math inline\">\\(P\\)</span> порядка <span class=\"math inline\">\\(n\n\\,\\,\\,\\, \\forall v \\in U^n \\,\\,\\,\\, I_1(P)(v) =\nI_2(P)(\\psi(v))\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "теория структуры  ",
+        "data": "**Определение:**<a name=\"definition-32\"></a> Пусть $M$ -- структура, то есть интерпретация и универсум.\n\n*Теория структуры* $\\operatorname{Th}(M)$ -- это множество высказываний истинных в данной структуре.\n\nПусть $m$ -- множество структур. $\\operatorname{Th}(m) = \\cap_{M \\in m}(\\operatorname{Th}(M))$.\n\nПусть $\\varphi$ -- теория, то есть множество высказываний. Класс всех моделей теории $\\varphi$ **обозначается** $\\operatorname{Mod}(\\varphi)$.\n\nТо есть имеем отображения $\\operatorname{Th}$ и $\\operatorname{Mod}$.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-32",
+        "html": "<p><strong><a href=\"all.html#definition-32\">Определение:</a></strong> Пусть <span\nclass=\"math inline\">\\(M\\)</span> – структура, то есть интерпретация и\nуниверсум.</p>\n<p><em>Теория структуры</em> <span\nclass=\"math inline\">\\(\\operatorname{Th}(M)\\)</span> – это множество\nвысказываний истинных в данной структуре.</p>\n<p>Пусть <span class=\"math inline\">\\(m\\)</span> – множество структур.\n<span class=\"math inline\">\\(\\operatorname{Th}(m) = \\cap_{M \\in\nm}(\\operatorname{Th}(M))\\)</span>.</p>\n<p>Пусть <span class=\"math inline\">\\(\\varphi\\)</span> – теория, то есть\nмножество высказываний. Класс всех моделей теории <span\nclass=\"math inline\">\\(\\varphi\\)</span> <strong>обозначается</strong>\n<span class=\"math inline\">\\(\\operatorname{Mod}(\\varphi)\\)</span>.</p>\n<p>То есть имеем отображения <span\nclass=\"math inline\">\\(\\operatorname{Th}\\)</span> и <span\nclass=\"math inline\">\\(\\operatorname{Mod}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "соответствие галуа",
+        "data": "**Определение:**<a name=\"definition-33\"></a> Пусть заданы два частично упорядоченных множества $X$ и $Y$. Элементы первого множества обозначим $x$, второго -- $y$, а оба отношения порядка обозначим $\\subseteq$. Тогда пара отображений $f: X \\to Y$ и $g: Y \\to X$ -- *соответствие Галуа* множеств $X$ и $Y$, если\n\n1) $f$ и $g$ нестрого монотонно убывающие отображения,\n2) $x \\subseteq g(y) \\iff y \\subseteq f(x)$,\n3) $x \\subseteq g(f(x))$,\n4) $y \\subseteq f(g(x))$.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-33",
+        "html": "<p><strong><a href=\"all.html#definition-33\">Определение:</a></strong> Пусть\nзаданы два частично упорядоченных множества <span\nclass=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span>. Элементы первого множества обозначим\n<span class=\"math inline\">\\(x\\)</span>, второго – <span\nclass=\"math inline\">\\(y\\)</span>, а оба отношения порядка обозначим\n<span class=\"math inline\">\\(\\subseteq\\)</span>. Тогда пара отображений\n<span class=\"math inline\">\\(f: X \\to Y\\)</span> и <span\nclass=\"math inline\">\\(g: Y \\to X\\)</span> – <em>соответствие Галуа</em>\nмножеств <span class=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span>, если</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(f\\)</span> и <span\nclass=\"math inline\">\\(g\\)</span> нестрого монотонно убывающие\nотображения,</li>\n<li><span class=\"math inline\">\\(x \\subseteq g(y) \\iff y \\subseteq\nf(x)\\)</span>,</li>\n<li><span class=\"math inline\">\\(x \\subseteq g(f(x))\\)</span>,</li>\n<li><span class=\"math inline\">\\(y \\subseteq f(g(x))\\)</span>.</li>\n</ol>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "эквивалентны",
+        "data": "**Определение:**<a name=\"definition-34\"></a> Структуры *эквивалентны*, если их теории совпадают.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-34",
+        "html": "<p><strong><a href=\"all.html#definition-34\">Определение:</a></strong> Структуры\n<em>эквивалентны</em>, если их теории совпадают.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "подструктура расширение структуры элементарная",
+        "data": "**Определение:**<a name=\"definition-35\"></a> *Подструктура* структуры $\\langle U, I \\rangle$ с сигнатурой $\\Sigma$ -- это структура $\\langle U’, I’\\rangle$, где $U’ \\subset U$, $I’(\\operatorname{Ob}_{\\Sigma}) \\subset U’$, $\\forall a \\in \\operatorname{Ob}_{\\Sigma} \\,\\,\\,\\, I’(a) = I(a) \\in U’$, $\\forall P \\in \\operatorname{Pred}_{\\Sigma}, \\,\\,\\,\\, I’(P) = I(P)\\cap (U’)^n$, где $n$ -- порядок имени отношения $P$. В этом случае $\\langle U, I \\rangle$ *расширение структуры* $\\langle U’, I’ \\rangle$.\n\nПодструктура *элементарная*, если $\\forall P \\in \\operatorname{Pred}_{\\Sigma}, \\,\\,\\,\\, \\forall x_1, \\ldots, x_n \\in \\operatorname{Var} \\langle U, I \\rangle \\models\\,\\,\\,\\, P(x_1, \\ldots, x_n) \\iff \\langle U’, I’\\rangle \\models P(x_1, \\ldots, x_n)$.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-35",
+        "html": "<p><strong><a href=\"all.html#definition-35\">Определение:</a></strong>\n<em>Подструктура</em> структуры <span class=\"math inline\">\\(\\langle U, I\n\\rangle\\)</span> с сигнатурой <span\nclass=\"math inline\">\\(\\Sigma\\)</span> – это структура <span\nclass=\"math inline\">\\(\\langle U’, I’\\rangle\\)</span>, где <span\nclass=\"math inline\">\\(U’ \\subset U\\)</span>, <span\nclass=\"math inline\">\\(I’(\\operatorname{Ob}_{\\Sigma}) \\subset\nU’\\)</span>, <span class=\"math inline\">\\(\\forall a \\in\n\\operatorname{Ob}_{\\Sigma} \\,\\,\\,\\, I’(a) = I(a) \\in U’\\)</span>, <span\nclass=\"math inline\">\\(\\forall P \\in \\operatorname{Pred}_{\\Sigma},\n\\,\\,\\,\\, I’(P) = I(P)\\cap (U’)^n\\)</span>, где <span\nclass=\"math inline\">\\(n\\)</span> – порядок имени отношения <span\nclass=\"math inline\">\\(P\\)</span>. В этом случае <span\nclass=\"math inline\">\\(\\langle U, I \\rangle\\)</span> <em>расширение\nструктуры</em> <span class=\"math inline\">\\(\\langle U’, I’\n\\rangle\\)</span>.</p>\n<p>Подструктура <em>элементарная</em>, если <span\nclass=\"math inline\">\\(\\forall P \\in \\operatorname{Pred}_{\\Sigma},\n\\,\\,\\,\\, \\forall x_1, \\ldots, x_n \\in \\operatorname{Var} \\langle U, I\n\\rangle \\models\\,\\,\\,\\, P(x_1, \\ldots, x_n) \\iff \\langle U’, I’\\rangle\n\\models P(x_1, \\ldots, x_n)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "полная выполнима",
+        "data": "**Определение:**<a name=\"definition-36\"></a> Теория *полная*, если с любым высказыванием она содержит его отрицание.\n\nТеория *выполнима*, если у нее есть модель.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-36",
+        "html": "<p><strong><a href=\"all.html#definition-36\">Определение:</a></strong> Теория\n<em>полная</em>, если с любым высказыванием она содержит его\nотрицание.</p>\n<p>Теория <em>выполнима</em>, если у нее есть модель.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "категорична",
+        "data": "**Определение:**<a name=\"definition-37\"></a> Теория $\\omega$-*категорична*, если все счетные модели этой теории изоморфны.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-37",
+        "html": "<p><strong><a href=\"all.html#definition-37\">Определение:</a></strong> Теория\n<span class=\"math inline\">\\(\\omega\\)</span>-<em>категорична</em>, если\nвсе счетные модели этой теории изоморфны.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "пространтсво определимости",
+        "data": "**Определение:**<a name=\"definition-39\"></a> Пусть задан универсум $U$ и множество отношений $S$. Дадим имена конечному множеству отношений и запишем любую формулу логики отношений. Она определяет некоторое отношение на $U$.\n\nМножество всех определимых через $S$ отношений -- *пространтсво определимости*.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-39",
+        "html": "<p><strong><a href=\"all.html#definition-39\">Определение:</a></strong> Пусть задан\nуниверсум <span class=\"math inline\">\\(U\\)</span> и множество отношений\n<span class=\"math inline\">\\(S\\)</span>. Дадим имена конечному множеству\nотношений и запишем любую формулу логики отношений. Она определяет\nнекоторое отношение на <span class=\"math inline\">\\(U\\)</span>.</p>\n<p>Множество всех определимых через <span\nclass=\"math inline\">\\(S\\)</span> отношений – <em>пространтсво\nопределимости</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "решетка",
+        "data": "**Определение:**<a name=\"definition-38\"></a> *Решетка* -- частично упорядоченное множество, где у любых двух элементов есть точная верхняя и точняя нижняя грань.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-38",
+        "html": "<p><strong><a href=\"all.html#definition-38\">Определение:</a></strong>\n<em>Решетка</em> – частично упорядоченное множество, где у любых двух\nэлементов есть точная верхняя и точняя нижняя грань.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "автоморфизмы замкнута инвариант",
+        "data": "**Определение:**<a name=\"definition-40\"></a> Пусть на $U$ задано множество отношений $S$. Перестановки, то есть биективные отображения в себя, множества $U$, сохраняющие отношения из $S$, -- *автоморфизмы* $S$.\n\nПусть $G \\subset \\operatorname{Sym}(U)$ -- подгруппа и $\\forall g \\in G \\,\\,\\,\\, (\\forall W \\subset U \\,\\,\\,\\, \\exists f \\in G: \\,\\,\\,\\, f = g_{W}) \\to g \\in G$. Тогда $G$ *замкнута*.\n\nОтношение $R$ *инвариант* множества $G \\subset \\operatorname{Sym}(U)$, если $\\forall g \\in G \\,\\,\\,\\, \\forall \\mathbf{r} \\in R \\,\\,\\,\\, g(\\mathbf{r}) \\in R$.\n\n",
+        "data_type": "definition",
+        "url": "all.html#definition-40",
+        "html": "<p><strong><a href=\"all.html#definition-40\">Определение:</a></strong> Пусть на\n<span class=\"math inline\">\\(U\\)</span> задано множество отношений <span\nclass=\"math inline\">\\(S\\)</span>. Перестановки, то есть биективные\nотображения в себя, множества <span class=\"math inline\">\\(U\\)</span>,\nсохраняющие отношения из <span class=\"math inline\">\\(S\\)</span>, –\n<em>автоморфизмы</em> <span class=\"math inline\">\\(S\\)</span>.</p>\n<p>Пусть <span class=\"math inline\">\\(G \\subset\n\\operatorname{Sym}(U)\\)</span> – подгруппа и <span\nclass=\"math inline\">\\(\\forall g \\in G \\,\\,\\,\\, (\\forall W \\subset U\n\\,\\,\\,\\, \\exists f \\in G: \\,\\,\\,\\, f = g_{W}) \\to g \\in G\\)</span>.\nТогда <span class=\"math inline\">\\(G\\)</span> <em>замкнута</em>.</p>\n<p>Отношение <span class=\"math inline\">\\(R\\)</span> <em>инвариант</em>\nмножества <span class=\"math inline\">\\(G \\subset\n\\operatorname{Sym}(U)\\)</span>, если <span class=\"math inline\">\\(\\forall\ng \\in G \\,\\,\\,\\, \\forall \\mathbf{r} \\in R \\,\\,\\,\\, g(\\mathbf{r}) \\in\nR\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "свойства вполне упорядоченного множества",
+        "data": "**Утверждение:**<a name=\"statement-0\"></a> (*свойства вполне упорядоченного множества*) Пусть $X$ непустое вполне упорядоченное множество. Тогда\n\n1. В $X$ есть минимальный элемент, то есть существует ноль,\n2. Любое подмножество $X$ вполне упорядочено.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "all.html#statement-0",
+        "html": "<p><strong><a href=\"all.html#statement-0\">Утверждение:</a></strong> (<em>свойства\nвполне упорядоченного множества</em>) Пусть <span\nclass=\"math inline\">\\(X\\)</span> непустое вполне упорядоченное\nмножество. Тогда</p>\n<ol type=\"1\">\n<li>В <span class=\"math inline\">\\(X\\)</span> есть минимальный элемент,\nто есть существует ноль,</li>\n<li>Любое подмножество <span class=\"math inline\">\\(X\\)</span> вполне\nупорядочено.</li>\n</ol>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"all.html#statement-0\">Утверждение:</a></strong> (<em>свойства\nвполне упорядоченного множества</em>) Пусть <span\nclass=\"math inline\">\\(X\\)</span> непустое вполне упорядоченное\nмножество. Тогда</p>\n<ol type=\"1\">\n<li>В <span class=\"math inline\">\\(X\\)</span> есть минимальный элемент,\nто есть существует ноль,</li>\n<li>Любое подмножество <span class=\"math inline\">\\(X\\)</span> вполне\nупорядочено.</li>\n</ol>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-1\"></a> Множество натуральных чисел, введеное по фон-Нейману вполне упорядочено.\n\n*Доказательство:* Введем отношение порядка на $\\mathbb{N}$. $\\mathbb{N} \\ni n < m \\in \\mathbb{N}$, если $n \\varsubsetneq m$. Докажем, что это отношение полное. Рассмотрим непустое подмножество $A \\subset \\mathbb{N}$.\n\n",
+        "data_type": "statement",
+        "url": "all.html#statement-1",
+        "html": "<p><strong><a href=\"all.html#statement-1\">Утверждение:</a></strong> Множество\nнатуральных чисел, введеное по фон-Нейману вполне упорядочено.</p>\n<p><em>Доказательство:</em> Введем отношение порядка на <span\nclass=\"math inline\">\\(\\mathbb{N}\\)</span>. <span\nclass=\"math inline\">\\(\\mathbb{N} \\ni n &lt; m \\in \\mathbb{N}\\)</span>,\nесли <span class=\"math inline\">\\(n \\varsubsetneq m\\)</span>. Докажем,\nчто это отношение полное. Рассмотрим непустое подмножество <span\nclass=\"math inline\">\\(A \\subset \\mathbb{N}\\)</span>.</p>",
+        "statement_html": "<p><strong><a href=\"all.html#statement-1\">Утверждение:</a></strong> Множество\nнатуральных чисел, введеное по фон-Нейману вполне упорядочено.</p>",
+        "proof_html": "<p> Введем отношение порядка на <span\nclass=\"math inline\">\\(\\mathbb{N}\\)</span>. <span\nclass=\"math inline\">\\(\\mathbb{N} \\ni n &lt; m \\in \\mathbb{N}\\)</span>,\nесли <span class=\"math inline\">\\(n \\varsubsetneq m\\)</span>. Докажем,\nчто это отношение полное. Рассмотрим непустое подмножество <span\nclass=\"math inline\">\\(A \\subset \\mathbb{N}\\)</span>.</p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-2\"></a> Сумма полных порядков -- полный порядок.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "all.html#statement-2",
+        "html": "<p><strong><a href=\"all.html#statement-2\">Утверждение:</a></strong> Сумма полных\nпорядков – полный порядок.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"all.html#statement-2\">Утверждение:</a></strong> Сумма полных\nпорядков – полный порядок.</p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-4\"></a> Функция, заданная индуктивно, является функцией и определена на всем множестве.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "all.html#statement-4",
+        "html": "<p><strong><a href=\"all.html#statement-4\">Утверждение:</a></strong> Функция,\nзаданная индуктивно, является функцией и определена на всем\nмножестве.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"all.html#statement-4\">Утверждение:</a></strong> Функция,\nзаданная индуктивно, является функцией и определена на всем\nмножестве.</p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-3\"></a> $A$ -- собственный начальный отрезок множества $X\\iff A$ -- это множество всех элементов $X$ меньших некоторого $a \\in X$.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "all.html#statement-3",
+        "html": "<p><strong><a href=\"all.html#statement-3\">Утверждение:</a></strong> <span\nclass=\"math inline\">\\(A\\)</span> – собственный начальный отрезок\nмножества <span class=\"math inline\">\\(X\\iff A\\)</span> – это множество\nвсех элементов <span class=\"math inline\">\\(X\\)</span> меньших некоторого\n<span class=\"math inline\">\\(a \\in X\\)</span>.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"all.html#statement-3\">Утверждение:</a></strong> <span\nclass=\"math inline\">\\(A\\)</span> – собственный начальный отрезок\nмножества <span class=\"math inline\">\\(X\\iff A\\)</span> – это множество\nвсех элементов <span class=\"math inline\">\\(X\\)</span> меньших некоторого\n<span class=\"math inline\">\\(a \\in X\\)</span>.</p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-5\"></a> Вложение, если оно существует, единственно.\n\n*Доказательство:* Минимальный элемент переходит в минимальный, следующий за ним в следующий $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "all.html#statement-5",
+        "html": "<p><strong><a href=\"all.html#statement-5\">Утверждение:</a></strong> Вложение,\nесли оно существует, единственно.</p>\n<p><em>Доказательство:</em> Минимальный элемент переходит в минимальный,\nследующий за ним в следующий <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"all.html#statement-5\">Утверждение:</a></strong> Вложение,\nесли оно существует, единственно.</p>",
+        "proof_html": "<p> Минимальный элемент переходит в минимальный,\nследующий за ним в следующий <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-6\"></a> Для любых двух вполне упорядоченных множеств одно вкладывается в другое.\n\n*Доказательство:* \n\n",
+        "data_type": "statement",
+        "url": "all.html#statement-6",
+        "html": "<p><strong><a href=\"all.html#statement-6\">Утверждение:</a></strong> Для любых\nдвух вполне упорядоченных множеств одно вкладывается в другое.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"all.html#statement-6\">Утверждение:</a></strong> Для любых\nдвух вполне упорядоченных множеств одно вкладывается в другое.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-7\"></a> Любая бескванторная формула эквивалентна ДНФ.\n\n*Доказательство:*\n\n",
+        "data_type": "statement",
+        "url": "all.html#statement-7",
+        "html": "<p><strong><a href=\"all.html#statement-7\">Утверждение:</a></strong> Любая\nбескванторная формула эквивалентна ДНФ.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"all.html#statement-7\">Утверждение:</a></strong> Любая\nбескванторная формула эквивалентна ДНФ.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-8\"></a> $B^{\\omega}$ -- компакт, то есть из любого покрытия открытыми множествами можно выбрать конечное подпокрытие.\n\n*Доказательство:*\n\n",
+        "data_type": "statement",
+        "url": "all.html#statement-8",
+        "html": "<p><strong><a href=\"all.html#statement-8\">Утверждение:</a></strong> <span\nclass=\"math inline\">\\(B^{\\omega}\\)</span> – компакт, то есть из любого\nпокрытия открытыми множествами можно выбрать конечное подпокрытие.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"all.html#statement-8\">Утверждение:</a></strong> <span\nclass=\"math inline\">\\(B^{\\omega}\\)</span> – компакт, то есть из любого\nпокрытия открытыми множествами можно выбрать конечное подпокрытие.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-9\"></a> У выполнимой теории с равенством есть модель.\n\n*Доказательство:* факторизовать по равенству $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "all.html#statement-9",
+        "html": "<p><strong><a href=\"all.html#statement-9\">Утверждение:</a></strong> У выполнимой\nтеории с равенством есть модель.</p>\n<p><em>Доказательство:</em> факторизовать по равенству <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"all.html#statement-9\">Утверждение:</a></strong> У выполнимой\nтеории с равенством есть модель.</p>",
+        "proof_html": "<p> факторизовать по равенству <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "свойства отображений теория и модель",
+        "data": "**Утверждение:**<a name=\"statement-10\"></a> (*свойства отображений теория и модель*)\n\n1. $\\operatorname{Th}$ и $\\operatorname{Mod}$ нестрого монотонно убывающие отображения.\n2. $\\varphi \\subset \\operatorname{Th}(m) \\iff m \\subset \\operatorname{Mod}(\\varphi)$.\n3. $\\varphi \\subset \\operatorname{Th}(\\operatorname{Mod}(\\varphi))$.\n4. $m \\subset \\operatorname{Mod}(\\operatorname{Th}(m))$.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "all.html#statement-10",
+        "html": "<p><strong><a href=\"all.html#statement-10\">Утверждение:</a></strong>\n(<em>свойства отображений теория и модель</em>)</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(\\operatorname{Th}\\)</span> и <span\nclass=\"math inline\">\\(\\operatorname{Mod}\\)</span> нестрого монотонно\nубывающие отображения.</li>\n<li><span class=\"math inline\">\\(\\varphi \\subset \\operatorname{Th}(m)\n\\iff m \\subset \\operatorname{Mod}(\\varphi)\\)</span>.</li>\n<li><span class=\"math inline\">\\(\\varphi \\subset\n\\operatorname{Th}(\\operatorname{Mod}(\\varphi))\\)</span>.</li>\n<li><span class=\"math inline\">\\(m \\subset\n\\operatorname{Mod}(\\operatorname{Th}(m))\\)</span>.</li>\n</ol>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"all.html#statement-10\">Утверждение:</a></strong>\n(<em>свойства отображений теория и модель</em>)</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(\\operatorname{Th}\\)</span> и <span\nclass=\"math inline\">\\(\\operatorname{Mod}\\)</span> нестрого монотонно\nубывающие отображения.</li>\n<li><span class=\"math inline\">\\(\\varphi \\subset \\operatorname{Th}(m)\n\\iff m \\subset \\operatorname{Mod}(\\varphi)\\)</span>.</li>\n<li><span class=\"math inline\">\\(\\varphi \\subset\n\\operatorname{Th}(\\operatorname{Mod}(\\varphi))\\)</span>.</li>\n<li><span class=\"math inline\">\\(m \\subset\n\\operatorname{Mod}(\\operatorname{Th}(m))\\)</span>.</li>\n</ol>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-11\"></a> $\\langle \\operatorname{Th}, \\operatorname{Mod}\\rangle$ -- соответствие Галуа между теориями и классами структур.\n\n*Доказательство:* см. свойства $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "statement",
+        "url": "all.html#statement-11",
+        "html": "<p><strong><a href=\"all.html#statement-11\">Утверждение:</a></strong> <span\nclass=\"math inline\">\\(\\langle \\operatorname{Th},\n\\operatorname{Mod}\\rangle\\)</span> – соответствие Галуа между теориями и\nклассами структур.</p>\n<p><em>Доказательство:</em> см. свойства <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"all.html#statement-11\">Утверждение:</a></strong> <span\nclass=\"math inline\">\\(\\langle \\operatorname{Th},\n\\operatorname{Mod}\\rangle\\)</span> – соответствие Галуа между теориями и\nклассами структур.</p>",
+        "proof_html": "<p> см. свойства <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-12\"></a> Изоморфные структуры эквивалентны.\n\n*Доказательство:*\n\n",
+        "data_type": "statement",
+        "url": "all.html#statement-12",
+        "html": "<p><strong><a href=\"all.html#statement-12\">Утверждение:</a></strong> Изоморфные\nструктуры эквивалентны.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"all.html#statement-12\">Утверждение:</a></strong> Изоморфные\nструктуры эквивалентны.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-13\"></a> Если теория выполнима, то у нее существует полное расширение.\n\n*Доказательство:*\n\n",
+        "data_type": "statement",
+        "url": "all.html#statement-13",
+        "html": "<p><strong><a href=\"all.html#statement-13\">Утверждение:</a></strong> Если теория\nвыполнима, то у нее существует полное расширение.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"all.html#statement-13\">Утверждение:</a></strong> Если теория\nвыполнима, то у нее существует полное расширение.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-14\"></a> Группа автоморфизмов множества отношений замкнута.\n\n*Доказательство:*\n\n",
+        "data_type": "statement",
+        "url": "all.html#statement-14",
+        "html": "<p><strong><a href=\"all.html#statement-14\">Утверждение:</a></strong> Группа\nавтоморфизмов множества отношений замкнута.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"all.html#statement-14\">Утверждение:</a></strong> Группа\nавтоморфизмов множества отношений замкнута.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Утверждение:**<a name=\"statement-15\"></a> Пусть задано множество отношений $S$ на $U$. Отображение $\\operatorname{Aut}$, ставящее в соответствие подпространству $S$ его группу автоморфизмов и отображение $\\operatorname{Inv}$, ставящее в соответствие каждой замкнутой надгруппе группы $\\operatorname{Aut}(S)$ множество ее инвариантов, образуют соответствие Галуа. \n\n*Доказательство:*\n\n",
+        "data_type": "statement",
+        "url": "all.html#statement-15",
+        "html": "<p><strong><a href=\"all.html#statement-15\">Утверждение:</a></strong> Пусть задано\nмножество отношений <span class=\"math inline\">\\(S\\)</span> на <span\nclass=\"math inline\">\\(U\\)</span>. Отображение <span\nclass=\"math inline\">\\(\\operatorname{Aut}\\)</span>, ставящее в\nсоответствие подпространству <span class=\"math inline\">\\(S\\)</span> его\nгруппу автоморфизмов и отображение <span\nclass=\"math inline\">\\(\\operatorname{Inv}\\)</span>, ставящее в\nсоответствие каждой замкнутой надгруппе группы <span\nclass=\"math inline\">\\(\\operatorname{Aut}(S)\\)</span> множество ее\nинвариантов, образуют соответствие Галуа.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"all.html#statement-15\">Утверждение:</a></strong> Пусть задано\nмножество отношений <span class=\"math inline\">\\(S\\)</span> на <span\nclass=\"math inline\">\\(U\\)</span>. Отображение <span\nclass=\"math inline\">\\(\\operatorname{Aut}\\)</span>, ставящее в\nсоответствие подпространству <span class=\"math inline\">\\(S\\)</span> его\nгруппу автоморфизмов и отображение <span\nclass=\"math inline\">\\(\\operatorname{Inv}\\)</span>, ставящее в\nсоответствие каждой замкнутой надгруппе группы <span\nclass=\"math inline\">\\(\\operatorname{Aut}(S)\\)</span> множество ее\nинвариантов, образуют соответствие Галуа.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Теорема:**<a name=\"theorem-0\"></a> Множество бесконечных последовательностей нулей и единиц несчетно.\n\n*Доказательство:* Предположим, что счетно, тогда занумеруем их. Построим последовательность из нулей и единиц: первый элемент не совпадает с первым элементом первой из занумерованных последовательностей, второй со вторым и т.д. Такая последовательность не содержится в занумерованных $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "theorem",
+        "url": "all.html#theorem-0",
+        "html": "<p><strong><a href=\"all.html#theorem-0\">Теорема:</a></strong> Множество\nбесконечных последовательностей нулей и единиц несчетно.</p>\n<p><em>Доказательство:</em> Предположим, что счетно, тогда занумеруем\nих. Построим последовательность из нулей и единиц: первый элемент не\nсовпадает с первым элементом первой из занумерованных\nпоследовательностей, второй со вторым и т.д. Такая последовательность не\nсодержится в занумерованных <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"all.html#theorem-0\">Теорема:</a></strong> Множество\nбесконечных последовательностей нулей и единиц несчетно.</p>",
+        "proof_html": "<p> Предположим, что счетно, тогда занумеруем\nих. Построим последовательность из нулей и единиц: первый элемент не\nсовпадает с первым элементом первой из занумерованных\nпоследовательностей, второй со вторым и т.д. Такая последовательность не\nсодержится в занумерованных <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Теорема:**<a name=\"theorem-1\"></a> Если существует вложение $X \\to Y$ и вложение $Y \\to X$, то $X$ равномощно $Y$.\n\n*Доказательство:*\n\n",
+        "data_type": "theorem",
+        "url": "all.html#theorem-1",
+        "html": "<p><strong><a href=\"all.html#theorem-1\">Теорема:</a></strong> Если существует\nвложение <span class=\"math inline\">\\(X \\to Y\\)</span> и вложение <span\nclass=\"math inline\">\\(Y \\to X\\)</span>, то <span\nclass=\"math inline\">\\(X\\)</span> равномощно <span\nclass=\"math inline\">\\(Y\\)</span>.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"all.html#theorem-1\">Теорема:</a></strong> Если существует\nвложение <span class=\"math inline\">\\(X \\to Y\\)</span> и вложение <span\nclass=\"math inline\">\\(Y \\to X\\)</span>, то <span\nclass=\"math inline\">\\(X\\)</span> равномощно <span\nclass=\"math inline\">\\(Y\\)</span>.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": " ",
+        "data": "**Теорема:**<a name=\"theorem-2\"></a> Пусть утверждение $A$ зависит **??** от элемента $b$ вполне упорядоченного множества $B$ и $A$ выполнено для нуля множества $B$. И пусть выполнено одно из следующих условий:\n\n1. Из того что утверждение $A$ выполнено для всех элементов $B$ меньших $b$ следует, что $A$ выполнено для $b$.\n2. Из того что утверждение $A$ выполнено для\n    - всех меньших, чем $b$ элементов, если $b$ предельный,\n    - предыдущего элемента для $b$, если $b$ не предельный \n    следует, что $A$ выполнено для $b$.\n3. Из того что утверждение $A$ не выполнено для $b$ следует, что $A$ не выполнено для некоторого элемента меньшего, чем $b$.\n\nТогда утверждение верно для всех элементов множества $B$.\n\n*Доказательство:*\n\nРассмотрим множество $X$ элементов, для которых условие $A$ не выполнено. Пусть условие $A$ не выполнено для $b$. Значит $b \\in X$. .... Значит для минимального элемента $X$ условие не выполнено. Значит для всего $B$ условие не выполнено $\\,\\,\\,\\,\\blacksquare$\n\nКакая-то лажа происходит.\n\n",
+        "data_type": "theorem",
+        "url": "all.html#theorem-2",
+        "html": "<p><strong><a href=\"all.html#theorem-2\">Теорема:</a></strong> Пусть утверждение\n<span class=\"math inline\">\\(A\\)</span> зависит <strong>??</strong> от\nэлемента <span class=\"math inline\">\\(b\\)</span> вполне упорядоченного\nмножества <span class=\"math inline\">\\(B\\)</span> и <span\nclass=\"math inline\">\\(A\\)</span> выполнено для нуля множества <span\nclass=\"math inline\">\\(B\\)</span>. И пусть выполнено одно из следующих\nусловий:</p>\n<ol type=\"1\">\n<li>Из того что утверждение <span class=\"math inline\">\\(A\\)</span>\nвыполнено для всех элементов <span class=\"math inline\">\\(B\\)</span>\nменьших <span class=\"math inline\">\\(b\\)</span> следует, что <span\nclass=\"math inline\">\\(A\\)</span> выполнено для <span\nclass=\"math inline\">\\(b\\)</span>.</li>\n<li>Из того что утверждение <span class=\"math inline\">\\(A\\)</span>\nвыполнено для\n<ul>\n<li>всех меньших, чем <span class=\"math inline\">\\(b\\)</span> элементов,\nесли <span class=\"math inline\">\\(b\\)</span> предельный,</li>\n<li>предыдущего элемента для <span class=\"math inline\">\\(b\\)</span>,\nесли <span class=\"math inline\">\\(b\\)</span> не предельный следует, что\n<span class=\"math inline\">\\(A\\)</span> выполнено для <span\nclass=\"math inline\">\\(b\\)</span>.</li>\n</ul></li>\n<li>Из того что утверждение <span class=\"math inline\">\\(A\\)</span> не\nвыполнено для <span class=\"math inline\">\\(b\\)</span> следует, что <span\nclass=\"math inline\">\\(A\\)</span> не выполнено для некоторого элемента\nменьшего, чем <span class=\"math inline\">\\(b\\)</span>.</li>\n</ol>\n<p>Тогда утверждение верно для всех элементов множества <span\nclass=\"math inline\">\\(B\\)</span>.</p>\n<p><em>Доказательство:</em></p>\n<p>Рассмотрим множество <span class=\"math inline\">\\(X\\)</span>\nэлементов, для которых условие <span class=\"math inline\">\\(A\\)</span> не\nвыполнено. Пусть условие <span class=\"math inline\">\\(A\\)</span> не\nвыполнено для <span class=\"math inline\">\\(b\\)</span>. Значит <span\nclass=\"math inline\">\\(b \\in X\\)</span>. …. Значит для минимального\nэлемента <span class=\"math inline\">\\(X\\)</span> условие не выполнено.\nЗначит для всего <span class=\"math inline\">\\(B\\)</span> условие не\nвыполнено <span class=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>\n<p>Какая-то лажа происходит.</p>",
+        "statement_html": "<p><strong><a href=\"all.html#theorem-2\">Теорема:</a></strong> Пусть утверждение\n<span class=\"math inline\">\\(A\\)</span> зависит <strong>??</strong> от\nэлемента <span class=\"math inline\">\\(b\\)</span> вполне упорядоченного\nмножества <span class=\"math inline\">\\(B\\)</span> и <span\nclass=\"math inline\">\\(A\\)</span> выполнено для нуля множества <span\nclass=\"math inline\">\\(B\\)</span>. И пусть выполнено одно из следующих\nусловий:</p>\n<ol type=\"1\">\n<li>Из того что утверждение <span class=\"math inline\">\\(A\\)</span>\nвыполнено для всех элементов <span class=\"math inline\">\\(B\\)</span>\nменьших <span class=\"math inline\">\\(b\\)</span> следует, что <span\nclass=\"math inline\">\\(A\\)</span> выполнено для <span\nclass=\"math inline\">\\(b\\)</span>.</li>\n<li>Из того что утверждение <span class=\"math inline\">\\(A\\)</span>\nвыполнено для\n<ul>\n<li>всех меньших, чем <span class=\"math inline\">\\(b\\)</span> элементов,\nесли <span class=\"math inline\">\\(b\\)</span> предельный,</li>\n<li>предыдущего элемента для <span class=\"math inline\">\\(b\\)</span>,\nесли <span class=\"math inline\">\\(b\\)</span> не предельный следует, что\n<span class=\"math inline\">\\(A\\)</span> выполнено для <span\nclass=\"math inline\">\\(b\\)</span>.</li>\n</ul></li>\n<li>Из того что утверждение <span class=\"math inline\">\\(A\\)</span> не\nвыполнено для <span class=\"math inline\">\\(b\\)</span> следует, что <span\nclass=\"math inline\">\\(A\\)</span> не выполнено для некоторого элемента\nменьшего, чем <span class=\"math inline\">\\(b\\)</span>.</li>\n</ol>\n<p>Тогда утверждение верно для всех элементов множества <span\nclass=\"math inline\">\\(B\\)</span>.</p>",
+        "proof_html": "<p></p>\n<p>Рассмотрим множество <span class=\"math inline\">\\(X\\)</span>\nэлементов, для которых условие <span class=\"math inline\">\\(A\\)</span> не\nвыполнено. Пусть условие <span class=\"math inline\">\\(A\\)</span> не\nвыполнено для <span class=\"math inline\">\\(b\\)</span>. Значит <span\nclass=\"math inline\">\\(b \\in X\\)</span>. …. Значит для минимального\nэлемента <span class=\"math inline\">\\(X\\)</span> условие не выполнено.\nЗначит для всего <span class=\"math inline\">\\(B\\)</span> условие не\nвыполнено <span class=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>\n<p>Какая-то лажа происходит.</p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Теорема:**<a name=\"theorem-3\"></a> Если на множестве задана функция выбора, то оно может быть вполне упорядоченно.\n\n*Доказательство:*\n\n",
+        "data_type": "theorem",
+        "url": "all.html#theorem-3",
+        "html": "<p><strong><a href=\"all.html#theorem-3\">Теорема:</a></strong> Если на множестве\nзадана функция выбора, то оно может быть вполне упорядоченно.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"all.html#theorem-3\">Теорема:</a></strong> Если на множестве\nзадана функция выбора, то оно может быть вполне упорядоченно.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Теорема:**<a name=\"theorem-4\"></a> Если принять аксиому выбора, то любой шар можно разделить на $5$ частей, передвинув которые можно сложить два шара того же радиуса.\n\n*Доказательство:*\n\n",
+        "data_type": "theorem",
+        "url": "all.html#theorem-4",
+        "html": "<p><strong><a href=\"all.html#theorem-4\">Теорема:</a></strong> Если принять\nаксиому выбора, то любой шар можно разделить на <span\nclass=\"math inline\">\\(5\\)</span> частей, передвинув которые можно\nсложить два шара того же радиуса.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"all.html#theorem-4\">Теорема:</a></strong> Если принять\nаксиому выбора, то любой шар можно разделить на <span\nclass=\"math inline\">\\(5\\)</span> частей, передвинув которые можно\nсложить два шара того же радиуса.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Теорема:**<a name=\"theorem-5\"></a> Исчисление модальной логики полно и непротиворечиво.\n\n*Доказательство:*\n\n",
+        "data_type": "theorem",
+        "url": "all.html#theorem-5",
+        "html": "<p><strong><a href=\"all.html#theorem-5\">Теорема:</a></strong> Исчисление\nмодальной логики полно и непротиворечиво.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"all.html#theorem-5\">Теорема:</a></strong> Исчисление\nмодальной логики полно и непротиворечиво.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "компактности для двоичных последовательностей   логика высказваний значение на последовательности выполнимо   компактности для логики высказываний",
+        "data": "**Теорема:**<a name=\"theorem-7\"></a> (*компактности для двоичных последовательностей*) Для $B^{\\omega}$ выполнена теорема компактности.\n\n*Доказательство:* Пусть пересечение семейства замкнутых подмножеств пусто. Возьмем дополнения к ним. Это открытые множества и они покрывают все $B^{\\omega}$. $B^{\\omega}$ -- компакт, а значит выделим конечное подпокрытие из дополнений. Рассмотрим дополнения к дополнениям, лежащим в конечном подпокрытии. Их пересечение пусто и их конечное число. Противоречие с условием $\\,\\,\\,\\,\\blacksquare$\n\n[//]: # (end-theorem-7)\n\n## Теорема компактности для компактного топологического пространства\n\n---\n\nЗнаете, теорема компактности -- это офигенно!\n\n## Теорема компактности для логики высказываний\n\n---\n\n**Определение:**<a name=\"definition-26\"></a> *Логика высказваний* -- это логика первого порядка, где все отношения нульместные, нет имен объектов, нет переменных и нет кванторов.\n\nСчитаем, что имена нульместных отношений образуют счетную последовательность $x_1, \\ldots, x_n, \\ldots$\n\n*Значение* формулы $\\varphi$, в которую входят имена нульместных отношений $x_{k_1}, \\ldots, x_{k_n}$, где $k_i$ индекс в последовательности имен, *на последовательности* $a_1a_2\\ldots \\in B^{\\omega}$ -- это значение формулы при интерпретации $I: x_{k_1} \\to a_{k_1}$. \n\nСемейство формул *выполнимо*, если существует последовательность, на которой все формулы семейства истинны.\n\n[//]: # (end-definition-26)\n\n**Теорема:**<a name=\"theorem-7\"></a> (*компактности для логики высказываний*) Если любое конечное подсемейство семейства формул выполнимо, то все семейство выполнимо.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "theorem",
+        "url": "all.html#theorem-7",
+        "html": "<p><strong><a href=\"all.html#theorem-7\">Теорема:</strong><a name=\"theorem-7\"></a> (<em>компактности\nдля двоичных последовательностей</em>) Для <span\nclass=\"math inline\">\\(B^{\\omega}\\)</span> выполнена теорема\nкомпактности.</p>\n<p><em>Доказательство:</em> Пусть пересечение семейства замкнутых\nподмножеств пусто. Возьмем дополнения к ним. Это открытые множества и\nони покрывают все <span class=\"math inline\">\\(B^{\\omega}\\)</span>. <span\nclass=\"math inline\">\\(B^{\\omega}\\)</span> – компакт, а значит выделим\nконечное подпокрытие из дополнений. Рассмотрим дополнения к дополнениям,\nлежащим в конечном подпокрытии. Их пересечение пусто и их конечное\nчисло. Противоречие с условием <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>\n<h2\nid=\"теорема-компактности-для-компактного-топологического-пространства\">Теорема\nкомпактности для компактного топологического пространства</h2>\n<hr />\n<p>Знаете, теорема компактности – это офигенно!</p>\n<h2 id=\"теорема-компактности-для-логики-высказываний\">Теорема\nкомпактности для логики высказываний</h2>\n<hr />\n<p><strong>Определение:</strong><a name=\"definition-26\"></a> <em>Логика\nвысказваний</em> – это логика первого порядка, где все отношения\nнульместные, нет имен объектов, нет переменных и нет кванторов.</p>\n<p>Считаем, что имена нульместных отношений образуют счетную\nпоследовательность <span class=\"math inline\">\\(x_1, \\ldots, x_n,\n\\ldots\\)</span></p>\n<p><em>Значение</em> формулы <span\nclass=\"math inline\">\\(\\varphi\\)</span>, в которую входят имена\nнульместных отношений <span class=\"math inline\">\\(x_{k_1}, \\ldots,\nx_{k_n}\\)</span>, где <span class=\"math inline\">\\(k_i\\)</span> индекс в\nпоследовательности имен, <em>на последовательности</em> <span\nclass=\"math inline\">\\(a_1a_2\\ldots \\in B^{\\omega}\\)</span> – это\nзначение формулы при интерпретации <span class=\"math inline\">\\(I:\nx_{k_1} \\to a_{k_1}\\)</span>.</p>\n<p>Семейство формул <em>выполнимо</em>, если существует\nпоследовательность, на которой все формулы семейства истинны.</p>\n<p><strong>Теорема:</a></strong> (<em>компактности\nдля логики высказываний</em>) Если любое конечное подсемейство семейства\nформул выполнимо, то все семейство выполнимо.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Теорема:**<a name=\"theorem-8\"></a> Если любая конечная часть счетной теории имеет модель, то теория имеет счетную модель.\n\n*Доказательство:*\n\n",
+        "data_type": "theorem",
+        "url": "all.html#theorem-8",
+        "html": "<p><strong><a href=\"all.html#theorem-8\">Теорема:</a></strong> Если любая конечная\nчасть счетной теории имеет модель, то теория имеет счетную модель.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"all.html#theorem-8\">Теорема:</a></strong> Если любая конечная\nчасть счетной теории имеет модель, то теория имеет счетную модель.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Теорема:**<a name=\"theorem-9\"></a> Если любая конечная часть теории имеет модель, то теория имеет модель.\n\n*Доказательство:*\n\n",
+        "data_type": "theorem",
+        "url": "all.html#theorem-9",
+        "html": "<p><strong><a href=\"all.html#theorem-9\">Теорема:</a></strong> Если любая конечная\nчасть теории имеет модель, то теория имеет модель.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"all.html#theorem-9\">Теорема:</a></strong> Если любая конечная\nчасть теории имеет модель, то теория имеет модель.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Теорема:**<a name=\"theorem-10\"></a> Любые счетные плотные порядки без наибольшего и наименьшего элемента изоморфны.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "theorem",
+        "url": "all.html#theorem-10",
+        "html": "<p><strong><a href=\"all.html#theorem-10\">Теорема:</a></strong> Любые счетные\nплотные порядки без наибольшего и наименьшего элемента изоморфны.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"all.html#theorem-10\">Теорема:</a></strong> Любые счетные\nплотные порядки без наибольшего и наименьшего элемента изоморфны.</p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "критерий тарского-воота } \\,\\,\\,\\, \\exists b \\in u’: \\,\\,\\,\\, \\phi(\\mathbf{a}, b) \\implies \\exists c \\in u: \\,\\,\\,\\, \\phi(\\mathbf{a}, c)$.\n\n",
+        "data": "**Теорема:**<a name=\"theorem-15\"></a> (*критерий Тарского-Воота*) Расширение $\\langle U’, I’\\rangle$ структуры $\\langle U, I \\rangle$ элементарное $\\iff \\forall \\Phi(\\mathbf{x}, y)\\,\\,\\,\\,\\forall \\mathbf{a} \\in (U)^{*} \\,\\,\\,\\, \\exists b \\in U’: \\,\\,\\,\\, \\Phi(\\mathbf{a}, b) \\implies \\exists c \\in U: \\,\\,\\,\\, \\Phi(\\mathbf{a}, c)$.\n\n*Доказательство:*\n\n",
+        "data_type": "theorem",
+        "url": "all.html#theorem-15",
+        "html": "<p><strong><a href=\"all.html#theorem-15\">Теорема:</a></strong> (<em>критерий\nТарского-Воота</em>) Расширение <span class=\"math inline\">\\(\\langle U’,\nI’\\rangle\\)</span> структуры <span class=\"math inline\">\\(\\langle U, I\n\\rangle\\)</span> элементарное <span class=\"math inline\">\\(\\iff \\forall\n\\Phi(\\mathbf{x}, y)\\,\\,\\,\\,\\forall \\mathbf{a} \\in (U)^{*} \\,\\,\\,\\,\n\\exists b \\in U’: \\,\\,\\,\\, \\Phi(\\mathbf{a}, b) \\implies \\exists c \\in U:\n\\,\\,\\,\\, \\Phi(\\mathbf{a}, c)\\)</span>.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"all.html#theorem-15\">Теорема:</a></strong> (<em>критерий\nТарского-Воота</em>) Расширение <span class=\"math inline\">\\(\\langle U’,\nI’\\rangle\\)</span> структуры <span class=\"math inline\">\\(\\langle U, I\n\\rangle\\)</span> элементарное <span class=\"math inline\">\\(\\iff \\forall\n\\Phi(\\mathbf{x}, y)\\,\\,\\,\\,\\forall \\mathbf{a} \\in (U)^{*} \\,\\,\\,\\,\n\\exists b \\in U’: \\,\\,\\,\\, \\Phi(\\mathbf{a}, b) \\implies \\exists c \\in U:\n\\,\\,\\,\\, \\Phi(\\mathbf{a}, c)\\)</span>.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "левегейма-сколема",
+        "data": "**Теорема:**<a name=\"theorem-11\"></a> (*Левегейма-Сколема*) Любая бесконечная структура с счетной или конечной сигнатурой содержит счетную элементарную подструктуру.\n\n*Доказательство:*\n\n",
+        "data_type": "theorem",
+        "url": "all.html#theorem-11",
+        "html": "<p><strong><a href=\"all.html#theorem-11\">Теорема:</a></strong>\n(<em>Левегейма-Сколема</em>) Любая бесконечная структура с счетной или\nконечной сигнатурой содержит счетную элементарную подструктуру.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"all.html#theorem-11\">Теорема:</a></strong>\n(<em>Левегейма-Сколема</em>) Любая бесконечная структура с счетной или\nконечной сигнатурой содержит счетную элементарную подструктуру.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "левегейма-сколема",
+        "data": "**Теорема:**<a name=\"theorem-12\"></a> (*Левегейма-Сколема*) Любая бесконечная нормальная структура с счетной или конечной сигнатурой имеет элементарное нормальное расширение любой мощности.\n\n*Доказательство:*\n\n",
+        "data_type": "theorem",
+        "url": "all.html#theorem-12",
+        "html": "<p><strong><a href=\"all.html#theorem-12\">Теорема:</a></strong>\n(<em>Левегейма-Сколема</em>) Любая бесконечная нормальная структура с\nсчетной или конечной сигнатурой имеет элементарное нормальное расширение\nлюбой мощности.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"all.html#theorem-12\">Теорема:</a></strong>\n(<em>Левегейма-Сколема</em>) Любая бесконечная нормальная структура с\nсчетной или конечной сигнатурой имеет элементарное нормальное расширение\nлюбой мощности.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "признак лося-воота",
+        "data": "**Теорема:**<a name=\"theorem-13\"></a> (*признак Лося-Воота*) Выполнимая $\\omega$-категоричная теория с счетной или конечной сигнатурой, не имеющая конечных моделей, полна.\n\n*Доказательство:* см. теорему левенгейма-сколема $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "theorem",
+        "url": "all.html#theorem-13",
+        "html": "<p><strong><a href=\"all.html#theorem-13\">Теорема:</a></strong> (<em>признак\nЛося-Воота</em>) Выполнимая <span\nclass=\"math inline\">\\(\\omega\\)</span>-категоричная теория с счетной или\nконечной сигнатурой, не имеющая конечных моделей, полна.</p>\n<p><em>Доказательство:</em> см. теорему левенгейма-сколема <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"all.html#theorem-13\">Теорема:</a></strong> (<em>признак\nЛося-Воота</em>) Выполнимая <span\nclass=\"math inline\">\\(\\omega\\)</span>-категоричная теория с счетной или\nконечной сигнатурой, не имеющая конечных моделей, полна.</p>",
+        "proof_html": "<p> см. теорему левенгейма-сколема <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Теорема:**<a name=\"theorem-14\"></a> $\\Gamma_{\\mathbb{N}}$ не является $\\omega$-категоричной, но является полной.\n\n*Доказательство:*\n\n",
+        "data_type": "theorem",
+        "url": "all.html#theorem-14",
+        "html": "<p><strong><a href=\"all.html#theorem-14\">Теорема:</a></strong> <span\nclass=\"math inline\">\\(\\Gamma_{\\mathbb{N}}\\)</span> не является <span\nclass=\"math inline\">\\(\\omega\\)</span>-категоричной, но является\nполной.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"all.html#theorem-14\">Теорема:</a></strong> <span\nclass=\"math inline\">\\(\\Gamma_{\\mathbb{N}}\\)</span> не является <span\nclass=\"math inline\">\\(\\omega\\)</span>-категоричной, но является\nполной.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Лемма:**<a name=\"lemma-1\"></a> Пусть $R$ -- бинарное отношение на $X$. Тогда $R$ -- отношение эквивалентности $\\iff$ классы эквивалентности по $R$ задают разбиение множества $X$.\n\n*Доказательство:*\n\n",
+        "data_type": "lemma",
+        "url": "all.html#lemma-1",
+        "html": "<p><strong><a href=\"all.html#lemma-1\">Лемма:</a></strong> Пусть <span\nclass=\"math inline\">\\(R\\)</span> – бинарное отношение на <span\nclass=\"math inline\">\\(X\\)</span>. Тогда <span\nclass=\"math inline\">\\(R\\)</span> – отношение эквивалентности <span\nclass=\"math inline\">\\(\\iff\\)</span> классы эквивалентности по <span\nclass=\"math inline\">\\(R\\)</span> задают разбиение множества <span\nclass=\"math inline\">\\(X\\)</span>.</p>\n<p><em>Доказательство:</em></p>",
+        "statement_html": "<p><strong><a href=\"all.html#lemma-1\">Лемма:</a></strong> Пусть <span\nclass=\"math inline\">\\(R\\)</span> – бинарное отношение на <span\nclass=\"math inline\">\\(X\\)</span>. Тогда <span\nclass=\"math inline\">\\(R\\)</span> – отношение эквивалентности <span\nclass=\"math inline\">\\(\\iff\\)</span> классы эквивалентности по <span\nclass=\"math inline\">\\(R\\)</span> задают разбиение множества <span\nclass=\"math inline\">\\(X\\)</span>.</p>",
+        "proof_html": "<p></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Лемма:**<a name=\"lemma-3\"></a> Пусть $R$ -- транзитивное отношение на $X$. Тогда $R$ -- отношение линейного порядка $\\iff \\forall x, y \\in X$ выполнено ровно одно из следующих условий:\n\n1. $x = y$ ^[Равенство -- это совпадение элементов.],\n2. $xRy$,\n3. $\\neg xRy$.\n\n*Доказательство:* прямая проверка $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "lemma",
+        "url": "all.html#lemma-3",
+        "html": "<p><strong><a href=\"all.html#lemma-3\">Лемма:</a></strong> Пусть <span\nclass=\"math inline\">\\(R\\)</span> – транзитивное отношение на <span\nclass=\"math inline\">\\(X\\)</span>. Тогда <span\nclass=\"math inline\">\\(R\\)</span> – отношение линейного порядка <span\nclass=\"math inline\">\\(\\iff \\forall x, y \\in X\\)</span> выполнено ровно\nодно из следующих условий:</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(x = y\\)</span> <a href=\"#fn1\"\nclass=\"footnote-ref\" id=\"fnref1\"\nrole=\"doc-noteref\"><sup>1</sup></a>,</li>\n<li><span class=\"math inline\">\\(xRy\\)</span>,</li>\n<li><span class=\"math inline\">\\(\\neg xRy\\)</span>.</li>\n</ol>\n<p><em>Доказательство:</em> прямая проверка <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Равенство – это совпадение элементов.<a href=\"#fnref1\"\nclass=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+        "statement_html": "<p><strong><a href=\"all.html#lemma-3\">Лемма:</a></strong> Пусть <span\nclass=\"math inline\">\\(R\\)</span> – транзитивное отношение на <span\nclass=\"math inline\">\\(X\\)</span>. Тогда <span\nclass=\"math inline\">\\(R\\)</span> – отношение линейного порядка <span\nclass=\"math inline\">\\(\\iff \\forall x, y \\in X\\)</span> выполнено ровно\nодно из следующих условий:</p>\n<ol type=\"1\">\n<li><span class=\"math inline\">\\(x = y\\)</span> <a href=\"#fn1\"\nclass=\"footnote-ref\" id=\"fnref1\"\nrole=\"doc-noteref\"><sup>1</sup></a>,</li>\n<li><span class=\"math inline\">\\(xRy\\)</span>,</li>\n<li><span class=\"math inline\">\\(\\neg xRy\\)</span>.</li>\n</ol>",
+        "proof_html": "<p> прямая проверка <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>\n<section id=\"footnotes\" class=\"footnotes footnotes-end-of-document\"\nrole=\"doc-endnotes\">\n<hr />\n<ol>\n<li id=\"fn1\"><p>Равенство – это совпадение элементов.<a href=\"#fnref1\"\nclass=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Лемма:**<a name=\"lemma-0\"></a> В бесконечном дереве, в котором из каждой вершины выходит конечное число ребер, существует бесконечный путь.\n\n*Доказательство:* Построим такой путь. Начнем с корня, пусть он $v_0$. Рассмотрим множество $R(v_0)$ вершин, соединенных с $v_0$ ребром. Рассмотрим поддеревья с корнями в вершинах из $R(v_0)$. Выберем среди них бесконечное и соединим $v_0$ с вершиной -- корнем этого поддерева. Продолжая получим искомый путь $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "lemma",
+        "url": "all.html#lemma-0",
+        "html": "<p><strong><a href=\"all.html#lemma-0\">Лемма:</a></strong> В бесконечном дереве, в\nкотором из каждой вершины выходит конечное число ребер, существует\nбесконечный путь.</p>\n<p><em>Доказательство:</em> Построим такой путь. Начнем с корня, пусть\nон <span class=\"math inline\">\\(v_0\\)</span>. Рассмотрим множество <span\nclass=\"math inline\">\\(R(v_0)\\)</span> вершин, соединенных с <span\nclass=\"math inline\">\\(v_0\\)</span> ребром. Рассмотрим поддеревья с\nкорнями в вершинах из <span class=\"math inline\">\\(R(v_0)\\)</span>.\nВыберем среди них бесконечное и соединим <span\nclass=\"math inline\">\\(v_0\\)</span> с вершиной – корнем этого поддерева.\nПродолжая получим искомый путь <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"all.html#lemma-0\">Лемма:</a></strong> В бесконечном дереве, в\nкотором из каждой вершины выходит конечное число ребер, существует\nбесконечный путь.</p>",
+        "proof_html": "<p> Построим такой путь. Начнем с корня, пусть\nон <span class=\"math inline\">\\(v_0\\)</span>. Рассмотрим множество <span\nclass=\"math inline\">\\(R(v_0)\\)</span> вершин, соединенных с <span\nclass=\"math inline\">\\(v_0\\)</span> ребром. Рассмотрим поддеревья с\nкорнями в вершинах из <span class=\"math inline\">\\(R(v_0)\\)</span>.\nВыберем среди них бесконечное и соединим <span\nclass=\"math inline\">\\(v_0\\)</span> с вершиной – корнем этого поддерева.\nПродолжая получим искомый путь <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Лемма:**<a name=\"lemma-2\"></a> Равномощность -- отношение эквивалентности.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "lemma",
+        "url": "all.html#lemma-2",
+        "html": "<p><strong><a href=\"all.html#lemma-2\">Лемма:</a></strong> Равномощность –\nотношение эквивалентности.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"all.html#lemma-2\">Лемма:</a></strong> Равномощность –\nотношение эквивалентности.</p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Лемма:**<a name=\"lemma-4\"></a> Объединение начальных отрезков -- начальный отрезок.\n\n*Доказательство:* $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "lemma",
+        "url": "all.html#lemma-4",
+        "html": "<p><strong><a href=\"all.html#lemma-4\">Лемма:</a></strong> Объединение начальных\nотрезков – начальный отрезок.</p>\n<p><em>Доказательство:</em> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"all.html#lemma-4\">Лемма:</a></strong> Объединение начальных\nотрезков – начальный отрезок.</p>",
+        "proof_html": "<p> <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
+    },
+    {
+        "keyword": "доказательство:",
+        "data": "**Лемма:**<a name=\"lemma-5\"></a> Пусть $X$ вполне упорядоченное множество. Тогда существует функция выбора на $X$.\n\n*Доказательство:* У любого подножества вполне упорядоченного множества существует наименьший элемент. Определим функцию $f: 2^X \\to X$, которая переводит подмножетсво в его наименьший элемент $\\,\\,\\,\\,\\blacksquare$\n\n",
+        "data_type": "lemma",
+        "url": "all.html#lemma-5",
+        "html": "<p><strong><a href=\"all.html#lemma-5\">Лемма:</a></strong> Пусть <span\nclass=\"math inline\">\\(X\\)</span> вполне упорядоченное множество. Тогда\nсуществует функция выбора на <span class=\"math inline\">\\(X\\)</span>.</p>\n<p><em>Доказательство:</em> У любого подножества вполне упорядоченного\nмножества существует наименьший элемент. Определим функцию <span\nclass=\"math inline\">\\(f: 2^X \\to X\\)</span>, которая переводит\nподмножетсво в его наименьший элемент <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>",
+        "statement_html": "<p><strong><a href=\"all.html#lemma-5\">Лемма:</a></strong> Пусть <span\nclass=\"math inline\">\\(X\\)</span> вполне упорядоченное множество. Тогда\nсуществует функция выбора на <span class=\"math inline\">\\(X\\)</span>.</p>",
+        "proof_html": "<p> У любого подножества вполне упорядоченного\nмножества существует наименьший элемент. Определим функцию <span\nclass=\"math inline\">\\(f: 2^X \\to X\\)</span>, которая переводит\nподмножетсво в его наименьший элемент <span\nclass=\"math inline\">\\(\\,\\,\\,\\,\\blacksquare\\)</span></p>"
     }
 ]

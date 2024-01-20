@@ -144,18 +144,16 @@ n_{\varepsilon, x_0} \in \mathbb{N}: \,\,\,\, \forall n \geqslant
 n_{\varepsilon, x_0} \,\,\,\, |f_n(x_0) - f(x_0)| &lt;
 \varepsilon\)</span></p>
 <p><span class="math inline">\(f(x)\)</span> и <span
-class="math inline">\(f_(x)\)</span> - непрерывны, а следовательно <span
+class="math inline">\(f_n(x)\)</span> непрерывны, а следовательно <span
 class="math inline">\(\forall x_0 \in [a, b] \,\,\,\, \exists
 \delta_{\varepsilon, x_0} &gt; 0: \,\,\,\, |f_{n_{\varepsilon, x_0}}(x)
-- f(x)| \leqslant |f_{n_{\varepsilon, x_0}}(x) - f_{n_{\varepsilon,
-x_0}}(x_0) - (f(x) - f(x_0))| \leqslant |f_{n_{\varepsilon, x_0}}(x) -
-f_{n_{\varepsilon, x_0}}(x_0)| + |f(x) - f(x_0)| &lt; 2 \varepsilon
-\,\,\,\, \forall x \in B_{\delta_{\varepsilon, x_0}}(x_0)\)</span>.</p>
-<p><span class="math inline">\(f_n(x)\)</span> - монотонны и <span
+- f(x)| &lt; \varepsilon \,\,\,\, \forall x \in B_{\delta_{\varepsilon,
+x_0}}(x_0)\)</span>$</p>
+<p><span class="math inline">\(f_n(x)\)</span> монотонны и <span
 class="math inline">\(|f_{n_{\varepsilon, x_0}}(x) - f(x)| &lt;
-2\varepsilon \,\,\,\, \forall x \in B_{\delta_{\varepsilon,
+\varepsilon \,\,\,\, \forall x \in B_{\delta_{\varepsilon,
 x_0}}(x_0)\)</span>, а следовательно <span class="math inline">\(|f_n(x)
-- f(x)| &lt; 2 \varepsilon \,\,\,\, \forall n &gt; n_{\varepsilon,
+- f(x)| &lt; \varepsilon \,\,\,\, \forall n &gt; n_{\varepsilon,
 x_0}\,\,\,\, \forall x \in B_{\delta_{\varepsilon,
 x_0}}(x_0)\)</span>.</p>
 <p>Возьмем покрытие отрезка <span class="math inline">\([a, b] \,\,\,\,
@@ -166,7 +164,7 @@ x_i}}(x_i)\)</span>.</p>
 <p>Пусть <span class="math inline">\(N_{\varepsilon} = \max_{i \in \{1,
 \ldots, N\}}\{n_{\varepsilon, x_i}\}\)</span>. Имеем <span
 class="math inline">\(\forall n &gt; N_{\varepsilon} \,\,\,\, |f_n(x) -
-f(x)| &lt; 2 \varepsilon \,\,\,\, \forall x \in [a, b]
+f(x)| &lt; \varepsilon \,\,\,\, \forall x \in [a, b]
 \,\,\,\,\blacksquare\)</span></p>
 <h2 id="двойной-несобственный-интеграл-с-параметром">Двойной
 несобственный интеграл с параметром</h2>
@@ -201,8 +199,7 @@ href="lection-indefinite-integral-parameter-theorems.html#lemma-0">по
 b_n]}{\rightrightarrows} G(y)\)</span> и <span
 class="math inline">\(H_n(x) \overset{[a, a_n]}{\rightrightarrows}
 H(x)\)</span>.</p>
-<p>Значит <a href="lection-functional-series-theorems.html#theorem-1">по
-теореме</a> <span class="math inline">\(\exists \displaystyle \lim_{n\to
+<p><span class="math inline">\(\exists \displaystyle \lim_{n\to
 \infty}\displaystyle\int\limits_b^{b_n} G_n(y)dy =
 \displaystyle\int\limits_b^{b_n}\left(\displaystyle\int\limits_a^{a_n}
 f(x, y)dx\right)dy\)</span> и <span class="math inline">\(\exists

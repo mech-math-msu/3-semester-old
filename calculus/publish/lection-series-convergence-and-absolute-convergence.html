@@ -79,8 +79,7 @@ class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span>
 <p>Суммируем от <span class="math inline">\(1\)</span> до <span
 class="math inline">\(N\)</span>:</p>
 <p><span class="math display">\[c_1 \cdot a_1 - c_{N + 1}\cdot a_{N + 1}
-\geqslant \alpha \cdot \displaystyle \sum_{n =
-2}^{\infty}a_n\]</span></p>
+\geqslant \alpha \cdot \displaystyle \sum_{n = 2}^{N}a_n\]</span></p>
 <p>Частичные суммы ограничены, и члены ряда положительны, а значит <a
 href="lection-series-convergence.html#theorem-2">по признаку</a> ряд
 сходится.</p>
@@ -288,15 +287,15 @@ class="math inline">\(\displaystyle \left|\sum_{n = k + 1}^{m}a_n\right|
 \leqslant \left|\sum_{n = k + 1}^{m}|a_n|\right| &lt; \varepsilon
 \,\,\,\,\blacksquare\)</span></p>
 <p><strong>Определение:</strong><a name="definition-1"></a> Биекция
-<span class="math inline">\(\sigma: \mathbb{N} \to \mathbb{N}\)</span> -
+<span class="math inline">\(\sigma: \mathbb{N} \to \mathbb{N}\)</span> –
 <em>перестановка</em>.</p>
 <p><strong>Лемма:</strong><a name="lemma-0"></a> Пусть <span
-class="math inline">\(\sigma: \mathbb{N} \to \mathbb{N}\)</span> -
+class="math inline">\(\sigma: \mathbb{N} \to \mathbb{N}\)</span> –
 биекция, ряд <span class="math inline">\(\displaystyle \sum_{n =
-1}^{\infty}a_n\)</span> - сходится и <span class="math inline">\(a_n
+1}^{\infty}a_n\)</span> сходится и <span class="math inline">\(a_n
 \geqslant 0 \,\,\,\, \forall n \in \mathbb{N}\)</span>. Тогда ряд <span
 class="math inline">\(\displaystyle \sum_{n =
-1}^{\infty}a_{\sigma(n)}\)</span> - сходится.</p>
+1}^{\infty}a_{\sigma(n)}\)</span> сходится.</p>
 <p><em>Доказательство:</em> Обозначим частичные суммы рядов <span
 class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span> и
 <span class="math inline">\(\displaystyle \sum_{n =
@@ -304,20 +303,11 @@ class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n\)</span> и
 class="math inline">\(S^{\sigma}_k\)</span> соответственно. Пусть <span
 class="math inline">\(N = \displaystyle\max_{0 \leqslant n \leqslant
 k}\{\sigma(n)\}\)</span>. Тогда <span class="math inline">\(S^{\sigma}_k
-\leqslant S_N \leqslant S_k\)</span> <a href="#fn3" class="footnote-ref"
-id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
-<p>Значит по <a
-href="lection-series-convergence.html#theorem-0">признаку сравнения</a>
-ряд <span class="math inline">\(\displaystyle \sum_{n =
-1}^{\infty}a_{\sigma(n)}\)</span> сходится и сумма <span
-class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_{\sigma(n)} =
-A’ \leqslant A\)</span>. Аналогично, взяв <span
-class="math inline">\(\sigma^{-1}\)</span>, получаем <span
-class="math inline">\(A \leqslant A’ \,\,\,\,\blacksquare\)</span></p>
+\leqslant S_N\,\,\,\,\blacksquare\)</span></p>
 <p><strong>Теорема:</strong><a name="theorem-5"></a> Пусть <span
-class="math inline">\(\sigma: \mathbb{N} \to \mathbb{N}\)</span> -
+class="math inline">\(\sigma: \mathbb{N} \to \mathbb{N}\)</span> –
 биекция, ряд <span class="math inline">\(\displaystyle \sum_{n =
-1}^{\infty}a_n\)</span> - сходится абсолютно.</p>
+1}^{\infty}a_n\)</span> сходится абсолютно.</p>
 <p>Тогда ряд <span class="math inline">\(\displaystyle \sum_{n =
 1}^{\infty}a_{\sigma(n)}\)</span> сходится абсолютно и <span
 class="math inline">\(\displaystyle \sum_{n = 1}^{\infty}a_n =
@@ -398,10 +388,6 @@ role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p><span class="math display">\[\displaystyle \lim_{n\to
 \infty}n\left(\frac{a_n}{a_{n + 1}} - 1\right) = \mu\]</span><a
 href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Так как в сумме <span class="math inline">\(S_N\)</span>
-содрежатся все члены суммы <span
-class="math inline">\(S^{\sigma}_k\)</span><a href="#fnref3"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>

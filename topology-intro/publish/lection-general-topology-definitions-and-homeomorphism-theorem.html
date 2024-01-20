@@ -61,7 +61,10 @@ id="toc-инварианты-топологичеких-пространств-�
 <li><a href="#линейная-связность" id="toc-линейная-связность">Линейная
 связность</a></li>
 </ul></li>
-<li><a href="#компактность" id="toc-компактность">Компактность</a></li>
+<li><a href="#компактность" id="toc-компактность">Компактность</a>
+<ul>
+<li><a href="#лемма-лебега" id="toc-лемма-лебега">Лемма Лебега</a></li>
+</ul></li>
 <li><a href="#отделимость" id="toc-отделимость">Отделимость</a>
 <ul>
 <li><a href="#хаусдорфовость"
@@ -94,26 +97,26 @@ V \in \tau_X\)</span>,</li>
 <li><span class="math inline">\(\forall \Lambda \,\,\,\, \cup_{\alpha
 \in \Lambda}U_{\alpha} \in \tau_X\)</span>.</li>
 </ol>
-<p><span class="math inline">\(\tau_X\)</span> - это <em>топология</em>
-на множестве <span class="math inline">\(X\)</span>.</p>
-<p>Элемент <span class="math inline">\(\tau_X\)</span> -
+<p><span class="math inline">\(\tau_X\)</span> – <em>топология</em> на
+множестве <span class="math inline">\(X\)</span>.</p>
+<p>Элемент <span class="math inline">\(\tau_X\)</span> –
 <em>открытое</em> множество.</p>
-<p>Элемент <span class="math inline">\(x \in X\)</span> -
-<em>точка</em>.</p>
+<p>Элемент <span class="math inline">\(x \in X\)</span> – <em>точка</em>
+пространства <span class="math inline">\(X\)</span>.</p>
 <p>Если <span class="math inline">\(x \in U \in \tau_X\)</span>, то
-<span class="math inline">\(U\)</span> - <em>окрестность точки</em>
+<span class="math inline">\(U\)</span> – <em>окрестность точки</em>
 <span class="math inline">\(x\)</span>.</p>
 <p>Если на множестве <span class="math inline">\(X\)</span> задана
 топология <span class="math inline">\(\tau_X\)</span>, то <span
-class="math inline">\(\langle X, \tau_X \rangle\)</span> -
+class="math inline">\(\langle X, \tau_X \rangle\)</span> –
 <em>топологическое пространство</em>.</p>
 <p><strong>Утверждение:</strong><a name="statement-10"></a> Пусть <span
-class="math inline">\(X\)</span> - топологическое пространство. Тогда
-<span class="math inline">\(\cup_{i = 1}^{n}U_i \in \tau_X\)</span>, где
+class="math inline">\(X\)</span> – топологическое пространство. Тогда
+<span class="math inline">\(\cap_{i = 1}^{n}U_i \in \tau_X\)</span>, где
 <span class="math inline">\(n \in \mathbb{N}\)</span> и <span
 class="math inline">\(U_i \in \tau_X \,\,\,\, \forall i \in \{1, \ldots,
 n\}\)</span>.</p>
-<p><em>Доказательство:</em> <span
+<p><em>Доказательство:</em> по индукции <span
 class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <p>Далее, если из контекста понятно какая топология задана на множестве
 <span class="math inline">\(X\)</span>, пишем <span
@@ -122,13 +125,16 @@ class="math inline">\(X\)</span>, имея в виду топологическ�
 role="doc-noteref"><sup>1</sup></a>.</p>
 <p><strong>Определение:</strong><a name="definition-1"></a> Пусть задано
 топологическое пространство <span class="math inline">\(X\)</span>.
-<span class="math inline">\(V \subset \tau_X\)</span> - <em>замкнутое
+<span class="math inline">\(V \subset \tau_X\)</span> – <em>замкнутое
 множество</em>, если <span class="math inline">\(U = X \setminus
-V\)</span> - открытое множество.</p>
+V\)</span> – открытое множество.</p>
 <p><strong>Определение:</strong><a name="definition-2"></a>
-<em>топология через замкнутые множества</em></p>
+(<em>топология через замкнутые множества</em>) Топологию можно задать
+через набор замкнутых множеств, для которых любое пересечение будет
+принадлежать топологии и любое конечное объединение будет принадлежать
+топологии.</p>
 <p><strong>Определение:</strong><a name="definition-3"></a>
-<em>База</em> на <span class="math inline">\(X\)</span> - это набор
+<em>База</em> на <span class="math inline">\(X\)</span> – это набор
 <span class="math inline">\(B\)</span> подмножеств <span
 class="math inline">\(X\)</span> такой, что:</p>
 <ol type="1">
@@ -141,13 +147,13 @@ class="math inline">\(X\)</span> такой, что:</p>
 <p><strong>Лемма:</strong><a name="lemma-0"></a> Пусть <span
 class="math inline">\(B\)</span> база на <span
 class="math inline">\(X\)</span>. Пусть <span
-class="math inline">\(\tau_{B}\)</span> - это множество всех объединений
-элементов базы. Тогда <span class="math inline">\(\tau_{B}\)</span> -
+class="math inline">\(\tau_{B}\)</span> – это множество всех объединений
+элементов базы. Тогда <span class="math inline">\(\tau_{B}\)</span> –
 топология на <span class="math inline">\(X\)</span>.</p>
 <p><em>Доказательство:</em> Проверим по определению:</p>
 <ol type="1">
 <li><span class="math inline">\(\varnothing \in \tau_B\)</span>, так как
-<span class="math inline">\(\varnothing\)</span> - это объединение по
+<span class="math inline">\(\varnothing\)</span> – это объединение по
 пустому множеству. <span class="math inline">\(X \in \tau_B\)</span>,
 так как <span class="math inline">\(\forall x \in X \,\,\,\, \exists U_x
 \in B: \,\,\,\, x \in U_x \implies X = \cup_{x \in X}U_x\)</span>.</li>
@@ -162,15 +168,15 @@ class="math inline">\(X\)</span>. Топология <span
 class="math inline">\(\tau_B\)</span> из предыдущего утверждения
 <em>порождена базой</em> <span class="math inline">\(B\)</span>.</p>
 <p><strong>Определение:</strong><a name="definition-32"></a> <em>База
-топологии ( топологического пространства)</em> <span
-class="math inline">\(\rangle X, \tau_X\langle\)</span> - это база на
+топологии (топологического пространства)</em> <span
+class="math inline">\(\rangle X, \tau_X\langle\)</span> – это база на
 множестве <span class="math inline">\(X\)</span>, такая что <span
 class="math inline">\(\tau_B = \tau_X\)</span>.</p>
 <p><strong>Определение:</strong><a name="definition-4"></a>
-<em>Предбаза</em> - это такой набор множеств, что все конечные
+<em>Предбаза</em> – это такой набор множеств, что все конечные
 пересечения элементов предбазы составляют базу.</p>
 <p><strong>Определение:</strong><a name="definition-5"></a> <em>Покрытие
-множества</em> <span class="math inline">\(X\)</span> - это набор
+множества</em> <span class="math inline">\(X\)</span> – это набор
 множеств, объединение которых содержит <span
 class="math inline">\(X\)</span>.</p>
 <p><strong>Лемма:</strong><a name="lemma-1"></a> Набор подмножеств <span
@@ -182,7 +188,7 @@ class="math inline">\(X\)</span>.</p>
 <p><span class="math inline">\(\boxed{\Longrightarrow}\)</span> <span
 class="math inline">\(B\)</span> предбаза <span
 class="math inline">\(\implies\)</span> конечные пересечения элементов
-<span class="math inline">\(B\)</span> - это база, а следовательно для
+<span class="math inline">\(B\)</span> – это база, а следовательно для
 любого <span class="math inline">\(x \in X\)</span> найдется <span
 class="math inline">\(U \in B: \,\,\,\, x \in U\)</span>.</p>
 <p><span class="math inline">\(\boxed{\Longleftarrow}\)</span> <span
@@ -191,35 +197,35 @@ class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 множества в топологии</h2>
 <hr />
 <p><strong>Определение:</strong><a name="definition-10"></a> Пусть <span
-class="math inline">\(X\)</span> - топологическое пространство. <span
-class="math inline">\(x \in A \subset X\)</span> - <em>точка
+class="math inline">\(X\)</span> – топологическое пространство. <span
+class="math inline">\(x \in A \subset X\)</span> – <em>точка
 прикосновения</em> подмножества <span class="math inline">\(A\)</span>,
 если пересечение любой окрестности точки <span
 class="math inline">\(x\)</span> и <span
 class="math inline">\(A\)</span> непусто.</p>
-<p><span class="math inline">\(x \in A \subset X\)</span> -
+<p><span class="math inline">\(x \in A \subset X\)</span> –
 <em>внутренняя точка</em> подмножества <span
 class="math inline">\(A\)</span>, если существует окрестность точки
 <span class="math inline">\(x\)</span>, содержащаяся в <span
 class="math inline">\(A\)</span>.</p>
 <p><strong>Определение:</strong><a name="definition-11"></a>
 <em>Замыкание</em> множества <span class="math inline">\(A \subset
-X\)</span> - это множество всех точек прикосновения <span
+X\)</span> – это множество всех точек прикосновения <span
 class="math inline">\(X\)</span>. Обозначается <span
 class="math inline">\(\overline{A}\)</span> или <span
 class="math inline">\(\operatorname{Cl}A\)</span>.</p>
 <p><em>Внутренность</em> множества <span class="math inline">\(A \subset
-X\)</span> - это множество всех внутренних точек <span
+X\)</span> – это множество всех внутренних точек <span
 class="math inline">\(X\)</span>. Обозначается <span
 class="math inline">\(\operatorname{Int}A\)</span>.</p>
 <p><strong>Лемма:</strong><a name="lemma-2"></a> (<em>о замыкании и
 внутренности</em>)</p>
 <ol type="1">
-<li>Внутренность множества - открытое множество.</li>
-<li>Замыкание множества - замкнутое множество.</li>
+<li>Внутренность множества – открытое множество.</li>
+<li>Замыкание множества – замкнутое множество.</li>
 </ol>
 <p><em>Доказательство:</em></p>
-<p>Пусть <span class="math inline">\(X\)</span> - топологическое
+<p>Пусть <span class="math inline">\(X\)</span> – топологическое
 пространство, <span class="math inline">\(A \subset X\)</span>.</p>
 <ol type="1">
 <li>Докажем, что <span
@@ -234,34 +240,38 @@ X}U_x\)</span>.</li>
 \,\,\,\,\blacksquare\)</span></li>
 </ol>
 <p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
-class="math inline">\(X\)</span> - топологическое пространство, <span
+class="math inline">\(X\)</span> – топологическое пространство, <span
 class="math inline">\(A \subset X\)</span>. Тогда <span
 class="math inline">\(\overline{A} = \cap \{U \in X: \,\,\,\, A \subset
-V\)</span> и <span class="math inline">\(V\)</span> - замкнуто <span
+V\)</span> и <span class="math inline">\(V\)</span> – замкнуто <span
 class="math inline">\(\}\)</span>.</p>
 <p><em>Доказательство:</em> Пусть <span class="math inline">\(x \in \cap
 \{V \in X: \,\,\,\, A \subset V\)</span> и <span
-class="math inline">\(V\)</span> - замкнуто <span
+class="math inline">\(V\)</span> – замкнуто <span
 class="math inline">\(\} \implies \exists V \subset X: \,\,\,\, A
 \subset V\)</span>, <span class="math inline">\(x \in V\)</span> и <span
-class="math inline">\(V\)</span> - замкнуто <span
+class="math inline">\(V\)</span> – замкнуто <span
 class="math inline">\(\implies \forall U_x \in \tau_X \,\,\,\, U_x \cap
 V \ne \varnothing \implies U_x \cap A \ne \varnothing
 \,\,\,\,\blacksquare\)</span></p>
 <h1 id="непрерывные-отображения">Непрерывные отображения</h1>
 <hr />
+<p><strong>Лемма:</strong><a name="lemma-7"></a> (<em>свойства
+пересечения, дополнения и объединения множеств</em>) Пусть дан набор
+множеств <span class="math inline">\(U_{\alpha}\)</span>.</p>
+<p><em>Доказательство:</em></p>
 <p><strong>Определение:</strong><a name="definition-33"></a> Пусть <span
-class="math inline">\(f: X \to Y\)</span> - отображение.</p>
+class="math inline">\(f: X \to Y\)</span> – отображение.</p>
 <p><em>Прообраз точки</em> <span class="math inline">\(y \in Y\)</span>
-при отображении <span class="math inline">\(f\)</span> - это <span
+при отображении <span class="math inline">\(f\)</span> – это <span
 class="math inline">\(f^{-1}(x) = \{x \in X: \,\,\,\, f(x) =
 y\}\)</span>.</p>
 <p><em>Прообраз подмножества</em> <span class="math inline">\(V \in
-Y\)</span> при отображении <span class="math inline">\(f\)</span> - это
+Y\)</span> при отображении <span class="math inline">\(f\)</span> – это
 <span class="math inline">\(f^{-1}(V) = \cup_{y \in
 V}f^{-1}(y)\)</span>.</p>
 <p><strong>Утверждение:</strong><a name="statement-11"></a> Пусть <span
-class="math inline">\(f: X \to Y\)</span> - отображение. Тогда <span
+class="math inline">\(f: X \to Y\)</span> – отображение. Тогда <span
 class="math inline">\(\forall V_{\alpha} \in Y \,\,\,\,
 f^{-1}\left(\cup_{\alpha \in \Lambda}V_{\alpha}\right) = \cup_{\alpha
 \in \Lambda}f^{-1}(V_{\alpha})\)</span>.</p>
@@ -269,7 +279,7 @@ f^{-1}\left(\cup_{\alpha \in \Lambda}V_{\alpha}\right) = \cup_{\alpha
 class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <p><strong>Определение:</strong><a name="definition-13"></a> Пусть <span
 class="math inline">\(X\)</span> и <span
-class="math inline">\(Y\)</span> - топологические пространства.
+class="math inline">\(Y\)</span> – топологические пространства.
 Отображение <span class="math inline">\(f: X \to Y\)</span>
 <em>непрерывно в точке</em> <span class="math inline">\(x \in
 X\)</span>, если прообраз любого открытого в <span
@@ -277,7 +287,7 @@ class="math inline">\(Y\)</span> множества открыт в <span
 class="math inline">\(X\)</span>.</p>
 <p><strong>Утверждение:</strong><a name="statement-1"></a> Пусть <span
 class="math inline">\(X\)</span> и <span
-class="math inline">\(Y\)</span> - топологические пространства.
+class="math inline">\(Y\)</span> – топологические пространства.
 Отображение <span class="math inline">\(f: X \to Y\)</span>
 <em>непрерывно в точке</em> <span class="math inline">\(x \in X \iff
 \forall U_{f(x)} \in \tau_Y \,\,\,\, \exists U_x \in \tau_X: \,\,\,\,
@@ -285,29 +295,29 @@ f(U_x) \subset U_{f(x)}\)</span>.</p>
 <p><em>Доказательство:</em></p>
 <p><strong>Определение:</strong><a name="definition-34"></a> Пусть <span
 class="math inline">\(X\)</span> и <span
-class="math inline">\(Y\)</span> - топологические пространства.
+class="math inline">\(Y\)</span> – топологические пространства.
 Отображение <span class="math inline">\(f: X \to Y\)</span>
 <em>непрерывно</em>, если <span class="math inline">\(f\)</span>
 непрерывно в каждой точке множества <span
 class="math inline">\(X\)</span>.</p>
 <p><strong>Утверждение:</strong><a name="statement-2"></a> Пусть <span
 class="math inline">\(X\)</span> и <span
-class="math inline">\(Y\)</span> - топологические пространства.
+class="math inline">\(Y\)</span> – топологические пространства.
 Отображение <span class="math inline">\(f: X \to Y\)</span> непрерывно
 <span class="math inline">\(\iff\)</span> прообраз любого элемента базы
 топологии на <span class="math inline">\(Y\)</span> при отображении
 <span class="math inline">\(f\)</span> открыт в <span
 class="math inline">\(X\)</span>.</p>
 <p><em>Доказательство:</em> Любое открытое множество в топологии <span
-class="math inline">\(\tau_Y\)</span> - это объединение элементов базы
+class="math inline">\(\tau_Y\)</span> – это объединение элементов базы
 топлогии на <span class="math inline">\(Y\)</span> и прообраз
-объединения множеств - это объединение прообразов <span
+объединения множеств – это объединение прообразов <span
 class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <h1 id="гомеоморфизм">Гомеоморфизм</h1>
 <hr />
 <p><strong>Определение:</strong><a name="definition-14"></a> Пусть <span
 class="math inline">\(X\)</span> и <span
-class="math inline">\(Y\)</span> - топологические пространства.
+class="math inline">\(Y\)</span> – топологические пространства.
 Отображение <span class="math inline">\(f: X \to Y\)</span>
 <em>гомеоморфизм</em>, если <span class="math inline">\(f\)</span>
 непрерывно, биективно и <span class="math inline">\(f^{-1}\)</span>
@@ -327,7 +337,7 @@ role="doc-noteref"><sup>2</sup></a></p>
 <p><strong>Теорема:</strong><a name="theorem-0"></a> (<em>теорема о
 гомеоморфизме</em>) Непрерывное взаимно однозначное отображение <span
 class="math inline">\(f: X \to Y\)</span> из компактного пространства на
-хаусдорфово - гомеоморфизм.</p>
+хаусдорфово – гомеоморфизм.</p>
 <p><em>Доказательство:</em> Нужно доказать непрерывность обратного
 отображения <span class="math inline">\(g = f^{-1}: Y \to X\)</span>.
 Докажем, что прообраз при отображении <span
@@ -353,10 +363,10 @@ class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <h2 id="метрические-пространства">Метрические пространства</h2>
 <hr />
 <p><strong>Определение:</strong><a name="definition-31"></a> Отображение
-<span class="math inline">\(f: X \to \mathbb{R}\)</span> -
+<span class="math inline">\(f: X \to \mathbb{R}\)</span> –
 <em>функция</em>.</p>
 <p><strong>Определение:</strong><a name="definition-6"></a> Функция
-<span class="math inline">\(\rho: X\times X \to \mathbb{R}\)</span> -
+<span class="math inline">\(\rho: X\times X \to \mathbb{R}\)</span> –
 <em>метрика</em>, если <span class="math inline">\(\forall x, y, z \in
 X\)</span></p>
 <ol type="1">
@@ -370,7 +380,7 @@ class="math inline">\(\rho(x, y) = 0 \iff x = y\)</span>,</li>
 <span class="math inline">\(X\)</span> задана метрика <span
 class="math inline">\(\rho\)</span>. <em>Открытый шар радиуса</em> <span
 class="math inline">\(\varepsilon\)</span> <em>с центром в точке</em>
-<span class="math inline">\(x_0 \in X\)</span> - это <span
+<span class="math inline">\(x_0 \in X\)</span> – это <span
 class="math inline">\(O_{\varepsilon}(x_0) = \{x \in X: \,\,\,\, \rho(x,
 x_0) &lt; \varepsilon\}\)</span>.</p>
 <p>Если неважно какой центр у шара, то будем писать <span
@@ -391,14 +401,14 @@ O_{\varepsilon_1}(x_1)\cap O_{\varepsilon_2}(x_2)
 \,\,\,\,\blacksquare\)</span></li>
 </ol>
 <p><strong>Определение:</strong><a name="definition-7"></a>
-<em>Метрическое пространство</em> - это топологическое пространство,
+<em>Метрическое пространство</em> – это топологическое пространство,
 порожденное базой открытых шаров.</p>
 <p><strong>Определение:</strong><a name="definition-8"></a> Если на
 <span class="math inline">\(X\)</span> можно ввести метрику, то <span
-class="math inline">\(X\)</span> - <em>метризуемое множество</em>.</p>
+class="math inline">\(X\)</span> – <em>метризуемое множество</em>.</p>
 <p><strong>Определение:</strong><a name="definition-9"></a> Пусть <span
-class="math inline">\(X\)</span> - векторное пространство. Функция <span
-class="math inline">\(h: X \to \mathbb{R}\)</span> - <em>норма</em>,
+class="math inline">\(X\)</span> – векторное пространство. Функция <span
+class="math inline">\(h: X \to \mathbb{R}\)</span> – <em>норма</em>,
 если <span class="math inline">\(\forall x, y \in X\)</span></p>
 <ol type="1">
 <li><span class="math inline">\(h(x) \geqslant 0\)</span> и <span
@@ -413,7 +423,7 @@ h(y)\)</span>.</li>
 <p><strong>Определение:</strong><a name="definition-12"></a> Пусть <span
 class="math inline">\(A\)</span> подмножество топологического
 пространства <span class="math inline">\(X\)</span>. <em>Индуцированная
-топология</em> - это топология на <span
+топология</em> – это топология на <span
 class="math inline">\(A\)</span>, в которой открытыми множествами
 являются множества вида <span class="math inline">\(U \cap A, \,\,\,\, U
 \in \tau_X\)</span>.</p>
@@ -449,12 +459,12 @@ A\)</span> несвязно <span class="math inline">\(\blades\)</span></p>
 <h3 id="линейная-связность">Линейная связность</h3>
 <hr />
 <p><strong>Утверждение:</strong><a name="statement-13"></a> Отрезок, как
-подмножество вещественной прямой с естественной топологией, -
+подмножество вещественной прямой с естественной топологией, –
 связен.</p>
 <p><em>Доказательство:</em></p>
 <p><strong>Определение:</strong><a name="definition-17"></a> Образ
 отрезка с естественной топологией при непрерывном отображении в
-топологическое пространство - <em>(непрерывная) кривая</em>,
+топологическое пространство – <em>(непрерывная) кривая</em>,
 <em>соединяющая</em> образы концов отрезка.</p>
 <p><strong>Определение:</strong><a name="definition-18"></a>
 Пространство <em>линейно связно</em>, если любые две точки можно
@@ -463,10 +473,10 @@ A\)</span> несвязно <span class="math inline">\(\blades\)</span></p>
 <span class="math inline">\(X\)</span> линейно связно <span
 class="math inline">\(\implies\)</span> пространство <span
 class="math inline">\(X\)</span> связно.</p>
-<p><em>Доказательство:</em> <span class="math inline">\(X\)</span> -
+<p><em>Доказательство:</em> <span class="math inline">\(X\)</span> –
 линейно связно <span class="math inline">\(\implies \forall x, y \in X
 \,\,\,\, \exists f: [a, b] \in X: \,\,\,\, f(a) = x, \,\,\,\, f(b) =
-y\)</span> и <span class="math inline">\(f\)</span> - непрерывно. Пусть
+y\)</span> и <span class="math inline">\(f\)</span> – непрерывно. Пусть
 <span class="math inline">\(X\)</span> несвязно, то есть <span
 class="math inline">\(X = U \sqcap V\)</span>, где <span
 class="math inline">\(U\)</span> и <span
@@ -474,23 +484,23 @@ class="math inline">\(V\)</span> открыты. Взяв точки <span
 class="math inline">\(x \in U\)</span> и <span class="math inline">\(y
 \in V\)</span> и соединяющую их непрерывную кривую <span
 class="math inline">\(f: [a, b] \to X\)</span> получим, что <span
-class="math inline">\([a, b] = f^{-1}(U)\sqcup f^{-1}(V)\)</span> -
+class="math inline">\([a, b] = f^{-1}(U)\sqcup f^{-1}(V)\)</span> –
 несвязен <span class="math inline">\(\blades\)</span></p>
 <h2 id="компактность">Компактность</h2>
 <hr />
 <p><strong>Определение:</strong><a name="definition-19"></a>
-Пространство <span class="math inline">\(X\)</span> - <em>компакт</em>,
+Пространство <span class="math inline">\(X\)</span> – <em>компакт</em>,
 если из любого его открытого покрытия можно выделить конечное
 подпокрытие.</p>
 <p><strong>Определение:</strong><a name="definition-20"></a>
 Подмножество <span class="math inline">\(A \subset X\)</span>
-топологического пространства <span class="math inline">\(X\)</span> -
+топологического пространства <span class="math inline">\(X\)</span> –
 <em>компактно</em>, если из любого его открытого покрытия можно выделить
 конечное подпокрытие.</p>
 <p><strong>Утверждение:</strong><a name="statement-5"></a> Образ
 компактного подмножества при непрерывном отображении компактен.</p>
 <p><em>Доказательство:</em> Пусть <span
-class="math inline">\(\cup_{\alpha \in \Lambda}U_{\alpha}\)</span> -
+class="math inline">\(\cup_{\alpha \in \Lambda}U_{\alpha}\)</span> –
 открытое покрытие образа <span class="math inline">\(f(K)\)</span>
 компактного множества <span class="math inline">\(K\)</span>
 топологического пространства <span class="math inline">\(X\)</span> при
@@ -499,7 +509,7 @@ class="math inline">\(\cup_{\alpha \in \Lambda}U_{\alpha}\)</span> -
 \Lambda}f^{-1}(U_{\alpha}) = f^{-1}(\cup_{\alpha \in
 \Lambda}U_{\alpha})\)</span> множества <span
 class="math inline">\(K\)</span>. <span class="math inline">\(K\)</span>
-- компакт <span class="math inline">\(\implies \exists \cup_{i =
+– компакт <span class="math inline">\(\implies \exists \cup_{i =
 1}^{n}U_{\alpha_i} \supset K\)</span>. <span
 class="math inline">\(\cup_{i = 1}^{n}f(U_{\alpha_i})\)</span> искомое
 подпокрытие <span
@@ -511,7 +521,7 @@ class="math inline">\(U = \cup_{\alpha \in \Lambda}U_{\alpha}\)</span>
 замкнутого множества <span class="math inline">\(V\)</span> в компактном
 пространстве <span class="math inline">\(X\)</span>. Хотим выделить
 конечное подпокрытие. <span class="math inline">\(V\)</span> закнуто
-<span class="math inline">\(\implies X \setminus V\)</span> - открыто.
+<span class="math inline">\(\implies X \setminus V\)</span> – открыто.
 Добавим <span class="math inline">\(X \setminus V\)</span> к <span
 class="math inline">\(U\)</span>, получим покрытие всего <span
 class="math inline">\(X\)</span>. <span class="math inline">\(X\)</span>
@@ -520,6 +530,8 @@ class="math inline">\(X\)</span>. <span class="math inline">\(X\)</span>
 class="math inline">\(\cup_{i = 1}^{n}U_{\alpha_i} \setminus (X
 \setminus V)\)</span> искомое подпокрытие <span
 class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h3 id="лемма-лебега">Лемма Лебега</h3>
+<hr />
 <p><strong>Лемма:</strong><a name="lemma-3"></a> (<em>Лебега</em>) Пусть
 <span class="math inline">\(X\)</span> компактное метрическое
 пространство. Пусть <span class="math inline">\(\{U_{\alpha}\}\)</span>
@@ -527,17 +539,32 @@ class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 class="math inline">\(\exists r &gt; 0\)</span>, такое что любой
 открытый шар радиуса <span class="math inline">\(r\)</span> целиком
 лежит в одном из <span class="math inline">\(U_{\alpha}\)</span>.</p>
-<p><em>Доказательство:</em> <span class="math inline">\(X\)</span>
-компактно <span class="math inline">\(\implies \exists \cup_{i =
-1}^nU_{\alpha_i} \supset X\)</span>. <span class="math inline">\(\forall
-U_{\alpha} \,\,\,\, \exists O_{\varepsilon_{\alpha}} \subset
-U_{\alpha}\)</span>, так как <span class="math inline">\(X\)</span>
-метрическое пространство. Возьмем <span class="math inline">\(r =
-\min_{i \in \{1, \ldots, n\}} O_{\varepsilon_{\alpha_i}}
+<p><em>Доказательство:</em> <span
+class="math inline">\(\{U_{\alpha}\}\)</span> – покрытие, следовательно
+<span class="math inline">\(\forall x \in X \,\,\,\, \exists
+O_{\varepsilon_x}(x) \subset U_{\alpha}\)</span> для некоторого <span
+class="math inline">\(\alpha\)</span>. Рассмотрим покрытие <span
+class="math inline">\(X\)</span> множествами вида <span
+class="math inline">\(O_{\frac{\varepsilon_x}2}(x)\)</span>. В силу
+компактности <span class="math inline">\(X\)</span> выделим конечное
+подпокрытие <span
+class="math inline">\(\{O_{\frac{\varepsilon_{x_i}}2}(x_i)\}_{i =
+1}^{n}\)</span>. Возьмем <span class="math inline">\(r =
+\min\{\frac{x_i}2|\,\,\,\, i \in \{1, \ldots, n\}\}\)</span>.</p>
+<p>Докажем, что любой шар радиуса <span class="math inline">\(r\)</span>
+целиком лежит в одном из <span
+class="math inline">\(O_{\varepsilon_{x_i}}(x_i)\)</span>, а
+следовательно в одном из <span
+class="math inline">\(U_{\alpha}\)</span>. Рассмотрим <span
+class="math inline">\(O_{r}(x)\)</span>. <span
+class="math inline">\(\forall y \in O_r(x) \,\,\,\, \rho(x, y) &lt;
+r\)</span> и <span class="math inline">\(\rho(x_i, y) \leqslant
+\rho(x_i, x) + \rho(x, y) &lt; \frac{\varepsilon_{x_i}}2 + r \leqslant
+\varepsilon_{x_i} \implies y \in O_{\varepsilon_{x_i}}(x_i)
 \,\,\,\,\blacksquare\)</span></p>
 <p><strong>Определение:</strong><a name="definition-21"></a>
 Максимальное <span class="math inline">\(r\)</span>, удовлетворяющее
-условиям предыдущей леммы, - <em>число Лебега</em> покрытия <span
+условиям предыдущей леммы, – <em>число Лебега</em> покрытия <span
 class="math inline">\(U_{\alpha}\)</span>.</p>
 <h2 id="отделимость">Отделимость</h2>
 <hr />
@@ -555,12 +582,12 @@ class="math inline">\(X\)</span> замкнута.</p>
 <p><em>Доказательство:</em></p>
 <p><span class="math inline">\(\boxed{\Longrightarrow}\)</span>
 Зафиксируем <span class="math inline">\(x_0 \in X\)</span>. Докажем, что
-<span class="math inline">\(\{x_0\}\)</span> - замкнуто. <span
+<span class="math inline">\(\{x_0\}\)</span> – замкнуто. <span
 class="math inline">\(X\)</span> обладает <span
 class="math inline">\(\operatorname{T_1}\implies \forall x \in X
 \setminus \{x_0\} \exists U_x \in \tau_X: \,\,\,\, x_0 \not\in U_x
-\implies X \setminus \{x_0\}\)</span> - открыто <span
-class="math inline">\(\implies \{x_0\}\)</span> - замкнуто.</p>
+\implies X \setminus \{x_0\}\)</span> – открыто <span
+class="math inline">\(\implies \{x_0\}\)</span> – замкнуто.</p>
 <p><span class="math inline">\(\boxed{\Longrightarrow}\)</span> <span
 class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <h3 id="хаусдорфовость">Хаусдорфовость</h3>
@@ -572,9 +599,9 @@ class="math inline">\(\operatorname{T_2}\)</span>) Топологическое
 X \,\,\,\, \exists U_x, U_y \in \tau_X: \,\,\,\, U_x \cap U_y =
 \varnothing\)</span>.</p>
 <p><strong>Определение:</strong><a name="definition-24"></a> Пусть <span
-class="math inline">\(\{x_n\}_{n = 1}^{\infty}\)</span> -
+class="math inline">\(\{x_n\}_{n = 1}^{\infty}\)</span> –
 последовательность точек <span class="math inline">\(X\)</span>. <span
-class="math inline">\(x \in X\)</span> - <em>предел</em>
+class="math inline">\(x \in X\)</span> – <em>предел</em>
 последовательности <span class="math inline">\(x_n\)</span>, если
 дополнение любой окрестности <span class="math inline">\(x\)</span>
 содержит конечное количество членов последовательнсти.</p>
@@ -609,12 +636,12 @@ U_B = \varnothing\)</span>.</p>
 class="math inline">\(X\)</span> обладает <span
 class="math inline">\(\operatorname{T_1}\)</span> и <span
 class="math inline">\(\operatorname{T_3}\)</span>, то <span
-class="math inline">\(X\)</span> - <em>регулярно</em>.</p>
+class="math inline">\(X\)</span> – <em>регулярно</em>.</p>
 <p><strong>Определение:</strong><a name="definition-28"></a> Если <span
 class="math inline">\(X\)</span> обладает <span
 class="math inline">\(\operatorname{T_1}\)</span> и <span
 class="math inline">\(\operatorname{T_4}\)</span>, то <span
-class="math inline">\(X\)</span> - <em>нормально</em>.</p>
+class="math inline">\(X\)</span> – <em>нормально</em>.</p>
 <p><strong>Факт:</strong> Нормально <span
 class="math inline">\(\implies\)</span> регулярно <span
 class="math inline">\(\implies\)</span> хаусдорфово <span
@@ -626,7 +653,7 @@ class="math inline">\(\implies \operatorname{T_1}\)</span>.</p>
 хаусдорфово <span class="math inline">\(\implies X\)</span> обладает
 <span class="math inline">\(T_1\)</span>.</p>
 <p>Докажем, что <span class="math inline">\(X\)</span> регулярно. Пусть
-<span class="math inline">\(A \subset X\)</span> - замкнуто и <span
+<span class="math inline">\(A \subset X\)</span> – замкнуто и <span
 class="math inline">\(X \ni x_0 \not\in A\)</span>. <span
 class="math inline">\(X\)</span> хаусдорфово <span
 class="math inline">\(\implies \forall x \in A \exists U_x, U_{x,\,\,
@@ -674,13 +701,13 @@ class="math inline">\(K\)</span>. <span class="math inline">\(K\)</span>
 class="math inline">\(K\)</span>. <span class="math inline">\(x_0 \in
 \cap_{i = 1}^{n}U_{x_0, \,\, x_i} \in \tau_X\)</span> и <span
 class="math inline">\(\left(\cap_{i = 1}^{n}U_{x_0, \,\, x_i}\right)
-\cap K = \varnothing \implies X \setminus K\)</span> - открыто <span
-class="math inline">\(\implies K\)</span> - замкнуто <span
+\cap K = \varnothing \implies X \setminus K\)</span> – открыто <span
+class="math inline">\(\implies K\)</span> – замкнуто <span
 class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <h2 id="урысоновость">Урысоновость</h2>
 <hr />
 <p><strong>Лемма:</strong><a name="lemma-6"></a> (<em>Урысона</em>)
-Пусть <span class="math inline">\(X\)</span> - нормальное пространство,
+Пусть <span class="math inline">\(X\)</span> – нормальное пространство,
 <span class="math inline">\(A, B \subset X\)</span> замкнуты и <span
 class="math inline">\(A \cap B = \varnothing\)</span>. Тогда <span
 class="math inline">\(\exists f: X \to [0, 1]: \,\,\,\, f_{|A} = 0,
@@ -692,29 +719,28 @@ class="math inline">\(\Lambda = \{\frac{k}{2^n}, \,\,\,\, k, n \in
 существуют такие открытые подмножества <span
 class="math inline">\(\{U_{\alpha}\}_{\alpha \in \Lambda}\)</span>, что
 <span class="math inline">\(A \subset U_0\)</span> и <span
-class="math inline">\(B \subset X \setminus U_1\)</span> и <span
+class="math inline">\(B \subset U_1\)</span> и <span
 class="math inline">\(\operatorname{Cl}U_{\alpha} \subset U_{\beta},
 \,\,\,\, \forall \alpha &lt; \beta\)</span>.</p>
-<p><img src="publish/img/uryson.png" /></p>
-<p>Пусть <span class="math inline">\(U_1 = X \setminus B\)</span>.
-Тогда, так как пространство нормально <span
-class="math inline">\(\exists U_0 \supset A: \,\,\,\,
-\operatorname{Cl}U_0 \cap B = \varnothing \implies \exists U_{\frac12}
-\supset \operatorname{Cl}U_0: \,\,\,\, \operatorname{Cl}U_{\frac12} \cap
-B = \varnothing\)</span>.</p>
+<p>Пусть <span class="math inline">\(U_1 = X\)</span>. Так как
+пространство нормально <span class="math inline">\(\exists U_0 \supset
+A: \,\,\,\, \operatorname{Cl}U_0 \cap B = \varnothing \implies \exists
+U_{\frac12} \supset \operatorname{Cl}U_0: \,\,\,\,
+\operatorname{Cl}U_{\frac12} \cap B = \varnothing\)</span>.</p>
 <p>Пусть <span class="math inline">\(f(x) = \inf\{\alpha \in \Lambda:
 \,\,\,\, x \in \operatorname{Cl}U_{\alpha}\}\)</span>.</p>
 <p><span class="math inline">\(f_{|A} = 0\)</span> и <span
 class="math inline">\(f_{|B} = 1\)</span>. Докажем, что <span
-class="math inline">\(f\)</span> непрерывно. <span
-class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+class="math inline">\(f\)</span> непрерывно. Рассмотрим предбазу из
+интервалов вида <span class="math inline">\([0, a)\)</span> и <span
+class="math inline">\((b, 1]\,\,\,\,\blacksquare\)</span></p>
 <p><strong>Определение:</strong><a name="definition-29"></a> Норма
 функции <span class="math inline">\(f: X \to \mathbb{R}\)</span>
-ограниченной на <span class="math inline">\(\mathbb{R}\)</span> - это
+ограниченной на <span class="math inline">\(\mathbb{R}\)</span> – это
 <span class="math inline">\(||f|| = \displaystyle\sup_{x \in
 X}|f(x)|\)</span>.</p>
 <p><strong>Теорема:</strong><a name="theorem-1"></a> (<em>Титце</em>)
-Пусть <span class="math inline">\(X\)</span> - нормальное пространство,
+Пусть <span class="math inline">\(X\)</span> – нормальное пространство,
 <span class="math inline">\(A \subset X\)</span> замкнуто. Тогда для
 любой непрерывной функции <span class="math inline">\(f: A \to
 \mathbb{R}\)</span> существует непрерывная функция <span
@@ -726,19 +752,75 @@ class="math inline">\(||F|| \leqslant 1\)</span>.</p>
 class="math inline">\(f: A \to [-1, 1]\)</span>, так как <span
 class="math inline">\(\tan: [-1, 1] \to \mathbb{R}\)</span> –
 непрерывен.</p>
+<p>Индуктивно построим последовательность функций <span
+class="math inline">\(F_n\)</span>, равномерно сходящуюся к <span
+class="math inline">\(F\)</span>.</p>
+<p>Пусть <span class="math inline">\(f = f_0\)</span> и <span
+class="math inline">\(c_0 = 1 \geqslant ||f_0||\)</span>. Пусть <span
+class="math inline">\(B_0 = f_0^{-1}([-c_0, -\frac{c_0}3])\)</span> и
+<span class="math inline">\(A_0 = f_0^{-1}([\frac{c_0}3, c_0])\)</span>.
+<span class="math inline">\(A_0\)</span> и <span
+class="math inline">\(B_0\)</span> замкнутые множества, так как
+прообразы замкнутых <a href="#fn5" class="footnote-ref" id="fnref5"
+role="doc-noteref"><sup>5</sup></a> множеств при непрерывном
+отображении. Значит по лемме Урысона существует непрерывное отображение
+<span class="math inline">\(F_0: X \to [-\frac{c_0}3,
+\frac{c_0}3]\)</span>, такое что <span class="math inline">\(F_0(A_0) =
+\{\frac{c_0}3\}\)</span> и <span class="math inline">\(F_0(B_0) =
+\{-\frac{c_0}3\}\)</span> <a href="#fn6" class="footnote-ref"
+id="fnref6" role="doc-noteref"><sup>6</sup></a>. Имеем <span
+class="math inline">\(||f_0 - F_0|_{Y}|| \leqslant 2\frac{c_0}3\)</span>
+<a href="#fn7" class="footnote-ref" id="fnref7"
+role="doc-noteref"><sup>7</sup></a>.</p>
+<p>Пусть <span class="math inline">\(f_n = f_{n - 1} - F_{n - 1}|_{Y} =
+f_0 - (F_1 + \ldots + F_{n - 1})|_{Y}\)</span> и <span
+class="math inline">\(c_n = 2\frac{c_{n - 1}}3 \geqslant ||f_{n -
+1}||\)</span>. Пусть <span class="math inline">\(B_n = f_{n}^{-1}([-c_n,
+-\frac{c_n}3])\)</span> и <span class="math inline">\(A_n =
+f_n^{-1}([\frac{c_n}3, c_n])\)</span>. <span
+class="math inline">\(A_n\)</span> и <span
+class="math inline">\(B_n\)</span>. По лемме Урысона существует
+непрерывное отображение <span class="math inline">\(F_n: X \to
+[-\frac{c_n}3, \frac{c_n}3]\)</span>, такое что <span
+class="math inline">\(F_n(A_n) = \{\frac{c_n}3\}\)</span> и <span
+class="math inline">\(F_n(B_n) = \{-\frac{c_n}3\}\)</span>. Имеем <span
+class="math inline">\(||f_{n + 1}|| = ||f_n - F_n|_{Y}|| \leqslant
+2\frac{c_n}3 = \left(\frac23\right)^n c_0\)</span>.</p>
+<p>Построили последовательность непрерывных функций <span
+class="math inline">\(F_n\)</span> и последовательность непрерывных
+функций <span class="math inline">\(f_n\)</span>. Ряд <span
+class="math inline">\(\displaystyle \sum_{n = 0}^{\infty}F_n\)</span>
+равномерно сходится на <span class="math inline">\(X\)</span> к
+непрерывной функции <span class="math inline">\(F\)</span> по признаку
+Вейерштрасса <a href="#fn8" class="footnote-ref" id="fnref8"
+role="doc-noteref"><sup>8</sup></a>. Так как <span
+class="math inline">\(\forall n \,\,\,\, ||f - (F_1 + \ldots + F_{n -
+1})|_{Y}|| \leqslant \left(\frac23\right)^n c_0\)</span>, имеем <span
+class="math inline">\(f = F_{|Y} \,\,\,\,\blacksquare\)</span></p>
 <h1 id="теорема-стоуна-вейерштрасса">Теорема Стоуна-Вейерштрасса</h1>
 <hr />
+<p><strong>Обозначение:</strong> <span
+class="math inline">\(C(X)\)</span> – множество непрерывных функций на
+<span class="math inline">\(X\)</span> <a href="#fn9"
+class="footnote-ref" id="fnref9"
+role="doc-noteref"><sup>9</sup></a>.</p>
+<p><strong>Утверждение:</strong><a name="statement-14"></a> Пусть <span
+class="math inline">\(X\)</span> – компактное хаусдорфово пространство и
+<span class="math inline">\(f, g: X \to Y\)</span>. Тогда <span
+class="math inline">\(C(X)\)</span> алгебра над <span
+class="math inline">\(\mathbb{R}\)</span> относительно операций <span
+class="math inline">\(f\cdot g: x \to f(x)\cdot g(x), \,\,\,\, f + g: x
+\to f(x) + g(x), \,\,\,\, \lambda f: x \to \lambda f(x)\)</span>.</p>
+<p><em>Доказательство:</em></p>
 <p><strong>Определение:</strong><a name="definition-30"></a> Набор
-функций <span class="math inline">\(A \subset C(X)\)</span><a
-href="#fn5" class="footnote-ref" id="fnref5"
-role="doc-noteref"><sup>5</sup></a> <em>разделяет точки</em>
-топологического пространства <span class="math inline">\(X\)</span>,
-если <span class="math inline">\(\forall x, y \in X \,\,\,\, \exists f
-\in A: \,\,\,\, f(x) = 0\)</span> и <span class="math inline">\(f(y) =
+функций <span class="math inline">\(A \subset C(X)\)</span>
+<em>разделяет точки</em> топологического пространства <span
+class="math inline">\(X\)</span>, если <span
+class="math inline">\(\forall x, y \in X \,\,\,\, \exists f \in A:
+\,\,\,\, f(x) = 0\)</span> и <span class="math inline">\(f(y) =
 1\)</span>.</p>
-<p><strong>Утверждение:</strong><a name="statement-9"></a> Если <span
-class="math inline">\(A \subset C(X)\)</span> разделяет точки и содержит
-константы, то <span class="math inline">\(A\)</span> подалгебра</p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a>
+(<em>Вейерштрасса-Стоуна об аппроксимации</em>)</p>
 <p><em>Доказательство:</em></p>
 <section id="footnotes" class="footnotes footnotes-end-of-document"
 role="doc-endnotes">
@@ -751,15 +833,27 @@ role="doc-backlink">↩︎</a></p></li>
 href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>В смысле индуцированнной топологии.<a href="#fnref3"
 class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Пусть <span class="math inline">\(f: X \to Y\)</span> -
+<li id="fn4"><p>Пусть <span class="math inline">\(f: X \to Y\)</span> –
 непрерывное сюръективное отображение. Тогда, если <span
-class="math inline">\(X\)</span> - компактно, то <span
-class="math inline">\(Y\)</span> - компактно.<a href="#fnref4"
+class="math inline">\(X\)</span> – компактно, то <span
+class="math inline">\(Y\)</span> – компактно.<a href="#fnref4"
 class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Напоминание: <span class="math inline">\(C(X)\)</span> -
-непрерывные на <span class="math inline">\(X\)</span> функции. Функция -
-отображение в <span class="math inline">\(\mathbb{R}\)</span>.<a
-href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Почему отрезок замкнут?<a href="#fnref5"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Почему существование непрерывного отображения в <span
+class="math inline">\([0, 1]\)</span> дает непрерывное отображение в
+любой отрезок <span class="math inline">\([a, b]\)</span>? Потому что
+<span class="math inline">\(f: [0, 1] \to [a, b]: a(1 - t) +
+bt\)</span>.<a href="#fnref6" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Почему? Потому что разобрать случаи.<a href="#fnref7"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p><span class="math inline">\(||F_n|| \leqslant
+\frac{c_n}3\)</span><a href="#fnref8" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Функция – отображение в <span
+class="math inline">\(\mathbb{R}\)</span>.<a href="#fnref9"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>

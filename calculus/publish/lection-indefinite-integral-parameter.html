@@ -67,7 +67,7 @@ class="math inline">\(Y\)</span>, такая что <span
 class="math inline">\(\forall \varepsilon &gt; 0 \,\,\,\, \exists
 A_{\varepsilon} &gt; a: \,\,\,\, \forall A &gt; A_{\varepsilon}
 \,\,\,\,\forall y \in Y \,\,\,\, \left|\displaystyle\int\limits_a^A f(x,
-y)dx - F(y)\right| &lt; \varepsilon\)</span> – то <span
+y)dx - F(y)\right| &lt; \varepsilon\)</span>, то <span
 class="math inline">\(\displaystyle\int\limits_a^w f(x, y)dx
 \overset{Y}{\rightrightarrows} F(y)\)</span> <a href="#fn1"
 class="footnote-ref" id="fnref1"
@@ -84,13 +84,14 @@ class="math inline">\(\displaystyle\int\limits_a^{\infty} f(x, y)dx
 A_{\varepsilon} \,\,\,\, \left|\displaystyle\int\limits_{a_1}^{a_2} f(x,
 y)dx\right| &lt; \varepsilon\)</span>.</p>
 <p><em>Доказательство:</em></p>
-<p><span class="math inline">\(\boxed{\Longrightarrow}
+<p><span class="math display">\[\boxed{\Longrightarrow}
 \left|\displaystyle\int\limits_{a_1}^{a_2} f(x, y)dx\right| =
-\left|\displaystyle\int\limits_{a}^{a_2} f(x, y)dx -
-\displaystyle\int\limits_{a}^{a_1} f(x, y)dx\right| \leqslant
-\left|\displaystyle\int\limits_{a}^{a_2} f(x, y)dx\right| +
-\left|\displaystyle\int\limits_{a}^{a_1} f(x, y)dx\right| &lt; 2
-\varepsilon\)</span></p>
+\left|\displaystyle\int\limits_{a}^{a_2} f(x, y)dx - F(y) + F(y) -
+\displaystyle\int\limits_{a}^{a_1} f(x, y)dx\right|\leqslant\]</span>
+<span class="math display">\[\leqslant
+\left|\displaystyle\int\limits_{a}^{a_2} f(x, y)dx - F(y)\right| +
+\left|\displaystyle\int\limits_{a}^{a_1} f(x, y)dx - F(y)\right| &lt; 2
+\varepsilon\]</span></p>
 <p><span class="math inline">\(\boxed{\Longleftarrow} \forall y \in Y
 \,\,\,\, \displaystyle\int\limits_a^{+\infty} f(x, y)dx\)</span>
 сходится по <a

@@ -101,8 +101,8 @@ class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
 </ol>
 <p><strong>Теорема:</strong><a name="theorem-0"></a> <span
 class="math display">\[\frac{a_0}2 + \displaystyle \sum_{n =
-1}^{\infty}(a_n\cos(nx) + b_n\sin(nx)) \overset{[-\pi, \pi]}{\to} S(x)
-\implies \begin{cases}
+1}^{\infty}(a_n\cos(nx) + b_n\sin(nx)) \overset{[-\pi,
+\pi]}{\rightrightarrows} S(x) \implies \begin{cases}
     a_n = \frac1{\pi}\displaystyle\int\limits_{-\pi}^{\pi}
 S(x)\cos(nx)dx\\
     b_n = \frac1{\pi}\displaystyle\int\limits_{-\pi}^{\pi}
@@ -115,11 +115,12 @@ S(x)\cos(nx)dx\)</span> и <span class="math inline">\(b_n =
 \frac1{\pi}\displaystyle\int\limits_{-\pi}^{\pi} S(x)\sin(nx)dx\)</span>
 существуют, так как <span class="math inline">\(S(x)\)</span>
 непрерывна.</p>
-<p><span class="math display">\[\frac{a_0\cos(kx)}2 + \displaystyle
-\sum_{n = 1}^{\infty}(a_n\cos(nx) + b_n\sin(nx)) \overset{[-\pi,
-\pi]}{\to} S(x)\implies\]</span> <span class="math display">\[\implies
-\frac{a_0}2 + \displaystyle \sum_{n = 1}^{\infty}(a_n\cos(nx)\cos(kx) +
-b_n\sin(nx)\cos(kx)) \overset{[-\pi, \pi]}{\to} S(x)\cos(kx)
+<p><span class="math display">\[\frac{a_0}2 + \displaystyle \sum_{n =
+1}^{\infty}(a_n\cos(nx) + b_n\sin(nx)) \overset{[-\pi,
+\pi]}{\rightrightarrows} S(x)\implies\]</span> <span
+class="math display">\[\implies \frac{a_0\cos(kx)}2 + \displaystyle
+\sum_{n = 1}^{\infty}(a_n\cos(nx)\cos(kx) + b_n\sin(nx)\cos(kx))
+\overset{[-\pi, \pi]}{\rightrightarrows} S(x)\cos(kx)
 \implies\]</span></p>
 <p><span class="math display">\[\implies
 \frac1{\pi}\displaystyle\int\limits_{-\pi}^{\pi}

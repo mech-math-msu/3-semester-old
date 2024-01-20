@@ -122,6 +122,13 @@ id="toc-пример-линейно-связного-но-не-локально-
 линейно связного, но не локально линейно свзного пространства</a></li>
 <li><a href="#примеры-накрытий" id="toc-примеры-накрытий">Примеры
 накрытий</a></li>
+<li><a
+href="#гомоморфизм-фундаментальных-групп-индуцированный-отображением-накрытия"
+id="toc-гомоморфизм-фундаментальных-групп-индуцированный-отображением-накрытия">Гомоморфизм
+фундаментальных групп, индуцированный отображением накрытия</a></li>
+<li><a href="#критерий-поднятия-отображения"
+id="toc-критерий-поднятия-отображения">Критерий поднятия
+отображения</a></li>
 <li><a href="#универсальные-накрытия"
 id="toc-универсальные-накрытия">Универсальные накрытия</a>
 <ul>
@@ -145,12 +152,12 @@ transform: rotate(225deg)}{\Large{\dagger}}}\)</span></p>
 class="math inline">\((X, \tau_X)\)</span> и <span
 class="math inline">\((Y, \tau_Y)\)</span> – топологические
 пространства. <em>Топология произведения</em> <span
-class="math inline">\(X\times Y\)</span> - это топология, порожденная
+class="math inline">\(X\times Y\)</span> – это топология, порожденная
 базой <span class="math inline">\(\{U\times V: \,\,\,\, U \in \tau_X,
 \,\,\,\, V \in \tau_Y\}\)</span> на декартовом произведении <span
 class="math inline">\(X\times Y\)</span>.</p>
 <p><strong>Утверждение:</strong><a name="statement-2"></a> Предбаза
-топологии произведения <span class="math inline">\(X\times Y\)</span> -
+топологии произведения <span class="math inline">\(X\times Y\)</span> –
 это <span class="math inline">\(\{U\times Y| \,\,\,\,U \in \tau_X\}\cup
 \{X\times V|\,\,\,\, V \in \tau_Y\}\)</span>.</p>
 <p><em>Доказательство:</em> <span
@@ -203,14 +210,25 @@ class="math inline">\(\iff \triangle\)</span> – замкнуто.</p>
 class="math inline">\(X\)</span> и <span
 class="math inline">\(Y\)</span> компактны. Тогда <span
 class="math inline">\(X\times Y\)</span> компактно.</p>
-<p><em>Доказательство:</em> Достаточно проверить на базе. Пусть <span
-class="math inline">\(\{U_{\alpha}\times V_{\alpha}: \,\,\,\, U_{\alpha}
-\in \tau_X,\,\,\,\, V_{\alpha} \in \tau_Y \}_{\alpha \in
-\Lambda}\)</span>. Зафиксируем <span class="math inline">\(x\)</span> и,
-в силу компактности <span class="math inline">\(Y\)</span>, выберем
-конечное подпокрытие <span class="math inline">\(\{U^x_{\alpha_i}\times
-V^x_{\alpha_i}\}_{i = 1}^n\)</span>. Пусть <span
-class="math inline">\(W^x = \cap_{i = 1}^n U^x_{\alpha_i}\)</span></p>
+<p><em>Доказательство:</em> Пусть <span
+class="math inline">\(\{W_{\alpha}\}\)</span> – покрытие. Для каждой
+точки <span class="math inline">\((x, y) \in X \times Y\)</span> выберем
+окрестность <span class="math inline">\(U_{x}\times V_{y}\)</span>, так
+чтобы <span class="math inline">\(U_x \times V_y\)</span> целиком
+содержалась в некотором <span class="math inline">\(W_{\alpha}\)</span>.
+Выбрав в покрытии <span class="math inline">\(\{U_x\times V_y\}\)</span>
+конечное подпокрытие докажем теорему.</p>
+<p><span class="math inline">\(X \times y \cong X \,\,\,\, \forall y \in
+Y\)</span>. Рассмотрим покрытие <span class="math inline">\(\{U_x\times
+V_y|\,\,\,\, (x, y) \in X\times Y\}\)</span> множества <span
+class="math inline">\(X \times y\)</span>. В силу компактности <span
+class="math inline">\(X\)</span> для каждого <span
+class="math inline">\(y\)</span> существует конечное подпокрытие <span
+class="math inline">\(\{U^y_{i}\times V^y_{i}\}_{i = 1}^{n_y}\)</span>.
+Пусть <span class="math inline">\(W_{y} = \cap_i V^y_{i}\)</span>.
+Выделим конечное подпокрытие. Тогда искомое покрытие <span
+class="math inline">\(\{U^{y_j}_{i}\times V^{y_j}_{i}\}
+\,\,\,\,\blacksquare\)</span></p>
 <h2 id="фактор-топология">Фактор-топология</h2>
 <hr />
 <blockquote>
@@ -274,17 +292,17 @@ class="math inline">\(y_0 \in Y\)</span> – фиксированные точк
 <p><strong>Обозначение:</strong> <span class="math inline">\(I = [0,
 1]\)</span>.</p>
 <p><strong>Определение:</strong><a name="definition-6"></a>
-<em>Цилиндр</em> - это топология произведения <span
+<em>Цилиндр</em> – это топология произведения <span
 class="math inline">\(X\times I\)</span>.</p>
 <p><span class="math inline">\(X \times 1\)</span> – <em>верхнее
 основание цилинра</em>, <span class="math inline">\(X \times 0\)</span>
 – <em>нижнее основание цилиндра</em>.</p>
 <p><strong>Определение:</strong><a name="definition-7"></a>
-<em>Конус</em> - это <span class="math inline">\((X\times I)/(X\times
+<em>Конус</em> – это <span class="math inline">\((X\times I)/(X\times
 1)\)</span> (стягиваем верхнее основание цилиндра в точку).</p>
 <p><span class="math inline">\([X\times 1]_{\sim}\)</span> – <em>вершина
-конуса</em>, <span class="math inline">\(\cup_{x \in X}[(x,
-0)]_{\sim}\)</span> – <em>основание конуса</em>.</p>
+конуса</em>, <span class="math inline">\(X\times 0\)</span> –
+<em>основание конуса</em>.</p>
 <h2
 id="компактно-открытая-топология-на-пространстве-непрерывных-отображений">Компактно-открытая
 топология на пространстве непрерывных отображений</h2>
@@ -296,7 +314,7 @@ class="math inline">\(Y^X\)</span> множество непрерывных о�
 <span class="math inline">\(\mathcal{C}(X, Y)\)</span> с предбазой <span
 class="math inline">\(\{W(K, U)\}\)</span>, где <span
 class="math inline">\(W(K, U) \subset \mathcal{C}(X, Y)\)</span>, <span
-class="math inline">\(K\)</span> - компакт и <span
+class="math inline">\(K\)</span> – компакт и <span
 class="math inline">\(f(K) \subset U\)</span>.</p>
 <p>Множество непрерывных функций <span class="math inline">\(X \to
 \mathbb{R}\)</span> обозначается: <span
@@ -312,14 +330,14 @@ class="math inline">\(\mathcal{C}(X, Y)\)</span>.</p>
 <span class="math inline">\(\rho_0(f(x), g(x))\)</span> непрерывна, как
 отображение <span class="math inline">\(f: X \to \mathbb{R}, \,\,\,\, f:
 x \mapsto \rho_0(f(x), g(x))\)</span>. Непрерывный образ компактного
-множества - компакт, а следовательно <span
-class="math inline">\(f(X)\)</span> - компакт в <span
+множества – компакт, а следовательно <span
+class="math inline">\(f(X)\)</span> – компакт в <span
 class="math inline">\(\mathbb{R}\)</span>, то есть ограниченное (отсюда
 следует существование <span class="math inline">\(\sup_{x \in
 X}\{\rho_0(f(x), g(x))\}\)</span>) и замкнутое (отсюда следует
 принадлежность супремума множеству, а значит существования
 максимума).</p>
-<p>Проверим, что <span class="math inline">\(\rho\)</span> -
+<p>Проверим, что <span class="math inline">\(\rho\)</span> –
 метрика:</p>
 <ol type="1">
 <li>Неотрицательность следует из неотрицательности <span
@@ -346,8 +364,8 @@ h)\)</span>.</li>
 </ol>
 <p>Докажем, что порожденная метрикой <span
 class="math inline">\(\rho\)</span> топология компактно-открытая.
-Рассмотрим <span class="math inline">\(K \subset X\)</span> - компакт и
-<span class="math inline">\(U \subset Y\)</span> - открытое в топологии
+Рассмотрим <span class="math inline">\(K \subset X\)</span> – компакт и
+<span class="math inline">\(U \subset Y\)</span> – открытое в топологии
 <span class="math inline">\(Y\)</span>. Хотим, чтобы множество <span
 class="math inline">\(W(K, U) = \{\mathcal{C}(X, Y) \ni f: K \to
 U|\,\,\,\, f(K) \subset U\}\)</span> было открыто в <span
@@ -372,11 +390,13 @@ class="math inline">\(\Phi: Z^{X\times Y} \to (Z^{Y})^X\)</span>.</p>
 class="math inline">\(f(x, Y)\)</span> обозначает отображение <span
 class="math inline">\(f(x, Y): Y \to Z, \,\,\,\, f(x, Y): y \mapsto f(x,
 y)\)</span>.</p>
-<p>Если <span class="math inline">\(X\)</span> хаусдорфово, то <span
-class="math inline">\(\Phi\)</span> – непрерывно, Если <span
-class="math inline">\(X\)</span> хаусдорфово, <span
+<ol type="1">
+<li>Если <span class="math inline">\(X\)</span> хаусдорфово, то <span
+class="math inline">\(\Phi\)</span> – непрерывно,</li>
+<li>Если <span class="math inline">\(X\)</span> хаусдорфово, <span
 class="math inline">\(Y\)</span> хаусдорфово и локально компактно, то
-<span class="math inline">\(\Phi\)</span> – гомеоморфизм.</p>
+<span class="math inline">\(\Phi\)</span> – гомеоморфизм.</li>
+</ol>
 <p><em>Доказательство:</em></p>
 <p><img src="publish/img/exponential-law.png" /></p>
 <h1 id="гомотопии">Гомотопии</h1>
@@ -411,7 +431,7 @@ class="math inline">\(g\)</span>.</p>
 <li><span class="math inline">\(f \sim f\)</span>, так как в качестве
 гомотопии можно взять <span class="math inline">\(f\)</span>.</li>
 <li><span class="math inline">\(f \sim g \implies g \sim f\)</span>, так
-как, если <span class="math inline">\(F\)</span> - гомотопия <span
+как, если <span class="math inline">\(F\)</span> – гомотопия <span
 class="math inline">\(f\)</span> и <span
 class="math inline">\(g\)</span>, то в качестве гомотопии функций <span
 class="math inline">\(g\)</span> и <span
@@ -461,7 +481,7 @@ class="math inline">\(X \cong Y\)</span>.</p>
 <p><em>Доказательство:</em></p>
 <ol type="1">
 <li><span class="math inline">\(X \simeq X\)</span>, так как в качестве
-гомомтопической эквивалентности можно взять <span
+гомотопической эквивалентности можно взять <span
 class="math inline">\(\operatorname{id}_X\)</span>,</li>
 <li>Пусть <span class="math inline">\(X \simeq Y\)</span>, то есть
 существует гомотопическая эквивалентность <span
@@ -471,7 +491,7 @@ class="math inline">\(X\)</span> возьмем обратное отображ�
 class="math inline">\(f\)</span>,</li>
 <li><span class="math inline">\(X \simeq Y\)</span> и <span
 class="math inline">\(Y \simeq Z \implies X \simeq Z\)</span> в качестве
-гомомтопической эквивалентности возьмем композицию <span
+гомотопической эквивалентности возьмем композицию <span
 class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
 </ol>
 <h1 id="ретракции">Ретракции</h1>
@@ -592,19 +612,19 @@ class="math inline">\((X, A)\)</span> обладает свойством про
 A \to X: \,\,\,\, \pi\circ \pi^{-1} \sim \operatorname{id}_{X /
 A}\)</span> и <span class="math inline">\(\pi^{-1}\circ \pi \sim
 \operatorname{id}_X\)</span>.</p>
-<p><span class="math inline">\(A\)</span> стягиваемо, то есть <span
-class="math inline">\(c: A \to \operatorname{pt}\)</span> гомотопно
-<span class="math inline">\(\operatorname{id}_A\)</span>, а значит
-существует непрерывное <span class="math inline">\(F’: A \times I \to
-A\)</span>, такое что <span class="math inline">\(F’_0 =
+<p><span class="math inline">\(A\)</span> стягиваемо, то есть композиция
+<span class="math inline">\(c: A \to \operatorname{pt}\)</span>
+гомотопно <span class="math inline">\(\operatorname{id}_A\)</span>, а
+значит существует непрерывное <span class="math inline">\(F’: A \times I
+\to A\)</span>, такое что <span class="math inline">\(F’_0 =
 \operatorname{id}_A\)</span> и <span class="math inline">\(F’_1 =
 \operatorname{pt}\)</span>.</p>
 <p>Пусть <span class="math inline">\(F: X\times I\to X\)</span>
 продолжение гомотопии <span class="math inline">\(F’\)</span>. <span
-class="math inline">\(F_t(A) \subset A \forall t \in I\)</span>, а
-значит <span class="math inline">\(\forall t \in I\)</span> определено
-отображение <span class="math inline">\(G_t: X /A \to X/A\)</span>,
-которое переводит класс эквивалентности <span
+class="math inline">\(F_t(A) \subset A \,\,\,\, \forall t \in
+I\)</span>, а значит <span class="math inline">\(\forall t \in
+I\)</span> определено отображение <span class="math inline">\(G_t: X /A
+\to X/A\)</span>, которое переводит класс эквивалентности <span
 class="math inline">\([x]\)</span> элемента <span
 class="math inline">\(x \in X\)</span> в <span
 class="math inline">\([F_t([x])]\)</span>. Пусть <span
@@ -859,7 +879,7 @@ class="math inline">\(f(x_0) = y_0\)</span>.</p>
 class="math inline">\(f: (X, x_0) \to (Y, y_0)\)</span>. Тогда <span
 class="math inline">\(f_{\ast}: [u] \mapsto [f\circ u]\)</span> –
 гомоморфизм фундаментальных групп <span class="math inline">\(\pi_1(X,
-x_0)\)</span> и <span class="math inline">\(\pi_2(Y, y_0)\)</span>.</p>
+x_0)\)</span> и <span class="math inline">\(\pi_1(Y, y_0)\)</span>.</p>
 <p><em>Доказательство:</em></p>
 <p>Корректность определения <span
 class="math inline">\(f_{\ast}\)</span>. Пусть <span
@@ -892,7 +912,7 @@ u)] = \varphi_{\ast}([\psi u]) = \varphi_{\ast} \psi_{\ast}([u])
 </ol>
 <blockquote>
 <p>Из предыдущего утверждения следует, что фундаментальная группа –
-функтор. Я когда-нибудь это осознаю.</p>
+функтор. Я когда-нибудь это осознаю. Воу, а я осознала. Прикольно)</p>
 </blockquote>
 <h2 id="зачем-нужны-отмеченные-точки">Зачем нужны отмеченные точки?</h2>
 <hr />
@@ -993,22 +1013,9 @@ class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 <h2 id="фундаментальная-группа-окружности">Фундаментальная группа
 окружности</h2>
 <hr />
-<p><img src="img/nakrytie.png" /> <img src="img/S1toRnakr.png" /> <img
-src="img/S1toRnakrproof.png" /></p>
 <p><strong>Напоминание:</strong> <span class="math inline">\(S^1 = \{(x,
 y)| \,\,\,\, x^2 + y^2 = 1\} = \{z \in \mathbb{C}| \,\,\,\, |z| =
 1\}\)</span>.</p>
-<p><strong>Лемма:</strong><a name="lemma-3"></a> Рассмотрим отображение
-<span class="math inline">\(p: (\mathbb{R}, 0) \to (S^1, s_0): x \mapsto
-e^{2\pi i x}\)</span>. Пусть определено отображение <span
-class="math inline">\(\gamma: (S^1, s_0) \to (S^1, s_0)\)</span>. Тогда
-существует единственное отображение <span class="math inline">\(f: (S^1,
-s_0) \to (\mathbb{R}, 0)\)</span>, такое что композиция <span
-class="math inline">\(f\circ p\)</span> непрерывна.</p>
-<p><em>Доказательство:</em></p>
-<p><img src="img/35.1podnyatie.png" /></p>
-<p><img src="img/theorem-nakrytie.png" /> <img
-src="img/theorem-nakrytie-proof.png" /></p>
 <p><strong>Утверждение:</strong><a name="statement-22"></a>
 (<em>фундаментальная группа окружности</em>) <span
 class="math display">\[\pi_1(S^1) \simeq \mathbb{Z}\]</span></p>
@@ -1042,7 +1049,7 @@ class="math inline">\(S^1 \,\,\,\,\blacksquare\)</span></p>
 <h2 id="основная-теорема-алгебры">Основная теорема алгебры</h2>
 <hr />
 <p><strong>Теорема:</strong><a name="theorem-4"></a> У любого многочлена
-<span class="math inline">\(f(z) = z^n + a_{n - 1}z^{n - 1} + \ldots +
+<span class="math inline">\(f(z) = z^n + a_{n -- 1}z^{n -- 1} + \ldots +
 a_1 z + a_0\)</span> над полем <span
 class="math inline">\(\mathbb{C}\)</span> существует корень.</p>
 <p><em>Доказательство:</em></p>
@@ -1157,9 +1164,11 @@ class="math inline">\(\gamma(t_i)\)</span> и целиком лежащий в <
 class="math inline">\(A\cap B\)</span>.</p>
 <p><span class="math inline">\(\gamma = \gamma_1\gamma_2\ldots \gamma_n
 =
-(\gamma_1\rho_1\rho_1^{-1})(\gamma_2\rho_2\rho_2^{-1})\ldots(\gamma_n\rho_n\rho_n^{-1})\)</span>,
+(\gamma_1\rho_1\rho_1^{-1})(\gamma_2\rho_2\rho_2^{-1})\ldots(\gamma_n\rho_n\rho_n^{-1})
+=
+\gamma_1\rho_1(\rho_1^{-1}\gamma_2\rho_2)(\rho_2^{-1}\ldots\gamma_n\rho_n)\rho_n^{-1}\)</span>,
 где каждая скобка вида <span
-class="math inline">\((\gamma_i\rho_i\rho_i^{-1})\)</span> петля,
+class="math inline">\((\rho_{i-1}^{-1}\gamma_i\rho_i)\)</span> петля,
 целиком лежащая в <span class="math inline">\(A\)</span> или <span
 class="math inline">\(B\)</span>. Сюръективность доказана.</p>
 <ol start="2" type="1">
@@ -1170,8 +1179,8 @@ class="math inline">\(B\)</span>. Сюръективность доказана.
 <li><p><span class="math inline">\(N \subset
 \operatorname{Ker}\Phi\)</span>, так как включения на элементах из <span
 class="math inline">\(A\cap B\)</span> дейсвуют одинаково, то есть <span
-class="math inline">\(\alpha(w)\beta(w)^{-1} = \vec{1} \forall w \in A
-\cap B\)</span>.</p></li>
+class="math inline">\(\alpha(w)\beta(w)^{-1} = \mathbb{1}\,\,\,\,
+\forall w \in A \cap B\)</span>.</p></li>
 <li><p>Пусть <span class="math inline">\(w = [u_1][v_1][u_2][v_2]\ldots
 [u_n][v_n]\in \pi_1(A, x_0)\ast \pi_1(B, x_0)\)</span> и <span
 class="math inline">\(w \in \operatorname{Ker}\Phi\)</span>, то есть
@@ -1231,12 +1240,15 @@ class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 class="math inline">\(Y\)</span> и <span
 class="math inline">\(X\)</span> – линейно связные и локально линейно
 связные топологические пространства и <span class="math inline">\(p: Y
-\to X\)</span> – непрерывное отображение. Пусть у каждой точки <span
-class="math inline">\(x \in X\)</span> существует окрестность <span
-class="math inline">\(U_x \in \tau_X\)</span>, такая что <span
-class="math inline">\(p^{-1}(U_x) = \sqcup_{\alpha}V_{\alpha}\)</span> и
-<span class="math inline">\(\forall \alpha \,\,\,\, p_{|V_{\alpha}}:
-V_{\alpha} \to U_x\)</span> – гомеоморфизм.</p>
+\to X\)</span> – непрерывное (сюръективное) отображение. Пусть у каждой
+точки <span class="math inline">\(x \in X\)</span> существует
+окрестность <span class="math inline">\(U_x \in \tau_X\)</span>, такая
+что <span class="math inline">\(p^{-1}(U_x) =
+\sqcup_{\alpha}V_{\alpha}\)</span> и <span class="math inline">\(\forall
+\alpha \,\,\,\, p_{|V_{\alpha}}: V_{\alpha} \to U_x\)</span> –
+гомеоморфизм. Тогда <span class="math inline">\(p\)</span> –
+<em>накрытие</em> пространства <span class="math inline">\(X\)</span>
+пространством <span class="math inline">\(Y\)</span>.</p>
 <h2 id="примеры-накрытий">Примеры накрытий</h2>
 <hr />
 <ul>
@@ -1278,7 +1290,7 @@ class="math inline">\(p_{|V_i}^{-1}\circ
 1}])\)</span>, далее выберем среди <span class="math inline">\(V_{(i+1)
 \alpha}\)</span> окрестность, содержащую нужную точку и т.д. <span
 class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
-<p>Если что это несложно сделать аккуратно.</p>
+<p>Если что это несложно сделать аккуратно. Реально?</p>
 <p><strong>Лемма:</strong><a name="lemma-7"></a> (<em>поднятие
 гомотопии</em>) Пусть <span class="math inline">\((\tilde{X}, p,
 X)\)</span> – накрытие. <span class="math inline">\(f: Y \times I \to
@@ -1300,15 +1312,22 @@ class="math inline">\(\tilde{f}\)</span>. Непрерывность прове�
 href="#fn9" class="footnote-ref" id="fnref9"
 role="doc-noteref"><sup>9</sup></a> <span
 class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2
+id="гомоморфизм-фундаментальных-групп-индуцированный-отображением-накрытия">Гомоморфизм
+фундаментальных групп, индуцированный отображением накрытия</h2>
+<hr />
 <p><strong>Лемма:</strong><a name="lemma-8"></a> Пусть <span
-class="math inline">\((\tilde{X}, p, X)\)</span> – накрытие. Тогда <span
-class="math inline">\(p_{*}: \pi_1(\tilde{X}, x_0) \to \pi_1(X,
-p(x_0))\)</span> – инъективен, то есть <span
+class="math inline">\((\tilde{X}, p, X)\)</span> – накрытие. Тогда
+гомоморфизм <span class="math inline">\(p_{*}: \pi_1(\tilde{X}, x_0) \to
+\pi_1(X, p(x_0))\)</span> – инъективен, то есть <span
 class="math inline">\(p_{*}(\pi_1(\tilde{X}, x_0))\)</span> подгруппа в
 <span class="math inline">\(\pi_1(X, p(x_0))\)</span>, причем она
 состоит из тех классов петель, поднятия которых – петли.</p>
 <p><em>Доказательство:</em> По предыдущей лемме ядро тривиально. <span
 class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="критерий-поднятия-отображения">Критерий поднятия
+отображения</h2>
+<hr />
 <p><strong>Теорема:</strong><a name="theorem-6"></a> Пусть <span
 class="math inline">\((\tilde{X}, p, X)\)</span> – накрытие. <span
 class="math inline">\(f: (Y, y_0) \to (X, x_0)\)</span> и <span
@@ -1323,8 +1342,8 @@ p_{*}(\pi_1(\tilde{X}, \tilde{x}_0))\)</span>.</p>
 <hr />
 <p><strong>Определение:</strong><a name="definition-33"></a> Накрытие
 <span class="math inline">\((\tilde{X}, p, X)\)</span>
-<em>универсальное</em>, если <span class="math inline">\(\pi_1(X) =
-\{e\}\)</span>.</p>
+<em>универсальное</em>, если <span
+class="math inline">\(\pi_1(\tilde{X}) = \{e\}\)</span>.</p>
 <h3 id="пример">Пример</h3>
 <p><span class="math inline">\((\mathbb{R}^1, p, S^1)\)</span> –
 универсально.</p>
