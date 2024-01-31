@@ -833,3 +833,20 @@ Prism.languages.gnuplot = {
     // operator: /[-+%=]=?|!=|:=|\*\*?=?|\/\/?=?|<[<=>]?|>[=>]?|[&|^~]/,
     punctuation: /[{}[\];(),.:]/
 }
+Prism.languages.mp = {
+    comment: {
+        pattern: /(^|[^\\])% .*/,
+        lookbehind: !0,
+        greedy: !0
+    },
+    string: {
+        pattern: /(?:[rub]|br|rb)?("|')(?:\\.|(?!\1)[^\\\r\n])*\1/i,
+        greedy: !0
+    },
+    keyword: /\b(?:_(?=\s*:)|fi|numeric|pair|boolean|color|transform|path|pen|picture|string|beginfig|point|begingroup|vardef|direction|of|endfig|def|enddef|endfor|endgroup|endfig|bye|if|else|elseif|for|while|upto)\b/,
+    builtin: /\b(?:abs|addto|also|halfcircle|rotatedaround|contour|doublepath|ahangle|ahlength|and|angle|arclength|arctime of|background|bbox|bboxmargin|beveled|black|blue|bluepart|bot|boxit|boxjoin|bp|bpath|btex|buildcycle|butt|ceiling|center|char|charcode|circleit|circmargin|clip to|controls|cosd|curl|currentpen|currentpicture|cutafter|cutbefore|cutdraw|cuttings|cycle|dashed|decr|defaultdx|defaultdy|defaultfont|defaultpen|defaultscale|dir|directionpoint of|directiontime of|dotlabel|dotlabels|dotprod|down|downto|draw|draw_mark|draw_marked|drawarrow|drawboxed|drawdblarrow|drawoptions|drawshadowed|drawunboxed|dvips|else|elseif|end|epsfbox|epsilon|etex|evenly|exitif|exitunless|extra_endfig|extra_beginfig|fill|filldraw|fixpos|fixsize|floor|fontsize|for|forever|forsuffixes|fullcircle|getmid|greenpart|halcircle|hex|hide|identity|if|in|incr|infinity|infont|input|interim|intersectionpoint|intersectiontimes|inverse|joinup|known|label|labeloffset|labels|left|length|let|lft|linecap|linejoin|llcorner|llft|logginall|lrcorner|lrt|makepath|makepen|mark_angle|draw_rt_angle|max|mexp|mfpictures|mfplain|middlepoint|midpoint|min|mitered|miterlimit|mlog|mm|mod|month|mpxbreak|newinternal|normaldeviate|not|nullpicture|oct|odd|off|on|or|origin|pausing|pc|pencircle|penoffset|pensquare|pic|pickup|point of|precontrol|postcontrol|primary|primarydef|prologues|pt|quartercircle|red|redpart|reflectedabout|reverse|right|rotated|round|rounded|rt|save|scaled|secondarydef|self|setbounds|shifted|shipout|show|showdependencies|showstopping|sind|slanted|special|sqrt|squared|step|str|ubpath of|substring of|suffix|tension|tertiarydef|text|thelabel|time|top|tracingall|tracingcapsules|tracingchoices|tracingcommands|tracingequations|tracinglostchars|tracingmacros|tracingnone|tracingonline|tracingoutput|tracingrestores|tracingspecs|tracingstats|tracingtitles|transformed|corner|ulcorner|ulft|undraw|unfill|unfilldraw|uniformdeviate|unitsquare|unitvector|unknown|untill|up|upto|urcorner|urt|verbatimtex|warningcheck|whatever|white|withcolor|withdots|withpen|xpart|xscaled|xxpart|xypart|year|ypart|yscaled|yxpart|yypart|zscaled)\b/,
+    // boolean: /\b(?:False|None|True)\b/,
+    number: /(?:\b[\d]+(?:\.[\d]*)?|\B\.[\d]+)[a-z]*/i,
+    // operator: /[-+%=]=?|!=|:=|\*\*?=?|\/\/?=?|<[<=>]?|>[=>]?|[&|^~]/,
+    punctuation: /[{}[\];(),.:]/
+}

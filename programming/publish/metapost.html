@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Программирование</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link href="utils/prism-monokai.css" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Программирование</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#metapost" id="toc-metapost">Metapost</a>
+<ul>
+<li><a href="#создание-картинки-из-metapost-кода"
+id="toc-создание-картинки-из-metapost-кода">Создание картинки из
+<code>metapost</code> кода</a></li>
+<li><a href="#примеры-и-синтаксис" id="toc-примеры-и-синтаксис">Примеры
+и синтаксис</a>
+<ul>
+<li><a href="#окружность" id="toc-окружность">Окружность</a></li>
+<li><a href="#равносторонний-треугольник"
+id="toc-равносторонний-треугольник">Равносторонний треугольник</a></li>
+<li><a href="#правильный-шестиугольник"
+id="toc-правильный-шестиугольник">Правильный шестиугольник</a></li>
+<li><a href="#проекции-куба-и-призмы-диаграммы-шлегеля-если-по-умному"
+id="toc-проекции-куба-и-призмы-диаграммы-шлегеля-если-по-умному">Проекции
+куба и призмы (диаграммы Шлегеля, если по-умному)</a></li>
+</ul></li>
+<li><a href="#чиселки-в-metapost" id="toc-чиселки-в-metapost">Чиселки в
+<code>metapost</code></a></li>
+<li><a href="#базовые-типы-данных" id="toc-базовые-типы-данных">Базовые
+типы данных</a>
+<ul>
+<li><a href="#пара-pair" id="toc-пара-pair">Пара
+<code>pair</code></a></li>
+</ul></li>
+<li><a href="#как-менять-толщину-линии"
+id="toc-как-менять-толщину-линии">Как менять толщину линии?</a>
+<ul>
+<li><a href="#локально-на-один-раз"
+id="toc-локально-на-один-раз">Локально (на один раз)</a></li>
+<li><a href="#глобально" id="toc-глобально">Глобально</a></li>
+<li><a href="#точка-пересечения-медиан-треугольника-и-метки-вершин"
+id="toc-точка-пересечения-медиан-треугольника-и-метки-вершин">Точка
+пересечения медиан треугольника и метки вершин</a></li>
+<li><a href="#пятиугольник-с-помощью-команды-dir"
+id="toc-пятиугольник-с-помощью-команды-dir">Пятиугольник с помощью
+команды <code>dir</code></a></li>
+<li><a href="#пересекающиеся-под-углом-30-градусов-прямые"
+id="toc-пересекающиеся-под-углом-30-градусов-прямые">Пересекающиеся под
+углом <span class="math inline">\(30\)</span> градусов прямые</a></li>
+</ul></li>
+<li><a href="#пути-path" id="toc-пути-path">Пути (<code>Path</code>)</a>
+<ul>
+<li><a href="#mystery-of-magical-z-is-solved"
+id="toc-mystery-of-magical-z-is-solved">Mystery of magical
+<code>z</code> is solved</a></li>
+<li><a href="#закрытые-и-открытые-пути"
+id="toc-закрытые-и-открытые-пути">Закрытые и открытые пути</a></li>
+</ul></li>
+<li><a href="#цвета-color" id="toc-цвета-color">Цвета
+(<code>Color</code>)</a>
+<ul>
+<li><a href="#как-нарисовать-кривую-а-не-прямую"
+id="toc-как-нарисовать-кривую-а-не-прямую">Как нарисовать кривую, а не
+прямую?</a></li>
+<li><a
+href="#что-можно-делать-с-кривыми-или-как-сделать-их-еще-более-кривыми"
+id="toc-что-можно-делать-с-кривыми-или-как-сделать-их-еще-более-кривыми">Что
+можно делать с кривыми? Или как сделать их еще более кривыми…</a></li>
+<li><a href="#красивый-угол" id="toc-красивый-угол">Красивый
+угол</a></li>
+<li><a href="#какой-то-непонятный-граф"
+id="toc-какой-то-непонятный-граф">Какой-то непонятный граф</a></li>
+<li><a href="#инь-янь" id="toc-инь-янь">Инь-Янь</a></li>
+<li><a href="#биссектриса-треугольника-whatever-и-angle"
+id="toc-биссектриса-треугольника-whatever-и-angle">Биссектриса
+треугольника, <code>whatever</code> и <code>angle</code></a></li>
+<li><a href="#точка-пересечения-биссектрис"
+id="toc-точка-пересечения-биссектрис">Точка пересечения
+биссектрис</a></li>
+</ul></li>
+<li><a href="#стрелки-arrow" id="toc-стрелки-arrow">Стрелки
+<code>Arrow</code></a>
+<ul>
+<li><a href="#команда-reverse" id="toc-команда-reverse">Команда
+<code>reverse</code></a></li>
+<li><a href="#стили-стрелок" id="toc-стили-стрелок">Стили стрелок</a>
+<ul>
+<li><a href="#какой-то-сложный-пример-на-стиль-стрелки"
+id="toc-какой-то-сложный-пример-на-стиль-стрелки">Какой-то сложный
+пример на стиль стрелки</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#кружки-эллипсы-квадраты-и-прямоугольники"
+id="toc-кружки-эллипсы-квадраты-и-прямоугольники">Кружки, эллипсы,
+квадраты и прямоугольники</a></li>
+<li><a href="#транформации" id="toc-транформации">Транформации</a>
+<ul>
+<li><a href="#большой-пример-на-трансформации-и-кружочки-квадраты"
+id="toc-большой-пример-на-трансформации-и-кружочки-квадраты">Большой
+пример на трансформации и кружочки / квадраты</a></li>
+</ul></li>
+<li><a href="#текст-в-metapost" id="toc-текст-в-metapost">Текст в
+<code>metapost</code></a></li>
+<li><a href="#как-поменять-шрифт-и-его-размер"
+id="toc-как-поменять-шрифт-и-его-размер">Как поменять шрифт и его
+размер?</a></li>
+<li><a href="#оператор-конкатенации"
+id="toc-оператор-конкатенации">Оператор конкатенации</a>
+<ul>
+<li><a href="#изспользование-latex-в-metapost"
+id="toc-изспользование-latex-в-metapost">Изспользование
+<code>latex</code> в <code>metapost</code></a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="metapost">Metapost</h1>
+<hr />
+<p><code>Metapost</code> – это язык для рисования векторной графики.</p>
+<h2 id="создание-картинки-из-metapost-кода">Создание картинки из
+<code>metapost</code> кода</h2>
+<hr />
+<p><code>mpost filename</code></p>
+<p>Не обязательно писать <code>.mp</code>, то есть команда выше
+эквивалентна <code>mpost filename.mp</code>.</p>
+<h2 id="примеры-и-синтаксис">Примеры и синтаксис</h2>
+<hr />
+<p><code>%</code> – комментарий.</p>
+<p>Дефолтная единица измерения – <code>PostScript point</code> или
+<code>bp</code>. <code>bp</code> <span class="math inline">\(=
+0.35\)</span> мм <span class="math inline">\(=\frac{1}{72}\)</span>
+дюймов.</p>
+<p>В <code>metapost</code> можно писать <code class="language-mp">42abracodabra</code>, что значит
+<code>42 * abracodabra</code>. Есть предопределенные единицы измерения,
+например, <code>cm</code>.</p>
+<h3 id="окружность">Окружность</h3>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+draw fullcircle scaled 2cm; % scaled - увеличить в 2cm раз
+
+endfig
+bye.</code></pre>
+<h3 id="равносторонний-треугольник">Равносторонний треугольник</h3>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+u := 2cm;
+h := (sqrt(3) / 2) * u; % высота треугольника
+
+draw (0, 0) -- (0.5u, h) -- (u, 0) -- (0, 0);
+
+endfig
+bye.</code></pre>
+<h3 id="правильный-шестиугольник">Правильный шестиугольник</h3>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+pi := 3.1415926;
+radian := 180/pi;
+vardef sin primary x = (sind(x*radian)) enddef;
+vardef cos primary x = (cosd(x*radian)) enddef;
+
+u := 5cm;
+n := 6;
+
+draw ((1u, 0)
+    for k := 1 upto n:
+    -- (cos(2pi * k / n) * u, sin(2pi * k / n) * u) endfor);
+
+endfig
+bye.</code></pre>
+<h3
+id="проекции-куба-и-призмы-диаграммы-шлегеля-если-по-умному">Проекции
+куба и призмы (диаграммы Шлегеля, если по-умному)</h3>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+pi := 3.1415926;
+radian := 180/pi;
+vardef sin primary x = (sind(x*radian)) enddef;
+vardef cos primary x = (cosd(x*radian)) enddef;
+
+u := 5cm;
+q := 2.5cm;
+n := 4;
+
+draw ((1, 0)
+    for k := 1 upto n:
+    -- (cos(2pi * k / n), sin(2pi * k / n)) endfor) scaled u;
+
+draw ((1, 0)
+    for k := 1 upto n:
+    -- (cos(2pi * k / n), sin(2pi * k / n)) endfor) scaled (u / 2);
+
+for k := 0 upto n:
+    draw (cos(2pi * k / n), sin(2pi * k / n)) scaled (u / 2) -- (cos(2pi * k / n), sin(2pi * k / n)) scaled u;
+endfor
+
+endfig
+bye.</code></pre>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+pi := 3.1415926;
+radian := 180/pi;
+vardef sin primary x = (sind(x*radian)) enddef;
+vardef cos primary x = (cosd(x*radian)) enddef;
+
+u := 5cm;
+q := 2.5cm;
+n := 3;
+
+draw ((1, 0)
+    for k := 1 upto n:
+    -- (cos(2pi * k / n), sin(2pi * k / n)) endfor) scaled u;
+
+draw ((1, 0)
+    for k := 1 upto n:
+    -- (cos(2pi * k / n), sin(2pi * k / n)) endfor) scaled (u / 2);
+
+for k := 0 upto n:
+    draw (cos(2pi * k / n), sin(2pi * k / n)) scaled (u / 2) -- (cos(2pi * k / n), sin(2pi * k / n)) scaled u;
+endfor
+
+endfig
+bye.</code></pre>
+<h2 id="чиселки-в-metapost">Чиселки в <code>metapost</code></h2>
+<hr />
+<ul>
+<li>Единственный числовой тип – <code>numeric</code></li>
+<li>Числа с фиксированной точностью</li>
+<li>По умолчанию переменная – это <code>numeric</code>, поэтому их можно
+не объявлять заранее, а писать <code>n := 5;</code> <a href="#fn1"
+class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a></li>
+<li>Чтобы напечатать число в консоли, надо написать
+<code>show n;</code></li>
+<li>Возведение в степень – <code>2**n;</code></li>
+</ul>
+<h2 id="базовые-типы-данных">Базовые типы данных</h2>
+<hr />
+<h3 id="пара-pair">Пара <code>pair</code></h3>
+<ul>
+<li><code>pair p; p := (1, 0);</code></li>
+<li>Можно складывать, умножать на <code>numeric</code> и т.д., то есть
+<code>pair</code> можно воспринимать как вектор</li>
+<li>Пару можно воспринимать как точку и рисовать
+<code>draw (1, 6);</code></li>
+<li>Если переменная для имени пары начинается с <code>z</code> и
+заканчивается числом, то автоматически создаются переменные
+<code>x[число]</code> и <code>y[число]</code>. В общем, лучше на
+примере:</li>
+</ul>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+z0 = (1, 2); % супер важно, что начинается с z
+% если не так, то присваивание с = не работает
+
+show x0;
+show y0;
+
+endfig
+bye.</code></pre>
+<ul>
+<li>Пусть есть две пары, и пусть они задают отрезок. Как найти
+середину?</li>
+</ul>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+z0 = (0, 0);
+z1 = (100, 100);
+
+z2 = 1/2[z0, z1];
+
+draw z0 -- z1;
+
+draw z2 withpen pencircle scaled 10;
+
+endfig
+bye.</code></pre>
+<h2 id="как-менять-толщину-линии">Как менять толщину линии?</h2>
+<hr />
+<h3 id="локально-на-один-раз">Локально (на один раз)</h3>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+draw unitsquare scaled 70 withcolor red;
+
+draw (35, 35) withpen pencircle scaled 4; % временно поменяли, то есть при следующем вызове draw ничего не поменяется
+
+% scaled тут относится к pen
+
+endfig
+bye.</code></pre>
+<h3 id="глобально">Глобально</h3>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+pickup pencircle scaled 4; % теперь все будет шириной 4 PostScript point
+
+draw unitsquare scaled 70 withcolor red;
+
+draw (35, 35);
+
+endfig
+bye.</code></pre>
+<h3 id="точка-пересечения-медиан-треугольника-и-метки-вершин">Точка
+пересечения медиан треугольника и метки вершин</h3>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+z0 = (0, 0);
+z1 = (30, 50);
+z2 = (100, 0);
+
+draw (z0 -- z1 -- z2 -- cycle) scaled 3;
+
+dotlabel.llft(&quot;A&quot;, z0);
+dotlabel.lrt(&quot;B&quot;, z2 scaled 3);
+dotlabel.top(&quot;C&quot;, z1 scaled 3);
+
+
+draw (z0 -- 1/2[z1, z2]) scaled 3;
+draw (z1 -- 1/2[z0, z2]) scaled 3;
+draw (z2 -- 1/2[z1, z0]) scaled 3;
+
+dotlabel.ulft(&quot;B&#39;&quot;, 1/2[z1, z0] scaled 3);
+dotlabel.urt(&quot;A&#39;&quot;, 1/2[z1, z2] scaled 3);
+dotlabel.bot(&quot;C&#39;&quot;, 1/2[z0, z2] scaled 3);
+
+endfig
+bye.</code></pre>
+<h3 id="пятиугольник-с-помощью-команды-dir">Пятиугольник с помощью
+команды <code>dir</code></h3>
+<ul>
+<li><code>dir(60)</code> = <span class="math inline">\((\frac12,
+\frac{\sqrt{3}}2)\)</span> – команда позволяет по углу получить точку на
+единичной окружности.</li>
+</ul>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+n := 5;
+pi := 3.1415926;
+
+draw (dir(0) for k := 1 upto n: -- dir((360 / n) * k) endfor) scaled 5cm withpen pencircle scaled 3;
+
+endfig
+bye.</code></pre>
+<h3 id="пересекающиеся-под-углом-30-градусов-прямые">Пересекающиеся под
+углом <span class="math inline">\(30\)</span> градусов прямые</h3>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+draw (dir(-45) -- dir(45 * 3)) scaled 5cm;
+draw ((0, 0) -- dir(105)) scaled 5cm;
+draw (0, 0) withpen pencircle scaled 10;
+
+endfig
+bye.</code></pre>
+<h2 id="пути-path">Пути (<code>Path</code>)</h2>
+<hr />
+<p>Путь – это такой тип данных в <code>metapost</code>. Объявляется:
+<code>path</code>.</p>
+<h3 id="mystery-of-magical-z-is-solved">Mystery of magical
+<code>z</code> is solved</h3>
+<ul>
+<li><code>pair p[];</code> – создаёт массив из пар. Казалось бы дальше
+все просто <code>p[i] = (1, 2)</code>, но нет, это же
+<code>metapost</code> и он прекрасен! Чтобы создать элемент массива
+нужно написать <code>p1 = (1, 2)</code> или
+<code>p100500 = (42, 42)</code>. Прекрасно, не правда ли? :)</li>
+</ul>
+<h3 id="закрытые-и-открытые-пути">Закрытые и открытые пути</h3>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+pair p[];
+
+p0 = (0, 0); p1 = (3cm, 5cm); p2 = (7cm, 0);
+
+draw (p0 -- p1 -- p2 -- p0);
+draw (p0 -- p1 -- p2 -- cycle) shifted (8cm, 0);
+
+% Визуально одно и тоже, но --cycle создает
+% действительно замкнутый путь и его можно заливать цветом, например
+
+endfig
+bye.</code></pre>
+<h2 id="цвета-color">Цвета (<code>Color</code>)</h2>
+<hr />
+<p>Еще один тип данных. Объявляется: <code>color</code>.</p>
+<ul>
+<li>Цвета, как и пары, можно ипользовать как векторы, то есть умножать
+на <code>numeric</code> и складывать. Правда, значения ограничены.</li>
+</ul>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+pair p[];
+
+p0 = (0, 0); p1 = (3cm, 5cm); p2 = (7cm, 0);
+
+% fill (p0 -- p1 -- p2 -- p0) withcolor black; тут возникает ошибка
+fill (p0 -- p1 -- p2 -- cycle) shifted (8cm, 0) withcolor 0.7*(red + green);
+
+% а замкнутый путь можно залить
+
+endfig
+bye.</code></pre>
+<h3 id="как-нарисовать-кривую-а-не-прямую">Как нарисовать кривую, а не
+прямую?</h3>
+<p>Команда <code>p0 -- p1</code> соединяет точки <code>p1</code> и
+<code>p0</code> прямой, а команда <code>..</code> проводит через точки
+<code>p1</code> и <code>p0</code> кривую Безье, то есть кривую, заданную
+формулой: <span class="math inline">\(f(t) = (1 - t)^2 p_0 + 3(1 - t)^2
+t c_0 + 3(1 - t)^2 t c_1 + t^3 p_1, \,\,\,\, t \in [0, 1]\)</span>, где
+<code>c0</code> и <code>c1</code> точки, которые <code>metapost</code>
+вычисляет так, чтобы отрезки через точки <code>p0</code> и
+<code>c0</code> были касательными к итоговой кривой.</p>
+<p>Эти точки можно получить в коде:</p>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+color gray;
+
+u := 1.2cm;
+gray := 0.6white;
+
+pair p[]; p0 = (0, 0); p1 = (2cm, 3cm); p2 = (7cm, 4cm);
+
+path q; q := p0..p1..p2..cycle;
+
+def drawpoint(expr p, c) =
+    draw p withpen pencircle scaled 3 withcolor c;
+enddef;
+
+for i := 0 upto length(q):
+    drawpoint(point i of q, black);
+    p3 := precontrol i of q;
+    p4 := postcontrol i of q;
+    draw p3 -- p4 withcolor gray;
+    drawpoint(p3, gray);
+    drawpoint(p4, gray);
+endfor;
+
+draw q;
+
+endfig
+bye.</code></pre>
+<h3
+id="что-можно-делать-с-кривыми-или-как-сделать-их-еще-более-кривыми">Что
+можно делать с кривыми? Или как сделать их еще более кривыми…</h3>
+<p>Чтобы изменить кривую можно:</p>
+<ul>
+<li>Менять угол начала и конца кривой с помощью команд <code>up</code>,
+<code>down</code>, <code>left</code>, <code>right</code> или
+<code>dir</code></li>
+<li>Еще есть команды <code>tension</code> и <code>curl</code>, которые
+меняют кривизну и скорость достижения начальной и конечной точек, чтобы
+это ни значило. <code>curl</code> в процентах, если их много, то
+выбирается наиболее кривой путь (с самой большой амплитудой), если
+процент маленький, то наоборот – самый короткий. <code>tension</code> в
+процентах, чем меньше, тем больше свободы у кривой, то есть ей
+необязательно очень быстро попасть в нужную точку, а если процент <span
+class="math inline">\(100\)</span>, то точки соединяются прямой. Вообще
+лучше смотреть примеры, а еще лучше их писать</li>
+<li>Можно самостоятельно указывать точки <code>c0</code> и
+<code>c1</code> для кривой</li>
+</ul>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+pair p[]; p0 := (0, 0); p1 := (2cm, 2cm);
+
+def drawsquare(expr shift) = draw unitsquare scaled 2cm shifted shift withcolor 0.6white withpen pencircle scaled 1 enddef;
+
+drawsquare((0, 0)); drawarrow p0..p1;
+
+drawsquare((3cm, 0)); drawarrow (p0{up}..p1) shifted (3cm, 0);
+
+drawsquare((6cm, 0)); drawarrow (p0{dir(30)}..p1) shifted (6cm, 0);
+
+drawsquare((9cm, 0)); drawarrow (p0{down}..p1) shifted (9cm, 0);
+
+drawsquare((12cm, 0)); drawarrow (p0.. controls (0, 1.5cm) and (1.5cm, 0) ..p1) shifted (12cm, 0);
+
+drawsquare((15cm, 0)); drawarrow (p0{curl 90}..(0, -1.5cm)..{curl 5}p1) shifted (15cm, 0);
+
+draw (0, -1.5cm) shifted (15cm, 0) withpen pencircle scaled 5;
+
+drawsquare((18cm, 0)); drawarrow (p0..tension(1)..(1cm, -1.5cm)..p1) shifted (18cm, 0);
+
+draw (1cm, -1.5cm) shifted (18cm, 0) withpen pencircle scaled 5;
+
+drawsquare((21cm, 0)); drawarrow (p0..tension(100)..(1cm, -1.5cm)..p1) shifted (21cm, 0);
+
+draw (1cm, -1.5cm) shifted (21cm, 0) withpen pencircle scaled 5;
+
+
+endfig
+bye.</code></pre>
+<p>В <code>metapost</code> предопределены операторы <code>--</code>,
+<code>---</code> и <code>...</code> через <code>curl</code> и
+<code>tension</code>.</p>
+<ul>
+<li><code>def -- = {curl 1}..{curl 1} enddef;</code> – соедини
+прямыми,</li>
+<li><code>def -- = .. tension infinity .. enddef;</code> – получи
+гладкий переход от прямой до остальной кривой,</li>
+<li><code>def ... = .. tension atleast 1 .. enddef;</code> – соедини
+кривой без перегибов, если это возможно.</li>
+</ul>
+<h3 id="красивый-угол">Красивый угол</h3>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+a := 45;
+
+draw (0, 0) -- (10cm, 0);
+draw ((0, 0) -- dir(a)) scaled 10cm;
+draw (0, 0) withpen pencircle scaled 5;
+
+drawarrow (3cm, 0){dir(100)}..(3cm * dir(a));
+
+endfig
+bye.</code></pre>
+<h3 id="какой-то-непонятный-граф">Какой-то непонятный граф</h3>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+u := 5cm;
+pair p[]; p0 := (0, 0); p1 := dir(60)*u; p2 := (1u, 0);
+
+draw p0 withpen pencircle scaled 6;
+draw p1 withpen pencircle scaled 6;
+draw p2 withpen pencircle scaled 6;
+
+draw p0 -- p2 -- p1;
+
+draw p0{dir(45)}..p1;
+draw p0{dir(75)}..p1;
+
+endfig
+bye.</code></pre>
+<h3 id="инь-янь">Инь-Янь</h3>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+u := 7cm;
+
+pair a, b; a := (0, u / 2); b := (0, -u / 2);
+
+path p, q;
+
+p := (halfcircle scaled u rotated 90) -- a{curl 0.2}..(u / 4, u / 4)..(0, 0)..(-u/4, -u / 4)..{curl 0.2}b -- cycle;
+q := (halfcircle scaled u rotated -90) -- a{curl 0.1}..(u / 4, u / 4)..(0, 0)..(-u/4, -u / 4)..{curl 0.1}b -- cycle;
+
+fill p withcolor white;
+fill q withcolor black;
+
+draw (0, u / 4) withpen pencircle scaled 20;
+draw (0, -u / 4) withpen pencircle scaled 20 withcolor white;
+
+endfig
+bye.</code></pre>
+<h3 id="биссектриса-треугольника-whatever-и-angle">Биссектриса
+треугольника, <code>whatever</code> и <code>angle</code></h3>
+<ul>
+<li><code>angle</code> – обратная к <code>dir</code> функция. Вычисляет
+угол между вектором и осью <code>(0, 0) -- (1, 0)</code>.</li>
+</ul>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+a := angle(dir(60));
+
+show a; % 60.00008
+
+endfig
+bye.</code></pre>
+<ul>
+<li><code>whatever</code> – это собственно <code>whatever</code>.</li>
+</ul>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+u := 2cm;
+pair A, B, C, D, N, M;
+
+A := (0, 0); B := (1.5u, 3u); C := (5u, 0);
+
+draw A -- B -- C -- cycle;
+
+dotlabel.lft(&quot;A&quot;, A);
+dotlabel.top(&quot;B&quot;, B);
+dotlabel.urt(&quot;C&quot;, C);
+
+D = whatever[A, C] = B + whatever * dir(1/2 * angle(A - B) + 1/2 * angle(C - B));
+
+N = whatever[A, D] = B + whatever * dir(1/2 * angle(A - B) + 1/2 * angle(D - B));
+M = whatever[D, C] = B + whatever * dir(1/2 * angle(D - B) + 1/2 * angle(C - B));
+
+draw (B + 1/10 * (N - B)) -- (N - 7/8 * (N - B));
+draw (B + 1/10 * (M - B)) -- (M - 7/8 * (M - B));
+
+pair X, Y; X := B + 1/10 * (A - B); Y := B + (X - B) rotated (angle(C - B) - angle(A - B));
+
+draw X{dir(-45)}..Y;
+
+dotlabel.bot(&quot;D&quot;, D);
+
+draw B -- D;
+
+endfig
+bye.</code></pre>
+<h3 id="точка-пересечения-биссектрис">Точка пересечения биссектрис</h3>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.svg&quot;;
+outputformat := &quot;svg&quot;;
+beginfig(1)
+
+u := 1cm;
+pair A, B, C, D, E, F;
+
+A := (0, 0); B := (15, 30); C := (50, 0);
+
+draw (A -- B -- C -- cycle);
+
+dotlabel.lft(&quot;A&quot;, A);
+dotlabel.top(&quot;B&quot;, B);
+dotlabel.urt(&quot;C&quot;, C);
+
+D = whatever[A, C] = B + whatever * dir(1/2 * angle(A - B) + 1/2 * angle(C - B));
+draw (B -- D);
+
+E = whatever[B, C] = A + whatever * dir(1/2 * (180 + angle(A - B)));
+draw (A -- E);
+
+F = whatever[A, B] = C + whatever * dir(1/2 * angle(C - B));
+draw (C -- F);
+
+pair M;
+M = whatever[B, D] = whatever[F, C];
+draw M withpen pencircle scaled 3;
+
+a := length(B - A);
+b := length(C - B);
+c := length(C - A);
+p := (a + b + c) / 2;
+r := ((p - a)*(p - b)*(p - c) / p) ** (1/2);
+
+draw fullcircle scaled (2 * r) shifted (M);
+
+endfig
+bye.</code></pre>
+<h2 id="стрелки-arrow">Стрелки <code>Arrow</code></h2>
+<hr />
+<ul>
+<li><code>drawarrow</code> вместо <code>draw</code>, чтобы нарисовать
+стрелку, а не линию,</li>
+<li><code>drawdblarrow</code> – двусторонняя стрелка.</li>
+</ul>
+<h3 id="команда-reverse">Команда <code>reverse</code></h3>
+<ul>
+<li>Позволяет нарисовать стрелку в обратном направлении:
+<code>drawarrow reverse((0, 0) -- (100, 0));</code></li>
+</ul>
+<h3 id="стили-стрелок">Стили стрелок</h3>
+<ul>
+<li>C помощью команд <code>ahlength</code> и <code>ahangle</code> можно
+поменять длину головы стрелки и угол головы стрелки. Дефолтные значения
+<code>ahlength = 4bp</code> и <code>ahangle=45deg</code>.</li>
+<li>Можно вообще поменять голову стрелки с помощью функции
+<code>arrowhead</code>:</li>
+</ul>
+<h4 id="какой-то-сложный-пример-на-стиль-стрелки">Какой-то сложный
+пример на стиль стрелки</h4>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+save arrowhead; % чтобы это могло значить?
+
+vardef arrowhead expr p = % полуфункция arrowhead получает на вход путь
+    save A, a, slope; pair A, slope; path a;
+    A = point (length(p) / 2) of p; % точка на кривой на расстоянии длина кривой пополам
+    slope = direction (length(p) / 2) of p; % касательная в этой точке
+    a = halfcircle scaled ahlength rotated (-90 + angle(slope)) shifted A;
+    % полукруг повернутый перпендикулярно касательной и уевличенный до ahlength
+    a--cycle
+enddef;
+
+u := 2cm;
+ahlength := 0.3cm;
+
+drawarrow (0, 0)..(2u, 3u)..(5u, -u);
+
+endfig
+bye.</code></pre>
+<h2 id="кружки-эллипсы-квадраты-и-прямоугольники">Кружки, эллипсы,
+квадраты и прямоугольники</h2>
+<hr />
+<p>Предопределенные пути:</p>
+<ul>
+<li><code>fullcircle</code> – окружность диаметра <span
+class="math inline">\(1\)</span> с центром в <span
+class="math inline">\((0, 0)\)</span></li>
+<li><code>halfcircle</code> – верхняя полуокружность
+<code>fullcircle</code></li>
+<li><code>quartercircle</code> – первая четверть (от <span
+class="math inline">\(0\)</span> до <span
+class="math inline">\(\frac{\pi}2\)</span>) <code>fullcircle</code></li>
+<li><code>unitsquare</code> –
+<code>(0, 0) -- (0, 1) -- (1, 1) -- cycle</code></li>
+</ul>
+<h2 id="транформации">Транформации</h2>
+<hr />
+<ul>
+<li><code>shifted</code> – параллельный перенос на заданный вектор
+(<code>pair</code>)</li>
+<li><code>scaled</code>, <code>xcaled</code>, <code>yscaled</code> –
+увеличение / уменьшение в заданное число раз относительно центра
+пути</li>
+<li><code>rotated</code> – поворот вокруг центра на заданный в градусах
+угол</li>
+<li>Порядок трансформаций очень важен!</li>
+</ul>
+<h3 id="большой-пример-на-трансформации-и-кружочки-квадраты">Большой
+пример на трансформации и кружочки / квадраты</h3>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+u := 2cm;
+
+for i = -1 upto 9: draw (i * u, 4u) -- (i * u, -3u) withcolor 0.7white; endfor;
+for i = -3 upto 4: draw (-u, i * u) -- (9u, i * u) withcolor 0.7white; endfor;
+dotlabel(&quot;&quot;, origin); % отрисовка сетки
+
+draw fullcircle scaled u;
+draw halfcircle scaled u shifted (2u, 0);
+draw quartercircle scaled u shifted (4u, 0);
+draw fullcircle xscaled 2u yscaled u shifted (6u, 0);
+draw fullcircle xscaled 2u yscaled u rotated -45 shifted (8u, 0);
+fill fullcircle scaled u shifted (0, -2u);
+fill halfcircle -- cycle scaled u shifted (2u, -2u);
+
+path quarterdisk; quarterdisk := quartercircle -- origin -- cycle;
+fill quarterdisk scaled u shifted (4u, -2u);
+fill quarterdisk scaled u rotated -45 shifted (6u, -2u);
+fill quarterdisk scaled u shifted (6u, -2u) rotated 45;
+fill quarterdisk rotated -90 scaled 2u shifted (8u, 3u);
+fill unitsquare scaled u shifted (0, 2u);
+fill unitsquare xscaled u yscaled 3/2u shifted (2u, 2u);
+
+endfig
+bye.</code></pre>
+<h2 id="текст-в-metapost">Текст в <code>metapost</code></h2>
+<hr />
+<p><code>label.suffix(string expression, pair);</code> – команда
+позволяет написать текст <code>expression</code> в точке
+<code>pair</code>, сдвинув текст относительно точки в
+<code>suffix</code>.</p>
+<p>Какие бывают <code>suffix</code>?</p>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+u := 3cm;
+n := 8;
+
+for k := 0 upto n:
+    draw (0, 0) -- dir(360 / n * k) * u;
+endfor;
+
+label.top(&quot;top&quot;, (0, u));
+label.rt(&quot;rt&quot;, (u, 0));
+label.bot(&quot;bot&quot;, (0, -u));
+label.lft(&quot;lft&quot;, (-u, 0));
+
+label.urt(&quot;urt&quot;, dir(45) * u);
+label.lrt(&quot;lrt&quot;, dir(-45) * u);
+label.llft(&quot;llft&quot;, dir(-3 * 45) * u);
+label.ulft(&quot;ulft&quot;, dir(3 * 45) * u);
+
+endfig
+bye.</code></pre>
+<h2 id="как-поменять-шрифт-и-его-размер">Как поменять шрифт и его
+размер?</h2>
+<hr />
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+defaultfont := &quot;psyro&quot;; % надо написать название, угадав его
+% в папке, где tex в поддиректории .\texmf-dist\fonts\tfm\ должен быть файл название-шрифта.tfm
+% нда, почему такие крутые вещи никому не нужны?
+defaultscale := 12pt / fontsize(defaultfont);
+
+u := 3cm;
+n := 8;
+
+for k := 0 upto n:
+    draw (0, 0) -- dir(360 / n * k) * u;
+endfor;
+
+label.top(&quot;top&quot;, (0, u));
+label.rt(&quot;rt&quot;, (u, 0));
+label.bot(&quot;bot&quot;, (0, -u));
+label.lft(&quot;lft&quot;, (-u, 0));
+
+label.urt(&quot;urt&quot;, dir(45) * u);
+label.lrt(&quot;lrt&quot;, dir(-45) * u);
+label.llft(&quot;llft&quot;, dir(-3 * 45) * u);
+label.ulft(&quot;ulft&quot;, dir(3 * 45) * u);
+
+endfig
+bye.</code></pre>
+<h2 id="оператор-конкатенации">Оператор конкатенации</h2>
+<hr />
+<p>Чтобы что-то склеить (пути или текст) можно использовать
+<code>&amp;</code>.</p>
+<h3 id="изспользование-latex-в-metapost">Изспользование
+<code>latex</code> в <code>metapost</code></h3>
+<pre class="language-mp"><code class="language-mp">outputtemplate := &quot;%j.png&quot;;
+outputformat := &quot;png&quot;;
+beginfig(1)
+
+z0 = (0, 0);
+z1 = (sqrt(3)*cm, 0);
+z2 = (sqrt(3)*cm, 1cm);
+
+draw z0 -- z1 -- z2 -- cycle;
+
+label.bot(btex $\lbrace$ etex rotated 90 xscaled 5 yscaled 1.4, 1/2[z0, z1]);
+
+label.rt((btex $\rbrace$ etex) xscaled 1.3 yscaled 3, 1/2[z1, z2]);
+label(btex $\lbrace$ etex xscaled 1.5 yscaled 5.7 rotated -60, 1/2[z0, z2] + dir(120)*2mm);
+
+labeloffset := 3.5mm; % на каком расстоянии от точки рисовать метку
+
+label.bot(btex $\sqrt{3}$ etex, 1/2[z0, z1]);
+label.rt(btex 1 etex, 1/2[z1, z2]);
+label(btex 2 etex, 1/2[z0, z2] + dir(120)*5mm);
+
+endfig
+bye.</code></pre>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Но писать <code>p := (1, 2);</code> для пары нельзя и
+т.д.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+<script src="utils/prism.js"></script>
+<script src="utils/copy_code.js"></script>
+</body>
+</html>
